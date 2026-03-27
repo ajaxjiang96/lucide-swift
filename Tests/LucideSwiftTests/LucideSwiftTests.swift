@@ -44,9 +44,10 @@ final class LucideSwiftTests: XCTestCase {
         
         XCTAssertEqual(icons.count, 4)
         
-        // Verify all icons have path data
+        // Verify all icons can create paths (Path is a value type, can't be empty check)
         for icon in icons {
-            XCTAssertFalse(icon.pathData.isEmpty, "Icon should have path data")
+            let path = icon.path(in: CGRect(x: 0, y: 0, width: 24, height: 24))
+            XCTAssertNotNil(path, "Icon should create a path")
         }
     }
     

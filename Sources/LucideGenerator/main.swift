@@ -313,6 +313,364 @@ extension String {
     }
 }
 
+// MARK: - SVG Path Parser
+
+/// Represents a parsed SVG path command
+struct SVGPathCommand {
+    enum CommandType {
+        case moveTo
+        case lineTo
+        case curveTo
+        case quadCurveTo
+        case arcTo
+        case closePath
+    }
+    
+    let type: CommandType
+    let values: [CGFloat]
+}
+
+/// Parses SVG path data strings
+struct SVGPathParser {
+    func parse(pathData: String) -> [SVGPathCommand] {
+        var commands: [SVGPathCommand] = []
+        var currentIndex = pathData.startIndex
+        var currentValues: [CGFloat] = []
+        var currentCommand: Character?
+        var numberBuffer = ""
+        
+        // Current position for relative coordinate calculations
+        var currentX: CGFloat = 0
+        var currentY: CGFloat = 0
+        var subpathStartX: CGFloat = 0
+        var subpathStartY: CGFloat = 0
+        
+        // Previous control point for smooth curves
+        var lastControlX: CGFloat = 0
+        var lastControlY: CGFloat = 0
+        
+        func flushNumber() {
+            if !numberBuffer.isEmpty, let value = Double(numberBuffer) {
+                currentValues.append(CGFloat(value))
+                numberBuffer = ""
+            }
+        }
+        
+        func flushCommand() {
+            flushNumber()
+            guard let cmd = currentCommand else { return }
+            let isRelative = cmd.isLowercase
+            
+            switch cmd {
+            case "M", "m":
+                while currentValues.count >= 2 {
+                    var x = currentValues[0]
+                    var y = currentValues[1]
+                    
+                    if isRelative {
+                        x += currentX
+                        y += currentY
+                    }
+                    
+                    commands.append(SVGPathCommand(type: .moveTo, values: [x, y]))
+                    currentX = x
+                    currentY = y
+                    subpathStartX = x
+                    subpathStartY = y
+                    currentValues.removeFirst(2)
+                }
+                while currentValues.count >= 2 {
+                    var x = currentValues[0]
+                    var y = currentValues[1]
+                    
+                    if isRelative {
+                        x += currentX
+                        y += currentY
+                    }
+                    
+                    commands.append(SVGPathCommand(type: .lineTo, values: [x, y]))
+                    currentX = x
+                    currentY = y
+                    currentValues.removeFirst(2)
+                }
+                
+            case "L", "l":
+                while currentValues.count >= 2 {
+                    var x = currentValues[0]
+                    var y = currentValues[1]
+                    
+                    if isRelative {
+                        x += currentX
+                        y += currentY
+                    }
+                    
+                    commands.append(SVGPathCommand(type: .lineTo, values: [x, y]))
+                    currentX = x
+                    currentY = y
+                    currentValues.removeFirst(2)
+                }
+                
+            case "H", "h":
+                while !currentValues.isEmpty {
+                    var x = currentValues[0]
+                    
+                    if isRelative {
+                        x += currentX
+                    }
+                    
+                    commands.append(SVGPathCommand(type: .lineTo, values: [x, currentY]))
+                    currentX = x
+                    currentValues.removeFirst(1)
+                }
+                
+            case "V", "v":
+                while !currentValues.isEmpty {
+                    var y = currentValues[0]
+                    
+                    if isRelative {
+                        y += currentY
+                    }
+                    
+                    commands.append(SVGPathCommand(type: .lineTo, values: [currentX, y]))
+                    currentY = y
+                    currentValues.removeFirst(1)
+                }
+                
+            case "C", "c":
+                while currentValues.count >= 6 {
+                    var x1 = currentValues[0]
+                    var y1 = currentValues[1]
+                    var x2 = currentValues[2]
+                    var y2 = currentValues[3]
+                    var x = currentValues[4]
+                    var y = currentValues[5]
+                    
+                    if isRelative {
+                        x1 += currentX
+                        y1 += currentY
+                        x2 += currentX
+                        y2 += currentY
+                        x += currentX
+                        y += currentY
+                    }
+                    
+                    commands.append(SVGPathCommand(type: .curveTo, values: [x1, y1, x2, y2, x, y]))
+                    lastControlX = x2
+                    lastControlY = y2
+                    currentX = x
+                    currentY = y
+                    currentValues.removeFirst(6)
+                }
+                
+            case "S", "s":
+                while currentValues.count >= 4 {
+                    var x2 = currentValues[0]
+                    var y2 = currentValues[1]
+                    var x = currentValues[2]
+                    var y = currentValues[3]
+                    
+                    if isRelative {
+                        x2 += currentX
+                        y2 += currentY
+                        x += currentX
+                        y += currentY
+                    }
+                    
+                    let x1 = 2 * currentX - lastControlX
+                    let y1 = 2 * currentY - lastControlY
+                    
+                    commands.append(SVGPathCommand(type: .curveTo, values: [x1, y1, x2, y2, x, y]))
+                    lastControlX = x2
+                    lastControlY = y2
+                    currentX = x
+                    currentY = y
+                    currentValues.removeFirst(4)
+                }
+                
+            case "Q", "q":
+                while currentValues.count >= 4 {
+                    var x1 = currentValues[0]
+                    var y1 = currentValues[1]
+                    var x = currentValues[2]
+                    var y = currentValues[3]
+                    
+                    if isRelative {
+                        x1 += currentX
+                        y1 += currentY
+                        x += currentX
+                        y += currentY
+                    }
+                    
+                    commands.append(SVGPathCommand(type: .quadCurveTo, values: [x1, y1, x, y]))
+                    lastControlX = x1
+                    lastControlY = y1
+                    currentX = x
+                    currentY = y
+                    currentValues.removeFirst(4)
+                }
+                
+            case "T", "t":
+                while currentValues.count >= 2 {
+                    var x = currentValues[0]
+                    var y = currentValues[1]
+                    
+                    if isRelative {
+                        x += currentX
+                        y += currentY
+                    }
+                    
+                    let x1 = 2 * currentX - lastControlX
+                    let y1 = 2 * currentY - lastControlY
+                    
+                    commands.append(SVGPathCommand(type: .quadCurveTo, values: [x1, y1, x, y]))
+                    lastControlX = x1
+                    lastControlY = y1
+                    currentX = x
+                    currentY = y
+                    currentValues.removeFirst(2)
+                }
+                
+            case "A", "a":
+                while currentValues.count >= 7 {
+                    let rx = currentValues[0]
+                    let ry = currentValues[1]
+                    let rotation = currentValues[2]
+                    let largeArc = currentValues[3]
+                    let sweep = currentValues[4]
+                    var x = currentValues[5]
+                    var y = currentValues[6]
+                    
+                    if isRelative {
+                        x += currentX
+                        y += currentY
+                    }
+                    
+                    commands.append(SVGPathCommand(type: .arcTo, values: [rx, ry, rotation, largeArc, sweep, x, y]))
+                    currentX = x
+                    currentY = y
+                    currentValues.removeFirst(7)
+                }
+                
+            case "Z", "z":
+                commands.append(SVGPathCommand(type: .closePath, values: []))
+                currentX = subpathStartX
+                currentY = subpathStartY
+                
+            default:
+                break
+            }
+            
+            currentValues = []
+        }
+        
+        while currentIndex < pathData.endIndex {
+            let char = pathData[currentIndex]
+            
+            if char.isWhitespace || char == "," {
+                flushNumber()
+            } else if char.isLetter {
+                flushCommand()
+                currentCommand = char
+            } else if char.isNumber || char == "." || char == "-" {
+                if char == "-" && !numberBuffer.isEmpty {
+                    flushNumber()
+                }
+                numberBuffer.append(char)
+            }
+            
+            currentIndex = pathData.index(after: currentIndex)
+        }
+        
+        flushCommand()
+        
+        return commands
+    }
+}
+
+private extension Array {
+    subscript(safe index: Int) -> Element? {
+        return indices.contains(index) ? self[index] : nil
+    }
+}
+
+// MARK: - Path Command
+
+enum SwiftPathCommand {
+    case moveTo(x: Double, y: Double)
+    case lineTo(x: Double, y: Double)
+    case curveTo(cp1x: Double, cp1y: Double, cp2x: Double, cp2y: Double, x: Double, y: Double)
+    case quadCurveTo(cpx: Double, cpy: Double, x: Double, y: Double)
+    case closePath
+}
+
+// MARK: - SVG to Swift Path Converter
+
+struct SVGToSwiftPathConverter {
+    static func convert(pathData: String) -> [SwiftPathCommand] {
+        var commands: [SwiftPathCommand] = []
+        let parser = SVGPathParser()
+        let svgCommands = parser.parse(pathData: pathData)
+        
+        for cmd in svgCommands {
+            switch cmd.type {
+            case .moveTo:
+                if cmd.values.count >= 2 {
+                    let x = cmd.values[0]
+                    let y = cmd.values[1]
+                    commands.append(.moveTo(x: Double(x), y: Double(y)))
+                }
+            case .lineTo:
+                if cmd.values.count >= 2 {
+                    let x = cmd.values[0]
+                    let y = cmd.values[1]
+                    commands.append(.lineTo(x: Double(x), y: Double(y)))
+                }
+            case .curveTo:
+                if cmd.values.count >= 6 {
+                    commands.append(.curveTo(
+                        cp1x: Double(cmd.values[0]), cp1y: Double(cmd.values[1]),
+                        cp2x: Double(cmd.values[2]), cp2y: Double(cmd.values[3]),
+                        x: Double(cmd.values[4]), y: Double(cmd.values[5])
+                    ))
+                }
+            case .quadCurveTo:
+                if cmd.values.count >= 4 {
+                    commands.append(.quadCurveTo(
+                        cpx: Double(cmd.values[0]), cpy: Double(cmd.values[1]),
+                        x: Double(cmd.values[2]), y: Double(cmd.values[3])
+                    ))
+                }
+            case .arcTo:
+                // Arcs are converted to curves by the parser
+                break
+            case .closePath:
+                commands.append(.closePath)
+            }
+        }
+        
+        return commands
+    }
+    
+    static func generateSwiftPathCode(commands: [SwiftPathCommand]) -> String {
+        var code = ""
+        for command in commands {
+            switch command {
+            case .moveTo(let x, let y):
+                code += "path.move(to: CGPoint(x: \(x), y: \(y)))\n"
+            case .lineTo(let x, let y):
+                code += "path.addLine(to: CGPoint(x: \(x), y: \(y)))\n"
+            case .curveTo(let cp1x, let cp1y, let cp2x, let cp2y, let x, let y):
+                code += "path.addCurve(to: CGPoint(x: \(x), y: \(y)), control1: CGPoint(x: \(cp1x), y: \(cp1y)), control2: CGPoint(x: \(cp2x), y: \(cp2y)))\n"
+            case .quadCurveTo(let cpx, let cpy, let x, let y):
+                code += "path.addQuadCurve(to: CGPoint(x: \(x), y: \(y)), control: CGPoint(x: \(cpx), y: \(cpy)))\n"
+            case .closePath:
+                code += "path.closeSubpath()\n"
+            }
+        }
+        return code
+    }
+}
+
 // MARK: - Swift Code Generator
 
 struct SwiftCodeGenerator {
@@ -341,8 +699,8 @@ struct SwiftCodeGenerator {
         
         code += """
         
-            /// Returns the SVG path data for this icon
-            public var path: String {
+            /// Returns a SwiftUI Path for this icon
+            public var path: Path {
                 switch self {
         
         """
@@ -350,7 +708,7 @@ struct SwiftCodeGenerator {
         // Generate path data
         for icon in icons {
             code += "        case .\(icon.swiftName):\n"
-            code += "            return \"\(icon.path)\"\n"
+            code += "            return Self.\(icon.swiftName)Path\n"
         }
         
         code += """
@@ -359,10 +717,29 @@ struct SwiftCodeGenerator {
             
             /// Returns a SwiftUI Shape for this icon
             public var shape: LucideIconShape {
-                LucideIconShape(path: path)
+                LucideIconShape(path: self.path)
             }
+        
+        """
+        
+        // Generate individual path functions
+        for icon in icons {
+            let commands = SVGToSwiftPathConverter.convert(pathData: icon.path)
+            let pathCode = SVGToSwiftPathConverter.generateSwiftPathCode(commands: commands)
+            
+            code += "        \n"
+            code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon path\n"
+            code += "    static var \(icon.swiftName)Path: Path {\n"
+            code += "        var path = Path()\n"
+            code += "        \(pathCode)"
+            code += "        return path\n"
+            code += "    }\n"
         }
         
+        code += "}\n"
+        code += "\n"
+        
+        code += """
         // MARK: - Convenient Access
         
         public struct Lucide {
@@ -373,7 +750,7 @@ struct SwiftCodeGenerator {
         for icon in icons {
             code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon\n"
             code += "    public static var \(icon.swiftName): LucideIconShape {\n"
-            code += "        LucideIconShape(path: \"\(icon.path)\")\n"
+            code += "        LucideIconShape(path: LucideIconName.\(icon.swiftName)Path)\n"
             code += "    }\n\n"
         }
         
