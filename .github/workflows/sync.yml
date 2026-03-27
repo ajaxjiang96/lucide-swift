@@ -1,0 +1,99 @@
+name: Sync with Lucide Upstream
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Allow manual trigger
+
+jobs:
+  sync:
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Swift
+      uses: swift-actions/setup-swift@v1
+      with:
+        swift-version: '5.9'
+    
+    - name: Get latest Lucide version
+      id: lucide-version
+      run: |
+        LATEST_VERSION=$(curl -s https://api.github.com/repos/lucide-icons/lucide/releases/latest | jq -r .tag_name)
+        echo "version=$LATEST_VERSION" >> $GITHUB_OUTPUT
+        echo "Latest Lucide version: $LATEST_VERSION"
+    
+    - name: Check if update needed
+      id: check-update
+      run: |
+        CURRENT_VERSION=$(cat .lucide-version 2>/dev/null || echo "v0.0.0")
+        LATEST_VERSION=${{ steps.lucide-version.outputs.version }}
+        
+        if [ "$CURRENT_VERSION" != "$LATEST_VERSION" ]; then
+          echo "needs_update=true" >> $GITHUB_OUTPUT
+          echo "Update needed: $CURRENT_VERSION → $LATEST_VERSION"
+        else
+          echo "needs_update=false" >> $GITHUB_OUTPUT
+          echo "Already up to date: $CURRENT_VERSION"
+        fi
+    
+    - name: Run generator
+      if: steps.check-update.outputs.needs_update == 'true'
+      run: |
+        swift run LucideGenerator
+    
+    - name: Update version file
+      if: steps.check-update.outputs.needs_update == 'true'
+      run: |
+        echo "${{ steps.lucide-version.outputs.version }}" > .lucide-version
+    
+    - name: Run tests
+      if: steps.check-update.outputs.needs_update == 'true'
+      run: |
+        swift test
+    
+    - name: Build package
+      if: steps.check-update.outputs.needs_update == 'true'
+      run: |
+        swift build
+    
+    - name: Create Pull Request
+      if: steps.check-update.outputs.needs_update == 'true'
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'chore: sync with Lucide ${{ steps.lucide-version.outputs.version }}'
+        title: 'chore: sync with Lucide ${{ steps.lucide-version.outputs.version }}'
+        body: |
+          Automated sync with upstream Lucide Icons.
+          
+          **Changes:**
+          - Updated icon definitions to match Lucide ${{ steps.lucide-version.outputs.version }}
+          - Regenerated Swift code
+          
+          **Version Alignment:**
+          This package version will be tagged as `${{ steps.lucide-version.outputs.version }}` to match upstream.
+        branch: 'auto-sync/${{ steps.lucide-version.outputs.version }}'
+        delete-branch: true
+
+  test:
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Swift
+      uses: swift-actions/setup-swift@v1
+      with:
+        swift-version: '5.9'
+    
+    - name: Run tests
+      run: swift test
+    
+    - name: Build package
+      run: swift build

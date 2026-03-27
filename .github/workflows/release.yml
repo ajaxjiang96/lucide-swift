@@ -1,0 +1,57 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Swift
+      uses: swift-actions/setup-swift@v1
+      with:
+        swift-version: '5.9'
+    
+    - name: Run tests
+      run: swift test
+    
+    - name: Build package
+      run: swift build -c release
+    
+    - name: Create Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: ${{ github.ref }}
+        body: |
+          ## Lucide Swift ${{ github.ref }}
+          
+          This release aligns with Lucide Icons version ${{ github.ref }}.
+          
+          ### Installation
+          
+          ```swift
+          dependencies: [
+              .package(url: "https://github.com/YOUR_USERNAME/lucide-swift.git", from: "${{ github.ref }}")
+          ]
+          ```
+          
+          ### Usage
+          
+          ```swift
+          import LucideSwift
+          
+          // Type-safe icon selection
+          LucideIcon(.home)
+          LucideIcon(.settings, size: 32, color: .blue)
+          ```
+        draft: false
+        prerelease: false

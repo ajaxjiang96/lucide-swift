@@ -1,0 +1,26 @@
+# Ignore generated files
+Sources/LucideSwift/Lucide+Generated.swift
+
+# Ignore version tracking
+.lucide-version
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+*.xcodeproj
+*.xcworkspace
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temp files
+tmp/
+temp/
