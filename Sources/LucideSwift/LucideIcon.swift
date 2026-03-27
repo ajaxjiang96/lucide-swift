@@ -48,14 +48,14 @@ public struct LucideIconFill: View {
 #Preview {
     VStack(spacing: 20) {
         HStack(spacing: 20) {
-            LucideIcon(Lucide.home, size: 24)
+            LucideIcon(Lucide.house, size: 24)
             LucideIcon(Lucide.settings, size: 32, color: .blue)
             LucideIcon(Lucide.heart, size: 40, color: .red)
         }
         
         HStack(spacing: 20) {
             LucideIconFill(Lucide.star, size: 24, color: .yellow)
-            LucideIconFill(Lucide.circle, size: 32, color: .green)
+            LucideIconFill(Lucide.circleX, size: 32, color: .green)
         }
     }
     .padding()

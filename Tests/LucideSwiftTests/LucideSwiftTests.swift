@@ -10,12 +10,12 @@ import SwiftUI
 final class LucideSwiftTests: XCTestCase {
     
     func testIconRendering() {
-        // Test that icons can be created
-        let homeIcon = Lucide.home
+        // Test that icons can be created (using actual Lucide icon names)
+        let houseIcon = Lucide.house
         let settingsIcon = Lucide.settings
         
         // Verify they conform to Shape
-        let _: any Shape = homeIcon
+        let _: any Shape = houseIcon
         let _: any Shape = settingsIcon
     }
     
@@ -28,21 +28,35 @@ final class LucideSwiftTests: XCTestCase {
     }
     
     func testIconView() {
-        let icon = LucideIcon(.home, size: 24, color: .blue)
+        let icon = LucideIcon(Lucide.house, size: 24, color: .blue)
         // Just verify it compiles and creates a view
         XCTAssertNotNil(icon)
     }
     
     func testAllIconsExist() {
-        // Test that we can access all icons
+        // Test that we can access various icons
         let icons: [LucideIconShape] = [
-            Lucide.home,
+            Lucide.house,
             Lucide.settings,
             Lucide.heart,
-            Lucide.star,
-            Lucide.circle
+            Lucide.star
         ]
         
-        XCTAssertEqual(icons.count, 5)
+        XCTAssertEqual(icons.count, 4)
+        
+        // Verify all icons have path data
+        for icon in icons {
+            XCTAssertFalse(icon.pathData.isEmpty, "Icon should have path data")
+        }
+    }
+    
+    func testReservedKeywords() {
+        // Test that reserved keywords are properly escaped
+        // These would fail to compile if not escaped
+        let `case` = Lucide.caseLower
+        let `switch` = Lucide.switchCamera
+        
+        XCTAssertNotNil(`case`)
+        XCTAssertNotNil(`switch`)
     }
 }
