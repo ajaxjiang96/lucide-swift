@@ -611,6 +611,10 @@ struct SVGToSwiftPathConverter {
         let parser = SVGPathParser()
         let svgCommands = parser.parse(pathData: pathData)
         
+        // Track current position for arc conversion
+        var currentX: CGFloat = 0
+        var currentY: CGFloat = 0
+        
         for cmd in svgCommands {
             switch cmd.type {
             case .moveTo:
@@ -618,12 +622,16 @@ struct SVGToSwiftPathConverter {
                     let x = cmd.values[0]
                     let y = cmd.values[1]
                     commands.append(.moveTo(x: Double(x), y: Double(y)))
+                    currentX = x
+                    currentY = y
                 }
             case .lineTo:
                 if cmd.values.count >= 2 {
                     let x = cmd.values[0]
                     let y = cmd.values[1]
                     commands.append(.lineTo(x: Double(x), y: Double(y)))
+                    currentX = x
+                    currentY = y
                 }
             case .curveTo:
                 if cmd.values.count >= 6 {
@@ -632,6 +640,8 @@ struct SVGToSwiftPathConverter {
                         cp2x: Double(cmd.values[2]), cp2y: Double(cmd.values[3]),
                         x: Double(cmd.values[4]), y: Double(cmd.values[5])
                     ))
+                    currentX = cmd.values[4]
+                    currentY = cmd.values[5]
                 }
             case .quadCurveTo:
                 if cmd.values.count >= 4 {
@@ -639,16 +649,157 @@ struct SVGToSwiftPathConverter {
                         cpx: Double(cmd.values[0]), cpy: Double(cmd.values[1]),
                         x: Double(cmd.values[2]), y: Double(cmd.values[3])
                     ))
+                    currentX = cmd.values[2]
+                    currentY = cmd.values[3]
                 }
             case .arcTo:
-                // Arcs are converted to curves by the parser
-                break
+                if cmd.values.count >= 7 {
+                    let rx = cmd.values[0]
+                    let ry = cmd.values[1]
+                    let rotation = cmd.values[2]
+                    let largeArc = cmd.values[3] != 0
+                    let sweep = cmd.values[4] != 0
+                    let x = cmd.values[5]
+                    let y = cmd.values[6]
+                    
+                    // Convert arc to bezier curves
+                    let curves = arcToBezier(
+                        currentX: currentX,
+                        currentY: currentY,
+                        rx: rx,
+                        ry: ry,
+                        rotation: rotation,
+                        largeArc: largeArc,
+                        sweep: sweep,
+                        endX: x,
+                        endY: y
+                    )
+                    
+                    for curve in curves {
+                        commands.append(.curveTo(
+                            cp1x: Double(curve.cp1x), cp1y: Double(curve.cp1y),
+                            cp2x: Double(curve.cp2x), cp2y: Double(curve.cp2y),
+                            x: Double(curve.endX), y: Double(curve.endY)
+                        ))
+                    }
+                    
+                    currentX = x
+                    currentY = y
+                }
             case .closePath:
                 commands.append(.closePath)
             }
         }
         
         return commands
+    }
+    
+    /// Convert SVG arc to cubic bezier curves
+    private static func arcToBezier(
+        currentX: CGFloat,
+        currentY: CGFloat,
+        rx: CGFloat,
+        ry: CGFloat,
+        rotation: CGFloat,
+        largeArc: Bool,
+        sweep: Bool,
+        endX: CGFloat,
+        endY: CGFloat
+    ) -> [(cp1x: CGFloat, cp1y: CGFloat, cp2x: CGFloat, cp2y: CGFloat, endX: CGFloat, endY: CGFloat)] {
+        
+        // Handle degenerate case
+        if rx == 0 || ry == 0 {
+            return [(currentX, currentY, endX, endY, endX, endY)]
+        }
+        
+        var rx = abs(rx)
+        var ry = abs(ry)
+        
+        // Convert rotation to radians
+        let phi = rotation * .pi / 180
+        let cosPhi = cos(phi)
+        let sinPhi = sin(phi)
+        
+        // Step 1: Compute (x1', y1')
+        let dx = (currentX - endX) / 2
+        let dy = (currentY - endY) / 2
+        let x1p = cosPhi * dx + sinPhi * dy
+        let y1p = -sinPhi * dx + cosPhi * dy
+        
+        // Step 2: Compute (cx', cy')
+        var rxSq = rx * rx
+        var rySq = ry * ry
+        let x1pSq = x1p * x1p
+        let y1pSq = y1p * y1p
+        
+        // Correct radii if necessary
+        let radiiCheck = x1pSq / rxSq + y1pSq / rySq
+        if radiiCheck > 1 {
+            let scale = sqrt(radiiCheck)
+            rx *= scale
+            ry *= scale
+            rxSq = rx * rx
+            rySq = ry * ry
+        }
+        
+        let sign: CGFloat = (largeArc == sweep) ? -1 : 1
+        let sq = ((rxSq * rySq) - (rxSq * y1pSq) - (rySq * x1pSq)) / ((rxSq * y1pSq) + (rySq * x1pSq))
+        let coef = sign * sqrt(max(0, sq))
+        let cxp = coef * ((rx * y1p) / ry)
+        let cyp = coef * -((ry * x1p) / rx)
+        
+        // Step 3: Compute (cx, cy)
+        let cx = cosPhi * cxp - sinPhi * cyp + (currentX + endX) / 2
+        let cy = sinPhi * cxp + cosPhi * cyp + (currentY + endY) / 2
+        
+        // Step 4: Compute angles
+        let theta1 = atan2((y1p - cyp) / ry, (x1p - cxp) / rx)
+        let theta2 = atan2((-y1p - cyp) / ry, (-x1p - cxp) / rx)
+        
+        var deltaTheta = theta2 - theta1
+        
+        // Adjust deltaTheta based on sweep flag
+        if sweep && deltaTheta < 0 {
+            deltaTheta += 2 * .pi
+        } else if !sweep && deltaTheta > 0 {
+            deltaTheta -= 2 * .pi
+        }
+        
+        // Convert arc to bezier curves
+        // Split into segments if angle is too large
+        let numSegments = max(1, Int(ceil(abs(deltaTheta) / (.pi / 2))))
+        let segmentAngle = deltaTheta / CGFloat(numSegments)
+        
+        var curves: [(cp1x: CGFloat, cp1y: CGFloat, cp2x: CGFloat, cp2y: CGFloat, endX: CGFloat, endY: CGFloat)] = []
+        
+        let kappa: CGFloat = 4.0 / 3.0 * tan(segmentAngle / 4.0)
+        
+        var currentTheta = theta1
+        
+        for _ in 0..<numSegments {
+            let nextTheta = currentTheta + segmentAngle
+            
+            // Compute start point of this segment
+            let startX = cx + rx * cosPhi * cos(currentTheta) - ry * sinPhi * sin(currentTheta)
+            let startY = cy + rx * sinPhi * cos(currentTheta) + ry * cosPhi * sin(currentTheta)
+            
+            // Compute end point of this segment
+            let segmentEndX = cx + rx * cosPhi * cos(nextTheta) - ry * sinPhi * sin(nextTheta)
+            let segmentEndY = cy + rx * sinPhi * cos(nextTheta) + ry * cosPhi * sin(nextTheta)
+            
+            // Compute control points
+            let cp1x = startX - kappa * (rx * cosPhi * sin(currentTheta) + ry * sinPhi * cos(currentTheta))
+            let cp1y = startY - kappa * (rx * sinPhi * sin(currentTheta) - ry * cosPhi * cos(currentTheta))
+            
+            let cp2x = segmentEndX + kappa * (rx * cosPhi * sin(nextTheta) + ry * sinPhi * cos(nextTheta))
+            let cp2y = segmentEndY + kappa * (rx * sinPhi * sin(nextTheta) - ry * cosPhi * cos(nextTheta))
+            
+            curves.append((cp1x, cp1y, cp2x, cp2y, segmentEndX, segmentEndY))
+            
+            currentTheta = nextTheta
+        }
+        
+        return curves
     }
     
     static func generateSwiftPathCode(commands: [SwiftPathCommand]) -> String {
