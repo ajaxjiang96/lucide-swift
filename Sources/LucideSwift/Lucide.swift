@@ -19,6 +19,10 @@ public struct LucideIconShape: Shape {
     
     public func path(in rect: CGRect) -> Path {
         var path = Path()
+        var currentX: CGFloat = 0
+        var currentY: CGFloat = 0
+        var subpathStartX: CGFloat = 0
+        var subpathStartY: CGFloat = 0
         
         // Parse SVG path data and convert to Swift Path
         let commands = SVGPathParser.parse(pathData: pathData)
@@ -29,12 +33,18 @@ public struct LucideIconShape: Shape {
                 if let x = command.values[safe: 0], let y = command.values[safe: 1] {
                     let point = normalizedPoint(x: x, y: y, in: rect)
                     path.move(to: point)
+                    currentX = x
+                    currentY = y
+                    subpathStartX = x
+                    subpathStartY = y
                 }
                 
             case .lineTo:
                 if let x = command.values[safe: 0], let y = command.values[safe: 1] {
                     let point = normalizedPoint(x: x, y: y, in: rect)
                     path.addLine(to: point)
+                    currentX = x
+                    currentY = y
                 }
                 
             case .curveTo:
@@ -43,6 +53,8 @@ public struct LucideIconShape: Shape {
                     let cp2 = normalizedPoint(x: command.values[2], y: command.values[3], in: rect)
                     let end = normalizedPoint(x: command.values[4], y: command.values[5], in: rect)
                     path.addCurve(to: end, control1: cp1, control2: cp2)
+                    currentX = command.values[4]
+                    currentY = command.values[5]
                 }
                 
             case .quadCurveTo:
@@ -50,6 +62,8 @@ public struct LucideIconShape: Shape {
                     let cp = normalizedPoint(x: command.values[0], y: command.values[1], in: rect)
                     let end = normalizedPoint(x: command.values[2], y: command.values[3], in: rect)
                     path.addQuadCurve(to: end, control: cp)
+                    currentX = command.values[2]
+                    currentY = command.values[3]
                 }
                 
             case .arcTo:
@@ -62,25 +76,34 @@ public struct LucideIconShape: Shape {
                     let x = command.values[5]
                     let y = command.values[6]
                     
-                    // For now, approximate arcs with a line to the endpoint
-                    // A proper implementation would convert SVG arcs to cubic beziers
-                    let point = normalizedPoint(x: x, y: y, in: rect)
+                    // Convert SVG arc to cubic bezier curves
+                    let curves = arcToBezier(
+                        currentX: currentX,
+                        currentY: currentY,
+                        rx: rx,
+                        ry: ry,
+                        rotation: rotation,
+                        largeArc: largeArc,
+                        sweep: sweep,
+                        endX: x,
+                        endY: y
+                    )
                     
-                    // Simple approximation: if it's a significant arc, use a quad curve
-                    if rx > 0.1 && ry > 0.1 {
-                        // Get current point
-                        let current = path.currentPoint ?? .zero
-                        let midX = (current.x + point.x) / 2
-                        let midY = (current.y + point.y) / 2
-                        let control = CGPoint(x: midX, y: midY - min(rx, ry) * rect.width / 24)
-                        path.addQuadCurve(to: point, control: control)
-                    } else {
-                        path.addLine(to: point)
+                    for curve in curves {
+                        let cp1 = normalizedPoint(x: curve.cp1x, y: curve.cp1y, in: rect)
+                        let cp2 = normalizedPoint(x: curve.cp2x, y: curve.cp2y, in: rect)
+                        let end = normalizedPoint(x: curve.endX, y: curve.endY, in: rect)
+                        path.addCurve(to: end, control1: cp1, control2: cp2)
                     }
+                    
+                    currentX = x
+                    currentY = y
                 }
                 
             case .closePath:
                 path.closeSubpath()
+                currentX = subpathStartX
+                currentY = subpathStartY
             }
         }
         
@@ -95,6 +118,115 @@ public struct LucideIconShape: Shape {
             x: rect.minX + x * scaleX,
             y: rect.minY + y * scaleY
         )
+    }
+    
+    /// Convert SVG arc to cubic bezier curves
+    /// Based on the SVG spec algorithm
+    private func arcToBezier(
+        currentX: CGFloat,
+        currentY: CGFloat,
+        rx: CGFloat,
+        ry: CGFloat,
+        rotation: CGFloat,
+        largeArc: Bool,
+        sweep: Bool,
+        endX: CGFloat,
+        endY: CGFloat
+    ) -> [(cp1x: CGFloat, cp1y: CGFloat, cp2x: CGFloat, cp2y: CGFloat, endX: CGFloat, endY: CGFloat)] {
+        
+        // Handle degenerate case
+        if rx == 0 || ry == 0 {
+            return [(currentX, currentY, endX, endY, endX, endY)]
+        }
+        
+        var rx = abs(rx)
+        var ry = abs(ry)
+        
+        // Convert rotation to radians
+        let phi = rotation * .pi / 180
+        let cosPhi = cos(phi)
+        let sinPhi = sin(phi)
+        
+        // Step 1: Compute (x1', y1')
+        let dx = (currentX - endX) / 2
+        let dy = (currentY - endY) / 2
+        let x1p = cosPhi * dx + sinPhi * dy
+        let y1p = -sinPhi * dx + cosPhi * dy
+        
+        // Step 2: Compute (cx', cy')
+        var rxSq = rx * rx
+        var rySq = ry * ry
+        var x1pSq = x1p * x1p
+        var y1pSq = y1p * y1p
+        
+        // Correct radii if necessary
+        let radiiCheck = x1pSq / rxSq + y1pSq / rySq
+        if radiiCheck > 1 {
+            let scale = sqrt(radiiCheck)
+            rx *= scale
+            ry *= scale
+            rxSq = rx * rx
+            rySq = ry * ry
+        }
+        
+        let sign: CGFloat = (largeArc == sweep) ? -1 : 1
+        let sq = ((rxSq * rySq) - (rxSq * y1pSq) - (rySq * x1pSq)) / ((rxSq * y1pSq) + (rySq * x1pSq))
+        let coef = sign * sqrt(max(0, sq))
+        let cxp = coef * ((rx * y1p) / ry)
+        let cyp = coef * -((ry * x1p) / rx)
+        
+        // Step 3: Compute (cx, cy)
+        let cx = cosPhi * cxp - sinPhi * cyp + (currentX + endX) / 2
+        let cy = sinPhi * cxp + cosPhi * cyp + (currentY + endY) / 2
+        
+        // Step 4: Compute angles
+        let theta1 = atan2((y1p - cyp) / ry, (x1p - cxp) / rx)
+        let theta2 = atan2((-y1p - cyp) / ry, (-x1p - cxp) / rx)
+        
+        var deltaTheta = theta2 - theta1
+        
+        // Adjust deltaTheta based on sweep flag
+        if sweep && deltaTheta < 0 {
+            deltaTheta += 2 * .pi
+        } else if !sweep && deltaTheta > 0 {
+            deltaTheta -= 2 * .pi
+        }
+        
+        // Convert arc to bezier curves
+        // Split into segments if angle is too large
+        let numSegments = max(1, Int(ceil(abs(deltaTheta) / (.pi / 2))))
+        let segmentAngle = deltaTheta / CGFloat(numSegments)
+        
+        var curves: [(cp1x: CGFloat, cp1y: CGFloat, cp2x: CGFloat, cp2y: CGFloat, endX: CGFloat, endY: CGFloat)] = []
+        
+        let kappa: CGFloat = 4.0 / 3.0 * tan(segmentAngle / 4.0)
+        
+        var currentTheta = theta1
+        
+        for i in 0..<numSegments {
+            let nextTheta = currentTheta + segmentAngle
+            
+            // Compute start point of this segment
+            let startX = cx + rx * cosPhi * cos(currentTheta) - ry * sinPhi * sin(currentTheta)
+            let startY = cy + rx * sinPhi * cos(currentTheta) + ry * cosPhi * sin(currentTheta)
+            
+            // Compute end point of this segment
+            let segmentEndX = cx + rx * cosPhi * cos(nextTheta) - ry * sinPhi * sin(nextTheta)
+            let segmentEndY = cy + rx * sinPhi * cos(nextTheta) + ry * cosPhi * sin(nextTheta)
+            
+            // Compute control points
+            let cp1x = startX - kappa * (rx * cosPhi * sin(currentTheta) + ry * sinPhi * cos(currentTheta))
+            let cp1y = startY - kappa * (rx * sinPhi * sin(currentTheta) - ry * cosPhi * cos(currentTheta))
+            
+            let cp2x = segmentEndX + kappa * (rx * cosPhi * sin(nextTheta) + ry * sinPhi * cos(nextTheta))
+            let cp2y = segmentEndY + kappa * (rx * sinPhi * sin(nextTheta) - ry * cosPhi * cos(nextTheta))
+            
+            curves.append((cp1x, cp1y, cp2x, cp2y, segmentEndX, segmentEndY))
+            
+            currentTheta = nextTheta
+        }
+        
+        return curves
     }
 }
 
