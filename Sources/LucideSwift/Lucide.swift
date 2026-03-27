@@ -45,6 +45,40 @@ public struct LucideIconShape: Shape {
                     path.addCurve(to: end, control1: cp1, control2: cp2)
                 }
                 
+            case .quadCurveTo:
+                if command.values.count >= 4 {
+                    let cp = normalizedPoint(x: command.values[0], y: command.values[1], in: rect)
+                    let end = normalizedPoint(x: command.values[2], y: command.values[3], in: rect)
+                    path.addQuadCurve(to: end, control: cp)
+                }
+                
+            case .arcTo:
+                if command.values.count >= 7 {
+                    let rx = command.values[0]
+                    let ry = command.values[1]
+                    let rotation = command.values[2]
+                    let largeArc = command.values[3] != 0
+                    let sweep = command.values[4] != 0
+                    let x = command.values[5]
+                    let y = command.values[6]
+                    
+                    // For now, approximate arcs with a line to the endpoint
+                    // A proper implementation would convert SVG arcs to cubic beziers
+                    let point = normalizedPoint(x: x, y: y, in: rect)
+                    
+                    // Simple approximation: if it's a significant arc, use a quad curve
+                    if rx > 0.1 && ry > 0.1 {
+                        // Get current point
+                        let current = path.currentPoint ?? .zero
+                        let midX = (current.x + point.x) / 2
+                        let midY = (current.y + point.y) / 2
+                        let control = CGPoint(x: midX, y: midY - min(rx, ry) * rect.width / 24)
+                        path.addQuadCurve(to: point, control: control)
+                    } else {
+                        path.addLine(to: point)
+                    }
+                }
+                
             case .closePath:
                 path.closeSubpath()
             }
