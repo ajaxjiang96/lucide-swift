@@ -311,7 +311,9 @@ struct SwiftCodeGenerator {
             for pathString in icon.pathStrings {
                 do {
                     // Use SVGPath to parse the path string
-                    let svgPath = try SVGPath(string: pathString)
+                    // Don't invert Y-axis to maintain SVG coordinate system (origin at top-left)
+                    let options = SVGPath.ParseOptions(invertYAxis: false)
+                    let svgPath = try SVGPath(string: pathString, with: options)
                     let cgPath = CGPath.from(svgPath)
                     let swiftCode = convertToSwiftPathCode(cgPath: cgPath)
                     pathCode += swiftCode
