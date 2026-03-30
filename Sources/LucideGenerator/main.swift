@@ -352,8 +352,8 @@ struct SVGPathParser {
         func flushNumber() {
             if !numberBuffer.isEmpty, let value = Double(numberBuffer) {
                 currentValues.append(CGFloat(value))
-                numberBuffer = ""
             }
+            numberBuffer = ""
         }
         
         func flushCommand() {
@@ -609,6 +609,7 @@ struct SVGToSwiftPathConverter {
     static func convert(pathData: String) -> [SwiftPathCommand] {
         var commands: [SwiftPathCommand] = []
         let parser = SVGPathParser()
+        
         let svgCommands = parser.parse(pathData: pathData)
         
         // Track current position for arc conversion
@@ -767,6 +768,11 @@ struct SVGToSwiftPathConverter {
         
         // Convert arc to bezier curves
         // Split into segments if angle is too large
+        // Guard against NaN/Infinity
+        guard deltaTheta.isFinite else {
+            // Fall back to a simple line if arc calculation fails
+            return [(currentX, currentY, endX, endY, endX, endY)]
+        }
         let numSegments = max(1, Int(ceil(abs(deltaTheta) / (.pi / 2))))
         let segmentAngle = deltaTheta / CGFloat(numSegments)
         
