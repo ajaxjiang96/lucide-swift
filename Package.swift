@@ -16,7 +16,9 @@ let package = Package(
             targets: ["LucideSwift"]
         ),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/nicklockwood/SVGPath.git", from: "1.3.0")
+    ],
     targets: [
         .target(
             name: "LucideSwift",
@@ -28,7 +30,9 @@ let package = Package(
         ),
         .executableTarget(
             name: "LucideGenerator",
-            dependencies: []
+            dependencies: [
+                .product(name: "SVGPath", package: "SVGPath")
+            ]
         ),
     ]
 )
