@@ -1,6 +1,3 @@
-# Ignore generated files
-Sources/LucideSwift/Lucide+Generated.swift
-
 # Ignore version tracking
 .lucide-version
 

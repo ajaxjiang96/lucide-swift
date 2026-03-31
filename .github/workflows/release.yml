@@ -90,13 +90,7 @@ jobs:
       if: steps.check.outputs.needs_update == 'true'
       run: |
         VERSION="${{ steps.version.outputs.version }}"
-        git tag -a "$VERSION" -m "Release $VERSION
-
-Synchronized with Lucide Icons $VERSION
-
-Changes:
-- Updated to ${{ steps.generate.outputs.icon_count }} icons
-- Auto-generated from upstream"
+        git tag -a "$VERSION" -m "Release $VERSION" -m "Synchronized with Lucide Icons $VERSION" -m "Changes:" -m "- Updated to ${{ steps.generate.outputs.icon_count }} icons" -m "- Auto-generated from upstream"
     
     - name: Push changes and tag
       if: steps.check.outputs.needs_update == 'true'

@@ -16,7 +16,7 @@ A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev).
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/YOUR_USERNAME/lucide-swift.git", from: "1.0.0")
+    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "1.0.0")
 ]
 ```
 
@@ -30,11 +30,11 @@ struct ContentView: View {
     var body: some View {
         VStack {
             // Type-safe icon selection
-            LucideIcon(.home)
+            LucideIcon(.house)
             LucideIcon(.settings, size: 32, color: .blue)
-            
+
             // As SwiftUI Shape
-            Lucide.home
+            Lucide.house
                 .stroke(Color.red, lineWidth: 2)
                 .frame(width: 40, height: 40)
         }
