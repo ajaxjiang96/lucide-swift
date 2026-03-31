@@ -16,7 +16,7 @@ public enum LucideIconError: Error {
 public struct LucideIcon: View {
     let iconShape: LucideShape
     var size: CGFloat
-    var color: Color
+    var color: Color?
     var strokeWidth: CGFloat
     var absoluteStrokeWidth: Bool
     
@@ -24,7 +24,7 @@ public struct LucideIcon: View {
     public init(
         _ icon: LucideShape,
         size: CGFloat = 24,
-        color: Color = .primary,
+        color: Color? = nil,
         strokeWidth: CGFloat = 2,
         absoluteStrokeWidth: Bool = false
     ) {
@@ -39,7 +39,7 @@ public struct LucideIcon: View {
     public init(
         _ iconName: LucideIconName,
         size: CGFloat = 24,
-        color: Color = .primary,
+        color: Color? = nil,
         strokeWidth: CGFloat = 2,
         absoluteStrokeWidth: Bool = false
     ) {
@@ -54,13 +54,13 @@ public struct LucideIcon: View {
     /// - Parameters:
     ///   - name: The icon name (e.g., "house", "settings", "heart")
     ///   - size: The icon size (default: 24)
-    ///   - color: The icon color (default: .primary)
+    ///   - color: The icon color (default: nil, inherits from environment)
     ///   - strokeWidth: The stroke width (default: 2)
     ///   - absoluteStrokeWidth: When true, stroke width stays constant regardless of icon size
     public init(
         name: String,
         size: CGFloat = 24,
-        color: Color = .primary,
+        color: Color? = nil,
         strokeWidth: CGFloat = 2,
         absoluteStrokeWidth: Bool = false
     ) {
@@ -80,20 +80,16 @@ public struct LucideIcon: View {
     }
     
     public var body: some View {
-        // Calculate stroke width based on absoluteStrokeWidth setting
-        // Lucide icons are designed for 24x24 viewBox
-        let actualStrokeWidth: CGFloat
-        if absoluteStrokeWidth {
-            // Keep stroke width constant regardless of icon size
-            actualStrokeWidth = strokeWidth
-        } else {
-            // Scale stroke width proportionally with icon size
-            actualStrokeWidth = strokeWidth * (size / 24)
-        }
+        let actualStrokeWidth: CGFloat = absoluteStrokeWidth ? strokeWidth : strokeWidth * (size / 24)
         
-        return iconShape
-            .stroke(color, lineWidth: actualStrokeWidth)
-            .frame(width: size, height: size)
+        return Group {
+            if let color = color {
+                iconShape.stroke(color, lineWidth: actualStrokeWidth)
+            } else {
+                iconShape.stroke(lineWidth: actualStrokeWidth)
+            }
+        }
+        .frame(width: size, height: size)
     }
 }
 
@@ -101,24 +97,24 @@ public struct LucideIcon: View {
 public struct LucideIconFill: View {
     let iconShape: LucideShape
     var size: CGFloat
-    var color: Color
+    var color: Color?
     
     /// Initialize with a LucideShape
-    public init(_ icon: LucideShape, size: CGFloat = 24, color: Color = .primary) {
+    public init(_ icon: LucideShape, size: CGFloat = 24, color: Color? = nil) {
         self.iconShape = icon
         self.size = size
         self.color = color
     }
     
     /// Initialize with an icon name enum case
-    public init(_ iconName: LucideIconName, size: CGFloat = 24, color: Color = .primary) {
+    public init(_ iconName: LucideIconName, size: CGFloat = 24, color: Color? = nil) {
         self.iconShape = LucideShape(path: iconName.path)
         self.size = size
         self.color = color
     }
     
     /// Initialize with a string icon name (type-safe lookup with fallback)
-    public init(name: String, size: CGFloat = 24, color: Color = .primary) {
+    public init(name: String, size: CGFloat = 24, color: Color? = nil) {
         if let iconName = LucideIconName(rawValue: name) {
             self.iconShape = LucideShape(path: iconName.path)
         } else {
@@ -132,9 +128,14 @@ public struct LucideIconFill: View {
     }
     
     public var body: some View {
-        iconShape
-            .fill(color)
-            .frame(width: size, height: size)
+        Group {
+            if let color = color {
+                iconShape.fill(color)
+            } else {
+                iconShape.fill()
+            }
+        }
+        .frame(width: size, height: size)
     }
 }
 
@@ -253,7 +254,7 @@ public extension Label where Title == Text, Icon == LucideIcon {
                 Text("Initialization & Colors").font(.headline)
                 HStack(spacing: 25) {
                     VStack {
-                        LucideIcon(.house, size: 32, color: .indigo)
+                        LucideIcon(.house, size: 32, color: .blue)
                         Text("Enum").font(.caption2)
                     }
                     VStack {
@@ -289,7 +290,7 @@ public extension Label where Title == Text, Icon == LucideIcon {
                     Button(action: {}) {
                         Label("System Button", lucide: .trash)
                     }
-                    .buttonStyle(.bordered)
+                    .buttonStyle(.borderless)
                 }
             }
         }

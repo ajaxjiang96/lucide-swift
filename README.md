@@ -101,13 +101,13 @@ LucideIcon(.heart, size: 48, absoluteStrokeWidth: true)  // 2px stroke (same!)
 ### API Reference
 
 **LucideIcon** - SwiftUI View wrapper
-- `init(_ iconName: LucideIconName, size: CGFloat = 24, color: Color = .primary, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - Type-safe enum
-- `init(name: String, size: CGFloat = 24, color: Color = .primary, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - String lookup with fallback
-- `init(_ icon: LucideShape, size: CGFloat = 24, color: Color = .primary, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - From Shape
+- `init(_ iconName: LucideIconName, size: CGFloat = 24, color: Color? = nil, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - Type-safe enum
+- `init(name: String, size: CGFloat = 24, color: Color? = nil, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - String lookup with fallback
+- `init(_ icon: LucideShape, size: CGFloat = 24, color: Color? = nil, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - From Shape
 
 **Parameters:**
 - `size`: Icon size in points (default: 24)
-- `color`: Icon color (default: .primary)
+- `color`: Icon color (default: `nil`, inherits from environment foreground color)
 - `strokeWidth`: Stroke width multiplier (default: 2)
 - `absoluteStrokeWidth`: When true, stroke width stays constant regardless of icon size (default: false)
 
