@@ -10,7 +10,7 @@
 import SwiftUI
 
 /// A Shape representing a Lucide icon
-public struct LucideIconShape: Shape {
+public struct LucideShape: Shape {
     let path: Path
     
     public init(path: Path) {

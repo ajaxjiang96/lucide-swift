@@ -6,7 +6,7 @@ A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev).
 
 - **Vector-first**: SVG paths rendered as Swift Shapes - scales infinitely without pixelation
 - **Type-safe**: Compile-time checked icon names with full Xcode autocomplete support
-- **Zero dependencies**: Pure Swift implementation
+- **Zero dependencies**: The main library has zero dependencies (generator tool uses SVGPath for parsing)
 - **Multi-platform**: iOS 14+, macOS 11+, tvOS 14+, watchOS 7+, visionOS 1+
 - **Automated sync**: Aligned versioning with upstream Lucide releases
 

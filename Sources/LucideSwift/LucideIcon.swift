@@ -14,12 +14,12 @@ public enum LucideIconError: Error {
 
 /// A view that displays a Lucide icon
 public struct LucideIcon: View {
-    let iconShape: LucideIconShape
+    let iconShape: LucideShape
     var size: CGFloat
     var color: Color
     
-    /// Initialize with a LucideIconShape
-    public init(_ icon: LucideIconShape, size: CGFloat = 24, color: Color = .primary) {
+    /// Initialize with a LucideShape
+    public init(_ icon: LucideShape, size: CGFloat = 24, color: Color = .primary) {
         self.iconShape = icon
         self.size = size
         self.color = color
@@ -27,7 +27,7 @@ public struct LucideIcon: View {
     
     /// Initialize with an icon name enum case
     public init(_ iconName: LucideIconName, size: CGFloat = 24, color: Color = .primary) {
-        self.iconShape = LucideIconShape(path: iconName.path)
+        self.iconShape = LucideShape(path: iconName.path)
         self.size = size
         self.color = color
     }
@@ -39,10 +39,10 @@ public struct LucideIcon: View {
     ///   - color: The icon color (default: .primary)
     public init(name: String, size: CGFloat = 24, color: Color = .primary) {
         if let iconName = LucideIconName(rawValue: name) {
-            self.iconShape = LucideIconShape(path: iconName.path)
+            self.iconShape = LucideShape(path: iconName.path)
         } else {
             // Fallback to house if not found
-            self.iconShape = LucideIconShape(path: LucideIconName.house.path)
+            self.iconShape = LucideShape(path: LucideIconName.house.path)
             #if DEBUG
             print("⚠️ LucideIcon: Icon '\(name)' not found, using fallback")
             #endif
@@ -64,12 +64,12 @@ public struct LucideIcon: View {
 
 /// A view that displays a filled Lucide icon
 public struct LucideIconFill: View {
-    let iconShape: LucideIconShape
+    let iconShape: LucideShape
     var size: CGFloat
     var color: Color
     
-    /// Initialize with a LucideIconShape
-    public init(_ icon: LucideIconShape, size: CGFloat = 24, color: Color = .primary) {
+    /// Initialize with a LucideShape
+    public init(_ icon: LucideShape, size: CGFloat = 24, color: Color = .primary) {
         self.iconShape = icon
         self.size = size
         self.color = color
@@ -77,7 +77,7 @@ public struct LucideIconFill: View {
     
     /// Initialize with an icon name enum case
     public init(_ iconName: LucideIconName, size: CGFloat = 24, color: Color = .primary) {
-        self.iconShape = LucideIconShape(path: iconName.path)
+        self.iconShape = LucideShape(path: iconName.path)
         self.size = size
         self.color = color
     }
@@ -85,9 +85,9 @@ public struct LucideIconFill: View {
     /// Initialize with a string icon name (type-safe lookup with fallback)
     public init(name: String, size: CGFloat = 24, color: Color = .primary) {
         if let iconName = LucideIconName(rawValue: name) {
-            self.iconShape = LucideIconShape(path: iconName.path)
+            self.iconShape = LucideShape(path: iconName.path)
         } else {
-            self.iconShape = LucideIconShape(path: LucideIconName.house.path)
+            self.iconShape = LucideShape(path: LucideIconName.house.path)
             #if DEBUG
             print("⚠️ LucideIconFill: Icon '\(name)' not found, using fallback")
             #endif
@@ -107,9 +107,9 @@ public struct LucideIconFill: View {
 
 extension LucideIconName {
     /// Get an icon shape by name, returns nil if not found
-    public static func shape(named name: String) -> LucideIconShape? {
+    public static func shape(named name: String) -> LucideShape? {
         guard let iconName = LucideIconName(rawValue: name) else { return nil }
-        return LucideIconShape(path: iconName.path)
+        return LucideShape(path: iconName.path)
     }
     
     /// All available icon names

@@ -17,11 +17,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     
-    - name: Setup Swift
-      uses: swift-actions/setup-swift@v1
-      with:
-        swift-version: ${{ env.SWIFT_VERSION }}
-    
     - name: Run tests
       run: swift test
     

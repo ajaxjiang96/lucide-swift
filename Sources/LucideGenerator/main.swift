@@ -13,6 +13,7 @@ import SVGPath
 
 struct Config {
     static let lucideRepoURL = "https://github.com/lucide-icons/lucide.git"
+    static let version = "1.7.0"  // Lucide version to fetch
     static let iconsPath = "icons"
     static let outputFile = "Sources/LucideSwift/Lucide+Generated.swift"
     static let tempDirectory = FileManager.default.temporaryDirectory.appendingPathComponent("lucide-generator")
@@ -298,8 +299,8 @@ struct SwiftCodeGenerator {
             }
             
             /// Returns a SwiftUI Shape for this icon
-            public var shape: LucideIconShape {
-                LucideIconShape(path: self.path)
+            public var shape: LucideShape {
+                LucideShape(path: self.path)
             }
         
         """
@@ -344,8 +345,8 @@ struct SwiftCodeGenerator {
         // Generate static properties
         for icon in icons {
             code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon\n"
-            code += "    public static var \(icon.swiftName): LucideIconShape {\n"
-            code += "        LucideIconShape(path: LucideIconName.\(icon.swiftName)Path)\n"
+            code += "    public static var \(icon.swiftName): LucideShape {\n"
+            code += "        LucideShape(path: LucideIconName.\(icon.swiftName)Path)\n"
             code += "    }\n\n"
         }
         
@@ -411,21 +412,23 @@ func main() async throws {
     print("📦 Cloning Lucide repository...")
     
     #if os(macOS)
-    let process = Process()
-    process.executableURL = URL(fileURLWithPath: "/usr/bin/git")
-    process.arguments = ["clone", "--depth", "1", Config.lucideRepoURL, Config.tempDirectory.path]
+    // Clone specific version
+    let tag = Config.version
+    let cloneProcess = Process()
+    cloneProcess.executableURL = URL(fileURLWithPath: "/usr/bin/git")
+    cloneProcess.arguments = ["clone", "--depth", "1", "--branch", tag, Config.lucideRepoURL, Config.tempDirectory.path]
     
-    try process.run()
-    process.waitUntilExit()
+    try cloneProcess.run()
+    cloneProcess.waitUntilExit()
     
-    if process.terminationStatus != 0 {
+    if cloneProcess.terminationStatus != 0 {
         throw GeneratorError.cloneFailed
     }
     #else
     throw GeneratorError.unsupportedPlatform
     #endif
     
-    print("✅ Repository cloned")
+    print("✅ Repository cloned (version \(Config.version))")
     
     // Find and parse icons
     let iconsDirectory = Config.tempDirectory.appendingPathComponent(Config.iconsPath)

@@ -21,6 +21,9 @@ Package.resolved
 *.swo
 *~
 
+# Swift Package Manager user data
+.swiftpm/xcode/xcuserdata/
+
 # Temp files
 tmp/
 temp/
