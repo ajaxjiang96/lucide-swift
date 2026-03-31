@@ -194,73 +194,105 @@ public extension Label where Title == Text, Icon == LucideIcon {
 }
 
 #Preview {
-    VStack(spacing: 30) {
-        // Show stroke width scaling with different sizes
-        VStack(spacing: 10) {
-            Text("Stroke width scales with size (default)").font(.caption)
-            HStack(spacing: 20) {
-                LucideIcon(.heart, size: 16, color: .red)
-                LucideIcon(.heart, size: 24, color: .red)
-                LucideIcon(.heart, size: 32, color: .red)
-                LucideIcon(.heart, size: 48, color: .red)
-                LucideIcon(.heart, size: 64, color: .red)
+    ScrollView {
+        VStack(spacing: 40) {
+            // 1. Stroke Width Scaling (Default)
+            VStack(spacing: 12) {
+                Text("Proportional Stroke (Default)").font(.headline)
+                Text("Stroke width scales with icon size (2px at 24pt)").font(.caption).foregroundColor(.secondary)
+                HStack(spacing: 20) {
+                    ForEach([16, 24, 32, 48, 64], id: \.self) { size in
+                        VStack {
+                            LucideIcon(.heart, size: CGFloat(size), color: .red)
+                            Text("\(size)pt").font(.system(size: 8, design: .monospaced))
+                        }
+                    }
+                }
+            }
+            
+            // 2. Absolute Stroke Width
+            VStack(spacing: 12) {
+                Text("Absolute Stroke Width").font(.headline)
+                Text("Stroke width stays constant at 2px regardless of size").font(.caption).foregroundColor(.secondary)
+                HStack(spacing: 20) {
+                    ForEach([16, 24, 32, 48, 64], id: \.self) { size in
+                        VStack {
+                            LucideIcon(.heart, size: CGFloat(size), color: .blue, absoluteStrokeWidth: true)
+                            Text("\(size)pt").font(.system(size: 8, design: .monospaced))
+                        }
+                    }
+                }
+            }
+            
+            // 3. Custom Stroke Widths
+            VStack(spacing: 12) {
+                Text("Custom Stroke Widths").font(.headline)
+                Text("Adjusting the strokeWidth parameter (at 48pt size)").font(.caption).foregroundColor(.secondary)
+                HStack(spacing: 30) {
+                    VStack {
+                        LucideIcon(.heart, size: 48, color: .green, strokeWidth: 0.5)
+                        Text("0.5").font(.caption2)
+                    }
+                    VStack {
+                        LucideIcon(.heart, size: 48, color: .green, strokeWidth: 1.0)
+                        Text("1.0").font(.caption2)
+                    }
+                    VStack {
+                        LucideIcon(.heart, size: 48, color: .green, strokeWidth: 2.0)
+                        Text("2.0 (Def)").font(.caption2)
+                    }
+                    VStack {
+                        LucideIcon(.heart, size: 48, color: .green, strokeWidth: 3.0)
+                        Text("3.0").font(.caption2)
+                    }
+                }
+            }
+            
+            // 4. Initialization Methods & Colors
+            VStack(spacing: 12) {
+                Text("Initialization & Colors").font(.headline)
+                HStack(spacing: 25) {
+                    VStack {
+                        LucideIcon(.house, size: 32, color: .indigo)
+                        Text("Enum").font(.caption2)
+                    }
+                    VStack {
+                        LucideIcon(name: "settings", size: 32, color: .orange)
+                        Text("String").font(.caption2)
+                    }
+                    VStack {
+                        LucideIcon(Lucide.star, size: 32, color: .yellow)
+                        Text("Shape").font(.caption2)
+                    }
+                }
+            }
+            
+            // 5. Filled Icons
+            VStack(spacing: 12) {
+                Text("Filled Icons").font(.headline)
+                HStack(spacing: 25) {
+                    LucideIconFill(.star, size: 32, color: .yellow)
+                    LucideIconFill(.heart, size: 32, color: .red)
+                    LucideIconFill(.bell, size: 32, color: .blue)
+                    LucideIconFill(name: "circle-check", size: 32, color: .green)
+                }
+            }
+            
+            // 6. Label Integration
+            VStack(spacing: 12) {
+                Text("Label Integration").font(.headline)
+                VStack(alignment: .leading, spacing: 10) {
+                    Label("Default Label", lucide: .info)
+                    Label("Large Blue Label", lucide: .cloudRain, size: 32)
+                        .foregroundColor(.blue)
+                    
+                    Button(action: {}) {
+                        Label("System Button", lucide: .trash)
+                    }
+                    .buttonStyle(.bordered)
+                }
             }
         }
-        
-        // Show absolute stroke width
-        VStack(spacing: 10) {
-            Text("Absolute stroke width (2px at all sizes)").font(.caption)
-            HStack(spacing: 20) {
-                LucideIcon(.heart, size: 16, color: .blue, absoluteStrokeWidth: true)
-                LucideIcon(.heart, size: 24, color: .blue, absoluteStrokeWidth: true)
-                LucideIcon(.heart, size: 32, color: .blue, absoluteStrokeWidth: true)
-                LucideIcon(.heart, size: 48, color: .blue, absoluteStrokeWidth: true)
-                LucideIcon(.heart, size: 64, color: .blue, absoluteStrokeWidth: true)
-            }
-        }
-        
-        // Show different stroke widths
-        VStack(spacing: 10) {
-            Text("Different stroke widths").font(.caption)
-            HStack(spacing: 20) {
-                LucideIcon(.heart, size: 48, color: .green, strokeWidth: 1)
-                LucideIcon(.heart, size: 48, color: .green, strokeWidth: 2)
-                LucideIcon(.heart, size: 48, color: .green, strokeWidth: 3)
-            }
-        }
-        
-        // Different initialization methods
-        HStack(spacing: 20) {
-            // Old way (still works)
-            LucideIcon(Lucide.house, size: 24)
-            
-            // Enum case directly
-            LucideIcon(.settings, size: 32, color: .blue)
-            
-            // String name
-            LucideIcon(name: "star", size: 40, color: .orange)
-        }
-        
-        HStack(spacing: 20) {
-            LucideIconFill(.star, size: 24, color: .yellow)
-            LucideIconFill(name: "circle-x", size: 32, color: .green)
-        }
-        
-        // Label usage for buttons/toolbar items
-        VStack(spacing: 10) {
-            Text("Label usage (for Buttons, Toolbar)").font(.caption)
-            
-            // Using enum
-            Label("Settings", lucide: .settings)
-            
-            // Using string name
-            Label("Home", lucideName: "house")
-            
-            // In a Button
-            Button(action: {}) {
-                Label("Save", lucide: .save)
-            }
-        }
+        .padding()
     }
-    .padding()
 }
