@@ -52,8 +52,12 @@ public struct LucideIcon: View {
     }
     
     public var body: some View {
-        iconShape
-            .stroke(color, lineWidth: 2)
+        // Scale stroke width proportionally with icon size
+        // Lucide icons are designed for 24x24 viewBox with stroke width of 2
+        let strokeWidth = size / 12  // 2 * (size / 24) = size / 12
+        
+        return iconShape
+            .stroke(color, lineWidth: strokeWidth)
             .frame(width: size, height: size)
     }
 }
@@ -115,20 +119,29 @@ extension LucideIconName {
 }
 
 #Preview {
-    VStack(spacing: 20) {
+    VStack(spacing: 30) {
+        // Show stroke width scaling with different sizes
+        VStack(spacing: 10) {
+            Text("Stroke width scales with size").font(.caption)
+            HStack(spacing: 20) {
+                LucideIcon(.heart, size: 16, color: .red)
+                LucideIcon(.heart, size: 24, color: .red)
+                LucideIcon(.heart, size: 32, color: .red)
+                LucideIcon(.heart, size: 48, color: .red)
+                LucideIcon(.heart, size: 64, color: .red)
+            }
+        }
+        
+        // Different initialization methods
         HStack(spacing: 20) {
             // Old way (still works)
             LucideIcon(Lucide.house, size: 24)
             
-            // New ways:
             // Enum case directly
             LucideIcon(.settings, size: 32, color: .blue)
             
             // String name
-            LucideIcon(name: "heart", size: 40, color: .red)
-            
-            // String name with explicit parameter
-            LucideIcon(name: "star", size: 28, color: .orange)
+            LucideIcon(name: "star", size: 40, color: .orange)
         }
         
         HStack(spacing: 20) {
