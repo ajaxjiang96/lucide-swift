@@ -9,7 +9,8 @@ A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) w
 - **Zero Runtime Dependencies**: Pure Swift implementation, no external dependencies at runtime
 - **SwiftUI Native**: Built on SwiftUI's `Shape` protocol with full modifier support
 - **Multi-Platform**: iOS 14+, macOS 11+, tvOS 14+, watchOS 7+, visionOS 1+
-- **Proportional Strokes**: Stroke width automatically scales with icon size
+- **Adjustable Stroke Width**: Control stroke width with `strokeWidth` parameter
+- **Absolute Stroke Width**: Keep stroke constant regardless of icon size with `absoluteStrokeWidth`
 - **Version Aligned**: Matches Lucide Icons upstream releases (currently 1.7.0)
 
 ## Requirements
@@ -74,12 +75,41 @@ Button(action: {}) {
 }
 ```
 
+### Stroke Width
+
+Control the stroke width with the `strokeWidth` parameter (default: 2):
+
+```swift
+// Different stroke widths
+LucideIcon(.heart, size: 48, strokeWidth: 1)  // Thin
+LucideIcon(.heart, size: 48, strokeWidth: 2)  // Default
+LucideIcon(.heart, size: 48, strokeWidth: 3)  // Thick
+```
+
+Use `absoluteStrokeWidth` to keep stroke width constant regardless of icon size:
+
+```swift
+// Default behavior: stroke scales with icon size
+LucideIcon(.heart, size: 24)  // 2px stroke
+LucideIcon(.heart, size: 48)  // 4px stroke (scaled)
+
+// With absoluteStrokeWidth: constant stroke width
+LucideIcon(.heart, size: 24, absoluteStrokeWidth: true)  // 2px stroke
+LucideIcon(.heart, size: 48, absoluteStrokeWidth: true)  // 2px stroke (same!)
+```
+
 ### API Reference
 
 **LucideIcon** - SwiftUI View wrapper
-- `init(_ iconName: LucideIconName, size: CGFloat, color: Color)` - Type-safe enum
-- `init(name: String, size: CGFloat, color: Color)` - String lookup with fallback
-- `init(_ icon: LucideShape, size: CGFloat, color: Color)` - From Shape
+- `init(_ iconName: LucideIconName, size: CGFloat = 24, color: Color = .primary, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - Type-safe enum
+- `init(name: String, size: CGFloat = 24, color: Color = .primary, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - String lookup with fallback
+- `init(_ icon: LucideShape, size: CGFloat = 24, color: Color = .primary, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - From Shape
+
+**Parameters:**
+- `size`: Icon size in points (default: 24)
+- `color`: Icon color (default: .primary)
+- `strokeWidth`: Stroke width multiplier (default: 2)
+- `absoluteStrokeWidth`: When true, stroke width stays constant regardless of icon size (default: false)
 
 **LucideShape** - Native SwiftUI Shape
 - Conforms to SwiftUI's `Shape` protocol
@@ -110,7 +140,7 @@ This package generates pure Swift code from SVG paths:
 - **Generated Code**: ~3.3MB of Swift path data
 - **Build Time**: Zero impact (generated at package build time)
 - **Runtime Memory**: Lazy-loaded paths, minimal overhead
-- **Stroke Scaling**: Automatically calculated as `size / 12` (maintains Lucide's 2px stroke at 24px)
+- **Stroke Scaling**: Configurable via `strokeWidth` and `absoluteStrokeWidth` parameters
 
 ## Icon Gallery
 

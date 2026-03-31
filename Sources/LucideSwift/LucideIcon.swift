@@ -17,19 +17,37 @@ public struct LucideIcon: View {
     let iconShape: LucideShape
     var size: CGFloat
     var color: Color
+    var strokeWidth: CGFloat
+    var absoluteStrokeWidth: Bool
     
     /// Initialize with a LucideShape
-    public init(_ icon: LucideShape, size: CGFloat = 24, color: Color = .primary) {
+    public init(
+        _ icon: LucideShape,
+        size: CGFloat = 24,
+        color: Color = .primary,
+        strokeWidth: CGFloat = 2,
+        absoluteStrokeWidth: Bool = false
+    ) {
         self.iconShape = icon
         self.size = size
         self.color = color
+        self.strokeWidth = strokeWidth
+        self.absoluteStrokeWidth = absoluteStrokeWidth
     }
     
     /// Initialize with an icon name enum case
-    public init(_ iconName: LucideIconName, size: CGFloat = 24, color: Color = .primary) {
+    public init(
+        _ iconName: LucideIconName,
+        size: CGFloat = 24,
+        color: Color = .primary,
+        strokeWidth: CGFloat = 2,
+        absoluteStrokeWidth: Bool = false
+    ) {
         self.iconShape = LucideShape(path: iconName.path)
         self.size = size
         self.color = color
+        self.strokeWidth = strokeWidth
+        self.absoluteStrokeWidth = absoluteStrokeWidth
     }
     
     /// Initialize with a string icon name (type-safe lookup with fallback)
@@ -37,7 +55,15 @@ public struct LucideIcon: View {
     ///   - name: The icon name (e.g., "house", "settings", "heart")
     ///   - size: The icon size (default: 24)
     ///   - color: The icon color (default: .primary)
-    public init(name: String, size: CGFloat = 24, color: Color = .primary) {
+    ///   - strokeWidth: The stroke width (default: 2)
+    ///   - absoluteStrokeWidth: When true, stroke width stays constant regardless of icon size
+    public init(
+        name: String,
+        size: CGFloat = 24,
+        color: Color = .primary,
+        strokeWidth: CGFloat = 2,
+        absoluteStrokeWidth: Bool = false
+    ) {
         if let iconName = LucideIconName(rawValue: name) {
             self.iconShape = LucideShape(path: iconName.path)
         } else {
@@ -49,15 +75,24 @@ public struct LucideIcon: View {
         }
         self.size = size
         self.color = color
+        self.strokeWidth = strokeWidth
+        self.absoluteStrokeWidth = absoluteStrokeWidth
     }
     
     public var body: some View {
-        // Scale stroke width proportionally with icon size
-        // Lucide icons are designed for 24x24 viewBox with stroke width of 2
-        let strokeWidth = size / 12  // 2 * (size / 24) = size / 12
+        // Calculate stroke width based on absoluteStrokeWidth setting
+        // Lucide icons are designed for 24x24 viewBox
+        let actualStrokeWidth: CGFloat
+        if absoluteStrokeWidth {
+            // Keep stroke width constant regardless of icon size
+            actualStrokeWidth = strokeWidth
+        } else {
+            // Scale stroke width proportionally with icon size
+            actualStrokeWidth = strokeWidth * (size / 24)
+        }
         
         return iconShape
-            .stroke(color, lineWidth: strokeWidth)
+            .stroke(color, lineWidth: actualStrokeWidth)
             .frame(width: size, height: size)
     }
 }
@@ -162,13 +197,35 @@ public extension Label where Title == Text, Icon == LucideIcon {
     VStack(spacing: 30) {
         // Show stroke width scaling with different sizes
         VStack(spacing: 10) {
-            Text("Stroke width scales with size").font(.caption)
+            Text("Stroke width scales with size (default)").font(.caption)
             HStack(spacing: 20) {
                 LucideIcon(.heart, size: 16, color: .red)
                 LucideIcon(.heart, size: 24, color: .red)
                 LucideIcon(.heart, size: 32, color: .red)
                 LucideIcon(.heart, size: 48, color: .red)
                 LucideIcon(.heart, size: 64, color: .red)
+            }
+        }
+        
+        // Show absolute stroke width
+        VStack(spacing: 10) {
+            Text("Absolute stroke width (2px at all sizes)").font(.caption)
+            HStack(spacing: 20) {
+                LucideIcon(.heart, size: 16, color: .blue, absoluteStrokeWidth: true)
+                LucideIcon(.heart, size: 24, color: .blue, absoluteStrokeWidth: true)
+                LucideIcon(.heart, size: 32, color: .blue, absoluteStrokeWidth: true)
+                LucideIcon(.heart, size: 48, color: .blue, absoluteStrokeWidth: true)
+                LucideIcon(.heart, size: 64, color: .blue, absoluteStrokeWidth: true)
+            }
+        }
+        
+        // Show different stroke widths
+        VStack(spacing: 10) {
+            Text("Different stroke widths").font(.caption)
+            HStack(spacing: 20) {
+                LucideIcon(.heart, size: 48, color: .green, strokeWidth: 1)
+                LucideIcon(.heart, size: 48, color: .green, strokeWidth: 2)
+                LucideIcon(.heart, size: 48, color: .green, strokeWidth: 3)
             }
         }
         
