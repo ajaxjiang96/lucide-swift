@@ -29,7 +29,7 @@ swift package clean
 ### General
 - **Language**: Swift 5.9+
 - **Platforms**: iOS 14+, macOS 11+, tvOS 14+, watchOS 7+, visionOS 1+
-- **No external dependencies** - pure Swift implementation
+- **Zero runtime dependencies** - pure Swift implementation (generator tool uses SVGPath)
 
 ### File Headers
 Every file must include a standard header:
@@ -96,7 +96,7 @@ import XCTest     // For tests only
 ## Architecture
 
 ### Key Components
-1. **LucideIconShape**: Shape protocol implementation for SVG rendering
+1. **LucideShape**: Shape protocol implementation for SVG rendering
 2. **LucideIcon/LucideIconFill**: SwiftUI View wrappers
 3. **SVGPathParser**: Converts SVG path strings to Swift Path commands
 4. **LucideGenerator**: Fetches icons from upstream and generates Swift code
@@ -126,15 +126,16 @@ Sources/
 
 ### Adding New SVG Path Commands
 1. Update `SVGPathParser.swift` to handle new command
-2. Update `LucideIconShape.path(in:)` to render it
+2. Update `LucideShape.path(in:)` to render it
 3. Add tests in `LucideSwiftTests.swift`
 4. Regenerate icons: `swift run LucideGenerator`
 
 ### Syncing with Upstream
-The `.github/workflows/sync.yml` runs daily to:
+The `.github/workflows/release.yml` runs daily to:
 1. Check upstream Lucide releases
 2. Run `swift run LucideGenerator`
-3. Create PR with updated icons
+3. Commit generated files
+4. Create tag and release
 
 ## Resources
 - Lucide Icons: https://lucide.dev
