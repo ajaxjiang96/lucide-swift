@@ -29,9 +29,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            // Type-safe icon selection
+            // Type-safe icon selection (recommended)
             LucideIcon(.house)
             LucideIcon(.settings, size: 32, color: .blue)
+
+            // By string name (fallback to house if not found)
+            LucideIcon(name: "house", size: 24)
+            LucideIcon(name: "settings", size: 32, color: .blue)
 
             // As SwiftUI Shape
             Lucide.house

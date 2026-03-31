@@ -35,7 +35,7 @@ final class LucideSwiftTests: XCTestCase {
     
     func testAllIconsExist() {
         // Test that we can access various icons
-        let icons: [LucideIconShape] = [
+        let icons: [LucideShape] = [
             Lucide.house,
             Lucide.settings,
             Lucide.heart,
