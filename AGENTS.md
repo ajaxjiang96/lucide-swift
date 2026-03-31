@@ -96,10 +96,15 @@ import XCTest     // For tests only
 ## Architecture
 
 ### Key Components
-1. **LucideShape**: Shape protocol implementation for SVG rendering
-2. **LucideIcon/LucideIconFill**: SwiftUI View wrappers
-3. **SVGPathParser**: Converts SVG path strings to Swift Path commands
-4. **LucideGenerator**: Fetches icons from upstream and generates Swift code
+1. **LucideShape**: Shape protocol implementation for SVG rendering.
+2. **LucideIcon**: SwiftUI View wrapper with support for:
+    - `size`: Icon dimensions.
+    - `color`: Optional `Color`. Defaults to `nil` for environment `foregroundColor` inheritance.
+    - `strokeWidth`: Adjustable stroke thickness (default 2).
+    - `absoluteStrokeWidth`: Constant stroke width vs. proportional scaling.
+3. **LucideIconFill**: SwiftUI View wrapper for solid/filled icons.
+4. **SVGPathParser**: Converts SVG path strings to Swift Path commands.
+5. **LucideGenerator**: Fetches icons from upstream and generates Swift code.
 
 ### SVG Path Commands Supported
 - `M/m`: Move to
