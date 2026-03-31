@@ -118,6 +118,46 @@ extension LucideIconName {
     }
 }
 
+// MARK: - Label Extensions
+
+public extension Label where Title == Text, Icon == LucideIcon {
+    /// Creates a label with a Lucide icon
+    /// - Parameters:
+    ///   - titleKey: The title key for the label
+    ///   - icon: The Lucide icon name
+    ///   - size: The icon size (default: 24)
+    init(_ titleKey: LocalizedStringKey, lucide icon: LucideIconName, size: CGFloat = 24) {
+        self.init(title: { Text(titleKey) }, icon: { LucideIcon(icon, size: size) })
+    }
+    
+    /// Creates a label with a Lucide icon from a string name
+    /// - Parameters:
+    ///   - titleKey: The title key for the label
+    ///   - iconName: The Lucide icon name (e.g., "settings", "house")
+    ///   - size: The icon size (default: 24)
+    init(_ titleKey: LocalizedStringKey, lucideName iconName: String, size: CGFloat = 24) {
+        self.init(title: { Text(titleKey) }, icon: { LucideIcon(name: iconName, size: size) })
+    }
+    
+    /// Creates a label with a Lucide icon
+    /// - Parameters:
+    ///   - title: The title string for the label
+    ///   - icon: The Lucide icon name
+    ///   - size: The icon size (default: 24)
+    init<S: StringProtocol>(_ title: S, lucide icon: LucideIconName, size: CGFloat = 24) {
+        self.init(title: { Text(title) }, icon: { LucideIcon(icon, size: size) })
+    }
+    
+    /// Creates a label with a Lucide icon from a string name
+    /// - Parameters:
+    ///   - title: The title string for the label
+    ///   - iconName: The Lucide icon name (e.g., "settings", "house")
+    ///   - size: The icon size (default: 24)
+    init<S: StringProtocol>(_ title: S, lucideName iconName: String, size: CGFloat = 24) {
+        self.init(title: { Text(title) }, icon: { LucideIcon(name: iconName, size: size) })
+    }
+}
+
 #Preview {
     VStack(spacing: 30) {
         // Show stroke width scaling with different sizes
@@ -147,6 +187,22 @@ extension LucideIconName {
         HStack(spacing: 20) {
             LucideIconFill(.star, size: 24, color: .yellow)
             LucideIconFill(name: "circle-x", size: 32, color: .green)
+        }
+        
+        // Label usage for buttons/toolbar items
+        VStack(spacing: 10) {
+            Text("Label usage (for Buttons, Toolbar)").font(.caption)
+            
+            // Using enum
+            Label("Settings", lucide: .settings)
+            
+            // Using string name
+            Label("Home", lucideName: "house")
+            
+            // In a Button
+            Button(action: {}) {
+                Label("Save", lucide: .save)
+            }
         }
     }
     .padding()
