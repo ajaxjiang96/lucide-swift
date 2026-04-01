@@ -52,7 +52,7 @@ import XCTest     // For tests only
 ### Naming Conventions
 - **Types**: PascalCase (e.g., `LucideIcon`, `SVGPathParser`)
 - **Methods/Properties**: camelCase (e.g., `pathData`, `normalizedPoint`)
-- **Icon names**: camelCase converted from kebab-case (e.g., `arrow-right` → `arrowRight`)
+- **Icon names**: camelCase converted from kebab-case (e.g., `arrow-right` → `arrowRight`) to align with Swift API Design Guidelines.
 - **Enums**: PascalCase with lowerCamelCase cases
 - **Constants**: Static constants in Config structs
 

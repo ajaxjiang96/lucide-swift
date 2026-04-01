@@ -67,6 +67,21 @@ struct Config {
         }
         return "unknown"
     }
+
+    /// Extra icons that are not in the Lucide repository but should be included
+    static let extraIcons: [Icon] = [
+        Icon(name: "lucide", pathStrings: [
+            "M7 21h10",
+            "M7 3v18"
+        ]),
+        Icon(name: "lucide-lab", pathStrings: [
+            "M10 2v7.31",
+            "M14 9.3V2",
+            "M8.5 2h7",
+            "M14 9.3a6.5 6.5 0 1 1-4 0",
+            "M5.52 16h12.96"
+        ])
+    ]
 }
 
 // MARK: - Icon Data Structure
@@ -557,6 +572,9 @@ func main() async throws {
     }
     
     print("✅ Parsed \(icons.count) icons")
+    
+    // Add extra icons
+    icons.append(contentsOf: Config.extraIcons)
     
     // Sort icons by name
     icons.sort { $0.name < $1.name }

@@ -37,7 +37,7 @@ Add to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "1.0.0")
+    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.1.0")
 ]
 ```
 
@@ -185,7 +185,7 @@ This package generates pure Swift code from SVG paths:
 
 Browse all 1694 icons at [lucide.dev/icons](https://lucide.dev/icons)
 
-Names are converted from kebab-case to camelCase:
+Names are converted from kebab-case to camelCase following Swift API Design Guidelines:
 - `arrow-right` → `.arrowRight`
 - `circle-x` → `.circleX`
 - `a-arrow-down` → `.aArrowDown`
