@@ -89,6 +89,7 @@ import XCTest     // For tests only
 - Include edge cases for parser logic
 
 ### Git & Versioning
+- Track library version in `.library-version` (auto-increments patch on icon sync)
 - Track upstream Lucide version in `.lucide-version`
 - Commit messages: concise, imperative mood
 - Generated code updates go in separate commits
@@ -129,24 +130,28 @@ Sources/
 ## Workflow
 
 ### Versioning Strategy
-- **Dual versioning**: Library version (git tags) is independent from upstream Lucide version
-- **Library Version**: Tracked via git tags (e.g., `1.0.0`)
+- **Dual versioning**: Library version is independent from upstream Lucide version
+- **Library Version**: Tracked in `.library-version` file (e.g., `0.1.0`), auto-increments patch on icon updates
 - **Upstream Version**: Tracked in `.lucide-version` file (e.g., `1.7.0`)
 - Access programmatically via `LucideVersions.libraryVersion` and `LucideVersions.lucideVersion`
 
-### Syncing with Upstream
-The `.github/workflows/sync-icons.yml` runs daily to:
+### Auto Sync and Release
+The `.github/workflows/sync-and-release.yml` runs daily to:
 1. Check upstream Lucide releases
-2. Run `swift run LucideGenerator`
-3. Commit generated files with icon updates
-4. Does NOT create releases (library releases are manual)
+2. If new version available:
+   - Run `swift run LucideGenerator`
+   - Auto-increment patch version in `.library-version` (e.g., 0.1.0 → 0.1.1)
+   - Commit generated files
+   - Create git tag and GitHub release
+3. If no update: skip silently
 
-### Creating Releases
-The `.github/workflows/release.yml` is manually triggered to:
-1. Run generator and tests
-2. Create git tag with specified library version
-3. Create GitHub release with version info
-4. Library releases are decoupled from icon syncs
+### Manual Major/Minor Releases
+For breaking changes or new features:
+1. Manually update `.library-version` (e.g., 0.1.5 → 0.2.0)
+2. Commit the change
+3. Create tag manually: `git tag -a 0.2.0 -m "Release 0.2.0"`
+4. Push tag: `git push origin 0.2.0`
+5. GitHub release is created automatically by the workflow
 
 ## Resources
 - Lucide Icons: https://lucide.dev
