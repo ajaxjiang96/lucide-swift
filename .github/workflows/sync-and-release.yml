@@ -99,6 +99,10 @@ jobs:
         ICON_COUNT=$(grep -c "case " Sources/LucideSwift/Lucide+Generated.swift || echo "0")
         echo "icon_count=$ICON_COUNT" >> $GITHUB_OUTPUT
     
+    - name: Generate Preview Screenshot
+      if: steps.check.outputs.needs_update == 'true'
+      run: swift run PreviewGenerator
+    
     - name: Run tests
       if: steps.check.outputs.needs_update == 'true'
       run: swift test

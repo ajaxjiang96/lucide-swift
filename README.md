@@ -14,6 +14,8 @@
 
 A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) with native SwiftUI support.
 
+![Lucide Swift Preview](docs/preview.png)
+
 ## Features
 
 - **True Vector Rendering**: SVG paths converted to native SwiftUI `Shape` - scales infinitely to any size without pixelation

@@ -34,5 +34,9 @@ let package = Package(
                 .product(name: "SVGPath", package: "SVGPath")
             ]
         ),
+        .executableTarget(
+            name: "PreviewGenerator",
+            dependencies: ["LucideSwift"]
+        ),
     ]
 )
