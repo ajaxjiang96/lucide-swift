@@ -13,59 +13,46 @@ import SVGPath
 
 struct Config {
     static let lucideRepoURL = "https://github.com/lucide-icons/lucide.git"
+    static let lucideLabRepoURL = "https://github.com/lucide-icons/lucide-lab.git"
     static let iconsPath = "icons"
     static let outputFile = "Sources/LucideSwift/Lucide+Generated.swift"
     static let tempDirectory = FileManager.default.temporaryDirectory.appendingPathComponent("lucide-generator")
     static let lucideVersionFile = ".lucide-version"
-    
+    static let lucideLabVersionFile = ".lucide-lab-version"
     static let libraryVersionFile = ".library-version"
     
     /// Get the library version from .library-version file, or return "dev" if not found
     static var libraryVersion: String {
-        // Search for .library-version file starting from current directory and going up
-        var searchDir = FileManager.default.currentDirectoryPath
-        for _ in 0..<10 {  // Search up to 10 levels up
-            let filePath = "\(searchDir)/\(libraryVersionFile)"
-            if FileManager.default.fileExists(atPath: filePath) {
-                do {
-                    let content = try String(contentsOfFile: filePath, encoding: .utf8)
-                    return content.trimmingCharacters(in: .whitespacesAndNewlines)
-                } catch {
-                    print("⚠️  Warning: Could not read \(libraryVersionFile) at \(filePath)")
-                }
-            }
-            // Go up one directory
-            let parentDir = (searchDir as NSString).deletingLastPathComponent
-            if parentDir == searchDir {  // Reached root
-                break
-            }
-            searchDir = parentDir
-        }
-        return "dev"
+        return readVersion(from: libraryVersionFile) ?? "dev"
     }
     
     /// Get the upstream Lucide version from the version file
     static var lucideVersion: String {
-        // Search for .lucide-version file starting from current directory and going up
+        return readVersion(from: lucideVersionFile) ?? "unknown"
+    }
+    
+    /// Get the upstream Lucide Lab version from the version file
+    static var lucideLabVersion: String {
+        return readVersion(from: lucideLabVersionFile) ?? "main"
+    }
+    
+    private static func readVersion(from fileName: String) -> String? {
         var searchDir = FileManager.default.currentDirectoryPath
-        for _ in 0..<10 {  // Search up to 10 levels up
-            let filePath = "\(searchDir)/\(lucideVersionFile)"
+        for _ in 0..<10 {
+            let filePath = "\(searchDir)/\(fileName)"
             if FileManager.default.fileExists(atPath: filePath) {
                 do {
                     let content = try String(contentsOfFile: filePath, encoding: .utf8)
                     return content.trimmingCharacters(in: .whitespacesAndNewlines)
                 } catch {
-                    print("⚠️  Warning: Could not read \(lucideVersionFile) at \(filePath)")
+                    print("⚠️  Warning: Could not read \(fileName) at \(filePath)")
                 }
             }
-            // Go up one directory
             let parentDir = (searchDir as NSString).deletingLastPathComponent
-            if parentDir == searchDir {  // Reached root
-                break
-            }
+            if parentDir == searchDir { break }
             searchDir = parentDir
         }
-        return "unknown"
+        return nil
     }
 
     /// Extra icons that are not in the Lucide repository but should be included
@@ -73,22 +60,28 @@ struct Config {
         Icon(name: "lucide", pathStrings: [
             "M7 21h10",
             "M7 3v18"
-        ]),
+        ], type: .regular),
         Icon(name: "lucide-lab", pathStrings: [
             "M10 2v7.31",
             "M14 9.3V2",
             "M8.5 2h7",
             "M14 9.3a6.5 6.5 0 1 1-4 0",
             "M5.52 16h12.96"
-        ])
+        ], type: .lab)
     ]
 }
 
 // MARK: - Icon Data Structure
 
+enum IconType {
+    case regular
+    case lab
+}
+
 struct Icon {
     let name: String
     let pathStrings: [String]
+    let type: IconType
     
     var swiftName: String {
         // Convert kebab-case to camelCase for Swift
@@ -325,6 +318,10 @@ struct SwiftCodeGenerator {
     static func generateSwiftCode(icons: [Icon]) -> String {
         let libraryVersion = Config.libraryVersion
         let lucideVersion = Config.lucideVersion
+        let lucideLabVersion = Config.lucideLabVersion
+        
+        let regularIcons = icons.filter { $0.type == .regular }
+        let labIcons = icons.filter { $0.type == .lab }
         
         var code = """
         //
@@ -334,6 +331,7 @@ struct SwiftCodeGenerator {
         //  Auto-generated from Lucide Icons using SVGPath
         //  Library Version: \(libraryVersion)
         //  Lucide Icons Version: \(lucideVersion)
+        //  Lucide Lab Version: \(lucideLabVersion)
         //  DO NOT EDIT MANUALLY
         //
         
@@ -345,8 +343,8 @@ struct SwiftCodeGenerator {
         
         """
         
-        // Generate enum cases
-        for icon in icons {
+        // Generate regular enum cases
+        for icon in regularIcons {
             code += "    case \(icon.swiftName)\n"
         }
         
@@ -358,8 +356,8 @@ struct SwiftCodeGenerator {
         
         """
         
-        // Generate path data
-        for icon in icons {
+        // Generate regular path switches
+        for icon in regularIcons {
             code += "        case .\(icon.swiftName):\n"
             code += "            return Self.\(icon.swiftName)Path\n"
         }
@@ -375,35 +373,58 @@ struct SwiftCodeGenerator {
         
         """
         
-        // Generate individual path functions
-        for icon in icons {
-            var pathCode = ""
-            
-            for pathString in icon.pathStrings {
-                do {
-                    // Use SVGPath to parse the path string
-                    // Don't invert Y-axis to maintain SVG coordinate system (origin at top-left)
-                    let options = SVGPath.ParseOptions(invertYAxis: false)
-                    let svgPath = try SVGPath(string: pathString, with: options)
-                    let cgPath = CGPath.from(svgPath)
-                    let swiftCode = convertToSwiftPathCode(cgPath: cgPath)
-                    pathCode += swiftCode
-                } catch {
-                    print("⚠️  Failed to parse path for \(icon.name): \(error)")
+        // Generate regular path definitions
+        for icon in regularIcons {
+            code += generatePathStaticProperty(for: icon)
+        }
+        
+        code += "}\n\n"
+        
+        // MARK: - Lucide Lab Icon Enum
+        
+        code += """
+        // MARK: - Lucide Lab Icon Enum
+        
+        public enum LucideLabIconName: String, CaseIterable {
+        
+        """
+        
+        // Generate lab enum cases
+        for icon in labIcons {
+            code += "    case \(icon.swiftName)\n"
+        }
+        
+        code += """
+        
+            /// Returns a SwiftUI Path for this icon
+            public var path: Path {
+                switch self {
+        
+        """
+        
+        // Generate lab path switches
+        for icon in labIcons {
+            code += "        case .\(icon.swiftName):\n"
+            code += "            return Self.\(icon.swiftName)Path\n"
+        }
+        
+        code += """
                 }
             }
             
-            code += "        \n"
-            code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon path\n"
-            code += "    static let \(icon.swiftName)Path: Path = {\n"
-            code += "        var path = Path()\n"
-            code += "        \(pathCode)"
-            code += "        return path\n"
-            code += "    }()\n"
+            /// Returns a SwiftUI Shape for this icon
+            public var shape: LucideShape {
+                LucideShape(path: self.path)
+            }
+        
+        """
+        
+        // Generate lab path definitions
+        for icon in labIcons {
+            code += generatePathStaticProperty(for: icon)
         }
         
-        code += "}\n"
-        code += "\n"
+        code += "}\n\n"
         
         code += """
         // MARK: - Convenient Access
@@ -412,14 +433,26 @@ struct SwiftCodeGenerator {
         
         """
         
-        // Generate static properties
-        for icon in icons {
+        // Generate regular static properties
+        for icon in regularIcons {
             code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon\n"
             code += "    public static let \(icon.swiftName): LucideShape = LucideShape(path: LucideIconName.\(icon.swiftName)Path)\n\n"
         }
         
-        code += "}\n"
-        code += "\n"
+        code += "}\n\n"
+        
+        code += """
+        public struct LucideLab {
+        
+        """
+        
+        // Generate lab static properties
+        for icon in labIcons {
+            code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon (Experimental)\n"
+            code += "    public static let \(icon.swiftName): LucideShape = LucideShape(path: LucideLabIconName.\(icon.swiftName)Path)\n\n"
+        }
+        
+        code += "}\n\n"
         
         code += """
         // MARK: - Version Information
@@ -431,9 +464,35 @@ struct SwiftCodeGenerator {
             
             /// The version of upstream Lucide Icons bundled with this release
             public static let lucideVersion = "\(lucideVersion)"
+            
+            /// The version of upstream Lucide Lab icons bundled with this release
+            public static let lucideLabVersion = "\(lucideLabVersion)"
         }
         """
         
+        return code
+    }
+    
+    private static func generatePathStaticProperty(for icon: Icon) -> String {
+        var pathCode = ""
+        for pathString in icon.pathStrings {
+            do {
+                let options = SVGPath.ParseOptions(invertYAxis: false)
+                let svgPath = try SVGPath(string: pathString, with: options)
+                let cgPath = CGPath.from(svgPath)
+                pathCode += convertToSwiftPathCode(cgPath: cgPath)
+            } catch {
+                print("⚠️  Failed to parse path for \(icon.name): \(error)")
+            }
+        }
+        
+        var code = "        \n"
+        code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon path\n"
+        code += "    static let \(icon.swiftName)Path: Path = {\n"
+        code += "        var path = Path()\n"
+        code += "        \(pathCode)"
+        code += "        return path\n"
+        code += "    }()\n"
         return code
     }
     
@@ -453,19 +512,11 @@ struct SwiftCodeGenerator {
                 
             case .addLineToPoint:
                 let endPoint = points[0]
-                
-                // Check if this is a near-zero-length line (dot indicator)
-                // These are used in icons like "info" to create dots
                 if let start = currentPoint {
                     let dx = endPoint.x - start.x
                     let dy = endPoint.y - start.y
                     let distance = sqrt(dx * dx + dy * dy)
-                    
-                    // If the line is extremely short (< 0.1 units), render it as a circle
-                    // This matches SVG stroke-linecap="round" behavior for tiny lines
                     if distance < 0.1 && distance > 0 {
-                        // Use a small circle with radius proportional to the viewbox
-                        // 0.35 is chosen to match the visual appearance of a 2px stroke at 24x24
                         let radius = 0.35
                         code += "path.addEllipse(in: CGRect(x: \(endPoint.x - radius), y: \(endPoint.y - radius), width: \(radius * 2), height: \(radius * 2)))\n"
                     } else {
@@ -516,62 +567,21 @@ func main() async throws {
     }
     try fileManager.createDirectory(at: Config.tempDirectory, withIntermediateDirectories: true)
     
-    // Clone Lucide repository
-    print("📦 Cloning Lucide repository...")
-    
-    #if os(macOS)
-    // Clone specific version
-    let tag = Config.lucideVersion
-    let cloneProcess = Process()
-    cloneProcess.executableURL = URL(fileURLWithPath: "/usr/bin/git")
-    cloneProcess.arguments = ["clone", "--depth", "1", "--branch", tag, Config.lucideRepoURL, Config.tempDirectory.path]
-    
-    try cloneProcess.run()
-    cloneProcess.waitUntilExit()
-    
-    if cloneProcess.terminationStatus != 0 {
-        throw GeneratorError.cloneFailed
-    }
-    #else
-    throw GeneratorError.unsupportedPlatform
-    #endif
-    
-    print("✅ Repository cloned (version \(Config.lucideVersion))")
-    
-    // Find and parse icons
-    let iconsDirectory = Config.tempDirectory.appendingPathComponent(Config.iconsPath)
-    let contents = try fileManager.contentsOfDirectory(at: iconsDirectory, includingPropertiesForKeys: nil)
-    
-    let svgFiles = contents.filter { $0.pathExtension == "svg" }
-    print("📁 Found \(svgFiles.count) icons")
-    
     var icons: [Icon] = []
     
-    for (index, svgFile) in svgFiles.enumerated() {
-        let name = svgFile.deletingPathExtension().lastPathComponent
-        
-        // Progress indicator
-        if index % 100 == 0 && index > 0 {
-            print("  Processed \(index)/\(svgFiles.count) icons...")
-        }
-        
-        do {
-            let svgContent = try String(contentsOf: svgFile, encoding: .utf8)
-            let pathStrings = SVGParser.extractPaths(from: svgContent)
-            
-            if pathStrings.isEmpty {
-                print("⚠️  No paths found in: \(name)")
-                continue
-            }
-            
-            let icon = Icon(name: name, pathStrings: pathStrings)
-            icons.append(icon)
-        } catch {
-            print("⚠️  Could not parse: \(name) - \(error)")
-        }
-    }
+    // Process Regular Icons
+    print("📦 Cloning Lucide repository...")
+    let regularPath = Config.tempDirectory.appendingPathComponent("lucide")
+    try clone(url: Config.lucideRepoURL, to: regularPath, branch: Config.lucideVersion)
+    icons.append(contentsOf: try parseIcons(in: regularPath, type: .regular))
     
-    print("✅ Parsed \(icons.count) icons")
+    // Process Lab Icons
+    print("📦 Cloning Lucide Lab repository...")
+    let labPath = Config.tempDirectory.appendingPathComponent("lucide-lab")
+    try clone(url: Config.lucideLabRepoURL, to: labPath, branch: Config.lucideLabVersion)
+    icons.append(contentsOf: try parseIcons(in: labPath, type: .lab))
+    
+    print("✅ Parsed \(icons.count) total icons (\(icons.filter { $0.type == .regular }.count) regular, \(icons.filter { $0.type == .lab }.count) lab)")
     
     // Add extra icons
     icons.append(contentsOf: Config.extraIcons)
@@ -592,6 +602,51 @@ func main() async throws {
     
     // Cleanup
     try fileManager.removeItem(at: Config.tempDirectory)
+}
+
+func clone(url: String, to path: URL, branch: String) throws {
+    #if os(macOS)
+    let cloneProcess = Process()
+    cloneProcess.executableURL = URL(fileURLWithPath: "/usr/bin/git")
+    cloneProcess.arguments = ["clone", "--depth", "1", "--branch", branch, url, path.path]
+    try cloneProcess.run()
+    cloneProcess.waitUntilExit()
+    if cloneProcess.terminationStatus != 0 {
+        throw GeneratorError.cloneFailed
+    }
+    #else
+    throw GeneratorError.unsupportedPlatform
+    #endif
+}
+
+func parseIcons(in path: URL, type: IconType) throws -> [Icon] {
+    let fileManager = FileManager.default
+    let iconsDirectory = path.appendingPathComponent(Config.iconsPath)
+    
+    // Check if icons directory exists, some repos might have it at root or elsewhere
+    // but Lucide and Lucide-Lab use 'icons/'
+    guard fileManager.fileExists(atPath: iconsDirectory.path) else {
+        print("⚠️  Warning: Icons directory not found at \(iconsDirectory.path)")
+        return []
+    }
+    
+    let contents = try fileManager.contentsOfDirectory(at: iconsDirectory, includingPropertiesForKeys: nil)
+    let svgFiles = contents.filter { $0.pathExtension == "svg" }
+    
+    var icons: [Icon] = []
+    for svgFile in svgFiles {
+        let name = svgFile.deletingPathExtension().lastPathComponent
+        do {
+            let svgContent = try String(contentsOf: svgFile, encoding: .utf8)
+            let pathStrings = SVGParser.extractPaths(from: svgContent)
+            if !pathStrings.isEmpty {
+                icons.append(Icon(name: name, pathStrings: pathStrings, type: type))
+            }
+        } catch {
+            print("⚠️  Could not parse: \(name) - \(error)")
+        }
+    }
+    return icons
 }
 
 enum GeneratorError: Error {

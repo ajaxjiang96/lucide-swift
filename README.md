@@ -17,7 +17,8 @@ A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) w
 ## Features
 
 - **True Vector Rendering**: SVG paths converted to native SwiftUI `Shape` - scales infinitely to any size without pixelation
-- **Type-safe API**: 1694 icons as compile-time checked enum cases with full Xcode autocomplete
+- **Type-safe API**: 2000+ icons as compile-time checked enum cases with full Xcode autocomplete
+- **Lucide Lab Support**: Full integration of experimental icons from the [Lucide Lab](https://github.com/lucide-icons/lucide-lab) repository
 - **Zero Runtime Dependencies**: Pure Swift implementation, no external dependencies at runtime
 - **SwiftUI Native**: Built on SwiftUI's `Shape` protocol with full modifier support
 - **Multi-Platform**: iOS 14+, macOS 11+, tvOS 14+, watchOS 7+, visionOS 1+
@@ -65,6 +66,32 @@ struct ContentView: View {
                 .stroke(Color.red, lineWidth: 2)
                 .frame(width: 40, height: 40)
                 .background(Color.yellow.opacity(0.2))
+        }
+    }
+}
+```
+
+### Lucide Lab (Experimental)
+
+Experimental icons from the [Lucide Lab](https://github.com/lucide-icons/lucide-lab) repository are available in a separate namespace to clearly distinguish them from the stable set.
+
+```swift
+import LucideSwift
+import SwiftUI
+
+struct ExperimentalView: View {
+    var body: some View {
+        VStack {
+            // Dedicated Lab View
+            LucideLabIcon(.broom, size: 32, color: .purple)
+            
+            // Lab icons in standard Label
+            Label("New Idea", lucideLab: .sparkles)
+            
+            // Access underlying shape
+            LucideLab.avocado
+                .fill(Color.green)
+                .frame(width: 40, height: 40)
         }
     }
 }
@@ -174,9 +201,11 @@ This package generates pure Swift code from SVG paths:
 
 ## Technical Details
 
-- **Library Version**: 1.0.0
+- **Library Version**: 0.1.0
 - **Lucide Icons**: 1694 icons (v1.7.0)
-- **Generated Code**: ~3.3MB of Swift path data
+- **Lucide Lab Icons**: 373 icons (experimental)
+- **Total Icons**: 2069 icons
+- **Generated Code**: ~4.1MB of Swift path data
 - **Build Time**: Zero impact (generated at package build time)
 - **Runtime Memory**: Cached `static let` paths executed exactly once, negligible overhead during view diffing
 - **Stroke Scaling**: Configurable via `strokeWidth` and `absoluteStrokeWidth` parameters

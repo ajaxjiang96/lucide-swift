@@ -98,13 +98,10 @@ import XCTest     // For tests only
 
 ### Key Components
 1. **LucideShape**: Shape protocol implementation for SVG rendering.
-2. **LucideIcon**: SwiftUI View wrapper with support for:
-    - `size`: Icon dimensions.
-    - `color`: Optional `Color`. Defaults to `nil` for environment `foregroundColor` inheritance.
-    - `strokeWidth`: Adjustable stroke thickness (default 2).
-    - `absoluteStrokeWidth`: Constant stroke width vs. proportional scaling.
-3. **LucideIconFill**: SwiftUI View wrapper for solid/filled icons.
-4. **LucideGenerator**: Fetches icons from upstream and generates Swift code using `nicklockwood/SVGPath`.
+2. **LucideIcon**: SwiftUI View wrapper for standard icons.
+3. **LucideLabIcon**: SwiftUI View wrapper for experimental Lab icons.
+4. **LucideIconFill / LucideLabIconFill**: SwiftUI View wrappers for solid/filled icons.
+5. **LucideGenerator**: Fetches icons from both `lucide` and `lucide-lab` repositories and generates Swift code.
 
 ### SVG Path Commands Supported
 - `M/m`: Move to
@@ -132,8 +129,10 @@ Sources/
 ### Versioning Strategy
 - **Dual versioning**: Library version is independent from upstream Lucide version
 - **Library Version**: Tracked in `.library-version` file (e.g., `0.1.0`), auto-increments patch on icon updates
-- **Upstream Version**: Tracked in `.lucide-version` file (e.g., `1.7.0`)
-- Access programmatically via `LucideVersions.libraryVersion` and `LucideVersions.lucideVersion`
+- **Upstream Version**: Tracked in `.lucide-version` (e.g., `1.7.0`)
+- **Lab Version**: Tracked in `.lucide-lab-version`
+- Access programmatically via `LucideVersions`
+
 
 ### Auto Sync and Release
 The `.github/workflows/sync-and-release.yml` runs daily to:

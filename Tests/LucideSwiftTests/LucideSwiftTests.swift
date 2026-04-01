@@ -25,6 +25,19 @@ final class LucideSwiftTests: XCTestCase {
         XCTAssertNotNil(icon)
     }
     
+    func testLabIcons() {
+        // Test that we can access lab icons
+        let broomIcon = LucideLab.broom
+        let avocadoIcon = LucideLab.avocado
+        
+        XCTAssertNotNil(broomIcon)
+        XCTAssertNotNil(avocadoIcon)
+        
+        // Test lab icon view
+        let iconView = LucideLabIcon(.broom, size: 32, color: .purple)
+        XCTAssertNotNil(iconView)
+    }
+    
     func testAllIconsExist() {
         // Test that we can access various icons
         let icons: [LucideShape] = [

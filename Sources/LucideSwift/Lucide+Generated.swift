@@ -5,6 +5,7 @@
 //  Auto-generated from Lucide Icons using SVGPath
 //  Library Version: 0.1.0
 //  Lucide Icons Version: 1.7.0
+//  Lucide Lab Version: main
 //  DO NOT EDIT MANUALLY
 //
 
@@ -933,7 +934,6 @@ public enum LucideIconName: String, CaseIterable {
     case logs
     case lollipop
     case lucide
-    case lucideLab
     case luggage
     case magnet
     case mail
@@ -3553,8 +3553,6 @@ public enum LucideIconName: String, CaseIterable {
             return Self.lollipopPath
         case .lucide:
             return Self.lucidePath
-        case .lucideLab:
-            return Self.lucideLabPath
         case .luggage:
             return Self.luggagePath
         case .magnet:
@@ -27111,25 +27109,6 @@ path.addLine(to: CGPoint(x: 7.0, y: 21.0))
         return path
     }()
         
-    /// Lucide Lab icon path
-    static let lucideLabPath: Path = {
-        var path = Path()
-        path.move(to: CGPoint(x: 10.0, y: 2.0))
-path.addLine(to: CGPoint(x: 10.0, y: 9.309999999999999))
-path.move(to: CGPoint(x: 14.0, y: 9.3))
-path.addLine(to: CGPoint(x: 14.0, y: 2.0))
-path.move(to: CGPoint(x: 8.5, y: 2.0))
-path.addLine(to: CGPoint(x: 15.5, y: 2.0))
-path.move(to: CGPoint(x: 14.0, y: 9.3))
-path.addCurve(to: CGPoint(x: 18.42068064342762, y: 16.497012168658127), control1: CGPoint(x: 17.043818808919582, y: 10.284312663091544), control2: CGPoint(x: 18.918916941525097, y: 13.337033537161847))
-path.addCurve(to: CGPoint(x: 12.0, y: 21.984658438426493), control1: CGPoint(x: 17.922444345330142, y: 19.656990800154404), control2: CGPoint(x: 15.199016155047513, y: 21.984658438426493))
-path.addCurve(to: CGPoint(x: 5.579319356572381, y: 16.497012168658124), control1: CGPoint(x: 8.800983844952489, y: 21.984658438426493), control2: CGPoint(x: 6.07755565466986, y: 19.656990800154404))
-path.addCurve(to: CGPoint(x: 10.0, y: 9.3), control1: CGPoint(x: 5.081083058474904, y: 13.337033537161847), control2: CGPoint(x: 6.956181191080422, y: 10.284312663091542))
-path.move(to: CGPoint(x: 5.52, y: 16.0))
-path.addLine(to: CGPoint(x: 18.48, y: 16.0))
-        return path
-    }()
-        
     /// Luggage icon path
     static let luggagePath: Path = {
         var path = Path()
@@ -45592,6 +45571,11192 @@ path.addLine(to: CGPoint(x: 14.0, y: 11.0))
     }()
 }
 
+// MARK: - Lucide Lab Icon Enum
+
+public enum LucideLabIconName: String, CaseIterable {
+    case ampersandSquare
+    case appleCore
+    case arrowsUpDownSquare
+    case astronautHelmet
+    case atSignCircle
+    case atSignSquare
+    case avocado
+    case babyPacifier
+    case bacon
+    case bagHand
+    case barbecue
+    case barberPole
+    case barn
+    case baseball
+    case baselineSquare
+    case basketball
+    case batBall
+    case bathBubble
+    case beachBall
+    case bearFace
+    case bedBunk
+    case bee
+    case beeHive
+    case beetleScarab
+    case bellConcierge
+    case bellConciergeDot
+    case bellConciergeOff
+    case belt
+    case boldSquare
+    case bottleBaby
+    case bottleChampagne
+    case bottleDispenser
+    case bottlePerfume
+    case bottlePlastic
+    case bottleSpray
+    case bottleToothbrushComb
+    case bowlChopsticks
+    case bowlOverflow
+    case bowling
+    case braSports
+    case briefcasePlus
+    case broom
+    case bucket
+    case bullHead
+    case burger
+    case butterfly
+    case cabin
+    case cabinetFiling
+    case cactus
+    case candleHolder
+    case candleHolderLit
+    case candleTealight
+    case candleTealightLit
+    case candlestick
+    case candlestickBig
+    case candlestickBigLit
+    case candlestickLit
+    case cardCredit
+    case cardSd
+    case cardSim
+    case carton
+    case cartonOff
+    case caseCamel
+    case caseKebab
+    case caseSnake
+    case caseSnakeUpper
+    case catBig
+    case cauldron
+    case cent
+    case centCircle
+    case centSquare
+    case chairsTableParasol
+    case chairsTablePlatter
+    case chameleon
+    case cheese
+    case chest
+    case chevronsLeftRightSquare
+    case chevronsUpDownSquare
+    case cloth
+    case coatHanger
+    case cocktail
+    case coconut
+    case coffeeBean
+    case coffeemaker
+    case coinsExchange
+    case coinsStack
+    case copyCode
+    case copyDown
+    case copyFilePath
+    case copyImage
+    case copyText
+    case copyType
+    case cowHead
+    case cowUdderDroplets
+    case crab
+    case cricketBall
+    case cricketWicket
+    case crossSquare
+    case crosshair2
+    case crosshair2Dot
+    case crosshairPlus
+    case crosshairPlusDot
+    case crosshairSquare
+    case cupSaucer
+    case cupToGo
+    case currencySquare
+    case deskLamp
+    case diaper
+    case dishwasher
+    case dollarSignCircle
+    case dollarSignSquare
+    case doorbellIntercom
+    case dress
+    case eggCup
+    case elephant
+    case elephantFace
+    case escalatorArrowDownLeft
+    case escalatorArrowUpRight
+    case euroCircle
+    case euroSquare
+    case faceAlien
+    case fanHandheld
+    case farm
+    case faucet
+    case featherPlus
+    case featherSquare
+    case featherText
+    case flippers
+    case floorPlan
+    case floppyDisk
+    case floppyDisk2
+    case floppyDiskRear
+    case floppyDisks
+    case floppyDisks2
+    case floppyDisksRear
+    case flowerLotus
+    case flowerPot
+    case flowerRose
+    case flowerRoseSingle
+    case flowerStem
+    case flowerTulip
+    case football
+    case footballGoal
+    case footballHelmet
+    case forkKnife
+    case forkKnifeCrossed
+    case foxFaceTail
+    case frogFace
+    case fruit
+    case garlic
+    case gearbox
+    case gearboxSquare
+    case gemRing
+    case glassesSquare
+    case glassesSun
+    case goalNet
+    case goblet
+    case gobletCrack
+    case golfDriver
+    case grapes
+    case gridLines
+    case gridLinesOffset
+    case hairdryer
+    case hatBaseball
+    case hatBeanie
+    case hatBowler
+    case hatChef
+    case hatHard
+    case hatTop
+    case headingCircle
+    case headingSquare
+    case hedgehog
+    case helmetDiving
+    case hexagons3
+    case hexagons7
+    case highHeel
+    case hockey
+    case hockeyMask
+    case horseHead
+    case hotDog
+    case house
+    case houseManor
+    case houseOff
+    case houseRoof
+    case houseRoofOff
+    case houses
+    case iceHockey
+    case iceSkate
+    case igloo
+    case indianRupeeCircle
+    case indianRupeeSquare
+    case intercom
+    case iron
+    case ironOff
+    case ironingBoard
+    case italicSquare
+    case jacket
+    case jacketSports
+    case japaneseYenCircle
+    case japaneseYenSquare
+    case jar
+    case jug
+    case kebab
+    case kettle
+    case kettleElectric
+    case kiwi
+    case layoutGridMoveHorizontal
+    case layoutGridMoveVertical
+    case layoutGridPlus
+    case layoutListMove
+    case lemon
+    case lifeJacket
+    case ligatureSquare
+    case lightSwitch
+    case lingerie
+    case locateSquare
+    case lucideLab
+    case luggageCabin
+    case lunchBox
+    case mailboxFlag
+    case maskSnorkel
+    case mealBox
+    case mortarPestle
+    case motorRacingHelmet
+    case mug
+    case mugTeabag
+    case mustache
+    case olive
+    case onion
+    case owl
+    case pacMan
+    case pacManGhost
+    case palmtreeIslandSun
+    case pancakes
+    case peace
+    case peach
+    case pear
+    case penguin
+    case pepperChilli
+    case pie
+    case pig
+    case pigHead
+    case pillow
+    case pinSafety
+    case pinSafetyOpen
+    case pineappleRing
+    case planet
+    case pond
+    case poundSterlingCircle
+    case poundSterlingSquare
+    case pram
+    case pretzel
+    case pumpkin
+    case razor
+    case razorBlade
+    case reelThread
+    case refrigeratorFreezer
+    case removeFormattingSquare
+    case rugby
+    case russianRubleCircle
+    case russianRubleSquare
+    case sausage
+    case scarf
+    case scissorsHairComb
+    case shark
+    case shaveFace
+    case shirtFoldedButtons
+    case shirtLongSleeve
+    case shirtT
+    case shirtTRuler
+    case shirtTVNeck
+    case shorts
+    case shortsBoxer
+    case shovelDig
+    case shower
+    case skirt
+    case skis
+    case slotCard
+    case slotCardCredit
+    case slotDisc
+    case sneaker
+    case snowboard
+    case snowman
+    case soapBar
+    case soccerBall
+    case soccerPitch
+    case socketEu
+    case socketUk
+    case socketUsa
+    case socks
+    case spider
+    case spiderWeb
+    case stairs
+    case stairsArch
+    case stairsArrowDownLeft
+    case stairsArrowUpRight
+    case starNorth
+    case steeringWheel
+    case strawberry
+    case strikethroughSquare
+    case stroller
+    case sunloungerParasolSun
+    case sunloungerParasolSunPalmtree
+    case sunloungerParasolTable
+    case surfboard
+    case sushi
+    case sushi2
+    case sushi3
+    case sushiChopsticks
+    case sweater
+    case swissFrancCircle
+    case swissFrancSquare
+    case tab
+    case tabArrowDown
+    case tabArrowUpRight
+    case tabCheck
+    case tabDot
+    case tabPlus
+    case tabSlash
+    case tabText
+    case tabX
+    case targetArrow
+    case tennisBall
+    case tennisRacket
+    case textSquare
+    case tie
+    case tieBow
+    case tieBowRibbon
+    case tire
+    case toast
+    case toaster
+    case toiletRoll
+    case toolbox
+    case toolbox2
+    case topCrop
+    case towelFolded
+    case towelRack
+    case treesForest
+    case triangleStripes
+    case trousers
+    case tuxedo
+    case typeSquare
+    case ufo
+    case underlineSquare
+    case unicornHead
+    case venn
+    case vest
+    case volleyball
+    case waffle
+    case wardrobe
+    case watchActivity
+    case watchAlarm
+    case watchBars
+    case watchCharging
+    case watchCheck
+    case watchLoader
+    case watchMusic
+    case watchSquare
+    case watchSquareAlarm
+    case watchText
+    case watermelon
+    case waveCircle
+    case wavesBirds
+    case wavesSharkFin
+    case whale
+    case whaleNarwhal
+    case wheel
+    case whisk
+    case whiskForkKnife
+    case whisks
+    case windmill
+    case wineGlassBottle
+    case yarnBall
+    case yinYang
+
+    /// Returns a SwiftUI Path for this icon
+    public var path: Path {
+        switch self {
+        case .ampersandSquare:
+            return Self.ampersandSquarePath
+        case .appleCore:
+            return Self.appleCorePath
+        case .arrowsUpDownSquare:
+            return Self.arrowsUpDownSquarePath
+        case .astronautHelmet:
+            return Self.astronautHelmetPath
+        case .atSignCircle:
+            return Self.atSignCirclePath
+        case .atSignSquare:
+            return Self.atSignSquarePath
+        case .avocado:
+            return Self.avocadoPath
+        case .babyPacifier:
+            return Self.babyPacifierPath
+        case .bacon:
+            return Self.baconPath
+        case .bagHand:
+            return Self.bagHandPath
+        case .barbecue:
+            return Self.barbecuePath
+        case .barberPole:
+            return Self.barberPolePath
+        case .barn:
+            return Self.barnPath
+        case .baseball:
+            return Self.baseballPath
+        case .baselineSquare:
+            return Self.baselineSquarePath
+        case .basketball:
+            return Self.basketballPath
+        case .batBall:
+            return Self.batBallPath
+        case .bathBubble:
+            return Self.bathBubblePath
+        case .beachBall:
+            return Self.beachBallPath
+        case .bearFace:
+            return Self.bearFacePath
+        case .bedBunk:
+            return Self.bedBunkPath
+        case .bee:
+            return Self.beePath
+        case .beeHive:
+            return Self.beeHivePath
+        case .beetleScarab:
+            return Self.beetleScarabPath
+        case .bellConcierge:
+            return Self.bellConciergePath
+        case .bellConciergeDot:
+            return Self.bellConciergeDotPath
+        case .bellConciergeOff:
+            return Self.bellConciergeOffPath
+        case .belt:
+            return Self.beltPath
+        case .boldSquare:
+            return Self.boldSquarePath
+        case .bottleBaby:
+            return Self.bottleBabyPath
+        case .bottleChampagne:
+            return Self.bottleChampagnePath
+        case .bottleDispenser:
+            return Self.bottleDispenserPath
+        case .bottlePerfume:
+            return Self.bottlePerfumePath
+        case .bottlePlastic:
+            return Self.bottlePlasticPath
+        case .bottleSpray:
+            return Self.bottleSprayPath
+        case .bottleToothbrushComb:
+            return Self.bottleToothbrushCombPath
+        case .bowlChopsticks:
+            return Self.bowlChopsticksPath
+        case .bowlOverflow:
+            return Self.bowlOverflowPath
+        case .bowling:
+            return Self.bowlingPath
+        case .braSports:
+            return Self.braSportsPath
+        case .briefcasePlus:
+            return Self.briefcasePlusPath
+        case .broom:
+            return Self.broomPath
+        case .bucket:
+            return Self.bucketPath
+        case .bullHead:
+            return Self.bullHeadPath
+        case .burger:
+            return Self.burgerPath
+        case .butterfly:
+            return Self.butterflyPath
+        case .cabin:
+            return Self.cabinPath
+        case .cabinetFiling:
+            return Self.cabinetFilingPath
+        case .cactus:
+            return Self.cactusPath
+        case .candleHolder:
+            return Self.candleHolderPath
+        case .candleHolderLit:
+            return Self.candleHolderLitPath
+        case .candleTealight:
+            return Self.candleTealightPath
+        case .candleTealightLit:
+            return Self.candleTealightLitPath
+        case .candlestick:
+            return Self.candlestickPath
+        case .candlestickBig:
+            return Self.candlestickBigPath
+        case .candlestickBigLit:
+            return Self.candlestickBigLitPath
+        case .candlestickLit:
+            return Self.candlestickLitPath
+        case .cardCredit:
+            return Self.cardCreditPath
+        case .cardSd:
+            return Self.cardSdPath
+        case .cardSim:
+            return Self.cardSimPath
+        case .carton:
+            return Self.cartonPath
+        case .cartonOff:
+            return Self.cartonOffPath
+        case .caseCamel:
+            return Self.caseCamelPath
+        case .caseKebab:
+            return Self.caseKebabPath
+        case .caseSnake:
+            return Self.caseSnakePath
+        case .caseSnakeUpper:
+            return Self.caseSnakeUpperPath
+        case .catBig:
+            return Self.catBigPath
+        case .cauldron:
+            return Self.cauldronPath
+        case .cent:
+            return Self.centPath
+        case .centCircle:
+            return Self.centCirclePath
+        case .centSquare:
+            return Self.centSquarePath
+        case .chairsTableParasol:
+            return Self.chairsTableParasolPath
+        case .chairsTablePlatter:
+            return Self.chairsTablePlatterPath
+        case .chameleon:
+            return Self.chameleonPath
+        case .cheese:
+            return Self.cheesePath
+        case .chest:
+            return Self.chestPath
+        case .chevronsLeftRightSquare:
+            return Self.chevronsLeftRightSquarePath
+        case .chevronsUpDownSquare:
+            return Self.chevronsUpDownSquarePath
+        case .cloth:
+            return Self.clothPath
+        case .coatHanger:
+            return Self.coatHangerPath
+        case .cocktail:
+            return Self.cocktailPath
+        case .coconut:
+            return Self.coconutPath
+        case .coffeeBean:
+            return Self.coffeeBeanPath
+        case .coffeemaker:
+            return Self.coffeemakerPath
+        case .coinsExchange:
+            return Self.coinsExchangePath
+        case .coinsStack:
+            return Self.coinsStackPath
+        case .copyCode:
+            return Self.copyCodePath
+        case .copyDown:
+            return Self.copyDownPath
+        case .copyFilePath:
+            return Self.copyFilePathPath
+        case .copyImage:
+            return Self.copyImagePath
+        case .copyText:
+            return Self.copyTextPath
+        case .copyType:
+            return Self.copyTypePath
+        case .cowHead:
+            return Self.cowHeadPath
+        case .cowUdderDroplets:
+            return Self.cowUdderDropletsPath
+        case .crab:
+            return Self.crabPath
+        case .cricketBall:
+            return Self.cricketBallPath
+        case .cricketWicket:
+            return Self.cricketWicketPath
+        case .crossSquare:
+            return Self.crossSquarePath
+        case .crosshair2:
+            return Self.crosshair2Path
+        case .crosshair2Dot:
+            return Self.crosshair2DotPath
+        case .crosshairPlus:
+            return Self.crosshairPlusPath
+        case .crosshairPlusDot:
+            return Self.crosshairPlusDotPath
+        case .crosshairSquare:
+            return Self.crosshairSquarePath
+        case .cupSaucer:
+            return Self.cupSaucerPath
+        case .cupToGo:
+            return Self.cupToGoPath
+        case .currencySquare:
+            return Self.currencySquarePath
+        case .deskLamp:
+            return Self.deskLampPath
+        case .diaper:
+            return Self.diaperPath
+        case .dishwasher:
+            return Self.dishwasherPath
+        case .dollarSignCircle:
+            return Self.dollarSignCirclePath
+        case .dollarSignSquare:
+            return Self.dollarSignSquarePath
+        case .doorbellIntercom:
+            return Self.doorbellIntercomPath
+        case .dress:
+            return Self.dressPath
+        case .eggCup:
+            return Self.eggCupPath
+        case .elephant:
+            return Self.elephantPath
+        case .elephantFace:
+            return Self.elephantFacePath
+        case .escalatorArrowDownLeft:
+            return Self.escalatorArrowDownLeftPath
+        case .escalatorArrowUpRight:
+            return Self.escalatorArrowUpRightPath
+        case .euroCircle:
+            return Self.euroCirclePath
+        case .euroSquare:
+            return Self.euroSquarePath
+        case .faceAlien:
+            return Self.faceAlienPath
+        case .fanHandheld:
+            return Self.fanHandheldPath
+        case .farm:
+            return Self.farmPath
+        case .faucet:
+            return Self.faucetPath
+        case .featherPlus:
+            return Self.featherPlusPath
+        case .featherSquare:
+            return Self.featherSquarePath
+        case .featherText:
+            return Self.featherTextPath
+        case .flippers:
+            return Self.flippersPath
+        case .floorPlan:
+            return Self.floorPlanPath
+        case .floppyDisk:
+            return Self.floppyDiskPath
+        case .floppyDisk2:
+            return Self.floppyDisk2Path
+        case .floppyDiskRear:
+            return Self.floppyDiskRearPath
+        case .floppyDisks:
+            return Self.floppyDisksPath
+        case .floppyDisks2:
+            return Self.floppyDisks2Path
+        case .floppyDisksRear:
+            return Self.floppyDisksRearPath
+        case .flowerLotus:
+            return Self.flowerLotusPath
+        case .flowerPot:
+            return Self.flowerPotPath
+        case .flowerRose:
+            return Self.flowerRosePath
+        case .flowerRoseSingle:
+            return Self.flowerRoseSinglePath
+        case .flowerStem:
+            return Self.flowerStemPath
+        case .flowerTulip:
+            return Self.flowerTulipPath
+        case .football:
+            return Self.footballPath
+        case .footballGoal:
+            return Self.footballGoalPath
+        case .footballHelmet:
+            return Self.footballHelmetPath
+        case .forkKnife:
+            return Self.forkKnifePath
+        case .forkKnifeCrossed:
+            return Self.forkKnifeCrossedPath
+        case .foxFaceTail:
+            return Self.foxFaceTailPath
+        case .frogFace:
+            return Self.frogFacePath
+        case .fruit:
+            return Self.fruitPath
+        case .garlic:
+            return Self.garlicPath
+        case .gearbox:
+            return Self.gearboxPath
+        case .gearboxSquare:
+            return Self.gearboxSquarePath
+        case .gemRing:
+            return Self.gemRingPath
+        case .glassesSquare:
+            return Self.glassesSquarePath
+        case .glassesSun:
+            return Self.glassesSunPath
+        case .goalNet:
+            return Self.goalNetPath
+        case .goblet:
+            return Self.gobletPath
+        case .gobletCrack:
+            return Self.gobletCrackPath
+        case .golfDriver:
+            return Self.golfDriverPath
+        case .grapes:
+            return Self.grapesPath
+        case .gridLines:
+            return Self.gridLinesPath
+        case .gridLinesOffset:
+            return Self.gridLinesOffsetPath
+        case .hairdryer:
+            return Self.hairdryerPath
+        case .hatBaseball:
+            return Self.hatBaseballPath
+        case .hatBeanie:
+            return Self.hatBeaniePath
+        case .hatBowler:
+            return Self.hatBowlerPath
+        case .hatChef:
+            return Self.hatChefPath
+        case .hatHard:
+            return Self.hatHardPath
+        case .hatTop:
+            return Self.hatTopPath
+        case .headingCircle:
+            return Self.headingCirclePath
+        case .headingSquare:
+            return Self.headingSquarePath
+        case .hedgehog:
+            return Self.hedgehogPath
+        case .helmetDiving:
+            return Self.helmetDivingPath
+        case .hexagons3:
+            return Self.hexagons3Path
+        case .hexagons7:
+            return Self.hexagons7Path
+        case .highHeel:
+            return Self.highHeelPath
+        case .hockey:
+            return Self.hockeyPath
+        case .hockeyMask:
+            return Self.hockeyMaskPath
+        case .horseHead:
+            return Self.horseHeadPath
+        case .hotDog:
+            return Self.hotDogPath
+        case .house:
+            return Self.housePath
+        case .houseManor:
+            return Self.houseManorPath
+        case .houseOff:
+            return Self.houseOffPath
+        case .houseRoof:
+            return Self.houseRoofPath
+        case .houseRoofOff:
+            return Self.houseRoofOffPath
+        case .houses:
+            return Self.housesPath
+        case .iceHockey:
+            return Self.iceHockeyPath
+        case .iceSkate:
+            return Self.iceSkatePath
+        case .igloo:
+            return Self.iglooPath
+        case .indianRupeeCircle:
+            return Self.indianRupeeCirclePath
+        case .indianRupeeSquare:
+            return Self.indianRupeeSquarePath
+        case .intercom:
+            return Self.intercomPath
+        case .iron:
+            return Self.ironPath
+        case .ironOff:
+            return Self.ironOffPath
+        case .ironingBoard:
+            return Self.ironingBoardPath
+        case .italicSquare:
+            return Self.italicSquarePath
+        case .jacket:
+            return Self.jacketPath
+        case .jacketSports:
+            return Self.jacketSportsPath
+        case .japaneseYenCircle:
+            return Self.japaneseYenCirclePath
+        case .japaneseYenSquare:
+            return Self.japaneseYenSquarePath
+        case .jar:
+            return Self.jarPath
+        case .jug:
+            return Self.jugPath
+        case .kebab:
+            return Self.kebabPath
+        case .kettle:
+            return Self.kettlePath
+        case .kettleElectric:
+            return Self.kettleElectricPath
+        case .kiwi:
+            return Self.kiwiPath
+        case .layoutGridMoveHorizontal:
+            return Self.layoutGridMoveHorizontalPath
+        case .layoutGridMoveVertical:
+            return Self.layoutGridMoveVerticalPath
+        case .layoutGridPlus:
+            return Self.layoutGridPlusPath
+        case .layoutListMove:
+            return Self.layoutListMovePath
+        case .lemon:
+            return Self.lemonPath
+        case .lifeJacket:
+            return Self.lifeJacketPath
+        case .ligatureSquare:
+            return Self.ligatureSquarePath
+        case .lightSwitch:
+            return Self.lightSwitchPath
+        case .lingerie:
+            return Self.lingeriePath
+        case .locateSquare:
+            return Self.locateSquarePath
+        case .lucideLab:
+            return Self.lucideLabPath
+        case .luggageCabin:
+            return Self.luggageCabinPath
+        case .lunchBox:
+            return Self.lunchBoxPath
+        case .mailboxFlag:
+            return Self.mailboxFlagPath
+        case .maskSnorkel:
+            return Self.maskSnorkelPath
+        case .mealBox:
+            return Self.mealBoxPath
+        case .mortarPestle:
+            return Self.mortarPestlePath
+        case .motorRacingHelmet:
+            return Self.motorRacingHelmetPath
+        case .mug:
+            return Self.mugPath
+        case .mugTeabag:
+            return Self.mugTeabagPath
+        case .mustache:
+            return Self.mustachePath
+        case .olive:
+            return Self.olivePath
+        case .onion:
+            return Self.onionPath
+        case .owl:
+            return Self.owlPath
+        case .pacMan:
+            return Self.pacManPath
+        case .pacManGhost:
+            return Self.pacManGhostPath
+        case .palmtreeIslandSun:
+            return Self.palmtreeIslandSunPath
+        case .pancakes:
+            return Self.pancakesPath
+        case .peace:
+            return Self.peacePath
+        case .peach:
+            return Self.peachPath
+        case .pear:
+            return Self.pearPath
+        case .penguin:
+            return Self.penguinPath
+        case .pepperChilli:
+            return Self.pepperChilliPath
+        case .pie:
+            return Self.piePath
+        case .pig:
+            return Self.pigPath
+        case .pigHead:
+            return Self.pigHeadPath
+        case .pillow:
+            return Self.pillowPath
+        case .pinSafety:
+            return Self.pinSafetyPath
+        case .pinSafetyOpen:
+            return Self.pinSafetyOpenPath
+        case .pineappleRing:
+            return Self.pineappleRingPath
+        case .planet:
+            return Self.planetPath
+        case .pond:
+            return Self.pondPath
+        case .poundSterlingCircle:
+            return Self.poundSterlingCirclePath
+        case .poundSterlingSquare:
+            return Self.poundSterlingSquarePath
+        case .pram:
+            return Self.pramPath
+        case .pretzel:
+            return Self.pretzelPath
+        case .pumpkin:
+            return Self.pumpkinPath
+        case .razor:
+            return Self.razorPath
+        case .razorBlade:
+            return Self.razorBladePath
+        case .reelThread:
+            return Self.reelThreadPath
+        case .refrigeratorFreezer:
+            return Self.refrigeratorFreezerPath
+        case .removeFormattingSquare:
+            return Self.removeFormattingSquarePath
+        case .rugby:
+            return Self.rugbyPath
+        case .russianRubleCircle:
+            return Self.russianRubleCirclePath
+        case .russianRubleSquare:
+            return Self.russianRubleSquarePath
+        case .sausage:
+            return Self.sausagePath
+        case .scarf:
+            return Self.scarfPath
+        case .scissorsHairComb:
+            return Self.scissorsHairCombPath
+        case .shark:
+            return Self.sharkPath
+        case .shaveFace:
+            return Self.shaveFacePath
+        case .shirtFoldedButtons:
+            return Self.shirtFoldedButtonsPath
+        case .shirtLongSleeve:
+            return Self.shirtLongSleevePath
+        case .shirtT:
+            return Self.shirtTPath
+        case .shirtTRuler:
+            return Self.shirtTRulerPath
+        case .shirtTVNeck:
+            return Self.shirtTVNeckPath
+        case .shorts:
+            return Self.shortsPath
+        case .shortsBoxer:
+            return Self.shortsBoxerPath
+        case .shovelDig:
+            return Self.shovelDigPath
+        case .shower:
+            return Self.showerPath
+        case .skirt:
+            return Self.skirtPath
+        case .skis:
+            return Self.skisPath
+        case .slotCard:
+            return Self.slotCardPath
+        case .slotCardCredit:
+            return Self.slotCardCreditPath
+        case .slotDisc:
+            return Self.slotDiscPath
+        case .sneaker:
+            return Self.sneakerPath
+        case .snowboard:
+            return Self.snowboardPath
+        case .snowman:
+            return Self.snowmanPath
+        case .soapBar:
+            return Self.soapBarPath
+        case .soccerBall:
+            return Self.soccerBallPath
+        case .soccerPitch:
+            return Self.soccerPitchPath
+        case .socketEu:
+            return Self.socketEuPath
+        case .socketUk:
+            return Self.socketUkPath
+        case .socketUsa:
+            return Self.socketUsaPath
+        case .socks:
+            return Self.socksPath
+        case .spider:
+            return Self.spiderPath
+        case .spiderWeb:
+            return Self.spiderWebPath
+        case .stairs:
+            return Self.stairsPath
+        case .stairsArch:
+            return Self.stairsArchPath
+        case .stairsArrowDownLeft:
+            return Self.stairsArrowDownLeftPath
+        case .stairsArrowUpRight:
+            return Self.stairsArrowUpRightPath
+        case .starNorth:
+            return Self.starNorthPath
+        case .steeringWheel:
+            return Self.steeringWheelPath
+        case .strawberry:
+            return Self.strawberryPath
+        case .strikethroughSquare:
+            return Self.strikethroughSquarePath
+        case .stroller:
+            return Self.strollerPath
+        case .sunloungerParasolSun:
+            return Self.sunloungerParasolSunPath
+        case .sunloungerParasolSunPalmtree:
+            return Self.sunloungerParasolSunPalmtreePath
+        case .sunloungerParasolTable:
+            return Self.sunloungerParasolTablePath
+        case .surfboard:
+            return Self.surfboardPath
+        case .sushi:
+            return Self.sushiPath
+        case .sushi2:
+            return Self.sushi2Path
+        case .sushi3:
+            return Self.sushi3Path
+        case .sushiChopsticks:
+            return Self.sushiChopsticksPath
+        case .sweater:
+            return Self.sweaterPath
+        case .swissFrancCircle:
+            return Self.swissFrancCirclePath
+        case .swissFrancSquare:
+            return Self.swissFrancSquarePath
+        case .tab:
+            return Self.tabPath
+        case .tabArrowDown:
+            return Self.tabArrowDownPath
+        case .tabArrowUpRight:
+            return Self.tabArrowUpRightPath
+        case .tabCheck:
+            return Self.tabCheckPath
+        case .tabDot:
+            return Self.tabDotPath
+        case .tabPlus:
+            return Self.tabPlusPath
+        case .tabSlash:
+            return Self.tabSlashPath
+        case .tabText:
+            return Self.tabTextPath
+        case .tabX:
+            return Self.tabXPath
+        case .targetArrow:
+            return Self.targetArrowPath
+        case .tennisBall:
+            return Self.tennisBallPath
+        case .tennisRacket:
+            return Self.tennisRacketPath
+        case .textSquare:
+            return Self.textSquarePath
+        case .tie:
+            return Self.tiePath
+        case .tieBow:
+            return Self.tieBowPath
+        case .tieBowRibbon:
+            return Self.tieBowRibbonPath
+        case .tire:
+            return Self.tirePath
+        case .toast:
+            return Self.toastPath
+        case .toaster:
+            return Self.toasterPath
+        case .toiletRoll:
+            return Self.toiletRollPath
+        case .toolbox:
+            return Self.toolboxPath
+        case .toolbox2:
+            return Self.toolbox2Path
+        case .topCrop:
+            return Self.topCropPath
+        case .towelFolded:
+            return Self.towelFoldedPath
+        case .towelRack:
+            return Self.towelRackPath
+        case .treesForest:
+            return Self.treesForestPath
+        case .triangleStripes:
+            return Self.triangleStripesPath
+        case .trousers:
+            return Self.trousersPath
+        case .tuxedo:
+            return Self.tuxedoPath
+        case .typeSquare:
+            return Self.typeSquarePath
+        case .ufo:
+            return Self.ufoPath
+        case .underlineSquare:
+            return Self.underlineSquarePath
+        case .unicornHead:
+            return Self.unicornHeadPath
+        case .venn:
+            return Self.vennPath
+        case .vest:
+            return Self.vestPath
+        case .volleyball:
+            return Self.volleyballPath
+        case .waffle:
+            return Self.wafflePath
+        case .wardrobe:
+            return Self.wardrobePath
+        case .watchActivity:
+            return Self.watchActivityPath
+        case .watchAlarm:
+            return Self.watchAlarmPath
+        case .watchBars:
+            return Self.watchBarsPath
+        case .watchCharging:
+            return Self.watchChargingPath
+        case .watchCheck:
+            return Self.watchCheckPath
+        case .watchLoader:
+            return Self.watchLoaderPath
+        case .watchMusic:
+            return Self.watchMusicPath
+        case .watchSquare:
+            return Self.watchSquarePath
+        case .watchSquareAlarm:
+            return Self.watchSquareAlarmPath
+        case .watchText:
+            return Self.watchTextPath
+        case .watermelon:
+            return Self.watermelonPath
+        case .waveCircle:
+            return Self.waveCirclePath
+        case .wavesBirds:
+            return Self.wavesBirdsPath
+        case .wavesSharkFin:
+            return Self.wavesSharkFinPath
+        case .whale:
+            return Self.whalePath
+        case .whaleNarwhal:
+            return Self.whaleNarwhalPath
+        case .wheel:
+            return Self.wheelPath
+        case .whisk:
+            return Self.whiskPath
+        case .whiskForkKnife:
+            return Self.whiskForkKnifePath
+        case .whisks:
+            return Self.whisksPath
+        case .windmill:
+            return Self.windmillPath
+        case .wineGlassBottle:
+            return Self.wineGlassBottlePath
+        case .yarnBall:
+            return Self.yarnBallPath
+        case .yinYang:
+            return Self.yinYangPath
+        }
+    }
+    
+    /// Returns a SwiftUI Shape for this icon
+    public var shape: LucideShape {
+        LucideShape(path: self.path)
+    }
+        
+    /// Ampersand Square icon path
+    static let ampersandSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 9.0), control1: CGPoint(x: 12.0, y: 15.0), control2: CGPoint(x: 9.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 7.0), control1: CGPoint(x: 9.0, y: 7.8954305003384135), control2: CGPoint(x: 9.895430500338414, y: 7.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 9.0), control1: CGPoint(x: 12.104569499661586, y: 7.0), control2: CGPoint(x: 13.0, y: 7.895430500338413))
+path.addCurve(to: CGPoint(x: 8.0, y: 14.0), control1: CGPoint(x: 13.0, y: 12.0), control2: CGPoint(x: 8.0, y: 10.5))
+path.addCurve(to: CGPoint(x: 11.0, y: 17.0), control1: CGPoint(x: 8.0, y: 15.7), control2: CGPoint(x: 9.3, y: 17.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 13.0), control1: CGPoint(x: 14.0, y: 17.0), control2: CGPoint(x: 16.0, y: 15.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Apple Core icon path
+    static let appleCorePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 3.9999999999999996), control1: CGPoint(x: 12.895430500338414, y: 2.0), control2: CGPoint(x: 12.0, y: 2.8954305003384126))
+path.addLine(to: CGPoint(x: 12.0, y: 6.529999999999999))
+path.move(to: CGPoint(x: 12.0, y: 6.53))
+path.addCurve(to: CGPoint(x: 7.645442641531951, y: 5.0025249060431785), control1: CGPoint(x: 10.811312356307505, y: 5.458732237106626), control2: CGPoint(x: 9.242866600058495, y: 4.908558790835736))
+path.addCurve(to: CGPoint(x: 3.500000000000001, y: 7.029999999999999), control1: CGPoint(x: 6.048018683005409, y: 5.096491021250623), control2: CGPoint(x: 4.5548928877416, y: 5.8267569117281495))
+path.addCurve(to: CGPoint(x: 7.293548372063908, y: 8.736473642372543), control1: CGPoint(x: 4.984102303527284, y: 6.84488815905456), control2: CGPoint(x: 6.447497516292335, y: 7.503175628735374))
+path.addCurve(to: CGPoint(x: 7.519999999999999, y: 12.890000000000002), control1: CGPoint(x: 8.13959922783548, y: 9.969771656009712), control2: CGPoint(x: 8.226954968620259, y: 11.572031596229895))
+path.addCurve(to: CGPoint(x: 8.887039000137266, y: 16.971759750034316), control1: CGPoint(x: 8.731340808902745, y: 13.868508097481676), control2: CGPoint(x: 9.264711800646038, y: 15.461068547999224))
+path.addCurve(to: CGPoint(x: 5.76, y: 19.929999999999996), control1: CGPoint(x: 8.509366199628493, y: 18.482450952069406), control2: CGPoint(x: 7.2893045243173304, y: 19.63665323582334))
+path.addCurve(to: CGPoint(x: 9.0, y: 22.0), control1: CGPoint(x: 6.82, y: 21.17), control2: CGPoint(x: 7.97, y: 22.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 21.0), control1: CGPoint(x: 10.5, y: 22.0), control2: CGPoint(x: 10.5, y: 21.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 22.0), control1: CGPoint(x: 13.5, y: 21.0), control2: CGPoint(x: 13.5, y: 22.0))
+path.addCurve(to: CGPoint(x: 18.240000000000002, y: 19.93), control1: CGPoint(x: 16.03, y: 22.0), control2: CGPoint(x: 17.18, y: 21.17))
+path.addCurve(to: CGPoint(x: 15.123250276549793, y: 16.974982861062923), control1: CGPoint(x: 16.715522889240304, y: 19.633567148403106), control2: CGPoint(x: 15.500419650232114, y: 18.481517347987193))
+path.addCurve(to: CGPoint(x: 16.479999999999997, y: 12.899999999999997), control1: CGPoint(x: 14.746080902867472, y: 15.46844837413865), control2: CGPoint(x: 15.275026480718632, y: 13.879766153001196))
+path.addCurve(to: CGPoint(x: 16.698879918578996, y: 8.738372618856483), control1: CGPoint(x: 15.767496786201598, y: 11.581343196235444), control2: CGPoint(x: 15.851981384910616, y: 9.975013015033941))
+path.addCurve(to: CGPoint(x: 20.5, y: 7.029999999999999), control1: CGPoint(x: 17.545778452247376, y: 7.501732222679023), control2: CGPoint(x: 19.012957839047722, y: 6.84232419618402))
+path.addCurve(to: CGPoint(x: 16.35430909605706, y: 5.006745367029962), control1: CGPoint(x: 19.443626226570164, y: 5.829170306102571), control2: CGPoint(x: 17.950898303634776, y: 5.100662379240417))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.5299999999999985), control1: CGPoint(x: 14.757719888479345, y: 4.912828354819509), control2: CGPoint(x: 13.189875366690707, y: 5.461302608462602))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Arrows Up Down Square icon path
+    static let arrowsUpDownSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 9.0))
+path.addLine(to: CGPoint(x: 9.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 9.0))
+path.move(to: CGPoint(x: 9.0, y: 6.0))
+path.addLine(to: CGPoint(x: 9.0, y: 12.0))
+path.move(to: CGPoint(x: 15.0, y: 18.0))
+path.addLine(to: CGPoint(x: 15.0, y: 12.0))
+path.move(to: CGPoint(x: 18.0, y: 15.0))
+path.addLine(to: CGPoint(x: 15.0, y: 18.0))
+path.addLine(to: CGPoint(x: 12.0, y: 15.0))
+path.move(to: CGPoint(x: 4.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.0), control1: CGPoint(x: 21.104569499661586, y: 2.0), control2: CGPoint(x: 22.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 2.0), control1: CGPoint(x: 2.0, y: 2.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Astronaut Helmet icon path
+    static let astronautHelmetPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.6, y: 13.4))
+path.addLine(to: CGPoint(x: 16.9, y: 19.5))
+path.addCurve(to: CGPoint(x: 16.5, y: 20.9), control1: CGPoint(x: 17.2, y: 20.0), control2: CGPoint(x: 17.0, y: 20.6))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 15.1, y: 21.599999999999998), control2: CGPoint(x: 13.6, y: 22.0))
+path.addCurve(to: CGPoint(x: 10.600000000000001, y: 21.4), control1: CGPoint(x: 11.472461466198148, y: 21.992485904287054), control2: CGPoint(x: 10.969260920207205, y: 21.776828527433796))
+path.addLine(to: CGPoint(x: 2.5999999999999996, y: 13.399999999999999))
+path.addCurve(to: CGPoint(x: 1.9999999999999998, y: 12.0), control1: CGPoint(x: 2.223171472566205, y: 13.030739079792795), control2: CGPoint(x: 2.0075140957129447, y: 12.527538533801852))
+path.addCurve(to: CGPoint(x: 10.326411029721694, y: 2.1404940659275766), control1: CGPoint(x: 1.9997339253773525, y: 7.122748991708968), control2: CGPoint(x: 5.517948571385036, y: 2.9567454091579997))
+path.addCurve(to: CGPoint(x: 21.440000000003828, y: 8.700000000010954), control1: CGPoint(x: 15.134873488058354, y: 1.3242427226971536), control2: CGPoint(x: 19.830773239510204, y: 4.095875034084239))
+path.addCurve(to: CGPoint(x: 20.44, y: 10.0), control1: CGPoint(x: 21.740000000000002, y: 9.399999999999999), control2: CGPoint(x: 21.14, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.move(to: CGPoint(x: 16.2, y: 18.8))
+path.addCurve(to: CGPoint(x: 19.7, y: 10.0), control1: CGPoint(x: 19.2, y: 16.900000000000002), control2: CGPoint(x: 20.6, y: 13.3))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 10.0, y: 13.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 13.104569499661586, y: 14.0), control2: CGPoint(x: 14.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 14.0, y: 10.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 10.895430500338414, y: 10.0), control2: CGPoint(x: 10.0, y: 10.895430500338414))
+        return path
+    }()
+        
+    /// At Sign Circle icon path
+    static let atSignCirclePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.0, y: 17.7))
+path.addCurve(to: CGPoint(x: 7.221298983742527, y: 15.671112223550981), control1: CGPoint(x: 11.539649565270112, y: 18.569789525918296), control2: CGPoint(x: 8.799228477614113, y: 17.749572373143195))
+path.addCurve(to: CGPoint(x: 7.088814583730999, y: 8.596536549986666), control1: CGPoint(x: 5.643369489870942, y: 13.592652073958766), control2: CGPoint(x: 5.589810106929239, y: 10.732617929429175))
+path.addCurve(to: CGPoint(x: 13.786800116226829, y: 6.315273109760847), control1: CGPoint(x: 8.587819060532759, y: 6.460455170544157), control2: CGPoint(x: 11.295609351629025, y: 5.538210270953494))
+path.addCurve(to: CGPoint(x: 18.0, y: 12.0), control1: CGPoint(x: 16.277990880824632, y: 7.092335948568201), control2: CGPoint(x: 17.981258480370766, y: 9.390496821899863))
+path.addCurve(to: CGPoint(x: 16.0, y: 14.0), control1: CGPoint(x: 18.0, y: 13.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 14.895430500338414, y: 14.0), control2: CGPoint(x: 14.0, y: 13.104569499661586))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 10.0, y: 13.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 13.104569499661586, y: 14.0), control2: CGPoint(x: 14.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 14.0, y: 10.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 10.895430500338414, y: 10.0), control2: CGPoint(x: 10.0, y: 10.895430500338414))
+        return path
+    }()
+        
+    /// At Sign Square icon path
+    static let atSignSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.0, y: 17.7))
+path.addCurve(to: CGPoint(x: 7.221298983742527, y: 15.671112223550981), control1: CGPoint(x: 11.539649565270112, y: 18.569789525918296), control2: CGPoint(x: 8.799228477614113, y: 17.749572373143195))
+path.addCurve(to: CGPoint(x: 7.088814583730999, y: 8.596536549986666), control1: CGPoint(x: 5.643369489870942, y: 13.592652073958766), control2: CGPoint(x: 5.589810106929239, y: 10.732617929429175))
+path.addCurve(to: CGPoint(x: 13.786800116226829, y: 6.315273109760847), control1: CGPoint(x: 8.587819060532759, y: 6.460455170544157), control2: CGPoint(x: 11.295609351629025, y: 5.538210270953494))
+path.addCurve(to: CGPoint(x: 18.0, y: 12.0), control1: CGPoint(x: 16.277990880824632, y: 7.092335948568201), control2: CGPoint(x: 17.981258480370766, y: 9.390496821899863))
+path.addCurve(to: CGPoint(x: 16.0, y: 14.0), control1: CGPoint(x: 18.0, y: 13.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 14.895430500338414, y: 14.0), control2: CGPoint(x: 14.0, y: 13.104569499661586))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 10.0, y: 13.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 13.104569499661586, y: 14.0), control2: CGPoint(x: 14.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 14.0, y: 10.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 10.895430500338414, y: 10.0), control2: CGPoint(x: 10.0, y: 10.895430500338414))
+path.move(to: CGPoint(x: 4.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.0), control1: CGPoint(x: 21.104569499661586, y: 2.0), control2: CGPoint(x: 22.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 2.0), control1: CGPoint(x: 2.0, y: 2.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Avocado icon path
+    static let avocadoPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 18.870236293901822, y: 2.3399905507189063), control1: CGPoint(x: 22.02350679769345, y: 4.948094474232265), control2: CGPoint(x: 20.778553047523022, y: 3.094441360290076))
+path.addCurve(to: CGPoint(x: 13.399999999999995, y: 3.6000000000000036), control1: CGPoint(x: 16.961919540280622, y: 1.5855397411477368), control2: CGPoint(x: 14.785975338760815, y: 2.08674482767751))
+path.addCurve(to: CGPoint(x: 8.4, y: 6.2), control1: CGPoint(x: 11.9, y: 5.2), control2: CGPoint(x: 11.8, y: 5.4))
+path.addCurve(to: CGPoint(x: 1.9889209545464386, y: 14.543103869618193), control1: CGPoint(x: 4.4774732076714265, y: 6.986790217333175), control2: CGPoint(x: 1.7392107844237241, y: 10.550247734773867))
+path.addCurve(to: CGPoint(x: 9.389523036169775, y: 22.022435760620503), control1: CGPoint(x: 2.238631124669152, y: 18.535960004462517), control2: CGPoint(x: 5.399532814672297, y: 21.730488308189102))
+path.addCurve(to: CGPoint(x: 17.8, y: 15.700000000000003), control1: CGPoint(x: 13.379513257667254, y: 22.314383213051904), control2: CGPoint(x: 16.971746775358568, y: 19.613981588931885))
+path.addCurve(to: CGPoint(x: 20.400000000000002, y: 10.7), control1: CGPoint(x: 18.5, y: 12.299999999999999), control2: CGPoint(x: 18.8, y: 12.1))
+path.addCurve(to: CGPoint(x: 22.000000000000004, y: 6.999999999999999), control1: CGPoint(x: 21.400000000000002, y: 9.7), control2: CGPoint(x: 22.000000000000004, y: 8.399999999999999))
+path.move(to: CGPoint(x: 6.5, y: 14.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 17.5), control1: CGPoint(x: 6.5, y: 15.932996624407778), control2: CGPoint(x: 8.067003375592224, y: 17.5))
+path.addCurve(to: CGPoint(x: 13.5, y: 14.0), control1: CGPoint(x: 11.932996624407778, y: 17.5), control2: CGPoint(x: 13.5, y: 15.932996624407778))
+path.addCurve(to: CGPoint(x: 10.0, y: 10.5), control1: CGPoint(x: 13.5, y: 12.067003375592222), control2: CGPoint(x: 11.932996624407778, y: 10.5))
+path.addCurve(to: CGPoint(x: 6.5, y: 14.0), control1: CGPoint(x: 8.067003375592224, y: 10.5), control2: CGPoint(x: 6.5, y: 12.067003375592222))
+        return path
+    }()
+        
+    /// Baby Pacifier icon path
+    static let babyPacifierPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.1, y: 7.4))
+path.addCurve(to: CGPoint(x: 12.7, y: 8.500000000000002), control1: CGPoint(x: 10.514213562373094, y: 8.421726787186968), control2: CGPoint(x: 11.67827321281303, y: 8.914213562373096))
+path.addCurve(to: CGPoint(x: 13.8, y: 5.900000000000001), control1: CGPoint(x: 13.721726787186967, y: 8.085786437626906), control2: CGPoint(x: 14.214213562373095, y: 6.921726787186969))
+path.addCurve(to: CGPoint(x: 8.600000000000001, y: 3.7), control1: CGPoint(x: 13.0, y: 3.9000000000000004), control2: CGPoint(x: 10.600000000000001, y: 2.9000000000000004))
+path.addCurve(to: CGPoint(x: 3.200000000000001, y: 10.2), control1: CGPoint(x: 5.700000000000001, y: 4.9), control2: CGPoint(x: 3.8000000000000016, y: 7.4))
+path.addCurve(to: CGPoint(x: 2.0000000000000018, y: 12.0), control1: CGPoint(x: 2.473338469443214, y: 10.502775637731995), control2: CGPoint(x: 2.0000000000000018, y: 11.212783341896813))
+path.addCurve(to: CGPoint(x: 3.2000000000000006, y: 13.799999999999999), control1: CGPoint(x: 2.0000000000000018, y: 12.787216658103185), control2: CGPoint(x: 2.473338469443214, y: 13.497224362268005))
+path.addCurve(to: CGPoint(x: 6.999999999999998, y: 19.42), control1: CGPoint(x: 3.6900376228979486, y: 16.09519121322479), control2: CGPoint(x: 5.052537217709611, y: 18.11025640344625))
+path.move(to: CGPoint(x: 17.1, y: 19.4))
+path.addCurve(to: CGPoint(x: 20.900000000000002, y: 13.799999999999999), control1: CGPoint(x: 19.1, y: 18.099999999999998), control2: CGPoint(x: 20.400000000000002, y: 15.999999999999998))
+path.addCurve(to: CGPoint(x: 22.028220211291867, y: 12.0), control1: CGPoint(x: 21.589980658324784, y: 13.465827115262735), control2: CGPoint(x: 22.028220211291867, y: 12.766645175916423))
+path.addCurve(to: CGPoint(x: 20.900000000000002, y: 10.2), control1: CGPoint(x: 22.028220211291867, y: 11.233354824083577), control2: CGPoint(x: 21.589980658324784, y: 10.534172884737265))
+path.addCurve(to: CGPoint(x: 17.700000000000003, y: 5.199999999999998), control1: CGPoint(x: 20.374096932987484, y: 8.243383670346423), control2: CGPoint(x: 19.256452703740347, y: 6.497064562147767))
+path.move(to: CGPoint(x: 8.0, y: 12.0))
+path.addEllipse(in: CGRect(x: 7.66, y: 11.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 16.0, y: 12.0))
+path.addEllipse(in: CGRect(x: 15.660000000000002, y: 11.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.0, y: 16.0))
+path.addLine(to: CGPoint(x: 9.5, y: 16.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 18.5), control1: CGPoint(x: 8.119288125423017, y: 16.0), control2: CGPoint(x: 7.0, y: 17.119288125423015))
+path.addLine(to: CGPoint(x: 7.0, y: 19.5))
+path.addCurve(to: CGPoint(x: 9.5, y: 22.0), control1: CGPoint(x: 7.0, y: 20.880711874576985), control2: CGPoint(x: 8.119288125423017, y: 22.0))
+path.addLine(to: CGPoint(x: 14.5, y: 22.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 19.5), control1: CGPoint(x: 15.880711874576985, y: 22.0), control2: CGPoint(x: 17.0, y: 20.880711874576985))
+path.addLine(to: CGPoint(x: 17.0, y: 18.5))
+path.addCurve(to: CGPoint(x: 14.5, y: 16.0), control1: CGPoint(x: 17.0, y: 17.119288125423015), control2: CGPoint(x: 15.880711874576985, y: 16.0))
+path.addLine(to: CGPoint(x: 14.0, y: 16.0))
+path.move(to: CGPoint(x: 10.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 10.0, y: 17.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 18.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 16.0), control1: CGPoint(x: 13.104569499661586, y: 18.0), control2: CGPoint(x: 14.0, y: 17.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 14.0, y: 14.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 14.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 16.0), control1: CGPoint(x: 10.895430500338414, y: 14.0), control2: CGPoint(x: 10.0, y: 14.895430500338414))
+        return path
+    }()
+        
+    /// Bacon icon path
+    static let baconPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 15.0), control1: CGPoint(x: 20.0, y: 13.0), control2: CGPoint(x: 17.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 22.0), control1: CGPoint(x: 13.0, y: 20.0), control2: CGPoint(x: 10.0, y: 17.0))
+path.addLine(to: CGPoint(x: 2.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 9.0), control1: CGPoint(x: 4.0, y: 11.0), control2: CGPoint(x: 7.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 2.0), control1: CGPoint(x: 11.0, y: 4.0), control2: CGPoint(x: 14.0, y: 7.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 5.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 12.0), control1: CGPoint(x: 7.0, y: 14.0), control2: CGPoint(x: 10.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 5.0), control1: CGPoint(x: 14.0, y: 7.0), control2: CGPoint(x: 17.0, y: 10.0))
+        return path
+    }()
+        
+    /// Bag Hand icon path
+    static let bagHandPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 3.0), control1: CGPoint(x: 8.0, y: 5.2), control2: CGPoint(x: 9.8, y: 3.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 8.0), control1: CGPoint(x: 14.2, y: 3.0), control2: CGPoint(x: 16.0, y: 5.2))
+path.move(to: CGPoint(x: 21.0, y: 18.6))
+path.addLine(to: CGPoint(x: 19.0, y: 8.8))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 18.9, y: 8.3), control2: CGPoint(x: 18.5, y: 8.0))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 8.8), control1: CGPoint(x: 5.5, y: 8.0), control2: CGPoint(x: 5.1, y: 8.3))
+path.addLine(to: CGPoint(x: 3.0, y: 18.6))
+path.addLine(to: CGPoint(x: 3.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 21.0), control1: CGPoint(x: 3.0, y: 20.104569499661586), control2: CGPoint(x: 3.8954305003384135, y: 21.0))
+path.addLine(to: CGPoint(x: 19.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 20.104569499661586, y: 21.0), control2: CGPoint(x: 21.0, y: 20.104569499661586))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 12.0, y: 16.0))
+path.move(to: CGPoint(x: 18.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 18.0, y: 11.313708498984761), control2: CGPoint(x: 15.313708498984761, y: 14.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 8.0), control1: CGPoint(x: 8.68629150101524, y: 14.0), control2: CGPoint(x: 6.000000000000001, y: 11.313708498984761))
+        return path
+    }()
+        
+    /// Barbecue icon path
+    static let barbecuePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 2.0), control1: CGPoint(x: 6.0, y: 3.0), control2: CGPoint(x: 8.0, y: 3.0))
+path.move(to: CGPoint(x: 12.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 2.0), control1: CGPoint(x: 12.0, y: 3.0), control2: CGPoint(x: 14.0, y: 3.0))
+path.move(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 2.0), control1: CGPoint(x: 18.0, y: 3.0), control2: CGPoint(x: 20.0, y: 3.0))
+path.move(to: CGPoint(x: 3.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 12.000000000000002, y: 15.965932687708097), control1: CGPoint(x: 3.5286347935033646, y: 12.54023222676086), control2: CGPoint(x: 7.399029555450033, y: 15.965932687708099))
+path.addCurve(to: CGPoint(x: 21.0, y: 7.999999999999997), control1: CGPoint(x: 16.600970444549972, y: 15.965932687708095), control2: CGPoint(x: 20.47136520649664, y: 12.540232226760857))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.2, y: 15.6))
+path.addLine(to: CGPoint(x: 7.8999999999999995, y: 18.2))
+path.move(to: CGPoint(x: 9.0, y: 20.0))
+path.addLine(to: CGPoint(x: 17.0, y: 20.0))
+path.move(to: CGPoint(x: 14.8, y: 15.6))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.move(to: CGPoint(x: 5.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 22.0), control1: CGPoint(x: 5.0, y: 21.104569499661586), control2: CGPoint(x: 5.8954305003384135, y: 22.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 20.0), control1: CGPoint(x: 8.104569499661586, y: 22.0), control2: CGPoint(x: 9.0, y: 21.104569499661586))
+path.addCurve(to: CGPoint(x: 7.0, y: 18.0), control1: CGPoint(x: 9.0, y: 18.895430500338414), control2: CGPoint(x: 8.104569499661586, y: 18.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 20.0), control1: CGPoint(x: 5.8954305003384135, y: 18.0), control2: CGPoint(x: 5.0, y: 18.895430500338414))
+        return path
+    }()
+        
+    /// Barber Pole icon path
+    static let barberPolePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 6.0))
+path.addLine(to: CGPoint(x: 17.0, y: 6.0))
+path.move(to: CGPoint(x: 7.0, y: 22.0))
+path.addLine(to: CGPoint(x: 17.0, y: 22.0))
+path.move(to: CGPoint(x: 8.0, y: 22.0))
+path.addLine(to: CGPoint(x: 8.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 8.0, y: 3.7908610006768266), control2: CGPoint(x: 9.790861000676825, y: 2.0000000000000004))
+path.addCurve(to: CGPoint(x: 16.0, y: 5.999999999999999), control1: CGPoint(x: 14.209138999323173, y: 2.0), control2: CGPoint(x: 16.0, y: 3.7908610006768253))
+path.addLine(to: CGPoint(x: 16.0, y: 22.0))
+path.move(to: CGPoint(x: 8.0, y: 11.5))
+path.addLine(to: CGPoint(x: 16.0, y: 7.5))
+path.move(to: CGPoint(x: 8.0, y: 16.0))
+path.addLine(to: CGPoint(x: 16.0, y: 12.0))
+path.move(to: CGPoint(x: 8.0, y: 20.5))
+path.addLine(to: CGPoint(x: 16.0, y: 16.5))
+        return path
+    }()
+        
+    /// Barn icon path
+    static let barnPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addLine(to: CGPoint(x: 2.0, y: 12.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 6.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 7.0, y: 22.0))
+path.addLine(to: CGPoint(x: 17.0, y: 12.0))
+path.addLine(to: CGPoint(x: 17.0, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 12.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 21.0, y: 12.0))
+path.addLine(to: CGPoint(x: 21.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 22.0), control1: CGPoint(x: 21.0, y: 21.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 5.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 20.0), control1: CGPoint(x: 3.8954305003384135, y: 22.0), control2: CGPoint(x: 3.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 12.0))
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addLine(to: CGPoint(x: 14.0, y: 8.0))
+path.addLine(to: CGPoint(x: 14.0, y: 12.0))
+path.addLine(to: CGPoint(x: 10.0, y: 12.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Baseball icon path
+    static let baseballPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 7.5, y: 12.0), control2: CGPoint(x: 12.0, y: 7.5))
+path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 16.5, y: 12.0), control2: CGPoint(x: 12.0, y: 16.5))
+path.move(to: CGPoint(x: 8.0, y: 11.5))
+path.addLine(to: CGPoint(x: 6.5, y: 9.5))
+path.move(to: CGPoint(x: 11.5, y: 8.0))
+path.addLine(to: CGPoint(x: 9.5, y: 6.5))
+path.move(to: CGPoint(x: 14.5, y: 17.5))
+path.addLine(to: CGPoint(x: 12.5, y: 16.0))
+path.move(to: CGPoint(x: 17.5, y: 14.5))
+path.addLine(to: CGPoint(x: 16.0, y: 12.5))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Baseline Square icon path
+    static let baselineSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.5, y: 12.0))
+path.addLine(to: CGPoint(x: 14.5, y: 12.0))
+path.move(to: CGPoint(x: 9.0, y: 13.0))
+path.addLine(to: CGPoint(x: 12.0, y: 7.0))
+path.addLine(to: CGPoint(x: 15.0, y: 13.0))
+path.move(to: CGPoint(x: 7.0, y: 17.0))
+path.addLine(to: CGPoint(x: 17.0, y: 17.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Basketball icon path
+    static let basketballPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.1, y: 13.4))
+path.addCurve(to: CGPoint(x: 10.523426397947592, y: 10.523426397947592), control1: CGPoint(x: 5.201715775895753, y: 13.796802537857896), control2: CGPoint(x: 8.312307562551009, y: 12.734545233344175))
+path.addCurve(to: CGPoint(x: 13.400000000000002, y: 2.100000000000001), control1: CGPoint(x: 12.734545233344175, y: 8.312307562551013), control2: CGPoint(x: 13.796802537857896, y: 5.201715775895756))
+path.move(to: CGPoint(x: 5.0, y: 4.9))
+path.addLine(to: CGPoint(x: 19.0, y: 19.1))
+path.move(to: CGPoint(x: 21.9, y: 10.6))
+path.addCurve(to: CGPoint(x: 13.476573602052408, y: 13.476573602052408), control1: CGPoint(x: 18.798284224104247, y: 10.203197462142105), control2: CGPoint(x: 15.687692437448991, y: 11.265454766655827))
+path.addCurve(to: CGPoint(x: 10.6, y: 21.9), control1: CGPoint(x: 11.265454766655827, y: 15.687692437448987), control2: CGPoint(x: 10.203197462142105, y: 18.798284224104243))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Bat Ball icon path
+    static let batBallPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 8.0))
+path.addLine(to: CGPoint(x: 14.0, y: 18.0))
+path.move(to: CGPoint(x: 20.8, y: 15.2))
+path.addCurve(to: CGPoint(x: 19.400000000000002, y: 4.6), control1: CGPoint(x: 22.7, y: 11.799999999999999), control2: CGPoint(x: 22.2, y: 7.499999999999999))
+path.addCurve(to: CGPoint(x: 6.900000000000002, y: 4.6), control1: CGPoint(x: 15.900000000000002, y: 1.0999999999999996), control2: CGPoint(x: 10.300000000000002, y: 1.0999999999999996))
+path.addCurve(to: CGPoint(x: 5.500000000000002, y: 15.7), control1: CGPoint(x: 2.200000000000002, y: 9.3), control2: CGPoint(x: 1.8000000000000025, y: 11.5))
+path.addLine(to: CGPoint(x: 2.600000000000002, y: 18.599999999999998))
+path.addCurve(to: CGPoint(x: 2.600000000000002, y: 21.4), control1: CGPoint(x: 1.8000000000000018, y: 19.4), control2: CGPoint(x: 1.8000000000000018, y: 20.599999999999998))
+path.addCurve(to: CGPoint(x: 5.400000000000002, y: 21.4), control1: CGPoint(x: 3.400000000000002, y: 22.2), control2: CGPoint(x: 4.600000000000001, y: 22.2))
+path.addLine(to: CGPoint(x: 8.300000000000002, y: 18.5))
+path.addCurve(to: CGPoint(x: 14.900000000000002, y: 20.6), control1: CGPoint(x: 10.900000000000002, y: 20.8), control2: CGPoint(x: 12.800000000000002, y: 21.5))
+path.move(to: CGPoint(x: 14.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 22.0), control1: CGPoint(x: 14.0, y: 20.209138999323173), control2: CGPoint(x: 15.790861000676827, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 18.0), control1: CGPoint(x: 20.209138999323173, y: 22.0), control2: CGPoint(x: 22.0, y: 20.209138999323173))
+path.addCurve(to: CGPoint(x: 18.0, y: 14.0), control1: CGPoint(x: 22.0, y: 15.790861000676827), control2: CGPoint(x: 20.209138999323173, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 18.0), control1: CGPoint(x: 15.790861000676827, y: 14.0), control2: CGPoint(x: 14.0, y: 15.790861000676825))
+        return path
+    }()
+        
+    /// Bath Bubble icon path
+    static let bathBubblePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.0, y: 3.0))
+path.addEllipse(in: CGRect(x: 14.66, y: 2.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
+path.move(to: CGPoint(x: 13.0, y: 15.0))
+path.addLine(to: CGPoint(x: 8.0, y: 15.0))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 11.0), control1: CGPoint(x: 8.0, y: 11.4), control2: CGPoint(x: 8.4, y: 11.0))
+path.addLine(to: CGPoint(x: 12.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 12.0), control1: CGPoint(x: 12.6, y: 11.0), control2: CGPoint(x: 13.0, y: 11.4))
+path.closeSubpath()
+path.move(to: CGPoint(x: 13.0, y: 12.0))
+path.addLine(to: CGPoint(x: 22.0, y: 12.0))
+path.move(to: CGPoint(x: 4.0, y: 12.0))
+path.addLine(to: CGPoint(x: 4.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 19.0), control1: CGPoint(x: 4.0, y: 18.104569499661586), control2: CGPoint(x: 4.8954305003384135, y: 19.0))
+path.addLine(to: CGPoint(x: 18.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 17.0), control1: CGPoint(x: 19.104569499661586, y: 19.0), control2: CGPoint(x: 20.0, y: 18.104569499661586))
+path.addLine(to: CGPoint(x: 20.0, y: 12.0))
+path.move(to: CGPoint(x: 7.0, y: 19.0))
+path.addLine(to: CGPoint(x: 7.0, y: 21.0))
+path.move(to: CGPoint(x: 17.0, y: 19.0))
+path.addLine(to: CGPoint(x: 17.0, y: 21.0))
+path.move(to: CGPoint(x: 11.0, y: 6.5))
+path.addCurve(to: CGPoint(x: 11.5, y: 7.0), control1: CGPoint(x: 11.0, y: 6.776142374915397), control2: CGPoint(x: 11.223857625084603, y: 7.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.5), control1: CGPoint(x: 11.776142374915397, y: 7.0), control2: CGPoint(x: 12.0, y: 6.776142374915397))
+path.addCurve(to: CGPoint(x: 11.5, y: 6.0), control1: CGPoint(x: 12.0, y: 6.223857625084603), control2: CGPoint(x: 11.776142374915397, y: 6.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 6.5), control1: CGPoint(x: 11.223857625084603, y: 6.0), control2: CGPoint(x: 11.0, y: 6.223857625084603))
+path.move(to: CGPoint(x: 16.0, y: 7.5))
+path.addCurve(to: CGPoint(x: 16.5, y: 8.0), control1: CGPoint(x: 16.0, y: 7.776142374915397), control2: CGPoint(x: 16.2238576250846, y: 8.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 7.5), control1: CGPoint(x: 16.7761423749154, y: 8.0), control2: CGPoint(x: 17.0, y: 7.776142374915397))
+path.addCurve(to: CGPoint(x: 16.5, y: 7.0), control1: CGPoint(x: 17.0, y: 7.223857625084603), control2: CGPoint(x: 16.7761423749154, y: 7.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 7.5), control1: CGPoint(x: 16.2238576250846, y: 7.0), control2: CGPoint(x: 16.0, y: 7.223857625084603))
+        return path
+    }()
+        
+    /// Beach Ball icon path
+    static let beachBallPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 19.1, y: 4.9))
+path.addCurve(to: CGPoint(x: 9.200000000000001, y: 9.100000000000001), control1: CGPoint(x: 17.5, y: 3.3000000000000003), control2: CGPoint(x: 13.100000000000001, y: 5.2))
+path.addCurve(to: CGPoint(x: 5.0, y: 19.0), control1: CGPoint(x: 5.3, y: 13.0), control2: CGPoint(x: 3.4, y: 17.4))
+path.addCurve(to: CGPoint(x: 14.9, y: 14.8), control1: CGPoint(x: 6.6, y: 20.6), control2: CGPoint(x: 11.0, y: 18.7))
+path.addCurve(to: CGPoint(x: 19.1, y: 4.9), control1: CGPoint(x: 18.7, y: 10.9), control2: CGPoint(x: 20.6, y: 6.5))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Bear Face icon path
+    static let bearFacePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 7.0))
+path.addLine(to: CGPoint(x: 6.5, y: 7.5))
+path.move(to: CGPoint(x: 18.0, y: 7.0))
+path.addLine(to: CGPoint(x: 17.5, y: 7.5))
+path.move(to: CGPoint(x: 20.8, y: 4.2))
+path.addCurve(to: CGPoint(x: 15.100000000000001, y: 4.2), control1: CGPoint(x: 19.2, y: 2.6), control2: CGPoint(x: 16.700000000000003, y: 2.6))
+path.addLine(to: CGPoint(x: 14.100000000000001, y: 5.2))
+path.addCurve(to: CGPoint(x: 9.900000000000004, y: 5.1999999999999975), control1: CGPoint(x: 12.708446040747388, y: 4.982519361355182), control2: CGPoint(x: 11.291553959252617, y: 4.982519361355182))
+path.addLine(to: CGPoint(x: 8.900000000000002, y: 4.2))
+path.addCurve(to: CGPoint(x: 3.225000000000002, y: 4.075), control1: CGPoint(x: 7.36740981921955, y: 2.5983742254906987), control2: CGPoint(x: 4.826625774509303, y: 2.5424098192195483))
+path.addCurve(to: CGPoint(x: 3.1000000000000023, y: 9.75), control1: CGPoint(x: 1.6233742254907009, y: 5.607590180780452), control2: CGPoint(x: 1.5674098192195505, y: 8.148374225490699))
+path.addCurve(to: CGPoint(x: 2.000000000000001, y: 13.499999999999998), control1: CGPoint(x: 2.3847640405888617, y: 10.870224100054301), control2: CGPoint(x: 2.0032266267550387, y: 12.17091982903324))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0, y: 18.2), control2: CGPoint(x: 6.5, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 13.5), control1: CGPoint(x: 17.5, y: 22.0), control2: CGPoint(x: 22.0, y: 18.2))
+path.addCurve(to: CGPoint(x: 20.899999999999924, y: 9.699999999999882), control1: CGPoint(x: 22.006329960358542, y: 12.15391612647224), control2: CGPoint(x: 21.624409364743386, y: 10.834554068892697))
+path.addCurve(to: CGPoint(x: 20.799999999999997, y: 4.199999999999999), control1: CGPoint(x: 22.4, y: 8.1), control2: CGPoint(x: 22.4, y: 5.699999999999999))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addLine(to: CGPoint(x: 10.0, y: 11.5))
+path.move(to: CGPoint(x: 14.0, y: 12.0))
+path.addLine(to: CGPoint(x: 14.0, y: 11.5))
+path.move(to: CGPoint(x: 14.0, y: 16.0))
+path.addLine(to: CGPoint(x: 10.0, y: 16.0))
+path.move(to: CGPoint(x: 12.0, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+        return path
+    }()
+        
+    /// Bed Bunk icon path
+    static let bedBunkPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 22.0))
+path.addLine(to: CGPoint(x: 2.0, y: 2.0))
+path.move(to: CGPoint(x: 2.0, y: 5.0))
+path.addLine(to: CGPoint(x: 20.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 7.0), control1: CGPoint(x: 21.104569499661586, y: 5.0), control2: CGPoint(x: 22.0, y: 5.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.move(to: CGPoint(x: 6.0, y: 5.0))
+path.addLine(to: CGPoint(x: 6.0, y: 10.0))
+path.move(to: CGPoint(x: 2.0, y: 10.0))
+path.addLine(to: CGPoint(x: 22.0, y: 10.0))
+path.move(to: CGPoint(x: 2.0, y: 14.0))
+path.addLine(to: CGPoint(x: 22.0, y: 14.0))
+path.move(to: CGPoint(x: 22.0, y: 19.0))
+path.addLine(to: CGPoint(x: 2.0, y: 19.0))
+path.move(to: CGPoint(x: 6.0, y: 14.0))
+path.addLine(to: CGPoint(x: 6.0, y: 19.0))
+        return path
+    }()
+        
+    /// Bee icon path
+    static let beePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 2.0))
+path.addLine(to: CGPoint(x: 9.879999999999999, y: 3.88))
+path.move(to: CGPoint(x: 14.12, y: 3.88))
+path.addLine(to: CGPoint(x: 16.0, y: 2.0))
+path.move(to: CGPoint(x: 9.0, y: 7.0))
+path.addLine(to: CGPoint(x: 9.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 3.0), control1: CGPoint(x: 9.0, y: 4.34314575050762), control2: CGPoint(x: 10.343145750507619, y: 3.0000000000000004))
+path.addCurve(to: CGPoint(x: 15.0, y: 5.999999999999999), control1: CGPoint(x: 13.65685424949238, y: 3.0), control2: CGPoint(x: 15.0, y: 4.3431457505076185))
+path.addLine(to: CGPoint(x: 15.0, y: 7.0))
+path.move(to: CGPoint(x: 5.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 2.1481752042548212, y: 9.269916173509838), control1: CGPoint(x: 3.6460190220518753, y: 7.026237663644886), control2: CGPoint(x: 2.477489408269054, y: 7.956331361374217))
+path.addCurve(to: CGPoint(x: 3.59189465609445, y: 12.616720357319888), control1: CGPoint(x: 1.8188610002405885, y: 10.58350098564546), control2: CGPoint(x: 2.4104222125513504, y: 11.954847432365861))
+path.addCurve(to: CGPoint(x: 7.1999999999999975, y: 12.100000000000001), control1: CGPoint(x: 4.773367099637549, y: 13.278593282273915), control2: CGPoint(x: 6.251781183943174, y: 13.066868129847446))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.0), control1: CGPoint(x: 9.1, y: 10.0), control2: CGPoint(x: 12.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 16.8, y: 12.1), control1: CGPoint(x: 12.0, y: 7.0), control2: CGPoint(x: 14.9, y: 10.0))
+path.addCurve(to: CGPoint(x: 20.40810534390555, y: 12.616720357319888), control1: CGPoint(x: 17.748218816056823, y: 13.066868129847446), control2: CGPoint(x: 19.22663290036245, y: 13.278593282273915))
+path.addCurve(to: CGPoint(x: 21.851824795745177, y: 9.269916173509838), control1: CGPoint(x: 21.589577787448647, y: 11.954847432365861), control2: CGPoint(x: 22.181138999759412, y: 10.58350098564546))
+path.addCurve(to: CGPoint(x: 19.0, y: 7.000000000000001), control1: CGPoint(x: 21.522510591730946, y: 7.956331361374217), control2: CGPoint(x: 20.353980977948122, y: 7.026237663644886))
+path.closeSubpath()
+path.move(to: CGPoint(x: 7.56, y: 12.0))
+path.addLine(to: CGPoint(x: 16.43, y: 12.0))
+path.move(to: CGPoint(x: 7.5, y: 17.0))
+path.addLine(to: CGPoint(x: 16.5, y: 17.0))
+path.move(to: CGPoint(x: 15.5, y: 10.7))
+path.addCurve(to: CGPoint(x: 17.0, y: 14.0), control1: CGPoint(x: 16.4, y: 11.6), control2: CGPoint(x: 16.9, y: 12.799999999999999))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 17.0, y: 19.8), control2: CGPoint(x: 12.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 14.0), control1: CGPoint(x: 12.0, y: 22.0), control2: CGPoint(x: 7.0, y: 19.8))
+path.addCurve(to: CGPoint(x: 8.5, y: 10.7), control1: CGPoint(x: 7.1, y: 12.8), control2: CGPoint(x: 7.6, y: 11.6))
+        return path
+    }()
+        
+    /// Bee Hive icon path
+    static let beeHivePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.0, y: 14.0))
+path.addLine(to: CGPoint(x: 20.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 21.104569499661586, y: 14.0), control2: CGPoint(x: 22.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 20.0, y: 10.0), control1: CGPoint(x: 22.0, y: 10.895430500338414), control2: CGPoint(x: 21.104569499661586, y: 10.0))
+path.addLine(to: CGPoint(x: 4.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 2.8954305003384135, y: 10.0), control2: CGPoint(x: 2.0, y: 10.895430500338414))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 14.0), control1: CGPoint(x: 2.0, y: 13.104569499661586), control2: CGPoint(x: 2.8954305003384126, y: 14.0))
+path.addLine(to: CGPoint(x: 10.0, y: 14.0))
+path.move(to: CGPoint(x: 19.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 16.0), control1: CGPoint(x: 20.104569499661586, y: 14.0), control2: CGPoint(x: 21.0, y: 14.895430500338414))
+path.addCurve(to: CGPoint(x: 19.0, y: 18.0), control1: CGPoint(x: 21.0, y: 17.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 5.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 16.0), control1: CGPoint(x: 3.8954305003384135, y: 18.0), control2: CGPoint(x: 3.0, y: 17.104569499661586))
+path.addCurve(to: CGPoint(x: 5.0, y: 14.0), control1: CGPoint(x: 3.0, y: 14.895430500338414), control2: CGPoint(x: 3.8954305003384126, y: 14.0))
+path.move(to: CGPoint(x: 9.0, y: 2.0))
+path.addLine(to: CGPoint(x: 15.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 4.0), control1: CGPoint(x: 16.104569499661586, y: 2.0), control2: CGPoint(x: 17.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 17.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 6.0), control1: CGPoint(x: 17.0, y: 5.1045694996615865), control2: CGPoint(x: 16.104569499661586, y: 6.0))
+path.addLine(to: CGPoint(x: 9.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 4.0), control1: CGPoint(x: 7.8954305003384135, y: 6.0), control2: CGPoint(x: 7.0, y: 5.104569499661587))
+path.addLine(to: CGPoint(x: 7.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 2.0), control1: CGPoint(x: 7.0, y: 2.8954305003384135), control2: CGPoint(x: 7.895430500338413, y: 2.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 6.0, y: 6.0))
+path.addLine(to: CGPoint(x: 18.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 8.0), control1: CGPoint(x: 19.104569499661586, y: 6.0), control2: CGPoint(x: 20.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 20.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 10.0), control1: CGPoint(x: 20.0, y: 9.104569499661586), control2: CGPoint(x: 19.104569499661586, y: 10.0))
+path.addLine(to: CGPoint(x: 6.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 8.0), control1: CGPoint(x: 4.8954305003384135, y: 10.0), control2: CGPoint(x: 4.0, y: 9.104569499661586))
+path.addLine(to: CGPoint(x: 4.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 6.0), control1: CGPoint(x: 4.0, y: 6.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 6.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 13.104569499661586, y: 10.0), control2: CGPoint(x: 14.0, y: 10.895430500338414))
+path.addLine(to: CGPoint(x: 14.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 14.0, y: 17.104569499661586), control2: CGPoint(x: 13.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 16.0), control1: CGPoint(x: 10.895430500338414, y: 18.0), control2: CGPoint(x: 10.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 10.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 10.0, y: 10.895430500338414), control2: CGPoint(x: 10.895430500338414, y: 10.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 7.0, y: 18.0))
+path.addLine(to: CGPoint(x: 17.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 20.0), control1: CGPoint(x: 18.104569499661586, y: 18.0), control2: CGPoint(x: 19.0, y: 18.895430500338414))
+path.addLine(to: CGPoint(x: 19.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 19.0, y: 21.104569499661586), control2: CGPoint(x: 18.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 20.0), control1: CGPoint(x: 5.8954305003384135, y: 22.0), control2: CGPoint(x: 5.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 5.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 18.0), control1: CGPoint(x: 5.0, y: 18.895430500338414), control2: CGPoint(x: 5.895430500338413, y: 18.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Beetle Scarab icon path
+    static let beetleScarabPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 2.0))
+path.addLine(to: CGPoint(x: 9.879999999999999, y: 3.88))
+path.move(to: CGPoint(x: 14.12, y: 3.88))
+path.addLine(to: CGPoint(x: 16.0, y: 2.0))
+path.move(to: CGPoint(x: 9.0, y: 7.13))
+path.addLine(to: CGPoint(x: 9.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 3.0), control1: CGPoint(x: 9.0, y: 4.34314575050762), control2: CGPoint(x: 10.343145750507619, y: 3.0000000000000004))
+path.addCurve(to: CGPoint(x: 15.0, y: 5.999999999999999), control1: CGPoint(x: 13.65685424949238, y: 3.0), control2: CGPoint(x: 15.0, y: 4.3431457505076185))
+path.addLine(to: CGPoint(x: 15.0, y: 7.13))
+path.move(to: CGPoint(x: 12.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 14.0), control1: CGPoint(x: 8.7, y: 20.0), control2: CGPoint(x: 6.0, y: 17.3))
+path.addLine(to: CGPoint(x: 6.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 7.0), control1: CGPoint(x: 6.0, y: 8.790861000676827), control2: CGPoint(x: 7.790861000676825, y: 7.0))
+path.addLine(to: CGPoint(x: 14.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 11.0), control1: CGPoint(x: 16.209138999323173, y: 7.0), control2: CGPoint(x: 18.0, y: 8.790861000676827))
+path.addLine(to: CGPoint(x: 18.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 20.0), control1: CGPoint(x: 18.0, y: 17.3), control2: CGPoint(x: 15.3, y: 20.0))
+path.move(to: CGPoint(x: 12.0, y: 20.0))
+path.addLine(to: CGPoint(x: 12.0, y: 11.0))
+path.move(to: CGPoint(x: 5.0, y: 4.8))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.0), control1: CGPoint(x: 3.2, y: 6.2), control2: CGPoint(x: 2.0, y: 8.5))
+path.addLine(to: CGPoint(x: 22.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 4.8), control1: CGPoint(x: 22.0, y: 8.5), control2: CGPoint(x: 20.8, y: 6.2))
+path.move(to: CGPoint(x: 6.08, y: 15.0))
+path.addLine(to: CGPoint(x: 2.08, y: 15.0))
+path.addCurve(to: CGPoint(x: 4.88, y: 21.0), control1: CGPoint(x: 2.2800000000000002, y: 17.4), control2: CGPoint(x: 3.33, y: 19.4))
+path.move(to: CGPoint(x: 19.1, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.92, y: 15.000000000000002), control1: CGPoint(x: 20.712045853013073, y: 19.42837844503719), control2: CGPoint(x: 21.71553432073893, y: 17.293296598811967))
+path.addLine(to: CGPoint(x: 17.92, y: 15.0))
+        return path
+    }()
+        
+    /// Bell Concierge icon path
+    static let bellConciergePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 3.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 19.0), control1: CGPoint(x: 2.4477152501692068, y: 20.0), control2: CGPoint(x: 2.0, y: 19.552284749830793))
+path.addLine(to: CGPoint(x: 2.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 16.0), control1: CGPoint(x: 2.0, y: 16.895430500338414), control2: CGPoint(x: 2.8954305003384126, y: 16.0))
+path.addLine(to: CGPoint(x: 20.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 18.0), control1: CGPoint(x: 21.104569499661586, y: 16.0), control2: CGPoint(x: 22.0, y: 16.895430500338414))
+path.addLine(to: CGPoint(x: 22.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 20.0), control1: CGPoint(x: 22.0, y: 19.552284749830793), control2: CGPoint(x: 21.552284749830793, y: 20.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 20.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.0), control1: CGPoint(x: 20.0, y: 11.581722001353652), control2: CGPoint(x: 16.41827799864635, y: 8.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 15.999999999999998), control1: CGPoint(x: 7.581722001353653, y: 8.0), control2: CGPoint(x: 4.000000000000001, y: 11.58172200135365))
+path.move(to: CGPoint(x: 12.0, y: 4.0))
+path.addLine(to: CGPoint(x: 12.0, y: 8.0))
+path.move(to: CGPoint(x: 10.0, y: 4.0))
+path.addLine(to: CGPoint(x: 14.0, y: 4.0))
+        return path
+    }()
+        
+    /// Bell Concierge Dot icon path
+    static let bellConciergeDotPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 16.0), control1: CGPoint(x: 2.0, y: 16.895430500338414), control2: CGPoint(x: 2.8954305003384126, y: 16.0))
+path.addLine(to: CGPoint(x: 20.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 18.0), control1: CGPoint(x: 21.104569499661586, y: 16.0), control2: CGPoint(x: 22.0, y: 16.895430500338414))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 4.0))
+path.addLine(to: CGPoint(x: 12.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 16.0), control1: CGPoint(x: 7.6, y: 8.0), control2: CGPoint(x: 4.0, y: 11.6))
+path.move(to: CGPoint(x: 10.0, y: 4.0))
+path.addLine(to: CGPoint(x: 14.0, y: 4.0))
+path.move(to: CGPoint(x: 16.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 12.0), control1: CGPoint(x: 16.0, y: 10.65685424949238), control2: CGPoint(x: 17.34314575050762, y: 12.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 9.0), control1: CGPoint(x: 20.65685424949238, y: 12.0), control2: CGPoint(x: 22.0, y: 10.65685424949238))
+path.addCurve(to: CGPoint(x: 19.0, y: 6.0), control1: CGPoint(x: 22.0, y: 7.343145750507619), control2: CGPoint(x: 20.65685424949238, y: 6.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 9.0), control1: CGPoint(x: 17.34314575050762, y: 6.0), control2: CGPoint(x: 16.0, y: 7.343145750507619))
+        return path
+    }()
+        
+    /// Bell Concierge Off icon path
+    static let bellConciergeOffPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.move(to: CGPoint(x: 12.0, y: 4.0))
+path.addLine(to: CGPoint(x: 12.0, y: 6.3))
+path.move(to: CGPoint(x: 10.0, y: 4.0))
+path.addLine(to: CGPoint(x: 14.0, y: 4.0))
+path.move(to: CGPoint(x: 19.8, y: 14.1))
+path.addCurve(to: CGPoint(x: 13.900000000000004, y: 8.2), control1: CGPoint(x: 19.095864480207837, y: 11.182248849268511), control2: CGPoint(x: 16.817751150731496, y: 8.904135519792167))
+path.move(to: CGPoint(x: 8.7, y: 8.7))
+path.addCurve(to: CGPoint(x: 4.0, y: 16.0), control1: CGPoint(x: 5.9, y: 10.0), control2: CGPoint(x: 4.0, y: 12.8))
+path.move(to: CGPoint(x: 16.0, y: 16.0))
+path.addLine(to: CGPoint(x: 4.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 2.8954305003384135, y: 16.0), control2: CGPoint(x: 2.0, y: 16.895430500338414))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+        return path
+    }()
+        
+    /// Belt icon path
+    static let beltPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.3, y: 9.0))
+path.addLine(to: CGPoint(x: 3.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 8.0), control1: CGPoint(x: 2.4, y: 9.0), control2: CGPoint(x: 2.0, y: 8.6))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 3.0), control1: CGPoint(x: 2.0, y: 3.4), control2: CGPoint(x: 2.4, y: 3.0))
+path.addLine(to: CGPoint(x: 7.3, y: 3.0))
+path.move(to: CGPoint(x: 6.0, y: 6.0))
+path.addLine(to: CGPoint(x: 9.0, y: 6.0))
+path.move(to: CGPoint(x: 13.0, y: 6.0))
+path.addEllipse(in: CGRect(x: 12.66, y: 5.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 16.7, y: 3.0))
+path.addLine(to: CGPoint(x: 21.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.0), control1: CGPoint(x: 21.6, y: 3.0), control2: CGPoint(x: 22.0, y: 3.4))
+path.addLine(to: CGPoint(x: 22.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 9.0), control1: CGPoint(x: 22.0, y: 8.6), control2: CGPoint(x: 21.6, y: 9.0))
+path.addLine(to: CGPoint(x: 16.7, y: 9.0))
+path.move(to: CGPoint(x: 10.5, y: 10.0))
+path.addLine(to: CGPoint(x: 2.4000000000000004, y: 16.2))
+path.move(to: CGPoint(x: 21.6, y: 8.8))
+path.addLine(to: CGPoint(x: 12.2, y: 16.0))
+path.move(to: CGPoint(x: 3.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 21.0), control1: CGPoint(x: 2.4, y: 22.0), control2: CGPoint(x: 2.0, y: 21.6))
+path.addLine(to: CGPoint(x: 2.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 16.0), control1: CGPoint(x: 2.0, y: 16.4), control2: CGPoint(x: 2.4, y: 16.0))
+path.addLine(to: CGPoint(x: 19.0, y: 16.0))
+path.addLine(to: CGPoint(x: 22.0, y: 19.0))
+path.addLine(to: CGPoint(x: 19.0, y: 22.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.0, y: 2.0))
+path.addLine(to: CGPoint(x: 15.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 4.0), control1: CGPoint(x: 16.104569499661586, y: 2.0), control2: CGPoint(x: 17.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 17.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 10.0), control1: CGPoint(x: 17.0, y: 9.104569499661586), control2: CGPoint(x: 16.104569499661586, y: 10.0))
+path.addLine(to: CGPoint(x: 9.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 8.0), control1: CGPoint(x: 7.8954305003384135, y: 10.0), control2: CGPoint(x: 7.0, y: 9.104569499661586))
+path.addLine(to: CGPoint(x: 7.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 2.0), control1: CGPoint(x: 7.0, y: 2.8954305003384135), control2: CGPoint(x: 7.895430500338413, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Bold Square icon path
+    static let boldSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 12.0))
+path.addLine(to: CGPoint(x: 13.5, y: 12.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 14.5), control1: CGPoint(x: 14.880711874576985, y: 12.0), control2: CGPoint(x: 16.0, y: 13.119288125423017))
+path.addCurve(to: CGPoint(x: 13.5, y: 17.0), control1: CGPoint(x: 16.0, y: 15.880711874576983), control2: CGPoint(x: 14.880711874576985, y: 17.0))
+path.addLine(to: CGPoint(x: 8.0, y: 17.0))
+path.addLine(to: CGPoint(x: 8.0, y: 7.0))
+path.addLine(to: CGPoint(x: 13.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 15.5, y: 9.5), control1: CGPoint(x: 14.380711874576985, y: 7.0), control2: CGPoint(x: 15.5, y: 8.119288125423017))
+path.addCurve(to: CGPoint(x: 13.0, y: 12.0), control1: CGPoint(x: 15.5, y: 10.880711874576983), control2: CGPoint(x: 14.380711874576985, y: 12.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Bottle Baby icon path
+    static let bottleBabyPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 20.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 20.7, y: 6.1), control1: CGPoint(x: 21.1, y: 9.6), control2: CGPoint(x: 21.3, y: 7.7))
+path.addLine(to: CGPoint(x: 21.5, y: 5.3))
+path.addCurve(to: CGPoint(x: 21.499999984646507, y: 2.5000000147513965), control1: CGPoint(x: 22.273198635689095, y: 4.526801347684431), control2: CGPoint(x: 22.273198628815102, y: 3.2731986585874635))
+path.addCurve(to: CGPoint(x: 18.699999999397903, y: 2.500000000602098), control1: CGPoint(x: 20.72680134047791, y: 1.7268013709153296), control2: CGPoint(x: 19.47319865138094, y: 1.7268013645804725))
+path.addLine(to: CGPoint(x: 17.9, y: 3.3))
+path.addCurve(to: CGPoint(x: 13.0, y: 3.999999999999999), control1: CGPoint(x: 16.25079103888836, y: 2.7147952185185833), control2: CGPoint(x: 14.419383263852376, y: 2.97642490066658))
+path.move(to: CGPoint(x: 11.3, y: 3.7))
+path.addCurve(to: CGPoint(x: 12.7, y: 3.7), control1: CGPoint(x: 11.688843510198637, y: 3.318857123805713), control2: CGPoint(x: 12.311156489801363, y: 3.3188571238057136))
+path.addLine(to: CGPoint(x: 20.3, y: 11.3))
+path.addCurve(to: CGPoint(x: 20.300000000000004, y: 12.7), control1: CGPoint(x: 20.68114287619429, y: 11.688843510198637), control2: CGPoint(x: 20.68114287619429, y: 12.311156489801363))
+path.addLine(to: CGPoint(x: 18.7, y: 14.3))
+path.addCurve(to: CGPoint(x: 17.3, y: 14.3), control1: CGPoint(x: 18.311156489801363, y: 14.681142876194286), control2: CGPoint(x: 17.688843510198637, y: 14.681142876194286))
+path.addLine(to: CGPoint(x: 9.7, y: 6.7))
+path.addCurve(to: CGPoint(x: 9.7, y: 5.300000000000001), control1: CGPoint(x: 9.318857123805712, y: 6.311156489801362), control2: CGPoint(x: 9.318857123805714, y: 5.688843510198638))
+path.closeSubpath()
+path.move(to: CGPoint(x: 10.0, y: 7.0))
+path.addLine(to: CGPoint(x: 2.7, y: 14.3))
+path.addCurve(to: CGPoint(x: 2.7, y: 17.7), control1: CGPoint(x: 1.8000000000000003, y: 15.200000000000001), control2: CGPoint(x: 1.8000000000000003, y: 16.8))
+path.addLine(to: CGPoint(x: 6.300000000000001, y: 21.3))
+path.addCurve(to: CGPoint(x: 9.700000000000001, y: 21.3), control1: CGPoint(x: 7.200000000000001, y: 22.2), control2: CGPoint(x: 8.8, y: 22.2))
+path.addLine(to: CGPoint(x: 17.0, y: 14.0))
+path.move(to: CGPoint(x: 4.0, y: 13.0))
+path.addLine(to: CGPoint(x: 6.0, y: 15.0))
+path.move(to: CGPoint(x: 7.0, y: 10.0))
+path.addLine(to: CGPoint(x: 9.0, y: 12.0))
+        return path
+    }()
+        
+    /// Bottle Champagne icon path
+    static let bottleChampagnePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 2.0))
+path.addEllipse(in: CGRect(x: 7.66, y: 1.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.0, y: 3.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 2.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 19.0, y: 8.0))
+path.addLine(to: CGPoint(x: 16.0, y: 5.0))
+path.move(to: CGPoint(x: 9.7, y: 21.3))
+path.addCurve(to: CGPoint(x: 7.999999999999999, y: 22.00589256539026), control1: CGPoint(x: 9.249675506336311, y: 21.75189084445794), control2: CGPoint(x: 8.63796354511709, y: 22.00589256539026))
+path.addCurve(to: CGPoint(x: 6.299999999999999, y: 21.3), control1: CGPoint(x: 7.362036454882908, y: 22.00589256539026), control2: CGPoint(x: 6.750324493663687, y: 21.75189084445794))
+path.addLine(to: CGPoint(x: 2.699999999999999, y: 17.7))
+path.addCurve(to: CGPoint(x: 2.6999999999999993, y: 14.299999999999999), control1: CGPoint(x: 1.7643262841980758, y: 16.759788424558412), control2: CGPoint(x: 1.7643262841980767, y: 15.240211575441588))
+path.addLine(to: CGPoint(x: 8.969999999999999, y: 8.03))
+path.addCurve(to: CGPoint(x: 11.45, y: 7.0), control1: CGPoint(x: 9.626832879143382, y: 7.370577574780947), control2: CGPoint(x: 10.519265149923125, y: 6.999930301029683))
+path.addLine(to: CGPoint(x: 12.549999999999999, y: 7.0))
+path.addCurve(to: CGPoint(x: 15.02, y: 5.97), control1: CGPoint(x: 13.477267770849839, y: 6.997416510612895), control2: CGPoint(x: 14.365614946552173, y: 6.626972141797751))
+path.addLine(to: CGPoint(x: 18.64, y: 2.36))
+path.addCurve(to: CGPoint(x: 19.5, y: 2.001175657546667), control1: CGPoint(x: 18.867267227787497, y: 2.1303766382833484), control2: CGPoint(x: 19.17692527014285, y: 2.001175657546667))
+path.addCurve(to: CGPoint(x: 20.36, y: 2.36), control1: CGPoint(x: 19.82307472985715, y: 2.001175657546667), control2: CGPoint(x: 20.132732772212503, y: 2.1303766382833484))
+path.addLine(to: CGPoint(x: 21.64, y: 3.6399999999999997))
+path.addCurve(to: CGPoint(x: 22.003100961883693, y: 4.5), control1: CGPoint(x: 21.87214567913764, y: 3.8659098785734267), control2: CGPoint(x: 22.003100961883693, y: 4.176075796552132))
+path.addCurve(to: CGPoint(x: 21.64, y: 5.359999999999999), control1: CGPoint(x: 22.003100961883693, y: 4.823924203447868), control2: CGPoint(x: 21.87214567913764, y: 5.134090121426573))
+path.addLine(to: CGPoint(x: 18.02, y: 8.969999999999999))
+path.addCurve(to: CGPoint(x: 16.999999999999996, y: 11.450000000000001), control1: CGPoint(x: 17.36424448956864, y: 9.62847254997906), control2: CGPoint(x: 16.997278976824525, y: 10.520702424102005))
+path.addLine(to: CGPoint(x: 17.0, y: 12.549999999999999))
+path.addCurve(to: CGPoint(x: 15.969999999999901, y: 15.030000000000097), control1: CGPoint(x: 17.00006969897028, y: 13.48073485007701), control2: CGPoint(x: 16.62942242521898, y: 14.373167120856738))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.06, y: 8.0))
+path.addLine(to: CGPoint(x: 12.290000000000001, y: 11.24))
+path.addCurve(to: CGPoint(x: 12.290000000000001, y: 12.65), control1: CGPoint(x: 12.6777235947108, y: 11.630037454310923), control2: CGPoint(x: 12.6777235947108, y: 12.259962545689078))
+path.addLine(to: CGPoint(x: 8.65, y: 16.3))
+path.addCurve(to: CGPoint(x: 7.24, y: 16.3), control1: CGPoint(x: 8.259962545689078, y: 16.6877235947108), control2: CGPoint(x: 7.630037454310924, y: 16.6877235947108))
+path.addLine(to: CGPoint(x: 4.0, y: 13.06))
+path.move(to: CGPoint(x: 21.0, y: 12.0))
+path.addEllipse(in: CGRect(x: 20.66, y: 11.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 22.0, y: 16.0))
+path.addEllipse(in: CGRect(x: 21.66, y: 15.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Bottle Dispenser icon path
+    static let bottleDispenserPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 20.0, y: 10.0))
+path.addEllipse(in: CGRect(x: 19.66, y: 9.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.0, y: 2.0))
+path.addLine(to: CGPoint(x: 16.0, y: 2.0))
+path.move(to: CGPoint(x: 11.0, y: 2.0))
+path.addLine(to: CGPoint(x: 11.0, y: 6.0))
+path.move(to: CGPoint(x: 9.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 13.0), control1: CGPoint(x: 7.3, y: 10.0), control2: CGPoint(x: 6.0, y: 11.3))
+path.addLine(to: CGPoint(x: 6.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 22.0), control1: CGPoint(x: 6.0, y: 21.104569499661586), control2: CGPoint(x: 6.8954305003384135, y: 22.0))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 20.0), control1: CGPoint(x: 15.104569499661586, y: 22.0), control2: CGPoint(x: 16.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 16.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 10.0), control1: CGPoint(x: 16.0, y: 11.3), control2: CGPoint(x: 14.7, y: 10.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 6.0, y: 14.5))
+path.addCurve(to: CGPoint(x: 11.0, y: 14.500000000000002), control1: CGPoint(x: 7.587272716750475, y: 13.772474743090479), control2: CGPoint(x: 9.412727283249522, y: 13.772474743090479))
+path.addCurve(to: CGPoint(x: 16.0, y: 14.5), control1: CGPoint(x: 11.0, y: 14.5), control2: CGPoint(x: 13.0, y: 15.75))
+path.move(to: CGPoint(x: 18.0, y: 5.5))
+path.addCurve(to: CGPoint(x: 18.5, y: 6.0), control1: CGPoint(x: 18.0, y: 5.776142374915397), control2: CGPoint(x: 18.2238576250846, y: 6.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 5.5), control1: CGPoint(x: 18.7761423749154, y: 6.0), control2: CGPoint(x: 19.0, y: 5.776142374915397))
+path.addCurve(to: CGPoint(x: 18.5, y: 5.0), control1: CGPoint(x: 19.0, y: 5.223857625084603), control2: CGPoint(x: 18.7761423749154, y: 5.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 5.5), control1: CGPoint(x: 18.2238576250846, y: 5.0), control2: CGPoint(x: 18.0, y: 5.223857625084603))
+path.move(to: CGPoint(x: 10.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 7.0), control1: CGPoint(x: 12.552284749830793, y: 6.0), control2: CGPoint(x: 13.0, y: 6.447715250169207))
+path.addLine(to: CGPoint(x: 13.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 13.0, y: 9.552284749830793), control2: CGPoint(x: 12.552284749830793, y: 10.0))
+path.addLine(to: CGPoint(x: 10.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 9.0), control1: CGPoint(x: 9.447715250169207, y: 10.0), control2: CGPoint(x: 9.0, y: 9.552284749830793))
+path.addLine(to: CGPoint(x: 9.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 6.0), control1: CGPoint(x: 9.0, y: 6.447715250169207), control2: CGPoint(x: 9.447715250169207, y: 6.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Bottle Perfume icon path
+    static let bottlePerfumePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 3.0))
+path.addLine(to: CGPoint(x: 18.0, y: 3.0))
+path.addLine(to: CGPoint(x: 18.0, y: 7.0))
+path.addLine(to: CGPoint(x: 6.0, y: 7.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.0, y: 7.0))
+path.addLine(to: CGPoint(x: 15.0, y: 7.0))
+path.addLine(to: CGPoint(x: 15.0, y: 11.0))
+path.addLine(to: CGPoint(x: 9.0, y: 11.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 5.0, y: 11.0))
+path.addLine(to: CGPoint(x: 19.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 13.0), control1: CGPoint(x: 20.104569499661586, y: 11.0), control2: CGPoint(x: 21.0, y: 11.895430500338414))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 11.0), control1: CGPoint(x: 3.0, y: 11.895430500338414), control2: CGPoint(x: 3.8954305003384126, y: 11.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Bottle Plastic icon path
+    static let bottlePlasticPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 6.1))
+path.addLine(to: CGPoint(x: 10.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 2.0), control1: CGPoint(x: 10.0, y: 2.4), control2: CGPoint(x: 10.4, y: 2.0))
+path.addLine(to: CGPoint(x: 13.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 3.0), control1: CGPoint(x: 13.6, y: 2.0), control2: CGPoint(x: 14.0, y: 2.4))
+path.addLine(to: CGPoint(x: 14.0, y: 6.1))
+path.move(to: CGPoint(x: 17.0, y: 14.5))
+path.addCurve(to: CGPoint(x: 15.0, y: 12.1), control1: CGPoint(x: 17.0, y: 13.3), control2: CGPoint(x: 16.1, y: 12.3))
+path.addEllipse(in: CGRect(x: 14.65, y: 11.65, width: 0.7, height: 0.7))
+path.addCurve(to: CGPoint(x: 17.0, y: 10.0), control1: CGPoint(x: 16.104569499661586, y: 12.0), control2: CGPoint(x: 17.0, y: 11.104569499661586))
+path.addCurve(to: CGPoint(x: 13.0, y: 6.0), control1: CGPoint(x: 17.0, y: 7.790861000676826), control2: CGPoint(x: 15.209138999323175, y: 6.0))
+path.addLine(to: CGPoint(x: 11.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 10.0), control1: CGPoint(x: 8.790861000676827, y: 6.0), control2: CGPoint(x: 7.0, y: 7.790861000676825))
+path.addCurve(to: CGPoint(x: 9.0, y: 12.0), control1: CGPoint(x: 7.0, y: 11.104569499661586), control2: CGPoint(x: 7.8954305003384135, y: 12.0))
+path.addEllipse(in: CGRect(x: 8.65, y: 11.75, width: 0.7, height: 0.7))
+path.addCurve(to: CGPoint(x: 7.200000000000003, y: 14.5), control1: CGPoint(x: 7.933333333333335, y: 12.411111111111113), control2: CGPoint(x: 7.200000000000003, y: 13.38888888888889))
+path.addCurve(to: CGPoint(x: 9.0, y: 16.9), control1: CGPoint(x: 7.200000000000003, y: 15.61111111111111), control2: CGPoint(x: 7.9333333333333345, y: 16.58888888888889))
+path.addLine(to: CGPoint(x: 9.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 19.0), control1: CGPoint(x: 7.8954305003384135, y: 17.0), control2: CGPoint(x: 7.0, y: 17.895430500338414))
+path.addLine(to: CGPoint(x: 7.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 22.0), control1: CGPoint(x: 7.0, y: 21.104569499661586), control2: CGPoint(x: 7.8954305003384135, y: 22.0))
+path.addLine(to: CGPoint(x: 15.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 20.0), control1: CGPoint(x: 16.104569499661586, y: 22.0), control2: CGPoint(x: 17.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 17.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 17.0), control1: CGPoint(x: 17.0, y: 17.895430500338414), control2: CGPoint(x: 16.104569499661586, y: 17.0))
+path.addLine(to: CGPoint(x: 15.0, y: 16.9))
+path.addCurve(to: CGPoint(x: 17.0, y: 14.499999999999998), control1: CGPoint(x: 16.1, y: 16.7), control2: CGPoint(x: 17.0, y: 15.7))
+        return path
+    }()
+        
+    /// Bottle Spray icon path
+    static let bottleSprayPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 6.0))
+path.move(to: CGPoint(x: 6.0, y: 10.0))
+path.addLine(to: CGPoint(x: 10.0, y: 10.0))
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 10.0, y: 6.8954305003384135), control2: CGPoint(x: 10.895430500338414, y: 6.0))
+path.addLine(to: CGPoint(x: 15.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 5.0), control1: CGPoint(x: 15.6, y: 6.0), control2: CGPoint(x: 16.0, y: 5.6))
+path.addLine(to: CGPoint(x: 16.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 2.0), control1: CGPoint(x: 16.0, y: 2.4), control2: CGPoint(x: 15.6, y: 2.0))
+path.addLine(to: CGPoint(x: 5.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 5.0), control1: CGPoint(x: 3.3, y: 2.0), control2: CGPoint(x: 2.0, y: 3.3))
+path.addCurve(to: CGPoint(x: 3.0, y: 6.0), control1: CGPoint(x: 2.0, y: 5.6), control2: CGPoint(x: 2.4, y: 6.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 8.0), control1: CGPoint(x: 5.104569499661587, y: 6.0), control2: CGPoint(x: 6.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 6.0, y: 10.0))
+path.addLine(to: CGPoint(x: 3.7, y: 12.3))
+path.addCurve(to: CGPoint(x: 3.0, y: 14.0), control1: CGPoint(x: 3.3000000000000003, y: 12.700000000000001), control2: CGPoint(x: 3.0, y: 13.4))
+path.addLine(to: CGPoint(x: 3.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 22.0), control1: CGPoint(x: 3.0, y: 21.104569499661586), control2: CGPoint(x: 3.8954305003384135, y: 22.0))
+path.addLine(to: CGPoint(x: 11.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 20.0), control1: CGPoint(x: 12.104569499661586, y: 22.0), control2: CGPoint(x: 13.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 13.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.3, y: 12.3), control1: CGPoint(x: 13.0, y: 13.4), control2: CGPoint(x: 12.7, y: 12.7))
+path.addLine(to: CGPoint(x: 10.0, y: 10.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 14.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 10.0), control1: CGPoint(x: 14.0, y: 8.0), control2: CGPoint(x: 14.0, y: 9.0))
+path.move(to: CGPoint(x: 3.0, y: 16.5))
+path.addCurve(to: CGPoint(x: 7.999999999999999, y: 16.5), control1: CGPoint(x: 4.587272716750475, y: 15.772474743090479), control2: CGPoint(x: 6.412727283249523, y: 15.772474743090479))
+path.addCurve(to: CGPoint(x: 13.0, y: 16.5), control1: CGPoint(x: 8.0, y: 16.5), control2: CGPoint(x: 10.0, y: 17.75))
+path.move(to: CGPoint(x: 22.0, y: 2.0))
+path.addEllipse(in: CGRect(x: 21.66, y: 1.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 20.0, y: 5.5))
+path.addEllipse(in: CGRect(x: 19.66, y: 5.15, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 22.0, y: 9.0))
+path.addEllipse(in: CGRect(x: 21.66, y: 8.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Bottle Toothbrush Comb icon path
+    static let bottleToothbrushCombPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 7.0))
+path.addLine(to: CGPoint(x: 6.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 6.2, y: 11.0), control1: CGPoint(x: 6.0, y: 9.6), control2: CGPoint(x: 6.1, y: 10.4))
+path.addLine(to: CGPoint(x: 8.0, y: 20.8))
+path.addLine(to: CGPoint(x: 8.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 22.0), control1: CGPoint(x: 8.0, y: 21.6), control2: CGPoint(x: 7.6, y: 22.0))
+path.addLine(to: CGPoint(x: 3.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 21.0), control1: CGPoint(x: 2.4, y: 22.0), control2: CGPoint(x: 2.0, y: 21.6))
+path.addLine(to: CGPoint(x: 2.0, y: 7.0))
+path.move(to: CGPoint(x: 14.0, y: 2.0))
+path.addLine(to: CGPoint(x: 14.0, y: 9.0))
+path.addLine(to: CGPoint(x: 12.0, y: 14.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 18.0, y: 6.0))
+path.addLine(to: CGPoint(x: 22.0, y: 6.0))
+path.move(to: CGPoint(x: 18.0, y: 10.0))
+path.addLine(to: CGPoint(x: 22.0, y: 10.0))
+path.move(to: CGPoint(x: 18.0, y: 14.0))
+path.addLine(to: CGPoint(x: 22.0, y: 14.0))
+path.move(to: CGPoint(x: 18.0, y: 18.0))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.move(to: CGPoint(x: 18.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.0), control1: CGPoint(x: 21.104569499661586, y: 2.0), control2: CGPoint(x: 22.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.move(to: CGPoint(x: 2.0, y: 3.0))
+path.addLine(to: CGPoint(x: 6.0, y: 3.0))
+path.addLine(to: CGPoint(x: 6.0, y: 7.0))
+path.addLine(to: CGPoint(x: 2.0, y: 7.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 10.0, y: 3.0))
+path.addLine(to: CGPoint(x: 14.0, y: 3.0))
+path.addLine(to: CGPoint(x: 14.0, y: 9.0))
+path.addLine(to: CGPoint(x: 10.0, y: 9.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Bowl Chopsticks icon path
+    static let bowlChopsticksPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 13.0, y: 2.0))
+path.addLine(to: CGPoint(x: 10.0, y: 13.0))
+path.move(to: CGPoint(x: 22.0, y: 2.0))
+path.addLine(to: CGPoint(x: 14.0, y: 13.0))
+path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 22.0, y: 17.522847498307932), control2: CGPoint(x: 17.522847498307936, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.000000000000002), control1: CGPoint(x: 6.477152501692067, y: 22.0), control2: CGPoint(x: 2.0000000000000018, y: 17.522847498307936))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 17.0), control1: CGPoint(x: 2.0000000000000018, y: 14.761423749153968), control2: CGPoint(x: 6.477152501692067, y: 17.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 17.0), control2: CGPoint(x: 22.0, y: 14.761423749153966))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.0), control1: CGPoint(x: 22.0, y: 9.238576250846034), control2: CGPoint(x: 17.522847498307936, y: 7.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 6.477152501692067, y: 7.0), control2: CGPoint(x: 2.0000000000000018, y: 9.238576250846032))
+        return path
+    }()
+        
+    /// Bowl Overflow icon path
+    static let bowlOverflowPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 9.0), control1: CGPoint(x: 6.5, y: 4.0), control2: CGPoint(x: 2.0, y: 6.2))
+path.addCurve(to: CGPoint(x: 10.0, y: 13.9), control1: CGPoint(x: 2.0, y: 11.4), control2: CGPoint(x: 5.4, y: 13.4))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 11.1, y: 14.0), control2: CGPoint(x: 12.0, y: 14.9))
+path.addLine(to: CGPoint(x: 12.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 21.0), control1: CGPoint(x: 12.0, y: 20.104569499661586), control2: CGPoint(x: 12.895430500338414, y: 21.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 19.0), control1: CGPoint(x: 15.104569499661586, y: 21.0), control2: CGPoint(x: 16.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 16.0, y: 15.6))
+path.addCurve(to: CGPoint(x: 17.9, y: 13.0), control1: CGPoint(x: 16.0, y: 14.5), control2: CGPoint(x: 16.9, y: 13.399999999999999))
+path.addCurve(to: CGPoint(x: 22.0, y: 9.0), control1: CGPoint(x: 20.4, y: 12.1), control2: CGPoint(x: 22.0, y: 10.6))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 22.0, y: 6.2), control2: CGPoint(x: 17.5, y: 4.0))
+path.move(to: CGPoint(x: 2.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 19.0), control1: CGPoint(x: 2.0, y: 14.5), control2: CGPoint(x: 6.5, y: 19.0))
+path.move(to: CGPoint(x: 16.0, y: 18.2))
+path.addCurve(to: CGPoint(x: 22.0, y: 9.0), control1: CGPoint(x: 19.5, y: 16.7), control2: CGPoint(x: 22.0, y: 13.1))
+path.move(to: CGPoint(x: 16.0, y: 15.6))
+path.addCurve(to: CGPoint(x: 19.0, y: 11.0), control1: CGPoint(x: 16.0, y: 13.0), control2: CGPoint(x: 19.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.0), control1: CGPoint(x: 19.0, y: 9.3), control2: CGPoint(x: 15.9, y: 8.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 11.0), control1: CGPoint(x: 8.1, y: 8.0), control2: CGPoint(x: 5.0, y: 9.3))
+path.addCurve(to: CGPoint(x: 10.0, y: 13.9), control1: CGPoint(x: 5.0, y: 12.4), control2: CGPoint(x: 7.1, y: 13.5))
+        return path
+    }()
+        
+    /// Bowling icon path
+    static let bowlingPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 10.0))
+path.addEllipse(in: CGRect(x: 8.66, y: 9.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 6.0, y: 13.0))
+path.addEllipse(in: CGRect(x: 5.66, y: 12.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.0, y: 14.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 13.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 11.09, y: 6.07))
+path.addCurve(to: CGPoint(x: 3.2295113261184767, y: 9.788595900361011), control1: CGPoint(x: 7.966101186000495, y: 5.652998893302573), control2: CGPoint(x: 4.888465512193779, y: 7.108949518541646))
+path.addCurve(to: CGPoint(x: 3.4054793788829256, y: 18.4825175072544), control1: CGPoint(x: 1.5705571400431744, y: 12.468242282180377), control2: CGPoint(x: 1.6394543268602817, y: 15.872193918363015))
+path.addCurve(to: CGPoint(x: 11.410000000000005, y: 21.880000000000003), control1: CGPoint(x: 5.1715044309055695, y: 21.092841096145783), control2: CGPoint(x: 8.30553327279265, y: 22.42306543137714))
+path.move(to: CGPoint(x: 16.0, y: 9.0))
+path.addLine(to: CGPoint(x: 20.0, y: 9.0))
+path.move(to: CGPoint(x: 15.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 9.0), control1: CGPoint(x: 15.0, y: 6.5), control2: CGPoint(x: 16.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 16.0), control1: CGPoint(x: 16.0, y: 11.5), control2: CGPoint(x: 14.0, y: 13.5))
+path.addCurve(to: CGPoint(x: 15.9, y: 22.0), control1: CGPoint(x: 14.0, y: 18.6), control2: CGPoint(x: 15.9, y: 22.0))
+path.addLine(to: CGPoint(x: 20.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 16.0), control1: CGPoint(x: 20.0, y: 22.0), control2: CGPoint(x: 22.0, y: 18.6))
+path.addCurve(to: CGPoint(x: 20.0, y: 9.0), control1: CGPoint(x: 22.0, y: 13.5), control2: CGPoint(x: 20.0, y: 11.5))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.0, y: 7.0), control2: CGPoint(x: 21.0, y: 6.5))
+path.addCurve(to: CGPoint(x: 18.0, y: 2.0), control1: CGPoint(x: 21.0, y: 3.3431457505076194), control2: CGPoint(x: 19.65685424949238, y: 2.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 5.0), control1: CGPoint(x: 16.34314575050762, y: 2.0), control2: CGPoint(x: 15.0, y: 3.3431457505076194))
+        return path
+    }()
+        
+    /// Bra Sports icon path
+    static let braSportsPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.0, y: 21.0))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
+path.addLine(to: CGPoint(x: 8.0, y: 3.0))
+path.addLine(to: CGPoint(x: 4.0, y: 3.0))
+path.addLine(to: CGPoint(x: 4.0, y: 13.6))
+path.addCurve(to: CGPoint(x: 2.2434553334464606, y: 18.045012072041498), control1: CGPoint(x: 2.4963353853957013, y: 14.53052842873088), control2: CGPoint(x: 1.7820894955870301, y: 16.337958471961606))
+path.addCurve(to: CGPoint(x: 6.000000000000002, y: 21.0), control1: CGPoint(x: 2.7048211713058907, y: 19.75206567212139), control2: CGPoint(x: 4.232306716682299, y: 20.953622354491284))
+path.addLine(to: CGPoint(x: 18.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.75654466655354, y: 18.045012072041494), control1: CGPoint(x: 19.767693283317705, y: 20.953622354491284), control2: CGPoint(x: 21.29517882869411, y: 19.75206567212139))
+path.addCurve(to: CGPoint(x: 20.0, y: 13.599999999999998), control1: CGPoint(x: 22.21791050441297, y: 16.337958471961603), control2: CGPoint(x: 21.503664614604297, y: 14.530528428730879))
+path.addLine(to: CGPoint(x: 20.0, y: 3.0))
+path.addLine(to: CGPoint(x: 16.0, y: 3.0))
+path.addLine(to: CGPoint(x: 16.0, y: 12.0))
+path.addLine(to: CGPoint(x: 12.0, y: 16.0))
+path.move(to: CGPoint(x: 8.0, y: 11.0))
+path.addLine(to: CGPoint(x: 16.0, y: 11.0))
+        return path
+    }()
+        
+    /// Briefcase Plus icon path
+    static let briefcasePlusPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 7.0))
+path.addLine(to: CGPoint(x: 8.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 3.0), control1: CGPoint(x: 8.0, y: 3.8954305003384135), control2: CGPoint(x: 8.895430500338414, y: 3.0))
+path.addLine(to: CGPoint(x: 14.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 5.0), control1: CGPoint(x: 15.104569499661586, y: 3.0), control2: CGPoint(x: 16.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 16.0, y: 7.0))
+path.move(to: CGPoint(x: 15.0, y: 14.0))
+path.addLine(to: CGPoint(x: 9.0, y: 14.0))
+path.move(to: CGPoint(x: 12.0, y: 11.0))
+path.addLine(to: CGPoint(x: 12.0, y: 17.0))
+path.move(to: CGPoint(x: 4.0, y: 7.0))
+path.addLine(to: CGPoint(x: 20.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 9.0), control1: CGPoint(x: 21.104569499661586, y: 7.0), control2: CGPoint(x: 22.0, y: 7.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 21.0), control1: CGPoint(x: 22.0, y: 20.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 4.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 19.0), control1: CGPoint(x: 2.8954305003384135, y: 21.0), control2: CGPoint(x: 2.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 7.0), control1: CGPoint(x: 2.0, y: 7.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 7.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Broom icon path
+    static let broomPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 13.0, y: 11.0))
+path.addLine(to: CGPoint(x: 22.0, y: 2.0))
+path.move(to: CGPoint(x: 14.6, y: 12.6))
+path.addCurve(to: CGPoint(x: 14.799999999999999, y: 15.6), control1: CGPoint(x: 15.4, y: 13.4), control2: CGPoint(x: 15.5, y: 14.7))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.addLine(to: CGPoint(x: 2.0, y: 14.0))
+path.addLine(to: CGPoint(x: 8.4, y: 9.2))
+path.addCurve(to: CGPoint(x: 11.4, y: 9.399999999999999), control1: CGPoint(x: 9.3, y: 8.5), control2: CGPoint(x: 10.600000000000001, y: 8.6))
+path.closeSubpath()
+path.move(to: CGPoint(x: 6.8, y: 10.4))
+path.addLine(to: CGPoint(x: 13.6, y: 17.2))
+path.move(to: CGPoint(x: 5.0, y: 17.0))
+path.addLine(to: CGPoint(x: 6.4, y: 15.6))
+        return path
+    }()
+        
+    /// Bucket icon path
+    static let bucketPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 2.0), control1: CGPoint(x: 6.0, y: 4.2), control2: CGPoint(x: 8.2, y: 2.0))
+path.addLine(to: CGPoint(x: 13.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 7.0), control1: CGPoint(x: 15.8, y: 2.0), control2: CGPoint(x: 18.0, y: 4.2))
+path.move(to: CGPoint(x: 5.0, y: 11.0))
+path.addLine(to: CGPoint(x: 19.0, y: 11.0))
+path.move(to: CGPoint(x: 18.0, y: 11.0))
+path.addLine(to: CGPoint(x: 17.2, y: 20.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 22.0), control1: CGPoint(x: 17.099999999999998, y: 21.1), control2: CGPoint(x: 16.099999999999998, y: 22.0))
+path.addLine(to: CGPoint(x: 9.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 6.8, y: 20.0), control1: CGPoint(x: 7.9, y: 22.0), control2: CGPoint(x: 6.9, y: 21.1))
+path.addLine(to: CGPoint(x: 6.0, y: 11.0))
+        return path
+    }()
+        
+    /// Bull Head icon path
+    static let bullHeadPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 2.5278640450004204, y: 7.236067977499791), control1: CGPoint(x: 5.106139707730585, y: 10.0), control2: CGPoint(x: 3.374824115680827, y: 8.929988118860603))
+path.addCurve(to: CGPoint(x: 2.999999999999999, y: 2.0000000000000013), control1: CGPoint(x: 1.6809039743200138, y: 5.5421478361389775), control2: CGPoint(x: 1.8636838246383505, y: 3.5150882338155336))
+path.addCurve(to: CGPoint(x: 6.999999999999999, y: 6.0), control1: CGPoint(x: 3.0000000000000004, y: 4.209138999323174), control2: CGPoint(x: 4.790861000676826, y: 6.0))
+path.addLine(to: CGPoint(x: 17.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 2.0), control1: CGPoint(x: 19.209138999323173, y: 6.0), control2: CGPoint(x: 21.0, y: 4.209138999323174))
+path.addCurve(to: CGPoint(x: 21.47213595499958, y: 7.23606797749979), control1: CGPoint(x: 22.13631617536165, y: 3.5150882338155327), control2: CGPoint(x: 22.319096025679986, y: 5.5421478361389775))
+path.addCurve(to: CGPoint(x: 17.0, y: 10.0), control1: CGPoint(x: 20.625175884319173, y: 8.929988118860603), control2: CGPoint(x: 18.893860292269416, y: 10.0))
+path.move(to: CGPoint(x: 6.4, y: 15.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 13.0), control1: CGPoint(x: 6.1000000000000005, y: 14.4), control2: CGPoint(x: 6.0, y: 13.7))
+path.addCurve(to: CGPoint(x: 9.0, y: 6.0), control1: CGPoint(x: 6.0, y: 9.0), control2: CGPoint(x: 9.0, y: 10.0))
+path.move(to: CGPoint(x: 10.0, y: 12.5))
+path.addLine(to: CGPoint(x: 10.0, y: 14.1))
+path.move(to: CGPoint(x: 17.6, y: 15.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 13.0), control1: CGPoint(x: 17.900000000000002, y: 14.4), control2: CGPoint(x: 18.0, y: 13.7))
+path.addCurve(to: CGPoint(x: 15.0, y: 6.0), control1: CGPoint(x: 18.0, y: 9.0), control2: CGPoint(x: 15.0, y: 10.0))
+path.move(to: CGPoint(x: 14.0, y: 12.5))
+path.addLine(to: CGPoint(x: 14.0, y: 14.1))
+path.move(to: CGPoint(x: 15.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 18.83743462570538, y: 18.946659960249356), control1: CGPoint(x: 16.826201075347377, y: 21.97762565024386), control2: CGPoint(x: 18.405341387904116, y: 20.721147608268737))
+path.addCurve(to: CGPoint(x: 16.833360517991128, y: 14.470894453020858), control1: CGPoint(x: 19.269527863506646, y: 17.17217231222998), control2: CGPoint(x: 18.444832586186834, y: 15.330352859549059))
+path.addCurve(to: CGPoint(x: 12.0, y: 15.299999999999997), control1: CGPoint(x: 15.221888449795427, y: 13.611436046492656), control2: CGPoint(x: 13.232915298838638, y: 13.952620749374338))
+path.addCurve(to: CGPoint(x: 7.166639482008872, y: 14.470894453020863), control1: CGPoint(x: 10.767084701161362, y: 13.95262074937434), control2: CGPoint(x: 8.778111550204574, y: 13.611436046492662))
+path.addCurve(to: CGPoint(x: 5.162565374294619, y: 18.94665996024936), control1: CGPoint(x: 5.5551674138131695, y: 15.330352859549063), control2: CGPoint(x: 4.730472136493356, y: 17.17217231222998))
+path.addCurve(to: CGPoint(x: 9.0, y: 22.0), control1: CGPoint(x: 5.594658612095882, y: 20.721147608268737), control2: CGPoint(x: 7.173798924652623, y: 21.977625650243862))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.0, y: 18.0))
+path.addEllipse(in: CGRect(x: 8.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.0, y: 18.0))
+path.addEllipse(in: CGRect(x: 14.66, y: 17.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Burger icon path
+    static let burgerPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 5.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 10.0), control1: CGPoint(x: 3.8954305003384135, y: 12.0), control2: CGPoint(x: 3.0, y: 11.104569499661586))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 3.0), control1: CGPoint(x: 3.0, y: 6.1340067511844465), control2: CGPoint(x: 7.029437251522857, y: 3.000000000000001))
+path.addCurve(to: CGPoint(x: 21.0, y: 9.999999999999998), control1: CGPoint(x: 16.97056274847714, y: 3.0), control2: CGPoint(x: 21.0, y: 6.134006751184444))
+path.addCurve(to: CGPoint(x: 20.414213562373096, y: 11.414213562373096), control1: CGPoint(x: 21.0, y: 10.530432979679087), control2: CGPoint(x: 20.789286319269163, y: 11.039140805477025))
+path.addCurve(to: CGPoint(x: 19.0, y: 12.0), control1: CGPoint(x: 20.039140805477025, y: 11.789286319269165), control2: CGPoint(x: 19.530432979679087, y: 12.0))
+path.addLine(to: CGPoint(x: 15.5, y: 16.1))
+path.addCurve(to: CGPoint(x: 12.1, y: 16.400000000000002), control1: CGPoint(x: 14.7, y: 17.1), control2: CGPoint(x: 13.1, y: 17.200000000000003))
+path.addLine(to: CGPoint(x: 7.0, y: 12.0))
+path.move(to: CGPoint(x: 11.7, y: 16.0))
+path.addLine(to: CGPoint(x: 4.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 14.0), control1: CGPoint(x: 2.8954305003384135, y: 16.0), control2: CGPoint(x: 2.0, y: 15.104569499661586))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 12.0), control1: CGPoint(x: 2.0, y: 12.895430500338414), control2: CGPoint(x: 2.8954305003384126, y: 12.0))
+path.addLine(to: CGPoint(x: 20.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 14.0), control1: CGPoint(x: 21.104569499661586, y: 12.0), control2: CGPoint(x: 22.0, y: 12.895430500338414))
+path.addCurve(to: CGPoint(x: 20.0, y: 16.0), control1: CGPoint(x: 22.0, y: 15.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 16.0))
+path.addLine(to: CGPoint(x: 15.7, y: 16.0))
+path.move(to: CGPoint(x: 5.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 18.0), control1: CGPoint(x: 3.8954305003384135, y: 16.0), control2: CGPoint(x: 3.0, y: 16.895430500338414))
+path.addCurve(to: CGPoint(x: 6.0, y: 21.0), control1: CGPoint(x: 3.0, y: 19.7), control2: CGPoint(x: 4.3, y: 21.0))
+path.addLine(to: CGPoint(x: 18.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 18.0), control1: CGPoint(x: 19.7, y: 21.0), control2: CGPoint(x: 21.0, y: 19.7))
+path.addCurve(to: CGPoint(x: 19.0, y: 16.0), control1: CGPoint(x: 21.0, y: 16.895430500338414), control2: CGPoint(x: 20.104569499661586, y: 16.0))
+        return path
+    }()
+        
+    /// Butterfly icon path
+    static let butterflyPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.8, y: 2.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 9.0), control1: CGPoint(x: 12.0, y: 3.8), control2: CGPoint(x: 12.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 8.2, y: 2.0), control1: CGPoint(x: 12.0, y: 9.0), control2: CGPoint(x: 12.0, y: 3.8))
+path.move(to: CGPoint(x: 12.0, y: 9.0))
+path.addLine(to: CGPoint(x: 12.0, y: 20.0))
+path.move(to: CGPoint(x: 20.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 11.3), control1: CGPoint(x: 16.5, y: 5.0), control2: CGPoint(x: 13.5, y: 8.9))
+path.addCurve(to: CGPoint(x: 4.0, y: 5.0), control1: CGPoint(x: 10.5, y: 8.9), control2: CGPoint(x: 7.5, y: 5.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 7.0), control1: CGPoint(x: 2.8954305003384135, y: 5.0), control2: CGPoint(x: 2.0, y: 5.895430500338413))
+path.addCurve(to: CGPoint(x: 3.5, y: 12.6), control1: CGPoint(x: 2.0, y: 9.3), control2: CGPoint(x: 2.6, y: 11.4))
+path.addCurve(to: CGPoint(x: 6.0, y: 14.0), control1: CGPoint(x: 4.0, y: 13.5), control2: CGPoint(x: 4.9, y: 14.0))
+path.addLine(to: CGPoint(x: 8.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 5.4, y: 15.5), control1: CGPoint(x: 7.1, y: 14.4), control2: CGPoint(x: 5.9, y: 14.9))
+path.addCurve(to: CGPoint(x: 6.1000000000000005, y: 20.4), control1: CGPoint(x: 3.8000000000000003, y: 17.1), control2: CGPoint(x: 4.5, y: 18.9))
+path.addCurve(to: CGPoint(x: 11.0, y: 21.099999999999998), control1: CGPoint(x: 7.700000000000001, y: 22.0), control2: CGPoint(x: 9.5, y: 22.7))
+path.addCurve(to: CGPoint(x: 12.0, y: 19.999999999999996), control1: CGPoint(x: 11.3, y: 20.799999999999997), control2: CGPoint(x: 12.0, y: 19.999999999999996))
+path.addCurve(to: CGPoint(x: 13.0, y: 21.099999999999998), control1: CGPoint(x: 12.0, y: 19.999999999999996), control2: CGPoint(x: 12.6, y: 20.799999999999997))
+path.addCurve(to: CGPoint(x: 17.9, y: 20.4), control1: CGPoint(x: 14.6, y: 22.7), control2: CGPoint(x: 16.4, y: 21.999999999999996))
+path.addCurve(to: CGPoint(x: 18.599999999999998, y: 15.499999999999998), control1: CGPoint(x: 19.5, y: 18.799999999999997), control2: CGPoint(x: 20.2, y: 17.0))
+path.addCurve(to: CGPoint(x: 15.999999999999998, y: 13.999999999999998), control1: CGPoint(x: 18.099999999999998, y: 14.999999999999998), control2: CGPoint(x: 16.9, y: 14.399999999999999))
+path.addLine(to: CGPoint(x: 18.0, y: 13.999999999999998))
+path.addCurve(to: CGPoint(x: 20.5, y: 12.599999999999998), control1: CGPoint(x: 19.1, y: 13.999999999999998), control2: CGPoint(x: 20.0, y: 13.499999999999998))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.999999999999998), control1: CGPoint(x: 21.4, y: 11.399999999999999), control2: CGPoint(x: 22.0, y: 9.299999999999997))
+path.addCurve(to: CGPoint(x: 20.0, y: 4.999999999999998), control1: CGPoint(x: 22.0, y: 5.895430500338412), control2: CGPoint(x: 21.104569499661586, y: 4.999999999999998))
+        return path
+    }()
+        
+    /// Cabin icon path
+    static let cabinPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.6, y: 10.4))
+path.addCurve(to: CGPoint(x: 2.0646221251260872, y: 12.45269836699119), control1: CGPoint(x: 2.067674260152294, y: 10.939471037500235), control2: CGPoint(x: 1.8635893668357042, y: 11.721955235856763))
+path.addCurve(to: CGPoint(x: 3.5746221302767998, y: 13.942698380144762), control1: CGPoint(x: 2.2656548834164703, y: 13.183441498125616), control2: CGPoint(x: 2.8412636345846254, y: 13.751426295401334))
+path.addCurve(to: CGPoint(x: 5.619999991929637, y: 13.380000008178692), control1: CGPoint(x: 4.307980625968974, y: 14.133970464888188), control2: CGPoint(x: 5.087674263450433, y: 13.919471056896851))
+path.addLine(to: CGPoint(x: 12.0, y: 7.0))
+path.addLine(to: CGPoint(x: 18.4, y: 13.4))
+path.addCurve(to: CGPoint(x: 21.400000000196673, y: 13.379000028096524), control1: CGPoint(x: 19.23422610691508, y: 14.222628142685918), control2: CGPoint(x: 20.577371857510755, y: 14.213226135011608))
+path.addCurve(to: CGPoint(x: 21.3790000282932, y: 10.37900002789985), control1: CGPoint(x: 22.22262814288259, y: 12.544773921181442), control2: CGPoint(x: 22.21322613520828, y: 11.201628170585767))
+path.addLine(to: CGPoint(x: 13.7, y: 2.7))
+path.addCurve(to: CGPoint(x: 11.99716815207131, y: 1.994097412685015), control1: CGPoint(x: 13.248984591804863, y: 2.2474096192986885), control2: CGPoint(x: 12.636114462339064, y: 1.9933465944590831))
+path.addCurve(to: CGPoint(x: 10.296, y: 2.7039999999999997), control1: CGPoint(x: 11.358221841803557, y: 1.9948482309109465), control2: CGPoint(x: 10.745950496942793, y: 2.2503509049565755))
+path.closeSubpath()
+path.move(to: CGPoint(x: 14.0, y: 22.0))
+path.addLine(to: CGPoint(x: 14.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 13.0), control1: CGPoint(x: 14.0, y: 13.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 13.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 15.0), control1: CGPoint(x: 10.895430500338414, y: 13.0), control2: CGPoint(x: 10.0, y: 13.895430500338414))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.move(to: CGPoint(x: 14.0, y: 14.0))
+path.addLine(to: CGPoint(x: 20.0, y: 14.0))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 22.0), control1: CGPoint(x: 20.0, y: 21.104569499661586), control2: CGPoint(x: 19.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 20.0), control1: CGPoint(x: 4.8954305003384135, y: 22.0), control2: CGPoint(x: 4.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 4.0, y: 14.0))
+path.addLine(to: CGPoint(x: 10.0, y: 14.0))
+path.move(to: CGPoint(x: 4.0, y: 18.0))
+path.addLine(to: CGPoint(x: 10.0, y: 18.0))
+path.move(to: CGPoint(x: 14.0, y: 18.0))
+path.addLine(to: CGPoint(x: 20.0, y: 18.0))
+        return path
+    }()
+        
+    /// Cabinet Filing icon path
+    static let cabinetFilingPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 12.0))
+path.addLine(to: CGPoint(x: 20.0, y: 12.0))
+path.move(to: CGPoint(x: 10.0, y: 6.0))
+path.addLine(to: CGPoint(x: 14.0, y: 6.0))
+path.move(to: CGPoint(x: 10.0, y: 16.0))
+path.addLine(to: CGPoint(x: 14.0, y: 16.0))
+path.move(to: CGPoint(x: 6.0, y: 2.0))
+path.addLine(to: CGPoint(x: 18.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 4.0), control1: CGPoint(x: 19.104569499661586, y: 2.0), control2: CGPoint(x: 20.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 22.0), control1: CGPoint(x: 20.0, y: 21.104569499661586), control2: CGPoint(x: 19.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 20.0), control1: CGPoint(x: 4.8954305003384135, y: 22.0), control2: CGPoint(x: 4.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 4.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 2.0), control1: CGPoint(x: 4.0, y: 2.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Cactus icon path
+    static let cactusPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 5.0, y: 8.0))
+path.addLine(to: CGPoint(x: 5.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 16.0), control1: CGPoint(x: 5.0, y: 15.104569499661586), control2: CGPoint(x: 5.8954305003384135, y: 16.0))
+path.addLine(to: CGPoint(x: 9.0, y: 16.0))
+path.move(to: CGPoint(x: 15.0, y: 14.0))
+path.addLine(to: CGPoint(x: 17.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 12.0), control1: CGPoint(x: 18.104569499661586, y: 14.0), control2: CGPoint(x: 19.0, y: 13.104569499661586))
+path.addLine(to: CGPoint(x: 19.0, y: 6.0))
+path.move(to: CGPoint(x: 9.0, y: 22.0))
+path.addLine(to: CGPoint(x: 9.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 9.0, y: 3.34314575050762), control2: CGPoint(x: 10.343145750507619, y: 2.0000000000000004))
+path.addCurve(to: CGPoint(x: 15.0, y: 4.999999999999999), control1: CGPoint(x: 13.65685424949238, y: 2.0), control2: CGPoint(x: 15.0, y: 3.343145750507619))
+path.addLine(to: CGPoint(x: 15.0, y: 22.0))
+path.move(to: CGPoint(x: 7.0, y: 22.0))
+path.addLine(to: CGPoint(x: 17.0, y: 22.0))
+        return path
+    }()
+        
+    /// Candle Holder icon path
+    static let candleHolderPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 18.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 22.0), control1: CGPoint(x: 18.0, y: 20.209138999323173), control2: CGPoint(x: 16.209138999323173, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 3.7908610006768266, y: 22.0), control2: CGPoint(x: 2.0000000000000004, y: 20.209138999323173))
+path.addLine(to: CGPoint(x: 20.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 16.0), control1: CGPoint(x: 21.104569499661586, y: 18.0), control2: CGPoint(x: 22.0, y: 17.104569499661586))
+path.addCurve(to: CGPoint(x: 20.0, y: 14.0), control1: CGPoint(x: 22.0, y: 14.895430500338414), control2: CGPoint(x: 21.104569499661586, y: 14.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 16.0), control1: CGPoint(x: 18.895430500338414, y: 14.0), control2: CGPoint(x: 18.0, y: 14.895430500338414))
+path.closeSubpath()
+path.move(to: CGPoint(x: 10.0, y: 9.0))
+path.addLine(to: CGPoint(x: 10.0, y: 11.0))
+path.move(to: CGPoint(x: 8.0, y: 11.0))
+path.addLine(to: CGPoint(x: 12.0, y: 11.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Candle Holder Lit icon path
+    static let candleHolderLitPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 5.0), control1: CGPoint(x: 10.0, y: 2.0), control2: CGPoint(x: 8.0, y: 3.9))
+path.addCurve(to: CGPoint(x: 10.0, y: 7.0), control1: CGPoint(x: 8.0, y: 6.1), control2: CGPoint(x: 8.9, y: 7.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 5.0), control1: CGPoint(x: 11.1, y: 7.0), control2: CGPoint(x: 12.0, y: 6.1))
+path.addCurve(to: CGPoint(x: 10.0, y: 2.0), control1: CGPoint(x: 12.0, y: 3.9000000000000004), control2: CGPoint(x: 10.0, y: 2.0))
+path.move(to: CGPoint(x: 13.0, y: 13.0))
+path.addLine(to: CGPoint(x: 12.0, y: 11.0))
+path.move(to: CGPoint(x: 18.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 22.0), control1: CGPoint(x: 18.0, y: 20.209138999323173), control2: CGPoint(x: 16.209138999323173, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 3.7908610006768266, y: 22.0), control2: CGPoint(x: 2.0000000000000004, y: 20.209138999323173))
+path.addLine(to: CGPoint(x: 20.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 16.0), control1: CGPoint(x: 21.104569499661586, y: 18.0), control2: CGPoint(x: 22.0, y: 17.104569499661586))
+path.addCurve(to: CGPoint(x: 20.0, y: 14.0), control1: CGPoint(x: 22.0, y: 14.895430500338414), control2: CGPoint(x: 21.104569499661586, y: 14.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 16.0), control1: CGPoint(x: 18.895430500338414, y: 14.0), control2: CGPoint(x: 18.0, y: 14.895430500338414))
+path.closeSubpath()
+path.move(to: CGPoint(x: 8.0, y: 11.0))
+path.addLine(to: CGPoint(x: 12.0, y: 11.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Candle Tealight icon path
+    static let candleTealightPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 12.0, y: 7.0))
+path.move(to: CGPoint(x: 2.0, y: 13.0))
+path.addLine(to: CGPoint(x: 2.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0, y: 20.7), control2: CGPoint(x: 6.5, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 19.0), control1: CGPoint(x: 17.5, y: 22.0), control2: CGPoint(x: 22.0, y: 20.7))
+path.addLine(to: CGPoint(x: 22.0, y: 13.0))
+path.move(to: CGPoint(x: 2.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 2.0000000000000018, y: 14.65685424949238), control2: CGPoint(x: 6.477152501692067, y: 16.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 13.0), control1: CGPoint(x: 17.522847498307936, y: 16.0), control2: CGPoint(x: 22.0, y: 14.65685424949238))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 22.0, y: 11.34314575050762), control2: CGPoint(x: 17.522847498307936, y: 10.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 13.0), control1: CGPoint(x: 6.477152501692067, y: 10.0), control2: CGPoint(x: 2.0000000000000018, y: 11.34314575050762))
+        return path
+    }()
+        
+    /// Candle Tealight Lit icon path
+    static let candleTealightLitPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 5.0), control1: CGPoint(x: 12.0, y: 2.0), control2: CGPoint(x: 10.0, y: 3.9))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.0), control1: CGPoint(x: 10.0, y: 6.1), control2: CGPoint(x: 10.9, y: 7.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 5.0), control1: CGPoint(x: 13.1, y: 7.0), control2: CGPoint(x: 14.0, y: 6.1))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 14.0, y: 3.9000000000000004), control2: CGPoint(x: 12.0, y: 2.0))
+path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 12.0, y: 7.0))
+path.move(to: CGPoint(x: 2.0, y: 13.0))
+path.addLine(to: CGPoint(x: 2.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0, y: 20.7), control2: CGPoint(x: 6.5, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 19.0), control1: CGPoint(x: 17.5, y: 22.0), control2: CGPoint(x: 22.0, y: 20.7))
+path.addLine(to: CGPoint(x: 22.0, y: 13.0))
+path.move(to: CGPoint(x: 8.0, y: 16.0))
+path.addLine(to: CGPoint(x: 8.0, y: 17.0))
+path.move(to: CGPoint(x: 12.0, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 2.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 2.0000000000000018, y: 14.65685424949238), control2: CGPoint(x: 6.477152501692067, y: 16.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 13.0), control1: CGPoint(x: 17.522847498307936, y: 16.0), control2: CGPoint(x: 22.0, y: 14.65685424949238))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 22.0, y: 11.34314575050762), control2: CGPoint(x: 17.522847498307936, y: 10.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 13.0), control1: CGPoint(x: 6.477152501692067, y: 10.0), control2: CGPoint(x: 2.0000000000000018, y: 11.34314575050762))
+        return path
+    }()
+        
+    /// Candlestick icon path
+    static let candlestickPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 8.0))
+path.addLine(to: CGPoint(x: 12.0, y: 11.0))
+path.move(to: CGPoint(x: 10.0, y: 11.0))
+path.addLine(to: CGPoint(x: 14.0, y: 11.0))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Candlestick Big icon path
+    static let candlestickBigPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.0, y: 22.0))
+path.addLine(to: CGPoint(x: 8.0, y: 22.0))
+path.addLine(to: CGPoint(x: 8.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 14.0), control1: CGPoint(x: 8.0, y: 14.4), control2: CGPoint(x: 8.4, y: 14.0))
+path.addLine(to: CGPoint(x: 15.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 15.0), control1: CGPoint(x: 15.6, y: 14.0), control2: CGPoint(x: 16.0, y: 14.4))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 11.0))
+path.addLine(to: CGPoint(x: 12.0, y: 14.0))
+        return path
+    }()
+        
+    /// Candlestick Big Lit icon path
+    static let candlestickBigLitPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 7.0), control1: CGPoint(x: 12.0, y: 2.0), control2: CGPoint(x: 9.0, y: 5.3))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 9.0, y: 8.7), control2: CGPoint(x: 10.3, y: 10.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 7.0), control1: CGPoint(x: 13.7, y: 10.0), control2: CGPoint(x: 15.0, y: 8.7))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 15.0, y: 5.300000000000001), control2: CGPoint(x: 12.0, y: 2.0))
+path.move(to: CGPoint(x: 16.0, y: 22.0))
+path.addLine(to: CGPoint(x: 8.0, y: 22.0))
+path.addLine(to: CGPoint(x: 8.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 14.0), control1: CGPoint(x: 8.0, y: 14.4), control2: CGPoint(x: 8.4, y: 14.0))
+path.addLine(to: CGPoint(x: 15.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 15.0), control1: CGPoint(x: 15.6, y: 14.0), control2: CGPoint(x: 16.0, y: 14.4))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addLine(to: CGPoint(x: 12.0, y: 17.0))
+path.move(to: CGPoint(x: 17.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 15.9, y: 14.6), control1: CGPoint(x: 17.0, y: 17.0), control2: CGPoint(x: 16.3, y: 15.6))
+        return path
+    }()
+        
+    /// Candlestick Lit icon path
+    static let candlestickLitPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 5.0), control1: CGPoint(x: 12.0, y: 2.0), control2: CGPoint(x: 10.0, y: 3.9))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.0), control1: CGPoint(x: 10.0, y: 6.1), control2: CGPoint(x: 10.9, y: 7.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 5.0), control1: CGPoint(x: 13.1, y: 7.0), control2: CGPoint(x: 14.0, y: 6.1))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 14.0, y: 3.9000000000000004), control2: CGPoint(x: 12.0, y: 2.0))
+path.move(to: CGPoint(x: 15.0, y: 13.0))
+path.addLine(to: CGPoint(x: 14.0, y: 11.0))
+path.move(to: CGPoint(x: 10.0, y: 11.0))
+path.addLine(to: CGPoint(x: 14.0, y: 11.0))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Card Credit icon path
+    static let cardCreditPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 10.0))
+path.addLine(to: CGPoint(x: 22.0, y: 10.0))
+path.move(to: CGPoint(x: 4.0, y: 5.0))
+path.addLine(to: CGPoint(x: 20.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 7.0), control1: CGPoint(x: 21.104569499661586, y: 5.0), control2: CGPoint(x: 22.0, y: 5.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 19.0), control1: CGPoint(x: 22.0, y: 18.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 19.0))
+path.addLine(to: CGPoint(x: 4.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 17.0), control1: CGPoint(x: 2.8954305003384135, y: 19.0), control2: CGPoint(x: 2.0, y: 18.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 5.0), control1: CGPoint(x: 2.0, y: 5.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 5.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Card Sd icon path
+    static let cardSdPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 20.0), control1: CGPoint(x: 4.8954305003384135, y: 22.0), control2: CGPoint(x: 4.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addLine(to: CGPoint(x: 8.0, y: 2.0))
+path.addLine(to: CGPoint(x: 18.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 4.0), control1: CGPoint(x: 19.104569499661586, y: 2.0), control2: CGPoint(x: 20.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 22.0), control1: CGPoint(x: 20.0, y: 21.104569499661586), control2: CGPoint(x: 19.104569499661586, y: 22.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 8.0, y: 10.0))
+path.addLine(to: CGPoint(x: 8.0, y: 7.5))
+path.move(to: CGPoint(x: 12.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.move(to: CGPoint(x: 16.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 10.0))
+        return path
+    }()
+        
+    /// Card Sim icon path
+    static let cardSimPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 20.0), control1: CGPoint(x: 4.8954305003384135, y: 22.0), control2: CGPoint(x: 4.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 4.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 2.0), control1: CGPoint(x: 4.0, y: 2.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 2.0))
+path.addLine(to: CGPoint(x: 15.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 7.0))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 22.0), control1: CGPoint(x: 20.0, y: 21.104569499661586), control2: CGPoint(x: 19.104569499661586, y: 22.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 8.0, y: 14.0))
+path.addLine(to: CGPoint(x: 16.0, y: 14.0))
+path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 10.0, y: 10.0))
+path.addLine(to: CGPoint(x: 14.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 12.0), control1: CGPoint(x: 15.104569499661586, y: 10.0), control2: CGPoint(x: 16.0, y: 10.895430500338414))
+path.addLine(to: CGPoint(x: 16.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 18.0), control1: CGPoint(x: 16.0, y: 17.104569499661586), control2: CGPoint(x: 15.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 10.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 16.0), control1: CGPoint(x: 8.895430500338414, y: 18.0), control2: CGPoint(x: 8.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 10.0), control1: CGPoint(x: 8.0, y: 10.895430500338414), control2: CGPoint(x: 8.895430500338414, y: 10.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Carton icon path
+    static let cartonPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 2.0), control1: CGPoint(x: 16.0, y: 2.4), control2: CGPoint(x: 15.6, y: 2.0))
+path.addLine(to: CGPoint(x: 9.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 3.0), control1: CGPoint(x: 8.4, y: 2.0), control2: CGPoint(x: 8.0, y: 2.4))
+path.addLine(to: CGPoint(x: 8.0, y: 6.0))
+path.addLine(to: CGPoint(x: 5.0, y: 10.0))
+path.addLine(to: CGPoint(x: 5.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 22.0), control1: CGPoint(x: 5.0, y: 21.104569499661586), control2: CGPoint(x: 5.8954305003384135, y: 22.0))
+path.addLine(to: CGPoint(x: 17.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 20.0), control1: CGPoint(x: 18.104569499661586, y: 22.0), control2: CGPoint(x: 19.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 19.0, y: 10.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 13.0, y: 22.0))
+path.addLine(to: CGPoint(x: 13.0, y: 10.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addLine(to: CGPoint(x: 8.0, y: 6.0))
+path.move(to: CGPoint(x: 5.0, y: 10.0))
+path.addLine(to: CGPoint(x: 13.0, y: 10.0))
+        return path
+    }()
+        
+    /// Carton Off icon path
+    static let cartonOffPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.1, y: 8.5))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 2.0), control1: CGPoint(x: 16.0, y: 2.4), control2: CGPoint(x: 15.6, y: 2.0))
+path.addLine(to: CGPoint(x: 9.0, y: 2.0))
+path.move(to: CGPoint(x: 11.7, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addLine(to: CGPoint(x: 19.0, y: 10.0))
+path.addLine(to: CGPoint(x: 19.0, y: 13.3))
+path.move(to: CGPoint(x: 2.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.move(to: CGPoint(x: 19.0, y: 19.0))
+path.addLine(to: CGPoint(x: 19.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 19.0, y: 21.104569499661586), control2: CGPoint(x: 18.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 20.0), control1: CGPoint(x: 5.8954305003384135, y: 22.0), control2: CGPoint(x: 5.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 5.0, y: 10.0))
+path.addLine(to: CGPoint(x: 7.1, y: 7.1))
+path.move(to: CGPoint(x: 13.0, y: 13.0))
+path.addLine(to: CGPoint(x: 13.0, y: 22.0))
+        return path
+    }()
+        
+    /// Case Camel icon path
+    static let caseCamelPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 10.0))
+path.addLine(to: CGPoint(x: 10.0, y: 16.0))
+path.move(to: CGPoint(x: 14.0, y: 12.0))
+path.addLine(to: CGPoint(x: 18.5, y: 12.0))
+path.addCurve(to: CGPoint(x: 20.5, y: 14.0), control1: CGPoint(x: 19.604569499661586, y: 12.0), control2: CGPoint(x: 20.5, y: 12.895430500338414))
+path.addCurve(to: CGPoint(x: 18.5, y: 16.0), control1: CGPoint(x: 20.5, y: 15.104569499661586), control2: CGPoint(x: 19.604569499661586, y: 16.0))
+path.addLine(to: CGPoint(x: 14.0, y: 16.0))
+path.addLine(to: CGPoint(x: 14.0, y: 8.0))
+path.addLine(to: CGPoint(x: 18.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 10.0), control1: CGPoint(x: 19.104569499661586, y: 8.0), control2: CGPoint(x: 20.0, y: 8.895430500338414))
+path.addCurve(to: CGPoint(x: 18.0, y: 12.0), control1: CGPoint(x: 20.0, y: 11.104569499661586), control2: CGPoint(x: 19.104569499661586, y: 12.0))
+path.move(to: CGPoint(x: 4.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 16.0), control1: CGPoint(x: 4.0, y: 14.65685424949238), control2: CGPoint(x: 5.34314575050762, y: 16.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 13.0), control1: CGPoint(x: 8.65685424949238, y: 16.0), control2: CGPoint(x: 10.0, y: 14.65685424949238))
+path.addCurve(to: CGPoint(x: 7.0, y: 10.0), control1: CGPoint(x: 10.0, y: 11.34314575050762), control2: CGPoint(x: 8.65685424949238, y: 10.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 13.0), control1: CGPoint(x: 5.34314575050762, y: 10.0), control2: CGPoint(x: 4.0, y: 11.34314575050762))
+        return path
+    }()
+        
+    /// Case Kebab icon path
+    static let caseKebabPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 11.0))
+path.addLine(to: CGPoint(x: 7.0, y: 16.0))
+path.move(to: CGPoint(x: 11.0, y: 13.0))
+path.addLine(to: CGPoint(x: 13.0, y: 13.0))
+path.move(to: CGPoint(x: 17.0, y: 9.0))
+path.addLine(to: CGPoint(x: 17.0, y: 16.0))
+path.move(to: CGPoint(x: 2.0, y: 13.5))
+path.addCurve(to: CGPoint(x: 4.5, y: 16.0), control1: CGPoint(x: 2.0000000000000004, y: 14.880711874576985), control2: CGPoint(x: 3.119288125423017, y: 16.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 13.5), control1: CGPoint(x: 5.880711874576984, y: 16.0), control2: CGPoint(x: 7.0, y: 14.880711874576983))
+path.addCurve(to: CGPoint(x: 4.5, y: 11.0), control1: CGPoint(x: 7.0, y: 12.119288125423017), control2: CGPoint(x: 5.880711874576984, y: 11.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 13.5), control1: CGPoint(x: 3.119288125423017, y: 11.0), control2: CGPoint(x: 2.0000000000000004, y: 12.119288125423015))
+path.move(to: CGPoint(x: 17.0, y: 13.5))
+path.addCurve(to: CGPoint(x: 19.5, y: 16.0), control1: CGPoint(x: 17.0, y: 14.880711874576985), control2: CGPoint(x: 18.119288125423015, y: 16.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 13.5), control1: CGPoint(x: 20.880711874576985, y: 16.0), control2: CGPoint(x: 22.0, y: 14.880711874576983))
+path.addCurve(to: CGPoint(x: 19.5, y: 11.0), control1: CGPoint(x: 22.0, y: 12.119288125423017), control2: CGPoint(x: 20.880711874576985, y: 11.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 13.5), control1: CGPoint(x: 18.119288125423015, y: 11.0), control2: CGPoint(x: 17.0, y: 12.119288125423015))
+        return path
+    }()
+        
+    /// Case Snake icon path
+    static let caseSnakePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 11.0))
+path.addLine(to: CGPoint(x: 7.0, y: 16.0))
+path.move(to: CGPoint(x: 11.0, y: 16.0))
+path.addLine(to: CGPoint(x: 13.0, y: 16.0))
+path.move(to: CGPoint(x: 17.0, y: 9.0))
+path.addLine(to: CGPoint(x: 17.0, y: 16.0))
+path.move(to: CGPoint(x: 2.0, y: 13.5))
+path.addCurve(to: CGPoint(x: 4.5, y: 16.0), control1: CGPoint(x: 2.0000000000000004, y: 14.880711874576985), control2: CGPoint(x: 3.119288125423017, y: 16.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 13.5), control1: CGPoint(x: 5.880711874576984, y: 16.0), control2: CGPoint(x: 7.0, y: 14.880711874576983))
+path.addCurve(to: CGPoint(x: 4.5, y: 11.0), control1: CGPoint(x: 7.0, y: 12.119288125423017), control2: CGPoint(x: 5.880711874576984, y: 11.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 13.5), control1: CGPoint(x: 3.119288125423017, y: 11.0), control2: CGPoint(x: 2.0000000000000004, y: 12.119288125423015))
+path.move(to: CGPoint(x: 17.0, y: 13.5))
+path.addCurve(to: CGPoint(x: 19.5, y: 16.0), control1: CGPoint(x: 17.0, y: 14.880711874576985), control2: CGPoint(x: 18.119288125423015, y: 16.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 13.5), control1: CGPoint(x: 20.880711874576985, y: 16.0), control2: CGPoint(x: 22.0, y: 14.880711874576983))
+path.addCurve(to: CGPoint(x: 19.5, y: 11.0), control1: CGPoint(x: 22.0, y: 12.119288125423017), control2: CGPoint(x: 20.880711874576985, y: 11.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 13.5), control1: CGPoint(x: 18.119288125423015, y: 11.0), control2: CGPoint(x: 17.0, y: 12.119288125423015))
+        return path
+    }()
+        
+    /// Case Snake Upper icon path
+    static let caseSnakeUpperPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 16.0))
+path.addLine(to: CGPoint(x: 2.0, y: 10.5))
+path.addCurve(to: CGPoint(x: 4.499999999999999, y: 8.0), control1: CGPoint(x: 2.0, y: 9.119288125423017), control2: CGPoint(x: 3.119288125423016, y: 8.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 10.5), control1: CGPoint(x: 5.880711874576983, y: 8.0), control2: CGPoint(x: 7.0, y: 9.119288125423015))
+path.addLine(to: CGPoint(x: 7.0, y: 16.0))
+path.move(to: CGPoint(x: 7.0, y: 13.0))
+path.addLine(to: CGPoint(x: 2.0, y: 13.0))
+path.move(to: CGPoint(x: 11.0, y: 16.0))
+path.addLine(to: CGPoint(x: 13.0, y: 16.0))
+path.move(to: CGPoint(x: 17.0, y: 12.0))
+path.addLine(to: CGPoint(x: 20.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 14.0), control1: CGPoint(x: 21.104569499661586, y: 12.0), control2: CGPoint(x: 22.0, y: 12.895430500338414))
+path.addCurve(to: CGPoint(x: 20.0, y: 16.0), control1: CGPoint(x: 22.0, y: 15.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 16.0))
+path.addLine(to: CGPoint(x: 17.0, y: 16.0))
+path.addLine(to: CGPoint(x: 17.0, y: 8.0))
+path.addLine(to: CGPoint(x: 19.5, y: 8.0))
+path.addCurve(to: CGPoint(x: 21.549999971539588, y: 9.950000003432024), control1: CGPoint(x: 20.604569489976218, y: 7.972385778516232), control2: CGPoint(x: 21.52238573580159, y: 8.845430513812161))
+path.addCurve(to: CGPoint(x: 19.59999999456237, y: 12.000000000135941), control1: CGPoint(x: 21.577614207277584, y: 11.054569493051886), control2: CGPoint(x: 20.70456948382588, y: 11.972385750143712))
+        return path
+    }()
+        
+    /// Cat Big icon path
+    static let catBigPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 7.0))
+path.addLine(to: CGPoint(x: 6.5, y: 7.5))
+path.move(to: CGPoint(x: 18.0, y: 7.0))
+path.addLine(to: CGPoint(x: 17.5, y: 7.5))
+path.move(to: CGPoint(x: 5.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 2.983384334877174, y: 18.004768829604064), control1: CGPoint(x: 3.4080789590057314, y: 14.131263347214238), control2: CGPoint(x: 2.6205040818873098, y: 16.085840148412228))
+path.addCurve(to: CGPoint(x: 6.688254368683548, y: 21.927572394810813), control1: CGPoint(x: 3.346264587867039, y: 19.923697510795904), control2: CGPoint(x: 4.793175177762245, y: 21.455720488332002))
+path.addCurve(to: CGPoint(x: 11.8, y: 20.2), control1: CGPoint(x: 8.583333559604853, y: 22.399424301289624), control2: CGPoint(x: 10.579689388368823, y: 21.724733213598686))
+path.addLine(to: CGPoint(x: 14.8, y: 16.599999999999998))
+path.addCurve(to: CGPoint(x: 14.894427190999915, y: 15.552786404500042), control1: CGPoint(x: 15.027263235072331, y: 16.296982353236892), control2: CGPoint(x: 15.063819205135996, y: 15.891570432772204))
+path.addCurve(to: CGPoint(x: 14.0, y: 15.0), control1: CGPoint(x: 14.725035176863834, y: 15.21400237622788), control2: CGPoint(x: 14.378772058453883, y: 15.0))
+path.addLine(to: CGPoint(x: 10.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 9.105572809000082, y: 15.552786404500042), control1: CGPoint(x: 9.621227941546117, y: 15.0), control2: CGPoint(x: 9.274964823136164, y: 15.214002376227878))
+path.addCurve(to: CGPoint(x: 9.2, y: 16.6), control1: CGPoint(x: 8.936180794864, y: 15.891570432772205), control2: CGPoint(x: 8.972736764927669, y: 16.296982353236896))
+path.addLine(to: CGPoint(x: 12.2, y: 20.200000000000003))
+path.addCurve(to: CGPoint(x: 17.311745631316448, y: 21.92757239481081), control1: CGPoint(x: 13.420310611631177, y: 21.724733213598686), control2: CGPoint(x: 15.416666440395144, y: 22.39942430128962))
+path.addCurve(to: CGPoint(x: 21.016615665122817, y: 18.004768829604068), control1: CGPoint(x: 19.20682482223775, y: 21.455720488332), control2: CGPoint(x: 20.653735412132953, y: 19.923697510795904))
+path.addCurve(to: CGPoint(x: 19.000000000000004, y: 13.000000000000005), control1: CGPoint(x: 21.37949591811268, y: 16.08584014841223), control2: CGPoint(x: 20.591921040994265, y: 14.131263347214245))
+path.addLine(to: CGPoint(x: 22.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 9.6), control1: CGPoint(x: 22.0, y: 11.8), control2: CGPoint(x: 21.6, y: 10.6))
+path.addCurve(to: CGPoint(x: 20.749999957470738, y: 4.050000043350357), control1: CGPoint(x: 22.463554546886837, y: 7.998374219755934), control2: CGPoint(x: 22.351625715906142, y: 5.513554614103277))
+path.addCurve(to: CGPoint(x: 15.199999997095805, y: 4.300000003178173), control1: CGPoint(x: 19.148374199035338, y: 2.586445472597436), control2: CGPoint(x: 16.66355459171481, y: 2.6983742665514336))
+path.addLine(to: CGPoint(x: 14.2, y: 5.3))
+path.addCurve(to: CGPoint(x: 9.8, y: 5.299999999999999), control1: CGPoint(x: 12.771458404641686, y: 5.029751687873873), control2: CGPoint(x: 11.228541595358315, y: 5.0297516878738735))
+path.addLine(to: CGPoint(x: 8.799999999999999, y: 4.3))
+path.addCurve(to: CGPoint(x: 3.250000039351086, y: 4.05000004625455), control1: CGPoint(x: 7.3364454036257385, y: 2.6983742649772022), control2: CGPoint(x: 4.851625796182546, y: 2.5864454737463722))
+path.addCurve(to: CGPoint(x: 3.0000000029041933, y: 9.600000003178174), control1: CGPoint(x: 1.648374282519626, y: 5.513554618762728), control2: CGPoint(x: 1.5364454542620996, y: 7.9983742245380505))
+path.addCurve(to: CGPoint(x: 2.0, y: 13.0), control1: CGPoint(x: 2.4, y: 10.6), control2: CGPoint(x: 2.0, y: 11.8))
+path.closeSubpath()
+path.move(to: CGPoint(x: 10.0, y: 11.0))
+path.addLine(to: CGPoint(x: 10.0, y: 10.5))
+path.move(to: CGPoint(x: 14.0, y: 11.0))
+path.addLine(to: CGPoint(x: 14.0, y: 10.5))
+path.move(to: CGPoint(x: 5.0, y: 18.0))
+path.addLine(to: CGPoint(x: 2.0, y: 18.0))
+path.move(to: CGPoint(x: 19.0, y: 18.0))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+        return path
+    }()
+        
+    /// Cauldron icon path
+    static let cauldronPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 19.0, y: 2.0))
+path.addEllipse(in: CGRect(x: 18.66, y: 1.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 22.0, y: 8.0))
+path.addLine(to: CGPoint(x: 2.0, y: 8.0))
+path.move(to: CGPoint(x: 7.0, y: 12.0))
+path.addLine(to: CGPoint(x: 7.0, y: 8.0))
+path.move(to: CGPoint(x: 11.0, y: 10.0))
+path.addLine(to: CGPoint(x: 11.0, y: 8.0))
+path.move(to: CGPoint(x: 4.4, y: 8.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 13.5), control1: CGPoint(x: 2.9, y: 9.5), control2: CGPoint(x: 2.0, y: 11.4))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0, y: 18.2), control2: CGPoint(x: 6.5, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 13.5), control1: CGPoint(x: 17.5, y: 22.0), control2: CGPoint(x: 22.0, y: 18.2))
+path.addCurve(to: CGPoint(x: 19.6, y: 8.0), control1: CGPoint(x: 22.0, y: 11.4), control2: CGPoint(x: 21.1, y: 9.5))
+path.move(to: CGPoint(x: 5.0, y: 20.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.move(to: CGPoint(x: 19.0, y: 20.0))
+path.addLine(to: CGPoint(x: 20.0, y: 22.0))
+path.move(to: CGPoint(x: 7.5, y: 3.5))
+path.addCurve(to: CGPoint(x: 8.0, y: 4.0), control1: CGPoint(x: 7.5, y: 3.7761423749153966), control2: CGPoint(x: 7.723857625084603, y: 4.0))
+path.addCurve(to: CGPoint(x: 8.5, y: 3.5), control1: CGPoint(x: 8.276142374915397, y: 4.0), control2: CGPoint(x: 8.5, y: 3.7761423749153966))
+path.addCurve(to: CGPoint(x: 8.0, y: 3.0), control1: CGPoint(x: 8.5, y: 3.2238576250846034), control2: CGPoint(x: 8.276142374915397, y: 3.0))
+path.addCurve(to: CGPoint(x: 7.5, y: 3.5), control1: CGPoint(x: 7.723857625084603, y: 3.0), control2: CGPoint(x: 7.5, y: 3.2238576250846034))
+path.move(to: CGPoint(x: 12.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 8.0), control1: CGPoint(x: 12.0, y: 7.104569499661587), control2: CGPoint(x: 12.895430500338414, y: 8.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 6.0), control1: CGPoint(x: 15.104569499661586, y: 8.0), control2: CGPoint(x: 16.0, y: 7.1045694996615865))
+path.addCurve(to: CGPoint(x: 14.0, y: 4.0), control1: CGPoint(x: 16.0, y: 4.8954305003384135), control2: CGPoint(x: 15.104569499661586, y: 4.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 12.895430500338414, y: 4.0), control2: CGPoint(x: 12.0, y: 4.895430500338413))
+        return path
+    }()
+        
+    /// Cent icon path
+    static let centPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 19.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 10.001244408904324, y: 4.2725933896874535), control1: CGPoint(x: 17.189577286061997, y: 4.864255876282641), control2: CGPoint(x: 13.498712520690454, y: 3.3354496335807564))
+path.addCurve(to: CGPoint(x: 4.071796769724491, y: 11.999999999999998), control1: CGPoint(x: 6.503776297118195, y: 5.209737145794151), control2: CGPoint(x: 4.071796769724491, y: 8.37915457212399))
+path.addCurve(to: CGPoint(x: 10.001244408904327, y: 19.727406610312546), control1: CGPoint(x: 4.071796769724491, y: 15.620845427876008), control2: CGPoint(x: 6.503776297118197, y: 18.79026285420585))
+path.addCurve(to: CGPoint(x: 19.0, y: 15.999999999999996), control1: CGPoint(x: 13.498712520690455, y: 20.664550366419242), control2: CGPoint(x: 17.189577286061997, y: 19.13574412371736))
+path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+        return path
+    }()
+        
+    /// Cent Circle icon path
+    static let centCirclePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 16.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 10.418861169915811, y: 7.256583509747431), control1: CGPoint(x: 14.708708775779558, y: 7.278278367706077), control2: CGPoint(x: 12.460571865477704, y: 6.576013277893467))
+path.addCurve(to: CGPoint(x: 7.0, y: 12.0), control1: CGPoint(x: 8.377150474353918, y: 7.937153741601394), control2: CGPoint(x: 7.0, y: 9.847847959632595))
+path.addCurve(to: CGPoint(x: 10.41886116991581, y: 16.74341649025257), control1: CGPoint(x: 7.0, y: 14.152152040367405), control2: CGPoint(x: 8.377150474353918, y: 16.062846258398604))
+path.addCurve(to: CGPoint(x: 16.0, y: 15.0), control1: CGPoint(x: 12.460571865477702, y: 17.423986722106534), control2: CGPoint(x: 14.708708775779556, y: 16.721721632293924))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Cent Square icon path
+    static let centSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 7.0))
+path.addLine(to: CGPoint(x: 12.0, y: 17.0))
+path.move(to: CGPoint(x: 15.4, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.900622204452162, y: 8.136296694843727), control1: CGPoint(x: 14.494788643030997, y: 8.43212793814132), control2: CGPoint(x: 12.649356260345225, y: 7.667724816790378))
+path.addCurve(to: CGPoint(x: 7.935898384862245, y: 12.0), control1: CGPoint(x: 9.151888148559097, y: 8.604868572897075), control2: CGPoint(x: 7.935898384862245, y: 10.189577286061995))
+path.addCurve(to: CGPoint(x: 10.900622204452162, y: 15.863703305156273), control1: CGPoint(x: 7.935898384862245, y: 13.810422713938003), control2: CGPoint(x: 9.151888148559099, y: 15.395131427102925))
+path.addCurve(to: CGPoint(x: 15.4, y: 13.999999999999998), control1: CGPoint(x: 12.649356260345227, y: 16.33227518320962), control2: CGPoint(x: 14.494788643030999, y: 15.56787206185868))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Chairs Table Parasol icon path
+    static let chairsTableParasolPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 8.0))
+path.addLine(to: CGPoint(x: 12.0, y: 21.0))
+path.move(to: CGPoint(x: 21.0, y: 8.0))
+path.addLine(to: CGPoint(x: 3.0, y: 8.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 7.0, y: 13.0))
+path.addLine(to: CGPoint(x: 17.0, y: 13.0))
+path.move(to: CGPoint(x: 8.0, y: 21.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 17.0), control1: CGPoint(x: 8.0, y: 17.447715250169207), control2: CGPoint(x: 7.552284749830793, y: 17.0))
+path.addLine(to: CGPoint(x: 3.0, y: 17.0))
+path.move(to: CGPoint(x: 3.0, y: 12.0))
+path.addLine(to: CGPoint(x: 3.0, y: 21.0))
+path.move(to: CGPoint(x: 16.0, y: 21.0))
+path.addLine(to: CGPoint(x: 16.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 17.0), control1: CGPoint(x: 16.0, y: 17.5), control2: CGPoint(x: 16.5, y: 17.0))
+path.addLine(to: CGPoint(x: 21.0, y: 17.0))
+path.move(to: CGPoint(x: 21.0, y: 12.0))
+path.addLine(to: CGPoint(x: 21.0, y: 21.0))
+        return path
+    }()
+        
+    /// Chairs Table Platter icon path
+    static let chairsTablePlatterPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 5.0))
+path.move(to: CGPoint(x: 8.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 8.0, y: 7.790861000676827), control2: CGPoint(x: 9.790861000676825, y: 6.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 9.999999999999998), control1: CGPoint(x: 14.209138999323173, y: 6.0), control2: CGPoint(x: 16.0, y: 7.790861000676825))
+path.move(to: CGPoint(x: 6.0, y: 10.0))
+path.addLine(to: CGPoint(x: 18.0, y: 10.0))
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 19.0))
+path.move(to: CGPoint(x: 8.0, y: 19.0))
+path.addLine(to: CGPoint(x: 8.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 14.0), control1: CGPoint(x: 8.0, y: 14.4), control2: CGPoint(x: 7.6, y: 14.0))
+path.addLine(to: CGPoint(x: 2.0, y: 14.0))
+path.move(to: CGPoint(x: 2.0, y: 8.0))
+path.addLine(to: CGPoint(x: 2.0, y: 19.0))
+path.move(to: CGPoint(x: 16.0, y: 19.0))
+path.addLine(to: CGPoint(x: 16.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 14.0), control1: CGPoint(x: 16.0, y: 14.447715250169207), control2: CGPoint(x: 16.447715250169207, y: 14.0))
+path.addLine(to: CGPoint(x: 22.0, y: 14.0))
+path.move(to: CGPoint(x: 22.0, y: 8.0))
+path.addLine(to: CGPoint(x: 22.0, y: 19.0))
+        return path
+    }()
+        
+    /// Chameleon icon path
+    static let chameleonPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 11.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 6.0, y: 22.0), control2: CGPoint(x: 2.0, y: 17.5))
+path.addCurve(to: CGPoint(x: 11.0, y: 2.0), control1: CGPoint(x: 2.0, y: 6.5), control2: CGPoint(x: 6.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 16.7, y: 4.3), control1: CGPoint(x: 13.2, y: 2.0), control2: CGPoint(x: 15.2, y: 2.9))
+path.addLine(to: CGPoint(x: 19.3, y: 2.0))
+path.addCurve(to: CGPoint(x: 20.6, y: 13.4), control1: CGPoint(x: 22.400000000000002, y: 5.1), control2: CGPoint(x: 22.8, y: 9.9))
+path.addCurve(to: CGPoint(x: 17.900000000000002, y: 13.5), control1: CGPoint(x: 20.0, y: 14.3), control2: CGPoint(x: 18.700000000000003, y: 14.3))
+path.addLine(to: CGPoint(x: 16.700000000000003, y: 12.3))
+path.addCurve(to: CGPoint(x: 11.0, y: 10.0), control1: CGPoint(x: 15.2, y: 10.9), control2: CGPoint(x: 13.2, y: 10.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 16.0), control1: CGPoint(x: 7.68629150101524, y: 10.0), control2: CGPoint(x: 5.000000000000001, y: 12.686291501015239))
+path.addCurve(to: CGPoint(x: 10.999999999999998, y: 22.0), control1: CGPoint(x: 5.0, y: 19.31370849898476), control2: CGPoint(x: 7.686291501015238, y: 22.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 18.0), control1: CGPoint(x: 13.209138999323173, y: 22.0), control2: CGPoint(x: 15.0, y: 20.209138999323173))
+path.addCurve(to: CGPoint(x: 11.000000000000002, y: 14.0), control1: CGPoint(x: 15.0, y: 15.790861000676827), control2: CGPoint(x: 13.209138999323175, y: 14.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 15.999999999999998), control1: CGPoint(x: 9.895430500338414, y: 14.0), control2: CGPoint(x: 9.0, y: 14.895430500338412))
+path.addCurve(to: CGPoint(x: 11.0, y: 18.0), control1: CGPoint(x: 9.0, y: 17.104569499661586), control2: CGPoint(x: 9.895430500338414, y: 18.0))
+path.move(to: CGPoint(x: 14.0, y: 7.0))
+path.addEllipse(in: CGRect(x: 13.66, y: 6.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 8.0, y: 10.8))
+path.addLine(to: CGPoint(x: 6.0, y: 10.0))
+path.addLine(to: CGPoint(x: 7.0, y: 8.0))
+path.move(to: CGPoint(x: 22.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 20.0), control1: CGPoint(x: 20.895430500338414, y: 22.0), control2: CGPoint(x: 20.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 20.0, y: 13.9))
+path.move(to: CGPoint(x: 11.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 14.5, y: 10.5), control1: CGPoint(x: 11.0, y: 8.932996624407778), control2: CGPoint(x: 12.567003375592224, y: 10.5))
+path.addCurve(to: CGPoint(x: 18.0, y: 7.0), control1: CGPoint(x: 16.432996624407778, y: 10.5), control2: CGPoint(x: 18.0, y: 8.932996624407778))
+path.addCurve(to: CGPoint(x: 14.5, y: 3.5), control1: CGPoint(x: 18.0, y: 5.067003375592223), control2: CGPoint(x: 16.432996624407778, y: 3.5))
+path.addCurve(to: CGPoint(x: 11.0, y: 7.0), control1: CGPoint(x: 12.567003375592224, y: 3.5), control2: CGPoint(x: 11.0, y: 5.067003375592223))
+        return path
+    }()
+        
+    /// Cheese icon path
+    static let cheesePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 21.0, y: 19.0))
+path.addLine(to: CGPoint(x: 21.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 3.0), control1: CGPoint(x: 20.0, y: 6.0), control2: CGPoint(x: 14.0, y: 3.0))
+path.addLine(to: CGPoint(x: 11.9, y: 4.5))
+path.addCurve(to: CGPoint(x: 11.14816555876195, y: 6.620225761948112), control1: CGPoint(x: 12.10827489369076, y: 5.294064099511829), control2: CGPoint(x: 11.810162779326054, y: 6.134761133534434))
+path.addCurve(to: CGPoint(x: 8.899999999999999, y: 6.699999999999999), control1: CGPoint(x: 10.486168338197844, y: 7.105690390361789), control2: CGPoint(x: 9.594741514147586, y: 7.137321911176825))
+path.addLine(to: CGPoint(x: 3.0, y: 11.0))
+path.addLine(to: CGPoint(x: 3.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 21.0), control1: CGPoint(x: 3.0, y: 20.6), control2: CGPoint(x: 3.4, y: 21.0))
+path.addLine(to: CGPoint(x: 7.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 19.0), control1: CGPoint(x: 7.0, y: 19.895430500338414), control2: CGPoint(x: 7.895430500338413, y: 19.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 21.0), control1: CGPoint(x: 10.104569499661586, y: 19.0), control2: CGPoint(x: 11.0, y: 19.895430500338414))
+path.addLine(to: CGPoint(x: 19.0, y: 21.0))
+path.move(to: CGPoint(x: 9.0, y: 12.0))
+path.addLine(to: CGPoint(x: 3.0, y: 12.0))
+path.move(to: CGPoint(x: 9.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.5), control1: CGPoint(x: 9.0, y: 11.2), control2: CGPoint(x: 10.3, y: 10.5))
+path.addCurve(to: CGPoint(x: 15.0, y: 12.0), control1: CGPoint(x: 13.7, y: 10.5), control2: CGPoint(x: 15.0, y: 11.2))
+path.addCurve(to: CGPoint(x: 12.0, y: 15.0), control1: CGPoint(x: 15.0, y: 13.65685424949238), control2: CGPoint(x: 13.65685424949238, y: 15.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 12.0), control1: CGPoint(x: 10.34314575050762, y: 15.0), control2: CGPoint(x: 9.0, y: 13.65685424949238))
+path.move(to: CGPoint(x: 21.0, y: 12.0))
+path.addLine(to: CGPoint(x: 15.0, y: 12.0))
+path.move(to: CGPoint(x: 17.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 17.0, y: 20.104569499661586), control2: CGPoint(x: 17.895430500338414, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 20.104569499661586, y: 21.0), control2: CGPoint(x: 21.0, y: 20.104569499661586))
+path.addCurve(to: CGPoint(x: 19.0, y: 17.0), control1: CGPoint(x: 21.0, y: 17.895430500338414), control2: CGPoint(x: 20.104569499661586, y: 17.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 19.0), control1: CGPoint(x: 17.895430500338414, y: 17.0), control2: CGPoint(x: 17.0, y: 17.895430500338414))
+        return path
+    }()
+        
+    /// Chest icon path
+    static let chestPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 17.0), control1: CGPoint(x: 9.104569499661586, y: 19.0), control2: CGPoint(x: 10.0, y: 18.104569499661586))
+path.addLine(to: CGPoint(x: 10.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 5.0), control1: CGPoint(x: 10.0, y: 6.790861000676826), control2: CGPoint(x: 8.209138999323175, y: 5.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 9.0), control1: CGPoint(x: 3.7908610006768266, y: 5.0), control2: CGPoint(x: 2.0000000000000004, y: 6.790861000676825))
+path.addLine(to: CGPoint(x: 2.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 19.0), control1: CGPoint(x: 2.0, y: 18.104569499661586), control2: CGPoint(x: 2.8954305003384135, y: 19.0))
+path.addLine(to: CGPoint(x: 20.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 17.0), control1: CGPoint(x: 21.104569499661586, y: 19.0), control2: CGPoint(x: 22.0, y: 18.104569499661586))
+path.addLine(to: CGPoint(x: 22.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 5.0), control1: CGPoint(x: 22.0, y: 6.790861000676826), control2: CGPoint(x: 20.209138999323173, y: 5.0))
+path.addLine(to: CGPoint(x: 6.0, y: 5.0))
+path.move(to: CGPoint(x: 2.0, y: 11.0))
+path.addLine(to: CGPoint(x: 22.0, y: 11.0))
+path.move(to: CGPoint(x: 16.0, y: 11.0))
+path.addLine(to: CGPoint(x: 16.0, y: 14.0))
+        return path
+    }()
+        
+    /// Chevrons Left Right Square icon path
+    static let chevronsLeftRightSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 15.0))
+path.addLine(to: CGPoint(x: 7.0, y: 12.0))
+path.addLine(to: CGPoint(x: 10.0, y: 9.0))
+path.move(to: CGPoint(x: 14.0, y: 9.0))
+path.addLine(to: CGPoint(x: 17.0, y: 12.0))
+path.addLine(to: CGPoint(x: 14.0, y: 15.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Chevrons Up Down Square icon path
+    static let chevronsUpDownSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 7.0))
+path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+path.move(to: CGPoint(x: 15.0, y: 14.0))
+path.addLine(to: CGPoint(x: 12.0, y: 17.0))
+path.addLine(to: CGPoint(x: 9.0, y: 14.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Cloth icon path
+    static let clothPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 2.5840321926376424, y: 6.0), control1: CGPoint(x: 2.733746275738045, y: 5.264664773326049), control2: CGPoint(x: 2.5840321926376424, y: 5.624582248790643))
+path.addCurve(to: CGPoint(x: 2.9999999999999996, y: 7.0), control1: CGPoint(x: 2.5840321926376424, y: 6.375417751209357), control2: CGPoint(x: 2.733746275738045, y: 6.73533522667395))
+path.addLine(to: CGPoint(x: 4.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 4.415967807362358, y: 9.0), control1: CGPoint(x: 4.266253724261955, y: 8.26466477332605), control2: CGPoint(x: 4.415967807362358, y: 8.624582248790643))
+path.addCurve(to: CGPoint(x: 4.0, y: 10.0), control1: CGPoint(x: 4.415967807362358, y: 9.375417751209357), control2: CGPoint(x: 4.266253724261955, y: 9.73533522667395))
+path.addLine(to: CGPoint(x: 3.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 2.5840321926376424, y: 12.0), control1: CGPoint(x: 2.733746275738045, y: 11.26466477332605), control2: CGPoint(x: 2.5840321926376424, y: 11.624582248790643))
+path.addCurve(to: CGPoint(x: 2.9999999999999996, y: 13.0), control1: CGPoint(x: 2.5840321926376424, y: 12.375417751209357), control2: CGPoint(x: 2.733746275738045, y: 12.73533522667395))
+path.addLine(to: CGPoint(x: 4.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 4.415967807362358, y: 15.0), control1: CGPoint(x: 4.266253724261955, y: 14.26466477332605), control2: CGPoint(x: 4.415967807362358, y: 14.624582248790643))
+path.addCurve(to: CGPoint(x: 4.0, y: 16.0), control1: CGPoint(x: 4.415967807362358, y: 15.375417751209357), control2: CGPoint(x: 4.266253724261955, y: 15.73533522667395))
+path.addLine(to: CGPoint(x: 3.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 2.5840321926376424, y: 18.0), control1: CGPoint(x: 2.733746275738045, y: 17.26466477332605), control2: CGPoint(x: 2.5840321926376424, y: 17.62458224879064))
+path.addCurve(to: CGPoint(x: 2.9999999999999996, y: 19.0), control1: CGPoint(x: 2.5840321926376424, y: 18.375417751209355), control2: CGPoint(x: 2.733746275738045, y: 18.73533522667395))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 21.415967807362357), control1: CGPoint(x: 5.264664773326049, y: 21.266253724261954), control2: CGPoint(x: 5.624582248790643, y: 21.415967807362357))
+path.addCurve(to: CGPoint(x: 7.0, y: 21.0), control1: CGPoint(x: 6.375417751209357, y: 21.415967807362357), control2: CGPoint(x: 6.735335226673951, y: 21.266253724261954))
+path.addLine(to: CGPoint(x: 8.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 19.584032192637643), control1: CGPoint(x: 8.26466477332605, y: 19.733746275738046), control2: CGPoint(x: 8.624582248790643, y: 19.584032192637643))
+path.addCurve(to: CGPoint(x: 10.0, y: 20.0), control1: CGPoint(x: 9.375417751209357, y: 19.584032192637643), control2: CGPoint(x: 9.73533522667395, y: 19.733746275738046))
+path.addLine(to: CGPoint(x: 11.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 21.415967807362357), control1: CGPoint(x: 11.26466477332605, y: 21.266253724261954), control2: CGPoint(x: 11.624582248790643, y: 21.415967807362357))
+path.addCurve(to: CGPoint(x: 13.0, y: 21.0), control1: CGPoint(x: 12.375417751209357, y: 21.415967807362357), control2: CGPoint(x: 12.73533522667395, y: 21.266253724261954))
+path.addLine(to: CGPoint(x: 14.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 19.584032192637643), control1: CGPoint(x: 14.26466477332605, y: 19.733746275738046), control2: CGPoint(x: 14.624582248790643, y: 19.584032192637643))
+path.addCurve(to: CGPoint(x: 16.0, y: 20.0), control1: CGPoint(x: 15.375417751209357, y: 19.584032192637643), control2: CGPoint(x: 15.73533522667395, y: 19.733746275738046))
+path.addLine(to: CGPoint(x: 17.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 21.415967807362357), control1: CGPoint(x: 17.26466477332605, y: 21.266253724261954), control2: CGPoint(x: 17.624582248790645, y: 21.415967807362357))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 18.37541775120936, y: 21.415967807362357), control2: CGPoint(x: 18.73533522667395, y: 21.266253724261954))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 21.415967807362357, y: 18.0), control1: CGPoint(x: 21.266253724261954, y: 18.73533522667395), control2: CGPoint(x: 21.415967807362357, y: 18.37541775120936))
+path.addCurve(to: CGPoint(x: 21.0, y: 17.0), control1: CGPoint(x: 21.415967807362357, y: 17.624582248790645), control2: CGPoint(x: 21.266253724261954, y: 17.26466477332605))
+path.addLine(to: CGPoint(x: 20.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 19.584032192637643, y: 15.0), control1: CGPoint(x: 19.733746275738046, y: 15.73533522667395), control2: CGPoint(x: 19.584032192637643, y: 15.375417751209357))
+path.addCurve(to: CGPoint(x: 20.0, y: 14.0), control1: CGPoint(x: 19.584032192637643, y: 14.624582248790643), control2: CGPoint(x: 19.733746275738046, y: 14.26466477332605))
+path.addLine(to: CGPoint(x: 21.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 21.415967807362357, y: 12.0), control1: CGPoint(x: 21.266253724261954, y: 12.73533522667395), control2: CGPoint(x: 21.415967807362357, y: 12.375417751209357))
+path.addCurve(to: CGPoint(x: 21.0, y: 11.0), control1: CGPoint(x: 21.415967807362357, y: 11.624582248790643), control2: CGPoint(x: 21.266253724261954, y: 11.26466477332605))
+path.addLine(to: CGPoint(x: 20.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 19.584032192637643, y: 9.0), control1: CGPoint(x: 19.733746275738046, y: 9.73533522667395), control2: CGPoint(x: 19.584032192637643, y: 9.375417751209357))
+path.addCurve(to: CGPoint(x: 20.0, y: 8.0), control1: CGPoint(x: 19.584032192637643, y: 8.624582248790643), control2: CGPoint(x: 19.733746275738046, y: 8.26466477332605))
+path.addLine(to: CGPoint(x: 21.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 21.415967807362357, y: 6.0), control1: CGPoint(x: 21.266253724261954, y: 6.735335226673951), control2: CGPoint(x: 21.415967807362357, y: 6.375417751209357))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 21.415967807362357, y: 5.624582248790643), control2: CGPoint(x: 21.266253724261954, y: 5.26466477332605))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 2.5840321926376424), control1: CGPoint(x: 18.73533522667395, y: 2.733746275738045), control2: CGPoint(x: 18.37541775120936, y: 2.5840321926376424))
+path.addCurve(to: CGPoint(x: 17.0, y: 2.9999999999999996), control1: CGPoint(x: 17.624582248790645, y: 2.5840321926376424), control2: CGPoint(x: 17.26466477332605, y: 2.733746275738045))
+path.addLine(to: CGPoint(x: 16.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 4.415967807362358), control1: CGPoint(x: 15.73533522667395, y: 4.266253724261955), control2: CGPoint(x: 15.375417751209357, y: 4.415967807362358))
+path.addCurve(to: CGPoint(x: 14.0, y: 4.0), control1: CGPoint(x: 14.624582248790643, y: 4.415967807362358), control2: CGPoint(x: 14.26466477332605, y: 4.266253724261955))
+path.addLine(to: CGPoint(x: 13.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.5840321926376424), control1: CGPoint(x: 12.73533522667395, y: 2.733746275738045), control2: CGPoint(x: 12.375417751209357, y: 2.5840321926376424))
+path.addCurve(to: CGPoint(x: 11.0, y: 2.9999999999999996), control1: CGPoint(x: 11.624582248790643, y: 2.5840321926376424), control2: CGPoint(x: 11.26466477332605, y: 2.733746275738045))
+path.addLine(to: CGPoint(x: 10.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 4.415967807362358), control1: CGPoint(x: 9.73533522667395, y: 4.266253724261955), control2: CGPoint(x: 9.375417751209357, y: 4.415967807362358))
+path.addCurve(to: CGPoint(x: 8.0, y: 4.0), control1: CGPoint(x: 8.624582248790643, y: 4.415967807362358), control2: CGPoint(x: 8.26466477332605, y: 4.266253724261955))
+path.addLine(to: CGPoint(x: 7.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 2.5840321926376424), control1: CGPoint(x: 6.735335226673951, y: 2.733746275738045), control2: CGPoint(x: 6.375417751209357, y: 2.5840321926376424))
+path.addCurve(to: CGPoint(x: 5.0, y: 2.9999999999999996), control1: CGPoint(x: 5.624582248790643, y: 2.5840321926376424), control2: CGPoint(x: 5.264664773326049, y: 2.733746275738045))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Coat Hanger icon path
+    static let coatHangerPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 11.20565188011929, y: 2.0648560475241777), control1: CGPoint(x: 8.980802996159998, y: 3.6334237197871335), control2: CGPoint(x: 9.887684268815384, y: 2.4266026855883576))
+path.addCurve(to: CGPoint(x: 14.6006148208894, y: 3.4627819643118727), control1: CGPoint(x: 12.523619491423197, y: 1.703109409459997), control2: CGPoint(x: 13.919500836115253, y: 2.277884080803786))
+path.addCurve(to: CGPoint(x: 14.099999999999998, y: 7.100000000000002), control1: CGPoint(x: 15.281728805663548, y: 4.647679847819959), control2: CGPoint(x: 15.075894779917936, y: 6.143167395452174))
+path.addLine(to: CGPoint(x: 12.6, y: 8.6))
+path.addCurve(to: CGPoint(x: 12.000000000000002, y: 10.000000000000002), control1: CGPoint(x: 12.223171472566206, y: 8.969260920207205), control2: CGPoint(x: 12.007514095712946, y: 9.472461466198148))
+path.addLine(to: CGPoint(x: 12.0, y: 11.0))
+path.move(to: CGPoint(x: 4.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 2.035587993321019, y: 19.570500866850505), control1: CGPoint(x: 3.0976460459632125, y: 21.021364385175925), control2: CGPoint(x: 2.2928041045484484, y: 20.435682331888223))
+path.addCurve(to: CGPoint(x: 2.899999999999999, y: 17.299999999999997), control1: CGPoint(x: 1.7783718820935888, y: 18.70531940181279), control2: CGPoint(x: 2.132531312636835, y: 17.775069373078114))
+path.addLine(to: CGPoint(x: 12.0, y: 11.0))
+path.addLine(to: CGPoint(x: 21.2, y: 17.4))
+path.addCurve(to: CGPoint(x: 21.89736659610103, y: 19.632455532033674), control1: CGPoint(x: 21.888688652917573, y: 17.916516489688174), control2: CGPoint(x: 22.169594688842615, y: 18.81577125380892))
+path.addCurve(to: CGPoint(x: 20.000000000000004, y: 21.0), control1: CGPoint(x: 21.625138503359445, y: 20.449139810258433), control2: CGPoint(x: 20.860860816146964, y: 21.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Cocktail icon path
+    static let cocktailPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 6.0))
+path.addLine(to: CGPoint(x: 6.6, y: 2.8))
+path.addCurve(to: CGPoint(x: 5.0, y: 2.0), control1: CGPoint(x: 6.3, y: 2.4), control2: CGPoint(x: 5.6, y: 2.0))
+path.addLine(to: CGPoint(x: 2.0, y: 2.0))
+path.move(to: CGPoint(x: 18.0, y: 6.0))
+path.addLine(to: CGPoint(x: 11.0, y: 14.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 15.4, y: 9.1))
+path.addCurve(to: CGPoint(x: 20.400434126001244, y: 9.259217890313128), control1: CGPoint(x: 16.8238601646124, y: 10.317517080958934), control2: CGPoint(x: 18.902003220816358, y: 10.383686846391335))
+path.addCurve(to: CGPoint(x: 21.645034174066538, y: 4.413532953647369), control1: CGPoint(x: 21.898865031186133, y: 8.134748934234922), control2: CGPoint(x: 22.416111510684573, y: 6.120918484730156))
+path.addCurve(to: CGPoint(x: 17.186802919273255, y: 2.1433202182725815), control1: CGPoint(x: 20.873956837448507, y: 2.706147422564582), control2: CGPoint(x: 19.021149242818908, y: 1.7626639742789294))
+path.addCurve(to: CGPoint(x: 14.0, y: 6.0), control1: CGPoint(x: 15.3524565957276, y: 2.5239764622662335), control2: CGPoint(x: 14.028045116383865, y: 4.126783759881463))
+path.move(to: CGPoint(x: 11.0, y: 14.0))
+path.addLine(to: CGPoint(x: 11.0, y: 22.0))
+path.move(to: CGPoint(x: 7.0, y: 22.0))
+path.addLine(to: CGPoint(x: 15.0, y: 22.0))
+        return path
+    }()
+        
+    /// Coconut icon path
+    static let coconutPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 9.0))
+path.addLine(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addLine(to: CGPoint(x: 22.0, y: 9.0))
+path.move(to: CGPoint(x: 14.0, y: 8.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 2.0))
+path.move(to: CGPoint(x: 2.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 2.0000000000000018, y: 12.865993248815554), control2: CGPoint(x: 6.477152501692067, y: 16.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 9.0), control1: CGPoint(x: 17.522847498307936, y: 16.0), control2: CGPoint(x: 22.0, y: 12.865993248815554))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 5.134006751184446), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 9.0), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 5.134006751184446))
+path.move(to: CGPoint(x: 6.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 12.0), control1: CGPoint(x: 6.000000000000001, y: 10.65685424949238), control2: CGPoint(x: 8.68629150101524, y: 12.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 9.0), control1: CGPoint(x: 15.313708498984761, y: 12.0), control2: CGPoint(x: 18.0, y: 10.65685424949238))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 18.0, y: 7.343145750507619), control2: CGPoint(x: 15.313708498984761, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 9.0), control1: CGPoint(x: 8.68629150101524, y: 6.0), control2: CGPoint(x: 6.000000000000001, y: 7.343145750507619))
+        return path
+    }()
+        
+    /// Coffee Bean icon path
+    static let coffeeBeanPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.05, y: 19.95))
+path.addCurve(to: CGPoint(x: 22.408619526961253, y: 22.408619504739285), control1: CGPoint(x: 9.798521930081005, y: 25.698521786956174), control2: CGPoint(x: 18.017955820103786, y: 26.799283227665114))
+path.addCurve(to: CGPoint(x: 19.949999970905658, y: 4.049999970905659), control1: CGPoint(x: 26.79928323381872, y: 18.01795578181346), control2: CGPoint(x: 25.69852177013469, y: 9.798521888713811))
+path.addCurve(to: CGPoint(x: 1.5913804472329947, y: 1.591380490722413), control1: CGPoint(x: 14.201478034951807, y: -1.698521810177672), control2: CGPoint(x: 5.982044146401381, y: -2.7992832398924943))
+path.addCurve(to: CGPoint(x: 4.0500000278446295, y: 19.95000002784463), control1: CGPoint(x: -2.7992832519353925, y: 5.982044221337324), control2: CGPoint(x: -1.6985217772572447, y: 14.201478115909323))
+path.move(to: CGPoint(x: 19.8, y: 4.2))
+path.addCurve(to: CGPoint(x: 4.2, y: 19.8), control1: CGPoint(x: 20.0, y: 14.0), control2: CGPoint(x: 4.0, y: 10.0))
+        return path
+    }()
+        
+    /// Coffeemaker icon path
+    static let coffeemakerPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.0, y: 22.0))
+path.addLine(to: CGPoint(x: 14.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 14.0, y: 10.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 10.0))
+path.addLine(to: CGPoint(x: 4.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 8.0), control1: CGPoint(x: 2.8954305003384135, y: 10.0), control2: CGPoint(x: 2.0, y: 9.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 2.0), control1: CGPoint(x: 2.0, y: 2.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.0), control1: CGPoint(x: 21.104569499661586, y: 2.0), control2: CGPoint(x: 22.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.addLine(to: CGPoint(x: 2.0, y: 22.0))
+path.move(to: CGPoint(x: 10.0, y: 2.0))
+path.addLine(to: CGPoint(x: 10.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 6.0), control1: CGPoint(x: 10.0, y: 5.1045694996615865), control2: CGPoint(x: 9.104569499661586, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 4.0), control1: CGPoint(x: 6.8954305003384135, y: 6.0), control2: CGPoint(x: 6.0, y: 5.104569499661587))
+path.addLine(to: CGPoint(x: 6.0, y: 2.0))
+path.move(to: CGPoint(x: 22.0, y: 6.0))
+path.addLine(to: CGPoint(x: 18.0, y: 6.0))
+path.move(to: CGPoint(x: 22.0, y: 10.0))
+path.addLine(to: CGPoint(x: 18.0, y: 10.0))
+path.move(to: CGPoint(x: 18.0, y: 22.0))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 14.0), control1: CGPoint(x: 18.0, y: 14.895430500338414), control2: CGPoint(x: 18.895430500338414, y: 14.0))
+path.addLine(to: CGPoint(x: 22.0, y: 14.0))
+path.move(to: CGPoint(x: 7.0, y: 10.0))
+path.addLine(to: CGPoint(x: 7.0, y: 12.0))
+path.move(to: CGPoint(x: 7.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 19.0), control1: CGPoint(x: 5.3, y: 22.0), control2: CGPoint(x: 4.0, y: 20.7))
+path.addLine(to: CGPoint(x: 4.0, y: 16.0))
+path.addLine(to: CGPoint(x: 10.0, y: 16.0))
+path.addLine(to: CGPoint(x: 10.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 22.0), control1: CGPoint(x: 10.0, y: 20.7), control2: CGPoint(x: 8.7, y: 22.0))
+path.move(to: CGPoint(x: 2.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 16.0), control1: CGPoint(x: 2.0, y: 16.895430500338414), control2: CGPoint(x: 2.8954305003384126, y: 16.0))
+        return path
+    }()
+        
+    /// Coins Exchange icon path
+    static let coinsExchangePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 10.0))
+path.addLine(to: CGPoint(x: 6.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 2.0), control1: CGPoint(x: 6.0, y: 3.3), control2: CGPoint(x: 7.3, y: 2.0))
+path.addLine(to: CGPoint(x: 10.0, y: 2.0))
+path.move(to: CGPoint(x: 3.0, y: 7.0))
+path.addLine(to: CGPoint(x: 6.0, y: 10.0))
+path.addLine(to: CGPoint(x: 9.0, y: 7.0))
+path.move(to: CGPoint(x: 18.0, y: 14.0))
+path.addLine(to: CGPoint(x: 18.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 22.0), control1: CGPoint(x: 18.0, y: 20.7), control2: CGPoint(x: 16.7, y: 22.0))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+path.move(to: CGPoint(x: 21.0, y: 17.0))
+path.addLine(to: CGPoint(x: 18.0, y: 14.0))
+path.addLine(to: CGPoint(x: 15.0, y: 17.0))
+path.move(to: CGPoint(x: 14.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 10.0), control1: CGPoint(x: 14.0, y: 8.209138999323175), control2: CGPoint(x: 15.790861000676827, y: 10.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 20.209138999323173, y: 10.0), control2: CGPoint(x: 22.0, y: 8.209138999323173))
+path.addCurve(to: CGPoint(x: 18.0, y: 2.0), control1: CGPoint(x: 22.0, y: 3.790861000676826), control2: CGPoint(x: 20.209138999323173, y: 2.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 5.999999999999999), control1: CGPoint(x: 15.790861000676827, y: 2.0), control2: CGPoint(x: 14.0, y: 3.7908610006768257))
+path.move(to: CGPoint(x: 2.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 22.0), control1: CGPoint(x: 2.0000000000000004, y: 20.209138999323173), control2: CGPoint(x: 3.7908610006768266, y: 22.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 18.0), control1: CGPoint(x: 8.209138999323175, y: 22.0), control2: CGPoint(x: 10.0, y: 20.209138999323173))
+path.addCurve(to: CGPoint(x: 6.0, y: 14.0), control1: CGPoint(x: 10.0, y: 15.790861000676827), control2: CGPoint(x: 8.209138999323175, y: 14.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 3.7908610006768266, y: 14.0), control2: CGPoint(x: 2.0000000000000004, y: 15.790861000676825))
+        return path
+    }()
+        
+    /// Coins Stack icon path
+    static let coinsStackPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 3.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 13.0), control1: CGPoint(x: 3.0, y: 11.7), control2: CGPoint(x: 7.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 10.0), control1: CGPoint(x: 17.0, y: 13.0), control2: CGPoint(x: 21.0, y: 11.7))
+path.move(to: CGPoint(x: 3.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 17.0), control1: CGPoint(x: 3.0, y: 15.7), control2: CGPoint(x: 7.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 14.0), control1: CGPoint(x: 17.0, y: 17.0), control2: CGPoint(x: 21.0, y: 15.7))
+path.move(to: CGPoint(x: 3.0, y: 6.0))
+path.addLine(to: CGPoint(x: 3.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 21.0), control1: CGPoint(x: 3.0, y: 19.7), control2: CGPoint(x: 7.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 18.0), control1: CGPoint(x: 17.0, y: 21.0), control2: CGPoint(x: 21.0, y: 19.7))
+path.addLine(to: CGPoint(x: 21.0, y: 6.0))
+path.move(to: CGPoint(x: 3.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 9.0), control1: CGPoint(x: 3.0000000000000018, y: 7.656854249492381), control2: CGPoint(x: 7.02943725152286, y: 9.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 6.0), control1: CGPoint(x: 16.970562748477143, y: 9.0), control2: CGPoint(x: 21.0, y: 7.656854249492381))
+path.addCurve(to: CGPoint(x: 12.0, y: 3.0), control1: CGPoint(x: 21.0, y: 4.343145750507619), control2: CGPoint(x: 16.970562748477143, y: 3.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 6.0), control1: CGPoint(x: 7.02943725152286, y: 3.0), control2: CGPoint(x: 3.0000000000000018, y: 4.343145750507619))
+        return path
+    }()
+        
+    /// Copy Code icon path
+    static let copyCodePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 14.0), control1: CGPoint(x: 2.8954305003384135, y: 16.0), control2: CGPoint(x: 2.0, y: 15.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 2.0), control1: CGPoint(x: 2.0, y: 2.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 2.0))
+path.addLine(to: CGPoint(x: 14.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 4.0), control1: CGPoint(x: 15.104569499661586, y: 2.0), control2: CGPoint(x: 16.0, y: 2.895430500338413))
+path.move(to: CGPoint(x: 13.0, y: 13.0))
+path.addLine(to: CGPoint(x: 12.0, y: 15.0))
+path.addLine(to: CGPoint(x: 13.0, y: 17.0))
+path.move(to: CGPoint(x: 17.0, y: 13.0))
+path.addLine(to: CGPoint(x: 18.0, y: 15.0))
+path.addLine(to: CGPoint(x: 17.0, y: 17.0))
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addLine(to: CGPoint(x: 20.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 10.0), control1: CGPoint(x: 21.104569499661586, y: 8.0), control2: CGPoint(x: 22.0, y: 8.895430500338414))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 20.0), control1: CGPoint(x: 8.895430500338414, y: 22.0), control2: CGPoint(x: 8.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 8.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 8.0), control1: CGPoint(x: 8.0, y: 8.895430500338414), control2: CGPoint(x: 8.895430500338414, y: 8.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Copy Down icon path
+    static let copyDownPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 14.0), control1: CGPoint(x: 2.8954305003384135, y: 16.0), control2: CGPoint(x: 2.0, y: 15.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 2.0), control1: CGPoint(x: 2.0, y: 2.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 2.0))
+path.addLine(to: CGPoint(x: 14.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 4.0), control1: CGPoint(x: 15.104569499661586, y: 2.0), control2: CGPoint(x: 16.0, y: 2.895430500338413))
+path.move(to: CGPoint(x: 15.0, y: 12.0))
+path.addLine(to: CGPoint(x: 15.0, y: 18.0))
+path.move(to: CGPoint(x: 12.0, y: 15.0))
+path.addLine(to: CGPoint(x: 15.0, y: 18.0))
+path.addLine(to: CGPoint(x: 18.0, y: 15.0))
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addLine(to: CGPoint(x: 20.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 10.0), control1: CGPoint(x: 21.104569499661586, y: 8.0), control2: CGPoint(x: 22.0, y: 8.895430500338414))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 20.0), control1: CGPoint(x: 8.895430500338414, y: 22.0), control2: CGPoint(x: 8.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 8.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 8.0), control1: CGPoint(x: 8.0, y: 8.895430500338414), control2: CGPoint(x: 8.895430500338414, y: 8.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Copy File Path icon path
+    static let copyFilePathPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 14.0), control1: CGPoint(x: 2.9, y: 16.0), control2: CGPoint(x: 2.0, y: 15.1))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 2.0), control1: CGPoint(x: 2.0, y: 2.9), control2: CGPoint(x: 2.9, y: 2.0))
+path.addLine(to: CGPoint(x: 14.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 4.0), control1: CGPoint(x: 15.1, y: 2.0), control2: CGPoint(x: 16.0, y: 2.9))
+path.move(to: CGPoint(x: 12.0, y: 18.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 18.0, y: 12.0))
+path.addLine(to: CGPoint(x: 16.0, y: 18.0))
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addLine(to: CGPoint(x: 20.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 10.0), control1: CGPoint(x: 21.104569499661586, y: 8.0), control2: CGPoint(x: 22.0, y: 8.895430500338414))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 20.0), control1: CGPoint(x: 8.895430500338414, y: 22.0), control2: CGPoint(x: 8.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 8.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 8.0), control1: CGPoint(x: 8.0, y: 8.895430500338414), control2: CGPoint(x: 8.895430500338414, y: 8.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Copy Image icon path
+    static let copyImagePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 14.0), control1: CGPoint(x: 2.8954305003384135, y: 16.0), control2: CGPoint(x: 2.0, y: 15.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 2.0), control1: CGPoint(x: 2.0, y: 2.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 2.0))
+path.addLine(to: CGPoint(x: 14.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 4.0), control1: CGPoint(x: 15.104569499661586, y: 2.0), control2: CGPoint(x: 16.0, y: 2.895430500338413))
+path.move(to: CGPoint(x: 13.4, y: 22.0))
+path.addLine(to: CGPoint(x: 18.1, y: 18.1))
+path.addCurve(to: CGPoint(x: 20.900000000000002, y: 18.1), control1: CGPoint(x: 18.900000000000002, y: 17.3), control2: CGPoint(x: 20.1, y: 17.3))
+path.addLine(to: CGPoint(x: 22.000000000000004, y: 19.200000000000003))
+path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 16.0), control1: CGPoint(x: 12.0, y: 15.104569499661586), control2: CGPoint(x: 12.895430500338414, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 14.0), control1: CGPoint(x: 15.104569499661586, y: 16.0), control2: CGPoint(x: 16.0, y: 15.104569499661586))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 16.0, y: 12.895430500338414), control2: CGPoint(x: 15.104569499661586, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 12.895430500338414, y: 12.0), control2: CGPoint(x: 12.0, y: 12.895430500338414))
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addLine(to: CGPoint(x: 20.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 10.0), control1: CGPoint(x: 21.104569499661586, y: 8.0), control2: CGPoint(x: 22.0, y: 8.895430500338414))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 20.0), control1: CGPoint(x: 8.895430500338414, y: 22.0), control2: CGPoint(x: 8.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 8.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 8.0), control1: CGPoint(x: 8.0, y: 8.895430500338414), control2: CGPoint(x: 8.895430500338414, y: 8.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Copy Text icon path
+    static let copyTextPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 14.0), control1: CGPoint(x: 2.8954305003384135, y: 16.0), control2: CGPoint(x: 2.0, y: 15.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 2.0), control1: CGPoint(x: 2.0, y: 2.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 2.0))
+path.addLine(to: CGPoint(x: 14.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 4.0), control1: CGPoint(x: 15.104569499661586, y: 2.0), control2: CGPoint(x: 16.0, y: 2.895430500338413))
+path.move(to: CGPoint(x: 12.0, y: 13.0))
+path.addLine(to: CGPoint(x: 18.0, y: 13.0))
+path.move(to: CGPoint(x: 12.0, y: 17.0))
+path.addLine(to: CGPoint(x: 18.0, y: 17.0))
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addLine(to: CGPoint(x: 20.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 10.0), control1: CGPoint(x: 21.104569499661586, y: 8.0), control2: CGPoint(x: 22.0, y: 8.895430500338414))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 20.0), control1: CGPoint(x: 8.895430500338414, y: 22.0), control2: CGPoint(x: 8.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 8.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 8.0), control1: CGPoint(x: 8.0, y: 8.895430500338414), control2: CGPoint(x: 8.895430500338414, y: 8.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Copy Type icon path
+    static let copyTypePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 14.0), control1: CGPoint(x: 2.9, y: 16.0), control2: CGPoint(x: 2.0, y: 15.1))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 2.0), control1: CGPoint(x: 2.0, y: 2.9), control2: CGPoint(x: 2.9, y: 2.0))
+path.addLine(to: CGPoint(x: 14.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 4.0), control1: CGPoint(x: 15.1, y: 2.0), control2: CGPoint(x: 16.0, y: 2.9))
+path.move(to: CGPoint(x: 12.0, y: 13.0))
+path.addLine(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 18.0, y: 12.0))
+path.addLine(to: CGPoint(x: 18.0, y: 13.0))
+path.move(to: CGPoint(x: 15.0, y: 12.0))
+path.addLine(to: CGPoint(x: 15.0, y: 18.0))
+path.move(to: CGPoint(x: 14.0, y: 18.0))
+path.addLine(to: CGPoint(x: 16.0, y: 18.0))
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addLine(to: CGPoint(x: 20.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 10.0), control1: CGPoint(x: 21.104569499661586, y: 8.0), control2: CGPoint(x: 22.0, y: 8.895430500338414))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 20.0), control1: CGPoint(x: 8.895430500338414, y: 22.0), control2: CGPoint(x: 8.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 8.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 8.0), control1: CGPoint(x: 8.0, y: 8.895430500338414), control2: CGPoint(x: 8.895430500338414, y: 8.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Cow Head icon path
+    static let cowHeadPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.8, y: 15.1))
+path.addCurve(to: CGPoint(x: 18.700000000000003, y: 8.000000000000004), control1: CGPoint(x: 18.965616588672646, y: 12.925401916800366), control2: CGPoint(x: 19.286162032309097, y: 10.396654528112817))
+path.addLine(to: CGPoint(x: 19.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 5.0), control1: CGPoint(x: 20.7, y: 8.0), control2: CGPoint(x: 22.0, y: 6.7))
+path.addLine(to: CGPoint(x: 22.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 16.2, y: 4.9), control1: CGPoint(x: 17.7, y: 3.0), control2: CGPoint(x: 16.6, y: 3.8))
+path.addCurve(to: CGPoint(x: 7.8, y: 4.9), control1: CGPoint(x: 13.535742718632566, y: 3.666988058174324), control2: CGPoint(x: 10.464257281367434, y: 3.666988058174324))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 7.4, y: 3.8), control2: CGPoint(x: 6.3, y: 3.0))
+path.addLine(to: CGPoint(x: 2.0, y: 3.0))
+path.addLine(to: CGPoint(x: 2.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 8.0), control1: CGPoint(x: 2.0, y: 6.7), control2: CGPoint(x: 3.3, y: 8.0))
+path.addLine(to: CGPoint(x: 5.3, y: 8.0))
+path.addCurve(to: CGPoint(x: 6.199999999999999, y: 15.1), control1: CGPoint(x: 4.713837967690903, y: 10.396654528112816), control2: CGPoint(x: 5.0343834113273545, y: 12.925401916800364))
+path.move(to: CGPoint(x: 9.0, y: 9.5))
+path.addLine(to: CGPoint(x: 9.0, y: 10.0))
+path.move(to: CGPoint(x: 15.0, y: 9.5))
+path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+path.move(to: CGPoint(x: 15.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 18.922553322351106, y: 18.960631012718714), control1: CGPoint(x: 16.853881073158693, y: 22.01834014312303), control2: CGPoint(x: 18.477398338858553, y: 20.76036666967991))
+path.addCurve(to: CGPoint(x: 16.869148681826356, y: 14.443140803564258), control1: CGPoint(x: 19.367708305843664, y: 17.160895355757518), control2: CGPoint(x: 18.517818549504554, y: 15.291137891811477))
+path.addCurve(to: CGPoint(x: 12.0, y: 15.4), control1: CGPoint(x: 15.220478814148157, y: 13.59514371531704), control2: CGPoint(x: 13.205172378628093, y: 13.991181015155703))
+path.addCurve(to: CGPoint(x: 7.130851318173646, y: 14.443140803564257), control1: CGPoint(x: 10.794827621371908, y: 13.991181015155705), control2: CGPoint(x: 8.779521185851845, y: 13.595143715317038))
+path.addCurve(to: CGPoint(x: 5.077446677648892, y: 18.960631012718714), control1: CGPoint(x: 5.482181450495448, y: 15.291137891811475), control2: CGPoint(x: 4.632291694156338, y: 17.160895355757518))
+path.addCurve(to: CGPoint(x: 9.0, y: 22.0), control1: CGPoint(x: 5.5226016611414455, y: 20.76036666967991), control2: CGPoint(x: 7.146118926841305, y: 22.018340143123027))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.0, y: 18.0))
+path.addEllipse(in: CGRect(x: 8.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.0, y: 18.0))
+path.addEllipse(in: CGRect(x: 14.66, y: 17.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Cow Udder Droplets icon path
+    static let cowUdderDropletsPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 3.7, y: 7.5), control1: CGPoint(x: 2.0, y: 4.0), control2: CGPoint(x: 2.6, y: 6.0))
+path.addLine(to: CGPoint(x: 2.3, y: 10.0))
+path.addCurve(to: CGPoint(x: 3.1541192989701408, y: 12.43799719175076), control1: CGPoint(x: 1.9512979968674613, y: 10.912203811366135), control2: CGPoint(x: 2.3123714136449807, y: 11.942851376853607))
+path.addCurve(to: CGPoint(x: 5.699999999999999, y: 12.0), control1: CGPoint(x: 3.9958671842953013, y: 12.933143006647914), control2: CGPoint(x: 5.072121806497595, y: 12.74798252291327))
+path.addLine(to: CGPoint(x: 6.6, y: 10.4))
+path.addCurve(to: CGPoint(x: 10.0, y: 11.8), control1: CGPoint(x: 7.6, y: 11.0), control2: CGPoint(x: 8.7, y: 11.5))
+path.addLine(to: CGPoint(x: 10.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 10.0, y: 15.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 16.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 14.0), control1: CGPoint(x: 13.104569499661586, y: 16.0), control2: CGPoint(x: 14.0, y: 15.104569499661586))
+path.addLine(to: CGPoint(x: 14.0, y: 11.8))
+path.addCurve(to: CGPoint(x: 17.4, y: 10.400000000000002), control1: CGPoint(x: 15.22190398496554, y: 11.586989120148907), control2: CGPoint(x: 16.38238595918257, y: 11.109143601353658))
+path.addLine(to: CGPoint(x: 18.299999999999997, y: 12.0))
+path.addCurve(to: CGPoint(x: 20.999999999999996, y: 12.7), control1: CGPoint(x: 18.85228474983079, y: 12.938884074712348), control2: CGPoint(x: 20.06111592528765, y: 13.252284749830793))
+path.addCurve(to: CGPoint(x: 21.699999999999996, y: 10.0), control1: CGPoint(x: 21.938884074712345, y: 12.147715250169206), control2: CGPoint(x: 22.25228474983079, y: 10.938884074712348))
+path.addLine(to: CGPoint(x: 20.299999999999997, y: 7.5))
+path.addCurve(to: CGPoint(x: 22.0, y: 2.0), control1: CGPoint(x: 21.4, y: 6.0), control2: CGPoint(x: 22.0, y: 4.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 7.9, y: 18.6))
+path.addCurve(to: CGPoint(x: 6.5, y: 16.5), control1: CGPoint(x: 7.300000000000001, y: 18.0), control2: CGPoint(x: 6.800000000000001, y: 17.3))
+path.addCurve(to: CGPoint(x: 5.1, y: 18.6), control1: CGPoint(x: 6.2, y: 17.3), control2: CGPoint(x: 5.7, y: 18.0))
+path.addCurve(to: CGPoint(x: 5.147254605783714, y: 21.305078078083096), control1: CGPoint(x: 4.3753380398262856, y: 19.3636659880339), control2: CGPoint(x: 4.396362192237305, y: 20.56718832948846))
+path.addCurve(to: CGPoint(x: 7.852745394216288, y: 21.305078078083096), control1: CGPoint(x: 5.898147019330123, y: 22.04296782667773), control2: CGPoint(x: 7.10185298066988, y: 22.04296782667773))
+path.addCurve(to: CGPoint(x: 7.899999999999999, y: 18.599999999999998), control1: CGPoint(x: 8.603637807762695, y: 20.56718832948846), control2: CGPoint(x: 8.624661960173714, y: 19.363665988033897))
+path.move(to: CGPoint(x: 18.9, y: 18.6))
+path.addCurve(to: CGPoint(x: 17.5, y: 16.5), control1: CGPoint(x: 18.299999999999997, y: 18.0), control2: CGPoint(x: 17.799999999999997, y: 17.3))
+path.addCurve(to: CGPoint(x: 16.1, y: 18.6), control1: CGPoint(x: 17.2, y: 17.3), control2: CGPoint(x: 16.7, y: 18.0))
+path.addCurve(to: CGPoint(x: 16.147254605783715, y: 21.305078078083096), control1: CGPoint(x: 15.375338039826286, y: 19.3636659880339), control2: CGPoint(x: 15.396362192237305, y: 20.567188329488463))
+path.addCurve(to: CGPoint(x: 18.852745394216285, y: 21.305078078083096), control1: CGPoint(x: 16.898147019330125, y: 22.04296782667773), control2: CGPoint(x: 18.10185298066988, y: 22.04296782667773))
+path.addCurve(to: CGPoint(x: 18.900000000000002, y: 18.6), control1: CGPoint(x: 19.603637807762695, y: 20.56718832948846), control2: CGPoint(x: 19.624661960173714, y: 19.3636659880339))
+        return path
+    }()
+        
+    /// Crab icon path
+    static let crabPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.5, y: 14.0))
+path.addCurve(to: CGPoint(x: 2.386878409873148, y: 10.101548669157282), control1: CGPoint(x: 5.184428487428425, y: 13.800499135115457), control2: CGPoint(x: 3.1923524797463863, y: 12.281659571768554))
+path.addCurve(to: CGPoint(x: 3.737052619632024, y: 3.8151375485199477), control1: CGPoint(x: 1.58140433999991, y: 7.921437766546008), control2: CGPoint(x: 2.107433225103147, y: 5.472247277505337))
+path.addCurve(to: CGPoint(x: 10.0, y: 2.3599999999999977), control1: CGPoint(x: 5.366672014160901, y: 2.158027819534558), control2: CGPoint(x: 7.806721012388734, y: 1.5911051389002537))
+path.addLine(to: CGPoint(x: 8.0, y: 5.0))
+path.addLine(to: CGPoint(x: 10.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 8.0), control1: CGPoint(x: 10.0, y: 7.0), control2: CGPoint(x: 7.0, y: 8.0))
+path.move(to: CGPoint(x: 16.5, y: 14.0))
+path.addCurve(to: CGPoint(x: 21.613121590126852, y: 10.101548669157278), control1: CGPoint(x: 18.815571512571577, y: 13.800499135115457), control2: CGPoint(x: 20.807647520253617, y: 12.281659571768552))
+path.addCurve(to: CGPoint(x: 20.262947380367976, y: 3.815137548519947), control1: CGPoint(x: 22.418595660000086, y: 7.921437766546006), control2: CGPoint(x: 21.892566774896853, y: 5.472247277505336))
+path.addCurve(to: CGPoint(x: 14.0, y: 2.3599999999999977), control1: CGPoint(x: 18.6333279858391, y: 2.1580278195345572), control2: CGPoint(x: 16.193278987611265, y: 1.5911051389002537))
+path.addLine(to: CGPoint(x: 16.0, y: 5.0))
+path.addLine(to: CGPoint(x: 14.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 8.0), control1: CGPoint(x: 14.0, y: 7.0), control2: CGPoint(x: 17.0, y: 8.0))
+path.move(to: CGPoint(x: 10.0, y: 13.0))
+path.addLine(to: CGPoint(x: 10.0, y: 11.0))
+path.move(to: CGPoint(x: 14.0, y: 13.0))
+path.addLine(to: CGPoint(x: 14.0, y: 11.0))
+path.move(to: CGPoint(x: 2.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 17.0), control1: CGPoint(x: 4.0, y: 16.0), control2: CGPoint(x: 5.0, y: 17.0))
+path.move(to: CGPoint(x: 2.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 19.0), control1: CGPoint(x: 2.0, y: 20.3), control2: CGPoint(x: 3.3, y: 19.0))
+path.move(to: CGPoint(x: 19.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 16.0), control1: CGPoint(x: 19.0, y: 17.0), control2: CGPoint(x: 20.0, y: 16.0))
+path.move(to: CGPoint(x: 19.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 22.0), control1: CGPoint(x: 20.7, y: 19.0), control2: CGPoint(x: 22.0, y: 20.3))
+path.move(to: CGPoint(x: 5.0, y: 17.5))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 5.000000000000001, y: 19.98528137423857), control2: CGPoint(x: 8.134006751184447, y: 22.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 17.5), control1: CGPoint(x: 15.865993248815554, y: 22.0), control2: CGPoint(x: 19.0, y: 19.98528137423857))
+path.addCurve(to: CGPoint(x: 12.0, y: 13.0), control1: CGPoint(x: 19.0, y: 15.014718625761429), control2: CGPoint(x: 15.865993248815554, y: 13.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 17.5), control1: CGPoint(x: 8.134006751184447, y: 13.0), control2: CGPoint(x: 5.000000000000001, y: 15.014718625761429))
+        return path
+    }()
+        
+    /// Cricket Ball icon path
+    static let cricketBallPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 5.0, y: 8.0))
+path.addLine(to: CGPoint(x: 3.6, y: 6.6))
+path.move(to: CGPoint(x: 8.0, y: 11.0))
+path.addLine(to: CGPoint(x: 9.0, y: 12.0))
+path.move(to: CGPoint(x: 12.0, y: 15.0))
+path.addLine(to: CGPoint(x: 13.0, y: 16.0))
+path.move(to: CGPoint(x: 16.0, y: 19.0))
+path.addLine(to: CGPoint(x: 17.4, y: 20.4))
+path.move(to: CGPoint(x: 8.0, y: 5.0))
+path.addLine(to: CGPoint(x: 6.6, y: 3.6))
+path.move(to: CGPoint(x: 11.0, y: 8.0))
+path.addLine(to: CGPoint(x: 12.0, y: 9.0))
+path.move(to: CGPoint(x: 15.0, y: 12.0))
+path.addLine(to: CGPoint(x: 16.0, y: 13.0))
+path.move(to: CGPoint(x: 20.4, y: 17.4))
+path.addLine(to: CGPoint(x: 19.0, y: 16.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Cricket Wicket icon path
+    static let cricketWicketPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 2.0))
+path.addLine(to: CGPoint(x: 10.0, y: 4.0))
+path.move(to: CGPoint(x: 14.0, y: 3.0))
+path.addLine(to: CGPoint(x: 18.0, y: 2.0))
+path.move(to: CGPoint(x: 6.0, y: 7.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.move(to: CGPoint(x: 13.0, y: 7.0))
+path.addLine(to: CGPoint(x: 12.7, y: 11.1))
+path.move(to: CGPoint(x: 12.5, y: 14.9))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 18.0, y: 7.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.move(to: CGPoint(x: 10.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 15.0), control1: CGPoint(x: 10.0, y: 14.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 15.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 13.0), control1: CGPoint(x: 13.104569499661586, y: 15.0), control2: CGPoint(x: 14.0, y: 14.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 11.0), control1: CGPoint(x: 14.0, y: 11.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 11.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 13.0), control1: CGPoint(x: 10.895430500338414, y: 11.0), control2: CGPoint(x: 10.0, y: 11.895430500338414))
+        return path
+    }()
+        
+    /// Cross Square icon path
+    static let crossSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.0, y: 10.0))
+path.addLine(to: CGPoint(x: 14.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 6.0), control1: CGPoint(x: 14.0, y: 6.4), control2: CGPoint(x: 13.6, y: 6.0))
+path.addLine(to: CGPoint(x: 11.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 7.0), control1: CGPoint(x: 10.4, y: 6.0), control2: CGPoint(x: 10.0, y: 6.4))
+path.addLine(to: CGPoint(x: 10.0, y: 10.0))
+path.addLine(to: CGPoint(x: 7.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 11.0), control1: CGPoint(x: 6.4, y: 10.0), control2: CGPoint(x: 6.0, y: 10.4))
+path.addLine(to: CGPoint(x: 6.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 14.0), control1: CGPoint(x: 6.0, y: 13.6), control2: CGPoint(x: 6.4, y: 14.0))
+path.addLine(to: CGPoint(x: 10.0, y: 14.0))
+path.addLine(to: CGPoint(x: 10.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 18.0), control1: CGPoint(x: 10.0, y: 17.6), control2: CGPoint(x: 10.4, y: 18.0))
+path.addLine(to: CGPoint(x: 13.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 17.0), control1: CGPoint(x: 13.6, y: 18.0), control2: CGPoint(x: 14.0, y: 17.6))
+path.addLine(to: CGPoint(x: 14.0, y: 14.0))
+path.addLine(to: CGPoint(x: 17.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 13.0), control1: CGPoint(x: 17.6, y: 14.0), control2: CGPoint(x: 18.0, y: 13.6))
+path.addLine(to: CGPoint(x: 18.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 10.0), control1: CGPoint(x: 18.0, y: 10.4), control2: CGPoint(x: 17.6, y: 10.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 5.0, y: 2.0))
+path.addLine(to: CGPoint(x: 19.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 5.0), control1: CGPoint(x: 20.65685424949238, y: 2.0), control2: CGPoint(x: 22.0, y: 3.3431457505076194))
+path.addLine(to: CGPoint(x: 22.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 22.0), control1: CGPoint(x: 22.0, y: 20.65685424949238), control2: CGPoint(x: 20.65685424949238, y: 22.0))
+path.addLine(to: CGPoint(x: 5.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 19.0), control1: CGPoint(x: 3.34314575050762, y: 22.0), control2: CGPoint(x: 2.0000000000000004, y: 20.65685424949238))
+path.addLine(to: CGPoint(x: 2.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 4.999999999999999, y: 2.0), control1: CGPoint(x: 2.0, y: 3.34314575050762), control2: CGPoint(x: 3.343145750507619, y: 2.0000000000000004))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Crosshair 2 icon path
+    static let crosshair2Path: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addLine(to: CGPoint(x: 18.0, y: 12.0))
+path.move(to: CGPoint(x: 6.0, y: 12.0))
+path.addLine(to: CGPoint(x: 2.0, y: 12.0))
+path.move(to: CGPoint(x: 12.0, y: 22.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 4.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 20.0), control1: CGPoint(x: 4.000000000000001, y: 16.41827799864635), control2: CGPoint(x: 7.581722001353653, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 12.0), control1: CGPoint(x: 16.41827799864635, y: 20.0), control2: CGPoint(x: 20.0, y: 16.418277998646346))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 20.0, y: 7.581722001353652), control2: CGPoint(x: 16.41827799864635, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 11.999999999999998), control1: CGPoint(x: 7.581722001353653, y: 4.0), control2: CGPoint(x: 4.000000000000001, y: 7.5817220013536515))
+        return path
+    }()
+        
+    /// Crosshair 2 Dot icon path
+    static let crosshair2DotPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addLine(to: CGPoint(x: 18.0, y: 12.0))
+path.move(to: CGPoint(x: 6.0, y: 12.0))
+path.addLine(to: CGPoint(x: 2.0, y: 12.0))
+path.move(to: CGPoint(x: 12.0, y: 22.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 11.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 4.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 20.0), control1: CGPoint(x: 4.000000000000001, y: 16.41827799864635), control2: CGPoint(x: 7.581722001353653, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 12.0), control1: CGPoint(x: 16.41827799864635, y: 20.0), control2: CGPoint(x: 20.0, y: 16.418277998646346))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 20.0, y: 7.581722001353652), control2: CGPoint(x: 16.41827799864635, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 11.999999999999998), control1: CGPoint(x: 7.581722001353653, y: 4.0), control2: CGPoint(x: 4.000000000000001, y: 7.5817220013536515))
+        return path
+    }()
+        
+    /// Crosshair Plus icon path
+    static let crosshairPlusPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 21.0))
+path.move(to: CGPoint(x: 12.0, y: 3.0))
+path.addLine(to: CGPoint(x: 12.0, y: 8.0))
+path.move(to: CGPoint(x: 16.0, y: 12.0))
+path.addLine(to: CGPoint(x: 21.0, y: 12.0))
+path.move(to: CGPoint(x: 3.0, y: 12.0))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
+        return path
+    }()
+        
+    /// Crosshair Plus Dot icon path
+    static let crosshairPlusDotPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 21.0))
+path.move(to: CGPoint(x: 12.0, y: 3.0))
+path.addLine(to: CGPoint(x: 12.0, y: 8.0))
+path.move(to: CGPoint(x: 16.0, y: 12.0))
+path.addLine(to: CGPoint(x: 21.0, y: 12.0))
+path.move(to: CGPoint(x: 3.0, y: 12.0))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
+path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 11.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Crosshair Square icon path
+    static let crosshairSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 3.0))
+path.addLine(to: CGPoint(x: 5.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 5.0), control1: CGPoint(x: 3.8954305003384135, y: 3.0), control2: CGPoint(x: 3.0, y: 3.8954305003384126))
+path.addLine(to: CGPoint(x: 3.0, y: 8.0))
+path.move(to: CGPoint(x: 12.0, y: 3.0))
+path.addLine(to: CGPoint(x: 12.0, y: 8.0))
+path.move(to: CGPoint(x: 21.0, y: 8.0))
+path.addLine(to: CGPoint(x: 21.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 3.0), control1: CGPoint(x: 21.0, y: 3.895430500338413), control2: CGPoint(x: 20.104569499661586, y: 3.0))
+path.addLine(to: CGPoint(x: 16.0, y: 3.0))
+path.move(to: CGPoint(x: 16.0, y: 12.0))
+path.addLine(to: CGPoint(x: 21.0, y: 12.0))
+path.move(to: CGPoint(x: 16.0, y: 21.0))
+path.addLine(to: CGPoint(x: 19.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 20.104569499661586, y: 21.0), control2: CGPoint(x: 21.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 21.0, y: 16.0))
+path.move(to: CGPoint(x: 12.0, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 21.0))
+path.move(to: CGPoint(x: 3.0, y: 16.0))
+path.addLine(to: CGPoint(x: 3.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 21.0), control1: CGPoint(x: 3.0, y: 20.104569499661586), control2: CGPoint(x: 3.8954305003384135, y: 21.0))
+path.addLine(to: CGPoint(x: 8.0, y: 21.0))
+path.move(to: CGPoint(x: 3.0, y: 12.0))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
+path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 11.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Cup Saucer icon path
+    static let cupSaucerPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 22.0), control1: CGPoint(x: 2.0000000000000004, y: 20.209138999323173), control2: CGPoint(x: 3.7908610006768266, y: 22.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 18.0), control1: CGPoint(x: 20.209138999323173, y: 22.0), control2: CGPoint(x: 22.0, y: 20.209138999323173))
+path.closeSubpath()
+path.move(to: CGPoint(x: 6.0, y: 8.0))
+path.addLine(to: CGPoint(x: 18.0, y: 8.0))
+path.addLine(to: CGPoint(x: 18.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 18.0), control1: CGPoint(x: 18.0, y: 16.209138999323173), control2: CGPoint(x: 16.209138999323173, y: 18.0))
+path.addLine(to: CGPoint(x: 10.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 14.0), control1: CGPoint(x: 7.790861000676827, y: 18.0), control2: CGPoint(x: 6.0, y: 16.209138999323173))
+path.closeSubpath()
+path.move(to: CGPoint(x: 18.0, y: 8.0))
+path.addLine(to: CGPoint(x: 19.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 11.0), control1: CGPoint(x: 20.65685424949238, y: 8.0), control2: CGPoint(x: 22.0, y: 9.34314575050762))
+path.addLine(to: CGPoint(x: 22.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 14.0), control1: CGPoint(x: 22.0, y: 12.65685424949238), control2: CGPoint(x: 20.65685424949238, y: 14.0))
+path.addLine(to: CGPoint(x: 18.0, y: 14.0))
+path.move(to: CGPoint(x: 6.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 3.0), control1: CGPoint(x: 6.0, y: 3.4477152501692068), control2: CGPoint(x: 6.447715250169207, y: 3.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 2.0), control1: CGPoint(x: 7.552284749830793, y: 3.0), control2: CGPoint(x: 8.0, y: 2.5522847498307932))
+path.move(to: CGPoint(x: 12.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 3.0), control1: CGPoint(x: 12.0, y: 3.4477152501692068), control2: CGPoint(x: 12.447715250169207, y: 3.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 2.0), control1: CGPoint(x: 13.552284749830793, y: 3.0), control2: CGPoint(x: 14.0, y: 2.5522847498307932))
+path.move(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 3.0), control1: CGPoint(x: 18.0, y: 3.4477152501692068), control2: CGPoint(x: 18.447715250169207, y: 3.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 2.0), control1: CGPoint(x: 19.552284749830793, y: 3.0), control2: CGPoint(x: 20.0, y: 2.5522847498307932))
+        return path
+    }()
+        
+    /// Cup To Go icon path
+    static let cupToGoPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 7.0))
+path.addLine(to: CGPoint(x: 20.0, y: 7.0))
+path.move(to: CGPoint(x: 18.2, y: 11.0))
+path.addLine(to: CGPoint(x: 19.0, y: 7.0))
+path.addLine(to: CGPoint(x: 18.2, y: 3.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 2.0), control1: CGPoint(x: 18.099999999999998, y: 2.5), control2: CGPoint(x: 17.599999999999998, y: 2.0))
+path.addLine(to: CGPoint(x: 7.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 5.8, y: 3.0), control1: CGPoint(x: 6.4, y: 2.0), control2: CGPoint(x: 5.9, y: 2.4))
+path.addCurve(to: CGPoint(x: 5.0, y: 7.0), control1: CGPoint(x: 5.5, y: 4.4), control2: CGPoint(x: 5.0, y: 7.0))
+path.addLine(to: CGPoint(x: 5.8, y: 11.0))
+path.move(to: CGPoint(x: 18.0, y: 18.0))
+path.addLine(to: CGPoint(x: 6.0, y: 18.0))
+path.addLine(to: CGPoint(x: 5.0, y: 11.0))
+path.addLine(to: CGPoint(x: 19.0, y: 11.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 7.2, y: 18.0))
+path.addLine(to: CGPoint(x: 7.8, y: 21.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 22.0), control1: CGPoint(x: 7.8999999999999995, y: 21.5), control2: CGPoint(x: 8.4, y: 22.0))
+path.addLine(to: CGPoint(x: 15.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 16.2, y: 21.0), control1: CGPoint(x: 15.6, y: 22.0), control2: CGPoint(x: 16.1, y: 21.6))
+path.addLine(to: CGPoint(x: 16.8, y: 18.0))
+        return path
+    }()
+        
+    /// Currency Square icon path
+    static let currencySquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.0, y: 7.0))
+path.addLine(to: CGPoint(x: 14.83, y: 9.17))
+path.move(to: CGPoint(x: 17.0, y: 17.0))
+path.addLine(to: CGPoint(x: 14.83, y: 14.83))
+path.move(to: CGPoint(x: 7.0, y: 17.0))
+path.addLine(to: CGPoint(x: 9.17, y: 14.83))
+path.move(to: CGPoint(x: 7.0, y: 7.0))
+path.addLine(to: CGPoint(x: 9.17, y: 9.17))
+path.move(to: CGPoint(x: 8.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 8.0, y: 14.209138999323175), control2: CGPoint(x: 9.790861000676827, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 12.0), control1: CGPoint(x: 14.209138999323175, y: 16.0), control2: CGPoint(x: 16.0, y: 14.209138999323173))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.0), control1: CGPoint(x: 16.0, y: 9.790861000676827), control2: CGPoint(x: 14.209138999323175, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 12.0), control1: CGPoint(x: 9.790861000676827, y: 8.0), control2: CGPoint(x: 8.0, y: 9.790861000676825))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Desk Lamp icon path
+    static let deskLampPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.0, y: 7.0))
+path.addLine(to: CGPoint(x: 18.0, y: 5.0))
+path.move(to: CGPoint(x: 6.0, y: 7.0))
+path.addLine(to: CGPoint(x: 6.0, y: 11.0))
+path.move(to: CGPoint(x: 9.0, y: 7.0))
+path.addLine(to: CGPoint(x: 3.0, y: 7.0))
+path.addLine(to: CGPoint(x: 4.0, y: 2.0))
+path.addLine(to: CGPoint(x: 8.0, y: 2.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 22.0, y: 22.0))
+path.addLine(to: CGPoint(x: 22.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 11.0), control1: CGPoint(x: 22.0, y: 11.4), control2: CGPoint(x: 21.6, y: 11.0))
+path.addLine(to: CGPoint(x: 3.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 2.4, y: 11.0), control2: CGPoint(x: 2.0, y: 11.4))
+path.addLine(to: CGPoint(x: 2.0, y: 22.0))
+path.move(to: CGPoint(x: 10.0, y: 15.0))
+path.addLine(to: CGPoint(x: 2.0, y: 15.0))
+path.move(to: CGPoint(x: 10.0, y: 11.0))
+path.addLine(to: CGPoint(x: 10.0, y: 19.0))
+path.move(to: CGPoint(x: 22.0, y: 19.0))
+path.addLine(to: CGPoint(x: 2.0, y: 19.0))
+path.move(to: CGPoint(x: 15.0, y: 7.0))
+path.addLine(to: CGPoint(x: 19.0, y: 7.0))
+path.addLine(to: CGPoint(x: 19.0, y: 11.0))
+path.addLine(to: CGPoint(x: 15.0, y: 11.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Diaper icon path
+    static let diaperPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 9.0))
+path.addLine(to: CGPoint(x: 6.0, y: 9.0))
+path.move(to: CGPoint(x: 22.0, y: 9.0))
+path.addLine(to: CGPoint(x: 18.0, y: 9.0))
+path.move(to: CGPoint(x: 9.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 13.0), control1: CGPoint(x: 5.1340067511844465, y: 20.0), control2: CGPoint(x: 2.000000000000001, y: 16.865993248815556))
+path.addLine(to: CGPoint(x: 2.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 5.0), control1: CGPoint(x: 2.0, y: 5.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 5.0))
+path.addLine(to: CGPoint(x: 20.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 7.0), control1: CGPoint(x: 21.104569499661586, y: 5.0), control2: CGPoint(x: 22.0, y: 5.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 20.0), control1: CGPoint(x: 22.0, y: 16.865993248815556), control2: CGPoint(x: 18.865993248815556, y: 20.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 2.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 20.0), control1: CGPoint(x: 5.865993248815554, y: 13.0), control2: CGPoint(x: 9.0, y: 16.134006751184444))
+path.move(to: CGPoint(x: 15.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 13.0), control1: CGPoint(x: 15.0, y: 16.134006751184447), control2: CGPoint(x: 18.134006751184444, y: 13.0))
+        return path
+    }()
+        
+    /// Dishwasher icon path
+    static let dishwasherPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.0, y: 6.0))
+path.addLine(to: CGPoint(x: 17.0, y: 8.0))
+path.move(to: CGPoint(x: 3.0, y: 7.0))
+path.addLine(to: CGPoint(x: 21.0, y: 7.0))
+path.move(to: CGPoint(x: 9.0, y: 11.0))
+path.addLine(to: CGPoint(x: 7.0, y: 18.0))
+path.move(to: CGPoint(x: 13.0, y: 11.0))
+path.addLine(to: CGPoint(x: 11.0, y: 18.0))
+path.move(to: CGPoint(x: 12.0, y: 15.5))
+path.addCurve(to: CGPoint(x: 14.5, y: 18.0), control1: CGPoint(x: 12.0, y: 16.880711874576985), control2: CGPoint(x: 13.119288125423017, y: 18.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 15.5), control1: CGPoint(x: 15.880711874576985, y: 18.0), control2: CGPoint(x: 17.0, y: 16.880711874576985))
+path.addCurve(to: CGPoint(x: 14.5, y: 13.0), control1: CGPoint(x: 17.0, y: 14.119288125423017), control2: CGPoint(x: 15.880711874576985, y: 13.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 15.5), control1: CGPoint(x: 13.119288125423017, y: 13.0), control2: CGPoint(x: 12.0, y: 14.119288125423015))
+path.move(to: CGPoint(x: 5.0, y: 2.0))
+path.addLine(to: CGPoint(x: 19.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 4.0), control1: CGPoint(x: 20.104569499661586, y: 2.0), control2: CGPoint(x: 21.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 22.0), control1: CGPoint(x: 21.0, y: 21.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 5.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 20.0), control1: CGPoint(x: 3.8954305003384135, y: 22.0), control2: CGPoint(x: 3.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 2.0), control1: CGPoint(x: 3.0, y: 2.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Dollar Sign Circle icon path
+    static let dollarSignCirclePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.0, y: 8.0))
+path.addLine(to: CGPoint(x: 10.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 10.0), control1: CGPoint(x: 8.895430500338414, y: 8.0), control2: CGPoint(x: 8.0, y: 8.895430500338414))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 8.0, y: 11.104569499661586), control2: CGPoint(x: 8.895430500338414, y: 12.0))
+path.addLine(to: CGPoint(x: 14.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 14.0), control1: CGPoint(x: 15.104569499661586, y: 12.0), control2: CGPoint(x: 16.0, y: 12.895430500338414))
+path.addCurve(to: CGPoint(x: 14.0, y: 16.0), control1: CGPoint(x: 16.0, y: 15.104569499661586), control2: CGPoint(x: 15.104569499661586, y: 16.0))
+path.addLine(to: CGPoint(x: 8.0, y: 16.0))
+path.move(to: CGPoint(x: 12.0, y: 18.0))
+path.addLine(to: CGPoint(x: 12.0, y: 6.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Dollar Sign Square icon path
+    static let dollarSignSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 17.0))
+path.addLine(to: CGPoint(x: 12.0, y: 7.0))
+path.move(to: CGPoint(x: 16.0, y: 8.0))
+path.addLine(to: CGPoint(x: 10.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 10.0), control1: CGPoint(x: 8.895430500338414, y: 8.0), control2: CGPoint(x: 8.0, y: 8.895430500338414))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 8.0, y: 11.104569499661586), control2: CGPoint(x: 8.895430500338414, y: 12.0))
+path.addLine(to: CGPoint(x: 14.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 14.0), control1: CGPoint(x: 15.104569499661586, y: 12.0), control2: CGPoint(x: 16.0, y: 12.895430500338414))
+path.addCurve(to: CGPoint(x: 14.0, y: 16.0), control1: CGPoint(x: 16.0, y: 15.104569499661586), control2: CGPoint(x: 15.104569499661586, y: 16.0))
+path.addLine(to: CGPoint(x: 8.0, y: 16.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Doorbell Intercom icon path
+    static let doorbellIntercomPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.8, y: 4.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 1.854983443527075), control1: CGPoint(x: 14.458731913884156, y: 2.7343422570165328), control2: CGPoint(x: 13.310859805232875, y: 1.854983443527075))
+path.addCurve(to: CGPoint(x: 9.2, y: 4.0), control1: CGPoint(x: 10.689140194767123, y: 1.8549834435270753), control2: CGPoint(x: 9.541268086115844, y: 2.734342257016534))
+path.addLine(to: CGPoint(x: 5.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 5.0), control1: CGPoint(x: 4.4, y: 4.0), control2: CGPoint(x: 4.0, y: 4.4))
+path.addLine(to: CGPoint(x: 4.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 20.0), control1: CGPoint(x: 4.0, y: 19.6), control2: CGPoint(x: 4.4, y: 20.0))
+path.addLine(to: CGPoint(x: 9.2, y: 20.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.145016556472925), control1: CGPoint(x: 9.541268086115846, y: 21.265657742983468), control2: CGPoint(x: 10.689140194767125, y: 22.145016556472925))
+path.addCurve(to: CGPoint(x: 14.8, y: 20.0), control1: CGPoint(x: 13.310859805232877, y: 22.145016556472925), control2: CGPoint(x: 14.458731913884156, y: 21.265657742983468))
+path.addLine(to: CGPoint(x: 19.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 19.0), control1: CGPoint(x: 19.6, y: 20.0), control2: CGPoint(x: 20.0, y: 19.6))
+path.addLine(to: CGPoint(x: 20.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 4.0), control1: CGPoint(x: 20.0, y: 4.4), control2: CGPoint(x: 19.6, y: 4.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 8.0, y: 8.0))
+path.addEllipse(in: CGRect(x: 7.66, y: 7.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.0, y: 8.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 7.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 16.0, y: 8.0))
+path.addEllipse(in: CGRect(x: 15.660000000000002, y: 7.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 10.0, y: 15.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 16.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 14.0), control1: CGPoint(x: 13.104569499661586, y: 16.0), control2: CGPoint(x: 14.0, y: 15.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 12.0), control1: CGPoint(x: 14.0, y: 12.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 12.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 14.0), control1: CGPoint(x: 10.895430500338414, y: 12.0), control2: CGPoint(x: 10.0, y: 12.895430500338414))
+        return path
+    }()
+        
+    /// Dress icon path
+    static let dressPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.0, y: 2.0))
+path.addLine(to: CGPoint(x: 16.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 16.700000000000003, y: 9.8), control1: CGPoint(x: 17.021121592649763, y: 6.3823580540232605), control2: CGPoint(x: 17.283801351092897, y: 8.183590683347603))
+path.addLine(to: CGPoint(x: 16.5, y: 10.3))
+path.addCurve(to: CGPoint(x: 16.9, y: 16.599999999999998), control1: CGPoint(x: 15.718956369586499, y: 12.359478445335746), control2: CGPoint(x: 15.864757187584996, y: 14.655841328812093))
+path.addCurve(to: CGPoint(x: 19.0, y: 20.0), control1: CGPoint(x: 17.7, y: 17.9), control2: CGPoint(x: 19.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 19.0, y: 20.0), control2: CGPoint(x: 15.9, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 20.0), control1: CGPoint(x: 8.1, y: 22.0), control2: CGPoint(x: 5.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 7.1, y: 16.5), control1: CGPoint(x: 5.0, y: 20.0), control2: CGPoint(x: 6.3, y: 17.9))
+path.addCurve(to: CGPoint(x: 7.499999999999999, y: 10.3), control1: CGPoint(x: 8.105564157724377, y: 14.583299977550764), control2: CGPoint(x: 8.250936887210905, y: 12.330022670509576))
+path.addLine(to: CGPoint(x: 7.3, y: 9.8))
+path.addCurve(to: CGPoint(x: 8.0, y: 5.000000000000001), control1: CGPoint(x: 6.801142206806205, y: 8.176029043069615), control2: CGPoint(x: 7.058124604033478, y: 6.413864033511173))
+path.addLine(to: CGPoint(x: 8.0, y: 2.0))
+path.move(to: CGPoint(x: 16.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.5), control1: CGPoint(x: 14.2, y: 5.0), control2: CGPoint(x: 12.7, y: 6.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 5.0), control1: CGPoint(x: 11.3, y: 6.0), control2: CGPoint(x: 9.8, y: 5.0))
+        return path
+    }()
+        
+    /// Egg Cup icon path
+    static let eggCupPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 18.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 18.0, y: 7.7), control2: CGPoint(x: 15.3, y: 2.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 11.0), control1: CGPoint(x: 8.7, y: 2.0), control2: CGPoint(x: 6.0, y: 7.7))
+path.move(to: CGPoint(x: 19.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 19.0, y: 14.865993248815554), control2: CGPoint(x: 15.865993248815554, y: 18.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 11.0), control1: CGPoint(x: 8.134006751184447, y: 18.0), control2: CGPoint(x: 5.000000000000001, y: 14.865993248815554))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 18.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 9.0, y: 22.0))
+path.addLine(to: CGPoint(x: 15.0, y: 22.0))
+        return path
+    }()
+        
+    /// Elephant icon path
+    static let elephantPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.5, y: 12.0))
+path.addLine(to: CGPoint(x: 14.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 7.0), control1: CGPoint(x: 11.2, y: 12.0), control2: CGPoint(x: 9.0, y: 9.8))
+path.addLine(to: CGPoint(x: 9.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 3.0), control1: CGPoint(x: 9.0, y: 3.8954305003384135), control2: CGPoint(x: 9.895430500338414, y: 3.0))
+path.addLine(to: CGPoint(x: 13.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 16.4, y: 5.0), control1: CGPoint(x: 14.5, y: 3.0), control2: CGPoint(x: 15.8, y: 3.8))
+path.addLine(to: CGPoint(x: 19.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 8.0), control1: CGPoint(x: 20.7, y: 5.0), control2: CGPoint(x: 22.0, y: 6.3))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.move(to: CGPoint(x: 18.0, y: 10.0))
+path.addEllipse(in: CGRect(x: 17.66, y: 9.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 14.0), control1: CGPoint(x: 14.0, y: 12.209138999323175), control2: CGPoint(x: 15.790861000676827, y: 14.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 18.0), control1: CGPoint(x: 20.209138999323173, y: 14.0), control2: CGPoint(x: 22.0, y: 15.790861000676827))
+path.addCurve(to: CGPoint(x: 20.0, y: 20.0), control1: CGPoint(x: 22.0, y: 19.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 20.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 18.0), control1: CGPoint(x: 18.895430500338414, y: 20.0), control2: CGPoint(x: 18.0, y: 19.104569499661586))
+path.move(to: CGPoint(x: 10.0, y: 16.0))
+path.addLine(to: CGPoint(x: 10.0, y: 21.0))
+path.move(to: CGPoint(x: 18.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 18.0), control1: CGPoint(x: 15.790861000676827, y: 14.0), control2: CGPoint(x: 14.0, y: 15.790861000676825))
+path.addLine(to: CGPoint(x: 14.0, y: 21.0))
+path.addLine(to: CGPoint(x: 6.0, y: 21.0))
+path.addLine(to: CGPoint(x: 6.0, y: 18.4))
+path.addCurve(to: CGPoint(x: 4.3, y: 15.399999999999999), control1: CGPoint(x: 6.0, y: 17.299999999999997), control2: CGPoint(x: 5.2, y: 16.099999999999998))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.0), control1: CGPoint(x: 2.9, y: 14.3), control2: CGPoint(x: 2.0, y: 12.8))
+path.addCurve(to: CGPoint(x: 9.0, y: 5.0), control1: CGPoint(x: 2.0, y: 7.7), control2: CGPoint(x: 5.1, y: 5.0))
+path.move(to: CGPoint(x: 2.0, y: 11.0))
+path.addLine(to: CGPoint(x: 2.0, y: 18.0))
+        return path
+    }()
+        
+    /// Elephant Face icon path
+    static let elephantFacePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 11.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 14.0), control1: CGPoint(x: 11.0, y: 12.209138999323175), control2: CGPoint(x: 12.790861000676827, y: 14.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 16.0), control1: CGPoint(x: 16.104569499661586, y: 14.0), control2: CGPoint(x: 17.0, y: 14.895430500338414))
+path.addCurve(to: CGPoint(x: 15.0, y: 18.0), control1: CGPoint(x: 17.0, y: 17.104569499661586), control2: CGPoint(x: 16.104569499661586, y: 18.0))
+path.addCurve(to: CGPoint(x: 12.200000000000001, y: 17.4), control1: CGPoint(x: 14.035293159039458, y: 17.995080650026907), control2: CGPoint(x: 13.082016608084691, y: 17.790807103393742))
+path.addCurve(to: CGPoint(x: 11.2, y: 18.0), control1: CGPoint(x: 11.7, y: 17.2), control2: CGPoint(x: 11.299999999999999, y: 17.4))
+path.addLine(to: CGPoint(x: 11.1, y: 19.0))
+path.addLine(to: CGPoint(x: 10.2, y: 19.9))
+path.addCurve(to: CGPoint(x: 10.399999999999999, y: 21.099999999999998), control1: CGPoint(x: 9.799999999999999, y: 20.299999999999997), control2: CGPoint(x: 9.899999999999999, y: 20.799999999999997))
+path.addCurve(to: CGPoint(x: 14.999999999999998, y: 21.999999999999996), control1: CGPoint(x: 11.799999999999999, y: 21.7), control2: CGPoint(x: 13.399999999999999, y: 21.999999999999996))
+path.addCurve(to: CGPoint(x: 21.0, y: 15.999999999999996), control1: CGPoint(x: 18.299999999999997, y: 21.999999999999996), control2: CGPoint(x: 21.0, y: 19.299999999999997))
+path.addLine(to: CGPoint(x: 21.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 4.0), control1: CGPoint(x: 21.0, y: 5.790861000676826), control2: CGPoint(x: 19.209138999323173, y: 4.0))
+path.addLine(to: CGPoint(x: 12.4, y: 4.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 2.0), control1: CGPoint(x: 11.700000000000001, y: 2.8), control2: CGPoint(x: 10.4, y: 2.0))
+path.addLine(to: CGPoint(x: 6.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 5.0), control1: CGPoint(x: 4.3, y: 2.0), control2: CGPoint(x: 3.0, y: 3.3))
+path.addLine(to: CGPoint(x: 3.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 13.0), control1: CGPoint(x: 3.000000000000001, y: 9.865993248815554), control2: CGPoint(x: 6.1340067511844465, y: 13.0))
+path.addLine(to: CGPoint(x: 12.4, y: 13.0))
+path.move(to: CGPoint(x: 15.5, y: 10.0))
+path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+        return path
+    }()
+        
+    /// Escalator Arrow Down Left icon path
+    static let escalatorArrowDownLeftPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 7.0))
+path.addLine(to: CGPoint(x: 9.0, y: 10.0))
+path.move(to: CGPoint(x: 17.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 15.3, y: 3.7), control1: CGPoint(x: 16.4, y: 3.0), control2: CGPoint(x: 15.7, y: 3.3))
+path.addLine(to: CGPoint(x: 6.0, y: 13.0))
+path.addLine(to: CGPoint(x: 4.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 15.0), control1: CGPoint(x: 2.8954305003384135, y: 13.0), control2: CGPoint(x: 2.0, y: 13.895430500338414))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 17.0), control1: CGPoint(x: 2.0, y: 16.104569499661586), control2: CGPoint(x: 2.8954305003384126, y: 17.0))
+path.addLine(to: CGPoint(x: 7.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 8.7, y: 16.3), control1: CGPoint(x: 7.6, y: 17.0), control2: CGPoint(x: 8.3, y: 16.7))
+path.addLine(to: CGPoint(x: 18.0, y: 7.0))
+path.addLine(to: CGPoint(x: 20.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 5.0), control1: CGPoint(x: 21.104569499661586, y: 7.0), control2: CGPoint(x: 22.0, y: 6.1045694996615865))
+path.addCurve(to: CGPoint(x: 20.0, y: 3.0), control1: CGPoint(x: 22.0, y: 3.895430500338413), control2: CGPoint(x: 21.104569499661586, y: 3.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 22.0, y: 13.0))
+path.addLine(to: CGPoint(x: 13.0, y: 22.0))
+path.move(to: CGPoint(x: 13.0, y: 18.0))
+path.addLine(to: CGPoint(x: 13.0, y: 22.0))
+path.addLine(to: CGPoint(x: 17.0, y: 22.0))
+path.move(to: CGPoint(x: 8.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 4.0), control1: CGPoint(x: 8.0, y: 3.5522847498307937), control2: CGPoint(x: 8.447715250169207, y: 4.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 3.0), control1: CGPoint(x: 9.552284749830793, y: 4.0), control2: CGPoint(x: 10.0, y: 3.5522847498307932))
+path.addCurve(to: CGPoint(x: 9.0, y: 2.0), control1: CGPoint(x: 10.0, y: 2.4477152501692068), control2: CGPoint(x: 9.552284749830793, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 3.0), control1: CGPoint(x: 8.447715250169207, y: 2.0), control2: CGPoint(x: 8.0, y: 2.4477152501692063))
+        return path
+    }()
+        
+    /// Escalator Arrow Up Right icon path
+    static let escalatorArrowUpRightPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 7.0))
+path.addLine(to: CGPoint(x: 9.0, y: 10.0))
+path.move(to: CGPoint(x: 17.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 15.3, y: 3.7), control1: CGPoint(x: 16.4, y: 3.0), control2: CGPoint(x: 15.7, y: 3.3))
+path.addLine(to: CGPoint(x: 6.0, y: 13.0))
+path.addLine(to: CGPoint(x: 4.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 15.0), control1: CGPoint(x: 2.8954305003384135, y: 13.0), control2: CGPoint(x: 2.0, y: 13.895430500338414))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 17.0), control1: CGPoint(x: 2.0, y: 16.104569499661586), control2: CGPoint(x: 2.8954305003384126, y: 17.0))
+path.addLine(to: CGPoint(x: 7.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 8.7, y: 16.3), control1: CGPoint(x: 7.6, y: 17.0), control2: CGPoint(x: 8.3, y: 16.7))
+path.addLine(to: CGPoint(x: 18.0, y: 7.0))
+path.addLine(to: CGPoint(x: 20.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 5.0), control1: CGPoint(x: 21.104569499661586, y: 7.0), control2: CGPoint(x: 22.0, y: 6.1045694996615865))
+path.addCurve(to: CGPoint(x: 20.0, y: 3.0), control1: CGPoint(x: 22.0, y: 3.895430500338413), control2: CGPoint(x: 21.104569499661586, y: 3.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 22.0, y: 13.0))
+path.addLine(to: CGPoint(x: 13.0, y: 22.0))
+path.move(to: CGPoint(x: 18.0, y: 13.0))
+path.addLine(to: CGPoint(x: 22.0, y: 13.0))
+path.addLine(to: CGPoint(x: 22.0, y: 17.0))
+path.move(to: CGPoint(x: 8.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 4.0), control1: CGPoint(x: 8.0, y: 3.5522847498307937), control2: CGPoint(x: 8.447715250169207, y: 4.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 3.0), control1: CGPoint(x: 9.552284749830793, y: 4.0), control2: CGPoint(x: 10.0, y: 3.5522847498307932))
+path.addCurve(to: CGPoint(x: 9.0, y: 2.0), control1: CGPoint(x: 10.0, y: 2.4477152501692068), control2: CGPoint(x: 9.552284749830793, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 3.0), control1: CGPoint(x: 8.447715250169207, y: 2.0), control2: CGPoint(x: 8.0, y: 2.4477152501692063))
+        return path
+    }()
+        
+    /// Euro Circle icon path
+    static let euroCirclePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 12.0))
+path.addLine(to: CGPoint(x: 13.0, y: 12.0))
+path.move(to: CGPoint(x: 16.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 10.418861169915811, y: 7.256583509747431), control1: CGPoint(x: 14.708708775779558, y: 7.278278367706077), control2: CGPoint(x: 12.460571865477704, y: 6.576013277893467))
+path.addCurve(to: CGPoint(x: 7.0, y: 12.0), control1: CGPoint(x: 8.377150474353918, y: 7.937153741601394), control2: CGPoint(x: 7.0, y: 9.847847959632595))
+path.addCurve(to: CGPoint(x: 10.41886116991581, y: 16.74341649025257), control1: CGPoint(x: 7.0, y: 14.152152040367405), control2: CGPoint(x: 8.377150474353918, y: 16.062846258398604))
+path.addCurve(to: CGPoint(x: 16.0, y: 15.0), control1: CGPoint(x: 12.460571865477702, y: 17.423986722106534), control2: CGPoint(x: 14.708708775779556, y: 16.721721632293924))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Euro Square icon path
+    static let euroSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 12.0))
+path.addLine(to: CGPoint(x: 14.0, y: 12.0))
+path.move(to: CGPoint(x: 16.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 10.834424056292093, y: 7.668848112584187), control1: CGPoint(x: 14.463422689238948, y: 6.967416784243544), control2: CGPoint(x: 12.490273790877357, y: 6.840923245291555))
+path.addCurve(to: CGPoint(x: 7.999999999999999, y: 12.0), control1: CGPoint(x: 9.17857432170683, y: 8.496772979876818), control2: CGPoint(x: 8.095879813851466, y: 10.151188221937284))
+path.addCurve(to: CGPoint(x: 10.735239486873791, y: 16.529521026252404), control1: CGPoint(x: 7.960565036666448, y: 13.911354000486098), control2: CGPoint(x: 9.025308673885773, y: 15.674555619758394))
+path.addCurve(to: CGPoint(x: 15.999999999999996, y: 16.000000000000004), control1: CGPoint(x: 12.445170299861811, y: 17.384486432746417), control2: CGPoint(x: 14.494577777611246, y: 17.1783603709585))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Face Alien icon path
+    static let faceAlienPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 18.300000000000022, y: 18.599999999999987), control1: CGPoint(x: 21.978254576270434, y: 14.688447019026484), control2: CGPoint(x: 20.582169722313598, y: 17.178760542300864))
+path.addLine(to: CGPoint(x: 14.3, y: 21.3))
+path.addCurve(to: CGPoint(x: 9.8, y: 21.3), control1: CGPoint(x: 12.95125633171363, y: 22.252647883680943), control2: CGPoint(x: 11.148743668286372, y: 22.252647883680943))
+path.addLine(to: CGPoint(x: 5.800000000000001, y: 18.6))
+path.addCurve(to: CGPoint(x: 1.9999999999999991, y: 12.000000000000002), control1: CGPoint(x: 3.4383318366163467, y: 17.24372066051601), control2: CGPoint(x: 1.9872274957031886, y: 14.723381542087896))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 2.0), control1: CGPoint(x: 2.0, y: 6.477152501692067), control2: CGPoint(x: 6.477152501692063, y: 2.0000000000000018))
+path.addCurve(to: CGPoint(x: 22.0, y: 11.999999999999998), control1: CGPoint(x: 17.522847498307932, y: 2.0), control2: CGPoint(x: 22.0, y: 6.477152501692063))
+path.move(to: CGPoint(x: 10.7, y: 11.3))
+path.addCurve(to: CGPoint(x: 6.499999999999999, y: 10.5), control1: CGPoint(x: 9.299999999999999, y: 10.0), control2: CGPoint(x: 7.3999999999999995, y: 9.600000000000001))
+path.addCurve(to: CGPoint(x: 7.299999999999999, y: 14.7), control1: CGPoint(x: 5.599999999999999, y: 11.399999999999999), control2: CGPoint(x: 5.999999999999999, y: 13.3))
+path.addCurve(to: CGPoint(x: 11.5, y: 15.5), control1: CGPoint(x: 8.7, y: 16.099999999999998), control2: CGPoint(x: 10.5, y: 16.5))
+path.addCurve(to: CGPoint(x: 10.7, y: 11.3), control1: CGPoint(x: 12.4, y: 14.6), control2: CGPoint(x: 12.0, y: 12.7))
+path.move(to: CGPoint(x: 17.5, y: 10.5))
+path.addCurve(to: CGPoint(x: 13.3, y: 11.3), control1: CGPoint(x: 16.6, y: 9.6), control2: CGPoint(x: 14.7, y: 10.0))
+path.addCurve(to: CGPoint(x: 12.5, y: 15.5), control1: CGPoint(x: 11.9, y: 12.700000000000001), control2: CGPoint(x: 11.5, y: 14.5))
+path.addCurve(to: CGPoint(x: 16.7, y: 14.7), control1: CGPoint(x: 13.4, y: 16.4), control2: CGPoint(x: 15.3, y: 16.0))
+path.addCurve(to: CGPoint(x: 17.5, y: 10.5), control1: CGPoint(x: 18.0, y: 13.299999999999999), control2: CGPoint(x: 18.4, y: 11.399999999999999))
+        return path
+    }()
+        
+    /// Fan Handheld icon path
+    static let fanHandheldPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 3.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.4), control2: CGPoint(x: 3.4, y: 3.0))
+path.addCurve(to: CGPoint(x: 20.9, y: 19.899999999999995), control1: CGPoint(x: 13.140042798919714, y: 3.451553196963726), control2: CGPoint(x: 20.44844680303627, y: 10.759957201080283))
+path.addCurve(to: CGPoint(x: 19.9, y: 21.0), control1: CGPoint(x: 20.9, y: 20.5), control2: CGPoint(x: 20.5, y: 20.9))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.1), control1: CGPoint(x: 3.9, y: 21.1), control2: CGPoint(x: 3.0, y: 20.2))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.9, y: 4.4))
+path.addLine(to: CGPoint(x: 3.0, y: 19.0))
+path.move(to: CGPoint(x: 15.7, y: 8.3))
+path.addLine(to: CGPoint(x: 3.6, y: 20.4))
+path.move(to: CGPoint(x: 19.6, y: 14.1))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+        return path
+    }()
+        
+    /// Farm icon path
+    static let farmPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 14.0))
+path.addLine(to: CGPoint(x: 8.0, y: 4.5))
+path.addCurve(to: CGPoint(x: 5.5, y: 2.0), control1: CGPoint(x: 8.0, y: 3.1192881254230165), control2: CGPoint(x: 6.880711874576984, y: 2.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 4.5), control1: CGPoint(x: 4.119288125423017, y: 2.0), control2: CGPoint(x: 3.0000000000000004, y: 3.119288125423016))
+path.addLine(to: CGPoint(x: 3.0, y: 14.0))
+path.move(to: CGPoint(x: 8.0, y: 8.0))
+path.addLine(to: CGPoint(x: 14.0, y: 3.0))
+path.addLine(to: CGPoint(x: 22.0, y: 9.0))
+path.move(to: CGPoint(x: 20.0, y: 4.0))
+path.addLine(to: CGPoint(x: 20.0, y: 14.0))
+path.move(to: CGPoint(x: 2.0, y: 14.0))
+path.addLine(to: CGPoint(x: 22.0, y: 14.0))
+path.move(to: CGPoint(x: 2.0, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 14.0))
+path.move(to: CGPoint(x: 7.0, y: 22.0))
+path.addLine(to: CGPoint(x: 12.0, y: 14.0))
+path.move(to: CGPoint(x: 22.0, y: 22.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.addLine(to: CGPoint(x: 17.0, y: 14.0))
+path.move(to: CGPoint(x: 15.0, y: 18.0))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 16.0, y: 10.0))
+path.addLine(to: CGPoint(x: 16.0, y: 14.0))
+path.addLine(to: CGPoint(x: 12.0, y: 14.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Faucet icon path
+    static let faucetPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.22, y: 4.9))
+path.addLine(to: CGPoint(x: 5.4, y: 6.0))
+path.addLine(to: CGPoint(x: 5.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 4.0), control1: CGPoint(x: 3.8954305003384135, y: 6.0), control2: CGPoint(x: 3.0, y: 5.104569499661587))
+path.addCurve(to: CGPoint(x: 5.0, y: 2.0), control1: CGPoint(x: 3.0, y: 2.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 2.0))
+path.addLine(to: CGPoint(x: 5.4, y: 2.0))
+path.addLine(to: CGPoint(x: 10.260000000000002, y: 3.0))
+path.move(to: CGPoint(x: 13.78, y: 4.9))
+path.addLine(to: CGPoint(x: 18.58, y: 5.9))
+path.addLine(to: CGPoint(x: 18.979999999999997, y: 5.9))
+path.addCurve(to: CGPoint(x: 20.979999999999997, y: 3.9000000000000004), control1: CGPoint(x: 20.084569499661583, y: 5.9), control2: CGPoint(x: 20.979999999999997, y: 5.004569499661587))
+path.addCurve(to: CGPoint(x: 18.979999999999997, y: 1.9000000000000004), control1: CGPoint(x: 20.979999999999997, y: 2.7954305003384134), control2: CGPoint(x: 20.084569499661583, y: 1.9000000000000004))
+path.addLine(to: CGPoint(x: 18.58, y: 1.9000000000000004))
+path.addLine(to: CGPoint(x: 13.659999999999998, y: 2.9000000000000004))
+path.move(to: CGPoint(x: 12.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 9.0))
+path.move(to: CGPoint(x: 22.0, y: 9.0))
+path.addLine(to: CGPoint(x: 22.0, y: 17.0))
+path.move(to: CGPoint(x: 18.0, y: 11.0))
+path.addLine(to: CGPoint(x: 15.4, y: 11.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.978485866865096), control1: CGPoint(x: 14.722646421778164, y: 9.754114268744736), control2: CGPoint(x: 13.418111111752316, y: 8.978485866865096))
+path.addCurve(to: CGPoint(x: 8.600000000000001, y: 11.0), control1: CGPoint(x: 10.581888888247684, y: 8.978485866865096), control2: CGPoint(x: 9.277353578221836, y: 9.754114268744736))
+path.addLine(to: CGPoint(x: 7.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 16.0), control1: CGPoint(x: 4.2, y: 11.0), control2: CGPoint(x: 2.0, y: 13.2))
+path.addLine(to: CGPoint(x: 2.0, y: 17.0))
+path.addLine(to: CGPoint(x: 6.0, y: 17.0))
+path.addLine(to: CGPoint(x: 6.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 15.0), control1: CGPoint(x: 6.0, y: 15.4), control2: CGPoint(x: 6.4, y: 15.0))
+path.addLine(to: CGPoint(x: 8.6, y: 15.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 17.021514133134904), control1: CGPoint(x: 9.277353578221836, y: 16.245885731255264), control2: CGPoint(x: 10.581888888247683, y: 17.021514133134904))
+path.addCurve(to: CGPoint(x: 15.399999999999999, y: 15.0), control1: CGPoint(x: 13.418111111752316, y: 17.021514133134904), control2: CGPoint(x: 14.722646421778164, y: 16.245885731255264))
+path.addLine(to: CGPoint(x: 18.0, y: 15.0))
+path.move(to: CGPoint(x: 3.5, y: 17.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 3.5, y: 17.0), control2: CGPoint(x: 2.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 22.0), control1: CGPoint(x: 2.0, y: 21.104569499661586), control2: CGPoint(x: 2.8954305003384135, y: 22.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 20.0), control1: CGPoint(x: 5.104569499661587, y: 22.0), control2: CGPoint(x: 6.0, y: 21.104569499661586))
+path.addCurve(to: CGPoint(x: 4.5, y: 17.0), control1: CGPoint(x: 6.0, y: 19.0), control2: CGPoint(x: 4.5, y: 17.0))
+path.move(to: CGPoint(x: 10.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 10.0, y: 5.104569499661587), control2: CGPoint(x: 10.895430500338414, y: 6.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 4.0), control1: CGPoint(x: 13.104569499661586, y: 6.0), control2: CGPoint(x: 14.0, y: 5.1045694996615865))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 14.0, y: 2.895430500338413), control2: CGPoint(x: 13.104569499661586, y: 2.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 3.9999999999999996), control1: CGPoint(x: 10.895430500338414, y: 2.0), control2: CGPoint(x: 10.0, y: 2.8954305003384126))
+path.move(to: CGPoint(x: 18.0, y: 10.0))
+path.addLine(to: CGPoint(x: 22.0, y: 10.0))
+path.addLine(to: CGPoint(x: 22.0, y: 16.0))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Feather Plus icon path
+    static let featherPlusPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 7.0))
+path.addLine(to: CGPoint(x: 8.0, y: 7.0))
+path.move(to: CGPoint(x: 5.0, y: 4.0))
+path.addLine(to: CGPoint(x: 5.0, y: 10.0))
+path.move(to: CGPoint(x: 5.1, y: 17.0))
+path.addLine(to: CGPoint(x: 14.0, y: 17.0))
+path.addLine(to: CGPoint(x: 22.0, y: 8.8))
+path.addCurve(to: CGPoint(x: 13.5, y: 8.8), control1: CGPoint(x: 19.7, y: 6.500000000000001), control2: CGPoint(x: 15.9, y: 6.500000000000001))
+path.addLine(to: CGPoint(x: 2.1, y: 20.0))
+path.move(to: CGPoint(x: 18.0, y: 13.0))
+path.addLine(to: CGPoint(x: 9.2, y: 13.0))
+        return path
+    }()
+        
+    /// Feather Square icon path
+    static let featherSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.3, y: 3.0))
+path.addLine(to: CGPoint(x: 5.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 5.0), control1: CGPoint(x: 3.8954305003384135, y: 3.0), control2: CGPoint(x: 3.0, y: 3.8954305003384126))
+path.addLine(to: CGPoint(x: 3.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 21.0), control1: CGPoint(x: 3.0, y: 20.104569499661586), control2: CGPoint(x: 3.8954305003384135, y: 21.0))
+path.addLine(to: CGPoint(x: 19.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 20.104569499661586, y: 21.0), control2: CGPoint(x: 21.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 21.0, y: 10.2))
+path.move(to: CGPoint(x: 7.0, y: 12.0))
+path.addLine(to: CGPoint(x: 15.5, y: 3.5))
+path.addCurve(to: CGPoint(x: 22.0, y: 3.5), control1: CGPoint(x: 17.5, y: 1.5), control2: CGPoint(x: 20.0, y: 1.5))
+path.addLine(to: CGPoint(x: 16.5, y: 9.0))
+path.addLine(to: CGPoint(x: 10.0, y: 9.0))
+        return path
+    }()
+        
+    /// Feather Text icon path
+    static let featherTextPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.9, y: 8.0))
+path.addLine(to: CGPoint(x: 9.2, y: 8.0))
+path.move(to: CGPoint(x: 5.1, y: 12.0))
+path.addLine(to: CGPoint(x: 14.0, y: 12.0))
+path.addLine(to: CGPoint(x: 22.0, y: 3.8000000000000007))
+path.addCurve(to: CGPoint(x: 13.5, y: 3.8000000000000007), control1: CGPoint(x: 19.7, y: 1.5000000000000009), control2: CGPoint(x: 15.9, y: 1.5000000000000009))
+path.addLine(to: CGPoint(x: 2.0, y: 15.0))
+path.move(to: CGPoint(x: 2.0, y: 19.0))
+path.addLine(to: CGPoint(x: 10.0, y: 19.0))
+path.move(to: CGPoint(x: 21.0, y: 17.0))
+path.addLine(to: CGPoint(x: 21.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 20.5), control1: CGPoint(x: 21.0, y: 19.0), control2: CGPoint(x: 22.0, y: 19.5))
+path.addCurve(to: CGPoint(x: 20.5, y: 22.0), control1: CGPoint(x: 22.0, y: 21.3), control2: CGPoint(x: 21.3, y: 22.0))
+path.addLine(to: CGPoint(x: 15.5, y: 22.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 20.5), control1: CGPoint(x: 14.7, y: 22.0), control2: CGPoint(x: 14.0, y: 21.3))
+path.addCurve(to: CGPoint(x: 15.0, y: 18.0), control1: CGPoint(x: 14.0, y: 19.5), control2: CGPoint(x: 15.0, y: 19.0))
+path.addLine(to: CGPoint(x: 15.0, y: 17.0))
+path.move(to: CGPoint(x: 14.0, y: 17.0))
+path.addLine(to: CGPoint(x: 22.0, y: 17.0))
+        return path
+    }()
+        
+    /// Flippers icon path
+    static let flippersPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 20.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 3.5), control1: CGPoint(x: 20.0, y: 13.0), control2: CGPoint(x: 22.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 21.5, y: 3.0), control1: CGPoint(x: 22.0, y: 3.2), control2: CGPoint(x: 21.8, y: 3.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 4.0), control1: CGPoint(x: 19.0, y: 3.0), control2: CGPoint(x: 17.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 12.5, y: 3.0), control1: CGPoint(x: 17.0, y: 4.0), control2: CGPoint(x: 15.0, y: 3.0))
+path.addLine(to: CGPoint(x: 11.5, y: 3.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 4.0), control1: CGPoint(x: 9.0, y: 3.0), control2: CGPoint(x: 7.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 2.5, y: 3.0), control1: CGPoint(x: 7.0, y: 4.0), control2: CGPoint(x: 5.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 3.5), control1: CGPoint(x: 2.2, y: 3.0), control2: CGPoint(x: 2.0, y: 3.2))
+path.addCurve(to: CGPoint(x: 4.0, y: 17.0), control1: CGPoint(x: 2.0, y: 10.0), control2: CGPoint(x: 4.0, y: 13.0))
+path.move(to: CGPoint(x: 12.0, y: 3.0))
+path.addLine(to: CGPoint(x: 12.0, y: 3.5))
+path.addCurve(to: CGPoint(x: 10.0, y: 17.0), control1: CGPoint(x: 12.0, y: 10.0), control2: CGPoint(x: 10.0, y: 13.0))
+path.move(to: CGPoint(x: 12.0, y: 3.5))
+path.addCurve(to: CGPoint(x: 14.0, y: 17.0), control1: CGPoint(x: 12.0, y: 10.0), control2: CGPoint(x: 14.0, y: 13.0))
+path.move(to: CGPoint(x: 7.0, y: 4.0))
+path.addLine(to: CGPoint(x: 7.0, y: 10.0))
+path.move(to: CGPoint(x: 17.0, y: 4.0))
+path.addLine(to: CGPoint(x: 17.0, y: 10.0))
+path.move(to: CGPoint(x: 7.0, y: 14.0))
+path.addLine(to: CGPoint(x: 7.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 17.0), control1: CGPoint(x: 8.65685424949238, y: 14.0), control2: CGPoint(x: 10.0, y: 15.34314575050762))
+path.addLine(to: CGPoint(x: 10.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 21.0), control1: CGPoint(x: 10.0, y: 19.65685424949238), control2: CGPoint(x: 8.65685424949238, y: 21.0))
+path.addLine(to: CGPoint(x: 7.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 18.0), control1: CGPoint(x: 5.34314575050762, y: 21.0), control2: CGPoint(x: 4.0, y: 19.65685424949238))
+path.addLine(to: CGPoint(x: 4.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 6.999999999999999, y: 14.0), control1: CGPoint(x: 4.0, y: 15.34314575050762), control2: CGPoint(x: 5.3431457505076185, y: 14.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 17.0, y: 14.0))
+path.addLine(to: CGPoint(x: 17.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 17.0), control1: CGPoint(x: 18.65685424949238, y: 14.0), control2: CGPoint(x: 20.0, y: 15.34314575050762))
+path.addLine(to: CGPoint(x: 20.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 21.0), control1: CGPoint(x: 20.0, y: 19.65685424949238), control2: CGPoint(x: 18.65685424949238, y: 21.0))
+path.addLine(to: CGPoint(x: 17.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 18.0), control1: CGPoint(x: 15.34314575050762, y: 21.0), control2: CGPoint(x: 14.0, y: 19.65685424949238))
+path.addLine(to: CGPoint(x: 14.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 14.0), control1: CGPoint(x: 14.0, y: 15.34314575050762), control2: CGPoint(x: 15.343145750507619, y: 14.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Floor Plan icon path
+    static let floorPlanPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 14.0, y: 21.0))
+path.move(to: CGPoint(x: 9.0, y: 3.0))
+path.addLine(to: CGPoint(x: 9.0, y: 10.0))
+path.move(to: CGPoint(x: 21.0, y: 10.0))
+path.addLine(to: CGPoint(x: 14.0, y: 10.0))
+path.move(to: CGPoint(x: 3.0, y: 15.0))
+path.addLine(to: CGPoint(x: 12.0, y: 15.0))
+        return path
+    }()
+        
+    /// Floppy Disk icon path
+    static let floppyDiskPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 3.0))
+path.addLine(to: CGPoint(x: 7.0, y: 8.0))
+path.addLine(to: CGPoint(x: 15.0, y: 8.0))
+path.move(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.addLine(to: CGPoint(x: 16.0, y: 3.0))
+path.addLine(to: CGPoint(x: 21.0, y: 8.0))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 17.0, y: 21.0))
+path.addLine(to: CGPoint(x: 17.0, y: 13.0))
+path.addLine(to: CGPoint(x: 7.0, y: 13.0))
+path.addLine(to: CGPoint(x: 7.0, y: 21.0))
+        return path
+    }()
+        
+    /// Floppy Disk 2 icon path
+    static let floppyDisk2Path: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.addLine(to: CGPoint(x: 16.0, y: 3.0))
+path.addLine(to: CGPoint(x: 21.0, y: 8.0))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 10.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 10.0, y: 15.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 16.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 14.0), control1: CGPoint(x: 13.104569499661586, y: 16.0), control2: CGPoint(x: 14.0, y: 15.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 12.0), control1: CGPoint(x: 14.0, y: 12.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 12.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 14.0), control1: CGPoint(x: 10.895430500338414, y: 12.0), control2: CGPoint(x: 10.0, y: 12.895430500338414))
+path.move(to: CGPoint(x: 7.0, y: 3.0))
+path.addLine(to: CGPoint(x: 14.0, y: 3.0))
+path.addLine(to: CGPoint(x: 14.0, y: 8.0))
+path.addLine(to: CGPoint(x: 7.0, y: 8.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Floppy Disk Rear icon path
+    static let floppyDiskRearPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.addLine(to: CGPoint(x: 16.0, y: 3.0))
+path.addLine(to: CGPoint(x: 21.0, y: 8.0))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 21.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 10.0, y: 13.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 13.104569499661586, y: 14.0), control2: CGPoint(x: 14.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 14.0, y: 10.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 10.895430500338414, y: 10.0), control2: CGPoint(x: 10.0, y: 10.895430500338414))
+        return path
+    }()
+        
+    /// Floppy Disks icon path
+    static let floppyDisksPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 2.0), control1: CGPoint(x: 6.0, y: 2.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 2.0))
+path.addLine(to: CGPoint(x: 18.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 6.0))
+path.addLine(to: CGPoint(x: 22.0, y: 16.2))
+path.addCurve(to: CGPoint(x: 20.0, y: 18.000000000000004), control1: CGPoint(x: 21.896916037304912, y: 17.22580258573101), control2: CGPoint(x: 21.030956136589992, y: 18.00516649637444))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 18.0), control2: CGPoint(x: 6.0, y: 17.104569499661586))
+path.closeSubpath()
+path.move(to: CGPoint(x: 10.0, y: 2.0))
+path.addLine(to: CGPoint(x: 10.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.move(to: CGPoint(x: 18.0, y: 18.0))
+path.addLine(to: CGPoint(x: 18.0, y: 11.0))
+path.addLine(to: CGPoint(x: 10.0, y: 11.0))
+path.addLine(to: CGPoint(x: 10.0, y: 18.0))
+path.move(to: CGPoint(x: 18.0, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+        return path
+    }()
+        
+    /// Floppy Disks 2 icon path
+    static let floppyDisks2Path: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 18.0), control2: CGPoint(x: 6.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 6.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 2.0), control1: CGPoint(x: 6.0, y: 2.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 2.0))
+path.addLine(to: CGPoint(x: 18.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 6.0))
+path.addLine(to: CGPoint(x: 22.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 18.0), control1: CGPoint(x: 22.0, y: 17.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 18.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 18.0, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 14.0), control1: CGPoint(x: 12.0, y: 13.104569499661586), control2: CGPoint(x: 12.895430500338414, y: 14.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 12.0), control1: CGPoint(x: 15.104569499661586, y: 14.0), control2: CGPoint(x: 16.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 14.0, y: 10.0), control1: CGPoint(x: 16.0, y: 10.895430500338414), control2: CGPoint(x: 15.104569499661586, y: 10.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 12.0), control1: CGPoint(x: 12.895430500338414, y: 10.0), control2: CGPoint(x: 12.0, y: 10.895430500338414))
+path.move(to: CGPoint(x: 10.0, y: 2.0))
+path.addLine(to: CGPoint(x: 17.0, y: 2.0))
+path.addLine(to: CGPoint(x: 17.0, y: 6.0))
+path.addLine(to: CGPoint(x: 10.0, y: 6.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Floppy Disks Rear icon path
+    static let floppyDisksRearPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 18.0), control2: CGPoint(x: 6.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 6.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 2.0), control1: CGPoint(x: 6.0, y: 2.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 2.0))
+path.addLine(to: CGPoint(x: 18.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 6.0))
+path.addLine(to: CGPoint(x: 22.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 18.0), control1: CGPoint(x: 22.0, y: 17.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 18.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 14.0, y: 18.0))
+path.addLine(to: CGPoint(x: 14.0, y: 16.0))
+path.move(to: CGPoint(x: 18.0, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 12.0, y: 11.104569499661586), control2: CGPoint(x: 12.895430500338414, y: 12.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 10.0), control1: CGPoint(x: 15.104569499661586, y: 12.0), control2: CGPoint(x: 16.0, y: 11.104569499661586))
+path.addCurve(to: CGPoint(x: 14.0, y: 8.0), control1: CGPoint(x: 16.0, y: 8.895430500338414), control2: CGPoint(x: 15.104569499661586, y: 8.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 12.895430500338414, y: 8.0), control2: CGPoint(x: 12.0, y: 8.895430500338414))
+        return path
+    }()
+        
+    /// Flower Lotus icon path
+    static let flowerLotusPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 10.0), control1: CGPoint(x: 12.0, y: 14.5), control2: CGPoint(x: 7.5, y: 10.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 20.0), control1: CGPoint(x: 2.0, y: 15.5), control2: CGPoint(x: 6.5, y: 20.0))
+path.move(to: CGPoint(x: 9.7, y: 8.3))
+path.addCurve(to: CGPoint(x: 5.8999999999999995, y: 5.200000000000001), control1: CGPoint(x: 7.8999999999999995, y: 6.300000000000001), control2: CGPoint(x: 5.8999999999999995, y: 5.200000000000001))
+path.addCurve(to: CGPoint(x: 5.3999999999999995, y: 10.600000000000001), control1: CGPoint(x: 5.8999999999999995, y: 5.200000000000001), control2: CGPoint(x: 5.1, y: 7.700000000000001))
+path.move(to: CGPoint(x: 15.0, y: 12.9))
+path.addLine(to: CGPoint(x: 15.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 15.0, y: 7.6), control2: CGPoint(x: 12.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 12.0), control1: CGPoint(x: 12.0, y: 4.0), control2: CGPoint(x: 9.0, y: 7.6))
+path.addLine(to: CGPoint(x: 9.0, y: 12.9))
+path.move(to: CGPoint(x: 18.6, y: 10.6))
+path.addCurve(to: CGPoint(x: 18.1, y: 5.199999999999999), control1: CGPoint(x: 18.900000000000002, y: 7.699999999999999), control2: CGPoint(x: 18.1, y: 5.199999999999999))
+path.addCurve(to: CGPoint(x: 14.3, y: 8.299999999999999), control1: CGPoint(x: 18.1, y: 5.199999999999999), control2: CGPoint(x: 16.1, y: 6.199999999999999))
+path.move(to: CGPoint(x: 12.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 10.0), control1: CGPoint(x: 17.5, y: 20.0), control2: CGPoint(x: 22.0, y: 15.5))
+path.addCurve(to: CGPoint(x: 12.0, y: 20.0), control1: CGPoint(x: 16.5, y: 10.0), control2: CGPoint(x: 12.0, y: 14.5))
+        return path
+    }()
+        
+    /// Flower Pot icon path
+    static let flowerPotPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 8.0))
+path.addLine(to: CGPoint(x: 10.0, y: 8.0))
+path.move(to: CGPoint(x: 12.0, y: 5.0))
+path.addLine(to: CGPoint(x: 12.0, y: 6.0))
+path.move(to: CGPoint(x: 15.0, y: 8.0))
+path.addLine(to: CGPoint(x: 14.0, y: 8.0))
+path.move(to: CGPoint(x: 12.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 14.0), control1: CGPoint(x: 12.0, y: 12.65685424949238), control2: CGPoint(x: 10.65685424949238, y: 14.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 11.0), control1: CGPoint(x: 7.34314575050762, y: 14.0), control2: CGPoint(x: 6.0, y: 12.65685424949238))
+path.addCurve(to: CGPoint(x: 9.0, y: 8.0), control1: CGPoint(x: 6.0, y: 9.34314575050762), control2: CGPoint(x: 7.3431457505076185, y: 8.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 5.0), control1: CGPoint(x: 7.34314575050762, y: 8.0), control2: CGPoint(x: 6.0, y: 6.656854249492381))
+path.addCurve(to: CGPoint(x: 9.0, y: 2.0), control1: CGPoint(x: 6.0, y: 3.34314575050762), control2: CGPoint(x: 7.3431457505076185, y: 2.0000000000000004))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.999999999999999), control1: CGPoint(x: 10.65685424949238, y: 2.0), control2: CGPoint(x: 12.0, y: 3.343145750507619))
+path.addCurve(to: CGPoint(x: 15.0, y: 2.0), control1: CGPoint(x: 12.0, y: 3.3431457505076194), control2: CGPoint(x: 13.34314575050762, y: 2.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 5.0), control1: CGPoint(x: 16.65685424949238, y: 2.0), control2: CGPoint(x: 18.0, y: 3.3431457505076194))
+path.addCurve(to: CGPoint(x: 15.0, y: 8.0), control1: CGPoint(x: 18.0, y: 6.656854249492381), control2: CGPoint(x: 16.65685424949238, y: 8.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 11.0), control1: CGPoint(x: 16.65685424949238, y: 8.0), control2: CGPoint(x: 18.0, y: 9.34314575050762))
+path.addCurve(to: CGPoint(x: 15.0, y: 14.0), control1: CGPoint(x: 18.0, y: 12.65685424949238), control2: CGPoint(x: 16.65685424949238, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 11.0), control1: CGPoint(x: 13.34314575050762, y: 14.0), control2: CGPoint(x: 12.0, y: 12.65685424949238))
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 15.0, y: 18.0))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.addLine(to: CGPoint(x: 9.0, y: 18.0))
+path.move(to: CGPoint(x: 8.0, y: 18.0))
+path.addLine(to: CGPoint(x: 16.0, y: 18.0))
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 10.0, y: 9.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 10.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 8.0), control1: CGPoint(x: 13.104569499661586, y: 10.0), control2: CGPoint(x: 14.0, y: 9.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 14.0, y: 6.8954305003384135), control2: CGPoint(x: 13.104569499661586, y: 6.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 8.0), control1: CGPoint(x: 10.895430500338414, y: 6.0), control2: CGPoint(x: 10.0, y: 6.895430500338413))
+        return path
+    }()
+        
+    /// Flower Rose icon path
+    static let flowerRosePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 11.038250837125135, y: 9.867008416245515), control1: CGPoint(x: 14.001857355020938, y: 7.810802843585661), control2: CGPoint(x: 12.786991862062013, y: 9.396992229495051))
+path.addCurve(to: CGPoint(x: 6.536927260160072, y: 8.00588019643899), control1: CGPoint(x: 9.289509812188257, y: 10.337024602995976), control2: CGPoint(x: 7.44313377371604, y: 9.573617464891031))
+path.addCurve(to: CGPoint(x: 7.170848499361, y: 3.176402371912645), control1: CGPoint(x: 5.630720746604102, y: 6.438142927986949), control2: CGPoint(x: 5.890745818413841, y: 4.4571628937654335))
+path.addCurve(to: CGPoint(x: 12.000000000000203, y: 2.540000000000117), control1: CGPoint(x: 8.45095118030816, y: 1.8956418500598566), control2: CGPoint(x: 10.43179736132057, y: 1.6345990544831785))
+path.move(to: CGPoint(x: 10.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 2.0), control1: CGPoint(x: 10.0, y: 3.7908610006768266), control2: CGPoint(x: 11.790861000676825, y: 2.0000000000000004))
+path.addCurve(to: CGPoint(x: 18.0, y: 5.999999999999999), control1: CGPoint(x: 16.209138999323173, y: 2.0), control2: CGPoint(x: 18.0, y: 3.7908610006768253))
+path.addLine(to: CGPoint(x: 18.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 18.0, y: 11.313708498984761), control2: CGPoint(x: 15.313708498984761, y: 14.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 8.0), control1: CGPoint(x: 8.68629150101524, y: 14.0), control2: CGPoint(x: 6.000000000000001, y: 11.313708498984761))
+path.addLine(to: CGPoint(x: 6.0, y: 6.0))
+path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 12.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 17.0), control1: CGPoint(x: 7.8, y: 22.0), control2: CGPoint(x: 5.0, y: 20.333))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 9.2, y: 17.0), control2: CGPoint(x: 12.0, y: 18.667))
+path.move(to: CGPoint(x: 12.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 17.0), control1: CGPoint(x: 16.2, y: 22.0), control2: CGPoint(x: 19.0, y: 20.333))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 14.8, y: 17.0), control2: CGPoint(x: 12.0, y: 18.667))
+path.move(to: CGPoint(x: 10.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.0), control1: CGPoint(x: 10.0, y: 7.104569499661587), control2: CGPoint(x: 10.895430500338414, y: 8.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 6.0), control1: CGPoint(x: 13.104569499661586, y: 8.0), control2: CGPoint(x: 14.0, y: 7.1045694996615865))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 14.0, y: 4.8954305003384135), control2: CGPoint(x: 13.104569499661586, y: 4.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 6.0), control1: CGPoint(x: 10.895430500338414, y: 4.0), control2: CGPoint(x: 10.0, y: 4.895430500338413))
+        return path
+    }()
+        
+    /// Flower Rose Single icon path
+    static let flowerRoseSinglePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 18.0, y: 9.52))
+path.addCurve(to: CGPoint(x: 13.112555228486979, y: 8.898771505784765), control1: CGPoint(x: 16.418472537374218, y: 10.445187438399635), control2: CGPoint(x: 14.412336101032158, y: 10.190193433187934))
+path.addCurve(to: CGPoint(x: 12.459807235837918, y: 4.015436447168828), control1: CGPoint(x: 11.8127743559418, y: 7.607349578381594), control2: CGPoint(x: 11.54484262616861, y: 5.602900044945079))
+path.addCurve(to: CGPoint(x: 17.012505148528668, y: 2.132358394512438), control1: CGPoint(x: 13.374771845507226, y: 2.427972849392578), control2: CGPoint(x: 15.243505630396609, y: 1.655030817202503))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0500000000000025), control1: CGPoint(x: 18.781504666660727, y: 2.6096859718223735), control2: CGPoint(x: 20.007773720349814, y: 4.217749885936982))
+path.move(to: CGPoint(x: 14.0, y: 2.5))
+path.addLine(to: CGPoint(x: 12.0, y: 3.8))
+path.addCurve(to: CGPoint(x: 8.996667831529788, y: 8.998076223264706), control1: CGPoint(x: 10.142218902314006, y: 4.871796754365477), control2: CGPoint(x: 8.99735514494659, y: 6.853292220809442))
+path.addCurve(to: CGPoint(x: 11.996667852186373, y: 14.198076262985701), control1: CGPoint(x: 8.995980518112985, y: 11.142860225719968), control2: CGPoint(x: 10.139574067906938, y: 13.125089046855685))
+path.addCurve(to: CGPoint(x: 17.999999996609688, y: 14.200000001955948), control1: CGPoint(x: 13.853761636465808, y: 15.271063479115714), control2: CGPoint(x: 16.142218926586306, y: 15.271796804269952))
+path.addLine(to: CGPoint(x: 20.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 21.475, y: 7.525), control1: CGPoint(x: 21.919189505662008, y: 11.895430500338414), control2: CGPoint(x: 22.579569499661588, y: 9.444189505662008))
+path.addCurve(to: CGPoint(x: 16.0, y: 6.050000000000001), control1: CGPoint(x: 20.37043050033841, y: 5.605810494337993), control2: CGPoint(x: 17.919189505662008, y: 4.945430500338414))
+path.move(to: CGPoint(x: 9.77, y: 12.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 22.0), control1: CGPoint(x: 4.0, y: 15.0), control2: CGPoint(x: 2.0, y: 22.0))
+path.move(to: CGPoint(x: 13.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 3.8000000000000007, y: 18.0), control1: CGPoint(x: 13.0, y: 20.0), control2: CGPoint(x: 8.0, y: 23.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 20.0), control1: CGPoint(x: 3.8000000000000007, y: 18.0), control2: CGPoint(x: 9.0, y: 15.0))
+path.move(to: CGPoint(x: 15.0, y: 7.8))
+path.addCurve(to: CGPoint(x: 17.0, y: 9.8), control1: CGPoint(x: 15.0, y: 8.904569499661587), control2: CGPoint(x: 15.895430500338414, y: 9.8))
+path.addCurve(to: CGPoint(x: 19.0, y: 7.8), control1: CGPoint(x: 18.104569499661586, y: 9.8), control2: CGPoint(x: 19.0, y: 8.904569499661587))
+path.addCurve(to: CGPoint(x: 17.0, y: 5.8), control1: CGPoint(x: 19.0, y: 6.6954305003384125), control2: CGPoint(x: 18.104569499661586, y: 5.8))
+path.addCurve(to: CGPoint(x: 15.0, y: 7.8), control1: CGPoint(x: 15.895430500338414, y: 5.8), control2: CGPoint(x: 15.0, y: 6.6954305003384125))
+        return path
+    }()
+        
+    /// Flower Stem icon path
+    static let flowerStemPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 8.0))
+path.addLine(to: CGPoint(x: 10.0, y: 8.0))
+path.move(to: CGPoint(x: 12.0, y: 5.0))
+path.addLine(to: CGPoint(x: 12.0, y: 6.0))
+path.move(to: CGPoint(x: 15.0, y: 8.0))
+path.addLine(to: CGPoint(x: 14.0, y: 8.0))
+path.move(to: CGPoint(x: 12.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 14.0), control1: CGPoint(x: 12.0, y: 12.65685424949238), control2: CGPoint(x: 10.65685424949238, y: 14.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 11.0), control1: CGPoint(x: 7.34314575050762, y: 14.0), control2: CGPoint(x: 6.0, y: 12.65685424949238))
+path.addCurve(to: CGPoint(x: 9.0, y: 8.0), control1: CGPoint(x: 6.0, y: 9.34314575050762), control2: CGPoint(x: 7.3431457505076185, y: 8.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 5.0), control1: CGPoint(x: 7.34314575050762, y: 8.0), control2: CGPoint(x: 6.0, y: 6.656854249492381))
+path.addCurve(to: CGPoint(x: 9.0, y: 2.0), control1: CGPoint(x: 6.0, y: 3.34314575050762), control2: CGPoint(x: 7.3431457505076185, y: 2.0000000000000004))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.999999999999999), control1: CGPoint(x: 10.65685424949238, y: 2.0), control2: CGPoint(x: 12.0, y: 3.343145750507619))
+path.addCurve(to: CGPoint(x: 15.0, y: 2.0), control1: CGPoint(x: 12.0, y: 3.3431457505076194), control2: CGPoint(x: 13.34314575050762, y: 2.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 5.0), control1: CGPoint(x: 16.65685424949238, y: 2.0), control2: CGPoint(x: 18.0, y: 3.3431457505076194))
+path.addCurve(to: CGPoint(x: 15.0, y: 8.0), control1: CGPoint(x: 18.0, y: 6.656854249492381), control2: CGPoint(x: 16.65685424949238, y: 8.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 11.0), control1: CGPoint(x: 16.65685424949238, y: 8.0), control2: CGPoint(x: 18.0, y: 9.34314575050762))
+path.addCurve(to: CGPoint(x: 15.0, y: 14.0), control1: CGPoint(x: 18.0, y: 12.65685424949238), control2: CGPoint(x: 16.65685424949238, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 11.0), control1: CGPoint(x: 13.34314575050762, y: 14.0), control2: CGPoint(x: 12.0, y: 12.65685424949238))
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 12.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 17.0), control1: CGPoint(x: 7.8, y: 22.0), control2: CGPoint(x: 5.0, y: 20.333))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 9.2, y: 17.0), control2: CGPoint(x: 12.0, y: 18.667))
+path.move(to: CGPoint(x: 12.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 17.0), control1: CGPoint(x: 16.2, y: 22.0), control2: CGPoint(x: 19.0, y: 20.333))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 14.8, y: 17.0), control2: CGPoint(x: 12.0, y: 18.667))
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 10.0, y: 9.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 10.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 8.0), control1: CGPoint(x: 13.104569499661586, y: 10.0), control2: CGPoint(x: 14.0, y: 9.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 14.0, y: 6.8954305003384135), control2: CGPoint(x: 13.104569499661586, y: 6.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 8.0), control1: CGPoint(x: 10.895430500338414, y: 6.0), control2: CGPoint(x: 10.0, y: 6.895430500338413))
+        return path
+    }()
+        
+    /// Flower Tulip icon path
+    static let flowerTulipPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 3.0), control1: CGPoint(x: 10.0, y: 3.8), control2: CGPoint(x: 6.0, y: 3.0))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 6.0, y: 11.3), control2: CGPoint(x: 8.7, y: 14.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 9.5, y: 4.5))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 10.0, y: 3.0), control2: CGPoint(x: 12.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 14.5, y: 4.5), control1: CGPoint(x: 12.0, y: 2.0), control2: CGPoint(x: 14.0, y: 3.0))
+path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 15.3, y: 14.0), control2: CGPoint(x: 18.0, y: 11.3))
+path.addLine(to: CGPoint(x: 18.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 11.8, y: 3.9), control2: CGPoint(x: 7.199999999999999, y: 14.0))
+path.move(to: CGPoint(x: 12.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 17.0), control1: CGPoint(x: 7.8, y: 22.0), control2: CGPoint(x: 5.0, y: 20.3))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 9.2, y: 17.0), control2: CGPoint(x: 12.0, y: 18.7))
+path.move(to: CGPoint(x: 12.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 17.0), control1: CGPoint(x: 16.2, y: 22.0), control2: CGPoint(x: 19.0, y: 20.3))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 14.8, y: 17.0), control2: CGPoint(x: 12.0, y: 18.7))
+        return path
+    }()
+        
+    /// Football icon path
+    static let footballPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 21.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 15.2, y: 2.1), control1: CGPoint(x: 20.2, y: 2.2), control2: CGPoint(x: 18.0, y: 1.8))
+path.addCurve(to: CGPoint(x: 6.399999999999999, y: 6.5), control1: CGPoint(x: 12.399999999999999, y: 2.4000000000000004), control2: CGPoint(x: 9.2, y: 3.7))
+path.addCurve(to: CGPoint(x: 1.9999999999999982, y: 15.3), control1: CGPoint(x: 3.599999999999998, y: 9.3), control2: CGPoint(x: 2.3999999999999986, y: 12.5))
+path.addCurve(to: CGPoint(x: 2.899999999999998, y: 21.1), control1: CGPoint(x: 1.5999999999999979, y: 18.1), control2: CGPoint(x: 2.0999999999999983, y: 20.3))
+path.addCurve(to: CGPoint(x: 8.699999999999998, y: 22.0), control1: CGPoint(x: 3.699999999999998, y: 21.900000000000002), control2: CGPoint(x: 5.899999999999999, y: 22.3))
+path.addCurve(to: CGPoint(x: 17.5, y: 17.6), control1: CGPoint(x: 11.499999999999996, y: 21.7), control2: CGPoint(x: 14.699999999999998, y: 20.4))
+path.addCurve(to: CGPoint(x: 21.9, y: 8.8), control1: CGPoint(x: 20.300000000000004, y: 14.800000000000004), control2: CGPoint(x: 21.5, y: 11.600000000000001))
+path.addCurve(to: CGPoint(x: 21.0, y: 3.000000000000001), control1: CGPoint(x: 22.299999999999997, y: 6.0), control2: CGPoint(x: 21.799999999999997, y: 3.8000000000000007))
+path.move(to: CGPoint(x: 6.4, y: 17.6))
+path.addLine(to: CGPoint(x: 9.0, y: 15.0))
+path.move(to: CGPoint(x: 8.7, y: 21.9))
+path.addCurve(to: CGPoint(x: 1.9999999999999991, y: 15.2), control1: CGPoint(x: 7.8999999999999995, y: 18.599999999999998), control2: CGPoint(x: 5.299999999999999, y: 16.099999999999998))
+path.move(to: CGPoint(x: 8.1, y: 13.9))
+path.addLine(to: CGPoint(x: 10.1, y: 15.9))
+path.move(to: CGPoint(x: 11.0, y: 11.0))
+path.addLine(to: CGPoint(x: 13.0, y: 13.0))
+path.move(to: CGPoint(x: 13.9, y: 8.1))
+path.addLine(to: CGPoint(x: 15.9, y: 10.1))
+path.move(to: CGPoint(x: 15.3, y: 2.1))
+path.addCurve(to: CGPoint(x: 21.9, y: 8.7), control1: CGPoint(x: 16.1, y: 5.4), control2: CGPoint(x: 18.7, y: 7.9))
+path.move(to: CGPoint(x: 15.0, y: 9.0))
+path.addLine(to: CGPoint(x: 17.6, y: 6.4))
+        return path
+    }()
+        
+    /// Football Goal icon path
+    static let footballGoalPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.7, y: 2.3))
+path.addCurve(to: CGPoint(x: 14.0, y: 1.9999999999999998), control1: CGPoint(x: 15.5, y: 2.0999999999999996), control2: CGPoint(x: 14.799999999999999, y: 1.9))
+path.addCurve(to: CGPoint(x: 10.89250685466539, y: 4.033732519695077), control1: CGPoint(x: 12.724382571159335, y: 2.211059814563522), control2: CGPoint(x: 11.596486196860296, y: 2.949223803340762))
+path.addCurve(to: CGPoint(x: 10.299999999999999, y: 7.6999999999999975), control1: CGPoint(x: 10.188527512470483, y: 5.118241236049392), control2: CGPoint(x: 9.973471098226177, y: 6.448950462055142))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.0), control1: CGPoint(x: 10.600000000000001, y: 7.9), control2: CGPoint(x: 11.200000000000001, y: 8.1))
+path.addCurve(to: CGPoint(x: 15.107493145334612, y: 5.966267480304923), control1: CGPoint(x: 13.275617428840665, y: 7.788940185436478), control2: CGPoint(x: 14.403513803139704, y: 7.050776196659238))
+path.addCurve(to: CGPoint(x: 15.7, y: 2.3000000000000007), control1: CGPoint(x: 15.811472487529517, y: 4.881758763950608), control2: CGPoint(x: 16.026528901773823, y: 3.551049537944857))
+path.move(to: CGPoint(x: 20.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 12.0), control1: CGPoint(x: 20.0, y: 11.6), control2: CGPoint(x: 19.6, y: 12.0))
+path.addLine(to: CGPoint(x: 5.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 11.0), control1: CGPoint(x: 4.4, y: 12.0), control2: CGPoint(x: 4.0, y: 11.6))
+path.addLine(to: CGPoint(x: 4.0, y: 2.0))
+path.move(to: CGPoint(x: 14.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 14.0, y: 13.790861000676827), control2: CGPoint(x: 12.209138999323175, y: 12.0))
+path.move(to: CGPoint(x: 13.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 17.0), control1: CGPoint(x: 12.4, y: 16.0), control2: CGPoint(x: 12.0, y: 16.4))
+path.addLine(to: CGPoint(x: 12.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 22.0), control1: CGPoint(x: 12.0, y: 21.6), control2: CGPoint(x: 12.4, y: 22.0))
+path.addLine(to: CGPoint(x: 15.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 21.0), control1: CGPoint(x: 15.6, y: 22.0), control2: CGPoint(x: 16.0, y: 21.6))
+path.addLine(to: CGPoint(x: 16.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 16.0), control1: CGPoint(x: 16.0, y: 16.4), control2: CGPoint(x: 15.6, y: 16.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Football Helmet icon path
+    static let footballHelmetPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 14.0))
+path.addEllipse(in: CGRect(x: 6.66, y: 13.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 21.6, y: 9.0))
+path.addCurve(to: CGPoint(x: 12.000000000000002, y: 2.0), control1: CGPoint(x: 20.3, y: 5.0), control2: CGPoint(x: 16.5, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 6.5, y: 2.0), control2: CGPoint(x: 2.0, y: 6.5))
+path.addCurve(to: CGPoint(x: 5.0, y: 19.0), control1: CGPoint(x: 2.0, y: 14.6), control2: CGPoint(x: 3.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 9.9, y: 19.0), control1: CGPoint(x: 6.4, y: 20.3), control2: CGPoint(x: 8.6, y: 20.4))
+path.addCurve(to: CGPoint(x: 10.9, y: 16.5), control1: CGPoint(x: 10.6, y: 18.3), control2: CGPoint(x: 10.9, y: 17.4))
+path.addLine(to: CGPoint(x: 10.9, y: 13.0))
+path.addCurve(to: CGPoint(x: 13.9, y: 10.0), control1: CGPoint(x: 10.9, y: 11.3), control2: CGPoint(x: 12.200000000000001, y: 10.0))
+path.addLine(to: CGPoint(x: 20.7, y: 10.0))
+path.addCurve(to: CGPoint(x: 21.599999999999998, y: 9.0), control1: CGPoint(x: 21.4, y: 10.0), control2: CGPoint(x: 21.7, y: 9.6))
+path.closeSubpath()
+path.move(to: CGPoint(x: 22.0, y: 18.0))
+path.addLine(to: CGPoint(x: 10.7, y: 18.0))
+path.move(to: CGPoint(x: 11.0, y: 14.0))
+path.addLine(to: CGPoint(x: 20.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 16.0), control1: CGPoint(x: 21.104569499661586, y: 14.0), control2: CGPoint(x: 22.0, y: 14.895430500338414))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 17.0), control1: CGPoint(x: 17.2, y: 22.0), control2: CGPoint(x: 15.0, y: 19.8))
+path.addLine(to: CGPoint(x: 15.0, y: 14.0))
+        return path
+    }()
+        
+    /// Fork Knife icon path
+    static let forkKnifePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 3.0, y: 2.0))
+path.addLine(to: CGPoint(x: 3.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 11.0), control1: CGPoint(x: 3.0, y: 10.1), control2: CGPoint(x: 3.9, y: 11.0))
+path.addLine(to: CGPoint(x: 9.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 9.0), control1: CGPoint(x: 10.104569499661586, y: 11.0), control2: CGPoint(x: 11.0, y: 10.104569499661586))
+path.addLine(to: CGPoint(x: 11.0, y: 2.0))
+path.move(to: CGPoint(x: 7.0, y: 2.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.move(to: CGPoint(x: 21.0, y: 15.0))
+path.addLine(to: CGPoint(x: 21.0, y: 2.0))
+path.addLine(to: CGPoint(x: 21.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 6.999999999999999), control1: CGPoint(x: 18.238576250846034, y: 2.0), control2: CGPoint(x: 16.0, y: 4.238576250846032))
+path.addLine(to: CGPoint(x: 16.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 15.0), control1: CGPoint(x: 16.0, y: 14.1), control2: CGPoint(x: 16.9, y: 15.0))
+path.addLine(to: CGPoint(x: 21.0, y: 15.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 21.0, y: 15.0))
+path.addLine(to: CGPoint(x: 21.0, y: 22.0))
+        return path
+    }()
+        
+    /// Fork Knife Crossed icon path
+    static let forkKnifeCrossedPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.0, y: 2.0))
+path.addLine(to: CGPoint(x: 13.7, y: 4.3))
+path.addCurve(to: CGPoint(x: 13.7, y: 8.5), control1: CGPoint(x: 12.556571371417139, y: 5.466530530595915), control2: CGPoint(x: 12.556571371417139, y: 7.333469469404086))
+path.addLine(to: CGPoint(x: 15.5, y: 10.3))
+path.addCurve(to: CGPoint(x: 19.700000000000003, y: 10.3), control1: CGPoint(x: 16.666530530595917, y: 11.44342862858286), control2: CGPoint(x: 18.533469469404086, y: 11.443428628582858))
+path.addLine(to: CGPoint(x: 22.0, y: 8.0))
+path.move(to: CGPoint(x: 15.0, y: 15.0))
+path.addLine(to: CGPoint(x: 3.3, y: 3.3))
+path.addCurve(to: CGPoint(x: 2.0393876913398135, y: 6.3000000000000025), control1: CGPoint(x: 2.493736567104587, y: 4.0899736035433865), control2: CGPoint(x: 2.0393876913398135, y: 5.171231193946425))
+path.addCurve(to: CGPoint(x: 3.300000000000001, y: 9.300000000000002), control1: CGPoint(x: 2.0393876913398143, y: 7.428768806053579), control2: CGPoint(x: 2.493736567104589, y: 8.510026396456617))
+path.addLine(to: CGPoint(x: 10.6, y: 16.6))
+path.addCurve(to: CGPoint(x: 13.399999999999999, y: 16.6), control1: CGPoint(x: 11.299999999999999, y: 17.3), control2: CGPoint(x: 12.6, y: 17.3))
+path.addLine(to: CGPoint(x: 15.0, y: 15.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 15.0, y: 15.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.move(to: CGPoint(x: 2.1, y: 21.8))
+path.addLine(to: CGPoint(x: 8.5, y: 15.5))
+path.move(to: CGPoint(x: 19.0, y: 5.0))
+path.addLine(to: CGPoint(x: 12.0, y: 12.0))
+        return path
+    }()
+        
+    /// Fox Face Tail icon path
+    static let foxFaceTailPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 19.9, y: 8.3))
+path.addCurve(to: CGPoint(x: 21.0, y: 4.0), control1: CGPoint(x: 20.6, y: 7.0), control2: CGPoint(x: 21.0, y: 5.6))
+path.addCurve(to: CGPoint(x: 20.0, y: 3.0), control1: CGPoint(x: 21.0, y: 3.4), control2: CGPoint(x: 20.6, y: 3.0))
+path.addCurve(to: CGPoint(x: 14.1, y: 5.2), control1: CGPoint(x: 17.7, y: 3.0), control2: CGPoint(x: 15.7, y: 3.8))
+path.addCurve(to: CGPoint(x: 9.900000000000011, y: 5.200000000000001), control1: CGPoint(x: 12.707003306802802, y: 5.0019633415358005), control2: CGPoint(x: 11.29299669319721, y: 5.0019633415358005))
+path.addCurve(to: CGPoint(x: 4.000000000000001, y: 3.0000000000000018), control1: CGPoint(x: 8.272989077289655, y: 3.7624082426884975), control2: CGPoint(x: 6.171031510048829, y: 2.978627454903785))
+path.addCurve(to: CGPoint(x: 3.0, y: 4.0), control1: CGPoint(x: 3.4, y: 3.0), control2: CGPoint(x: 3.0, y: 3.4))
+path.addCurve(to: CGPoint(x: 4.1, y: 8.3), control1: CGPoint(x: 3.0, y: 5.6), control2: CGPoint(x: 3.4, y: 7.0))
+path.addCurve(to: CGPoint(x: 2.6999999999999997, y: 10.5), control1: CGPoint(x: 3.4999999999999996, y: 9.0), control2: CGPoint(x: 2.9999999999999996, y: 9.700000000000001))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 4.0, y: 13.0), control2: CGPoint(x: 11.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 21.3, y: 10.5), control1: CGPoint(x: 13.0, y: 16.0), control2: CGPoint(x: 20.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 19.900000000000002, y: 8.3), control1: CGPoint(x: 21.0, y: 9.7), control2: CGPoint(x: 20.5, y: 9.0))
+path.move(to: CGPoint(x: 9.0, y: 9.0))
+path.addLine(to: CGPoint(x: 9.0, y: 9.5))
+path.move(to: CGPoint(x: 13.0, y: 13.0))
+path.addLine(to: CGPoint(x: 11.0, y: 13.0))
+path.move(to: CGPoint(x: 12.0, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 13.0))
+path.move(to: CGPoint(x: 15.0, y: 9.0))
+path.addLine(to: CGPoint(x: 15.0, y: 9.5))
+path.move(to: CGPoint(x: 6.3, y: 20.5))
+path.addCurve(to: CGPoint(x: 9.0, y: 15.000000000000002), control1: CGPoint(x: 8.012959986032772, y: 19.191729885350274), control2: CGPoint(x: 9.012624903415439, y: 17.15537542401521))
+path.addLine(to: CGPoint(x: 2.2, y: 15.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 3.0, y: 19.0), control2: CGPoint(x: 7.1000000000000005, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 13.5), control1: CGPoint(x: 17.5, y: 22.0), control2: CGPoint(x: 22.0, y: 18.2))
+path.addCurve(to: CGPoint(x: 21.3, y: 10.5), control1: CGPoint(x: 22.0, y: 12.4), control2: CGPoint(x: 21.8, y: 11.4))
+        return path
+    }()
+        
+    /// Frog Face icon path
+    static let frogFacePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 7.0))
+path.addEllipse(in: CGRect(x: 5.66, y: 6.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.4, y: 5.3))
+path.addCurve(to: CGPoint(x: 9.600000000000005, y: 5.299999999999999), control1: CGPoint(x: 12.823728446615128, y: 4.910305172812372), control2: CGPoint(x: 11.176271553384879, y: 4.910305172812372))
+path.move(to: CGPoint(x: 18.0, y: 7.0))
+path.addEllipse(in: CGRect(x: 17.66, y: 6.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 22.0, y: 13.5))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 22.0, y: 16.0), control2: CGPoint(x: 17.5, y: 18.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 13.5), control1: CGPoint(x: 6.5, y: 18.0), control2: CGPoint(x: 2.0, y: 16.0))
+path.move(to: CGPoint(x: 10.0, y: 14.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 13.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.0, y: 14.0))
+path.addEllipse(in: CGRect(x: 13.66, y: 13.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 3.1, y: 9.75))
+path.addCurve(to: CGPoint(x: 2.000000000000001, y: 13.499999999999998), control1: CGPoint(x: 2.38476404058886, y: 10.870224100054301), control2: CGPoint(x: 2.0032266267550387, y: 12.17091982903324))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0, y: 18.2), control2: CGPoint(x: 6.5, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 13.5), control1: CGPoint(x: 17.5, y: 22.0), control2: CGPoint(x: 22.0, y: 18.2))
+path.addCurve(to: CGPoint(x: 20.899999999999956, y: 9.74999999999993), control1: CGPoint(x: 21.99677337324495, y: 12.17091982903316), control2: CGPoint(x: 21.61523595941111, y: 10.870224100054225))
+path.move(to: CGPoint(x: 2.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 11.0), control1: CGPoint(x: 2.0000000000000004, y: 9.209138999323175), control2: CGPoint(x: 3.7908610006768266, y: 11.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 7.0), control1: CGPoint(x: 8.209138999323175, y: 11.0), control2: CGPoint(x: 10.0, y: 9.209138999323173))
+path.addCurve(to: CGPoint(x: 6.0, y: 3.0), control1: CGPoint(x: 10.0, y: 4.790861000676826), control2: CGPoint(x: 8.209138999323175, y: 3.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 6.999999999999999), control1: CGPoint(x: 3.7908610006768266, y: 3.0), control2: CGPoint(x: 2.0000000000000004, y: 4.790861000676825))
+path.move(to: CGPoint(x: 14.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 11.0), control1: CGPoint(x: 14.0, y: 9.209138999323175), control2: CGPoint(x: 15.790861000676827, y: 11.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 7.0), control1: CGPoint(x: 20.209138999323173, y: 11.0), control2: CGPoint(x: 22.0, y: 9.209138999323173))
+path.addCurve(to: CGPoint(x: 18.0, y: 3.0), control1: CGPoint(x: 22.0, y: 4.790861000676826), control2: CGPoint(x: 20.209138999323173, y: 3.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 6.999999999999999), control1: CGPoint(x: 15.790861000676827, y: 3.0), control2: CGPoint(x: 14.0, y: 4.790861000676825))
+        return path
+    }()
+        
+    /// Fruit icon path
+    static let fruitPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 10.0))
+path.addLine(to: CGPoint(x: 14.0, y: 7.0))
+path.move(to: CGPoint(x: 10.0, y: 7.0))
+path.addLine(to: CGPoint(x: 14.0, y: 10.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Garlic icon path
+    static let garlicPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 2.0), control1: CGPoint(x: 15.0, y: 2.895430500338413), control2: CGPoint(x: 14.104569499661586, y: 2.0))
+path.addLine(to: CGPoint(x: 11.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 3.9999999999999996), control1: CGPoint(x: 9.895430500338414, y: 2.0), control2: CGPoint(x: 9.0, y: 2.8954305003384126))
+path.addLine(to: CGPoint(x: 9.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 7.6, y: 7.5), control1: CGPoint(x: 9.0, y: 6.0), control2: CGPoint(x: 8.5, y: 7.0))
+path.addLine(to: CGPoint(x: 5.1, y: 9.1))
+path.addCurve(to: CGPoint(x: 2.1644393214415603, y: 17.027029972587435), control1: CGPoint(x: 2.456410329951919, y: 10.786559904006761), control2: CGPoint(x: 1.256980536048733, y: 14.025435528595779))
+path.addCurve(to: CGPoint(x: 9.000000000000005, y: 22.0), control1: CGPoint(x: 3.0718981068343876, y: 20.028624416579092), control2: CGPoint(x: 5.864814361565747, y: 22.060511700883254))
+path.addLine(to: CGPoint(x: 15.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 21.592809823702037, y: 16.99317791641154), control1: CGPoint(x: 18.05475088829347, y: 21.948621320203056), control2: CGPoint(x: 20.723309989946603, y: 19.922019461693004))
+path.addCurve(to: CGPoint(x: 18.799999999999997, y: 9.2), control1: CGPoint(x: 22.46230965745747, y: 14.064336371130079), control2: CGPoint(x: 21.33186933329817, y: 10.90990655808196))
+path.addLine(to: CGPoint(x: 16.3, y: 7.6))
+path.addCurve(to: CGPoint(x: 14.999999999999998, y: 5.0), control1: CGPoint(x: 15.490118927315065, y: 6.979177191385082), control2: CGPoint(x: 15.010729603280971, y: 6.020398543316899))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 14.0), control1: CGPoint(x: 9.0, y: 9.0), control2: CGPoint(x: 7.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 7.0, y: 18.4), control2: CGPoint(x: 9.2, y: 22.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 14.0), control1: CGPoint(x: 14.8, y: 22.0), control2: CGPoint(x: 17.0, y: 18.4))
+path.addCurve(to: CGPoint(x: 15.0, y: 5.0), control1: CGPoint(x: 17.0, y: 9.0), control2: CGPoint(x: 15.0, y: 9.0))
+        return path
+    }()
+        
+    /// Gearbox icon path
+    static let gearboxPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 5.0, y: 4.0))
+path.addLine(to: CGPoint(x: 5.0, y: 20.0))
+path.move(to: CGPoint(x: 12.0, y: 4.0))
+path.addLine(to: CGPoint(x: 12.0, y: 20.0))
+path.move(to: CGPoint(x: 19.0, y: 4.0))
+path.addLine(to: CGPoint(x: 19.0, y: 12.0))
+path.addLine(to: CGPoint(x: 5.0, y: 12.0))
+        return path
+    }()
+        
+    /// Gearbox Square icon path
+    static let gearboxSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 7.0))
+path.addLine(to: CGPoint(x: 7.0, y: 17.0))
+path.move(to: CGPoint(x: 12.0, y: 7.0))
+path.addLine(to: CGPoint(x: 12.0, y: 17.0))
+path.move(to: CGPoint(x: 17.0, y: 7.0))
+path.addLine(to: CGPoint(x: 17.0, y: 12.0))
+path.addLine(to: CGPoint(x: 7.0, y: 12.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Gem Ring icon path
+    static let gemRingPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 13.2, y: 8.1))
+path.addLine(to: CGPoint(x: 16.0, y: 4.4))
+path.addLine(to: CGPoint(x: 14.4, y: 2.0))
+path.addLine(to: CGPoint(x: 9.6, y: 2.0))
+path.addLine(to: CGPoint(x: 8.0, y: 4.4))
+path.addLine(to: CGPoint(x: 10.8, y: 8.100000000000001))
+path.move(to: CGPoint(x: 5.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 5.000000000000001, y: 18.865993248815556), control2: CGPoint(x: 8.134006751184447, y: 22.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 15.0), control1: CGPoint(x: 15.865993248815554, y: 22.0), control2: CGPoint(x: 19.0, y: 18.865993248815556))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.0), control1: CGPoint(x: 19.0, y: 11.134006751184446), control2: CGPoint(x: 15.865993248815554, y: 8.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 15.0), control1: CGPoint(x: 8.134006751184447, y: 8.0), control2: CGPoint(x: 5.000000000000001, y: 11.134006751184446))
+        return path
+    }()
+        
+    /// Glasses Square icon path
+    static let glassesSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.2, y: 13.1))
+path.addLine(to: CGPoint(x: 5.300000000000001, y: 6.699999999999999))
+path.addCurve(to: CGPoint(x: 8.0, y: 5.0), control1: CGPoint(x: 5.8, y: 5.7), control2: CGPoint(x: 6.8, y: 5.0))
+path.move(to: CGPoint(x: 14.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 13.0), control1: CGPoint(x: 14.0, y: 13.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 13.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 15.0), control1: CGPoint(x: 10.895430500338414, y: 13.0), control2: CGPoint(x: 10.0, y: 13.895430500338414))
+path.move(to: CGPoint(x: 21.8, y: 13.1))
+path.addLine(to: CGPoint(x: 18.7, y: 6.699999999999999))
+path.addCurve(to: CGPoint(x: 16.0, y: 5.0), control1: CGPoint(x: 18.2, y: 5.7), control2: CGPoint(x: 17.2, y: 5.0))
+path.move(to: CGPoint(x: 4.0, y: 12.0))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 14.0), control1: CGPoint(x: 9.104569499661586, y: 12.0), control2: CGPoint(x: 10.0, y: 12.895430500338414))
+path.addLine(to: CGPoint(x: 10.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 18.0), control1: CGPoint(x: 10.0, y: 17.104569499661586), control2: CGPoint(x: 9.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 4.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 16.0), control1: CGPoint(x: 2.8954305003384135, y: 18.0), control2: CGPoint(x: 2.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 12.0), control1: CGPoint(x: 2.0, y: 12.895430500338414), control2: CGPoint(x: 2.8954305003384126, y: 12.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 16.0, y: 12.0))
+path.addLine(to: CGPoint(x: 20.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 14.0), control1: CGPoint(x: 21.104569499661586, y: 12.0), control2: CGPoint(x: 22.0, y: 12.895430500338414))
+path.addLine(to: CGPoint(x: 22.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 18.0), control1: CGPoint(x: 22.0, y: 17.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 16.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 16.0), control1: CGPoint(x: 14.895430500338414, y: 18.0), control2: CGPoint(x: 14.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 14.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 12.0), control1: CGPoint(x: 14.0, y: 12.895430500338414), control2: CGPoint(x: 14.895430500338414, y: 12.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Glasses Sun icon path
+    static let glassesSunPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.16, y: 14.2))
+path.addLine(to: CGPoint(x: 5.26, y: 6.799999999999999))
+path.addCurve(to: CGPoint(x: 8.0, y: 5.0), control1: CGPoint(x: 5.7, y: 5.8), control2: CGPoint(x: 6.8, y: 5.0))
+path.move(to: CGPoint(x: 4.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 15.0), control1: CGPoint(x: 2.8954305003384135, y: 13.0), control2: CGPoint(x: 2.0, y: 13.895430500338414))
+path.addLine(to: CGPoint(x: 2.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 19.0), control1: CGPoint(x: 2.0, y: 17.7), control2: CGPoint(x: 3.3, y: 19.0))
+path.addLine(to: CGPoint(x: 6.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 13.0), control1: CGPoint(x: 9.3, y: 19.0), control2: CGPoint(x: 12.0, y: 16.3))
+path.addCurve(to: CGPoint(x: 18.0, y: 19.0), control1: CGPoint(x: 12.0, y: 16.3), control2: CGPoint(x: 14.7, y: 19.0))
+path.addLine(to: CGPoint(x: 19.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 16.0), control1: CGPoint(x: 20.7, y: 19.0), control2: CGPoint(x: 22.0, y: 17.7))
+path.addLine(to: CGPoint(x: 22.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 13.0), control1: CGPoint(x: 22.0, y: 13.895430500338414), control2: CGPoint(x: 21.104569499661586, y: 13.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 21.83, y: 14.2))
+path.addLine(to: CGPoint(x: 18.729999999999997, y: 6.799999999999999))
+path.addCurve(to: CGPoint(x: 16.0, y: 5.0), control1: CGPoint(x: 18.3, y: 5.8), control2: CGPoint(x: 17.2, y: 5.0))
+        return path
+    }()
+        
+    /// Goal Net icon path
+    static let goalNetPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 20.0))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 4.0), control1: CGPoint(x: 2.0, y: 4.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 4.0))
+path.addLine(to: CGPoint(x: 20.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 21.104569499661586, y: 4.0), control2: CGPoint(x: 22.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.move(to: CGPoint(x: 8.0, y: 8.0))
+path.addLine(to: CGPoint(x: 8.0, y: 20.0))
+path.move(to: CGPoint(x: 12.0, y: 8.0))
+path.addLine(to: CGPoint(x: 12.0, y: 20.0))
+path.move(to: CGPoint(x: 16.0, y: 8.0))
+path.addLine(to: CGPoint(x: 16.0, y: 20.0))
+path.move(to: CGPoint(x: 6.0, y: 10.0))
+path.addLine(to: CGPoint(x: 18.0, y: 10.0))
+path.move(to: CGPoint(x: 6.0, y: 14.0))
+path.addLine(to: CGPoint(x: 18.0, y: 14.0))
+path.move(to: CGPoint(x: 6.0, y: 18.0))
+path.addLine(to: CGPoint(x: 18.0, y: 18.0))
+        return path
+    }()
+        
+    /// Goblet icon path
+    static let gobletPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 11.0), control1: CGPoint(x: 6.22, y: 4.720000000000001), control2: CGPoint(x: 5.0, y: 8.65))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 5.000000000000001, y: 14.865993248815554), control2: CGPoint(x: 8.134006751184447, y: 18.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 11.0), control1: CGPoint(x: 15.865993248815554, y: 18.0), control2: CGPoint(x: 19.0, y: 14.865993248815554))
+path.addCurve(to: CGPoint(x: 16.0, y: 2.0), control1: CGPoint(x: 19.0, y: 8.65), control2: CGPoint(x: 17.78, y: 4.72))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 18.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 8.0, y: 22.0))
+path.addLine(to: CGPoint(x: 16.0, y: 22.0))
+path.move(to: CGPoint(x: 5.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 8.5, y: 10.0), control1: CGPoint(x: 5.84, y: 10.5), control2: CGPoint(x: 6.68, y: 10.0))
+path.addCurve(to: CGPoint(x: 15.5, y: 12.0), control1: CGPoint(x: 12.0, y: 10.0), control2: CGPoint(x: 12.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 11.0), control1: CGPoint(x: 17.32, y: 12.0), control2: CGPoint(x: 18.16, y: 11.5))
+        return path
+    }()
+        
+    /// Goblet Crack icon path
+    static let gobletCrackPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 11.0), control1: CGPoint(x: 6.22, y: 4.720000000000001), control2: CGPoint(x: 5.0, y: 8.65))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 5.000000000000001, y: 14.865993248815554), control2: CGPoint(x: 8.134006751184447, y: 18.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 11.0), control1: CGPoint(x: 15.865993248815554, y: 18.0), control2: CGPoint(x: 19.0, y: 14.865993248815554))
+path.addCurve(to: CGPoint(x: 16.0, y: 2.0), control1: CGPoint(x: 19.0, y: 8.65), control2: CGPoint(x: 17.78, y: 4.72))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 18.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 8.0, y: 22.0))
+path.addLine(to: CGPoint(x: 16.0, y: 22.0))
+path.move(to: CGPoint(x: 13.0, y: 11.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 14.0, y: 8.0))
+path.addLine(to: CGPoint(x: 11.0, y: 5.0))
+path.addLine(to: CGPoint(x: 14.0, y: 2.0))
+        return path
+    }()
+        
+    /// Golf Driver icon path
+    static let golfDriverPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 11.0))
+path.addLine(to: CGPoint(x: 6.0, y: 13.0))
+path.move(to: CGPoint(x: 22.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.7, y: 16.1))
+path.addCurve(to: CGPoint(x: 11.0, y: 17.0), control1: CGPoint(x: 12.299999999999999, y: 16.700000000000003), control2: CGPoint(x: 11.7, y: 17.0))
+path.addLine(to: CGPoint(x: 4.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 19.0), control1: CGPoint(x: 2.8954305003384135, y: 17.0), control2: CGPoint(x: 2.0, y: 17.895430500338414))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 22.0), control1: CGPoint(x: 2.0, y: 21.104569499661586), control2: CGPoint(x: 2.8954305003384135, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 10.1, y: 19.9), control1: CGPoint(x: 7.6, y: 22.0), control2: CGPoint(x: 9.1, y: 21.3))
+path.addLine(to: CGPoint(x: 12.7, y: 16.099999999999998))
+path.move(to: CGPoint(x: 4.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 11.0), control1: CGPoint(x: 4.0, y: 10.104569499661586), control2: CGPoint(x: 4.8954305003384135, y: 11.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 9.0), control1: CGPoint(x: 7.104569499661587, y: 11.0), control2: CGPoint(x: 8.0, y: 10.104569499661586))
+path.addCurve(to: CGPoint(x: 6.0, y: 7.0), control1: CGPoint(x: 8.0, y: 7.8954305003384135), control2: CGPoint(x: 7.104569499661587, y: 7.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 9.0), control1: CGPoint(x: 4.8954305003384135, y: 7.0), control2: CGPoint(x: 4.0, y: 7.895430500338413))
+        return path
+    }()
+        
+    /// Grapes icon path
+    static let grapesPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 5.0))
+path.addLine(to: CGPoint(x: 22.0, y: 2.0))
+path.addLine(to: CGPoint(x: 16.11, y: 7.89))
+path.move(to: CGPoint(x: 13.600000000000001, y: 15.89))
+path.addCurve(to: CGPoint(x: 16.6, y: 18.89), control1: CGPoint(x: 13.600000000000001, y: 17.54685424949238), control2: CGPoint(x: 14.943145750507622, y: 18.89))
+path.addCurve(to: CGPoint(x: 19.6, y: 15.89), control1: CGPoint(x: 18.25685424949238, y: 18.89), control2: CGPoint(x: 19.6, y: 17.54685424949238))
+path.addCurve(to: CGPoint(x: 16.6, y: 12.89), control1: CGPoint(x: 19.6, y: 14.23314575050762), control2: CGPoint(x: 18.25685424949238, y: 12.89))
+path.addCurve(to: CGPoint(x: 13.600000000000001, y: 15.89), control1: CGPoint(x: 14.943145750507622, y: 12.89), control2: CGPoint(x: 13.600000000000001, y: 14.23314575050762))
+path.move(to: CGPoint(x: 5.109999999999999, y: 7.4))
+path.addCurve(to: CGPoint(x: 8.11, y: 10.4), control1: CGPoint(x: 5.109999999999999, y: 9.056854249492382), control2: CGPoint(x: 6.45314575050762, y: 10.4))
+path.addCurve(to: CGPoint(x: 11.11, y: 7.4), control1: CGPoint(x: 9.76685424949238, y: 10.4), control2: CGPoint(x: 11.11, y: 9.05685424949238))
+path.addCurve(to: CGPoint(x: 8.11, y: 4.4), control1: CGPoint(x: 11.11, y: 5.74314575050762), control2: CGPoint(x: 9.76685424949238, y: 4.4))
+path.addCurve(to: CGPoint(x: 5.109999999999999, y: 7.4), control1: CGPoint(x: 6.45314575050762, y: 4.4), control2: CGPoint(x: 5.109999999999999, y: 5.74314575050762))
+path.move(to: CGPoint(x: 9.35, y: 11.65))
+path.addCurve(to: CGPoint(x: 12.35, y: 14.65), control1: CGPoint(x: 9.35, y: 13.306854249492382), control2: CGPoint(x: 10.69314575050762, y: 14.65))
+path.addCurve(to: CGPoint(x: 15.35, y: 11.65), control1: CGPoint(x: 14.006854249492381, y: 14.65), control2: CGPoint(x: 15.35, y: 13.30685424949238))
+path.addCurve(to: CGPoint(x: 12.35, y: 8.65), control1: CGPoint(x: 15.35, y: 9.99314575050762), control2: CGPoint(x: 14.006854249492381, y: 8.65))
+path.addCurve(to: CGPoint(x: 9.35, y: 11.65), control1: CGPoint(x: 10.69314575050762, y: 8.65), control2: CGPoint(x: 9.35, y: 9.993145750507619))
+path.move(to: CGPoint(x: 10.91, y: 5.85))
+path.addCurve(to: CGPoint(x: 13.91, y: 8.85), control1: CGPoint(x: 10.91, y: 7.50685424949238), control2: CGPoint(x: 12.25314575050762, y: 8.85))
+path.addCurve(to: CGPoint(x: 16.91, y: 5.85), control1: CGPoint(x: 15.56685424949238, y: 8.85), control2: CGPoint(x: 16.91, y: 7.50685424949238))
+path.addCurve(to: CGPoint(x: 13.91, y: 2.8499999999999996), control1: CGPoint(x: 16.91, y: 4.193145750507619), control2: CGPoint(x: 15.56685424949238, y: 2.8499999999999996))
+path.addCurve(to: CGPoint(x: 10.91, y: 5.85), control1: CGPoint(x: 12.25314575050762, y: 2.8499999999999996), control2: CGPoint(x: 10.91, y: 4.193145750507619))
+path.move(to: CGPoint(x: 15.149999999999999, y: 10.09))
+path.addCurve(to: CGPoint(x: 18.15, y: 13.09), control1: CGPoint(x: 15.149999999999999, y: 11.74685424949238), control2: CGPoint(x: 16.49314575050762, y: 13.09))
+path.addCurve(to: CGPoint(x: 21.15, y: 10.09), control1: CGPoint(x: 19.80685424949238, y: 13.09), control2: CGPoint(x: 21.15, y: 11.74685424949238))
+path.addCurve(to: CGPoint(x: 18.15, y: 7.09), control1: CGPoint(x: 21.15, y: 8.43314575050762), control2: CGPoint(x: 19.80685424949238, y: 7.09))
+path.addCurve(to: CGPoint(x: 15.149999999999999, y: 10.09), control1: CGPoint(x: 16.49314575050762, y: 7.09), control2: CGPoint(x: 15.149999999999999, y: 8.43314575050762))
+path.move(to: CGPoint(x: 3.5599999999999996, y: 13.2))
+path.addCurve(to: CGPoint(x: 5.0599999901416215, y: 15.798076261857377), control1: CGPoint(x: 3.559999984028982, y: 14.271796793120897), control2: CGPoint(x: 4.131796751590327, y: 15.262177867521025))
+path.addCurve(to: CGPoint(x: 8.060000018997595, y: 15.798076256580845), control1: CGPoint(x: 5.988203228692915, y: 16.33397465619373), control2: CGPoint(x: 7.131796782331425, y: 16.333974654182327))
+path.addCurve(to: CGPoint(x: 9.559999999999999, y: 13.200000000939252), control1: CGPoint(x: 8.988203255663766, y: 15.262177858979367), control2: CGPoint(x: 9.56000001974126, y: 14.271796782567836))
+path.addCurve(to: CGPoint(x: 8.060000009858378, y: 10.601923738612248), control1: CGPoint(x: 9.560000015971015, y: 12.128203207348728), control2: CGPoint(x: 8.988203248409672, y: 11.1378221329486))
+path.addCurve(to: CGPoint(x: 5.059999981002402, y: 10.60192374388878), control1: CGPoint(x: 7.131796771307083, y: 10.066025344275896), control2: CGPoint(x: 5.988203217668573, y: 10.066025346287299))
+path.addCurve(to: CGPoint(x: 3.5599999999999996, y: 13.19999999953037), control1: CGPoint(x: 4.131796744336231, y: 11.137822141490258), control2: CGPoint(x: 3.5599999802587377, y: 12.128203217901786))
+path.move(to: CGPoint(x: 7.800000000000001, y: 17.44))
+path.addCurve(to: CGPoint(x: 10.8, y: 20.44), control1: CGPoint(x: 7.800000000000001, y: 19.09685424949238), control2: CGPoint(x: 9.143145750507621, y: 20.44))
+path.addCurve(to: CGPoint(x: 13.8, y: 17.44), control1: CGPoint(x: 12.45685424949238, y: 20.44), control2: CGPoint(x: 13.8, y: 19.09685424949238))
+path.addCurve(to: CGPoint(x: 10.8, y: 14.440000000000001), control1: CGPoint(x: 13.8, y: 15.783145750507622), control2: CGPoint(x: 12.45685424949238, y: 14.440000000000001))
+path.addCurve(to: CGPoint(x: 7.800000000000001, y: 17.44), control1: CGPoint(x: 9.143145750507621, y: 14.440000000000001), control2: CGPoint(x: 7.800000000000001, y: 15.783145750507622))
+path.move(to: CGPoint(x: 2.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 22.0), control1: CGPoint(x: 2.0000000000000004, y: 20.65685424949238), control2: CGPoint(x: 3.34314575050762, y: 22.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 19.0), control1: CGPoint(x: 6.656854249492381, y: 22.0), control2: CGPoint(x: 8.0, y: 20.65685424949238))
+path.addCurve(to: CGPoint(x: 5.0, y: 16.0), control1: CGPoint(x: 8.0, y: 17.34314575050762), control2: CGPoint(x: 6.656854249492381, y: 16.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 19.0), control1: CGPoint(x: 3.34314575050762, y: 16.0), control2: CGPoint(x: 2.0000000000000004, y: 17.34314575050762))
+        return path
+    }()
+        
+    /// Grid Lines icon path
+    static let gridLinesPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 3.0))
+path.addLine(to: CGPoint(x: 9.0, y: 21.0))
+path.move(to: CGPoint(x: 15.0, y: 3.0))
+path.addLine(to: CGPoint(x: 15.0, y: 21.0))
+path.move(to: CGPoint(x: 3.0, y: 9.0))
+path.addLine(to: CGPoint(x: 21.0, y: 9.0))
+path.move(to: CGPoint(x: 3.0, y: 15.0))
+path.addLine(to: CGPoint(x: 21.0, y: 15.0))
+        return path
+    }()
+        
+    /// Grid Lines Offset icon path
+    static let gridLinesOffsetPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 3.0))
+path.addLine(to: CGPoint(x: 7.0, y: 21.0))
+path.move(to: CGPoint(x: 13.0, y: 3.0))
+path.addLine(to: CGPoint(x: 13.0, y: 21.0))
+path.move(to: CGPoint(x: 3.0, y: 11.0))
+path.addLine(to: CGPoint(x: 21.0, y: 11.0))
+path.move(to: CGPoint(x: 3.0, y: 17.0))
+path.addLine(to: CGPoint(x: 21.0, y: 17.0))
+        return path
+    }()
+        
+    /// Hairdryer icon path
+    static let hairdryerPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 18.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 14.0), control1: CGPoint(x: 18.0, y: 11.0), control2: CGPoint(x: 11.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 8.0), control1: CGPoint(x: 4.68629150101524, y: 14.0), control2: CGPoint(x: 2.000000000000001, y: 11.313708498984761))
+path.addCurve(to: CGPoint(x: 7.999999999999999, y: 2.0), control1: CGPoint(x: 2.0, y: 4.68629150101524), control2: CGPoint(x: 4.686291501015238, y: 2.000000000000001))
+path.addCurve(to: CGPoint(x: 18.0, y: 5.0), control1: CGPoint(x: 11.0, y: 2.0), control2: CGPoint(x: 18.0, y: 5.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 18.0, y: 5.0))
+path.addLine(to: CGPoint(x: 22.0, y: 3.0))
+path.addLine(to: CGPoint(x: 22.0, y: 13.0))
+path.addLine(to: CGPoint(x: 18.0, y: 11.0))
+path.move(to: CGPoint(x: 7.0, y: 13.9))
+path.addLine(to: CGPoint(x: 7.8, y: 19.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 20.0), control1: CGPoint(x: 7.8999999999999995, y: 19.5), control2: CGPoint(x: 8.4, y: 20.0))
+path.addLine(to: CGPoint(x: 11.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 11.8, y: 19.0), control1: CGPoint(x: 11.6, y: 20.0), control2: CGPoint(x: 11.9, y: 19.6))
+path.addLine(to: CGPoint(x: 10.9, y: 13.5))
+path.move(to: CGPoint(x: 11.64, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.94, y: 16.0), control1: CGPoint(x: 11.64, y: 18.0), control2: CGPoint(x: 14.940000000000001, y: 16.0))
+path.addCurve(to: CGPoint(x: 20.94, y: 18.0), control1: CGPoint(x: 20.044569499661588, y: 16.0), control2: CGPoint(x: 20.94, y: 16.895430500338414))
+path.addCurve(to: CGPoint(x: 18.94, y: 20.0), control1: CGPoint(x: 20.94, y: 19.104569499661586), control2: CGPoint(x: 20.044569499661588, y: 20.0))
+path.addLine(to: CGPoint(x: 17.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 22.0), control1: CGPoint(x: 15.895430500338414, y: 20.0), control2: CGPoint(x: 15.0, y: 20.895430500338414))
+path.move(to: CGPoint(x: 6.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 10.0), control1: CGPoint(x: 6.0, y: 9.104569499661586), control2: CGPoint(x: 6.8954305003384135, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 8.0), control1: CGPoint(x: 9.104569499661586, y: 10.0), control2: CGPoint(x: 10.0, y: 9.104569499661586))
+path.addCurve(to: CGPoint(x: 8.0, y: 6.0), control1: CGPoint(x: 10.0, y: 6.8954305003384135), control2: CGPoint(x: 9.104569499661586, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 8.0), control1: CGPoint(x: 6.8954305003384135, y: 6.0), control2: CGPoint(x: 6.0, y: 6.895430500338413))
+        return path
+    }()
+        
+    /// Hat Baseball icon path
+    static let hatBaseballPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 3.0))
+path.addLine(to: CGPoint(x: 12.0, y: 4.0))
+path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 14.9), control1: CGPoint(x: 14.8, y: 14.0), control2: CGPoint(x: 17.5, y: 14.3))
+path.addLine(to: CGPoint(x: 20.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 20.0, y: 7.581722001353652), control2: CGPoint(x: 16.41827799864635, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 11.999999999999998), control1: CGPoint(x: 7.581722001353653, y: 4.0), control2: CGPoint(x: 4.000000000000001, y: 7.5817220013536515))
+path.addLine(to: CGPoint(x: 4.0, y: 14.9))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 6.5, y: 14.3), control2: CGPoint(x: 9.2, y: 14.0))
+path.move(to: CGPoint(x: 9.0, y: 14.1))
+path.addLine(to: CGPoint(x: 9.0, y: 10.0))
+path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+path.addLine(to: CGPoint(x: 15.0, y: 14.1))
+path.move(to: CGPoint(x: 2.3, y: 18.0))
+path.addCurve(to: CGPoint(x: 2.2918594867109294, y: 19.98627962419714), control1: CGPoint(x: 1.9454661329226917, y: 18.613862356490586), control2: CGPoint(x: 1.9423691177780555, y: 19.369531914315598))
+path.addCurve(to: CGPoint(x: 4.000000000000001, y: 21.0), control1: CGPoint(x: 2.641349855643803, y: 20.603027334078682), control2: CGPoint(x: 3.2912028625696976, y: 20.988691879397063))
+path.addLine(to: CGPoint(x: 4.4, y: 21.0))
+path.addLine(to: CGPoint(x: 6.0, y: 20.6))
+path.addCurve(to: CGPoint(x: 18.000000000000004, y: 20.6), control1: CGPoint(x: 9.947133043243767, y: 19.680287377438074), control2: CGPoint(x: 14.052866956756235, y: 19.680287377438074))
+path.addLine(to: CGPoint(x: 19.6, y: 21.0))
+path.addLine(to: CGPoint(x: 20.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.70814051328907, y: 19.98627962419714), control1: CGPoint(x: 20.708797137430306, y: 20.988691879397063), control2: CGPoint(x: 21.358650144356197, y: 20.603027334078682))
+path.addCurve(to: CGPoint(x: 21.7, y: 18.0), control1: CGPoint(x: 22.057630882221943, y: 19.369531914315598), control2: CGPoint(x: 22.05453386707731, y: 18.613862356490586))
+path.addLine(to: CGPoint(x: 19.9, y: 14.8))
+path.addCurve(to: CGPoint(x: 4.10000000000002, y: 14.799999999999997), control1: CGPoint(x: 14.68598653458653, y: 13.746801329409351), control2: CGPoint(x: 9.314013465413488, y: 13.746801329409351))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Hat Beanie icon path
+    static let hatBeaniePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.4, y: 6.2))
+path.addCurve(to: CGPoint(x: 4.0, y: 14.0), control1: CGPoint(x: 6.7, y: 6.9), control2: CGPoint(x: 4.0, y: 10.1))
+path.addLine(to: CGPoint(x: 4.0, y: 15.0))
+path.move(to: CGPoint(x: 20.0, y: 15.0))
+path.addLine(to: CGPoint(x: 20.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 13.6, y: 6.2), control1: CGPoint(x: 20.0, y: 10.1), control2: CGPoint(x: 17.3, y: 6.9))
+path.move(to: CGPoint(x: 6.0, y: 15.0))
+path.addLine(to: CGPoint(x: 6.0, y: 20.0))
+path.move(to: CGPoint(x: 10.0, y: 15.0))
+path.addLine(to: CGPoint(x: 10.0, y: 20.0))
+path.move(to: CGPoint(x: 14.0, y: 15.0))
+path.addLine(to: CGPoint(x: 14.0, y: 20.0))
+path.move(to: CGPoint(x: 18.0, y: 15.0))
+path.addLine(to: CGPoint(x: 18.0, y: 20.0))
+path.move(to: CGPoint(x: 10.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.0), control1: CGPoint(x: 10.0, y: 6.104569499661587), control2: CGPoint(x: 10.895430500338414, y: 7.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 5.0), control1: CGPoint(x: 13.104569499661586, y: 7.0), control2: CGPoint(x: 14.0, y: 6.1045694996615865))
+path.addCurve(to: CGPoint(x: 12.0, y: 3.0), control1: CGPoint(x: 14.0, y: 3.895430500338413), control2: CGPoint(x: 13.104569499661586, y: 3.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 5.0), control1: CGPoint(x: 10.895430500338414, y: 3.0), control2: CGPoint(x: 10.0, y: 3.8954305003384126))
+path.move(to: CGPoint(x: 3.0, y: 15.0))
+path.addLine(to: CGPoint(x: 21.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 16.0), control1: CGPoint(x: 21.552284749830793, y: 15.0), control2: CGPoint(x: 22.0, y: 15.447715250169207))
+path.addLine(to: CGPoint(x: 22.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 20.0), control1: CGPoint(x: 22.0, y: 19.552284749830793), control2: CGPoint(x: 21.552284749830793, y: 20.0))
+path.addLine(to: CGPoint(x: 3.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 19.0), control1: CGPoint(x: 2.4477152501692068, y: 20.0), control2: CGPoint(x: 2.0, y: 19.552284749830793))
+path.addLine(to: CGPoint(x: 2.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 15.0), control1: CGPoint(x: 2.0, y: 15.447715250169207), control2: CGPoint(x: 2.4477152501692063, y: 15.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Hat Bowler icon path
+    static let hatBowlerPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 6.0, y: 14.7), control2: CGPoint(x: 8.7, y: 16.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 13.0), control1: CGPoint(x: 15.3, y: 16.0), control2: CGPoint(x: 18.0, y: 14.7))
+path.addLine(to: CGPoint(x: 18.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 18.0, y: 6.686291501015239), control2: CGPoint(x: 15.313708498984761, y: 4.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 10.0), control1: CGPoint(x: 8.68629150101524, y: 4.0), control2: CGPoint(x: 6.000000000000001, y: 6.686291501015239))
+path.closeSubpath()
+path.move(to: CGPoint(x: 6.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 12.0), control1: CGPoint(x: 6.0, y: 10.7), control2: CGPoint(x: 8.7, y: 12.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 9.0), control1: CGPoint(x: 15.3, y: 12.0), control2: CGPoint(x: 18.0, y: 10.7))
+path.move(to: CGPoint(x: 6.0, y: 9.2))
+path.addCurve(to: CGPoint(x: 2.0, y: 14.0), control1: CGPoint(x: 3.6, y: 10.3), control2: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 20.0), control1: CGPoint(x: 2.0, y: 17.3), control2: CGPoint(x: 6.5, y: 20.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 14.0), control1: CGPoint(x: 17.5, y: 20.0), control2: CGPoint(x: 22.0, y: 17.3))
+path.addCurve(to: CGPoint(x: 18.0, y: 9.2), control1: CGPoint(x: 22.0, y: 12.0), control2: CGPoint(x: 20.4, y: 10.3))
+        return path
+    }()
+        
+    /// Hat Chef icon path
+    static let hatChefPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 13.85))
+path.addCurve(to: CGPoint(x: 3.080187485932415, y: 9.279428341440175), control1: CGPoint(x: 3.9847570529016636, y: 13.319628616059097), control2: CGPoint(x: 2.7143155938713655, y: 11.330924307639632))
+path.addCurve(to: CGPoint(x: 7.400000000000002, y: 6.000000000000001), control1: CGPoint(x: 3.4460593779934654, y: 7.227932375240719), control2: CGPoint(x: 5.325655717370733, y: 5.801018247428972))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.9595917942265437), control1: CGPoint(x: 8.185441310075133, y: 4.1562333354372525), control2: CGPoint(x: 9.995905799388316, y: 2.9595917942265446))
+path.addCurve(to: CGPoint(x: 16.6, y: 5.999999999999998), control1: CGPoint(x: 14.004094200611684, y: 2.959591794226543), control2: CGPoint(x: 15.81455868992487, y: 4.156233335437251))
+path.addCurve(to: CGPoint(x: 20.919812514067594, y: 9.279428341440173), control1: CGPoint(x: 18.674344282629274, y: 5.801018247428966), control2: CGPoint(x: 20.553940622006543, y: 7.227932375240713))
+path.addCurve(to: CGPoint(x: 18.0, y: 13.849999999999998), control1: CGPoint(x: 21.285684406128645, y: 11.330924307639634), control2: CGPoint(x: 20.01524294709834, y: 13.319628616059099))
+path.addLine(to: CGPoint(x: 18.0, y: 21.0))
+path.addLine(to: CGPoint(x: 6.0, y: 21.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 6.0, y: 17.0))
+path.addLine(to: CGPoint(x: 18.0, y: 17.0))
+        return path
+    }()
+        
+    /// Hat Hard icon path
+    static let hatHardPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 6.3))
+path.addCurve(to: CGPoint(x: 4.0, y: 14.0), control1: CGPoint(x: 6.6, y: 7.2), control2: CGPoint(x: 4.0, y: 10.3))
+path.addLine(to: CGPoint(x: 4.0, y: 16.0))
+path.move(to: CGPoint(x: 10.0, y: 10.0))
+path.addLine(to: CGPoint(x: 10.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 4.0), control1: CGPoint(x: 10.0, y: 4.4), control2: CGPoint(x: 10.4, y: 4.0))
+path.addLine(to: CGPoint(x: 13.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 5.0), control1: CGPoint(x: 13.6, y: 4.0), control2: CGPoint(x: 14.0, y: 4.4))
+path.addLine(to: CGPoint(x: 14.0, y: 10.0))
+path.move(to: CGPoint(x: 20.0, y: 16.0))
+path.addLine(to: CGPoint(x: 20.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 6.3), control1: CGPoint(x: 20.0, y: 10.3), control2: CGPoint(x: 17.4, y: 7.2))
+path.move(to: CGPoint(x: 3.0, y: 16.0))
+path.addLine(to: CGPoint(x: 21.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 17.0), control1: CGPoint(x: 21.552284749830793, y: 16.0), control2: CGPoint(x: 22.0, y: 16.447715250169207))
+path.addLine(to: CGPoint(x: 22.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 20.0), control1: CGPoint(x: 22.0, y: 19.552284749830793), control2: CGPoint(x: 21.552284749830793, y: 20.0))
+path.addLine(to: CGPoint(x: 3.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 19.0), control1: CGPoint(x: 2.4477152501692068, y: 20.0), control2: CGPoint(x: 2.0, y: 19.552284749830793))
+path.addLine(to: CGPoint(x: 2.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 16.0), control1: CGPoint(x: 2.0, y: 16.447715250169207), control2: CGPoint(x: 2.4477152501692063, y: 16.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Hat Top icon path
+    static let hatTopPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 5.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 11.0), control1: CGPoint(x: 5.0, y: 6.0), control2: CGPoint(x: 6.0, y: 9.0))
+path.addLine(to: CGPoint(x: 6.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 6.0, y: 16.7), control2: CGPoint(x: 8.7, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 15.0), control1: CGPoint(x: 15.3, y: 18.0), control2: CGPoint(x: 18.0, y: 16.7))
+path.addLine(to: CGPoint(x: 18.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 5.0), control1: CGPoint(x: 18.0, y: 9.0), control2: CGPoint(x: 19.0, y: 6.0))
+path.move(to: CGPoint(x: 18.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 18.0, y: 12.7), control2: CGPoint(x: 15.3, y: 14.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 11.0), control1: CGPoint(x: 8.7, y: 14.0), control2: CGPoint(x: 6.0, y: 12.7))
+path.move(to: CGPoint(x: 6.0, y: 11.2))
+path.addCurve(to: CGPoint(x: 2.0, y: 16.0), control1: CGPoint(x: 3.6, y: 12.3), control2: CGPoint(x: 2.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0, y: 19.3), control2: CGPoint(x: 6.5, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 16.0), control1: CGPoint(x: 17.5, y: 22.0), control2: CGPoint(x: 22.0, y: 19.3))
+path.addCurve(to: CGPoint(x: 18.0, y: 11.2), control1: CGPoint(x: 22.0, y: 14.0), control2: CGPoint(x: 20.4, y: 12.3))
+path.move(to: CGPoint(x: 5.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.0), control1: CGPoint(x: 5.000000000000001, y: 6.656854249492381), control2: CGPoint(x: 8.134006751184447, y: 8.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 5.0), control1: CGPoint(x: 15.865993248815554, y: 8.0), control2: CGPoint(x: 19.0, y: 6.656854249492381))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 19.0, y: 3.3431457505076194), control2: CGPoint(x: 15.865993248815554, y: 2.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 5.0), control1: CGPoint(x: 8.134006751184447, y: 2.0), control2: CGPoint(x: 5.000000000000001, y: 3.3431457505076194))
+        return path
+    }()
+        
+    /// Heading Circle icon path
+    static let headingCirclePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 16.0))
+path.addLine(to: CGPoint(x: 9.0, y: 8.0))
+path.move(to: CGPoint(x: 9.0, y: 12.0))
+path.addLine(to: CGPoint(x: 15.0, y: 12.0))
+path.move(to: CGPoint(x: 15.0, y: 16.0))
+path.addLine(to: CGPoint(x: 15.0, y: 8.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Heading Square icon path
+    static let headingSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 17.0))
+path.addLine(to: CGPoint(x: 8.0, y: 7.0))
+path.move(to: CGPoint(x: 8.0, y: 12.0))
+path.addLine(to: CGPoint(x: 16.0, y: 12.0))
+path.move(to: CGPoint(x: 16.0, y: 17.0))
+path.addLine(to: CGPoint(x: 16.0, y: 7.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Hedgehog icon path
+    static let hedgehogPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 11.0))
+path.addLine(to: CGPoint(x: 3.0, y: 7.7))
+path.addLine(to: CGPoint(x: 5.7, y: 7.0))
+path.addLine(to: CGPoint(x: 5.8, y: 4.2))
+path.addLine(to: CGPoint(x: 8.5, y: 4.8))
+path.addLine(to: CGPoint(x: 9.8, y: 2.1999999999999997))
+path.addLine(to: CGPoint(x: 12.0, y: 4.0))
+path.addLine(to: CGPoint(x: 14.2, y: 2.2))
+path.addLine(to: CGPoint(x: 15.5, y: 4.800000000000001))
+path.addLine(to: CGPoint(x: 18.2, y: 4.200000000000001))
+path.addLine(to: CGPoint(x: 18.3, y: 7.000000000000001))
+path.addLine(to: CGPoint(x: 21.0, y: 7.700000000000001))
+path.addLine(to: CGPoint(x: 19.8, y: 10.200000000000001))
+path.addLine(to: CGPoint(x: 22.0, y: 12.0))
+path.addLine(to: CGPoint(x: 19.8, y: 13.8))
+path.addLine(to: CGPoint(x: 21.0, y: 16.3))
+path.addLine(to: CGPoint(x: 18.0, y: 17.0))
+path.move(to: CGPoint(x: 10.0, y: 17.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 16.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 3.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 11.0), control1: CGPoint(x: 5.8, y: 16.0), control2: CGPoint(x: 8.0, y: 13.8))
+path.addCurve(to: CGPoint(x: 14.0, y: 17.0), control1: CGPoint(x: 11.3, y: 11.0), control2: CGPoint(x: 14.0, y: 13.7))
+path.addCurve(to: CGPoint(x: 18.0, y: 21.0), control1: CGPoint(x: 14.0, y: 19.209138999323173), control2: CGPoint(x: 15.790861000676827, y: 21.0))
+path.addLine(to: CGPoint(x: 10.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 6.6, y: 19.6), control1: CGPoint(x: 8.9, y: 21.0), control2: CGPoint(x: 7.4, y: 20.4))
+path.addLine(to: CGPoint(x: 3.0, y: 16.0))
+path.addLine(to: CGPoint(x: 3.0, y: 15.0))
+        return path
+    }()
+        
+    /// Helmet Diving icon path
+    static let helmetDivingPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.0, y: 17.9))
+path.addCurve(to: CGPoint(x: 19.4, y: 13.999999999999998), control1: CGPoint(x: 17.5, y: 17.0), control2: CGPoint(x: 18.7, y: 15.7))
+path.addLine(to: CGPoint(x: 20.2, y: 13.999999999999998))
+path.addCurve(to: CGPoint(x: 21.0, y: 12.999999999999998), control1: CGPoint(x: 20.599999999999998, y: 13.999999999999998), control2: CGPoint(x: 21.0, y: 13.599999999999998))
+path.addLine(to: CGPoint(x: 21.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 20.2, y: 8.0), control1: CGPoint(x: 21.0, y: 8.4), control2: CGPoint(x: 20.6, y: 8.0))
+path.addLine(to: CGPoint(x: 19.4, y: 8.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 3.5999999999999996), control1: CGPoint(x: 18.595046697788423, y: 5.9944660410395665), control2: CGPoint(x: 17.005533958960434, y: 4.4049533022115765))
+path.addLine(to: CGPoint(x: 15.0, y: 2.8))
+path.addCurve(to: CGPoint(x: 14.0, y: 1.9999999999999998), control1: CGPoint(x: 15.0, y: 2.4), control2: CGPoint(x: 14.6, y: 1.9999999999999998))
+path.addLine(to: CGPoint(x: 10.0, y: 1.9999999999999998))
+path.addCurve(to: CGPoint(x: 9.0, y: 2.8), control1: CGPoint(x: 9.4, y: 1.9999999999999998), control2: CGPoint(x: 9.0, y: 2.4))
+path.addLine(to: CGPoint(x: 9.0, y: 3.5999999999999996))
+path.addCurve(to: CGPoint(x: 4.6, y: 7.999999999999998), control1: CGPoint(x: 6.994466041039566, y: 4.404953302211576), control2: CGPoint(x: 5.4049533022115765, y: 5.994466041039565))
+path.addLine(to: CGPoint(x: 3.8, y: 8.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 9.0), control1: CGPoint(x: 3.4, y: 8.0), control2: CGPoint(x: 3.0, y: 8.4))
+path.addLine(to: CGPoint(x: 3.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 3.8, y: 14.0), control1: CGPoint(x: 3.0, y: 13.6), control2: CGPoint(x: 3.4, y: 14.0))
+path.addLine(to: CGPoint(x: 4.6, y: 14.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 17.9), control1: CGPoint(x: 5.3, y: 15.7), control2: CGPoint(x: 6.5, y: 17.0))
+path.move(to: CGPoint(x: 8.0, y: 11.0))
+path.addLine(to: CGPoint(x: 16.0, y: 11.0))
+path.move(to: CGPoint(x: 12.0, y: 7.0))
+path.addLine(to: CGPoint(x: 12.0, y: 15.0))
+path.move(to: CGPoint(x: 6.7, y: 17.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 19.0), control1: CGPoint(x: 5.7, y: 17.6), control2: CGPoint(x: 5.0, y: 18.2))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 5.0, y: 20.7), control2: CGPoint(x: 8.1, y: 22.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 19.0), control1: CGPoint(x: 15.9, y: 22.0), control2: CGPoint(x: 19.0, y: 20.7))
+path.addCurve(to: CGPoint(x: 17.3, y: 17.0), control1: CGPoint(x: 19.0, y: 18.2), control2: CGPoint(x: 18.3, y: 17.6))
+path.move(to: CGPoint(x: 8.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 15.0), control1: CGPoint(x: 8.0, y: 13.209138999323175), control2: CGPoint(x: 9.790861000676827, y: 15.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 11.0), control1: CGPoint(x: 14.209138999323175, y: 15.0), control2: CGPoint(x: 16.0, y: 13.209138999323173))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.0), control1: CGPoint(x: 16.0, y: 8.790861000676827), control2: CGPoint(x: 14.209138999323175, y: 7.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 11.0), control1: CGPoint(x: 9.790861000676827, y: 7.0), control2: CGPoint(x: 8.0, y: 8.790861000676825))
+        return path
+    }()
+        
+    /// Hexagons 3 icon path
+    static let hexagons3Path: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 4.4))
+path.addCurve(to: CGPoint(x: 7.0, y: 6.13), control1: CGPoint(x: 7.3818319204005265, y: 4.756899006514181), control2: CGPoint(x: 7.000732148740333, y: 5.416201611486316))
+path.addLine(to: CGPoint(x: 7.0, y: 10.5))
+path.addLine(to: CGPoint(x: 3.0, y: 12.9))
+path.addCurve(to: CGPoint(x: 2.0, y: 14.63), control1: CGPoint(x: 2.381831920400526, y: 13.256899006514182), control2: CGPoint(x: 2.0007321487403322, y: 13.916201611486317))
+path.addLine(to: CGPoint(x: 2.0, y: 17.900000000000002))
+path.addCurve(to: CGPoint(x: 2.9699999999999993, y: 19.580000000000002), control1: CGPoint(x: 2.0119218120331506, y: 18.58982210298176), control2: CGPoint(x: 2.378541091941177, y: 19.22479157746164))
+path.addLine(to: CGPoint(x: 6.0, y: 21.4))
+path.addCurve(to: CGPoint(x: 8.03, y: 21.380000000000003), control1: CGPoint(x: 6.630009636133982, y: 21.762778249442917), control2: CGPoint(x: 7.4072603033423166, y: 21.755120607401455))
+path.addLine(to: CGPoint(x: 12.0, y: 19.0))
+path.addLine(to: CGPoint(x: 16.0, y: 21.4))
+path.addCurve(to: CGPoint(x: 18.03, y: 21.38), control1: CGPoint(x: 16.63000963613398, y: 21.762778249442917), control2: CGPoint(x: 17.407260303342316, y: 21.755120607401455))
+path.addLine(to: CGPoint(x: 21.0, y: 19.6))
+path.addCurve(to: CGPoint(x: 22.0, y: 17.869999999999997), control1: CGPoint(x: 21.618168079599474, y: 19.243100993485818), control2: CGPoint(x: 21.999267851259667, y: 18.58379838851368))
+path.addLine(to: CGPoint(x: 22.0, y: 14.6))
+path.addCurve(to: CGPoint(x: 21.030000000000005, y: 12.920000000000002), control1: CGPoint(x: 21.988078187966853, y: 13.910177897018245), control2: CGPoint(x: 21.621458908058827, y: 13.275208422538364))
+path.addLine(to: CGPoint(x: 17.0, y: 10.5))
+path.addLine(to: CGPoint(x: 17.0, y: 6.1))
+path.addCurve(to: CGPoint(x: 16.03, y: 4.42), control1: CGPoint(x: 16.98807818796685, y: 5.410177897018245), control2: CGPoint(x: 16.621458908058823, y: 4.775208422538363))
+path.addLine(to: CGPoint(x: 13.0, y: 2.6))
+path.addCurve(to: CGPoint(x: 10.969999999999999, y: 2.6200000000000006), control1: CGPoint(x: 12.369990363866016, y: 2.2372217505570844), control2: CGPoint(x: 11.592739696657683, y: 2.2448793925985457))
+path.closeSubpath()
+path.move(to: CGPoint(x: 7.0, y: 10.5))
+path.addLine(to: CGPoint(x: 12.0, y: 13.5))
+path.addLine(to: CGPoint(x: 17.0, y: 10.5))
+path.move(to: CGPoint(x: 12.0, y: 13.5))
+path.addLine(to: CGPoint(x: 12.0, y: 19.0))
+        return path
+    }()
+        
+    /// Hexagons 7 icon path
+    static let hexagons7Path: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 5.3, y: 4.3))
+path.addLine(to: CGPoint(x: 5.3, y: 8.2))
+path.addLine(to: CGPoint(x: 2.0, y: 10.1))
+path.addLine(to: CGPoint(x: 2.0, y: 13.899999999999999))
+path.addLine(to: CGPoint(x: 5.3, y: 15.799999999999999))
+path.addLine(to: CGPoint(x: 5.3, y: 19.7))
+path.addLine(to: CGPoint(x: 8.7, y: 21.599999999999998))
+path.addLine(to: CGPoint(x: 12.0, y: 19.7))
+path.addLine(to: CGPoint(x: 15.3, y: 21.599999999999998))
+path.addLine(to: CGPoint(x: 18.7, y: 19.7))
+path.addLine(to: CGPoint(x: 18.7, y: 15.799999999999999))
+path.addLine(to: CGPoint(x: 22.0, y: 13.899999999999999))
+path.addLine(to: CGPoint(x: 22.0, y: 10.099999999999998))
+path.addLine(to: CGPoint(x: 18.7, y: 8.199999999999998))
+path.addLine(to: CGPoint(x: 18.7, y: 4.3))
+path.addLine(to: CGPoint(x: 15.299999999999999, y: 2.4))
+path.addLine(to: CGPoint(x: 12.0, y: 4.3))
+path.addLine(to: CGPoint(x: 8.7, y: 2.4))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 8.2))
+path.addLine(to: CGPoint(x: 12.0, y: 4.3))
+path.move(to: CGPoint(x: 18.7, y: 8.2))
+path.addLine(to: CGPoint(x: 15.299999999999999, y: 10.1))
+path.move(to: CGPoint(x: 15.3, y: 13.9))
+path.addLine(to: CGPoint(x: 18.7, y: 15.8))
+path.move(to: CGPoint(x: 12.0, y: 19.7))
+path.addLine(to: CGPoint(x: 12.0, y: 15.799999999999999))
+path.move(to: CGPoint(x: 8.7, y: 13.9))
+path.addLine(to: CGPoint(x: 5.299999999999999, y: 15.8))
+path.move(to: CGPoint(x: 5.3, y: 8.2))
+path.addLine(to: CGPoint(x: 8.7, y: 10.1))
+path.move(to: CGPoint(x: 8.7, y: 13.9))
+path.addLine(to: CGPoint(x: 12.0, y: 15.8))
+path.addLine(to: CGPoint(x: 15.3, y: 13.9))
+path.addLine(to: CGPoint(x: 15.3, y: 10.100000000000001))
+path.addLine(to: CGPoint(x: 12.0, y: 8.2))
+path.addLine(to: CGPoint(x: 8.7, y: 10.1))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// High Heel icon path
+    static let highHeelPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 13.8, y: 15.0), control1: CGPoint(x: 10.0, y: 9.0), control2: CGPoint(x: 12.4, y: 13.5))
+path.addCurve(to: CGPoint(x: 17.5, y: 15.6), control1: CGPoint(x: 14.700000000000001, y: 16.0), control2: CGPoint(x: 16.3, y: 16.3))
+path.addCurve(to: CGPoint(x: 18.2, y: 15.0), control1: CGPoint(x: 17.8, y: 15.4), control2: CGPoint(x: 18.0, y: 15.299999999999999))
+path.addCurve(to: CGPoint(x: 22.0, y: 20.0), control1: CGPoint(x: 18.8, y: 15.3), control2: CGPoint(x: 22.0, y: 18.1))
+path.addCurve(to: CGPoint(x: 21.0, y: 21.0), control1: CGPoint(x: 22.0, y: 21.0), control2: CGPoint(x: 21.0, y: 21.0))
+path.addLine(to: CGPoint(x: 14.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 11.4, y: 19.5), control1: CGPoint(x: 13.0, y: 21.0), control2: CGPoint(x: 12.0, y: 20.5))
+path.addLine(to: CGPoint(x: 10.1, y: 17.0))
+path.addCurve(to: CGPoint(x: 6.3999999999999995, y: 12.8), control1: CGPoint(x: 9.2, y: 15.4), control2: CGPoint(x: 7.8999999999999995, y: 14.0))
+path.addLine(to: CGPoint(x: 4.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 7.000000000000001), control1: CGPoint(x: 2.7409707866677886, y: 10.055728090000843), control2: CGPoint(x: 2.0, y: 8.573786516665265))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 3.0000000000000004), control1: CGPoint(x: 2.0, y: 5.4262134833347355), control2: CGPoint(x: 2.7409707866677877, y: 3.9442719099991597))
+path.move(to: CGPoint(x: 2.56, y: 9.3))
+path.addLine(to: CGPoint(x: 3.16, y: 10.4))
+path.addCurve(to: CGPoint(x: 5.0, y: 21.0), control1: CGPoint(x: 4.2, y: 12.6), control2: CGPoint(x: 5.0, y: 16.5))
+        return path
+    }()
+        
+    /// Hockey icon path
+    static let hockeyPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.8, y: 13.0))
+path.addCurve(to: CGPoint(x: 2.801923735056178, y: 19.00333214442457), control1: CGPoint(x: 1.7282031964747544, y: 14.85778106932459), control2: CGPoint(x: 1.7289365201369575, y: 17.14623835944556))
+path.addCurve(to: CGPoint(x: 8.00192377282122, y: 22.003332168471466), control1: CGPoint(x: 3.8749109499753986, y: 20.860425929403572), control2: CGPoint(x: 5.857139770365509, y: 22.004019480489905))
+path.addCurve(to: CGPoint(x: 13.19999999804405, y: 19.000000003390312), control1: CGPoint(x: 10.146707775276933, y: 22.002644856453028), control2: CGPoint(x: 12.128203242467333, y: 20.857781100377515))
+path.addLine(to: CGPoint(x: 21.7, y: 5.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 2.3000000000000007), control1: CGPoint(x: 22.252284749830793, y: 4.061115925287651), control2: CGPoint(x: 21.938884074712348, y: 2.8522847498307944))
+path.addCurve(to: CGPoint(x: 18.3, y: 3.0), control1: CGPoint(x: 20.061115925287652, y: 1.747715250169207), control2: CGPoint(x: 18.852284749830794, y: 2.061115925287652))
+path.addLine(to: CGPoint(x: 9.7, y: 17.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 17.7), control1: CGPoint(x: 9.147715250169206, y: 17.938884074712348), control2: CGPoint(x: 7.938884074712349, y: 18.252284749830793))
+path.addCurve(to: CGPoint(x: 6.299999999999999, y: 15.0), control1: CGPoint(x: 6.06111592528765, y: 17.147715250169206), control2: CGPoint(x: 5.747715250169206, y: 15.93888407471235))
+path.addCurve(to: CGPoint(x: 5.549999999999999, y: 12.25), control1: CGPoint(x: 6.852284749830792, y: 14.033501687796111), control2: CGPoint(x: 6.516498312203887, y: 12.802284749830793))
+path.addCurve(to: CGPoint(x: 2.799999999999999, y: 13.0), control1: CGPoint(x: 4.58350168779611, y: 11.697715250169207), control2: CGPoint(x: 3.352284749830792, y: 12.033501687796111))
+path.move(to: CGPoint(x: 20.6, y: 6.8))
+path.addLine(to: CGPoint(x: 17.3, y: 4.699999999999999))
+path.move(to: CGPoint(x: 15.2, y: 8.1))
+path.addLine(to: CGPoint(x: 18.5, y: 10.2))
+path.move(to: CGPoint(x: 14.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 14.0, y: 20.65685424949238), control2: CGPoint(x: 15.34314575050762, y: 22.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 19.0), control1: CGPoint(x: 18.65685424949238, y: 22.0), control2: CGPoint(x: 20.0, y: 20.65685424949238))
+path.addCurve(to: CGPoint(x: 17.0, y: 16.0), control1: CGPoint(x: 20.0, y: 17.34314575050762), control2: CGPoint(x: 18.65685424949238, y: 16.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 19.0), control1: CGPoint(x: 15.34314575050762, y: 16.0), control2: CGPoint(x: 14.0, y: 17.34314575050762))
+        return path
+    }()
+        
+    /// Hockey Mask icon path
+    static let hockeyMaskPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 20.1, y: 3.9000000000000004), control1: CGPoint(x: 22.0, y: 7.9), control2: CGPoint(x: 21.6, y: 5.4))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 18.6, y: 2.4000000000000004), control2: CGPoint(x: 16.1, y: 2.0))
+path.addCurve(to: CGPoint(x: 3.9000000000000004, y: 3.9), control1: CGPoint(x: 7.899999999999999, y: 2.0), control2: CGPoint(x: 5.4, y: 2.4))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 2.4000000000000004, y: 5.4), control2: CGPoint(x: 2.0, y: 7.9))
+path.move(to: CGPoint(x: 12.0, y: 6.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 5.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 8.5, y: 17.0))
+path.addEllipse(in: CGRect(x: 8.16, y: 16.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.0, y: 15.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 14.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.5, y: 17.0))
+path.addEllipse(in: CGRect(x: 15.16, y: 16.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 6.0, y: 10.5))
+path.addCurve(to: CGPoint(x: 8.0, y: 12.5), control1: CGPoint(x: 6.0, y: 11.604569499661586), control2: CGPoint(x: 6.8954305003384135, y: 12.5))
+path.addCurve(to: CGPoint(x: 10.0, y: 10.5), control1: CGPoint(x: 9.104569499661586, y: 12.5), control2: CGPoint(x: 10.0, y: 11.604569499661586))
+path.addCurve(to: CGPoint(x: 8.0, y: 8.5), control1: CGPoint(x: 10.0, y: 9.395430500338414), control2: CGPoint(x: 9.104569499661586, y: 8.5))
+path.addCurve(to: CGPoint(x: 6.0, y: 10.5), control1: CGPoint(x: 6.8954305003384135, y: 8.5), control2: CGPoint(x: 6.0, y: 9.395430500338414))
+path.move(to: CGPoint(x: 14.0, y: 10.5))
+path.addCurve(to: CGPoint(x: 16.0, y: 12.5), control1: CGPoint(x: 14.0, y: 11.604569499661586), control2: CGPoint(x: 14.895430500338414, y: 12.5))
+path.addCurve(to: CGPoint(x: 18.0, y: 10.5), control1: CGPoint(x: 17.104569499661586, y: 12.5), control2: CGPoint(x: 18.0, y: 11.604569499661586))
+path.addCurve(to: CGPoint(x: 16.0, y: 8.5), control1: CGPoint(x: 18.0, y: 9.395430500338414), control2: CGPoint(x: 17.104569499661586, y: 8.5))
+path.addCurve(to: CGPoint(x: 14.0, y: 10.5), control1: CGPoint(x: 14.895430500338414, y: 8.5), control2: CGPoint(x: 14.0, y: 9.395430500338414))
+        return path
+    }()
+        
+    /// Horse Head icon path
+    static let horseHeadPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 11.5, y: 12.0))
+path.addLine(to: CGPoint(x: 11.0, y: 12.0))
+path.move(to: CGPoint(x: 5.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 19.0), control1: CGPoint(x: 5.0, y: 17.209138999323173), control2: CGPoint(x: 6.790861000676827, y: 19.0))
+path.addLine(to: CGPoint(x: 16.8, y: 19.0))
+path.addLine(to: CGPoint(x: 17.1, y: 19.3))
+path.addCurve(to: CGPoint(x: 21.210812230568976, y: 18.96310513952374), control1: CGPoint(x: 18.342410347595525, y: 20.29685761359986), control2: CGPoint(x: 20.147281054331042, y: 20.14894240102904))
+path.addCurve(to: CGPoint(x: 21.100000000000005, y: 14.84), control1: CGPoint(x: 22.274343406806913, y: 17.777267878018442), control2: CGPoint(x: 22.225690795672136, y: 15.96699991399444))
+path.addLine(to: CGPoint(x: 12.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 2.0), control1: CGPoint(x: 12.0, y: 4.0), control2: CGPoint(x: 11.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 7.0), control1: CGPoint(x: 11.0, y: 2.0), control2: CGPoint(x: 8.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 10.0), control1: CGPoint(x: 4.0, y: 8.0), control2: CGPoint(x: 2.0, y: 10.0))
+path.move(to: CGPoint(x: 6.14, y: 17.8))
+path.addCurve(to: CGPoint(x: 2.0, y: 22.0), control1: CGPoint(x: 6.14, y: 17.8), control2: CGPoint(x: 4.0, y: 19.0))
+        return path
+    }()
+        
+    /// Hot Dog icon path
+    static let hotDogPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.1, y: 3.5))
+path.addCurve(to: CGPoint(x: 14.216157541822618, y: 2.048901677488551), control1: CGPoint(x: 16.385269697939524, y: 2.632635311781253), control2: CGPoint(x: 15.33861176006424, y: 2.105975620788972))
+path.addCurve(to: CGPoint(x: 11.200000000000003, y: 3.1999999999999993), control1: CGPoint(x: 13.093703323580998, y: 1.9918277341881296), control2: CGPoint(x: 11.999023125611297, y: 2.4096058250526986))
+path.addLine(to: CGPoint(x: 3.200000000000001, y: 11.2))
+path.addCurve(to: CGPoint(x: 2.0002835318448344, y: 14.194058185361193), control1: CGPoint(x: 2.3975984478990635, y: 11.985403446305543), control2: CGPoint(x: 1.962243956827896, y: 13.071890722361507))
+path.addCurve(to: CGPoint(x: 3.4000000000000012, y: 17.1), control1: CGPoint(x: 2.0383231068617733, y: 15.316225648360877), control2: CGPoint(x: 2.5462538278384326, y: 16.370737154516913))
+path.move(to: CGPoint(x: 6.9, y: 20.7))
+path.addCurve(to: CGPoint(x: 9.828537850658813, y: 22.01626681112998), control1: CGPoint(x: 7.654558309643306, y: 21.521530932642314), control2: CGPoint(x: 8.713228937361144, y: 21.99736327022663))
+path.addCurve(to: CGPoint(x: 12.8, y: 20.800000000000004), control1: CGPoint(x: 10.943846763956483, y: 22.03517035203333), control2: CGPoint(x: 12.018034587130815, y: 21.595488157684475))
+path.addLine(to: CGPoint(x: 20.8, y: 12.8))
+path.addCurve(to: CGPoint(x: 22.048887678001943, y: 9.827984954610137), control1: CGPoint(x: 21.614749815038873, y: 12.028366329464959), control2: CGPoint(x: 22.067904552688994, y: 10.949980561146274))
+path.addCurve(to: CGPoint(x: 20.7, y: 6.9), control1: CGPoint(x: 22.02987080331489, y: 8.705989348073999), control2: CGPoint(x: 21.54043139846594, y: 7.64357975166208))
+path.move(to: CGPoint(x: 21.3, y: 6.3))
+path.addCurve(to: CGPoint(x: 21.06776695296637, y: 3.032233047033631), control1: CGPoint(x: 22.04647556490507, y: 5.30469924679324), control2: CGPoint(x: 21.947496842857092, y: 3.911962936924353))
+path.addCurve(to: CGPoint(x: 17.8, y: 2.7999999999999994), control1: CGPoint(x: 20.188037063075647, y: 2.152503157142909), control2: CGPoint(x: 18.79530075320676, y: 2.0535244350949307))
+path.addLine(to: CGPoint(x: 2.8000000000000007, y: 17.8))
+path.addCurve(to: CGPoint(x: 3.0322330470336314, y: 21.06776695296637), control1: CGPoint(x: 2.053524435094932, y: 18.79530075320676), control2: CGPoint(x: 2.1525031571429096, y: 20.188037063075647))
+path.addCurve(to: CGPoint(x: 6.3, y: 21.3), control1: CGPoint(x: 3.911962936924353, y: 21.947496842857092), control2: CGPoint(x: 5.304699246793241, y: 22.04647556490507))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// House icon path
+    static let housePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 3.0, y: 9.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 21.0, y: 9.0))
+path.addLine(to: CGPoint(x: 21.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 22.0), control1: CGPoint(x: 21.0, y: 21.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 5.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 20.0), control1: CGPoint(x: 3.8954305003384135, y: 22.0), control2: CGPoint(x: 3.0, y: 21.104569499661586))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.0, y: 22.0))
+path.addLine(to: CGPoint(x: 9.0, y: 12.0))
+path.addLine(to: CGPoint(x: 15.0, y: 12.0))
+path.addLine(to: CGPoint(x: 15.0, y: 22.0))
+        return path
+    }()
+        
+    /// House Manor icon path
+    static let houseManorPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 6.0))
+path.addLine(to: CGPoint(x: 9.0, y: 2.0))
+path.addLine(to: CGPoint(x: 5.0, y: 2.0))
+path.addLine(to: CGPoint(x: 5.0, y: 6.0))
+path.move(to: CGPoint(x: 19.0, y: 6.0))
+path.addLine(to: CGPoint(x: 19.0, y: 2.0))
+path.addLine(to: CGPoint(x: 15.0, y: 2.0))
+path.addLine(to: CGPoint(x: 15.0, y: 6.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addLine(to: CGPoint(x: 6.0, y: 12.0))
+path.move(to: CGPoint(x: 6.0, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 12.0))
+path.addLine(to: CGPoint(x: 11.5, y: 6.0))
+path.move(to: CGPoint(x: 12.5, y: 6.0))
+path.addLine(to: CGPoint(x: 18.0, y: 12.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.move(to: CGPoint(x: 18.0, y: 12.0))
+path.addLine(to: CGPoint(x: 22.0, y: 12.0))
+path.move(to: CGPoint(x: 12.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.0, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 15.0), control1: CGPoint(x: 10.0, y: 15.895430500338414), control2: CGPoint(x: 10.895430500338414, y: 15.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 17.0), control1: CGPoint(x: 13.104569499661586, y: 15.0), control2: CGPoint(x: 14.0, y: 15.895430500338414))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+path.move(to: CGPoint(x: 4.0, y: 6.0))
+path.addLine(to: CGPoint(x: 20.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 8.0), control1: CGPoint(x: 21.104569499661586, y: 6.0), control2: CGPoint(x: 22.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 6.0), control1: CGPoint(x: 2.0, y: 6.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 6.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// House Off icon path
+    static let houseOffPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 21.0, y: 15.3))
+path.addLine(to: CGPoint(x: 21.0, y: 9.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 9.6, y: 3.9))
+path.move(to: CGPoint(x: 2.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.move(to: CGPoint(x: 6.4, y: 6.4))
+path.addLine(to: CGPoint(x: 3.0, y: 9.0))
+path.addLine(to: CGPoint(x: 3.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 22.0), control1: CGPoint(x: 3.0, y: 21.104569499661586), control2: CGPoint(x: 3.8954305003384135, y: 22.0))
+path.addLine(to: CGPoint(x: 19.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 20.8, y: 20.799999999999997), control1: CGPoint(x: 19.783226732008288, y: 21.98701616856322), control2: CGPoint(x: 20.48677387405517, y: 21.51798474053196))
+path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 9.0, y: 12.0))
+path.addLine(to: CGPoint(x: 9.0, y: 22.0))
+path.move(to: CGPoint(x: 15.0, y: 22.0))
+path.addLine(to: CGPoint(x: 15.0, y: 15.0))
+        return path
+    }()
+        
+    /// House Roof icon path
+    static let houseRoofPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.6, y: 10.4))
+path.addCurve(to: CGPoint(x: 2.0646221251260872, y: 12.45269836699119), control1: CGPoint(x: 2.067674260152294, y: 10.939471037500235), control2: CGPoint(x: 1.8635893668357042, y: 11.721955235856763))
+path.addCurve(to: CGPoint(x: 3.5746221302767998, y: 13.942698380144762), control1: CGPoint(x: 2.2656548834164703, y: 13.183441498125616), control2: CGPoint(x: 2.8412636345846254, y: 13.751426295401334))
+path.addCurve(to: CGPoint(x: 5.619999991929637, y: 13.380000008178692), control1: CGPoint(x: 4.307980625968974, y: 14.133970464888188), control2: CGPoint(x: 5.087674263450433, y: 13.919471056896851))
+path.addLine(to: CGPoint(x: 12.0, y: 7.0))
+path.addLine(to: CGPoint(x: 18.4, y: 13.4))
+path.addCurve(to: CGPoint(x: 21.400000000196673, y: 13.379000028096524), control1: CGPoint(x: 19.23422610691508, y: 14.222628142685918), control2: CGPoint(x: 20.577371857510755, y: 14.213226135011608))
+path.addCurve(to: CGPoint(x: 21.3790000282932, y: 10.37900002789985), control1: CGPoint(x: 22.22262814288259, y: 12.544773921181442), control2: CGPoint(x: 22.21322613520828, y: 11.201628170585767))
+path.addLine(to: CGPoint(x: 13.7, y: 2.7))
+path.addCurve(to: CGPoint(x: 11.99716815207131, y: 1.994097412685015), control1: CGPoint(x: 13.248984591804863, y: 2.2474096192986885), control2: CGPoint(x: 12.636114462339064, y: 1.9933465944590831))
+path.addCurve(to: CGPoint(x: 10.296, y: 2.7039999999999997), control1: CGPoint(x: 11.358221841803557, y: 1.9948482309109465), control2: CGPoint(x: 10.745950496942793, y: 2.2503509049565755))
+path.closeSubpath()
+path.move(to: CGPoint(x: 20.0, y: 14.0))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 22.0), control1: CGPoint(x: 20.0, y: 21.104569499661586), control2: CGPoint(x: 19.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 20.0), control1: CGPoint(x: 4.8954305003384135, y: 22.0), control2: CGPoint(x: 4.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 4.0, y: 14.0))
+path.move(to: CGPoint(x: 14.0, y: 22.0))
+path.addLine(to: CGPoint(x: 14.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 14.0, y: 14.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 14.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 16.0), control1: CGPoint(x: 10.895430500338414, y: 14.0), control2: CGPoint(x: 10.0, y: 14.895430500338414))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+        return path
+    }()
+        
+    /// House Roof Off icon path
+    static let houseRoofOffPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 6.8))
+path.addLine(to: CGPoint(x: 18.6, y: 13.399999999999999))
+path.addCurve(to: CGPoint(x: 21.214213562373097, y: 13.214213562373097), control1: CGPoint(x: 19.396240602565406, y: 13.997180451924056), control2: CGPoint(x: 20.510429650460516, y: 13.917997474285674))
+path.addCurve(to: CGPoint(x: 21.4, y: 10.599999999999998), control1: CGPoint(x: 21.917997474285674, y: 12.510429650460518), control2: CGPoint(x: 21.997180451924056, y: 11.396240602565404))
+path.addLine(to: CGPoint(x: 13.400000000000002, y: 2.599999999999998))
+path.addCurve(to: CGPoint(x: 10.600000000000001, y: 2.599999999999998), control1: CGPoint(x: 12.600000000000001, y: 1.7999999999999978), control2: CGPoint(x: 11.400000000000002, y: 1.7999999999999978))
+path.addLine(to: CGPoint(x: 9.2, y: 4.0))
+path.move(to: CGPoint(x: 2.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.move(to: CGPoint(x: 6.6, y: 6.6))
+path.addLine(to: CGPoint(x: 2.5999999999999996, y: 10.6))
+path.addCurve(to: CGPoint(x: 2.785786437626908, y: 13.214213562373093), control1: CGPoint(x: 2.0028195480759465, y: 11.396240602565408), control2: CGPoint(x: 2.082002525714331, y: 12.510429650460518))
+path.addCurve(to: CGPoint(x: 5.4, y: 13.399999999999999), control1: CGPoint(x: 3.489570349539485, y: 13.91799747428567), control2: CGPoint(x: 4.603759397434594, y: 13.997180451924052))
+path.addLine(to: CGPoint(x: 9.399999999999999, y: 9.399999999999999))
+path.move(to: CGPoint(x: 14.0, y: 22.0))
+path.addLine(to: CGPoint(x: 14.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 14.0, y: 14.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 14.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 16.0), control1: CGPoint(x: 10.895430500338414, y: 14.0), control2: CGPoint(x: 10.0, y: 14.895430500338414))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.move(to: CGPoint(x: 4.0, y: 14.0))
+path.addLine(to: CGPoint(x: 4.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 22.0), control1: CGPoint(x: 4.0, y: 21.104569499661586), control2: CGPoint(x: 4.8954305003384135, y: 22.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 20.0), control1: CGPoint(x: 19.104569499661586, y: 22.0), control2: CGPoint(x: 20.0, y: 21.104569499661586))
+        return path
+    }()
+        
+    /// Houses icon path
+    static let housesPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 17.0))
+path.addLine(to: CGPoint(x: 3.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 16.0), control1: CGPoint(x: 2.4, y: 17.0), control2: CGPoint(x: 2.0, y: 16.6))
+path.addLine(to: CGPoint(x: 2.0, y: 8.5))
+path.addLine(to: CGPoint(x: 8.0, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 11.5))
+path.addLine(to: CGPoint(x: 18.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 20.0), control1: CGPoint(x: 18.0, y: 19.6), control2: CGPoint(x: 17.6, y: 20.0))
+path.addLine(to: CGPoint(x: 7.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 19.0), control1: CGPoint(x: 6.4, y: 20.0), control2: CGPoint(x: 6.0, y: 19.6))
+path.addLine(to: CGPoint(x: 6.0, y: 11.5))
+path.addLine(to: CGPoint(x: 16.0, y: 4.0))
+path.addLine(to: CGPoint(x: 22.0, y: 8.5))
+path.addLine(to: CGPoint(x: 22.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 17.0), control1: CGPoint(x: 22.0, y: 16.6), control2: CGPoint(x: 21.6, y: 17.0))
+path.addLine(to: CGPoint(x: 18.0, y: 17.0))
+path.move(to: CGPoint(x: 10.0, y: 20.0))
+path.addLine(to: CGPoint(x: 10.0, y: 14.0))
+path.addLine(to: CGPoint(x: 14.0, y: 14.0))
+path.addLine(to: CGPoint(x: 14.0, y: 20.0))
+        return path
+    }()
+        
+    /// Ice Hockey icon path
+    static let iceHockeyPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 4.0))
+path.addLine(to: CGPoint(x: 10.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 10.0), control1: CGPoint(x: 10.0, y: 9.1), control2: CGPoint(x: 8.2, y: 10.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 8.0), control1: CGPoint(x: 3.8000000000000007, y: 10.0), control2: CGPoint(x: 2.0, y: 9.1))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.move(to: CGPoint(x: 4.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 19.0), control1: CGPoint(x: 2.8954305003384135, y: 17.0), control2: CGPoint(x: 2.0, y: 17.895430500338414))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 22.0), control1: CGPoint(x: 2.0, y: 21.104569499661586), control2: CGPoint(x: 2.8954305003384135, y: 22.0))
+path.addLine(to: CGPoint(x: 8.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 13.2, y: 19.0), control1: CGPoint(x: 10.144968019105798, y: 22.001375234125348), control2: CGPoint(x: 12.127516210877975, y: 20.857597431179858))
+path.addLine(to: CGPoint(x: 21.7, y: 5.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 2.3000000000000007), control1: CGPoint(x: 22.252284749830793, y: 4.061115925287651), control2: CGPoint(x: 21.938884074712348, y: 2.8522847498307944))
+path.addCurve(to: CGPoint(x: 18.3, y: 3.0), control1: CGPoint(x: 20.061115925287652, y: 1.747715250169207), control2: CGPoint(x: 18.852284749830794, y: 2.061115925287652))
+path.addLine(to: CGPoint(x: 10.4, y: 16.0))
+path.addCurve(to: CGPoint(x: 8.700000000000001, y: 17.0), control1: CGPoint(x: 10.0, y: 16.6), control2: CGPoint(x: 9.4, y: 17.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 20.6, y: 6.8))
+path.addLine(to: CGPoint(x: 17.3, y: 4.699999999999999))
+path.move(to: CGPoint(x: 15.2, y: 8.1))
+path.addLine(to: CGPoint(x: 18.5, y: 10.2))
+path.move(to: CGPoint(x: 6.0, y: 17.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.move(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 6.0), control1: CGPoint(x: 2.0000000000000004, y: 5.104569499661587), control2: CGPoint(x: 3.7908610006768266, y: 6.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 4.0), control1: CGPoint(x: 8.209138999323175, y: 6.0), control2: CGPoint(x: 10.0, y: 5.1045694996615865))
+path.addCurve(to: CGPoint(x: 6.0, y: 2.0), control1: CGPoint(x: 10.0, y: 2.895430500338413), control2: CGPoint(x: 8.209138999323175, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 3.9999999999999996), control1: CGPoint(x: 3.7908610006768266, y: 2.0), control2: CGPoint(x: 2.0000000000000004, y: 2.8954305003384126))
+        return path
+    }()
+        
+    /// Ice Skate icon path
+    static let iceSkatePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 11.0, y: 2.0))
+path.addLine(to: CGPoint(x: 11.0, y: 11.0))
+path.move(to: CGPoint(x: 11.0, y: 7.0))
+path.addLine(to: CGPoint(x: 8.0, y: 8.0))
+path.move(to: CGPoint(x: 11.0, y: 3.0))
+path.addLine(to: CGPoint(x: 4.0, y: 5.0))
+path.addLine(to: CGPoint(x: 4.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 18.0), control1: CGPoint(x: 4.0, y: 17.104569499661586), control2: CGPoint(x: 4.8954305003384135, y: 18.0))
+path.addLine(to: CGPoint(x: 16.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 16.0), control1: CGPoint(x: 17.104569499661586, y: 18.0), control2: CGPoint(x: 18.0, y: 17.104569499661586))
+path.addCurve(to: CGPoint(x: 16.200000000000415, y: 13.200000000000186), control1: CGPoint(x: 17.999441130878047, y: 14.794898692525948), control2: CGPoint(x: 17.296105630088896, y: 13.70082124685358))
+path.addLine(to: CGPoint(x: 11.0, y: 11.0))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
+path.move(to: CGPoint(x: 7.0, y: 18.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.move(to: CGPoint(x: 15.0, y: 18.0))
+path.addLine(to: CGPoint(x: 15.0, y: 22.0))
+path.move(to: CGPoint(x: 4.0, y: 22.0))
+path.addLine(to: CGPoint(x: 16.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.3), control1: CGPoint(x: 18.1, y: 22.0), control2: CGPoint(x: 19.9, y: 20.9))
+        return path
+    }()
+        
+    /// Igloo icon path
+    static let iglooPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 18.0, y: 20.2))
+path.addCurve(to: CGPoint(x: 22.0, y: 17.0), control1: CGPoint(x: 20.4, y: 19.5), control2: CGPoint(x: 22.0, y: 18.3))
+path.addLine(to: CGPoint(x: 22.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+path.addLine(to: CGPoint(x: 2.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 20.2), control1: CGPoint(x: 2.0, y: 18.3), control2: CGPoint(x: 3.6, y: 19.5))
+path.move(to: CGPoint(x: 6.5, y: 3.65))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 7.5, y: 5.0), control2: CGPoint(x: 9.6, y: 6.0))
+path.addCurve(to: CGPoint(x: 17.5, y: 3.65), control1: CGPoint(x: 14.4, y: 6.0), control2: CGPoint(x: 16.5, y: 5.0))
+path.move(to: CGPoint(x: 10.1, y: 5.8))
+path.addCurve(to: CGPoint(x: 8.1, y: 10.399999999999999), control1: CGPoint(x: 9.1, y: 6.7), control2: CGPoint(x: 8.299999999999999, y: 8.4))
+path.move(to: CGPoint(x: 15.9, y: 10.4))
+path.addCurve(to: CGPoint(x: 13.9, y: 5.800000000000001), control1: CGPoint(x: 15.6, y: 8.4), control2: CGPoint(x: 14.9, y: 6.800000000000001))
+path.move(to: CGPoint(x: 3.3, y: 7.1))
+path.addCurve(to: CGPoint(x: 12.0, y: 11.0), control1: CGPoint(x: 5.3, y: 9.5), control2: CGPoint(x: 8.5, y: 11.0))
+path.addCurve(to: CGPoint(x: 20.7, y: 7.1), control1: CGPoint(x: 15.5, y: 11.0), control2: CGPoint(x: 18.7, y: 9.5))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 6.3, y: 15.1), control1: CGPoint(x: 2.9, y: 13.2), control2: CGPoint(x: 4.4, y: 14.4))
+path.move(to: CGPoint(x: 6.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 22.0), control1: CGPoint(x: 6.0, y: 21.6), control2: CGPoint(x: 6.4, y: 22.0))
+path.addLine(to: CGPoint(x: 17.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 21.0), control1: CGPoint(x: 17.6, y: 22.0), control2: CGPoint(x: 18.0, y: 21.6))
+path.addLine(to: CGPoint(x: 18.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 11.0), control1: CGPoint(x: 18.0, y: 13.686291501015239), control2: CGPoint(x: 15.313708498984761, y: 11.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 17.0), control1: CGPoint(x: 8.68629150101524, y: 11.0), control2: CGPoint(x: 6.000000000000001, y: 13.686291501015239))
+path.closeSubpath()
+path.move(to: CGPoint(x: 17.7, y: 15.1))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 19.599999999999998, y: 14.4), control2: CGPoint(x: 21.099999999999998, y: 13.2))
+path.move(to: CGPoint(x: 10.0, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 15.0), control1: CGPoint(x: 10.0, y: 15.895430500338414), control2: CGPoint(x: 10.895430500338414, y: 15.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 17.0), control1: CGPoint(x: 13.104569499661586, y: 15.0), control2: CGPoint(x: 14.0, y: 15.895430500338414))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+        return path
+    }()
+        
+    /// Indian Rupee Circle icon path
+    static let indianRupeeCirclePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 11.0))
+path.addLine(to: CGPoint(x: 15.5, y: 11.0))
+path.move(to: CGPoint(x: 15.5, y: 7.0))
+path.addLine(to: CGPoint(x: 9.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 11.0), control1: CGPoint(x: 11.209138999323175, y: 7.0), control2: CGPoint(x: 13.0, y: 8.790861000676827))
+path.addCurve(to: CGPoint(x: 9.0, y: 15.0), control1: CGPoint(x: 13.0, y: 13.209138999323173), control2: CGPoint(x: 11.209138999323175, y: 15.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Indian Rupee Square icon path
+    static let indianRupeeSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 7.0))
+path.addLine(to: CGPoint(x: 16.0, y: 7.0))
+path.move(to: CGPoint(x: 8.0, y: 11.0))
+path.addLine(to: CGPoint(x: 16.0, y: 11.0))
+path.move(to: CGPoint(x: 12.0, y: 17.0))
+path.addLine(to: CGPoint(x: 8.0, y: 15.0))
+path.addLine(to: CGPoint(x: 9.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 11.0), control1: CGPoint(x: 11.209138999323175, y: 15.0), control2: CGPoint(x: 13.0, y: 13.209138999323173))
+path.addCurve(to: CGPoint(x: 9.0, y: 7.0), control1: CGPoint(x: 13.0, y: 8.790861000676827), control2: CGPoint(x: 11.209138999323175, y: 7.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Intercom icon path
+    static let intercomPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 9.0))
+path.addLine(to: CGPoint(x: 6.0, y: 15.0))
+path.move(to: CGPoint(x: 10.0, y: 6.0))
+path.addLine(to: CGPoint(x: 10.0, y: 18.0))
+path.move(to: CGPoint(x: 14.0, y: 6.0))
+path.addLine(to: CGPoint(x: 14.0, y: 18.0))
+path.move(to: CGPoint(x: 18.0, y: 9.0))
+path.addLine(to: CGPoint(x: 18.0, y: 15.0))
+path.move(to: CGPoint(x: 4.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.0), control1: CGPoint(x: 21.104569499661586, y: 2.0), control2: CGPoint(x: 22.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 2.0), control1: CGPoint(x: 2.0, y: 2.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Iron icon path
+    static let ironPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 7.0))
+path.addEllipse(in: CGRect(x: 7.66, y: 6.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 6.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 5.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 6.0, y: 15.0))
+path.addEllipse(in: CGRect(x: 5.66, y: 14.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.0, y: 15.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 14.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.0, y: 19.0))
+path.addLine(to: CGPoint(x: 14.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 2.0), control1: CGPoint(x: 14.0, y: 6.0), control2: CGPoint(x: 9.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 7.0, y: 2.0), control2: CGPoint(x: 2.0, y: 6.0))
+path.addLine(to: CGPoint(x: 2.0, y: 19.0))
+path.addLine(to: CGPoint(x: 16.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 17.0), control1: CGPoint(x: 17.104569499661586, y: 19.0), control2: CGPoint(x: 18.0, y: 18.104569499661586))
+path.addLine(to: CGPoint(x: 18.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 18.0, y: 6.8954305003384135), control2: CGPoint(x: 18.895430500338414, y: 6.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 7.999999999999999), control1: CGPoint(x: 21.104569499661586, y: 6.0), control2: CGPoint(x: 22.0, y: 6.895430500338413))
+path.addLine(to: CGPoint(x: 22.0, y: 17.0))
+path.move(to: CGPoint(x: 3.0, y: 22.0))
+path.addLine(to: CGPoint(x: 13.0, y: 22.0))
+        return path
+    }()
+        
+    /// Iron Off icon path
+    static let ironOffPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.9, y: 7.3))
+path.addCurve(to: CGPoint(x: 8.0, y: 2.0), control1: CGPoint(x: 11.4, y: 4.0), control2: CGPoint(x: 8.7, y: 2.0))
+path.move(to: CGPoint(x: 22.0, y: 16.3))
+path.addLine(to: CGPoint(x: 22.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 22.0, y: 6.8954305003384135), control2: CGPoint(x: 21.104569499661586, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 18.895430500338414, y: 6.0), control2: CGPoint(x: 18.0, y: 6.895430500338413))
+path.addLine(to: CGPoint(x: 18.0, y: 12.3))
+path.move(to: CGPoint(x: 2.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.move(to: CGPoint(x: 6.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 5.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 6.0, y: 15.0))
+path.addEllipse(in: CGRect(x: 5.66, y: 14.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.0, y: 15.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 14.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 4.7, y: 4.7))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 3.3, y: 6.4), control2: CGPoint(x: 2.0, y: 9.0))
+path.addLine(to: CGPoint(x: 2.0, y: 19.0))
+path.addLine(to: CGPoint(x: 14.0, y: 19.0))
+path.addLine(to: CGPoint(x: 14.0, y: 14.0))
+path.move(to: CGPoint(x: 3.0, y: 22.0))
+path.addLine(to: CGPoint(x: 13.0, y: 22.0))
+        return path
+    }()
+        
+    /// Ironing Board icon path
+    static let ironingBoardPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 6.999999999999999), control1: CGPoint(x: 3.7908610006768266, y: 3.0), control2: CGPoint(x: 2.0000000000000004, y: 4.790861000676825))
+path.addCurve(to: CGPoint(x: 5.999999999999999, y: 11.0), control1: CGPoint(x: 2.0, y: 9.209138999323173), control2: CGPoint(x: 3.7908610006768253, y: 11.0))
+path.addLine(to: CGPoint(x: 20.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 9.0), control1: CGPoint(x: 21.104569499661586, y: 11.0), control2: CGPoint(x: 22.0, y: 10.104569499661586))
+path.addLine(to: CGPoint(x: 22.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 3.0), control1: CGPoint(x: 22.0, y: 3.895430500338413), control2: CGPoint(x: 21.104569499661586, y: 3.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 6.0, y: 21.0))
+path.addLine(to: CGPoint(x: 18.0, y: 11.0))
+path.move(to: CGPoint(x: 6.0, y: 11.0))
+path.addLine(to: CGPoint(x: 18.0, y: 21.0))
+        return path
+    }()
+        
+    /// Italic Square icon path
+    static let italicSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.0, y: 7.0))
+path.addLine(to: CGPoint(x: 10.0, y: 7.0))
+path.move(to: CGPoint(x: 13.5, y: 7.0))
+path.addLine(to: CGPoint(x: 9.5, y: 17.0))
+path.move(to: CGPoint(x: 13.0, y: 17.0))
+path.addLine(to: CGPoint(x: 7.0, y: 17.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Jacket icon path
+    static let jacketPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 8.0, y: 5.1), control2: CGPoint(x: 9.8, y: 6.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 4.0), control1: CGPoint(x: 14.2, y: 6.0), control2: CGPoint(x: 16.0, y: 5.1))
+path.addLine(to: CGPoint(x: 16.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 2.0), control1: CGPoint(x: 16.0, y: 2.4), control2: CGPoint(x: 15.6, y: 2.0))
+path.addLine(to: CGPoint(x: 9.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 3.0), control1: CGPoint(x: 8.4, y: 2.0), control2: CGPoint(x: 8.0, y: 2.4))
+path.closeSubpath()
+path.move(to: CGPoint(x: 8.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 8.0, y: 6.0), control2: CGPoint(x: 12.0, y: 9.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 4.0), control1: CGPoint(x: 12.0, y: 9.0), control2: CGPoint(x: 16.0, y: 6.0))
+path.move(to: CGPoint(x: 6.0, y: 19.0))
+path.addLine(to: CGPoint(x: 3.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 2.4, y: 19.0), control2: CGPoint(x: 2.0, y: 18.6))
+path.addLine(to: CGPoint(x: 2.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 3.9, y: 4.4), control1: CGPoint(x: 2.0, y: 5.9), control2: CGPoint(x: 2.8, y: 4.7))
+path.addLine(to: CGPoint(x: 8.0, y: 3.0))
+path.move(to: CGPoint(x: 18.0, y: 9.0))
+path.addLine(to: CGPoint(x: 18.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 18.0, y: 21.6), control2: CGPoint(x: 17.6, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 21.0), control1: CGPoint(x: 6.4, y: 22.0), control2: CGPoint(x: 6.0, y: 21.6))
+path.addLine(to: CGPoint(x: 6.0, y: 9.0))
+path.move(to: CGPoint(x: 16.0, y: 3.0))
+path.addLine(to: CGPoint(x: 20.1, y: 4.4))
+path.addCurve(to: CGPoint(x: 22.0, y: 7.0), control1: CGPoint(x: 21.2, y: 4.7), control2: CGPoint(x: 22.0, y: 5.9))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 22.0, y: 18.6), control2: CGPoint(x: 21.6, y: 19.0))
+path.addLine(to: CGPoint(x: 18.0, y: 19.0))
+path.move(to: CGPoint(x: 6.0, y: 15.0))
+path.addLine(to: CGPoint(x: 8.0, y: 13.0))
+path.move(to: CGPoint(x: 18.0, y: 15.0))
+path.addLine(to: CGPoint(x: 16.0, y: 13.0))
+        return path
+    }()
+        
+    /// Jacket Sports icon path
+    static let jacketSportsPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 8.0, y: 5.1), control2: CGPoint(x: 9.8, y: 6.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 4.0), control1: CGPoint(x: 14.2, y: 6.0), control2: CGPoint(x: 16.0, y: 5.1))
+path.addLine(to: CGPoint(x: 16.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 2.0), control1: CGPoint(x: 16.0, y: 2.4), control2: CGPoint(x: 15.6, y: 2.0))
+path.addLine(to: CGPoint(x: 9.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 3.0), control1: CGPoint(x: 8.4, y: 2.0), control2: CGPoint(x: 8.0, y: 2.4))
+path.closeSubpath()
+path.move(to: CGPoint(x: 8.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 8.0, y: 6.0), control2: CGPoint(x: 12.0, y: 9.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 4.0), control1: CGPoint(x: 12.0, y: 9.0), control2: CGPoint(x: 16.0, y: 6.0))
+path.move(to: CGPoint(x: 6.0, y: 19.0))
+path.addLine(to: CGPoint(x: 3.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 2.4, y: 19.0), control2: CGPoint(x: 2.0, y: 18.6))
+path.addLine(to: CGPoint(x: 2.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 3.9, y: 4.4), control1: CGPoint(x: 2.0, y: 5.9), control2: CGPoint(x: 2.8, y: 4.7))
+path.addLine(to: CGPoint(x: 8.0, y: 3.0))
+path.move(to: CGPoint(x: 18.0, y: 9.0))
+path.addLine(to: CGPoint(x: 18.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 18.0, y: 21.6), control2: CGPoint(x: 17.6, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 21.0), control1: CGPoint(x: 6.4, y: 22.0), control2: CGPoint(x: 6.0, y: 21.6))
+path.addLine(to: CGPoint(x: 6.0, y: 9.0))
+path.move(to: CGPoint(x: 16.0, y: 3.0))
+path.addLine(to: CGPoint(x: 20.1, y: 4.4))
+path.addCurve(to: CGPoint(x: 22.0, y: 7.0), control1: CGPoint(x: 21.2, y: 4.7), control2: CGPoint(x: 22.0, y: 5.9))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 22.0, y: 18.6), control2: CGPoint(x: 21.6, y: 19.0))
+path.addLine(to: CGPoint(x: 18.0, y: 19.0))
+path.move(to: CGPoint(x: 2.0, y: 15.0))
+path.addLine(to: CGPoint(x: 6.0, y: 15.0))
+path.addLine(to: CGPoint(x: 8.0, y: 13.0))
+path.move(to: CGPoint(x: 22.0, y: 15.0))
+path.addLine(to: CGPoint(x: 18.0, y: 15.0))
+path.addLine(to: CGPoint(x: 16.0, y: 13.0))
+path.move(to: CGPoint(x: 6.0, y: 18.0))
+path.addLine(to: CGPoint(x: 18.0, y: 18.0))
+        return path
+    }()
+        
+    /// Japanese Yen Circle icon path
+    static let japaneseYenCirclePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 7.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 15.0, y: 7.0))
+path.move(to: CGPoint(x: 9.0, y: 11.0))
+path.addLine(to: CGPoint(x: 15.0, y: 11.0))
+path.move(to: CGPoint(x: 9.0, y: 15.0))
+path.addLine(to: CGPoint(x: 15.0, y: 15.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Japanese Yen Square icon path
+    static let japaneseYenSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 7.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 17.0))
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 15.0, y: 7.0))
+path.move(to: CGPoint(x: 9.0, y: 11.0))
+path.addLine(to: CGPoint(x: 15.0, y: 11.0))
+path.move(to: CGPoint(x: 9.0, y: 15.0))
+path.addLine(to: CGPoint(x: 15.0, y: 15.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Jar icon path
+    static let jarPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 3.0))
+path.addLine(to: CGPoint(x: 20.0, y: 3.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 5.0, y: 4.6))
+path.addCurve(to: CGPoint(x: 4.3, y: 6.8), control1: CGPoint(x: 5.0, y: 5.3999999999999995), control2: CGPoint(x: 4.8, y: 6.199999999999999))
+path.addLine(to: CGPoint(x: 3.5999999999999996, y: 7.8))
+path.addCurve(to: CGPoint(x: 3.0, y: 10.0), control1: CGPoint(x: 3.2, y: 8.4), control2: CGPoint(x: 3.0, y: 9.2))
+path.addLine(to: CGPoint(x: 3.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 21.0), control1: CGPoint(x: 3.0, y: 19.7), control2: CGPoint(x: 4.3, y: 21.0))
+path.addLine(to: CGPoint(x: 18.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 18.0), control1: CGPoint(x: 19.7, y: 21.0), control2: CGPoint(x: 21.0, y: 19.7))
+path.addLine(to: CGPoint(x: 21.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 20.3, y: 7.8), control1: CGPoint(x: 21.0, y: 9.2), control2: CGPoint(x: 20.8, y: 8.4))
+path.addLine(to: CGPoint(x: 19.6, y: 6.8))
+path.addCurve(to: CGPoint(x: 19.0, y: 4.6), control1: CGPoint(x: 19.200000000000003, y: 6.1), control2: CGPoint(x: 19.0, y: 5.4))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.move(to: CGPoint(x: 3.0, y: 13.0))
+path.addLine(to: CGPoint(x: 7.0, y: 13.0))
+path.move(to: CGPoint(x: 17.0, y: 13.0))
+path.addLine(to: CGPoint(x: 21.0, y: 13.0))
+path.move(to: CGPoint(x: 8.0, y: 10.0))
+path.addLine(to: CGPoint(x: 16.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 11.0), control1: CGPoint(x: 16.552284749830793, y: 10.0), control2: CGPoint(x: 17.0, y: 10.447715250169207))
+path.addLine(to: CGPoint(x: 17.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 17.0), control1: CGPoint(x: 17.0, y: 16.552284749830793), control2: CGPoint(x: 16.552284749830793, y: 17.0))
+path.addLine(to: CGPoint(x: 8.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 16.0), control1: CGPoint(x: 7.447715250169207, y: 17.0), control2: CGPoint(x: 7.0, y: 16.552284749830793))
+path.addLine(to: CGPoint(x: 7.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 10.0), control1: CGPoint(x: 7.0, y: 10.447715250169207), control2: CGPoint(x: 7.447715250169207, y: 10.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Jug icon path
+    static let jugPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 19.0, y: 3.0))
+path.addLine(to: CGPoint(x: 17.0, y: 8.0))
+path.addLine(to: CGPoint(x: 5.0, y: 8.0))
+path.addLine(to: CGPoint(x: 3.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 20.7, y: 3.0), control2: CGPoint(x: 22.0, y: 4.3))
+path.addLine(to: CGPoint(x: 22.0, y: 10.0))
+path.move(to: CGPoint(x: 2.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 6.5, y: 15.0), control1: CGPoint(x: 3.08, y: 15.5), control2: CGPoint(x: 4.16, y: 15.0))
+path.addCurve(to: CGPoint(x: 15.5, y: 17.0), control1: CGPoint(x: 11.0, y: 15.0), control2: CGPoint(x: 11.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 16.0), control1: CGPoint(x: 17.84, y: 17.0), control2: CGPoint(x: 18.92, y: 16.5))
+path.move(to: CGPoint(x: 15.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 19.248430538345364, y: 18.63622836728355), control1: CGPoint(x: 16.729671053540073, y: 20.99995367052529), control2: CGPoint(x: 18.33646895915638, y: 20.105952162315795))
+path.addCurve(to: CGPoint(x: 19.48, y: 13.780000000000001), control1: CGPoint(x: 20.16039211753435, y: 17.166504572251306), control2: CGPoint(x: 20.247973948667756, y: 15.32983159400256))
+path.addLine(to: CGPoint(x: 17.0, y: 8.0))
+path.addLine(to: CGPoint(x: 5.0, y: 8.0))
+path.addLine(to: CGPoint(x: 2.5, y: 13.8))
+path.addCurve(to: CGPoint(x: 2.749992428552683, y: 18.65000473215457), control1: CGPoint(x: 1.7398910024043772, y: 15.351300743413622), control2: CGPoint(x: 1.8344125968077014, y: 17.1850770013626))
+path.addCurve(to: CGPoint(x: 7.000000000000001, y: 21.0), control1: CGPoint(x: 3.6655722602976644, y: 20.11493246294654), control2: CGPoint(x: 5.272490894614393, y: 21.003460570949645))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Kebab icon path
+    static let kebabPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 16.2, y: 7.8))
+path.addCurve(to: CGPoint(x: 16.3, y: 6.3), control1: CGPoint(x: 16.599999999999998, y: 7.3999999999999995), control2: CGPoint(x: 16.599999999999998, y: 6.8))
+path.addCurve(to: CGPoint(x: 17.443046912646665, y: 2.671529597178707), control1: CGPoint(x: 15.72364633724177, y: 4.974655936882553), control2: CGPoint(x: 16.21112030293304, y: 3.4272261358071345))
+path.addCurve(to: CGPoint(x: 21.19554061868169, y: 3.296945214851213), control1: CGPoint(x: 18.67497352236029, y: 1.9158330585502794), control2: CGPoint(x: 20.27529540580505, y: 2.1825533724577397))
+path.addCurve(to: CGPoint(x: 21.1, y: 7.1000000000000005), control1: CGPoint(x: 22.11578583155833, y: 4.411337057244686), control2: CGPoint(x: 22.07504072848507, y: 6.033221668756438))
+path.move(to: CGPoint(x: 15.3, y: 11.3))
+path.addCurve(to: CGPoint(x: 15.3, y: 14.700000000000001), control1: CGPoint(x: 16.2, y: 12.200000000000001), control2: CGPoint(x: 16.2, y: 13.8))
+path.addLine(to: CGPoint(x: 13.700000000000001, y: 16.3))
+path.addCurve(to: CGPoint(x: 10.3, y: 16.3), control1: CGPoint(x: 12.8, y: 17.2), control2: CGPoint(x: 11.200000000000001, y: 17.2))
+path.addCurve(to: CGPoint(x: 10.3, y: 19.7), control1: CGPoint(x: 11.200000000000001, y: 17.2), control2: CGPoint(x: 11.200000000000001, y: 18.8))
+path.addLine(to: CGPoint(x: 8.700000000000001, y: 21.3))
+path.addCurve(to: CGPoint(x: 5.300000000000001, y: 21.3), control1: CGPoint(x: 7.800000000000001, y: 22.2), control2: CGPoint(x: 6.200000000000001, y: 22.2))
+path.addLine(to: CGPoint(x: 2.7000000000000006, y: 18.7))
+path.addCurve(to: CGPoint(x: 2.7000000000000006, y: 15.299999999999999), control1: CGPoint(x: 1.8000000000000007, y: 17.8), control2: CGPoint(x: 1.8000000000000007, y: 16.2))
+path.addLine(to: CGPoint(x: 4.300000000000001, y: 13.7))
+path.addCurve(to: CGPoint(x: 7.700000000000001, y: 13.7), control1: CGPoint(x: 5.200000000000001, y: 12.799999999999999), control2: CGPoint(x: 6.800000000000001, y: 12.799999999999999))
+path.addCurve(to: CGPoint(x: 7.700000000000001, y: 10.299999999999999), control1: CGPoint(x: 6.800000000000001, y: 12.799999999999999), control2: CGPoint(x: 6.800000000000001, y: 11.2))
+path.addLine(to: CGPoint(x: 9.3, y: 8.7))
+path.addCurve(to: CGPoint(x: 12.700000000000001, y: 8.7), control1: CGPoint(x: 10.200000000000001, y: 7.799999999999999), control2: CGPoint(x: 11.8, y: 7.799999999999999))
+path.closeSubpath()
+path.move(to: CGPoint(x: 10.3, y: 16.3))
+path.addLine(to: CGPoint(x: 7.700000000000001, y: 13.700000000000001))
+path.move(to: CGPoint(x: 9.0, y: 15.0))
+path.addLine(to: CGPoint(x: 7.0, y: 17.0))
+path.move(to: CGPoint(x: 2.0, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 20.0))
+        return path
+    }()
+        
+    /// Kettle icon path
+    static let kettlePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 6.0))
+path.addLine(to: CGPoint(x: 10.0, y: 7.0))
+path.move(to: CGPoint(x: 2.0, y: 22.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.move(to: CGPoint(x: 3.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 17.0), control1: CGPoint(x: 2.4, y: 18.0), control2: CGPoint(x: 2.0, y: 17.6))
+path.addLine(to: CGPoint(x: 2.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 9.999999999999998, y: 7.0), control1: CGPoint(x: 2.0, y: 10.581722001353654), control2: CGPoint(x: 5.581722001353651, y: 7.000000000000001))
+path.addCurve(to: CGPoint(x: 18.0, y: 14.999999999999998), control1: CGPoint(x: 14.418277998646346, y: 7.0), control2: CGPoint(x: 18.0, y: 10.58172200135365))
+path.addLine(to: CGPoint(x: 18.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.6), control2: CGPoint(x: 17.6, y: 18.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 5.0, y: 8.8))
+path.addLine(to: CGPoint(x: 5.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 9.999999999999998, y: 2.0), control1: CGPoint(x: 5.0, y: 4.238576250846034), control2: CGPoint(x: 7.238576250846032, y: 2.000000000000001))
+path.addCurve(to: CGPoint(x: 15.0, y: 6.999999999999999), control1: CGPoint(x: 12.761423749153966, y: 2.0), control2: CGPoint(x: 15.0, y: 4.238576250846032))
+path.addLine(to: CGPoint(x: 15.0, y: 8.8))
+path.move(to: CGPoint(x: 18.0, y: 14.5))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.999999999999999), control1: CGPoint(x: 20.496105406943652, y: 12.819399544895798), control2: CGPoint(x: 21.99490955464678, y: 10.009141767952432))
+path.addLine(to: CGPoint(x: 19.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 11.0), control1: CGPoint(x: 18.0, y: 8.0), control2: CGPoint(x: 15.5, y: 11.0))
+path.addCurve(to: CGPoint(x: 4.2, y: 9.5), control1: CGPoint(x: 7.5, y: 11.0), control2: CGPoint(x: 5.6, y: 10.4))
+        return path
+    }()
+        
+    /// Kettle Electric icon path
+    static let kettleElectricPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 14.0))
+path.addLine(to: CGPoint(x: 2.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 7.0), control1: CGPoint(x: 2.0, y: 8.3), control2: CGPoint(x: 3.3, y: 7.0))
+path.addLine(to: CGPoint(x: 21.0, y: 7.0))
+path.addLine(to: CGPoint(x: 21.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 17.5, y: 12.9), control1: CGPoint(x: 21.0, y: 11.0), control2: CGPoint(x: 19.5, y: 12.7))
+path.move(to: CGPoint(x: 11.0, y: 7.0))
+path.addLine(to: CGPoint(x: 11.0, y: 14.0))
+path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 7.0), control1: CGPoint(x: 9.2, y: 2.0), control2: CGPoint(x: 7.0, y: 4.2))
+path.addLine(to: CGPoint(x: 6.2, y: 16.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 18.0), control1: CGPoint(x: 6.1000000000000005, y: 17.1), control2: CGPoint(x: 6.9, y: 18.0))
+path.addLine(to: CGPoint(x: 16.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 17.8, y: 16.0), control1: CGPoint(x: 17.1, y: 18.0), control2: CGPoint(x: 17.9, y: 17.1))
+path.addCurve(to: CGPoint(x: 16.999999999998863, y: 6.999999999987665), control1: CGPoint(x: 17.524900498717443, y: 13.00075555892252), control2: CGPoint(x: 17.258232778397087, y: 10.000743705321156))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 17.0, y: 4.2), control2: CGPoint(x: 14.8, y: 2.0))
+path.move(to: CGPoint(x: 6.0, y: 22.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+        return path
+    }()
+        
+    /// Kiwi icon path
+    static let kiwiPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 7.0))
+path.move(to: CGPoint(x: 15.0, y: 9.0))
+path.addLine(to: CGPoint(x: 16.0, y: 8.0))
+path.move(to: CGPoint(x: 17.0, y: 12.0))
+path.addLine(to: CGPoint(x: 18.0, y: 12.0))
+path.move(to: CGPoint(x: 15.0, y: 15.0))
+path.addLine(to: CGPoint(x: 16.0, y: 16.0))
+path.move(to: CGPoint(x: 12.0, y: 17.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 8.0, y: 16.0))
+path.addLine(to: CGPoint(x: 9.0, y: 15.0))
+path.move(to: CGPoint(x: 6.0, y: 12.0))
+path.addLine(to: CGPoint(x: 7.0, y: 12.0))
+path.move(to: CGPoint(x: 8.0, y: 8.0))
+path.addLine(to: CGPoint(x: 9.0, y: 9.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Layout Grid Move Horizontal icon path
+    static let layoutGridMoveHorizontalPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 14.0))
+path.addLine(to: CGPoint(x: 3.0, y: 18.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.move(to: CGPoint(x: 21.0, y: 18.0))
+path.addLine(to: CGPoint(x: 3.0, y: 18.0))
+path.move(to: CGPoint(x: 17.0, y: 14.0))
+path.addLine(to: CGPoint(x: 21.0, y: 18.0))
+path.addLine(to: CGPoint(x: 17.0, y: 22.0))
+path.move(to: CGPoint(x: 4.0, y: 3.0))
+path.addLine(to: CGPoint(x: 9.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 4.0), control1: CGPoint(x: 9.552284749830793, y: 3.0), control2: CGPoint(x: 10.0, y: 3.4477152501692068))
+path.addLine(to: CGPoint(x: 10.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 10.0), control1: CGPoint(x: 10.0, y: 9.552284749830793), control2: CGPoint(x: 9.552284749830793, y: 10.0))
+path.addLine(to: CGPoint(x: 4.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 9.0), control1: CGPoint(x: 3.4477152501692068, y: 10.0), control2: CGPoint(x: 3.0, y: 9.552284749830793))
+path.addLine(to: CGPoint(x: 3.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.4477152501692068), control2: CGPoint(x: 3.4477152501692063, y: 3.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 15.0, y: 3.0))
+path.addLine(to: CGPoint(x: 20.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 4.0), control1: CGPoint(x: 20.552284749830793, y: 3.0), control2: CGPoint(x: 21.0, y: 3.4477152501692068))
+path.addLine(to: CGPoint(x: 21.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 10.0), control1: CGPoint(x: 21.0, y: 9.552284749830793), control2: CGPoint(x: 20.552284749830793, y: 10.0))
+path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 9.0), control1: CGPoint(x: 14.447715250169207, y: 10.0), control2: CGPoint(x: 14.0, y: 9.552284749830793))
+path.addLine(to: CGPoint(x: 14.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 3.0), control1: CGPoint(x: 14.0, y: 3.4477152501692068), control2: CGPoint(x: 14.447715250169207, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Layout Grid Move Vertical icon path
+    static let layoutGridMoveVerticalPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 7.0))
+path.addLine(to: CGPoint(x: 6.0, y: 3.0))
+path.addLine(to: CGPoint(x: 10.0, y: 7.0))
+path.move(to: CGPoint(x: 6.0, y: 3.0))
+path.addLine(to: CGPoint(x: 6.0, y: 21.0))
+path.move(to: CGPoint(x: 2.0, y: 17.0))
+path.addLine(to: CGPoint(x: 6.0, y: 21.0))
+path.addLine(to: CGPoint(x: 10.0, y: 17.0))
+path.move(to: CGPoint(x: 15.0, y: 3.0))
+path.addLine(to: CGPoint(x: 20.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 4.0), control1: CGPoint(x: 20.552284749830793, y: 3.0), control2: CGPoint(x: 21.0, y: 3.4477152501692068))
+path.addLine(to: CGPoint(x: 21.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 10.0), control1: CGPoint(x: 21.0, y: 9.552284749830793), control2: CGPoint(x: 20.552284749830793, y: 10.0))
+path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 9.0), control1: CGPoint(x: 14.447715250169207, y: 10.0), control2: CGPoint(x: 14.0, y: 9.552284749830793))
+path.addLine(to: CGPoint(x: 14.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 3.0), control1: CGPoint(x: 14.0, y: 3.4477152501692068), control2: CGPoint(x: 14.447715250169207, y: 3.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 15.0, y: 14.0))
+path.addLine(to: CGPoint(x: 20.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 15.0), control1: CGPoint(x: 20.552284749830793, y: 14.0), control2: CGPoint(x: 21.0, y: 14.447715250169207))
+path.addLine(to: CGPoint(x: 21.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.552284749830793), control2: CGPoint(x: 20.552284749830793, y: 21.0))
+path.addLine(to: CGPoint(x: 15.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 20.0), control1: CGPoint(x: 14.447715250169207, y: 21.0), control2: CGPoint(x: 14.0, y: 20.552284749830793))
+path.addLine(to: CGPoint(x: 14.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 14.0), control1: CGPoint(x: 14.0, y: 14.447715250169207), control2: CGPoint(x: 14.447715250169207, y: 14.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Layout Grid Plus icon path
+    static let layoutGridPlusPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.5, y: 3.0))
+path.addLine(to: CGPoint(x: 17.5, y: 10.0))
+path.move(to: CGPoint(x: 14.0, y: 6.5))
+path.addLine(to: CGPoint(x: 21.0, y: 6.5))
+path.move(to: CGPoint(x: 4.0, y: 3.0))
+path.addLine(to: CGPoint(x: 9.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 4.0), control1: CGPoint(x: 9.552284749830793, y: 3.0), control2: CGPoint(x: 10.0, y: 3.4477152501692068))
+path.addLine(to: CGPoint(x: 10.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 10.0), control1: CGPoint(x: 10.0, y: 9.552284749830793), control2: CGPoint(x: 9.552284749830793, y: 10.0))
+path.addLine(to: CGPoint(x: 4.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 9.0), control1: CGPoint(x: 3.4477152501692068, y: 10.0), control2: CGPoint(x: 3.0, y: 9.552284749830793))
+path.addLine(to: CGPoint(x: 3.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.4477152501692068), control2: CGPoint(x: 3.4477152501692063, y: 3.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 15.0, y: 14.0))
+path.addLine(to: CGPoint(x: 20.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 15.0), control1: CGPoint(x: 20.552284749830793, y: 14.0), control2: CGPoint(x: 21.0, y: 14.447715250169207))
+path.addLine(to: CGPoint(x: 21.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.552284749830793), control2: CGPoint(x: 20.552284749830793, y: 21.0))
+path.addLine(to: CGPoint(x: 15.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 20.0), control1: CGPoint(x: 14.447715250169207, y: 21.0), control2: CGPoint(x: 14.0, y: 20.552284749830793))
+path.addLine(to: CGPoint(x: 14.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 14.0), control1: CGPoint(x: 14.0, y: 14.447715250169207), control2: CGPoint(x: 14.447715250169207, y: 14.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 4.0, y: 14.0))
+path.addLine(to: CGPoint(x: 9.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 15.0), control1: CGPoint(x: 9.552284749830793, y: 14.0), control2: CGPoint(x: 10.0, y: 14.447715250169207))
+path.addLine(to: CGPoint(x: 10.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 21.0), control1: CGPoint(x: 10.0, y: 20.552284749830793), control2: CGPoint(x: 9.552284749830793, y: 21.0))
+path.addLine(to: CGPoint(x: 4.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 20.0), control1: CGPoint(x: 3.4477152501692068, y: 21.0), control2: CGPoint(x: 3.0, y: 20.552284749830793))
+path.addLine(to: CGPoint(x: 3.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 14.0), control1: CGPoint(x: 3.0, y: 14.447715250169207), control2: CGPoint(x: 3.4477152501692063, y: 14.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Layout List Move icon path
+    static let layoutListMovePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 7.0))
+path.addLine(to: CGPoint(x: 6.0, y: 3.0))
+path.addLine(to: CGPoint(x: 2.0, y: 7.0))
+path.move(to: CGPoint(x: 6.0, y: 3.0))
+path.addLine(to: CGPoint(x: 6.0, y: 21.0))
+path.move(to: CGPoint(x: 2.0, y: 17.0))
+path.addLine(to: CGPoint(x: 6.0, y: 21.0))
+path.addLine(to: CGPoint(x: 10.0, y: 17.0))
+path.move(to: CGPoint(x: 14.0, y: 4.0))
+path.addLine(to: CGPoint(x: 21.0, y: 4.0))
+path.move(to: CGPoint(x: 14.0, y: 9.0))
+path.addLine(to: CGPoint(x: 21.0, y: 9.0))
+path.move(to: CGPoint(x: 14.0, y: 15.0))
+path.addLine(to: CGPoint(x: 21.0, y: 15.0))
+path.move(to: CGPoint(x: 14.0, y: 20.0))
+path.addLine(to: CGPoint(x: 21.0, y: 20.0))
+        return path
+    }()
+        
+    /// Lemon icon path
+    static let lemonPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.6, y: 2.4))
+path.addCurve(to: CGPoint(x: 15.8, y: 3.0), control1: CGPoint(x: 17.1, y: 2.6), control2: CGPoint(x: 16.3, y: 3.0))
+path.addLine(to: CGPoint(x: 12.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 11.999999999999998), control1: CGPoint(x: 7.02943725152286, y: 3.0), control2: CGPoint(x: 3.0000000000000018, y: 7.029437251522858))
+path.addLine(to: CGPoint(x: 3.0, y: 15.8))
+path.addCurve(to: CGPoint(x: 2.4, y: 17.6), control1: CGPoint(x: 3.0, y: 16.400000000000002), control2: CGPoint(x: 2.6, y: 17.1))
+path.addCurve(to: CGPoint(x: 2.9066984750561695, y: 21.093301524943833), control1: CGPoint(x: 1.7767544471685484, y: 18.748173134249985), control2: CGPoint(x: 1.9829191276637266, y: 20.16952217755139))
+path.addCurve(to: CGPoint(x: 6.3999999999999995, y: 21.6), control1: CGPoint(x: 3.8304778224486125, y: 22.017080872336273), control2: CGPoint(x: 5.251826865750015, y: 22.223245552831454))
+path.addCurve(to: CGPoint(x: 8.200000000000001, y: 21.0), control1: CGPoint(x: 6.9, y: 21.400000000000002), control2: CGPoint(x: 7.7, y: 21.0))
+path.addLine(to: CGPoint(x: 12.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 12.0), control1: CGPoint(x: 16.970562748477143, y: 21.0), control2: CGPoint(x: 21.0, y: 16.970562748477143))
+path.addLine(to: CGPoint(x: 21.0, y: 8.2))
+path.addCurve(to: CGPoint(x: 21.6, y: 6.3999999999999995), control1: CGPoint(x: 21.0, y: 7.6), control2: CGPoint(x: 21.4, y: 6.8999999999999995))
+path.addCurve(to: CGPoint(x: 21.093301524943833, y: 2.906698475056169), control1: CGPoint(x: 22.223245552831454, y: 5.251826865750015), control2: CGPoint(x: 22.017080872336273, y: 3.8304778224486116))
+path.addCurve(to: CGPoint(x: 17.6, y: 2.4), control1: CGPoint(x: 20.16952217755139, y: 1.9829191276637266), control2: CGPoint(x: 18.748173134249985, y: 1.7767544471685475))
+path.move(to: CGPoint(x: 7.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.0), control1: CGPoint(x: 7.0, y: 9.2), control2: CGPoint(x: 9.2, y: 7.0))
+        return path
+    }()
+        
+    /// Life Jacket icon path
+    static let lifeJacketPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 9.200000000000003, y: 12.100000000000001), control1: CGPoint(x: 10.019031622110116, y: 13.28108003705513), control2: CGPoint(x: 9.727538965886932, y: 12.588784978525066))
+path.addCurve(to: CGPoint(x: 9.644909595265208, y: 7.410878684664212), control1: CGPoint(x: 8.117043561498862, y: 10.656058081998486), control2: CGPoint(x: 8.30971645312072, y: 8.625383597549828))
+path.addCurve(to: CGPoint(x: 14.355090404734787, y: 7.4108786846642065), control1: CGPoint(x: 10.980102737409696, y: 6.196373771778595), control2: CGPoint(x: 13.019897262590296, y: 6.1963737717785925))
+path.addCurve(to: CGPoint(x: 14.8, y: 12.099999999999998), control1: CGPoint(x: 15.690283546879279, y: 8.62538359754982), control2: CGPoint(x: 15.882956438501138, y: 10.656058081998479))
+path.addLine(to: CGPoint(x: 14.499999999999998, y: 12.5))
+path.addCurve(to: CGPoint(x: 14.0, y: 14.0), control1: CGPoint(x: 14.17544467966324, y: 12.932740427115679), control2: CGPoint(x: 14.0, y: 13.459074466105402))
+path.addLine(to: CGPoint(x: 14.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 14.0, y: 20.65685424949238), control2: CGPoint(x: 15.34314575050762, y: 22.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 19.0), control1: CGPoint(x: 18.65685424949238, y: 22.0), control2: CGPoint(x: 20.0, y: 20.65685424949238))
+path.addLine(to: CGPoint(x: 20.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 20.0, y: 5.581722001353652), control2: CGPoint(x: 16.41827799864635, y: 2.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 9.999999999999998), control1: CGPoint(x: 7.581722001353653, y: 2.0), control2: CGPoint(x: 4.000000000000001, y: 5.5817220013536515))
+path.addLine(to: CGPoint(x: 4.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 22.0), control1: CGPoint(x: 4.0, y: 20.65685424949238), control2: CGPoint(x: 5.34314575050762, y: 22.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 19.0), control1: CGPoint(x: 8.65685424949238, y: 22.0), control2: CGPoint(x: 10.0, y: 20.65685424949238))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Ligature Square icon path
+    static let ligatureSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 12.0))
+path.addLine(to: CGPoint(x: 10.0, y: 12.0))
+path.move(to: CGPoint(x: 14.4, y: 8.0))
+path.addCurve(to: CGPoint(x: 10.634159463999936, y: 7.324616335039852), control1: CGPoint(x: 13.389724361294528, y: 7.04799833464452), control2: CGPoint(x: 11.912302163792512, y: 6.783030445297235))
+path.addCurve(to: CGPoint(x: 8.5, y: 10.5), control1: CGPoint(x: 9.35601676420736, y: 7.8662022247824686), control2: CGPoint(x: 8.518738994482261, y: 9.111975184988701))
+path.addLine(to: CGPoint(x: 8.5, y: 17.0))
+path.move(to: CGPoint(x: 10.0, y: 17.0))
+path.addLine(to: CGPoint(x: 7.0, y: 17.0))
+path.move(to: CGPoint(x: 14.0, y: 12.0))
+path.addLine(to: CGPoint(x: 15.5, y: 12.0))
+path.addLine(to: CGPoint(x: 15.5, y: 17.0))
+path.move(to: CGPoint(x: 17.0, y: 17.0))
+path.addLine(to: CGPoint(x: 14.0, y: 17.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Light Switch icon path
+    static let lightSwitchPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addLine(to: CGPoint(x: 14.0, y: 12.0))
+path.move(to: CGPoint(x: 4.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.0), control1: CGPoint(x: 21.104569499661586, y: 2.0), control2: CGPoint(x: 22.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 2.0), control1: CGPoint(x: 2.0, y: 2.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 2.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addLine(to: CGPoint(x: 14.0, y: 8.0))
+path.addLine(to: CGPoint(x: 14.0, y: 16.0))
+path.addLine(to: CGPoint(x: 10.0, y: 16.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Lingerie icon path
+    static let lingeriePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 5.0, y: 2.0))
+path.addLine(to: CGPoint(x: 5.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 6.0), control1: CGPoint(x: 3.8954305003384135, y: 4.0), control2: CGPoint(x: 3.0, y: 4.895430500338413))
+path.addLine(to: CGPoint(x: 3.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 11.0), control1: CGPoint(x: 3.0, y: 9.7), control2: CGPoint(x: 4.3, y: 11.0))
+path.addLine(to: CGPoint(x: 8.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 9.0), control1: CGPoint(x: 9.104569499661586, y: 11.0), control2: CGPoint(x: 10.0, y: 10.104569499661586))
+path.addLine(to: CGPoint(x: 14.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 11.0), control1: CGPoint(x: 14.0, y: 10.104569499661586), control2: CGPoint(x: 14.895430500338414, y: 11.0))
+path.addLine(to: CGPoint(x: 18.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 8.0), control1: CGPoint(x: 19.7, y: 11.0), control2: CGPoint(x: 21.0, y: 9.7))
+path.addLine(to: CGPoint(x: 21.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 4.0), control1: CGPoint(x: 21.0, y: 4.8954305003384135), control2: CGPoint(x: 20.104569499661586, y: 4.0))
+path.move(to: CGPoint(x: 10.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 4.0), control1: CGPoint(x: 10.0, y: 6.2), control2: CGPoint(x: 7.8, y: 4.0))
+path.move(to: CGPoint(x: 19.0, y: 2.0))
+path.addLine(to: CGPoint(x: 19.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 9.0), control1: CGPoint(x: 16.2, y: 4.0), control2: CGPoint(x: 14.0, y: 6.2))
+path.move(to: CGPoint(x: 3.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 22.0), control1: CGPoint(x: 6.865993248815554, y: 15.0), control2: CGPoint(x: 10.0, y: 18.134006751184444))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 15.0), control1: CGPoint(x: 14.0, y: 18.134006751184447), control2: CGPoint(x: 17.134006751184444, y: 15.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Locate Square icon path
+    static let locateSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 5.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.move(to: CGPoint(x: 19.0, y: 12.0))
+path.addLine(to: CGPoint(x: 22.0, y: 12.0))
+path.move(to: CGPoint(x: 12.0, y: 22.0))
+path.addLine(to: CGPoint(x: 12.0, y: 19.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addLine(to: CGPoint(x: 5.0, y: 12.0))
+path.move(to: CGPoint(x: 7.0, y: 5.0))
+path.addLine(to: CGPoint(x: 17.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 7.0), control1: CGPoint(x: 18.104569499661586, y: 5.0), control2: CGPoint(x: 19.0, y: 5.8954305003384135))
+path.addLine(to: CGPoint(x: 19.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 19.0), control1: CGPoint(x: 19.0, y: 18.104569499661586), control2: CGPoint(x: 18.104569499661586, y: 19.0))
+path.addLine(to: CGPoint(x: 7.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 17.0), control1: CGPoint(x: 5.8954305003384135, y: 19.0), control2: CGPoint(x: 5.0, y: 18.104569499661586))
+path.addLine(to: CGPoint(x: 5.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 5.0), control1: CGPoint(x: 5.0, y: 5.8954305003384135), control2: CGPoint(x: 5.895430500338413, y: 5.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Lucide Lab icon path
+    static let lucideLabPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 2.0))
+path.addLine(to: CGPoint(x: 10.0, y: 9.309999999999999))
+path.move(to: CGPoint(x: 14.0, y: 9.3))
+path.addLine(to: CGPoint(x: 14.0, y: 2.0))
+path.move(to: CGPoint(x: 8.5, y: 2.0))
+path.addLine(to: CGPoint(x: 15.5, y: 2.0))
+path.move(to: CGPoint(x: 14.0, y: 9.3))
+path.addCurve(to: CGPoint(x: 18.42068064342762, y: 16.497012168658127), control1: CGPoint(x: 17.043818808919582, y: 10.284312663091544), control2: CGPoint(x: 18.918916941525097, y: 13.337033537161847))
+path.addCurve(to: CGPoint(x: 12.0, y: 21.984658438426493), control1: CGPoint(x: 17.922444345330142, y: 19.656990800154404), control2: CGPoint(x: 15.199016155047513, y: 21.984658438426493))
+path.addCurve(to: CGPoint(x: 5.579319356572381, y: 16.497012168658124), control1: CGPoint(x: 8.800983844952489, y: 21.984658438426493), control2: CGPoint(x: 6.07755565466986, y: 19.656990800154404))
+path.addCurve(to: CGPoint(x: 10.0, y: 9.3), control1: CGPoint(x: 5.081083058474904, y: 13.337033537161847), control2: CGPoint(x: 6.956181191080422, y: 10.284312663091542))
+path.move(to: CGPoint(x: 5.52, y: 16.0))
+path.addLine(to: CGPoint(x: 18.48, y: 16.0))
+        return path
+    }()
+        
+    /// Luggage Cabin icon path
+    static let luggageCabinPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 2.0))
+path.addLine(to: CGPoint(x: 16.0, y: 2.0))
+path.move(to: CGPoint(x: 10.0, y: 2.0))
+path.addLine(to: CGPoint(x: 10.0, y: 7.0))
+path.move(to: CGPoint(x: 14.0, y: 2.0))
+path.addLine(to: CGPoint(x: 14.0, y: 7.0))
+path.move(to: CGPoint(x: 14.0, y: 21.0))
+path.addLine(to: CGPoint(x: 14.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 11.0), control1: CGPoint(x: 14.0, y: 11.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 11.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 13.0), control1: CGPoint(x: 10.895430500338414, y: 11.0), control2: CGPoint(x: 10.0, y: 11.895430500338414))
+path.addLine(to: CGPoint(x: 10.0, y: 21.0))
+path.move(to: CGPoint(x: 8.0, y: 21.0))
+path.addLine(to: CGPoint(x: 8.0, y: 22.0))
+path.move(to: CGPoint(x: 16.0, y: 21.0))
+path.addLine(to: CGPoint(x: 16.0, y: 22.0))
+path.move(to: CGPoint(x: 8.0, y: 7.0))
+path.addLine(to: CGPoint(x: 16.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 9.0), control1: CGPoint(x: 17.104569499661586, y: 7.0), control2: CGPoint(x: 18.0, y: 7.8954305003384135))
+path.addLine(to: CGPoint(x: 18.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 21.0), control1: CGPoint(x: 18.0, y: 20.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 8.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 19.0), control1: CGPoint(x: 6.8954305003384135, y: 21.0), control2: CGPoint(x: 6.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 6.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 7.0), control1: CGPoint(x: 6.0, y: 7.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 7.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Lunch Box icon path
+    static let lunchBoxPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 7.0))
+path.addLine(to: CGPoint(x: 8.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 3.0), control1: CGPoint(x: 8.0, y: 3.8954305003384135), control2: CGPoint(x: 8.895430500338414, y: 3.0))
+path.addLine(to: CGPoint(x: 14.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 5.0), control1: CGPoint(x: 15.104569499661586, y: 3.0), control2: CGPoint(x: 16.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 16.0, y: 7.0))
+path.move(to: CGPoint(x: 8.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 19.0), control1: CGPoint(x: 9.104569499661586, y: 21.0), control2: CGPoint(x: 10.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 10.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 7.0), control1: CGPoint(x: 10.0, y: 8.790861000676827), control2: CGPoint(x: 8.209138999323175, y: 7.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.0), control1: CGPoint(x: 3.7908610006768266, y: 7.0), control2: CGPoint(x: 2.0000000000000004, y: 8.790861000676825))
+path.addLine(to: CGPoint(x: 2.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 21.0), control1: CGPoint(x: 2.0, y: 20.104569499661586), control2: CGPoint(x: 2.8954305003384135, y: 21.0))
+path.addLine(to: CGPoint(x: 20.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 19.0), control1: CGPoint(x: 21.104569499661586, y: 21.0), control2: CGPoint(x: 22.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 22.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 7.0), control1: CGPoint(x: 22.0, y: 8.790861000676827), control2: CGPoint(x: 20.209138999323173, y: 7.0))
+path.addLine(to: CGPoint(x: 6.0, y: 7.0))
+path.move(to: CGPoint(x: 2.0, y: 13.0))
+path.addLine(to: CGPoint(x: 22.0, y: 13.0))
+        return path
+    }()
+        
+    /// Mailbox Flag icon path
+    static let mailboxFlagPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 20.0, y: 5.5))
+path.addCurve(to: CGPoint(x: 22.0, y: 9.0), control1: CGPoint(x: 21.248780169735955, y: 6.220906540025361), control2: CGPoint(x: 22.012907374767174, y: 7.558129148829993))
+path.addLine(to: CGPoint(x: 22.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 19.0), control1: CGPoint(x: 22.0, y: 18.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 19.0))
+path.addLine(to: CGPoint(x: 4.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 17.0), control1: CGPoint(x: 2.8954305003384135, y: 19.0), control2: CGPoint(x: 2.0, y: 18.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 5.999999999999999, y: 5.0), control1: CGPoint(x: 2.0, y: 6.790861000676827), control2: CGPoint(x: 3.7908610006768253, y: 5.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 8.999999999999998), control1: CGPoint(x: 8.209138999323173, y: 5.0), control2: CGPoint(x: 10.0, y: 6.790861000676825))
+path.addLine(to: CGPoint(x: 10.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 19.0), control1: CGPoint(x: 10.0, y: 18.104569499661586), control2: CGPoint(x: 9.104569499661586, y: 19.0))
+path.move(to: CGPoint(x: 6.0, y: 5.0))
+path.addLine(to: CGPoint(x: 10.0, y: 5.0))
+path.move(to: CGPoint(x: 14.0, y: 9.0))
+path.addLine(to: CGPoint(x: 14.0, y: 5.0))
+path.addLine(to: CGPoint(x: 16.0, y: 5.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addLine(to: CGPoint(x: 14.0, y: 6.0))
+        return path
+    }()
+        
+    /// Mask Snorkel icon path
+    static let maskSnorkelPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 13.5, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.100000000000001, y: 13.399999999999999), control1: CGPoint(x: 12.972461466198148, y: 13.992485904287054), control2: CGPoint(x: 12.469260920207205, y: 13.776828527433793))
+path.addLine(to: CGPoint(x: 11.4, y: 12.6))
+path.addCurve(to: CGPoint(x: 8.600000000000001, y: 12.6), control1: CGPoint(x: 10.6, y: 11.799999999999999), control2: CGPoint(x: 9.4, y: 11.799999999999999))
+path.addLine(to: CGPoint(x: 7.900000000000001, y: 13.4))
+path.addCurve(to: CGPoint(x: 6.500000000000002, y: 13.999999999999998), control1: CGPoint(x: 7.530739079792797, y: 13.776828527433793), control2: CGPoint(x: 7.027538533801855, y: 13.992485904287054))
+path.addLine(to: CGPoint(x: 6.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 10.0), control1: CGPoint(x: 3.7908610006768266, y: 14.0), control2: CGPoint(x: 2.0000000000000004, y: 12.209138999323175))
+path.addCurve(to: CGPoint(x: 5.999999999999999, y: 6.0), control1: CGPoint(x: 2.0, y: 7.790861000676827), control2: CGPoint(x: 3.7908610006768253, y: 6.0))
+path.addLine(to: CGPoint(x: 14.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 10.0), control1: CGPoint(x: 16.209138999323173, y: 6.0), control2: CGPoint(x: 18.0, y: 7.790861000676826))
+path.addCurve(to: CGPoint(x: 14.0, y: 14.0), control1: CGPoint(x: 18.0, y: 12.209138999323173), control2: CGPoint(x: 16.209138999323173, y: 14.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 20.0), control1: CGPoint(x: 12.0, y: 19.104569499661586), control2: CGPoint(x: 11.104569499661586, y: 20.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 18.0), control1: CGPoint(x: 8.895430500338414, y: 20.0), control2: CGPoint(x: 8.0, y: 19.104569499661586))
+path.move(to: CGPoint(x: 10.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 10.0, y: 21.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 22.0))
+path.addLine(to: CGPoint(x: 16.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 16.0), control1: CGPoint(x: 19.3, y: 22.0), control2: CGPoint(x: 22.0, y: 19.3))
+path.addLine(to: CGPoint(x: 22.0, y: 2.0))
+path.addLine(to: CGPoint(x: 18.0, y: 2.0))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 18.0))
+path.move(to: CGPoint(x: 18.0, y: 10.0))
+path.addLine(to: CGPoint(x: 22.0, y: 10.0))
+path.move(to: CGPoint(x: 3.0, y: 17.5))
+path.addEllipse(in: CGRect(x: 2.6599999999999997, y: 17.15, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 4.0, y: 21.5))
+path.addCurve(to: CGPoint(x: 4.5, y: 22.0), control1: CGPoint(x: 4.0, y: 21.7761423749154), control2: CGPoint(x: 4.223857625084603, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 21.5), control1: CGPoint(x: 4.776142374915397, y: 22.0), control2: CGPoint(x: 5.0, y: 21.7761423749154))
+path.addCurve(to: CGPoint(x: 4.5, y: 21.0), control1: CGPoint(x: 5.0, y: 21.2238576250846), control2: CGPoint(x: 4.776142374915397, y: 21.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 21.5), control1: CGPoint(x: 4.223857625084603, y: 21.0), control2: CGPoint(x: 4.0, y: 21.2238576250846))
+        return path
+    }()
+        
+    /// Meal Box icon path
+    static let mealBoxPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 22.0, y: 15.3), control2: CGPoint(x: 19.3, y: 18.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 4.7, y: 18.0), control2: CGPoint(x: 2.0, y: 15.3))
+path.move(to: CGPoint(x: 7.0, y: 6.0))
+path.addLine(to: CGPoint(x: 17.0, y: 6.0))
+path.move(to: CGPoint(x: 8.0, y: 2.0))
+path.addLine(to: CGPoint(x: 16.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 8.0), control1: CGPoint(x: 19.31370849898476, y: 2.0), control2: CGPoint(x: 22.0, y: 4.686291501015239))
+path.addLine(to: CGPoint(x: 22.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 22.0), control1: CGPoint(x: 22.0, y: 19.31370849898476), control2: CGPoint(x: 19.31370849898476, y: 22.0))
+path.addLine(to: CGPoint(x: 8.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 16.0), control1: CGPoint(x: 4.68629150101524, y: 22.0), control2: CGPoint(x: 2.000000000000001, y: 19.31370849898476))
+path.addLine(to: CGPoint(x: 2.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 7.999999999999999, y: 2.0), control1: CGPoint(x: 2.0, y: 4.68629150101524), control2: CGPoint(x: 4.686291501015238, y: 2.000000000000001))
+path.closeSubpath()
+path.move(to: CGPoint(x: 7.0, y: 10.0))
+path.addLine(to: CGPoint(x: 9.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 11.0), control1: CGPoint(x: 9.552284749830793, y: 10.0), control2: CGPoint(x: 10.0, y: 10.447715250169207))
+path.addLine(to: CGPoint(x: 10.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 14.0), control1: CGPoint(x: 10.0, y: 13.552284749830793), control2: CGPoint(x: 9.552284749830793, y: 14.0))
+path.addLine(to: CGPoint(x: 7.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 13.0), control1: CGPoint(x: 6.447715250169207, y: 14.0), control2: CGPoint(x: 6.0, y: 13.552284749830793))
+path.addLine(to: CGPoint(x: 6.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 10.0), control1: CGPoint(x: 6.0, y: 10.447715250169207), control2: CGPoint(x: 6.447715250169207, y: 10.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 15.0, y: 10.0))
+path.addLine(to: CGPoint(x: 17.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 11.0), control1: CGPoint(x: 17.552284749830793, y: 10.0), control2: CGPoint(x: 18.0, y: 10.447715250169207))
+path.addLine(to: CGPoint(x: 18.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 14.0), control1: CGPoint(x: 18.0, y: 13.552284749830793), control2: CGPoint(x: 17.552284749830793, y: 14.0))
+path.addLine(to: CGPoint(x: 15.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 13.0), control1: CGPoint(x: 14.447715250169207, y: 14.0), control2: CGPoint(x: 14.0, y: 13.552284749830793))
+path.addLine(to: CGPoint(x: 14.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 10.0), control1: CGPoint(x: 14.0, y: 10.447715250169207), control2: CGPoint(x: 14.447715250169207, y: 10.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Mortar Pestle icon path
+    static let mortarPestlePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.98627962419714, y: 2.2918594867109294), control1: CGPoint(x: 21.988691879397063, y: 3.2912028625696967), control2: CGPoint(x: 21.603027334078682, y: 2.641349855643803))
+path.addCurve(to: CGPoint(x: 19.0, y: 2.3), control1: CGPoint(x: 20.369531914315598, y: 1.942369117778056), control2: CGPoint(x: 19.613862356490586, y: 1.945466132922692))
+path.addLine(to: CGPoint(x: 10.5, y: 7.3999999999999995))
+path.addCurve(to: CGPoint(x: 9.098815569746396, y: 10.776210115246503), control1: CGPoint(x: 9.322065103131333, y: 8.078064021934129), control2: CGPoint(x: 8.747153209111152, y: 9.463337302208265))
+path.addCurve(to: CGPoint(x: 12.0, y: 13.0), control1: CGPoint(x: 9.450477930381638, y: 12.08908292828474), control2: CGPoint(x: 10.640846164345723, y: 13.001513317134517))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.2), control1: CGPoint(x: 12.8, y: 13.0), control2: CGPoint(x: 13.5, y: 12.7))
+path.addLine(to: CGPoint(x: 21.3, y: 5.499999999999999))
+path.addCurve(to: CGPoint(x: 22.0, y: 3.999999999999999), control1: CGPoint(x: 21.7, y: 5.099999999999999), control2: CGPoint(x: 22.0, y: 4.599999999999999))
+path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 22.0, y: 17.522847498307932), control2: CGPoint(x: 17.522847498307936, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.000000000000002), control1: CGPoint(x: 6.477152501692067, y: 22.0), control2: CGPoint(x: 2.0000000000000018, y: 17.522847498307936))
+path.move(to: CGPoint(x: 11.1, y: 7.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 6.0, y: 7.2), control2: CGPoint(x: 2.0, y: 9.4))
+path.addCurve(to: CGPoint(x: 12.0, y: 17.0), control1: CGPoint(x: 2.0, y: 14.8), control2: CGPoint(x: 6.5, y: 17.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.5, y: 17.0), control2: CGPoint(x: 22.0, y: 14.8))
+path.addCurve(to: CGPoint(x: 18.4, y: 8.2), control1: CGPoint(x: 22.0, y: 10.5), control2: CGPoint(x: 20.6, y: 9.1))
+        return path
+    }()
+        
+    /// Motor Racing Helmet icon path
+    static let motorRacingHelmetPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 12.2))
+path.addCurve(to: CGPoint(x: 16.09321758511225, y: 2.8692502597045912), control1: CGPoint(x: 22.08266466483761, y: 8.186014695577612), control2: CGPoint(x: 19.75669630761974, y: 4.511759048316173))
+path.addCurve(to: CGPoint(x: 5.197220098250433, y: 4.666528195681816), control1: CGPoint(x: 12.429738862604756, y: 1.2267414710930105), control2: CGPoint(x: 8.13912112952417, y: 1.9344722311887832))
+path.addCurve(to: CGPoint(x: 2.600000000000005, y: 15.40000000000001), control1: CGPoint(x: 2.255319066976698, y: 7.398584160174848), control2: CGPoint(x: 1.2325876810982201, y: 11.62520265165837))
+path.addCurve(to: CGPoint(x: 3.9000000000000012, y: 16.7), control1: CGPoint(x: 2.8000000000000016, y: 15.899999999999999), control2: CGPoint(x: 3.4000000000000012, y: 16.5))
+path.addLine(to: CGPoint(x: 17.1, y: 21.799999999999997))
+path.addCurve(to: CGPoint(x: 18.700000000000003, y: 21.499999999999996), control1: CGPoint(x: 17.6, y: 21.999999999999996), control2: CGPoint(x: 18.3, y: 21.799999999999997))
+path.addLine(to: CGPoint(x: 21.300000000000004, y: 18.899999999999995))
+path.addCurve(to: CGPoint(x: 22.000000000000004, y: 17.199999999999996), control1: CGPoint(x: 21.700000000000003, y: 18.499999999999996), control2: CGPoint(x: 22.000000000000004, y: 17.699999999999996))
+path.closeSubpath()
+path.move(to: CGPoint(x: 21.8, y: 18.0))
+path.addLine(to: CGPoint(x: 11.3, y: 14.0))
+path.addCurve(to: CGPoint(x: 10.00381493454727, y: 11.69437339621071), control1: CGPoint(x: 10.378632877966325, y: 13.661396312875729), control2: CGPoint(x: 9.830280506124998, y: 12.685998701480838))
+path.addCurve(to: CGPoint(x: 12.000000000000002, y: 10.0), control1: CGPoint(x: 10.177349362969542, y: 10.702748090940581), control2: CGPoint(x: 11.021837426017019, y: 9.985941752586058))
+path.addLine(to: CGPoint(x: 21.8, y: 10.0))
+        return path
+    }()
+        
+    /// Mug icon path
+    static let mugPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.0, y: 8.0))
+path.addLine(to: CGPoint(x: 18.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 20.209138999323173, y: 8.0), control2: CGPoint(x: 22.0, y: 9.790861000676827))
+path.addCurve(to: CGPoint(x: 18.0, y: 16.0), control1: CGPoint(x: 22.0, y: 14.209138999323173), control2: CGPoint(x: 20.209138999323173, y: 16.0))
+path.addLine(to: CGPoint(x: 17.0, y: 16.0))
+path.move(to: CGPoint(x: 3.0, y: 8.0))
+path.addLine(to: CGPoint(x: 17.0, y: 8.0))
+path.addLine(to: CGPoint(x: 17.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 21.0), control1: CGPoint(x: 17.0, y: 19.209138999323173), control2: CGPoint(x: 15.209138999323175, y: 21.0))
+path.addLine(to: CGPoint(x: 7.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 17.0), control1: CGPoint(x: 4.790861000676827, y: 21.0), control2: CGPoint(x: 3.0000000000000004, y: 19.209138999323173))
+path.closeSubpath()
+path.move(to: CGPoint(x: 4.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 4.0, y: 3.4477152501692068), control2: CGPoint(x: 4.447715250169207, y: 3.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 2.0), control1: CGPoint(x: 5.552284749830793, y: 3.0), control2: CGPoint(x: 6.0, y: 2.5522847498307932))
+path.move(to: CGPoint(x: 10.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 3.0), control1: CGPoint(x: 10.0, y: 3.4477152501692068), control2: CGPoint(x: 10.447715250169207, y: 3.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 11.552284749830793, y: 3.0), control2: CGPoint(x: 12.0, y: 2.5522847498307932))
+path.move(to: CGPoint(x: 16.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 3.0), control1: CGPoint(x: 16.0, y: 3.4477152501692068), control2: CGPoint(x: 16.447715250169207, y: 3.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 2.0), control1: CGPoint(x: 17.552284749830793, y: 3.0), control2: CGPoint(x: 18.0, y: 2.5522847498307932))
+        return path
+    }()
+        
+    /// Mug Teabag icon path
+    static let mugTeabagPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.0, y: 8.0))
+path.addLine(to: CGPoint(x: 18.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 20.209138999323173, y: 8.0), control2: CGPoint(x: 22.0, y: 9.790861000676827))
+path.addCurve(to: CGPoint(x: 18.0, y: 16.0), control1: CGPoint(x: 22.0, y: 14.209138999323173), control2: CGPoint(x: 20.209138999323173, y: 16.0))
+path.addLine(to: CGPoint(x: 17.0, y: 16.0))
+path.move(to: CGPoint(x: 3.0, y: 8.0))
+path.addLine(to: CGPoint(x: 17.0, y: 8.0))
+path.addLine(to: CGPoint(x: 17.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 21.0), control1: CGPoint(x: 17.0, y: 19.209138999323173), control2: CGPoint(x: 15.209138999323175, y: 21.0))
+path.addLine(to: CGPoint(x: 7.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 17.0), control1: CGPoint(x: 4.790861000676827, y: 21.0), control2: CGPoint(x: 3.0000000000000004, y: 19.209138999323173))
+path.closeSubpath()
+path.move(to: CGPoint(x: 4.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 4.0, y: 3.4477152501692068), control2: CGPoint(x: 4.447715250169207, y: 3.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 2.0), control1: CGPoint(x: 5.552284749830793, y: 3.0), control2: CGPoint(x: 6.0, y: 2.5522847498307932))
+path.move(to: CGPoint(x: 10.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 3.0), control1: CGPoint(x: 10.0, y: 3.4477152501692068), control2: CGPoint(x: 10.447715250169207, y: 3.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 11.552284749830793, y: 3.0), control2: CGPoint(x: 12.0, y: 2.5522847498307932))
+path.move(to: CGPoint(x: 16.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 3.0), control1: CGPoint(x: 16.0, y: 3.4477152501692068), control2: CGPoint(x: 16.447715250169207, y: 3.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 2.0), control1: CGPoint(x: 17.552284749830793, y: 3.0), control2: CGPoint(x: 18.0, y: 2.5522847498307932))
+path.move(to: CGPoint(x: 9.0, y: 8.0))
+path.addLine(to: CGPoint(x: 9.0, y: 11.0))
+path.move(to: CGPoint(x: 11.0, y: 16.0))
+path.addLine(to: CGPoint(x: 11.0, y: 12.5))
+path.addLine(to: CGPoint(x: 9.0, y: 11.0))
+path.addLine(to: CGPoint(x: 7.0, y: 12.5))
+path.addLine(to: CGPoint(x: 7.0, y: 16.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Mustache icon path
+    static let mustachePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 18.2, y: 8.6))
+path.addCurve(to: CGPoint(x: 15.14951237217695, y: 6.965116462514544), control1: CGPoint(x: 17.493899052367418, y: 7.60899250198497), control2: CGPoint(x: 16.365709414922055, y: 7.0043486251837415))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.399999999999999), control1: CGPoint(x: 13.933315329431846, y: 6.925884299845347), control2: CGPoint(x: 12.768502468403545, y: 7.456560354115166))
+path.addCurve(to: CGPoint(x: 8.847050893117265, y: 6.858577686635207), control1: CGPoint(x: 11.269138617716326, y: 7.395751010603529), control2: CGPoint(x: 10.088449612780892, y: 6.8185325666460574))
+path.addCurve(to: CGPoint(x: 5.800000000000001, y: 8.6), control1: CGPoint(x: 7.605652173453638, y: 6.898622806624356), control2: CGPoint(x: 6.4646190121099245, y: 7.550735514010187))
+path.addLine(to: CGPoint(x: 5.2, y: 9.4))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.0), control1: CGPoint(x: 4.5, y: 10.4), control2: CGPoint(x: 3.3, y: 11.0))
+path.addCurve(to: CGPoint(x: 5.857302632359517, y: 16.17092927387645), control1: CGPoint(x: 2.04914295577266, y: 13.370662300941662), control2: CGPoint(x: 3.5989415396384565, y: 15.448253724205703))
+path.addCurve(to: CGPoint(x: 11.99999999999999, y: 14.200000000000012), control1: CGPoint(x: 8.115663725080578, y: 16.893604823547197), control2: CGPoint(x: 10.583695038366981, y: 16.101718967371873))
+path.addCurve(to: CGPoint(x: 18.214918911626373, y: 16.396621598832436), control1: CGPoint(x: 13.343895769096623, y: 16.244011739187876), control2: CGPoint(x: 15.885070659597988, y: 17.14217303948152))
+path.addCurve(to: CGPoint(x: 21.999999999999996, y: 10.999999999999998), control1: CGPoint(x: 20.544767163654758, y: 15.651070158183352), control2: CGPoint(x: 22.092422596824285, y: 13.444483154315016))
+path.addCurve(to: CGPoint(x: 18.8, y: 9.4), control1: CGPoint(x: 20.7, y: 11.0), control2: CGPoint(x: 19.5, y: 10.4))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Olive icon path
+    static let olivePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 10.0))
+path.addLine(to: CGPoint(x: 14.0, y: 7.0))
+path.move(to: CGPoint(x: 10.0, y: 7.0))
+path.addLine(to: CGPoint(x: 14.0, y: 10.0))
+path.move(to: CGPoint(x: 2.0, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 17.0))
+path.move(to: CGPoint(x: 18.69, y: 5.31))
+path.addLine(to: CGPoint(x: 22.0, y: 2.0))
+path.move(to: CGPoint(x: 3.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 3.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 7.02943725152286, y: 22.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 12.0), control1: CGPoint(x: 16.970562748477143, y: 22.0), control2: CGPoint(x: 21.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 21.0, y: 6.477152501692066), control2: CGPoint(x: 16.970562748477143, y: 2.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 11.999999999999998), control1: CGPoint(x: 7.02943725152286, y: 2.0), control2: CGPoint(x: 3.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Onion icon path
+    static let onionPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.8, y: 8.1))
+path.addCurve(to: CGPoint(x: 6.414509021351993, y: 20.296580891440357), control1: CGPoint(x: 0.930396505068142, y: 12.506623992117195), control2: CGPoint(x: 2.445815211158708, y: 17.620161328461148))
+path.addCurve(to: CGPoint(x: 19.076790502766904, y: 19.07679050276692), control1: CGPoint(x: 10.38320283154528, y: 22.973000454419562), control2: CGPoint(x: 15.691989752636673, y: 22.461591252897144))
+path.addCurve(to: CGPoint(x: 20.296580891440367, y: 6.414509021352012), control1: CGPoint(x: 22.461591252897136, y: 15.691989752636694), control2: CGPoint(x: 22.973000454419566, y: 10.383202831545304))
+path.addCurve(to: CGPoint(x: 8.100000000000017, y: 2.79999999999999), control1: CGPoint(x: 17.62016132846117, y: 2.4458152111587204), control2: CGPoint(x: 12.506623992117218, y: 0.930396505068142))
+path.addCurve(to: CGPoint(x: 3.0, y: 2.0), control1: CGPoint(x: 5.0, y: 4.0), control2: CGPoint(x: 3.0, y: 2.0))
+path.addLine(to: CGPoint(x: 2.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 2.8, y: 8.1), control1: CGPoint(x: 2.0, y: 3.0), control2: CGPoint(x: 4.0, y: 5.0))
+path.move(to: CGPoint(x: 18.0, y: 20.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.move(to: CGPoint(x: 21.0, y: 21.0))
+path.addLine(to: CGPoint(x: 19.1, y: 19.1))
+path.move(to: CGPoint(x: 22.0, y: 18.0))
+path.addLine(to: CGPoint(x: 20.0, y: 18.0))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 10.0, y: 13.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 13.104569499661586, y: 14.0), control2: CGPoint(x: 14.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 14.0, y: 10.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 10.895430500338414, y: 10.0), control2: CGPoint(x: 10.0, y: 10.895430500338414))
+path.move(to: CGPoint(x: 6.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 6.000000000000001, y: 15.313708498984761), control2: CGPoint(x: 8.68629150101524, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 12.0), control1: CGPoint(x: 15.313708498984761, y: 18.0), control2: CGPoint(x: 18.0, y: 15.313708498984761))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 18.0, y: 8.686291501015239), control2: CGPoint(x: 15.313708498984761, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 12.0), control1: CGPoint(x: 8.68629150101524, y: 6.0), control2: CGPoint(x: 6.000000000000001, y: 8.686291501015239))
+        return path
+    }()
+        
+    /// Owl icon path
+    static let owlPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 5.0), control1: CGPoint(x: 12.0, y: 6.790861000676827), control2: CGPoint(x: 13.790861000676825, y: 5.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 8.999999999999998), control1: CGPoint(x: 18.209138999323173, y: 5.0), control2: CGPoint(x: 20.0, y: 6.790861000676825))
+path.addLine(to: CGPoint(x: 20.0, y: 21.0))
+path.addLine(to: CGPoint(x: 16.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 9.0), control1: CGPoint(x: 9.4, y: 21.0), control2: CGPoint(x: 4.0, y: 15.6))
+path.addCurve(to: CGPoint(x: 7.999999999999999, y: 5.0), control1: CGPoint(x: 4.0, y: 6.790861000676827), control2: CGPoint(x: 5.790861000676825, y: 5.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.999999999999998), control1: CGPoint(x: 10.209138999323173, y: 5.0), control2: CGPoint(x: 12.0, y: 6.790861000676825))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.move(to: CGPoint(x: 8.0, y: 9.0))
+path.addEllipse(in: CGRect(x: 7.66, y: 8.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 16.0, y: 9.0))
+path.addEllipse(in: CGRect(x: 15.660000000000002, y: 8.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 20.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 16.1, y: 17.1), control1: CGPoint(x: 17.846089475659905, y: 21.0), control2: CGPoint(x: 16.1, y: 19.253910524340096))
+path.addCurve(to: CGPoint(x: 20.0, y: 13.200000000000001), control1: CGPoint(x: 16.1, y: 14.946089475659907), control2: CGPoint(x: 17.846089475659905, y: 13.200000000000003))
+path.move(to: CGPoint(x: 10.0, y: 19.4))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.move(to: CGPoint(x: 14.0, y: 20.85))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+path.move(to: CGPoint(x: 4.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 4.000000000000001, y: 12.865993248815554), control2: CGPoint(x: 7.581722001353653, y: 16.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 9.0), control1: CGPoint(x: 16.41827799864635, y: 16.0), control2: CGPoint(x: 20.0, y: 12.865993248815554))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 20.0, y: 5.134006751184446), control2: CGPoint(x: 16.41827799864635, y: 2.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 9.0), control1: CGPoint(x: 7.581722001353653, y: 2.0), control2: CGPoint(x: 4.000000000000001, y: 5.134006751184446))
+        return path
+    }()
+        
+    /// Pac Man icon path
+    static let pacManPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 19.4, y: 18.7))
+path.addCurve(to: CGPoint(x: 8.387246350421986, y: 21.333705314929055), control1: CGPoint(x: 16.627559284803333, y: 21.771868856421477), control2: CGPoint(x: 12.249506744266291, y: 22.818882220376356))
+path.addCurve(to: CGPoint(x: 1.9763890188130127, y: 12.000000000000002), control1: CGPoint(x: 4.52498595657768, y: 19.84852840948176), control2: CGPoint(x: 1.9763890188130127, y: 16.137971216711442))
+path.addCurve(to: CGPoint(x: 8.387246350421986, y: 2.666294685070943), control1: CGPoint(x: 1.9763890188130127, y: 7.862028783288558), control2: CGPoint(x: 4.52498595657768, y: 4.15147159051824))
+path.addCurve(to: CGPoint(x: 19.400000000000002, y: 5.3000000000000025), control1: CGPoint(x: 12.249506744266291, y: 1.1811177796236443), control2: CGPoint(x: 16.627559284803336, y: 2.2281311435785263))
+path.closeSubpath()
+path.move(to: CGPoint(x: 18.0, y: 12.0))
+path.addEllipse(in: CGRect(x: 17.66, y: 11.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addEllipse(in: CGRect(x: 21.66, y: 11.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Pac Man Ghost icon path
+    static let pacManGhostPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 10.0))
+path.addEllipse(in: CGRect(x: 8.66, y: 9.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.0, y: 10.0))
+path.addEllipse(in: CGRect(x: 14.66, y: 9.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 9.999999999999998), control1: CGPoint(x: 7.581722001353653, y: 2.0), control2: CGPoint(x: 4.000000000000001, y: 5.5817220013536515))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 19.0))
+path.addLine(to: CGPoint(x: 9.5, y: 21.5))
+path.addLine(to: CGPoint(x: 12.0, y: 19.0))
+path.addLine(to: CGPoint(x: 14.5, y: 21.5))
+path.addLine(to: CGPoint(x: 17.0, y: 19.0))
+path.addLine(to: CGPoint(x: 20.0, y: 22.0))
+path.addLine(to: CGPoint(x: 20.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 20.0, y: 5.581722001353652), control2: CGPoint(x: 16.41827799864635, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Palmtree Island Sun icon path
+    static let palmtreeIslandSunPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 6.0), control1: CGPoint(x: 16.0, y: 14.0), control2: CGPoint(x: 17.0, y: 11.0))
+path.addLine(to: CGPoint(x: 17.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 2.0), control1: CGPoint(x: 17.0, y: 4.0), control2: CGPoint(x: 16.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.5), control1: CGPoint(x: 13.0, y: 2.0), control2: CGPoint(x: 12.0, y: 2.5))
+path.move(to: CGPoint(x: 13.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 4.0), control1: CGPoint(x: 13.0, y: 5.790861000676827), control2: CGPoint(x: 14.790861000676825, y: 4.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 7.999999999999999), control1: CGPoint(x: 19.209138999323173, y: 4.0), control2: CGPoint(x: 21.0, y: 5.790861000676825))
+path.move(to: CGPoint(x: 17.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 2.0), control1: CGPoint(x: 17.0, y: 4.0), control2: CGPoint(x: 18.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 2.5), control1: CGPoint(x: 21.0, y: 2.0), control2: CGPoint(x: 22.0, y: 2.5))
+path.move(to: CGPoint(x: 19.75, y: 19.0))
+path.addCurve(to: CGPoint(x: 10.99220420553993, y: 13.047983118626938), control1: CGPoint(x: 18.749283527122813, y: 15.09144178685858), control2: CGPoint(x: 14.994695897076042, y: 12.539730205416003))
+path.addCurve(to: CGPoint(x: 4.0, y: 21.0), control1: CGPoint(x: 6.989712514003815, y: 13.556236031837873), control2: CGPoint(x: 3.99205830591095, y: 16.965375148282305))
+path.move(to: CGPoint(x: 2.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 4.5, y: 21.0), control1: CGPoint(x: 2.6, y: 20.5), control2: CGPoint(x: 3.2, y: 21.0))
+path.addCurve(to: CGPoint(x: 9.5, y: 19.0), control1: CGPoint(x: 7.0, y: 21.0), control2: CGPoint(x: 7.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 14.5, y: 21.0), control1: CGPoint(x: 12.1, y: 19.0), control2: CGPoint(x: 11.9, y: 21.0))
+path.addCurve(to: CGPoint(x: 19.5, y: 19.0), control1: CGPoint(x: 17.0, y: 21.0), control2: CGPoint(x: 17.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 20.0), control1: CGPoint(x: 20.8, y: 19.0), control2: CGPoint(x: 21.4, y: 19.5))
+path.move(to: CGPoint(x: 3.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 10.0), control1: CGPoint(x: 3.0000000000000004, y: 8.65685424949238), control2: CGPoint(x: 4.34314575050762, y: 10.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 7.0), control1: CGPoint(x: 7.656854249492381, y: 10.0), control2: CGPoint(x: 9.0, y: 8.65685424949238))
+path.addCurve(to: CGPoint(x: 6.0, y: 4.0), control1: CGPoint(x: 9.0, y: 5.343145750507619), control2: CGPoint(x: 7.656854249492381, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 7.0), control1: CGPoint(x: 4.34314575050762, y: 4.0), control2: CGPoint(x: 3.0000000000000004, y: 5.343145750507619))
+        return path
+    }()
+        
+    /// Pancakes icon path
+    static let pancakesPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.0, y: 11.6))
+path.addCurve(to: CGPoint(x: 22.0, y: 7.0), control1: CGPoint(x: 19.5, y: 10.799999999999999), control2: CGPoint(x: 22.0, y: 9.1))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 4.2), control2: CGPoint(x: 17.5, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 7.0), control1: CGPoint(x: 6.5, y: 2.0), control2: CGPoint(x: 2.0, y: 4.2))
+path.addCurve(to: CGPoint(x: 10.4, y: 12.0), control1: CGPoint(x: 2.0, y: 9.5), control2: CGPoint(x: 5.7, y: 11.6))
+path.move(to: CGPoint(x: 3.3, y: 9.5))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 2.5, y: 10.2), control2: CGPoint(x: 2.0, y: 11.1))
+path.addCurve(to: CGPoint(x: 12.0, y: 17.0), control1: CGPoint(x: 2.0, y: 14.8), control2: CGPoint(x: 6.5, y: 17.0))
+path.addLine(to: CGPoint(x: 12.3, y: 17.0))
+path.move(to: CGPoint(x: 15.9, y: 16.6))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.000000000000002), control1: CGPoint(x: 19.5, y: 15.8), control2: CGPoint(x: 22.0, y: 14.100000000000001))
+path.addCurve(to: CGPoint(x: 20.7, y: 9.500000000000002), control1: CGPoint(x: 22.0, y: 11.100000000000001), control2: CGPoint(x: 21.5, y: 10.200000000000001))
+path.move(to: CGPoint(x: 3.3, y: 14.5))
+path.addCurve(to: CGPoint(x: 2.0, y: 17.0), control1: CGPoint(x: 2.5, y: 15.2), control2: CGPoint(x: 2.0, y: 16.1))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0, y: 19.8), control2: CGPoint(x: 6.5, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 17.0), control1: CGPoint(x: 17.5, y: 22.0), control2: CGPoint(x: 22.0, y: 19.8))
+path.addCurve(to: CGPoint(x: 20.7, y: 14.5), control1: CGPoint(x: 22.0, y: 16.1), control2: CGPoint(x: 21.5, y: 15.2))
+path.move(to: CGPoint(x: 16.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 18.0), control1: CGPoint(x: 16.0, y: 17.104569499661586), control2: CGPoint(x: 15.104569499661586, y: 18.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 12.895430500338414, y: 18.0), control2: CGPoint(x: 12.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 12.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 11.8), control1: CGPoint(x: 12.0, y: 12.9), control2: CGPoint(x: 11.1, y: 12.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 9.0), control1: CGPoint(x: 8.2, y: 11.3), control2: CGPoint(x: 7.0, y: 10.200000000000001))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 7.0, y: 7.3), control2: CGPoint(x: 9.2, y: 6.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 9.0), control1: CGPoint(x: 14.8, y: 6.0), control2: CGPoint(x: 17.0, y: 7.3))
+path.addCurve(to: CGPoint(x: 16.7, y: 10.1), control1: CGPoint(x: 17.0, y: 9.4), control2: CGPoint(x: 16.9, y: 9.7))
+path.addCurve(to: CGPoint(x: 16.0, y: 11.799999999999999), control1: CGPoint(x: 16.4, y: 10.6), control2: CGPoint(x: 16.0, y: 11.299999999999999))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Peace icon path
+    static let peacePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 19.1, y: 19.1))
+path.addLine(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 5.0, y: 19.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Peach icon path
+    static let peachPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 3.9999999999999996), control1: CGPoint(x: 12.895430500338414, y: 2.0), control2: CGPoint(x: 12.0, y: 2.8954305003384126))
+path.addLine(to: CGPoint(x: 12.0, y: 6.0))
+path.move(to: CGPoint(x: 12.0, y: 6.5))
+path.addCurve(to: CGPoint(x: 18.462253034898367, y: 5.500548811336964), control1: CGPoint(x: 13.767353805686229, y: 4.919184482356161), control2: CGPoint(x: 16.29991865773394, y: 4.52749834161297))
+path.addCurve(to: CGPoint(x: 22.0, y: 11.000000000000004), control1: CGPoint(x: 20.624587412062795, y: 6.473599281060958), control2: CGPoint(x: 22.011034765775207, y: 8.628840914396203))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 22.0, y: 17.1), control2: CGPoint(x: 17.5, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.0), control1: CGPoint(x: 6.5, y: 22.0), control2: CGPoint(x: 2.0, y: 17.1))
+path.addCurve(to: CGPoint(x: 7.999999999999999, y: 5.0), control1: CGPoint(x: 2.0, y: 7.68629150101524), control2: CGPoint(x: 4.686291501015238, y: 5.000000000000001))
+path.addCurve(to: CGPoint(x: 14.0, y: 10.999999999999998), control1: CGPoint(x: 11.31370849898476, y: 5.0), control2: CGPoint(x: 14.0, y: 7.686291501015238))
+        return path
+    }()
+        
+    /// Pear icon path
+    static let pearPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 18.870236293901822, y: 2.3399905507189063), control1: CGPoint(x: 22.02350679769345, y: 4.948094474232265), control2: CGPoint(x: 20.778553047523022, y: 3.094441360290076))
+path.addCurve(to: CGPoint(x: 13.399999999999995, y: 3.6000000000000036), control1: CGPoint(x: 16.961919540280622, y: 1.5855397411477368), control2: CGPoint(x: 14.785975338760815, y: 2.08674482767751))
+path.addCurve(to: CGPoint(x: 8.4, y: 6.2), control1: CGPoint(x: 11.9, y: 5.2), control2: CGPoint(x: 11.8, y: 5.4))
+path.addCurve(to: CGPoint(x: 1.9889209545464386, y: 14.543103869618193), control1: CGPoint(x: 4.4774732076714265, y: 6.986790217333175), control2: CGPoint(x: 1.7392107844237241, y: 10.550247734773867))
+path.addCurve(to: CGPoint(x: 9.389523036169775, y: 22.022435760620503), control1: CGPoint(x: 2.238631124669152, y: 18.535960004462517), control2: CGPoint(x: 5.399532814672297, y: 21.730488308189102))
+path.addCurve(to: CGPoint(x: 17.8, y: 15.700000000000003), control1: CGPoint(x: 13.379513257667254, y: 22.314383213051904), control2: CGPoint(x: 16.971746775358568, y: 19.613981588931885))
+path.addCurve(to: CGPoint(x: 20.400000000000002, y: 10.7), control1: CGPoint(x: 18.5, y: 12.299999999999999), control2: CGPoint(x: 18.8, y: 12.1))
+path.addCurve(to: CGPoint(x: 22.000000000000004, y: 6.999999999999999), control1: CGPoint(x: 21.400000000000002, y: 9.7), control2: CGPoint(x: 22.000000000000004, y: 8.399999999999999))
+path.move(to: CGPoint(x: 19.0, y: 5.0))
+path.addLine(to: CGPoint(x: 22.0, y: 2.0))
+        return path
+    }()
+        
+    /// Penguin icon path
+    static let penguinPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.9, y: 15.0))
+path.addCurve(to: CGPoint(x: 16.2, y: 11.7), control1: CGPoint(x: 17.705225977037657, y: 13.745066058289838), control2: CGPoint(x: 17.10872036591359, y: 12.587143401401944))
+path.addLine(to: CGPoint(x: 16.0, y: 11.5))
+path.addCurve(to: CGPoint(x: 15.0, y: 9.0), control1: CGPoint(x: 15.4, y: 10.9), control2: CGPoint(x: 15.0, y: 10.0))
+path.addLine(to: CGPoint(x: 15.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 15.0, y: 3.3431457505076194), control2: CGPoint(x: 13.65685424949238, y: 2.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 5.0), control1: CGPoint(x: 10.34314575050762, y: 2.0), control2: CGPoint(x: 9.0, y: 3.3431457505076194))
+path.addLine(to: CGPoint(x: 9.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 7.800000000000001, y: 11.8), control1: CGPoint(x: 9.015454967919064, y: 10.061331106208435), control2: CGPoint(x: 8.579208709957188, y: 11.079239041452816))
+path.addCurve(to: CGPoint(x: 6.100000000000001, y: 15.099999999999998), control1: CGPoint(x: 6.909601090922491, y: 12.700561841546435), control2: CGPoint(x: 6.316336182114002, y: 13.85219372335115))
+path.move(to: CGPoint(x: 9.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 7.0, y: 14.0), control2: CGPoint(x: 5.0, y: 9.0))
+path.move(to: CGPoint(x: 9.0, y: 8.9))
+path.addCurve(to: CGPoint(x: 15.0, y: 8.9), control1: CGPoint(x: 12.0, y: 7.0), control2: CGPoint(x: 15.0, y: 8.9))
+path.addCurve(to: CGPoint(x: 12.0, y: 12.9), control1: CGPoint(x: 15.0, y: 8.9), control2: CGPoint(x: 13.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 8.9), control1: CGPoint(x: 11.0, y: 12.0), control2: CGPoint(x: 9.0, y: 8.9))
+path.move(to: CGPoint(x: 15.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.0, y: 14.0), control2: CGPoint(x: 19.0, y: 9.0))
+path.move(to: CGPoint(x: 2.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 17.0), control1: CGPoint(x: 2.0, y: 18.0), control2: CGPoint(x: 3.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 16.0), control1: CGPoint(x: 3.0, y: 16.4), control2: CGPoint(x: 3.4, y: 16.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 15.0), control1: CGPoint(x: 5.0, y: 16.0), control2: CGPoint(x: 5.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 6.9, y: 15.5), control1: CGPoint(x: 6.4, y: 15.0), control2: CGPoint(x: 6.7, y: 15.2))
+path.addLine(to: CGPoint(x: 8.8, y: 19.0))
+path.addCurve(to: CGPoint(x: 8.442906073714276, y: 21.34290607371428), control1: CGPoint(x: 9.206327480444974, y: 19.77499376830405), control2: CGPoint(x: 9.061661826121828, y: 20.724150321306727))
+path.addCurve(to: CGPoint(x: 6.1000000000000005, y: 21.7), control1: CGPoint(x: 7.8241503213067265, y: 21.961661826121826), control2: CGPoint(x: 6.874993768304047, y: 22.106327480444975))
+path.addLine(to: CGPoint(x: 2.6000000000000005, y: 19.8))
+path.addCurve(to: CGPoint(x: 2.0000000000000004, y: 19.0), control1: CGPoint(x: 2.2000000000000006, y: 19.7), control2: CGPoint(x: 2.0000000000000004, y: 19.400000000000002))
+path.move(to: CGPoint(x: 8.7, y: 21.0))
+path.addCurve(to: CGPoint(x: 15.3, y: 21.0), control1: CGPoint(x: 10.70779503594254, y: 22.300539766291536), control2: CGPoint(x: 13.29220496405746, y: 22.300539766291536))
+path.move(to: CGPoint(x: 22.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 17.0), control1: CGPoint(x: 22.0, y: 18.0), control2: CGPoint(x: 21.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 16.0), control1: CGPoint(x: 21.0, y: 16.4), control2: CGPoint(x: 20.6, y: 16.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 15.0), control1: CGPoint(x: 19.0, y: 16.0), control2: CGPoint(x: 19.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 17.1, y: 15.5), control1: CGPoint(x: 17.6, y: 15.0), control2: CGPoint(x: 17.3, y: 15.2))
+path.addLine(to: CGPoint(x: 15.2, y: 19.0))
+path.addCurve(to: CGPoint(x: 15.55709392628572, y: 21.34290607371428), control1: CGPoint(x: 14.793672519555024, y: 19.77499376830405), control2: CGPoint(x: 14.93833817387817, y: 20.724150321306727))
+path.addCurve(to: CGPoint(x: 17.899999999999995, y: 21.700000000000003), control1: CGPoint(x: 16.17584967869327, y: 21.961661826121826), control2: CGPoint(x: 17.12500623169595, y: 22.106327480444975))
+path.addLine(to: CGPoint(x: 21.4, y: 19.8))
+path.addCurve(to: CGPoint(x: 22.0, y: 19.0), control1: CGPoint(x: 21.799999999999997, y: 19.7), control2: CGPoint(x: 22.0, y: 19.400000000000002))
+        return path
+    }()
+        
+    /// Pepper Chilli icon path
+    static let pepperChilliPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 18.0, y: 7.0))
+path.addLine(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 2.0), control1: CGPoint(x: 18.0, y: 2.895430500338413), control2: CGPoint(x: 17.104569499661586, y: 2.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 3.9999999999999996), control1: CGPoint(x: 14.895430500338414, y: 2.0), control2: CGPoint(x: 14.0, y: 2.8954305003384126))
+path.move(to: CGPoint(x: 14.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 12.0), control1: CGPoint(x: 14.0, y: 10.0), control2: CGPoint(x: 16.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 10.0), control1: CGPoint(x: 20.0, y: 10.0), control2: CGPoint(x: 22.0, y: 10.0))
+path.move(to: CGPoint(x: 22.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 22.0), control1: CGPoint(x: 22.0, y: 16.6), control2: CGPoint(x: 16.6, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 16.0), control1: CGPoint(x: 5.6, y: 22.0), control2: CGPoint(x: 2.0, y: 19.3))
+path.addLine(to: CGPoint(x: 2.0, y: 15.6))
+path.addCurve(to: CGPoint(x: 7.0, y: 18.0), control1: CGPoint(x: 3.3, y: 17.1), control2: CGPoint(x: 5.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 10.0), control1: CGPoint(x: 10.9, y: 18.0), control2: CGPoint(x: 14.0, y: 14.4))
+path.addCurve(to: CGPoint(x: 17.0, y: 7.0), control1: CGPoint(x: 14.0, y: 8.3), control2: CGPoint(x: 15.3, y: 7.0))
+path.addLine(to: CGPoint(x: 19.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 10.0), control1: CGPoint(x: 20.7, y: 7.0), control2: CGPoint(x: 22.0, y: 8.3))
+        return path
+    }()
+        
+    /// Pie icon path
+    static let piePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 7.0), control1: CGPoint(x: 5.5, y: 4.0), control2: CGPoint(x: 8.5, y: 5.0))
+path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.0), control1: CGPoint(x: 10.5, y: 4.0), control2: CGPoint(x: 13.5, y: 5.0))
+path.move(to: CGPoint(x: 17.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 7.0), control1: CGPoint(x: 15.5, y: 4.0), control2: CGPoint(x: 18.5, y: 5.0))
+path.move(to: CGPoint(x: 21.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 11.0), control1: CGPoint(x: 21.0, y: 16.0), control2: CGPoint(x: 19.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 16.0), control1: CGPoint(x: 5.0, y: 11.0), control2: CGPoint(x: 3.0, y: 16.0))
+path.addLine(to: CGPoint(x: 4.7, y: 21.1))
+path.addCurve(to: CGPoint(x: 6.0, y: 22.0), control1: CGPoint(x: 4.9, y: 21.6), control2: CGPoint(x: 5.4, y: 22.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 19.3, y: 21.1), control1: CGPoint(x: 18.5, y: 22.0), control2: CGPoint(x: 19.1, y: 21.6))
+path.closeSubpath()
+path.move(to: CGPoint(x: 2.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 5.3, y: 17.0), control1: CGPoint(x: 3.7, y: 16.0), control2: CGPoint(x: 3.6, y: 17.0))
+path.addCurve(to: CGPoint(x: 8.7, y: 16.0), control1: CGPoint(x: 7.0, y: 17.0), control2: CGPoint(x: 7.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 17.0), control1: CGPoint(x: 10.399999999999999, y: 16.0), control2: CGPoint(x: 10.299999999999999, y: 17.0))
+path.addCurve(to: CGPoint(x: 15.3, y: 16.0), control1: CGPoint(x: 13.7, y: 17.0), control2: CGPoint(x: 13.7, y: 16.0))
+path.addCurve(to: CGPoint(x: 18.6, y: 17.0), control1: CGPoint(x: 17.0, y: 16.0), control2: CGPoint(x: 16.900000000000002, y: 17.0))
+path.addCurve(to: CGPoint(x: 21.900000000000002, y: 16.0), control1: CGPoint(x: 20.3, y: 17.0), control2: CGPoint(x: 20.3, y: 16.0))
+path.move(to: CGPoint(x: 8.5, y: 16.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.move(to: CGPoint(x: 15.5, y: 16.0))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+        return path
+    }()
+        
+    /// Pig icon path
+    static let pigPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 19.0, y: 4.5))
+path.addCurve(to: CGPoint(x: 13.5, y: 6.099999999999999), control1: CGPoint(x: 17.035137365692112, y: 3.463228257503255), control2: CGPoint(x: 14.602098862421293, y: 4.1710212766365835))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 13.0, y: 6.0), control2: CGPoint(x: 12.5, y: 6.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 12.0), control1: CGPoint(x: 7.6, y: 6.0), control2: CGPoint(x: 4.0, y: 8.7))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 4.0, y: 13.5), control2: CGPoint(x: 4.8, y: 14.9))
+path.addLine(to: CGPoint(x: 6.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 20.0), control1: CGPoint(x: 6.0, y: 19.104569499661586), control2: CGPoint(x: 6.8954305003384135, y: 20.0))
+path.addLine(to: CGPoint(x: 10.0, y: 20.0))
+path.addLine(to: CGPoint(x: 10.0, y: 17.8))
+path.addCurve(to: CGPoint(x: 13.999999999999991, y: 17.8), control1: CGPoint(x: 11.324401769511525, y: 18.01825445482197), control2: CGPoint(x: 12.675598230488468, y: 18.01825445482197))
+path.addLine(to: CGPoint(x: 14.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 20.0), control1: CGPoint(x: 14.0, y: 19.6), control2: CGPoint(x: 14.4, y: 20.0))
+path.addLine(to: CGPoint(x: 18.0, y: 20.0))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 19.5, y: 14.0), control1: CGPoint(x: 18.7, y: 15.4), control2: CGPoint(x: 19.2, y: 14.8))
+path.addLine(to: CGPoint(x: 21.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 13.0), control1: CGPoint(x: 21.6, y: 14.0), control2: CGPoint(x: 22.0, y: 13.6))
+path.addLine(to: CGPoint(x: 22.0, y: 10.0))
+path.addLine(to: CGPoint(x: 19.5, y: 10.0))
+path.addCurve(to: CGPoint(x: 17.3, y: 7.5), control1: CGPoint(x: 19.1, y: 9.0), control2: CGPoint(x: 18.3, y: 8.2))
+path.closeSubpath()
+path.move(to: CGPoint(x: 16.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 15.660000000000002, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 2.3, y: 7.0))
+path.addCurve(to: CGPoint(x: 2.4671989630288653, y: 9.157642165978102), control1: CGPoint(x: 1.9281997687855315, y: 7.689857578200535), control2: CGPoint(x: 1.9935593238604836, y: 8.533299005256143))
+path.addCurve(to: CGPoint(x: 4.499999999999999, y: 9.9), control1: CGPoint(x: 2.9408386021972475, y: 9.78198532670006), control2: CGPoint(x: 3.7354785265453208, y: 10.072179577065713))
+        return path
+    }()
+        
+    /// Pig Head icon path
+    static let pigHeadPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 18.0, y: 17.9))
+path.addCurve(to: CGPoint(x: 21.0, y: 12.799999999999999), control1: CGPoint(x: 19.8, y: 17.0), control2: CGPoint(x: 21.0, y: 15.399999999999999))
+path.addCurve(to: CGPoint(x: 19.5, y: 7.899999999999999), control1: CGPoint(x: 21.0, y: 10.999999999999998), control2: CGPoint(x: 20.5, y: 9.399999999999999))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.899999999999999), control1: CGPoint(x: 21.0, y: 7.599999999999999), control2: CGPoint(x: 22.0, y: 6.399999999999999))
+path.addLine(to: CGPoint(x: 22.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 16.2, y: 5.0), control1: CGPoint(x: 17.7, y: 3.0), control2: CGPoint(x: 16.6, y: 3.8))
+path.addCurve(to: CGPoint(x: 7.8, y: 5.0), control1: CGPoint(x: 13.535742718632566, y: 3.7669880581743236), control2: CGPoint(x: 10.464257281367434, y: 3.7669880581743236))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 7.4, y: 3.8), control2: CGPoint(x: 6.3, y: 3.0))
+path.addLine(to: CGPoint(x: 2.0, y: 3.0))
+path.addLine(to: CGPoint(x: 2.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 4.499999999999984, y: 7.899999999999998), control1: CGPoint(x: 2.027947230930521, y: 6.441917377906455), control2: CGPoint(x: 3.077937519724822, y: 7.6599061129078585))
+path.addCurve(to: CGPoint(x: 3.0, y: 12.8), control1: CGPoint(x: 3.5, y: 9.3), control2: CGPoint(x: 3.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 17.9), control1: CGPoint(x: 3.0, y: 15.4), control2: CGPoint(x: 4.2, y: 17.0))
+path.move(to: CGPoint(x: 10.0, y: 14.0))
+path.addLine(to: CGPoint(x: 10.0, y: 12.0))
+path.move(to: CGPoint(x: 14.0, y: 14.0))
+path.addLine(to: CGPoint(x: 14.0, y: 12.0))
+path.move(to: CGPoint(x: 14.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 17.78055300368958, y: 19.374515905997367), control1: CGPoint(x: 15.687916546079117, y: 22.010171762992336), control2: CGPoint(x: 17.20055608525414, y: 20.959687602027618))
+path.addCurve(to: CGPoint(x: 16.587157801332733, y: 14.929118777218118), control1: CGPoint(x: 18.360549922125017, y: 17.789344209967116), control2: CGPoint(x: 17.883059785844694, y: 16.010693452322894))
+path.addCurve(to: CGPoint(x: 12.000000000000002, y: 14.549999999999997), control1: CGPoint(x: 15.291255816820776, y: 13.847544102113341), control2: CGPoint(x: 13.455885103605198, y: 13.695854639776973))
+path.addCurve(to: CGPoint(x: 7.4128421986672715, y: 14.929118777218118), control1: CGPoint(x: 10.544114896394804, y: 13.695854639776973), control2: CGPoint(x: 8.708744183179228, y: 13.847544102113343))
+path.addCurve(to: CGPoint(x: 6.219446996310425, y: 19.374515905997363), control1: CGPoint(x: 6.116940214155314, y: 16.010693452322894), control2: CGPoint(x: 5.6394500778749865, y: 17.78934420996711))
+path.addCurve(to: CGPoint(x: 9.999999999999996, y: 22.0), control1: CGPoint(x: 6.799443914745863, y: 20.959687602027614), control2: CGPoint(x: 8.312083453920879, y: 22.010171762992332))
+path.closeSubpath()
+path.move(to: CGPoint(x: 10.0, y: 18.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.0, y: 18.0))
+path.addEllipse(in: CGRect(x: 13.66, y: 17.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Pillow icon path
+    static let pillowPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 21.3, y: 7.5))
+path.addCurve(to: CGPoint(x: 21.97358949016615, y: 5.451439574009113), control1: CGPoint(x: 21.90496492205839, y: 7.007039682550649), control2: CGPoint(x: 22.167952024124688, y: 6.207227663948415))
+path.addCurve(to: CGPoint(x: 20.395288919874602, y: 3.981987318910082), control1: CGPoint(x: 21.779226956207616, y: 4.695651484069812), control2: CGPoint(x: 21.163016787803457, y: 4.121938568659042))
+path.addCurve(to: CGPoint(x: 18.400000000000002, y: 4.799999999999999), control1: CGPoint(x: 19.627561051945747, y: 3.842036069161123), control2: CGPoint(x: 18.84854763430264, y: 4.161409793950465))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 17.0, y: 4.3), control2: CGPoint(x: 14.6, y: 4.0))
+path.addCurve(to: CGPoint(x: 5.6, y: 4.8), control1: CGPoint(x: 9.4, y: 4.0), control2: CGPoint(x: 7.1, y: 4.3))
+path.addCurve(to: CGPoint(x: 3.6047110801254014, y: 3.9819873189100856), control1: CGPoint(x: 5.151452365697359, y: 4.161409793950468), control2: CGPoint(x: 4.372438948054255, y: 3.8420360691611264))
+path.addCurve(to: CGPoint(x: 2.026410509833852, y: 5.451439574009115), control1: CGPoint(x: 2.8369832121965466, y: 4.121938568659045), control2: CGPoint(x: 2.220773043792388, y: 4.695651484069813))
+path.addCurve(to: CGPoint(x: 2.6999999999999993, y: 7.5), control1: CGPoint(x: 1.8320479758753159, y: 6.207227663948416), control2: CGPoint(x: 2.095035077941609, y: 7.007039682550648))
+path.addCurve(to: CGPoint(x: 2.700000000000001, y: 16.500000000000007), control1: CGPoint(x: 1.709431444750468, y: 10.418231161445911), control2: CGPoint(x: 1.709431444750468, y: 13.581768838554105))
+path.addCurve(to: CGPoint(x: 2.026410509833835, y: 18.5485604259909), control1: CGPoint(x: 2.095035077941601, y: 16.992960317449352), control2: CGPoint(x: 1.8320479758752994, y: 17.79277233605159))
+path.addCurve(to: CGPoint(x: 3.6047110801253965, y: 20.018012681089935), control1: CGPoint(x: 2.22077304379237, y: 19.304348515930208), control2: CGPoint(x: 2.836983212196536, y: 19.87806143134098))
+path.addCurve(to: CGPoint(x: 5.6, y: 19.199999999999996), control1: CGPoint(x: 4.372438948054257, y: 20.157963930838893), control2: CGPoint(x: 5.151452365697365, y: 19.838590206049542))
+path.addCurve(to: CGPoint(x: 12.0, y: 20.0), control1: CGPoint(x: 7.1, y: 19.7), control2: CGPoint(x: 9.399999999999999, y: 20.0))
+path.addCurve(to: CGPoint(x: 18.4, y: 19.2), control1: CGPoint(x: 14.600000000000001, y: 20.0), control2: CGPoint(x: 17.0, y: 19.7))
+path.addCurve(to: CGPoint(x: 20.3952889198746, y: 20.01801268108992), control1: CGPoint(x: 18.848547634302637, y: 19.838590206049535), control2: CGPoint(x: 19.627561051945744, y: 20.15796393083888))
+path.addCurve(to: CGPoint(x: 21.97358949016615, y: 18.54856042599089), control1: CGPoint(x: 21.163016787803453, y: 19.87806143134096), control2: CGPoint(x: 21.779226956207616, y: 19.304348515930194))
+path.addCurve(to: CGPoint(x: 21.299999999999997, y: 16.5), control1: CGPoint(x: 22.167952024124688, y: 17.792772336051588), control2: CGPoint(x: 21.90496492205839, y: 16.992960317449352))
+path.addCurve(to: CGPoint(x: 21.299999999999997, y: 7.499999999999999), control1: CGPoint(x: 22.29056855524953, y: 13.581768838554096), control2: CGPoint(x: 22.29056855524953, y: 10.418231161445904))
+        return path
+    }()
+        
+    /// Pin Safety icon path
+    static let pinSafetyPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 20.8, y: 3.2))
+path.addCurve(to: CGPoint(x: 15.100000000000001, y: 3.2), control1: CGPoint(x: 19.2, y: 1.6), control2: CGPoint(x: 16.700000000000003, y: 1.6))
+path.addLine(to: CGPoint(x: 12.3, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 6.0), control1: CGPoint(x: 12.3, y: 6.0), control2: CGPoint(x: 15.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 11.7), control1: CGPoint(x: 15.0, y: 9.0), control2: CGPoint(x: 18.0, y: 11.7))
+path.addLine(to: CGPoint(x: 20.8, y: 8.899999999999999))
+path.addCurve(to: CGPoint(x: 20.8, y: 3.1999999999999984), control1: CGPoint(x: 22.400000000000002, y: 7.299999999999999), control2: CGPoint(x: 22.400000000000002, y: 4.699999999999998))
+path.move(to: CGPoint(x: 7.1, y: 21.1))
+path.addLine(to: CGPoint(x: 17.4, y: 10.900000000000002))
+path.move(to: CGPoint(x: 2.9, y: 16.9))
+path.addLine(to: CGPoint(x: 13.1, y: 6.6))
+path.move(to: CGPoint(x: 2.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 22.0), control1: CGPoint(x: 2.0000000000000004, y: 20.65685424949238), control2: CGPoint(x: 3.34314575050762, y: 22.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 19.0), control1: CGPoint(x: 6.656854249492381, y: 22.0), control2: CGPoint(x: 8.0, y: 20.65685424949238))
+path.addCurve(to: CGPoint(x: 5.0, y: 16.0), control1: CGPoint(x: 8.0, y: 17.34314575050762), control2: CGPoint(x: 6.656854249492381, y: 16.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 19.0), control1: CGPoint(x: 3.34314575050762, y: 16.0), control2: CGPoint(x: 2.0000000000000004, y: 17.34314575050762))
+        return path
+    }()
+        
+    /// Pin Safety Open icon path
+    static let pinSafetyOpenPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 20.8, y: 3.2))
+path.addCurve(to: CGPoint(x: 15.100000000000001, y: 3.2), control1: CGPoint(x: 19.2, y: 1.6), control2: CGPoint(x: 16.700000000000003, y: 1.6))
+path.addLine(to: CGPoint(x: 12.3, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 6.0), control1: CGPoint(x: 12.3, y: 6.0), control2: CGPoint(x: 15.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 11.7), control1: CGPoint(x: 15.0, y: 9.0), control2: CGPoint(x: 18.0, y: 11.7))
+path.addLine(to: CGPoint(x: 20.8, y: 8.899999999999999))
+path.addCurve(to: CGPoint(x: 20.8, y: 3.1999999999999984), control1: CGPoint(x: 22.400000000000002, y: 7.299999999999999), control2: CGPoint(x: 22.400000000000002, y: 4.699999999999998))
+path.move(to: CGPoint(x: 7.1, y: 21.1))
+path.addLine(to: CGPoint(x: 17.4, y: 10.900000000000002))
+path.move(to: CGPoint(x: 9.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.245, y: 17.8), control1: CGPoint(x: 9.0, y: 2.0), control2: CGPoint(x: 4.9, y: 11.5))
+path.move(to: CGPoint(x: 2.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 22.0), control1: CGPoint(x: 2.0000000000000004, y: 20.65685424949238), control2: CGPoint(x: 3.34314575050762, y: 22.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 19.0), control1: CGPoint(x: 6.656854249492381, y: 22.0), control2: CGPoint(x: 8.0, y: 20.65685424949238))
+path.addCurve(to: CGPoint(x: 5.0, y: 16.0), control1: CGPoint(x: 8.0, y: 17.34314575050762), control2: CGPoint(x: 6.656854249492381, y: 16.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 19.0), control1: CGPoint(x: 3.34314575050762, y: 16.0), control2: CGPoint(x: 2.0000000000000004, y: 17.34314575050762))
+        return path
+    }()
+        
+    /// Pineapple Ring icon path
+    static let pineappleRingPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 4.0))
+path.addLine(to: CGPoint(x: 7.5, y: 5.5))
+path.move(to: CGPoint(x: 16.7, y: 3.4))
+path.addLine(to: CGPoint(x: 15.5, y: 5.0))
+path.move(to: CGPoint(x: 2.0, y: 10.0))
+path.addLine(to: CGPoint(x: 2.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0, y: 18.4), control2: CGPoint(x: 6.5, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 14.0), control1: CGPoint(x: 17.5, y: 22.0), control2: CGPoint(x: 22.0, y: 18.4))
+path.addLine(to: CGPoint(x: 22.0, y: 10.0))
+path.addLine(to: CGPoint(x: 19.0, y: 10.0))
+path.move(to: CGPoint(x: 8.0, y: 15.0))
+path.addLine(to: CGPoint(x: 7.0, y: 17.0))
+path.addLine(to: CGPoint(x: 7.0, y: 20.9))
+path.move(to: CGPoint(x: 12.0, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 2.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 2.0000000000000018, y: 14.41827799864635), control2: CGPoint(x: 6.477152501692067, y: 18.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 10.0), control1: CGPoint(x: 17.522847498307936, y: 18.0), control2: CGPoint(x: 22.0, y: 14.418277998646348))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 5.581722001353652), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 9.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 5.5817220013536515))
+path.move(to: CGPoint(x: 9.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 12.0), control1: CGPoint(x: 9.0, y: 11.104569499661586), control2: CGPoint(x: 10.34314575050762, y: 12.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 10.0), control1: CGPoint(x: 13.65685424949238, y: 12.0), control2: CGPoint(x: 15.0, y: 11.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.0), control1: CGPoint(x: 15.0, y: 8.895430500338414), control2: CGPoint(x: 13.65685424949238, y: 8.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 10.0), control1: CGPoint(x: 10.34314575050762, y: 8.0), control2: CGPoint(x: 9.0, y: 8.895430500338414))
+        return path
+    }()
+        
+    /// Planet icon path
+    static let planetPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.05, y: 13.0))
+path.addCurve(to: CGPoint(x: 2.25, y: 17.5), control1: CGPoint(x: 2.3499999999999996, y: 14.8), control2: CGPoint(x: 1.5499999999999998, y: 16.5))
+path.addCurve(to: CGPoint(x: 14.05, y: 15.5), control1: CGPoint(x: 3.35, y: 19.4), control2: CGPoint(x: 8.65, y: 18.5))
+path.addCurve(to: CGPoint(x: 21.75, y: 6.5), control1: CGPoint(x: 19.450000000000003, y: 12.5), control2: CGPoint(x: 22.950000000000003, y: 8.4))
+path.addCurve(to: CGPoint(x: 17.05, y: 5.8), control1: CGPoint(x: 21.15, y: 5.5), control2: CGPoint(x: 19.35, y: 5.3))
+path.move(to: CGPoint(x: 4.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 20.0), control1: CGPoint(x: 4.000000000000001, y: 16.41827799864635), control2: CGPoint(x: 7.581722001353653, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 12.0), control1: CGPoint(x: 16.41827799864635, y: 20.0), control2: CGPoint(x: 20.0, y: 16.418277998646346))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 20.0, y: 7.581722001353652), control2: CGPoint(x: 16.41827799864635, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 11.999999999999998), control1: CGPoint(x: 7.581722001353653, y: 4.0), control2: CGPoint(x: 4.000000000000001, y: 7.5817220013536515))
+        return path
+    }()
+        
+    /// Pond icon path
+    static let pondPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 3.0))
+path.addLine(to: CGPoint(x: 4.0, y: 5.0))
+path.move(to: CGPoint(x: 4.0, y: 12.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 4.0))
+path.move(to: CGPoint(x: 12.0, y: 11.0))
+path.addLine(to: CGPoint(x: 12.0, y: 15.35))
+path.move(to: CGPoint(x: 15.0, y: 18.5))
+path.addLine(to: CGPoint(x: 15.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 18.5), control1: CGPoint(x: 11.2, y: 22.0), control2: CGPoint(x: 8.0, y: 20.4))
+path.addCurve(to: CGPoint(x: 15.0, y: 15.0), control1: CGPoint(x: 8.0, y: 16.6), control2: CGPoint(x: 11.2, y: 15.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 18.5), control1: CGPoint(x: 18.8, y: 15.0), control2: CGPoint(x: 22.0, y: 16.6))
+path.addCurve(to: CGPoint(x: 18.1, y: 21.6), control1: CGPoint(x: 22.0, y: 19.8), control2: CGPoint(x: 20.5, y: 21.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 4.0))
+path.addLine(to: CGPoint(x: 12.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 6.0), control1: CGPoint(x: 13.104569499661586, y: 4.0), control2: CGPoint(x: 14.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 14.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 11.0), control1: CGPoint(x: 14.0, y: 10.104569499661586), control2: CGPoint(x: 13.104569499661586, y: 11.0))
+path.addLine(to: CGPoint(x: 12.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 9.0), control1: CGPoint(x: 10.895430500338414, y: 11.0), control2: CGPoint(x: 10.0, y: 10.104569499661586))
+path.addLine(to: CGPoint(x: 10.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 10.0, y: 4.8954305003384135), control2: CGPoint(x: 10.895430500338414, y: 4.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 4.0, y: 5.0))
+path.addLine(to: CGPoint(x: 4.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 7.0), control1: CGPoint(x: 5.104569499661587, y: 5.0), control2: CGPoint(x: 6.0, y: 5.8954305003384135))
+path.addLine(to: CGPoint(x: 6.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 12.0), control1: CGPoint(x: 6.0, y: 11.104569499661586), control2: CGPoint(x: 5.104569499661587, y: 12.0))
+path.addLine(to: CGPoint(x: 4.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 10.0), control1: CGPoint(x: 2.8954305003384135, y: 12.0), control2: CGPoint(x: 2.0, y: 11.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 5.0), control1: CGPoint(x: 2.0, y: 5.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 5.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Pound Sterling Circle icon path
+    static let poundSterlingCirclePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 17.0))
+path.addLine(to: CGPoint(x: 10.0, y: 9.5))
+path.addCurve(to: CGPoint(x: 12.5, y: 7.0), control1: CGPoint(x: 10.0, y: 8.119288125423017), control2: CGPoint(x: 11.119288125423015, y: 7.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 9.5), control1: CGPoint(x: 13.880711874576983, y: 7.0), control2: CGPoint(x: 15.0, y: 8.119288125423015))
+path.move(to: CGPoint(x: 8.0, y: 13.0))
+path.addLine(to: CGPoint(x: 13.0, y: 13.0))
+path.move(to: CGPoint(x: 8.0, y: 17.0))
+path.addLine(to: CGPoint(x: 15.0, y: 17.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Pound Sterling Square icon path
+    static let poundSterlingSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 17.0))
+path.addLine(to: CGPoint(x: 10.0, y: 9.5))
+path.addCurve(to: CGPoint(x: 12.5, y: 7.0), control1: CGPoint(x: 10.0, y: 8.119288125423017), control2: CGPoint(x: 11.119288125423015, y: 7.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 9.5), control1: CGPoint(x: 13.880711874576983, y: 7.0), control2: CGPoint(x: 15.0, y: 8.119288125423015))
+path.move(to: CGPoint(x: 8.0, y: 13.0))
+path.addLine(to: CGPoint(x: 13.0, y: 13.0))
+path.move(to: CGPoint(x: 8.0, y: 17.0))
+path.addLine(to: CGPoint(x: 15.0, y: 17.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Pram icon path
+    static let pramPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 18.7, y: 4.4))
+path.addLine(to: CGPoint(x: 14.5, y: 10.0))
+path.move(to: CGPoint(x: 13.0, y: 10.0))
+path.addLine(to: CGPoint(x: 13.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 10.0), control1: CGPoint(x: 17.395740814019444, y: 2.0539415365338236), control2: CGPoint(x: 20.946058463466173, y: 5.6042591859805535))
+path.addLine(to: CGPoint(x: 21.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 14.0), control1: CGPoint(x: 21.0, y: 12.7), control2: CGPoint(x: 19.7, y: 14.0))
+path.addLine(to: CGPoint(x: 6.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 11.0), control1: CGPoint(x: 4.3, y: 14.0), control2: CGPoint(x: 3.0, y: 12.7))
+path.addLine(to: CGPoint(x: 3.0, y: 10.0))
+path.addLine(to: CGPoint(x: 21.0, y: 10.0))
+path.move(to: CGPoint(x: 8.2, y: 18.4))
+path.addLine(to: CGPoint(x: 11.5, y: 13.999999999999998))
+path.move(to: CGPoint(x: 15.8, y: 18.4))
+path.addLine(to: CGPoint(x: 5.6, y: 4.8))
+path.addCurve(to: CGPoint(x: 3.31442434956989, y: 3.9432730487096714), control1: CGPoint(x: 5.135748306441794, y: 4.01087968231513), control2: CGPoint(x: 4.182995854789385, y: 3.653749213636506))
+path.addCurve(to: CGPoint(x: 2.0, y: 6.000000000000001), control1: CGPoint(x: 2.4458528443503953, y: 4.232796883782837), control2: CGPoint(x: 1.897929164235642, y: 5.090152729717181))
+path.move(to: CGPoint(x: 5.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 22.0), control1: CGPoint(x: 5.0, y: 21.104569499661586), control2: CGPoint(x: 5.8954305003384135, y: 22.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 20.0), control1: CGPoint(x: 8.104569499661586, y: 22.0), control2: CGPoint(x: 9.0, y: 21.104569499661586))
+path.addCurve(to: CGPoint(x: 7.0, y: 18.0), control1: CGPoint(x: 9.0, y: 18.895430500338414), control2: CGPoint(x: 8.104569499661586, y: 18.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 20.0), control1: CGPoint(x: 5.8954305003384135, y: 18.0), control2: CGPoint(x: 5.0, y: 18.895430500338414))
+path.move(to: CGPoint(x: 15.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 15.0, y: 21.104569499661586), control2: CGPoint(x: 15.895430500338414, y: 22.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 20.0), control1: CGPoint(x: 18.104569499661586, y: 22.0), control2: CGPoint(x: 19.0, y: 21.104569499661586))
+path.addCurve(to: CGPoint(x: 17.0, y: 18.0), control1: CGPoint(x: 19.0, y: 18.895430500338414), control2: CGPoint(x: 18.104569499661586, y: 18.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 20.0), control1: CGPoint(x: 15.895430500338414, y: 18.0), control2: CGPoint(x: 15.0, y: 18.895430500338414))
+        return path
+    }()
+        
+    /// Pretzel icon path
+    static let pretzelPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 20.0, y: 19.0))
+path.addLine(to: CGPoint(x: 13.5, y: 12.5))
+path.addCurve(to: CGPoint(x: 12.0, y: 9.0), control1: CGPoint(x: 12.548589155490454, y: 11.583269099730876), control2: CGPoint(x: 12.00769420742968, y: 10.321180887589065))
+path.addCurve(to: CGPoint(x: 17.0, y: 4.0), control1: CGPoint(x: 12.0, y: 6.238576250846034), control2: CGPoint(x: 14.238576250846032, y: 4.000000000000001))
+path.addCurve(to: CGPoint(x: 22.0, y: 8.999999999999998), control1: CGPoint(x: 19.761423749153966, y: 4.0), control2: CGPoint(x: 22.0, y: 6.238576250846032))
+path.addCurve(to: CGPoint(x: 12.0, y: 19.0), control1: CGPoint(x: 22.0, y: 14.522847498307934), control2: CGPoint(x: 17.522847498307936, y: 19.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 9.000000000000002), control1: CGPoint(x: 6.477152501692067, y: 19.0), control2: CGPoint(x: 2.0000000000000018, y: 14.522847498307936))
+path.addCurve(to: CGPoint(x: 6.999999999999999, y: 4.0), control1: CGPoint(x: 2.0, y: 6.238576250846034), control2: CGPoint(x: 4.238576250846032, y: 4.000000000000001))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.999999999999998), control1: CGPoint(x: 9.761423749153966, y: 4.0), control2: CGPoint(x: 12.0, y: 6.238576250846032))
+path.addCurve(to: CGPoint(x: 10.5, y: 12.5), control1: CGPoint(x: 12.0, y: 10.4), control2: CGPoint(x: 11.4, y: 11.6))
+path.addLine(to: CGPoint(x: 4.0, y: 19.0))
+        return path
+    }()
+        
+    /// Pumpkin icon path
+    static let pumpkinPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 13.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 12.0, y: 3.0), control2: CGPoint(x: 12.0, y: 4.0))
+path.move(to: CGPoint(x: 17.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 14.5, y: 5.2), control1: CGPoint(x: 16.1, y: 4.0), control2: CGPoint(x: 15.2, y: 4.4))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0645823399450975), control1: CGPoint(x: 13.869544038953045, y: 4.478516596148534), control2: CGPoint(x: 12.958129960314746, y: 4.0645823399450975))
+path.addCurve(to: CGPoint(x: 9.5, y: 5.199999999999999), control1: CGPoint(x: 11.041870039685254, y: 4.0645823399450975), control2: CGPoint(x: 10.130455961046955, y: 4.478516596148534))
+path.addCurve(to: CGPoint(x: 7.0, y: 4.0), control1: CGPoint(x: 8.8, y: 4.4), control2: CGPoint(x: 7.9, y: 4.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 13.0), control1: CGPoint(x: 4.2, y: 4.0), control2: CGPoint(x: 2.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 22.0), control1: CGPoint(x: 2.0, y: 18.0), control2: CGPoint(x: 4.2, y: 22.0))
+path.addCurve(to: CGPoint(x: 9.5, y: 20.8), control1: CGPoint(x: 7.9, y: 22.0), control2: CGPoint(x: 8.8, y: 21.6))
+path.addCurve(to: CGPoint(x: 12.0, y: 21.935417660054902), control1: CGPoint(x: 10.130455961046955, y: 21.521483403851466), control2: CGPoint(x: 11.041870039685254, y: 21.935417660054902))
+path.addCurve(to: CGPoint(x: 14.5, y: 20.8), control1: CGPoint(x: 12.958129960314746, y: 21.935417660054902), control2: CGPoint(x: 13.869544038953045, y: 21.521483403851466))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 15.2, y: 21.6), control2: CGPoint(x: 16.1, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 13.0), control1: CGPoint(x: 19.8, y: 22.0), control2: CGPoint(x: 22.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 4.0), control1: CGPoint(x: 22.0, y: 8.0), control2: CGPoint(x: 19.8, y: 4.0))
+path.move(to: CGPoint(x: 10.0, y: 11.0))
+path.addLine(to: CGPoint(x: 8.0, y: 9.0))
+path.addLine(to: CGPoint(x: 6.0, y: 11.0))
+path.move(to: CGPoint(x: 18.0, y: 11.0))
+path.addLine(to: CGPoint(x: 16.0, y: 9.0))
+path.addLine(to: CGPoint(x: 14.0, y: 11.0))
+path.move(to: CGPoint(x: 6.0, y: 15.0))
+path.addLine(to: CGPoint(x: 8.0, y: 17.0))
+path.addLine(to: CGPoint(x: 10.0, y: 15.0))
+path.addLine(to: CGPoint(x: 12.0, y: 17.0))
+path.addLine(to: CGPoint(x: 14.0, y: 15.0))
+path.addLine(to: CGPoint(x: 16.0, y: 17.0))
+path.addLine(to: CGPoint(x: 18.0, y: 15.0))
+        return path
+    }()
+        
+    /// Razor icon path
+    static let razorPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 11.0))
+path.addLine(to: CGPoint(x: 20.4, y: 12.6))
+path.addCurve(to: CGPoint(x: 17.599999999999998, y: 12.6), control1: CGPoint(x: 19.599999999999998, y: 13.4), control2: CGPoint(x: 18.4, y: 13.4))
+path.addLine(to: CGPoint(x: 11.399999999999999, y: 6.3999999999999995))
+path.addCurve(to: CGPoint(x: 11.399999999999999, y: 3.5999999999999996), control1: CGPoint(x: 10.599999999999998, y: 5.6), control2: CGPoint(x: 10.599999999999998, y: 4.3999999999999995))
+path.addLine(to: CGPoint(x: 13.0, y: 2.0))
+path.move(to: CGPoint(x: 15.8, y: 4.8))
+path.addLine(to: CGPoint(x: 19.2, y: 8.2))
+path.move(to: CGPoint(x: 17.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.1, y: 12.0), control1: CGPoint(x: 15.6, y: 13.4), control2: CGPoint(x: 13.4, y: 13.4))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.0), control1: CGPoint(x: 10.799999999999999, y: 10.6), control2: CGPoint(x: 10.7, y: 8.4))
+path.move(to: CGPoint(x: 11.1, y: 10.1))
+path.addLine(to: CGPoint(x: 2.5999999999999996, y: 18.6))
+path.addCurve(to: CGPoint(x: 2.0875644177393524, y: 20.512435573222493), control1: CGPoint(x: 2.0998281652374047, y: 19.100171824007152), control2: CGPoint(x: 1.9044888244738023, y: 19.829188147343046))
+path.addCurve(to: CGPoint(x: 3.487564425955027, y: 21.912435582040263), control1: CGPoint(x: 2.270640011004903, y: 21.195682999101937), control2: CGPoint(x: 2.8043170001543167, y: 21.72935998848087))
+path.addCurve(to: CGPoint(x: 5.399999999397902, y: 21.4000000006021), control1: CGPoint(x: 4.1708118517557375, y: 22.095511175599658), control2: CGPoint(x: 4.899828175175641, y: 21.900171835149585))
+path.addLine(to: CGPoint(x: 13.8, y: 13.000000000000002))
+        return path
+    }()
+        
+    /// Razor Blade icon path
+    static let razorBladePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 8.0))
+path.addLine(to: CGPoint(x: 20.0, y: 8.0))
+path.addLine(to: CGPoint(x: 20.0, y: 6.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addLine(to: CGPoint(x: 4.0, y: 8.0))
+path.addLine(to: CGPoint(x: 2.0, y: 8.0))
+path.addLine(to: CGPoint(x: 2.0, y: 16.0))
+path.addLine(to: CGPoint(x: 4.0, y: 16.0))
+path.addLine(to: CGPoint(x: 4.0, y: 18.0))
+path.addLine(to: CGPoint(x: 20.0, y: 18.0))
+path.addLine(to: CGPoint(x: 20.0, y: 16.0))
+path.addLine(to: CGPoint(x: 22.0, y: 16.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 6.0, y: 11.0))
+path.addLine(to: CGPoint(x: 6.0, y: 13.0))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addLine(to: CGPoint(x: 6.0, y: 12.0))
+path.move(to: CGPoint(x: 18.0, y: 12.0))
+path.addLine(to: CGPoint(x: 14.0, y: 12.0))
+path.move(to: CGPoint(x: 18.0, y: 11.0))
+path.addLine(to: CGPoint(x: 18.0, y: 13.0))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 10.0, y: 13.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 13.104569499661586, y: 14.0), control2: CGPoint(x: 14.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 14.0, y: 10.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 10.895430500338414, y: 10.0), control2: CGPoint(x: 10.0, y: 10.895430500338414))
+        return path
+    }()
+        
+    /// Reel Thread icon path
+    static let reelThreadPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 6.0))
+path.addLine(to: CGPoint(x: 4.4, y: 4.6))
+path.addCurve(to: CGPoint(x: 4.035888961701955, y: 2.9132607145662117), control1: CGPoint(x: 3.9350034483229557, y: 4.170835162151855), control2: CGPoint(x: 3.7893345009547614, y: 3.4960258036050345))
+path.addCurve(to: CGPoint(x: 5.499999999999999, y: 1.9999999999999998), control1: CGPoint(x: 4.282443422449149, y: 2.330495625527389), control2: CGPoint(x: 4.868186482522083, y: 1.9651298085902775))
+path.addLine(to: CGPoint(x: 18.5, y: 2.0))
+path.addCurve(to: CGPoint(x: 19.85503450685235, y: 2.8957848169849676), control1: CGPoint(x: 19.088260973246097, y: 2.007035336358826), control2: CGPoint(x: 19.618102155162486, y: 2.35730219950801))
+path.addCurve(to: CGPoint(x: 19.6, y: 4.500000000000001), control1: CGPoint(x: 20.09196685854221, y: 3.434267434461926), control2: CGPoint(x: 19.992244095869545, y: 4.0615424332302945))
+path.addLine(to: CGPoint(x: 18.0, y: 6.0))
+path.move(to: CGPoint(x: 6.0, y: 11.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.move(to: CGPoint(x: 22.0, y: 16.0))
+path.addLine(to: CGPoint(x: 22.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 9.0), control1: CGPoint(x: 22.0, y: 10.790861000676827), control2: CGPoint(x: 20.209138999323173, y: 9.0))
+path.addLine(to: CGPoint(x: 6.0, y: 15.0))
+path.move(to: CGPoint(x: 8.0, y: 18.0))
+path.addLine(to: CGPoint(x: 18.0, y: 13.0))
+path.move(to: CGPoint(x: 18.0, y: 18.0))
+path.addLine(to: CGPoint(x: 19.6, y: 19.4))
+path.addCurve(to: CGPoint(x: 19.931137427926167, y: 21.03770046828751), control1: CGPoint(x: 20.04541895684646, y: 19.8210456182123), control2: CGPoint(x: 20.177986125840384, y: 20.47668070030066))
+path.addCurve(to: CGPoint(x: 18.5, y: 21.9), control1: CGPoint(x: 19.68428873001195, y: 21.598720236274367), control2: CGPoint(x: 19.111348852905337, y: 21.943932218078487))
+path.addLine(to: CGPoint(x: 5.5, y: 21.9))
+path.addCurve(to: CGPoint(x: 4.144965493147655, y: 21.004215183015027), control1: CGPoint(x: 4.911739026753906, y: 21.89296466364117), control2: CGPoint(x: 4.381897844837516, y: 21.542697800491986))
+path.addCurve(to: CGPoint(x: 4.400000000000001, y: 19.399999999999995), control1: CGPoint(x: 3.908033141457794, y: 20.46573256553807), control2: CGPoint(x: 4.007755904130461, y: 19.8384575667697))
+path.addLine(to: CGPoint(x: 6.0, y: 18.0))
+path.move(to: CGPoint(x: 6.0, y: 6.0))
+path.addLine(to: CGPoint(x: 18.0, y: 6.0))
+path.addLine(to: CGPoint(x: 18.0, y: 18.0))
+path.addLine(to: CGPoint(x: 6.0, y: 18.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Refrigerator Freezer icon path
+    static let refrigeratorFreezerPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 6.0))
+path.addEllipse(in: CGRect(x: 8.66, y: 5.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 5.0, y: 10.0))
+path.addLine(to: CGPoint(x: 19.0, y: 10.0))
+path.move(to: CGPoint(x: 9.0, y: 14.0))
+path.addEllipse(in: CGRect(x: 8.66, y: 13.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 7.0, y: 2.0))
+path.addLine(to: CGPoint(x: 17.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 4.0), control1: CGPoint(x: 18.104569499661586, y: 2.0), control2: CGPoint(x: 19.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 19.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 19.0, y: 21.104569499661586), control2: CGPoint(x: 18.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 20.0), control1: CGPoint(x: 5.8954305003384135, y: 22.0), control2: CGPoint(x: 5.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 5.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 2.0), control1: CGPoint(x: 5.0, y: 2.8954305003384135), control2: CGPoint(x: 5.895430500338413, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Remove Formatting Square icon path
+    static let removeFormattingSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 9.0))
+path.addLine(to: CGPoint(x: 7.0, y: 7.0))
+path.addLine(to: CGPoint(x: 17.0, y: 7.0))
+path.addLine(to: CGPoint(x: 17.0, y: 9.0))
+path.move(to: CGPoint(x: 13.0, y: 7.0))
+path.addLine(to: CGPoint(x: 8.0, y: 17.0))
+path.move(to: CGPoint(x: 7.0, y: 17.0))
+path.addLine(to: CGPoint(x: 10.0, y: 17.0))
+path.move(to: CGPoint(x: 17.0, y: 14.0))
+path.addLine(to: CGPoint(x: 14.0, y: 17.0))
+path.move(to: CGPoint(x: 14.0, y: 14.0))
+path.addLine(to: CGPoint(x: 17.0, y: 17.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Rugby icon path
+    static let rugbyPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.7, y: 2.3))
+path.addCurve(to: CGPoint(x: 14.0, y: 1.9999999999999998), control1: CGPoint(x: 15.5, y: 2.0999999999999996), control2: CGPoint(x: 14.799999999999999, y: 1.9))
+path.addCurve(to: CGPoint(x: 10.89250685466539, y: 4.033732519695077), control1: CGPoint(x: 12.724382571159335, y: 2.211059814563522), control2: CGPoint(x: 11.596486196860296, y: 2.949223803340762))
+path.addCurve(to: CGPoint(x: 10.299999999999999, y: 7.6999999999999975), control1: CGPoint(x: 10.188527512470483, y: 5.118241236049392), control2: CGPoint(x: 9.973471098226177, y: 6.448950462055142))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.0), control1: CGPoint(x: 10.600000000000001, y: 7.9), control2: CGPoint(x: 11.200000000000001, y: 8.1))
+path.addCurve(to: CGPoint(x: 15.107493145334612, y: 5.966267480304923), control1: CGPoint(x: 13.275617428840665, y: 7.788940185436478), control2: CGPoint(x: 14.403513803139704, y: 7.050776196659238))
+path.addCurve(to: CGPoint(x: 15.7, y: 2.3000000000000007), control1: CGPoint(x: 15.811472487529517, y: 4.881758763950608), control2: CGPoint(x: 16.026528901773823, y: 3.551049537944857))
+path.move(to: CGPoint(x: 20.0, y: 12.0))
+path.addLine(to: CGPoint(x: 4.0, y: 12.0))
+path.move(to: CGPoint(x: 4.0, y: 2.0))
+path.addLine(to: CGPoint(x: 4.0, y: 16.0))
+path.move(to: CGPoint(x: 20.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 16.0))
+path.move(to: CGPoint(x: 3.0, y: 16.0))
+path.addLine(to: CGPoint(x: 5.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 17.0), control1: CGPoint(x: 5.552284749830793, y: 16.0), control2: CGPoint(x: 6.0, y: 16.447715250169207))
+path.addLine(to: CGPoint(x: 6.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 22.0), control1: CGPoint(x: 6.0, y: 21.552284749830793), control2: CGPoint(x: 5.552284749830793, y: 22.0))
+path.addLine(to: CGPoint(x: 3.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 21.0), control1: CGPoint(x: 2.4477152501692068, y: 22.0), control2: CGPoint(x: 2.0, y: 21.552284749830793))
+path.addLine(to: CGPoint(x: 2.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 16.0), control1: CGPoint(x: 2.0, y: 16.447715250169207), control2: CGPoint(x: 2.4477152501692063, y: 16.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 19.0, y: 16.0))
+path.addLine(to: CGPoint(x: 21.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 17.0), control1: CGPoint(x: 21.552284749830793, y: 16.0), control2: CGPoint(x: 22.0, y: 16.447715250169207))
+path.addLine(to: CGPoint(x: 22.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.552284749830793), control2: CGPoint(x: 21.552284749830793, y: 22.0))
+path.addLine(to: CGPoint(x: 19.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 21.0), control1: CGPoint(x: 18.447715250169207, y: 22.0), control2: CGPoint(x: 18.0, y: 21.552284749830793))
+path.addLine(to: CGPoint(x: 18.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 16.0), control1: CGPoint(x: 18.0, y: 16.447715250169207), control2: CGPoint(x: 18.447715250169207, y: 16.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Russian Ruble Circle icon path
+    static let russianRubleCirclePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 11.0))
+path.addLine(to: CGPoint(x: 13.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 9.0), control1: CGPoint(x: 14.104569499661586, y: 11.0), control2: CGPoint(x: 15.0, y: 10.104569499661586))
+path.addCurve(to: CGPoint(x: 13.0, y: 7.0), control1: CGPoint(x: 15.0, y: 7.8954305003384135), control2: CGPoint(x: 14.104569499661586, y: 7.0))
+path.addLine(to: CGPoint(x: 10.0, y: 7.0))
+path.addLine(to: CGPoint(x: 10.0, y: 17.0))
+path.move(to: CGPoint(x: 8.0, y: 15.0))
+path.addLine(to: CGPoint(x: 13.0, y: 15.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Russian Ruble Square icon path
+    static let russianRubleSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 15.0))
+path.addLine(to: CGPoint(x: 13.0, y: 15.0))
+path.move(to: CGPoint(x: 8.0, y: 11.0))
+path.addLine(to: CGPoint(x: 13.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 9.0), control1: CGPoint(x: 14.104569499661586, y: 11.0), control2: CGPoint(x: 15.0, y: 10.104569499661586))
+path.addCurve(to: CGPoint(x: 13.0, y: 7.0), control1: CGPoint(x: 15.0, y: 7.8954305003384135), control2: CGPoint(x: 14.104569499661586, y: 7.0))
+path.addLine(to: CGPoint(x: 10.0, y: 7.0))
+path.addLine(to: CGPoint(x: 10.0, y: 17.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Sausage icon path
+    static let sausagePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 22.0), control1: CGPoint(x: 22.0, y: 20.65685424949238), control2: CGPoint(x: 20.65685424949238, y: 22.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 19.0), control1: CGPoint(x: 17.34314575050762, y: 22.0), control2: CGPoint(x: 16.0, y: 20.65685424949238))
+path.addCurve(to: CGPoint(x: 5.000000000000001, y: 8.0), control1: CGPoint(x: 16.0, y: 12.924867751861271), control2: CGPoint(x: 11.075132248138729, y: 8.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 5.0), control1: CGPoint(x: 3.34314575050762, y: 8.0), control2: CGPoint(x: 2.0000000000000004, y: 6.656854249492381))
+path.addCurve(to: CGPoint(x: 4.999999999999999, y: 2.0), control1: CGPoint(x: 2.0, y: 3.34314575050762), control2: CGPoint(x: 3.343145750507619, y: 2.0000000000000004))
+path.addCurve(to: CGPoint(x: 22.0, y: 19.0), control1: CGPoint(x: 14.38884074712349, y: 2.0), control2: CGPoint(x: 22.0, y: 9.611159252876512))
+path.move(to: CGPoint(x: 12.8, y: 11.2))
+path.addLine(to: CGPoint(x: 2.0, y: 22.0))
+path.move(to: CGPoint(x: 9.2, y: 8.8))
+path.addLine(to: CGPoint(x: 6.699999999999999, y: 11.3))
+path.addCurve(to: CGPoint(x: 6.699999999999998, y: 15.5), control1: CGPoint(x: 5.607134466931035, y: 12.486722308326765), control2: CGPoint(x: 5.607134466931035, y: 14.313277691673234))
+path.addLine(to: CGPoint(x: 8.5, y: 17.3))
+path.addCurve(to: CGPoint(x: 12.7, y: 17.3), control1: CGPoint(x: 9.686722308326765, y: 18.392865533068964), control2: CGPoint(x: 11.513277691673233, y: 18.392865533068964))
+path.addLine(to: CGPoint(x: 15.2, y: 14.8))
+        return path
+    }()
+        
+    /// Scarf icon path
+    static let scarfPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 19.5, y: 2.5))
+path.addLine(to: CGPoint(x: 7.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 6.8, y: 17.0), control1: CGPoint(x: 6.5, y: 15.5), control2: CGPoint(x: 6.4, y: 16.5))
+path.addLine(to: CGPoint(x: 9.0, y: 20.0))
+path.addLine(to: CGPoint(x: 21.6, y: 7.6))
+path.addCurve(to: CGPoint(x: 21.700000000000003, y: 5.699999999999999), control1: CGPoint(x: 22.086000048308794, y: 7.043245374362827), control2: CGPoint(x: 22.125569895791276, y: 6.291418272195714))
+path.addLine(to: CGPoint(x: 19.700000000000003, y: 2.6999999999999993))
+path.addCurve(to: CGPoint(x: 18.500000000000004, y: 1.9999999999999993), control1: CGPoint(x: 19.500000000000004, y: 2.2999999999999994), control2: CGPoint(x: 19.000000000000004, y: 1.9999999999999993))
+path.addLine(to: CGPoint(x: 5.5000000000000036, y: 1.9999999999999993))
+path.addCurve(to: CGPoint(x: 4.300000000000003, y: 2.6999999999999993), control1: CGPoint(x: 5.0000000000000036, y: 1.9999999999999993), control2: CGPoint(x: 4.5000000000000036, y: 2.2999999999999994))
+path.addLine(to: CGPoint(x: 2.3000000000000034, y: 5.699999999999999))
+path.addCurve(to: CGPoint(x: 2.500000000000003, y: 7.699999999999998), control1: CGPoint(x: 1.8471135878897633, y: 6.332544009983657), control2: CGPoint(x: 1.9280095214282094, y: 7.141503345368117))
+path.addLine(to: CGPoint(x: 8.500000000000004, y: 13.5))
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 4.5, y: 2.5))
+path.move(to: CGPoint(x: 13.0, y: 20.0))
+path.addLine(to: CGPoint(x: 13.0, y: 22.0))
+path.move(to: CGPoint(x: 16.0, y: 6.0))
+path.addLine(to: CGPoint(x: 8.0, y: 6.0))
+path.move(to: CGPoint(x: 17.0, y: 12.1))
+path.addLine(to: CGPoint(x: 17.0, y: 22.0))
+path.move(to: CGPoint(x: 17.0, y: 18.0))
+path.addLine(to: CGPoint(x: 21.0, y: 18.0))
+path.move(to: CGPoint(x: 17.0, y: 20.0))
+path.addLine(to: CGPoint(x: 9.0, y: 20.0))
+path.addLine(to: CGPoint(x: 9.0, y: 22.0))
+path.move(to: CGPoint(x: 21.0, y: 8.2))
+path.addLine(to: CGPoint(x: 21.0, y: 20.0))
+        return path
+    }()
+        
+    /// Scissors Hair Comb icon path
+    static let scissorsHairCombPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 8.0), control1: CGPoint(x: 5.0, y: 5.0), control2: CGPoint(x: 7.0, y: 5.0))
+path.move(to: CGPoint(x: 10.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 8.0), control1: CGPoint(x: 9.0, y: 5.0), control2: CGPoint(x: 11.0, y: 5.0))
+path.move(to: CGPoint(x: 5.4, y: 18.6))
+path.addLine(to: CGPoint(x: 8.0, y: 16.0))
+path.move(to: CGPoint(x: 10.8, y: 13.2))
+path.addLine(to: CGPoint(x: 14.0, y: 10.0))
+path.move(to: CGPoint(x: 2.0, y: 10.0))
+path.addLine(to: CGPoint(x: 10.6, y: 18.6))
+path.move(to: CGPoint(x: 18.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.0), control1: CGPoint(x: 21.104569499661586, y: 2.0), control2: CGPoint(x: 22.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.move(to: CGPoint(x: 18.0, y: 6.0))
+path.addLine(to: CGPoint(x: 22.0, y: 6.0))
+path.move(to: CGPoint(x: 18.0, y: 10.0))
+path.addLine(to: CGPoint(x: 22.0, y: 10.0))
+path.move(to: CGPoint(x: 18.0, y: 14.0))
+path.addLine(to: CGPoint(x: 22.0, y: 14.0))
+path.move(to: CGPoint(x: 18.0, y: 18.0))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.move(to: CGPoint(x: 2.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 22.0), control1: CGPoint(x: 2.0, y: 21.104569499661586), control2: CGPoint(x: 2.8954305003384135, y: 22.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 20.0), control1: CGPoint(x: 5.104569499661587, y: 22.0), control2: CGPoint(x: 6.0, y: 21.104569499661586))
+path.addCurve(to: CGPoint(x: 4.0, y: 18.0), control1: CGPoint(x: 6.0, y: 18.895430500338414), control2: CGPoint(x: 5.104569499661587, y: 18.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 18.0), control2: CGPoint(x: 2.0, y: 18.895430500338414))
+path.move(to: CGPoint(x: 10.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 10.0, y: 21.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 22.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 20.0), control1: CGPoint(x: 13.104569499661586, y: 22.0), control2: CGPoint(x: 14.0, y: 21.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 14.0, y: 18.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 18.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 20.0), control1: CGPoint(x: 10.895430500338414, y: 18.0), control2: CGPoint(x: 10.0, y: 18.895430500338414))
+        return path
+    }()
+        
+    /// Shark icon path
+    static let sharkPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 3.6, y: 15.0))
+path.addCurve(to: CGPoint(x: 8.350209642570453, y: 20.07783909092937), control1: CGPoint(x: 4.445962790270596, y: 17.25644628379397), control2: CGPoint(x: 6.155112667478231, y: 19.0834789227252))
+path.addCurve(to: CGPoint(x: 15.299999999999995, y: 20.299999999999997), control1: CGPoint(x: 10.545306617662675, y: 21.07219925913354), control2: CGPoint(x: 13.045876956615528, y: 21.152133897608344))
+path.addCurve(to: CGPoint(x: 22.0, y: 22.0), control1: CGPoint(x: 15.299999999999999, y: 20.3), control2: CGPoint(x: 19.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 17.5), control1: CGPoint(x: 22.0, y: 22.0), control2: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 12.2), control1: CGPoint(x: 20.1, y: 16.0), control2: CGPoint(x: 20.9, y: 14.2))
+path.addLine(to: CGPoint(x: 13.0, y: 16.799999999999997))
+path.addCurve(to: CGPoint(x: 11.027756801662646, y: 16.816025415460686), control1: CGPoint(x: 12.392648496242055, y: 17.157265598116602), control2: CGPoint(x: 11.640833634968896, y: 17.163374451989988))
+path.addCurve(to: CGPoint(x: 10.02775679754042, y: 15.116025403965333), control1: CGPoint(x: 10.414679968356396, y: 16.468676378931384), control2: CGPoint(x: 10.033482119629573, y: 15.82064003438513))
+path.addCurve(to: CGPoint(x: 11.000000003922297, y: 13.399999997692763), control1: CGPoint(x: 10.022031475451268, y: 14.411410773545535), control2: CGPoint(x: 10.392648492635542, y: 13.757265583010392))
+path.addLine(to: CGPoint(x: 17.0, y: 9.899999999999997))
+path.addCurve(to: CGPoint(x: 22.0, y: 3.099999999999997), control1: CGPoint(x: 17.0, y: 9.899999999999997), control2: CGPoint(x: 22.0, y: 7.099999999999997))
+path.addCurve(to: CGPoint(x: 21.0, y: 2.099999999999997), control1: CGPoint(x: 22.0, y: 2.499999999999997), control2: CGPoint(x: 21.6, y: 2.099999999999997))
+path.addLine(to: CGPoint(x: 12.0, y: 2.099999999999997))
+path.addCurve(to: CGPoint(x: 7.2, y: 3.599999999999997), control1: CGPoint(x: 10.2, y: 2.099999999999997), control2: CGPoint(x: 8.6, y: 2.599999999999997))
+path.addCurve(to: CGPoint(x: 2.0, y: 2.0), control1: CGPoint(x: 5.7, y: 2.5), control2: CGPoint(x: 3.9, y: 2.0))
+path.addCurve(to: CGPoint(x: 4.3, y: 6.5), control1: CGPoint(x: 2.0, y: 2.0), control2: CGPoint(x: 3.4, y: 4.1))
+path.addCurve(to: CGPoint(x: 3.099999999999998, y: 12.999999999999998), control1: CGPoint(x: 3.2194197730306104, y: 8.484091591298096), control2: CGPoint(x: 2.799092464216743, y: 10.760864514039875))
+path.move(to: CGPoint(x: 13.8, y: 7.0))
+path.addLine(to: CGPoint(x: 13.0, y: 6.0))
+path.move(to: CGPoint(x: 21.12, y: 6.0))
+path.addLine(to: CGPoint(x: 17.62, y: 6.0))
+path.addCurve(to: CGPoint(x: 13.8, y: 7.0), control1: CGPoint(x: 16.52, y: 6.0), control2: CGPoint(x: 14.82, y: 6.5))
+path.addLine(to: CGPoint(x: 9.0, y: 9.8))
+path.addCurve(to: CGPoint(x: 2.0, y: 15.0), control1: CGPoint(x: 3.0, y: 11.0), control2: CGPoint(x: 2.0, y: 15.0))
+path.addLine(to: CGPoint(x: 6.0, y: 15.0))
+        return path
+    }()
+        
+    /// Shave Face icon path
+    static let shaveFacePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 13.0), control1: CGPoint(x: 6.1340067511844465, y: 20.0), control2: CGPoint(x: 3.000000000000001, y: 16.865993248815556))
+path.addLine(to: CGPoint(x: 3.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.4), control2: CGPoint(x: 3.4, y: 3.0))
+path.addLine(to: CGPoint(x: 10.0, y: 3.0))
+path.move(to: CGPoint(x: 7.0, y: 7.0))
+path.addEllipse(in: CGRect(x: 6.66, y: 6.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 11.0, y: 13.0))
+path.addLine(to: CGPoint(x: 14.0, y: 13.0))
+path.addLine(to: CGPoint(x: 14.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 3.0), control1: CGPoint(x: 14.0, y: 3.4), control2: CGPoint(x: 14.4, y: 3.0))
+path.addLine(to: CGPoint(x: 21.0, y: 3.0))
+path.move(to: CGPoint(x: 18.0, y: 7.0))
+path.addEllipse(in: CGRect(x: 17.66, y: 6.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.0, y: 19.0))
+path.addLine(to: CGPoint(x: 14.0, y: 21.0))
+path.move(to: CGPoint(x: 18.0, y: 17.0))
+path.addLine(to: CGPoint(x: 19.5, y: 18.5))
+path.move(to: CGPoint(x: 19.0, y: 13.0))
+path.addLine(to: CGPoint(x: 21.0, y: 13.0))
+        return path
+    }()
+        
+    /// Shirt Folded Buttons icon path
+    static let shirtFoldedButtonsPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 19.0, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.4), control2: CGPoint(x: 3.4, y: 3.0))
+path.addLine(to: CGPoint(x: 16.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 4.0), control1: CGPoint(x: 16.6, y: 3.0), control2: CGPoint(x: 17.0, y: 3.4))
+path.addLine(to: CGPoint(x: 17.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 17.0, y: 20.104569499661586), control2: CGPoint(x: 17.895430500338414, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 20.104569499661586, y: 21.0), control2: CGPoint(x: 21.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 21.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 21.0, y: 6.4), control2: CGPoint(x: 20.6, y: 6.0))
+path.addLine(to: CGPoint(x: 17.0, y: 6.0))
+path.move(to: CGPoint(x: 7.0, y: 3.0))
+path.addLine(to: CGPoint(x: 7.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 7.0), control1: CGPoint(x: 7.0, y: 5.656854249492381), control2: CGPoint(x: 8.34314575050762, y: 7.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 4.0), control1: CGPoint(x: 11.65685424949238, y: 7.0), control2: CGPoint(x: 13.0, y: 5.656854249492381))
+path.addLine(to: CGPoint(x: 13.0, y: 3.0))
+path.move(to: CGPoint(x: 10.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.0, y: 15.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 14.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Shirt Long Sleeve icon path
+    static let shirtLongSleevePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 19.0))
+path.addLine(to: CGPoint(x: 3.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 2.4, y: 19.0), control2: CGPoint(x: 2.0, y: 18.6))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 3.9, y: 3.4), control1: CGPoint(x: 2.0, y: 4.9), control2: CGPoint(x: 2.8, y: 3.7))
+path.addLine(to: CGPoint(x: 8.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 8.0, y: 4.209138999323175), control2: CGPoint(x: 9.790861000676827, y: 6.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 2.0), control1: CGPoint(x: 14.209138999323175, y: 6.0), control2: CGPoint(x: 16.0, y: 4.209138999323174))
+path.addLine(to: CGPoint(x: 20.1, y: 3.4))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 21.2, y: 3.7), control2: CGPoint(x: 22.0, y: 4.9))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 22.0, y: 18.6), control2: CGPoint(x: 21.6, y: 19.0))
+path.addLine(to: CGPoint(x: 18.0, y: 19.0))
+path.move(to: CGPoint(x: 18.0, y: 8.0))
+path.addLine(to: CGPoint(x: 18.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 18.0, y: 21.6), control2: CGPoint(x: 17.6, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 21.0), control1: CGPoint(x: 6.4, y: 22.0), control2: CGPoint(x: 6.0, y: 21.6))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+        return path
+    }()
+        
+    /// Shirt T icon path
+    static let shirtTPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 11.0))
+path.addLine(to: CGPoint(x: 3.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 10.0), control1: CGPoint(x: 2.4, y: 11.0), control2: CGPoint(x: 2.0, y: 10.6))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 3.9, y: 3.4), control1: CGPoint(x: 2.0, y: 4.9), control2: CGPoint(x: 2.8, y: 3.7))
+path.addLine(to: CGPoint(x: 8.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 8.0, y: 4.209138999323175), control2: CGPoint(x: 9.790861000676827, y: 6.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 2.0), control1: CGPoint(x: 14.209138999323175, y: 6.0), control2: CGPoint(x: 16.0, y: 4.209138999323174))
+path.addLine(to: CGPoint(x: 20.1, y: 3.4))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 21.2, y: 3.7), control2: CGPoint(x: 22.0, y: 4.9))
+path.addLine(to: CGPoint(x: 22.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 11.0), control1: CGPoint(x: 22.0, y: 10.6), control2: CGPoint(x: 21.6, y: 11.0))
+path.addLine(to: CGPoint(x: 18.0, y: 11.0))
+path.move(to: CGPoint(x: 18.0, y: 8.0))
+path.addLine(to: CGPoint(x: 18.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 18.0, y: 21.6), control2: CGPoint(x: 17.6, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 21.0), control1: CGPoint(x: 6.4, y: 22.0), control2: CGPoint(x: 6.0, y: 21.6))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+        return path
+    }()
+        
+    /// Shirt T Ruler icon path
+    static let shirtTRulerPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 11.0))
+path.addLine(to: CGPoint(x: 3.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 10.0), control1: CGPoint(x: 2.4, y: 11.0), control2: CGPoint(x: 2.0, y: 10.6))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 3.9, y: 3.4), control1: CGPoint(x: 2.0, y: 4.9), control2: CGPoint(x: 2.8, y: 3.7))
+path.addLine(to: CGPoint(x: 8.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 8.0, y: 4.209138999323175), control2: CGPoint(x: 9.790861000676827, y: 6.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 2.0), control1: CGPoint(x: 14.209138999323175, y: 6.0), control2: CGPoint(x: 16.0, y: 4.209138999323174))
+path.addLine(to: CGPoint(x: 20.1, y: 3.4))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 21.2, y: 3.7), control2: CGPoint(x: 22.0, y: 4.9))
+path.addLine(to: CGPoint(x: 22.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 11.0), control1: CGPoint(x: 22.0, y: 10.6), control2: CGPoint(x: 21.6, y: 11.0))
+path.addLine(to: CGPoint(x: 18.0, y: 11.0))
+path.move(to: CGPoint(x: 6.0, y: 18.0))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.move(to: CGPoint(x: 18.0, y: 8.0))
+path.addLine(to: CGPoint(x: 18.0, y: 18.0))
+path.move(to: CGPoint(x: 10.0, y: 16.0))
+path.addLine(to: CGPoint(x: 10.0, y: 18.0))
+path.move(to: CGPoint(x: 14.0, y: 16.0))
+path.addLine(to: CGPoint(x: 14.0, y: 18.0))
+path.move(to: CGPoint(x: 4.0, y: 16.0))
+path.addLine(to: CGPoint(x: 20.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 18.0), control1: CGPoint(x: 21.104569499661586, y: 16.0), control2: CGPoint(x: 22.0, y: 16.895430500338414))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 16.0), control1: CGPoint(x: 2.0, y: 16.895430500338414), control2: CGPoint(x: 2.8954305003384126, y: 16.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Shirt T V Neck icon path
+    static let shirtTVNeckPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 11.0))
+path.addLine(to: CGPoint(x: 3.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 10.0), control1: CGPoint(x: 2.4, y: 11.0), control2: CGPoint(x: 2.0, y: 10.6))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 3.9, y: 3.4), control1: CGPoint(x: 2.0, y: 4.9), control2: CGPoint(x: 2.8, y: 3.7))
+path.addLine(to: CGPoint(x: 8.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.0), control1: CGPoint(x: 8.0, y: 4.2), control2: CGPoint(x: 11.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 2.0), control1: CGPoint(x: 13.0, y: 7.0), control2: CGPoint(x: 16.0, y: 4.2))
+path.addLine(to: CGPoint(x: 20.1, y: 3.4))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 21.2, y: 3.7), control2: CGPoint(x: 22.0, y: 4.9))
+path.addLine(to: CGPoint(x: 22.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 11.0), control1: CGPoint(x: 22.0, y: 10.6), control2: CGPoint(x: 21.6, y: 11.0))
+path.addLine(to: CGPoint(x: 18.0, y: 11.0))
+path.move(to: CGPoint(x: 18.0, y: 8.0))
+path.addLine(to: CGPoint(x: 18.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 18.0, y: 21.6), control2: CGPoint(x: 17.6, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 21.0), control1: CGPoint(x: 6.4, y: 22.0), control2: CGPoint(x: 6.0, y: 21.6))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+        return path
+    }()
+        
+    /// Shorts icon path
+    static let shortsPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 8.0))
+path.addLine(to: CGPoint(x: 22.0, y: 8.0))
+path.move(to: CGPoint(x: 9.0, y: 20.0))
+path.addLine(to: CGPoint(x: 4.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 2.8954305003384135, y: 20.0), control2: CGPoint(x: 2.0, y: 19.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 4.0), control1: CGPoint(x: 2.0, y: 4.4), control2: CGPoint(x: 2.4, y: 4.0))
+path.addLine(to: CGPoint(x: 21.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 5.0), control1: CGPoint(x: 21.6, y: 4.0), control2: CGPoint(x: 22.0, y: 4.4))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 20.0), control1: CGPoint(x: 22.0, y: 19.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 20.0))
+path.addLine(to: CGPoint(x: 15.0, y: 20.0))
+path.addLine(to: CGPoint(x: 12.0, y: 15.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.0, y: 12.0))
+path.addLine(to: CGPoint(x: 9.0, y: 8.0))
+path.move(to: CGPoint(x: 15.0, y: 8.0))
+path.addLine(to: CGPoint(x: 15.0, y: 12.0))
+path.move(to: CGPoint(x: 5.0, y: 13.0))
+path.addLine(to: CGPoint(x: 2.0, y: 15.0))
+path.move(to: CGPoint(x: 22.0, y: 15.0))
+path.addLine(to: CGPoint(x: 19.0, y: 13.0))
+        return path
+    }()
+        
+    /// Shorts Boxer icon path
+    static let shortsBoxerPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.7, y: 15.8))
+path.addLine(to: CGPoint(x: 9.0, y: 20.0))
+path.addLine(to: CGPoint(x: 4.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 2.8954305003384135, y: 20.0), control2: CGPoint(x: 2.0, y: 19.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 4.0), control1: CGPoint(x: 2.0, y: 4.4), control2: CGPoint(x: 2.4, y: 4.0))
+path.addLine(to: CGPoint(x: 21.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 5.0), control1: CGPoint(x: 21.6, y: 4.0), control2: CGPoint(x: 22.0, y: 4.4))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 20.0), control1: CGPoint(x: 22.0, y: 19.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 20.0))
+path.addLine(to: CGPoint(x: 15.0, y: 20.0))
+path.addLine(to: CGPoint(x: 13.3, y: 15.8))
+path.move(to: CGPoint(x: 2.0, y: 8.0))
+path.addLine(to: CGPoint(x: 22.0, y: 8.0))
+path.move(to: CGPoint(x: 16.0, y: 8.0))
+path.addLine(to: CGPoint(x: 16.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 16.0, y: 14.209138999323173), control2: CGPoint(x: 14.209138999323175, y: 16.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 12.0), control1: CGPoint(x: 9.790861000676827, y: 16.0), control2: CGPoint(x: 8.0, y: 14.209138999323175))
+path.addLine(to: CGPoint(x: 8.0, y: 8.0))
+        return path
+    }()
+        
+    /// Shovel Dig icon path
+    static let shovelDigPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 6.5))
+path.addCurve(to: CGPoint(x: 9.0, y: 3.5), control1: CGPoint(x: 10.3, y: 6.5), control2: CGPoint(x: 9.0, y: 5.2))
+path.addLine(to: CGPoint(x: 9.0, y: 2.0))
+path.addLine(to: CGPoint(x: 15.0, y: 2.0))
+path.addLine(to: CGPoint(x: 15.0, y: 3.5))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.5), control1: CGPoint(x: 15.0, y: 5.2), control2: CGPoint(x: 13.7, y: 6.5))
+path.move(to: CGPoint(x: 12.0, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 6.5))
+path.move(to: CGPoint(x: 8.0, y: 22.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 16.0), control1: CGPoint(x: 8.0, y: 16.895430500338414), control2: CGPoint(x: 8.895430500338414, y: 16.0))
+path.addLine(to: CGPoint(x: 14.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 15.104569499661586, y: 16.0), control2: CGPoint(x: 16.0, y: 16.895430500338414))
+path.addLine(to: CGPoint(x: 16.0, y: 22.0))
+path.move(to: CGPoint(x: 6.0, y: 22.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+        return path
+    }()
+        
+    /// Shower icon path
+    static let showerPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 10.0))
+path.addLine(to: CGPoint(x: 9.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 6.0), control1: CGPoint(x: 9.0, y: 6.8954305003384135), control2: CGPoint(x: 9.895430500338414, y: 6.0))
+path.addLine(to: CGPoint(x: 17.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 8.0), control1: CGPoint(x: 18.104569499661586, y: 6.0), control2: CGPoint(x: 19.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 19.0, y: 10.0))
+path.move(to: CGPoint(x: 7.0, y: 10.0))
+path.addLine(to: CGPoint(x: 21.0, y: 10.0))
+path.move(to: CGPoint(x: 3.0, y: 22.0))
+path.addLine(to: CGPoint(x: 3.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 2.0), control1: CGPoint(x: 3.0, y: 2.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 4.0), control1: CGPoint(x: 13.104569499661586, y: 2.0), control2: CGPoint(x: 14.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 14.0, y: 6.0))
+path.move(to: CGPoint(x: 10.0, y: 14.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 13.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.0, y: 14.0))
+path.addEllipse(in: CGRect(x: 13.66, y: 13.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 18.0, y: 14.0))
+path.addEllipse(in: CGRect(x: 17.66, y: 13.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.0, y: 18.0))
+path.addEllipse(in: CGRect(x: 8.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.0, y: 18.0))
+path.addEllipse(in: CGRect(x: 13.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 19.0, y: 18.0))
+path.addEllipse(in: CGRect(x: 18.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 8.0, y: 22.0))
+path.addEllipse(in: CGRect(x: 7.66, y: 21.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.0, y: 22.0))
+path.addEllipse(in: CGRect(x: 13.66, y: 21.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 20.0, y: 22.0))
+path.addEllipse(in: CGRect(x: 19.66, y: 21.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Skirt icon path
+    static let skirtPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 11.4), control1: CGPoint(x: 6.0, y: 8.7), control2: CGPoint(x: 5.6, y: 10.3))
+path.addCurve(to: CGPoint(x: 2.0, y: 17.0), control1: CGPoint(x: 3.8, y: 13.6), control2: CGPoint(x: 2.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 6.5, y: 19.1), control1: CGPoint(x: 2.0, y: 17.0), control2: CGPoint(x: 3.8, y: 18.2))
+path.move(to: CGPoint(x: 8.0, y: 16.0))
+path.addLine(to: CGPoint(x: 6.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 21.0), control1: CGPoint(x: 6.0, y: 20.0), control2: CGPoint(x: 8.7, y: 21.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 20.0), control1: CGPoint(x: 15.3, y: 21.0), control2: CGPoint(x: 18.0, y: 20.0))
+path.addLine(to: CGPoint(x: 16.0, y: 16.0))
+path.move(to: CGPoint(x: 17.5, y: 19.1))
+path.addCurve(to: CGPoint(x: 22.0, y: 17.0), control1: CGPoint(x: 20.2, y: 18.2), control2: CGPoint(x: 22.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 11.4), control1: CGPoint(x: 22.0, y: 17.0), control2: CGPoint(x: 20.2, y: 13.6))
+path.addCurve(to: CGPoint(x: 18.0, y: 7.0), control1: CGPoint(x: 18.4, y: 10.3), control2: CGPoint(x: 18.0, y: 8.7))
+path.move(to: CGPoint(x: 6.0, y: 3.0))
+path.addLine(to: CGPoint(x: 18.0, y: 3.0))
+path.addLine(to: CGPoint(x: 18.0, y: 7.0))
+path.addLine(to: CGPoint(x: 6.0, y: 7.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Skis icon path
+    static let skisPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 4.0))
+path.addLine(to: CGPoint(x: 5.0, y: 3.0))
+path.move(to: CGPoint(x: 3.0, y: 2.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.move(to: CGPoint(x: 10.0, y: 2.0))
+path.addLine(to: CGPoint(x: 3.0, y: 22.0))
+path.move(to: CGPoint(x: 2.0, y: 20.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.move(to: CGPoint(x: 22.0, y: 22.0))
+path.addLine(to: CGPoint(x: 22.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 2.0), control1: CGPoint(x: 22.0, y: 3.8), control2: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 6.0), control1: CGPoint(x: 20.0, y: 2.0), control2: CGPoint(x: 18.0, y: 3.8))
+path.addCurve(to: CGPoint(x: 16.0, y: 2.0), control1: CGPoint(x: 18.0, y: 3.8), control2: CGPoint(x: 16.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 6.0), control1: CGPoint(x: 16.0, y: 2.0), control2: CGPoint(x: 14.0, y: 3.8))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 18.0, y: 6.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+        return path
+    }()
+        
+    /// Slot Card icon path
+    static let slotCardPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 13.0))
+path.addLine(to: CGPoint(x: 4.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.0), control1: CGPoint(x: 2.8954305003384135, y: 13.0), control2: CGPoint(x: 2.0, y: 12.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 5.0), control1: CGPoint(x: 2.0, y: 5.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 5.0))
+path.addLine(to: CGPoint(x: 20.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 7.0), control1: CGPoint(x: 21.104569499661586, y: 5.0), control2: CGPoint(x: 22.0, y: 5.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 13.0), control1: CGPoint(x: 22.0, y: 12.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 13.0))
+path.addLine(to: CGPoint(x: 17.0, y: 13.0))
+path.move(to: CGPoint(x: 6.0, y: 9.0))
+path.addLine(to: CGPoint(x: 18.0, y: 9.0))
+path.move(to: CGPoint(x: 13.0, y: 9.0))
+path.addLine(to: CGPoint(x: 17.0, y: 13.0))
+path.addLine(to: CGPoint(x: 17.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 19.0), control1: CGPoint(x: 17.0, y: 18.104569499661586), control2: CGPoint(x: 16.104569499661586, y: 19.0))
+path.addLine(to: CGPoint(x: 9.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 17.0), control1: CGPoint(x: 7.8954305003384135, y: 19.0), control2: CGPoint(x: 7.0, y: 18.104569499661586))
+path.addLine(to: CGPoint(x: 7.0, y: 9.0))
+        return path
+    }()
+        
+    /// Slot Card Credit icon path
+    static let slotCardCreditPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 13.0))
+path.addLine(to: CGPoint(x: 4.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.0), control1: CGPoint(x: 2.8954305003384135, y: 13.0), control2: CGPoint(x: 2.0, y: 12.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 5.0), control1: CGPoint(x: 2.0, y: 5.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 5.0))
+path.addLine(to: CGPoint(x: 20.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 7.0), control1: CGPoint(x: 21.104569499661586, y: 5.0), control2: CGPoint(x: 22.0, y: 5.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 13.0), control1: CGPoint(x: 22.0, y: 12.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 13.0))
+path.addLine(to: CGPoint(x: 17.0, y: 13.0))
+path.move(to: CGPoint(x: 6.0, y: 9.0))
+path.addLine(to: CGPoint(x: 18.0, y: 9.0))
+path.move(to: CGPoint(x: 17.0, y: 9.0))
+path.addLine(to: CGPoint(x: 17.0, y: 17.3))
+path.addCurve(to: CGPoint(x: 15.0, y: 19.0), control1: CGPoint(x: 17.0, y: 18.2), control2: CGPoint(x: 16.1, y: 19.0))
+path.addLine(to: CGPoint(x: 9.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 17.3), control1: CGPoint(x: 7.9, y: 19.0), control2: CGPoint(x: 7.0, y: 18.3))
+path.addLine(to: CGPoint(x: 7.0, y: 9.0))
+path.move(to: CGPoint(x: 11.0, y: 9.0))
+path.addLine(to: CGPoint(x: 11.0, y: 19.0))
+        return path
+    }()
+        
+    /// Slot Disc icon path
+    static let slotDiscPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 13.0))
+path.addLine(to: CGPoint(x: 4.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.0), control1: CGPoint(x: 2.8954305003384135, y: 13.0), control2: CGPoint(x: 2.0, y: 12.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 5.0), control1: CGPoint(x: 2.0, y: 5.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 5.0))
+path.addLine(to: CGPoint(x: 20.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 7.0), control1: CGPoint(x: 21.104569499661586, y: 5.0), control2: CGPoint(x: 22.0, y: 5.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 13.0), control1: CGPoint(x: 22.0, y: 12.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 13.0))
+path.addLine(to: CGPoint(x: 18.0, y: 13.0))
+path.move(to: CGPoint(x: 6.0, y: 9.0))
+path.addLine(to: CGPoint(x: 18.0, y: 9.0))
+path.move(to: CGPoint(x: 8.7, y: 9.0))
+path.addCurve(to: CGPoint(x: 6.178956592072268, y: 15.815163001035712), control1: CGPoint(x: 6.442526548268495, y: 10.462267782700234), control2: CGPoint(x: 5.416553289177966, y: 13.23579202009259))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 20.16459517528135), control1: CGPoint(x: 6.9413598949665705, y: 18.39453398197883), control2: CGPoint(x: 9.310313502730175, y: 20.16459517528135))
+path.addCurve(to: CGPoint(x: 17.821043407927732, y: 15.815163001035714), control1: CGPoint(x: 14.689686497269824, y: 20.16459517528135), control2: CGPoint(x: 17.05864010503343, y: 18.394533981978835))
+path.addCurve(to: CGPoint(x: 15.299999999999999, y: 8.999999999999998), control1: CGPoint(x: 18.583446710822034, y: 13.235792020092592), control2: CGPoint(x: 17.557473451731504, y: 10.462267782700232))
+path.move(to: CGPoint(x: 11.5, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.5), control1: CGPoint(x: 11.5, y: 14.276142374915397), control2: CGPoint(x: 11.723857625084603, y: 14.5))
+path.addCurve(to: CGPoint(x: 12.5, y: 14.0), control1: CGPoint(x: 12.276142374915397, y: 14.5), control2: CGPoint(x: 12.5, y: 14.276142374915397))
+path.addCurve(to: CGPoint(x: 12.0, y: 13.5), control1: CGPoint(x: 12.5, y: 13.723857625084603), control2: CGPoint(x: 12.276142374915397, y: 13.5))
+path.addCurve(to: CGPoint(x: 11.5, y: 14.0), control1: CGPoint(x: 11.723857625084603, y: 13.5), control2: CGPoint(x: 11.5, y: 13.723857625084603))
+        return path
+    }()
+        
+    /// Sneaker icon path
+    static let sneakerPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.1, y: 7.9))
+path.addLine(to: CGPoint(x: 12.5, y: 10.0))
+path.move(to: CGPoint(x: 17.4, y: 10.1))
+path.addLine(to: CGPoint(x: 16.0, y: 12.0))
+path.move(to: CGPoint(x: 2.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 18.0), control1: CGPoint(x: 2.0, y: 17.104569499661586), control2: CGPoint(x: 2.8954305003384135, y: 18.0))
+path.addLine(to: CGPoint(x: 17.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 13.0), control1: CGPoint(x: 19.8, y: 18.0), control2: CGPoint(x: 22.0, y: 15.8))
+path.addCurve(to: CGPoint(x: 20.0, y: 11.0), control1: CGPoint(x: 22.0, y: 11.895430500338414), control2: CGPoint(x: 21.104569499661586, y: 11.0))
+path.addCurve(to: CGPoint(x: 17.8, y: 10.3), control1: CGPoint(x: 19.2, y: 11.0), control2: CGPoint(x: 18.4, y: 10.8))
+path.addLine(to: CGPoint(x: 11.600000000000001, y: 6.1000000000000005))
+path.addCurve(to: CGPoint(x: 10.3, y: 6.2), control1: CGPoint(x: 11.200000000000001, y: 5.800000000000001), control2: CGPoint(x: 10.700000000000001, y: 5.9))
+path.addCurve(to: CGPoint(x: 9.100000000000001, y: 7.300000000000001), control1: CGPoint(x: 10.3, y: 6.2), control2: CGPoint(x: 9.700000000000001, y: 7.0))
+path.addCurve(to: CGPoint(x: 4.900000000000002, y: 7.4), control1: CGPoint(x: 7.877895896967176, y: 8.263291017117082), control2: CGPoint(x: 6.166564294098987, y: 8.304037007661563))
+path.addCurve(to: CGPoint(x: 3.7, y: 6.3), control1: CGPoint(x: 4.4, y: 7.0), control2: CGPoint(x: 3.7, y: 6.3))
+path.addCurve(to: CGPoint(x: 2.5139565323794715, y: 5.833894435778719), control1: CGPoint(x: 3.493676951503177, y: 5.851648443828459), control2: CGPoint(x: 2.970328331321283, y: 5.645976636214443))
+path.addCurve(to: CGPoint(x: 2.0, y: 7.000000000000001), control1: CGPoint(x: 2.0575847334376602, y: 6.021812235342994), control2: CGPoint(x: 1.830798406125476, y: 6.536363138983985))
+path.closeSubpath()
+path.move(to: CGPoint(x: 2.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 14.0), control1: CGPoint(x: 2.0, y: 12.7), control2: CGPoint(x: 3.3, y: 14.0))
+path.addLine(to: CGPoint(x: 12.0, y: 14.0))
+        return path
+    }()
+        
+    /// Snowboard icon path
+    static let snowboardPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 19.2183926931527, y: 2.288075047522012), control1: CGPoint(x: 21.958087681365228, y: 4.296513705853356), control2: CGPoint(x: 20.841586728899316, y: 2.80659536449663))
+path.addCurve(to: CGPoint(x: 14.800000000000004, y: 3.699999999999992), control1: CGPoint(x: 17.595198657406087, y: 1.7695547305473944), control2: CGPoint(x: 15.821713364162198, y: 2.33628302119126))
+path.addCurve(to: CGPoint(x: 3.700000000000001, y: 14.8), control1: CGPoint(x: 10.600000000000001, y: 9.5), control2: CGPoint(x: 9.5, y: 10.600000000000001))
+path.addCurve(to: CGPoint(x: 1.8554405665721743, y: 18.93982950473486), control1: CGPoint(x: 2.2872782204507853, y: 15.664901375203852), control2: CGPoint(x: 1.5538038849006552, y: 17.311071533914024))
+path.addCurve(to: CGPoint(x: 5.060170495265141, y: 22.144559433427826), control1: CGPoint(x: 2.1570772482436937, y: 20.568587475555695), control2: CGPoint(x: 3.4314125244443043, y: 21.84292275175631))
+path.addCurve(to: CGPoint(x: 9.200000000000003, y: 20.299999999999997), control1: CGPoint(x: 6.6889284660859785, y: 22.446196115099347), control2: CGPoint(x: 8.33509862479615, y: 21.712721779549213))
+path.addCurve(to: CGPoint(x: 20.3, y: 9.200000000000001), control1: CGPoint(x: 13.400000000000002, y: 14.5), control2: CGPoint(x: 14.5, y: 13.4))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.000000000000001), control1: CGPoint(x: 21.3, y: 8.500000000000002), control2: CGPoint(x: 22.0, y: 7.300000000000001))
+path.move(to: CGPoint(x: 6.15, y: 13.0))
+path.addLine(to: CGPoint(x: 11.0, y: 13.0))
+path.addLine(to: CGPoint(x: 11.0, y: 17.85))
+        return path
+    }()
+        
+    /// Snowman icon path
+    static let snowmanPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 13.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.0, y: 18.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 2.0, y: 9.0))
+path.addLine(to: CGPoint(x: 4.0, y: 9.0))
+path.addLine(to: CGPoint(x: 4.0, y: 7.0))
+path.move(to: CGPoint(x: 7.0, y: 12.0))
+path.addLine(to: CGPoint(x: 4.0, y: 9.0))
+path.move(to: CGPoint(x: 17.8, y: 11.1))
+path.addLine(to: CGPoint(x: 20.0, y: 9.0))
+path.move(to: CGPoint(x: 20.0, y: 7.0))
+path.addLine(to: CGPoint(x: 20.0, y: 9.0))
+path.addLine(to: CGPoint(x: 22.0, y: 9.0))
+path.move(to: CGPoint(x: 9.0, y: 8.7))
+path.addCurve(to: CGPoint(x: 5.170948556265032, y: 16.562104141942548), control1: CGPoint(x: 6.042288394652141, y: 10.102965800221844), control2: CGPoint(x: 4.451905751970259, y: 13.368462267437293))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 22.02455532033676), control1: CGPoint(x: 5.8899913605598035, y: 19.7557460164478), control2: CGPoint(x: 8.726413132815699, y: 22.02455532033676))
+path.addCurve(to: CGPoint(x: 18.82905144373497, y: 16.562104141942548), control1: CGPoint(x: 15.2735868671843, y: 22.02455532033676), control2: CGPoint(x: 18.110008639440196, y: 19.7557460164478))
+path.addCurve(to: CGPoint(x: 15.000000000000005, y: 8.700000000000003), control1: CGPoint(x: 19.54809424802974, y: 13.368462267437296), control2: CGPoint(x: 17.95771160534786, y: 10.102965800221849))
+path.move(to: CGPoint(x: 5.0, y: 22.0))
+path.addLine(to: CGPoint(x: 19.0, y: 22.0))
+path.move(to: CGPoint(x: 8.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 8.0, y: 8.209138999323175), control2: CGPoint(x: 9.790861000676827, y: 10.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 6.0), control1: CGPoint(x: 14.209138999323175, y: 10.0), control2: CGPoint(x: 16.0, y: 8.209138999323173))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 16.0, y: 3.790861000676826), control2: CGPoint(x: 14.209138999323175, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 5.999999999999999), control1: CGPoint(x: 9.790861000676827, y: 2.0), control2: CGPoint(x: 8.0, y: 3.7908610006768257))
+        return path
+    }()
+        
+    /// Soap Bar icon path
+    static let soapBarPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 11.3, y: 2.7))
+path.addCurve(to: CGPoint(x: 14.700000000000001, y: 2.7), control1: CGPoint(x: 12.200000000000001, y: 1.8000000000000003), control2: CGPoint(x: 13.8, y: 1.8000000000000003))
+path.addLine(to: CGPoint(x: 20.3, y: 8.3))
+path.addCurve(to: CGPoint(x: 20.3, y: 11.700000000000001), control1: CGPoint(x: 21.2, y: 9.200000000000001), control2: CGPoint(x: 21.2, y: 10.8))
+path.addLine(to: CGPoint(x: 11.700000000000001, y: 20.3))
+path.addCurve(to: CGPoint(x: 8.3, y: 20.3), control1: CGPoint(x: 10.8, y: 21.2), control2: CGPoint(x: 9.200000000000001, y: 21.2))
+path.addLine(to: CGPoint(x: 2.700000000000001, y: 14.700000000000001))
+path.addCurve(to: CGPoint(x: 2.700000000000001, y: 11.3), control1: CGPoint(x: 1.8000000000000012, y: 13.8), control2: CGPoint(x: 1.8000000000000012, y: 12.200000000000001))
+path.closeSubpath()
+path.move(to: CGPoint(x: 13.0, y: 7.0))
+path.addLine(to: CGPoint(x: 7.0, y: 13.0))
+path.addLine(to: CGPoint(x: 10.0, y: 16.0))
+path.addLine(to: CGPoint(x: 16.0, y: 10.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 22.0, y: 22.0))
+path.addEllipse(in: CGRect(x: 21.66, y: 21.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 20.0, y: 17.5))
+path.addCurve(to: CGPoint(x: 20.5, y: 18.0), control1: CGPoint(x: 20.0, y: 17.7761423749154), control2: CGPoint(x: 20.2238576250846, y: 18.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 17.5), control1: CGPoint(x: 20.7761423749154, y: 18.0), control2: CGPoint(x: 21.0, y: 17.7761423749154))
+path.addCurve(to: CGPoint(x: 20.5, y: 17.0), control1: CGPoint(x: 21.0, y: 17.2238576250846), control2: CGPoint(x: 20.7761423749154, y: 17.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 17.5), control1: CGPoint(x: 20.2238576250846, y: 17.0), control2: CGPoint(x: 20.0, y: 17.2238576250846))
+path.move(to: CGPoint(x: 17.0, y: 21.5))
+path.addCurve(to: CGPoint(x: 17.5, y: 22.0), control1: CGPoint(x: 17.0, y: 21.7761423749154), control2: CGPoint(x: 17.2238576250846, y: 22.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 21.5), control1: CGPoint(x: 17.7761423749154, y: 22.0), control2: CGPoint(x: 18.0, y: 21.7761423749154))
+path.addCurve(to: CGPoint(x: 17.5, y: 21.0), control1: CGPoint(x: 18.0, y: 21.2238576250846), control2: CGPoint(x: 17.7761423749154, y: 21.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 21.5), control1: CGPoint(x: 17.2238576250846, y: 21.0), control2: CGPoint(x: 17.0, y: 21.2238576250846))
+        return path
+    }()
+        
+    /// Soccer Ball icon path
+    static let soccerBallPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 11.9, y: 6.7))
+path.addCurve(to: CGPoint(x: 6.9, y: 10.3), control1: CGPoint(x: 11.9, y: 6.7), control2: CGPoint(x: 8.9, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.8, y: 16.200000000000003), control1: CGPoint(x: 6.9, y: 10.3), control2: CGPoint(x: 6.9, y: 13.9))
+path.addCurve(to: CGPoint(x: 15.0, y: 16.200000000000003), control1: CGPoint(x: 8.8, y: 16.200000000000003), control2: CGPoint(x: 11.9, y: 16.900000000000002))
+path.addCurve(to: CGPoint(x: 16.9, y: 10.300000000000002), control1: CGPoint(x: 15.0, y: 16.200000000000003), control2: CGPoint(x: 16.9, y: 13.900000000000002))
+path.addCurve(to: CGPoint(x: 11.899999999999999, y: 6.700000000000003), control1: CGPoint(x: 16.9, y: 10.400000000000002), control2: CGPoint(x: 14.899999999999999, y: 8.000000000000004))
+path.move(to: CGPoint(x: 11.9, y: 6.7))
+path.addLine(to: CGPoint(x: 11.9, y: 2.0))
+path.move(to: CGPoint(x: 16.9, y: 10.4))
+path.addCurve(to: CGPoint(x: 21.4, y: 8.8), control1: CGPoint(x: 16.9, y: 10.4), control2: CGPoint(x: 19.9, y: 9.0))
+path.move(to: CGPoint(x: 15.0, y: 16.3))
+path.addCurve(to: CGPoint(x: 17.9, y: 20.0), control1: CGPoint(x: 15.0, y: 16.3), control2: CGPoint(x: 16.9, y: 19.0))
+path.move(to: CGPoint(x: 8.8, y: 16.3))
+path.addCurve(to: CGPoint(x: 6.0, y: 20.0), control1: CGPoint(x: 8.8, y: 16.3), control2: CGPoint(x: 6.9, y: 19.0))
+path.move(to: CGPoint(x: 2.6, y: 8.7))
+path.addCurve(to: CGPoint(x: 7.0, y: 10.4), control1: CGPoint(x: 4.0, y: 9.0), control2: CGPoint(x: 7.0, y: 10.4))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Soccer Pitch icon path
+    static let soccerPitchPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 5.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addLine(to: CGPoint(x: 12.0, y: 19.0))
+path.move(to: CGPoint(x: 2.0, y: 9.0))
+path.addLine(to: CGPoint(x: 6.0, y: 9.0))
+path.addLine(to: CGPoint(x: 6.0, y: 15.0))
+path.addLine(to: CGPoint(x: 2.0, y: 15.0))
+path.move(to: CGPoint(x: 3.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 2.4, y: 19.0), control2: CGPoint(x: 2.0, y: 18.6))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 5.0), control1: CGPoint(x: 2.0, y: 5.4), control2: CGPoint(x: 2.4, y: 5.0))
+path.addLine(to: CGPoint(x: 21.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 21.6, y: 5.0), control2: CGPoint(x: 22.0, y: 5.4))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 22.0, y: 18.6), control2: CGPoint(x: 21.6, y: 19.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 22.0, y: 15.0))
+path.addLine(to: CGPoint(x: 18.0, y: 15.0))
+path.addLine(to: CGPoint(x: 18.0, y: 9.0))
+path.addLine(to: CGPoint(x: 22.0, y: 9.0))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 10.0, y: 13.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 13.104569499661586, y: 14.0), control2: CGPoint(x: 14.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 14.0, y: 10.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 10.895430500338414, y: 10.0), control2: CGPoint(x: 10.0, y: 10.895430500338414))
+        return path
+    }()
+        
+    /// Socket Eu icon path
+    static let socketEuPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 11.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.0, y: 12.0))
+path.addEllipse(in: CGRect(x: 13.66, y: 11.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 6.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 6.000000000000001, y: 15.313708498984761), control2: CGPoint(x: 8.68629150101524, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 12.0), control1: CGPoint(x: 15.313708498984761, y: 18.0), control2: CGPoint(x: 18.0, y: 15.313708498984761))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 18.0, y: 8.686291501015239), control2: CGPoint(x: 15.313708498984761, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 12.0), control1: CGPoint(x: 8.68629150101524, y: 6.0), control2: CGPoint(x: 6.000000000000001, y: 8.686291501015239))
+path.move(to: CGPoint(x: 4.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.0), control1: CGPoint(x: 21.104569499661586, y: 2.0), control2: CGPoint(x: 22.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 2.0), control1: CGPoint(x: 2.0, y: 2.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Socket Uk icon path
+    static let socketUkPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 8.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.move(to: CGPoint(x: 10.0, y: 15.0))
+path.addLine(to: CGPoint(x: 8.0, y: 15.0))
+path.move(to: CGPoint(x: 14.0, y: 15.0))
+path.addLine(to: CGPoint(x: 16.0, y: 15.0))
+path.move(to: CGPoint(x: 4.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.0), control1: CGPoint(x: 21.104569499661586, y: 2.0), control2: CGPoint(x: 22.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 2.0), control1: CGPoint(x: 2.0, y: 2.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Socket Usa icon path
+    static let socketUsaPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 11.0))
+path.addLine(to: CGPoint(x: 10.0, y: 13.0))
+path.move(to: CGPoint(x: 14.0, y: 11.0))
+path.addLine(to: CGPoint(x: 14.0, y: 13.0))
+path.move(to: CGPoint(x: 6.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 6.000000000000001, y: 15.313708498984761), control2: CGPoint(x: 8.68629150101524, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 12.0), control1: CGPoint(x: 15.313708498984761, y: 18.0), control2: CGPoint(x: 18.0, y: 15.313708498984761))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 18.0, y: 8.686291501015239), control2: CGPoint(x: 15.313708498984761, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 12.0), control1: CGPoint(x: 8.68629150101524, y: 6.0), control2: CGPoint(x: 6.000000000000001, y: 8.686291501015239))
+path.move(to: CGPoint(x: 4.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.0), control1: CGPoint(x: 21.104569499661586, y: 2.0), control2: CGPoint(x: 22.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 2.0), control1: CGPoint(x: 2.0, y: 2.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Socks icon path
+    static let socksPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.6, y: 20.4))
+path.addLine(to: CGPoint(x: 9.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 5.653237737818561, y: 21.896762294827695), control1: CGPoint(x: 8.124699311458857, y: 21.875300723307983), control2: CGPoint(x: 6.8489207405267285, y: 22.217144579947917))
+path.addCurve(to: CGPoint(x: 3.2032377080595578, y: 19.446762272956807), control1: CGPoint(x: 4.457554735110392, y: 21.576380009707474), control2: CGPoint(x: 3.5236199970294475, y: 20.64244527463346))
+path.addCurve(to: CGPoint(x: 4.099999992111886, y: 16.100000007888116), control1: CGPoint(x: 2.882855419089668, y: 18.251079271280155), control2: CGPoint(x: 3.2246992716220553, y: 16.975300699247413))
+path.addLine(to: CGPoint(x: 7.6, y: 12.600000000000001))
+path.addCurve(to: CGPoint(x: 9.0, y: 9.0), control1: CGPoint(x: 8.4, y: 11.6), control2: CGPoint(x: 9.0, y: 10.4))
+path.addLine(to: CGPoint(x: 9.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 2.0), control1: CGPoint(x: 9.0, y: 2.4), control2: CGPoint(x: 9.4, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 3.0), control1: CGPoint(x: 20.6, y: 2.0), control2: CGPoint(x: 21.0, y: 2.4))
+path.addLine(to: CGPoint(x: 21.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 19.500000000000078, y: 16.59999999999992), control1: CGPoint(x: 20.99127215471912, y: 14.350239762906728), control2: CGPoint(x: 20.452604484972795, y: 15.643042170297985))
+path.addLine(to: CGPoint(x: 15.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 11.65323773781856, y: 21.896762294827695), control1: CGPoint(x: 14.124699311458857, y: 21.875300723307983), control2: CGPoint(x: 12.84892074052673, y: 22.217144579947917))
+path.addCurve(to: CGPoint(x: 9.203237708059559, y: 19.446762272956807), control1: CGPoint(x: 10.457554735110394, y: 21.576380009707474), control2: CGPoint(x: 9.52361999702945, y: 20.64244527463346))
+path.addCurve(to: CGPoint(x: 10.099999992111886, y: 16.100000007888116), control1: CGPoint(x: 8.882855419089669, y: 18.251079271280155), control2: CGPoint(x: 9.224699271622056, y: 16.975300699247413))
+path.addLine(to: CGPoint(x: 13.6, y: 12.600000000000001))
+path.addCurve(to: CGPoint(x: 15.0, y: 9.000000000000002), control1: CGPoint(x: 14.4, y: 11.600000000000001), control2: CGPoint(x: 15.0, y: 10.400000000000002))
+path.addLine(to: CGPoint(x: 15.0, y: 2.0))
+path.move(to: CGPoint(x: 9.0, y: 6.0))
+path.addLine(to: CGPoint(x: 21.0, y: 6.0))
+        return path
+    }()
+        
+    /// Spider icon path
+    static let spiderPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 5.0))
+path.addLine(to: CGPoint(x: 10.0, y: 6.0))
+path.move(to: CGPoint(x: 14.0, y: 6.0))
+path.addLine(to: CGPoint(x: 14.0, y: 5.0))
+path.move(to: CGPoint(x: 10.0, y: 10.4))
+path.addLine(to: CGPoint(x: 10.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 10.0, y: 6.8954305003384135), control2: CGPoint(x: 10.895430500338414, y: 6.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 7.999999999999999), control1: CGPoint(x: 13.104569499661586, y: 6.0), control2: CGPoint(x: 14.0, y: 6.895430500338413))
+path.addLine(to: CGPoint(x: 14.0, y: 10.4))
+path.move(to: CGPoint(x: 7.0, y: 15.0))
+path.addLine(to: CGPoint(x: 4.0, y: 15.0))
+path.addLine(to: CGPoint(x: 2.0, y: 17.5))
+path.move(to: CGPoint(x: 7.42, y: 17.0))
+path.addLine(to: CGPoint(x: 5.0, y: 20.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.move(to: CGPoint(x: 8.0, y: 12.0))
+path.addLine(to: CGPoint(x: 4.0, y: 11.0))
+path.addLine(to: CGPoint(x: 2.0, y: 8.0))
+path.move(to: CGPoint(x: 9.0, y: 11.0))
+path.addLine(to: CGPoint(x: 5.5, y: 6.0))
+path.addLine(to: CGPoint(x: 7.0, y: 2.0))
+path.move(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 8.635585136093157, y: 11.301255263806016), control1: CGPoint(x: 6.452919373569804, y: 15.937225831426405), control2: CGPoint(x: 6.728166361601031, y: 13.036262282214038))
+path.addCurve(to: CGPoint(x: 15.36441486390684, y: 11.301255263806013), control1: CGPoint(x: 10.543003910585282, y: 9.566248245397997), control2: CGPoint(x: 13.45699608941471, y: 9.566248245397993))
+path.addCurve(to: CGPoint(x: 16.000000000000004, y: 17.999999999999993), control1: CGPoint(x: 17.271833638398967, y: 13.036262282214032), control2: CGPoint(x: 17.547080626430198, y: 15.937225831426398))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 16.0, y: 18.0), control2: CGPoint(x: 14.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 18.0), control1: CGPoint(x: 10.0, y: 21.0), control2: CGPoint(x: 8.0, y: 18.0))
+path.move(to: CGPoint(x: 15.0, y: 11.0))
+path.addLine(to: CGPoint(x: 18.5, y: 6.0))
+path.addLine(to: CGPoint(x: 17.0, y: 2.0))
+path.move(to: CGPoint(x: 16.0, y: 12.0))
+path.addLine(to: CGPoint(x: 20.0, y: 11.0))
+path.addLine(to: CGPoint(x: 22.0, y: 8.0))
+path.move(to: CGPoint(x: 17.0, y: 15.0))
+path.addLine(to: CGPoint(x: 20.0, y: 15.0))
+path.addLine(to: CGPoint(x: 22.0, y: 17.5))
+path.move(to: CGPoint(x: 16.57, y: 17.0))
+path.addLine(to: CGPoint(x: 19.0, y: 20.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+        return path
+    }()
+        
+    /// Spider Web icon path
+    static let spiderWebPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 21.0, y: 17.2))
+path.addLine(to: CGPoint(x: 21.0, y: 6.8))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 3.0, y: 6.8))
+path.addLine(to: CGPoint(x: 3.0, y: 17.2))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 2.0, y: 17.8))
+path.addLine(to: CGPoint(x: 22.0, y: 6.2))
+path.move(to: CGPoint(x: 2.0, y: 6.2))
+path.addLine(to: CGPoint(x: 22.0, y: 17.8))
+path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 17.0, y: 14.9))
+path.addLine(to: CGPoint(x: 17.0, y: 9.1))
+path.addLine(to: CGPoint(x: 12.0, y: 6.5))
+path.addLine(to: CGPoint(x: 7.0, y: 9.1))
+path.addLine(to: CGPoint(x: 7.0, y: 14.899999999999999))
+path.addLine(to: CGPoint(x: 12.0, y: 17.5))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Stairs icon path
+    static let stairsPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 20.0))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addLine(to: CGPoint(x: 22.0, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 4.0))
+path.move(to: CGPoint(x: 2.0, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 20.0))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 4.0, y: 12.0))
+path.addLine(to: CGPoint(x: 14.0, y: 12.0))
+path.addLine(to: CGPoint(x: 14.0, y: 16.0))
+path.addLine(to: CGPoint(x: 4.0, y: 16.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 6.0, y: 8.0))
+path.addLine(to: CGPoint(x: 16.0, y: 8.0))
+path.addLine(to: CGPoint(x: 16.0, y: 12.0))
+path.addLine(to: CGPoint(x: 6.0, y: 12.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 8.0, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 8.0))
+path.addLine(to: CGPoint(x: 8.0, y: 8.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Stairs Arch icon path
+    static let stairsArchPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 21.0, y: 21.0))
+path.addLine(to: CGPoint(x: 3.0, y: 21.0))
+path.addLine(to: CGPoint(x: 3.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 2.0), control1: CGPoint(x: 3.0, y: 6.02943725152286), control2: CGPoint(x: 7.029437251522857, y: 2.0000000000000018))
+path.addCurve(to: CGPoint(x: 21.0, y: 10.999999999999998), control1: CGPoint(x: 16.97056274847714, y: 2.0), control2: CGPoint(x: 21.0, y: 6.029437251522857))
+path.closeSubpath()
+path.move(to: CGPoint(x: 20.77, y: 9.0))
+path.addLine(to: CGPoint(x: 12.0, y: 9.0))
+path.addLine(to: CGPoint(x: 12.0, y: 13.0))
+path.move(to: CGPoint(x: 8.0, y: 17.0))
+path.addLine(to: CGPoint(x: 8.0, y: 13.0))
+path.addLine(to: CGPoint(x: 21.0, y: 13.0))
+path.move(to: CGPoint(x: 3.0, y: 17.0))
+path.addLine(to: CGPoint(x: 21.0, y: 17.0))
+        return path
+    }()
+        
+    /// Stairs Arrow Down Left icon path
+    static let stairsArrowDownLeftPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 3.0, y: 11.0))
+path.move(to: CGPoint(x: 3.0, y: 7.0))
+path.addLine(to: CGPoint(x: 3.0, y: 11.0))
+path.addLine(to: CGPoint(x: 7.0, y: 11.0))
+path.move(to: CGPoint(x: 2.0, y: 20.0))
+path.addLine(to: CGPoint(x: 7.0, y: 20.0))
+path.addLine(to: CGPoint(x: 7.0, y: 15.0))
+path.addLine(to: CGPoint(x: 12.0, y: 15.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 17.0, y: 10.0))
+path.addLine(to: CGPoint(x: 17.0, y: 5.0))
+path.addLine(to: CGPoint(x: 22.0, y: 5.0))
+        return path
+    }()
+        
+    /// Stairs Arrow Up Right icon path
+    static let stairsArrowUpRightPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 3.0, y: 11.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.move(to: CGPoint(x: 8.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 6.0))
+path.move(to: CGPoint(x: 2.0, y: 20.0))
+path.addLine(to: CGPoint(x: 7.0, y: 20.0))
+path.addLine(to: CGPoint(x: 7.0, y: 15.0))
+path.addLine(to: CGPoint(x: 12.0, y: 15.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 17.0, y: 10.0))
+path.addLine(to: CGPoint(x: 17.0, y: 5.0))
+path.addLine(to: CGPoint(x: 22.0, y: 5.0))
+        return path
+    }()
+        
+    /// Star North icon path
+    static let starNorthPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 3.0, y: 12.0))
+path.addLine(to: CGPoint(x: 21.0, y: 12.0))
+path.move(to: CGPoint(x: 12.0, y: 3.0))
+path.addLine(to: CGPoint(x: 12.0, y: 21.0))
+path.move(to: CGPoint(x: 17.0, y: 7.0))
+path.addLine(to: CGPoint(x: 7.0, y: 17.0))
+path.move(to: CGPoint(x: 7.0, y: 7.0))
+path.addLine(to: CGPoint(x: 17.0, y: 17.0))
+        return path
+    }()
+        
+    /// Steering Wheel icon path
+    static let steeringWheelPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 3.3, y: 7.0))
+path.addLine(to: CGPoint(x: 10.3, y: 11.0))
+path.move(to: CGPoint(x: 13.7, y: 11.0))
+path.addLine(to: CGPoint(x: 20.7, y: 7.0))
+path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 10.0, y: 13.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 13.104569499661586, y: 14.0), control2: CGPoint(x: 14.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 14.0, y: 10.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 10.895430500338414, y: 10.0), control2: CGPoint(x: 10.0, y: 10.895430500338414))
+        return path
+    }()
+        
+    /// Strawberry icon path
+    static let strawberryPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.0, y: 7.0))
+path.addLine(to: CGPoint(x: 20.5, y: 3.5))
+path.move(to: CGPoint(x: 17.0, y: 2.0))
+path.addLine(to: CGPoint(x: 17.0, y: 7.0))
+path.addLine(to: CGPoint(x: 22.0, y: 7.0))
+path.move(to: CGPoint(x: 2.1, y: 17.1))
+path.addCurve(to: CGPoint(x: 3.1682358299633853, y: 20.831764170036614), control1: CGPoint(x: 1.7882169647073383, y: 18.444917060432545), control2: CGPoint(x: 2.192015936563638, y: 19.855544276636863))
+path.addCurve(to: CGPoint(x: 6.899999999999998, y: 21.9), control1: CGPoint(x: 4.144455723363133, y: 21.80798406343636), control2: CGPoint(x: 5.55508293956745, y: 22.211783035292658))
+path.addLine(to: CGPoint(x: 15.9, y: 19.8))
+path.addCurve(to: CGPoint(x: 20.70082031116058, y: 15.241502651593182), control1: CGPoint(x: 18.23177156369255, y: 19.307238912824094), control2: CGPoint(x: 20.08805608320226, y: 17.544650956677902))
+path.addCurve(to: CGPoint(x: 18.8, y: 8.900000000000002), control1: CGPoint(x: 21.3135845391189, y: 12.938354346508461), control2: CGPoint(x: 20.578613619716997, y: 10.486349805697715))
+path.addLine(to: CGPoint(x: 15.0, y: 5.2))
+path.addCurve(to: CGPoint(x: 8.643196986470763, y: 3.5615635975907374), control1: CGPoint(x: 13.33275960556208, y: 3.5453847095826614), control2: CGPoint(x: 10.902523843551172, y: 2.919002748329336))
+path.addCurve(to: CGPoint(x: 4.100000000000002, y: 8.3), control1: CGPoint(x: 6.383870129390353, y: 4.204124446852138), control2: CGPoint(x: 4.646984501995154, y: 6.015651023441144))
+path.closeSubpath()
+path.move(to: CGPoint(x: 8.5, y: 9.5))
+path.addEllipse(in: CGRect(x: 8.16, y: 9.15, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.5, y: 8.5))
+path.addEllipse(in: CGRect(x: 12.16, y: 8.15, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 7.5, y: 13.5))
+path.addEllipse(in: CGRect(x: 7.16, y: 13.15, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 11.5, y: 12.5))
+path.addEllipse(in: CGRect(x: 11.16, y: 12.15, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.5, y: 11.5))
+path.addEllipse(in: CGRect(x: 15.16, y: 11.15, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 6.5, y: 17.5))
+path.addEllipse(in: CGRect(x: 6.16, y: 17.15, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.5, y: 16.5))
+path.addEllipse(in: CGRect(x: 10.16, y: 16.15, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.5, y: 15.5))
+path.addEllipse(in: CGRect(x: 14.16, y: 15.15, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Strikethrough Square icon path
+    static let strikethroughSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.5, y: 12.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 9.5), control1: CGPoint(x: 9.119288125423017, y: 12.0), control2: CGPoint(x: 8.0, y: 10.880711874576985))
+path.addCurve(to: CGPoint(x: 10.5, y: 7.0), control1: CGPoint(x: 8.0, y: 8.119288125423017), control2: CGPoint(x: 9.119288125423015, y: 7.0))
+path.addLine(to: CGPoint(x: 15.0, y: 7.0))
+path.move(to: CGPoint(x: 7.0, y: 12.0))
+path.addLine(to: CGPoint(x: 17.0, y: 12.0))
+path.move(to: CGPoint(x: 8.0, y: 17.0))
+path.addLine(to: CGPoint(x: 13.5, y: 17.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 14.5), control1: CGPoint(x: 14.880711874576985, y: 17.0), control2: CGPoint(x: 16.0, y: 15.880711874576983))
+path.addCurve(to: CGPoint(x: 13.5, y: 12.0), control1: CGPoint(x: 16.0, y: 13.119288125423017), control2: CGPoint(x: 14.880711874576985, y: 12.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Stroller icon path
+    static let strollerPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.0, y: 12.95))
+path.addCurve(to: CGPoint(x: 19.7, y: 13.0), control1: CGPoint(x: 15.6, y: 11.35), control2: CGPoint(x: 18.1, y: 11.35))
+path.move(to: CGPoint(x: 18.3, y: 17.2))
+path.addLine(to: CGPoint(x: 5.45, y: 4.5))
+path.move(to: CGPoint(x: 19.7, y: 17.0))
+path.addLine(to: CGPoint(x: 13.0, y: 18.1))
+path.addCurve(to: CGPoint(x: 7.3, y: 14.000000000000002), control1: CGPoint(x: 10.3, y: 18.6), control2: CGPoint(x: 7.5, y: 17.1))
+path.addCurve(to: CGPoint(x: 6.0, y: 5.700000000000001), control1: CGPoint(x: 6.8999999999999995, y: 11.400000000000002), control2: CGPoint(x: 6.3999999999999995, y: 8.3))
+path.addCurve(to: CGPoint(x: 3.8500000000000005, y: 3.8500000000000005), control1: CGPoint(x: 5.917157287525381, y: 4.595430500338414), control2: CGPoint(x: 4.954569499661588, y: 3.767157287525382))
+path.addCurve(to: CGPoint(x: 2.0, y: 5.999999999999999), control1: CGPoint(x: 2.7454305003384136, y: 3.9328427124746193), control2: CGPoint(x: 1.9171572875253817, y: 4.895430500338413))
+path.move(to: CGPoint(x: 8.5, y: 6.5))
+path.addCurve(to: CGPoint(x: 11.0, y: 9.0), control1: CGPoint(x: 8.5, y: 7.880711874576984), control2: CGPoint(x: 9.619288125423017, y: 9.0))
+path.addCurve(to: CGPoint(x: 13.5, y: 6.5), control1: CGPoint(x: 12.380711874576985, y: 9.0), control2: CGPoint(x: 13.5, y: 7.880711874576983))
+path.addCurve(to: CGPoint(x: 11.0, y: 4.0), control1: CGPoint(x: 13.5, y: 5.119288125423017), control2: CGPoint(x: 12.380711874576985, y: 4.0))
+path.addCurve(to: CGPoint(x: 8.5, y: 6.5), control1: CGPoint(x: 9.619288125423017, y: 4.0), control2: CGPoint(x: 8.5, y: 5.119288125423016))
+path.move(to: CGPoint(x: 6.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 21.0), control1: CGPoint(x: 6.0, y: 20.104569499661586), control2: CGPoint(x: 6.8954305003384135, y: 21.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 19.0), control1: CGPoint(x: 9.104569499661586, y: 21.0), control2: CGPoint(x: 10.0, y: 20.104569499661586))
+path.addCurve(to: CGPoint(x: 8.0, y: 17.0), control1: CGPoint(x: 10.0, y: 17.895430500338414), control2: CGPoint(x: 9.104569499661586, y: 17.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 19.0), control1: CGPoint(x: 6.8954305003384135, y: 17.0), control2: CGPoint(x: 6.0, y: 17.895430500338414))
+path.move(to: CGPoint(x: 18.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 21.0), control1: CGPoint(x: 18.0, y: 20.104569499661586), control2: CGPoint(x: 18.895430500338414, y: 21.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 19.0), control1: CGPoint(x: 21.104569499661586, y: 21.0), control2: CGPoint(x: 22.0, y: 20.104569499661586))
+path.addCurve(to: CGPoint(x: 20.0, y: 17.0), control1: CGPoint(x: 22.0, y: 17.895430500338414), control2: CGPoint(x: 21.104569499661586, y: 17.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 19.0), control1: CGPoint(x: 18.895430500338414, y: 17.0), control2: CGPoint(x: 18.0, y: 17.895430500338414))
+        return path
+    }()
+        
+    /// Sunlounger Parasol Sun icon path
+    static let sunloungerParasolSunPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.4, y: 14.4))
+path.addCurve(to: CGPoint(x: 6.600000000000001, y: 5.4), control1: CGPoint(x: 1.0745166004060964, y: 10.754920651116763), control2: CGPoint(x: 2.9549206511167645, y: 6.725483399593903))
+path.addCurve(to: CGPoint(x: 15.6, y: 9.600000000000001), control1: CGPoint(x: 10.245079348883237, y: 4.074516600406096), control2: CGPoint(x: 14.274516600406097, y: 5.954920651116764))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.0, y: 12.0))
+path.addLine(to: CGPoint(x: 12.0, y: 21.0))
+path.move(to: CGPoint(x: 3.0, y: 21.0))
+path.addLine(to: CGPoint(x: 3.7, y: 18.9))
+path.addCurve(to: CGPoint(x: 5.0, y: 18.0), control1: CGPoint(x: 3.9000000000000004, y: 18.4), control2: CGPoint(x: 4.4, y: 18.0))
+path.addLine(to: CGPoint(x: 17.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.6, y: 17.2), control1: CGPoint(x: 17.5, y: 18.0), control2: CGPoint(x: 18.3, y: 17.6))
+path.addLine(to: CGPoint(x: 22.0, y: 13.0))
+path.move(to: CGPoint(x: 21.0, y: 21.0))
+path.addLine(to: CGPoint(x: 18.0, y: 18.0))
+path.move(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 18.0, y: 5.104569499661587), control2: CGPoint(x: 18.895430500338414, y: 6.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.0), control1: CGPoint(x: 21.104569499661586, y: 6.0), control2: CGPoint(x: 22.0, y: 5.1045694996615865))
+path.addCurve(to: CGPoint(x: 20.0, y: 2.0), control1: CGPoint(x: 22.0, y: 2.895430500338413), control2: CGPoint(x: 21.104569499661586, y: 2.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 3.9999999999999996), control1: CGPoint(x: 18.895430500338414, y: 2.0), control2: CGPoint(x: 18.0, y: 2.8954305003384126))
+        return path
+    }()
+        
+    /// Sunlounger Parasol Sun Palmtree icon path
+    static let sunloungerParasolSunPalmtreePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 6.0), control1: CGPoint(x: 16.0, y: 14.0), control2: CGPoint(x: 17.0, y: 11.0))
+path.addLine(to: CGPoint(x: 17.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 2.0), control1: CGPoint(x: 17.0, y: 4.0), control2: CGPoint(x: 16.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.5), control1: CGPoint(x: 13.0, y: 2.0), control2: CGPoint(x: 12.0, y: 2.5))
+path.move(to: CGPoint(x: 13.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 4.0), control1: CGPoint(x: 13.0, y: 5.790861000676827), control2: CGPoint(x: 14.790861000676825, y: 4.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 7.999999999999999), control1: CGPoint(x: 19.209138999323173, y: 4.0), control2: CGPoint(x: 21.0, y: 5.790861000676825))
+path.move(to: CGPoint(x: 17.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 2.0), control1: CGPoint(x: 17.0, y: 4.0), control2: CGPoint(x: 18.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 2.5), control1: CGPoint(x: 21.0, y: 2.0), control2: CGPoint(x: 22.0, y: 2.5))
+path.move(to: CGPoint(x: 4.0, y: 14.0))
+path.addLine(to: CGPoint(x: 7.0, y: 9.0))
+path.addLine(to: CGPoint(x: 12.0, y: 12.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 8.0, y: 13.0))
+path.addLine(to: CGPoint(x: 10.0, y: 21.0))
+path.move(to: CGPoint(x: 3.0, y: 21.0))
+path.addLine(to: CGPoint(x: 3.7, y: 18.9))
+path.addCurve(to: CGPoint(x: 5.0, y: 18.0), control1: CGPoint(x: 3.9000000000000004, y: 18.4), control2: CGPoint(x: 4.4, y: 18.0))
+path.addLine(to: CGPoint(x: 17.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.6, y: 17.2), control1: CGPoint(x: 17.5, y: 18.0), control2: CGPoint(x: 18.3, y: 17.6))
+path.addLine(to: CGPoint(x: 22.0, y: 13.0))
+path.move(to: CGPoint(x: 21.0, y: 21.0))
+path.addLine(to: CGPoint(x: 18.0, y: 18.0))
+path.move(to: CGPoint(x: 2.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 6.0), control1: CGPoint(x: 2.0, y: 5.104569499661587), control2: CGPoint(x: 2.8954305003384135, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 4.0), control1: CGPoint(x: 5.104569499661587, y: 6.0), control2: CGPoint(x: 6.0, y: 5.1045694996615865))
+path.addCurve(to: CGPoint(x: 4.0, y: 2.0), control1: CGPoint(x: 6.0, y: 2.895430500338413), control2: CGPoint(x: 5.104569499661587, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 3.9999999999999996), control1: CGPoint(x: 2.8954305003384135, y: 2.0), control2: CGPoint(x: 2.0, y: 2.8954305003384126))
+        return path
+    }()
+        
+    /// Sunlounger Parasol Table icon path
+    static let sunloungerParasolTablePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 21.0, y: 8.0))
+path.addLine(to: CGPoint(x: 3.0, y: 8.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 8.0))
+path.addLine(to: CGPoint(x: 12.0, y: 21.0))
+path.move(to: CGPoint(x: 8.0, y: 13.0))
+path.addLine(to: CGPoint(x: 16.0, y: 13.0))
+path.move(to: CGPoint(x: 3.0, y: 21.0))
+path.addLine(to: CGPoint(x: 3.7, y: 18.9))
+path.addCurve(to: CGPoint(x: 5.0, y: 18.0), control1: CGPoint(x: 3.9000000000000004, y: 18.4), control2: CGPoint(x: 4.4, y: 18.0))
+path.addLine(to: CGPoint(x: 17.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.6, y: 17.2), control1: CGPoint(x: 17.5, y: 18.0), control2: CGPoint(x: 18.3, y: 17.6))
+path.addLine(to: CGPoint(x: 22.0, y: 13.0))
+path.move(to: CGPoint(x: 21.0, y: 21.0))
+path.addLine(to: CGPoint(x: 17.8, y: 17.8))
+        return path
+    }()
+        
+    /// Surfboard icon path
+    static let surfboardPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 2.0))
+path.addLine(to: CGPoint(x: 2.6, y: 21.4))
+path.move(to: CGPoint(x: 13.8, y: 19.2))
+path.addCurve(to: CGPoint(x: 22.0, y: 3.999999999999999), control1: CGPoint(x: 18.944275116700165, y: 15.861103755102206), control2: CGPoint(x: 22.03457224147568, y: 10.132748109176866))
+path.addLine(to: CGPoint(x: 22.0, y: 2.0))
+path.addLine(to: CGPoint(x: 20.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 10.1, y: 2.0), control2: CGPoint(x: 2.0, y: 10.1))
+path.addCurve(to: CGPoint(x: 4.0, y: 22.0), control1: CGPoint(x: 2.0, y: 21.104569499661586), control2: CGPoint(x: 2.8954305003384135, y: 22.0))
+path.addCurve(to: CGPoint(x: 11.629999999999992, y: 20.300000000000004), control1: CGPoint(x: 6.6408575986806095, y: 22.033714448046343), control2: CGPoint(x: 9.253249681047077, y: 21.45166116626089))
+path.move(to: CGPoint(x: 7.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 9.7, y: 17.0), control2: CGPoint(x: 11.9, y: 19.3))
+path.addCurve(to: CGPoint(x: 14.134913456052834, y: 17.02793016711058), control1: CGPoint(x: 13.379008199340241, y: 20.716494386036754), control2: CGPoint(x: 14.153941700705577, y: 18.91172638773218))
+path.addCurve(to: CGPoint(x: 11.899999999999999, y: 12.100000000000001), control1: CGPoint(x: 14.11588521140009, y: 15.144133946488978), control2: CGPoint(x: 13.304653587543264, y: 13.355387818136146))
+        return path
+    }()
+        
+    /// Sushi icon path
+    static let sushiPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 8.0))
+path.addLine(to: CGPoint(x: 12.0, y: 16.0))
+path.move(to: CGPoint(x: 8.0, y: 12.0))
+path.addLine(to: CGPoint(x: 12.0, y: 12.0))
+path.move(to: CGPoint(x: 10.0, y: 3.0))
+path.addLine(to: CGPoint(x: 14.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 10.0), control1: CGPoint(x: 17.865993248815556, y: 3.0), control2: CGPoint(x: 21.0, y: 6.134006751184446))
+path.addLine(to: CGPoint(x: 21.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 21.0), control1: CGPoint(x: 21.0, y: 17.865993248815556), control2: CGPoint(x: 17.865993248815556, y: 21.0))
+path.addLine(to: CGPoint(x: 10.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 14.0), control1: CGPoint(x: 6.1340067511844465, y: 21.0), control2: CGPoint(x: 3.000000000000001, y: 17.865993248815556))
+path.addLine(to: CGPoint(x: 3.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 9.999999999999998, y: 3.0), control1: CGPoint(x: 3.0, y: 6.1340067511844465), control2: CGPoint(x: 6.134006751184444, y: 3.000000000000001))
+path.closeSubpath()
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addLine(to: CGPoint(x: 14.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 10.0), control1: CGPoint(x: 15.104569499661586, y: 8.0), control2: CGPoint(x: 16.0, y: 8.895430500338414))
+path.addLine(to: CGPoint(x: 16.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 16.0), control1: CGPoint(x: 16.0, y: 15.104569499661586), control2: CGPoint(x: 15.104569499661586, y: 16.0))
+path.addLine(to: CGPoint(x: 10.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 14.0), control1: CGPoint(x: 8.895430500338414, y: 16.0), control2: CGPoint(x: 8.0, y: 15.104569499661586))
+path.addLine(to: CGPoint(x: 8.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 8.0), control1: CGPoint(x: 8.0, y: 8.895430500338414), control2: CGPoint(x: 8.895430500338414, y: 8.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Sushi 2 icon path
+    static let sushi2Path: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.4, y: 3.3))
+path.addCurve(to: CGPoint(x: 7.599999999999998, y: 3.3), control1: CGPoint(x: 13.712949181590865, y: 1.6000838721344905), control2: CGPoint(x: 10.287050818409133, y: 1.6000838721344905))
+path.addLine(to: CGPoint(x: 3.8, y: 6.0))
+path.addCurve(to: CGPoint(x: 3.8, y: 12.1), control1: CGPoint(x: 1.4, y: 7.7), control2: CGPoint(x: 1.4, y: 10.4))
+path.addLine(to: CGPoint(x: 7.699999999999999, y: 14.8))
+path.addCurve(to: CGPoint(x: 16.4, y: 14.8), control1: CGPoint(x: 10.1, y: 16.5), control2: CGPoint(x: 14.0, y: 16.5))
+path.addLine(to: CGPoint(x: 20.299999999999997, y: 12.100000000000001))
+path.addCurve(to: CGPoint(x: 20.299999999999997, y: 6.000000000000002), control1: CGPoint(x: 22.699999999999996, y: 10.400000000000002), control2: CGPoint(x: 22.699999999999996, y: 7.700000000000001))
+path.closeSubpath()
+path.move(to: CGPoint(x: 2.0, y: 9.0))
+path.addLine(to: CGPoint(x: 2.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 3.8, y: 18.0), control1: CGPoint(x: 2.0, y: 16.1), control2: CGPoint(x: 2.6, y: 17.2))
+path.addLine(to: CGPoint(x: 7.699999999999999, y: 20.7))
+path.addCurve(to: CGPoint(x: 16.4, y: 20.7), control1: CGPoint(x: 10.1, y: 22.4), control2: CGPoint(x: 14.0, y: 22.4))
+path.addLine(to: CGPoint(x: 20.299999999999997, y: 18.0))
+path.addCurve(to: CGPoint(x: 22.099999999999998, y: 15.0), control1: CGPoint(x: 21.499999999999996, y: 17.2), control2: CGPoint(x: 22.099999999999998, y: 16.1))
+path.addLine(to: CGPoint(x: 22.099999999999998, y: 9.0))
+path.move(to: CGPoint(x: 7.7, y: 10.1))
+path.addCurve(to: CGPoint(x: 7.7, y: 7.8999999999999995), control1: CGPoint(x: 6.8, y: 9.5), control2: CGPoint(x: 6.8, y: 8.5))
+path.addLine(to: CGPoint(x: 10.4, y: 6.1))
+path.addCurve(to: CGPoint(x: 13.7, y: 6.1), control1: CGPoint(x: 11.3, y: 5.5), control2: CGPoint(x: 12.8, y: 5.5))
+path.addLine(to: CGPoint(x: 16.4, y: 7.8999999999999995))
+path.addCurve(to: CGPoint(x: 16.4, y: 10.1), control1: CGPoint(x: 17.299999999999997, y: 8.5), control2: CGPoint(x: 17.299999999999997, y: 9.5))
+path.addLine(to: CGPoint(x: 13.7, y: 11.9))
+path.addCurve(to: CGPoint(x: 10.399999999999999, y: 11.9), control1: CGPoint(x: 12.799999999999999, y: 12.5), control2: CGPoint(x: 11.299999999999999, y: 12.5))
+path.closeSubpath()
+path.move(to: CGPoint(x: 15.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 11.0), control1: CGPoint(x: 13.0, y: 8.0), control2: CGPoint(x: 10.0, y: 9.0))
+        return path
+    }()
+        
+    /// Sushi 3 icon path
+    static let sushi3Path: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 12.0), control1: CGPoint(x: 22.0, y: 11.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 12.0))
+path.addLine(to: CGPoint(x: 19.5, y: 12.0))
+path.addLine(to: CGPoint(x: 13.9, y: 10.6))
+path.addCurve(to: CGPoint(x: 10.0, y: 10.6), control1: CGPoint(x: 12.8, y: 10.299999999999999), control2: CGPoint(x: 11.100000000000001, y: 10.299999999999999))
+path.addLine(to: CGPoint(x: 4.4, y: 12.0))
+path.addLine(to: CGPoint(x: 4.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 10.0), control1: CGPoint(x: 2.8954305003384135, y: 12.0), control2: CGPoint(x: 2.0, y: 11.104569499661586))
+path.addCurve(to: CGPoint(x: 5.999999999999999, y: 6.0), control1: CGPoint(x: 2.0, y: 7.790861000676827), control2: CGPoint(x: 3.7908610006768253, y: 6.0))
+path.addLine(to: CGPoint(x: 18.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 10.0), control1: CGPoint(x: 20.209138999323173, y: 6.0), control2: CGPoint(x: 22.0, y: 7.790861000676826))
+path.move(to: CGPoint(x: 6.0, y: 11.0))
+path.addLine(to: CGPoint(x: 7.0, y: 6.0))
+path.move(to: CGPoint(x: 10.0, y: 10.0))
+path.addLine(to: CGPoint(x: 11.0, y: 6.0))
+path.move(to: CGPoint(x: 14.0, y: 10.0))
+path.addLine(to: CGPoint(x: 15.0, y: 6.0))
+path.move(to: CGPoint(x: 18.0, y: 11.0))
+path.addLine(to: CGPoint(x: 19.0, y: 7.0))
+path.move(to: CGPoint(x: 20.0, y: 12.0))
+path.addLine(to: CGPoint(x: 20.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 18.0), control1: CGPoint(x: 20.0, y: 17.104569499661586), control2: CGPoint(x: 19.104569499661586, y: 18.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 16.0), control1: CGPoint(x: 16.895430500338414, y: 18.0), control2: CGPoint(x: 16.0, y: 17.104569499661586))
+path.addCurve(to: CGPoint(x: 14.0, y: 18.0), control1: CGPoint(x: 16.0, y: 17.104569499661586), control2: CGPoint(x: 15.104569499661586, y: 18.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 12.895430500338414, y: 18.0), control2: CGPoint(x: 12.0, y: 17.104569499661586))
+path.addCurve(to: CGPoint(x: 10.0, y: 18.0), control1: CGPoint(x: 12.0, y: 17.104569499661586), control2: CGPoint(x: 11.104569499661586, y: 18.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 16.0), control1: CGPoint(x: 8.895430500338414, y: 18.0), control2: CGPoint(x: 8.0, y: 17.104569499661586))
+path.addCurve(to: CGPoint(x: 6.0, y: 18.0), control1: CGPoint(x: 8.0, y: 17.104569499661586), control2: CGPoint(x: 7.104569499661587, y: 18.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 16.0), control1: CGPoint(x: 4.8954305003384135, y: 18.0), control2: CGPoint(x: 4.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 4.0, y: 12.0))
+        return path
+    }()
+        
+    /// Sushi Chopsticks icon path
+    static let sushiChopsticksPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 18.0))
+path.addLine(to: CGPoint(x: 2.0, y: 2.0))
+path.move(to: CGPoint(x: 22.0, y: 18.0))
+path.addLine(to: CGPoint(x: 22.0, y: 2.0))
+path.move(to: CGPoint(x: 6.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 6.0), control1: CGPoint(x: 6.0, y: 8.2), control2: CGPoint(x: 8.2, y: 6.0))
+path.addLine(to: CGPoint(x: 13.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 11.0), control1: CGPoint(x: 15.8, y: 6.0), control2: CGPoint(x: 18.0, y: 8.2))
+path.addLine(to: CGPoint(x: 18.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 22.0), control1: CGPoint(x: 18.0, y: 19.8), control2: CGPoint(x: 15.8, y: 22.0))
+path.addLine(to: CGPoint(x: 11.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 17.0), control1: CGPoint(x: 8.2, y: 22.0), control2: CGPoint(x: 6.0, y: 19.8))
+path.closeSubpath()
+path.move(to: CGPoint(x: 18.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 18.0), control1: CGPoint(x: 18.0, y: 15.8), control2: CGPoint(x: 15.8, y: 18.0))
+path.addLine(to: CGPoint(x: 11.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 13.0), control1: CGPoint(x: 8.2, y: 18.0), control2: CGPoint(x: 6.0, y: 15.8))
+path.move(to: CGPoint(x: 11.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 13.0), control1: CGPoint(x: 10.4, y: 14.0), control2: CGPoint(x: 10.0, y: 13.6))
+path.addLine(to: CGPoint(x: 10.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 10.0), control1: CGPoint(x: 10.0, y: 10.4), control2: CGPoint(x: 10.4, y: 10.0))
+path.addLine(to: CGPoint(x: 13.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 11.0), control1: CGPoint(x: 13.6, y: 10.0), control2: CGPoint(x: 14.0, y: 10.4))
+path.addLine(to: CGPoint(x: 14.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 14.0), control1: CGPoint(x: 14.0, y: 13.6), control2: CGPoint(x: 13.6, y: 14.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Sweater icon path
+    static let sweaterPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 19.0))
+path.addLine(to: CGPoint(x: 3.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 2.4, y: 19.0), control2: CGPoint(x: 2.0, y: 18.6))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 3.9, y: 3.4), control1: CGPoint(x: 2.0, y: 4.9), control2: CGPoint(x: 2.8, y: 3.7))
+path.addLine(to: CGPoint(x: 8.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 8.0, y: 4.209138999323175), control2: CGPoint(x: 9.790861000676827, y: 6.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 2.0), control1: CGPoint(x: 14.209138999323175, y: 6.0), control2: CGPoint(x: 16.0, y: 4.209138999323174))
+path.addLine(to: CGPoint(x: 20.1, y: 3.4))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 21.2, y: 3.7), control2: CGPoint(x: 22.0, y: 4.9))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 22.0, y: 18.6), control2: CGPoint(x: 21.6, y: 19.0))
+path.addLine(to: CGPoint(x: 18.0, y: 19.0))
+path.move(to: CGPoint(x: 18.0, y: 8.0))
+path.addLine(to: CGPoint(x: 18.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 18.0, y: 21.6), control2: CGPoint(x: 17.6, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 21.0), control1: CGPoint(x: 6.4, y: 22.0), control2: CGPoint(x: 6.0, y: 21.6))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.move(to: CGPoint(x: 6.0, y: 10.0))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
+path.addLine(to: CGPoint(x: 10.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 14.0, y: 10.0))
+path.addLine(to: CGPoint(x: 16.0, y: 12.0))
+path.addLine(to: CGPoint(x: 18.0, y: 10.0))
+path.move(to: CGPoint(x: 6.0, y: 16.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addLine(to: CGPoint(x: 10.0, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.addLine(to: CGPoint(x: 14.0, y: 16.0))
+path.addLine(to: CGPoint(x: 16.0, y: 18.0))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+        return path
+    }()
+        
+    /// Swiss Franc Circle icon path
+    static let swissFrancCirclePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 17.0))
+path.addLine(to: CGPoint(x: 10.0, y: 7.0))
+path.addLine(to: CGPoint(x: 15.0, y: 7.0))
+path.move(to: CGPoint(x: 10.0, y: 11.0))
+path.addLine(to: CGPoint(x: 14.0, y: 11.0))
+path.move(to: CGPoint(x: 8.0, y: 15.0))
+path.addLine(to: CGPoint(x: 13.0, y: 15.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Swiss Franc Square icon path
+    static let swissFrancSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 17.0))
+path.addLine(to: CGPoint(x: 10.0, y: 7.0))
+path.addLine(to: CGPoint(x: 15.0, y: 7.0))
+path.move(to: CGPoint(x: 10.0, y: 11.0))
+path.addLine(to: CGPoint(x: 14.0, y: 11.0))
+path.move(to: CGPoint(x: 8.0, y: 15.0))
+path.addLine(to: CGPoint(x: 13.0, y: 15.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Tab icon path
+    static let tabPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 20.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 4.0), control1: CGPoint(x: 4.0, y: 4.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 19.104569499661586, y: 4.0), control2: CGPoint(x: 20.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.move(to: CGPoint(x: 22.0, y: 20.0))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+        return path
+    }()
+        
+    /// Tab Arrow Down icon path
+    static let tabArrowDownPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 8.0))
+path.move(to: CGPoint(x: 16.0, y: 12.0))
+path.addLine(to: CGPoint(x: 12.0, y: 16.0))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
+path.move(to: CGPoint(x: 4.0, y: 20.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 4.0), control1: CGPoint(x: 4.0, y: 4.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 19.104569499661586, y: 4.0), control2: CGPoint(x: 20.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.move(to: CGPoint(x: 22.0, y: 20.0))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+        return path
+    }()
+        
+    /// Tab Arrow Up Right icon path
+    static let tabArrowUpRightPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.0, y: 9.0))
+path.addLine(to: CGPoint(x: 9.0, y: 15.0))
+path.move(to: CGPoint(x: 9.0, y: 9.0))
+path.addLine(to: CGPoint(x: 15.0, y: 9.0))
+path.addLine(to: CGPoint(x: 15.0, y: 15.0))
+path.move(to: CGPoint(x: 4.0, y: 20.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 4.0), control1: CGPoint(x: 4.0, y: 4.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 19.104569499661586, y: 4.0), control2: CGPoint(x: 20.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.move(to: CGPoint(x: 22.0, y: 20.0))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+        return path
+    }()
+        
+    /// Tab Check icon path
+    static let tabCheckPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 12.0))
+path.addLine(to: CGPoint(x: 11.0, y: 14.0))
+path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+path.move(to: CGPoint(x: 4.0, y: 20.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 4.0), control1: CGPoint(x: 4.0, y: 4.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 19.104569499661586, y: 4.0), control2: CGPoint(x: 20.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.move(to: CGPoint(x: 22.0, y: 20.0))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+        return path
+    }()
+        
+    /// Tab Dot icon path
+    static let tabDotPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 20.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 4.0), control1: CGPoint(x: 4.0, y: 4.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 19.104569499661586, y: 4.0), control2: CGPoint(x: 20.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.move(to: CGPoint(x: 22.0, y: 20.0))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+path.move(to: CGPoint(x: 11.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 13.0), control1: CGPoint(x: 11.0, y: 12.552284749830793), control2: CGPoint(x: 11.447715250169207, y: 13.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 12.0), control1: CGPoint(x: 12.552284749830793, y: 13.0), control2: CGPoint(x: 13.0, y: 12.552284749830793))
+path.addCurve(to: CGPoint(x: 12.0, y: 11.0), control1: CGPoint(x: 13.0, y: 11.447715250169207), control2: CGPoint(x: 12.552284749830793, y: 11.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 12.0), control1: CGPoint(x: 11.447715250169207, y: 11.0), control2: CGPoint(x: 11.0, y: 11.447715250169207))
+        return path
+    }()
+        
+    /// Tab Plus icon path
+    static let tabPlusPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.0, y: 12.0))
+path.addLine(to: CGPoint(x: 9.0, y: 12.0))
+path.move(to: CGPoint(x: 12.0, y: 9.0))
+path.addLine(to: CGPoint(x: 12.0, y: 15.0))
+path.move(to: CGPoint(x: 4.0, y: 20.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 4.0), control1: CGPoint(x: 4.0, y: 4.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 19.104569499661586, y: 4.0), control2: CGPoint(x: 20.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.move(to: CGPoint(x: 22.0, y: 20.0))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+        return path
+    }()
+        
+    /// Tab Slash icon path
+    static let tabSlashPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.5, y: 9.5))
+path.addLine(to: CGPoint(x: 9.5, y: 14.5))
+path.move(to: CGPoint(x: 4.0, y: 20.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 4.0), control1: CGPoint(x: 4.0, y: 4.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 19.104569499661586, y: 4.0), control2: CGPoint(x: 20.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.move(to: CGPoint(x: 22.0, y: 20.0))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+        return path
+    }()
+        
+    /// Tab Text icon path
+    static let tabTextPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 8.0))
+path.addLine(to: CGPoint(x: 14.0, y: 8.0))
+path.move(to: CGPoint(x: 8.0, y: 12.0))
+path.addLine(to: CGPoint(x: 16.0, y: 12.0))
+path.move(to: CGPoint(x: 8.0, y: 16.0))
+path.addLine(to: CGPoint(x: 14.0, y: 16.0))
+path.move(to: CGPoint(x: 4.0, y: 20.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 4.0), control1: CGPoint(x: 4.0, y: 4.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 19.104569499661586, y: 4.0), control2: CGPoint(x: 20.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.move(to: CGPoint(x: 22.0, y: 20.0))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+        return path
+    }()
+        
+    /// Tab X icon path
+    static let tabXPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.5, y: 9.5))
+path.addLine(to: CGPoint(x: 9.5, y: 14.5))
+path.move(to: CGPoint(x: 14.5, y: 14.5))
+path.addLine(to: CGPoint(x: 9.5, y: 9.5))
+path.move(to: CGPoint(x: 4.0, y: 20.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 4.0), control1: CGPoint(x: 4.0, y: 4.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 19.104569499661586, y: 4.0), control2: CGPoint(x: 20.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.move(to: CGPoint(x: 22.0, y: 20.0))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+        return path
+    }()
+        
+    /// Target Arrow icon path
+    static let targetArrowPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 19.0, y: 2.0))
+path.addLine(to: CGPoint(x: 19.0, y: 5.0))
+path.addLine(to: CGPoint(x: 22.0, y: 5.0))
+path.move(to: CGPoint(x: 13.4, y: 10.6))
+path.addLine(to: CGPoint(x: 22.0, y: 2.0))
+path.move(to: CGPoint(x: 12.3, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 12.0), control1: CGPoint(x: 8.68629150101524, y: 6.0), control2: CGPoint(x: 6.000000000000001, y: 8.686291501015239))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 18.0), control1: CGPoint(x: 6.0, y: 15.31370849898476), control2: CGPoint(x: 8.686291501015237, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 12.000000000000002), control1: CGPoint(x: 15.31370849898476, y: 18.0), control2: CGPoint(x: 18.0, y: 15.313708498984763))
+path.addLine(to: CGPoint(x: 18.0, y: 11.7))
+path.move(to: CGPoint(x: 15.0, y: 2.5))
+path.addCurve(to: CGPoint(x: 3.533357645042848, y: 6.8280423951964755), control1: CGPoint(x: 10.637183192127527, y: 1.1304154785936902), control2: CGPoint(x: 5.903122724531255, y: 2.917269360569227))
+path.addCurve(to: CGPoint(x: 5.004287151595654, y: 18.995712848404345), control1: CGPoint(x: 1.1635925655544401, y: 10.738815429823724), control2: CGPoint(x: 1.770873146219115, y: 15.762298843027803))
+path.addCurve(to: CGPoint(x: 17.171957604803524, y: 20.466642354957152), control1: CGPoint(x: 8.237701156972193, y: 22.229126853780883), control2: CGPoint(x: 13.261184570176274, y: 22.83640743444556))
+path.addCurve(to: CGPoint(x: 21.5, y: 8.999999999999998), control1: CGPoint(x: 21.08273063943077, y: 18.09687727546875), control2: CGPoint(x: 22.86958452140631, y: 13.36281680787247))
+path.move(to: CGPoint(x: 5.3, y: 19.4))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.move(to: CGPoint(x: 18.7, y: 19.4))
+path.addLine(to: CGPoint(x: 20.0, y: 22.0))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 10.0, y: 13.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 13.104569499661586, y: 14.0), control2: CGPoint(x: 14.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 14.0, y: 10.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 10.895430500338414, y: 10.0), control2: CGPoint(x: 10.0, y: 10.895430500338414))
+        return path
+    }()
+        
+    /// Tennis Ball icon path
+    static let tennisBallPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 7.5, y: 12.0), control2: CGPoint(x: 12.0, y: 7.5))
+path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 16.5, y: 12.0), control2: CGPoint(x: 12.0, y: 16.5))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Tennis Racket icon path
+    static let tennisRacketPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.7, y: 4.7))
+path.addCurve(to: CGPoint(x: 20.5, y: 3.5), control1: CGPoint(x: 13.7, y: 1.7000000000000002), control2: CGPoint(x: 18.1, y: 1.1))
+path.addCurve(to: CGPoint(x: 19.3, y: 13.3), control1: CGPoint(x: 22.9, y: 5.9), control2: CGPoint(x: 22.3, y: 10.3))
+path.addCurve(to: CGPoint(x: 15.0, y: 15.8), control1: CGPoint(x: 18.114129648893773, y: 14.500430011117196), control2: CGPoint(x: 16.629923134056583, y: 15.363340775557422))
+path.addCurve(to: CGPoint(x: 9.5, y: 14.5), control1: CGPoint(x: 12.9, y: 16.3), control2: CGPoint(x: 10.9, y: 15.9))
+path.addCurve(to: CGPoint(x: 8.2, y: 9.0), control1: CGPoint(x: 8.1, y: 13.1), control2: CGPoint(x: 7.7, y: 11.1))
+path.addCurve(to: CGPoint(x: 10.699999999999994, y: 4.700000000000005), control1: CGPoint(x: 8.636659224442576, y: 7.370076865943418), control2: CGPoint(x: 9.4995699888828, y: 5.885870351106231))
+path.move(to: CGPoint(x: 8.2, y: 9.0))
+path.addLine(to: CGPoint(x: 6.0, y: 18.0))
+path.addLine(to: CGPoint(x: 15.0, y: 15.8))
+path.move(to: CGPoint(x: 2.0, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 18.0))
+path.move(to: CGPoint(x: 18.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 18.0, y: 21.104569499661586), control2: CGPoint(x: 18.895430500338414, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 20.0), control1: CGPoint(x: 21.104569499661586, y: 22.0), control2: CGPoint(x: 22.0, y: 21.104569499661586))
+path.addCurve(to: CGPoint(x: 20.0, y: 18.0), control1: CGPoint(x: 22.0, y: 18.895430500338414), control2: CGPoint(x: 21.104569499661586, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 20.0), control1: CGPoint(x: 18.895430500338414, y: 18.0), control2: CGPoint(x: 18.0, y: 18.895430500338414))
+        return path
+    }()
+        
+    /// Text Square icon path
+    static let textSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 12.0))
+path.addLine(to: CGPoint(x: 17.0, y: 12.0))
+path.move(to: CGPoint(x: 7.0, y: 16.0))
+path.addLine(to: CGPoint(x: 13.0, y: 16.0))
+path.move(to: CGPoint(x: 7.0, y: 8.0))
+path.addLine(to: CGPoint(x: 15.0, y: 8.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Tie icon path
+    static let tiePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.9, y: 3.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 2.0), control1: CGPoint(x: 3.0, y: 2.4), control2: CGPoint(x: 3.4, y: 2.0))
+path.addLine(to: CGPoint(x: 8.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 9.1, y: 3.0), control1: CGPoint(x: 8.6, y: 2.0), control2: CGPoint(x: 9.0, y: 2.4))
+path.addLine(to: CGPoint(x: 10.0, y: 18.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.addLine(to: CGPoint(x: 2.0, y: 18.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 8.85, y: 2.4))
+path.addLine(to: CGPoint(x: 16.0, y: 11.8))
+path.move(to: CGPoint(x: 9.7, y: 13.15))
+path.addLine(to: CGPoint(x: 16.2, y: 21.65))
+path.move(to: CGPoint(x: 22.0, y: 5.0))
+path.addLine(to: CGPoint(x: 22.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.6), control2: CGPoint(x: 21.6, y: 22.0))
+path.addLine(to: CGPoint(x: 17.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 21.0), control1: CGPoint(x: 16.4, y: 22.0), control2: CGPoint(x: 16.0, y: 21.6))
+path.addLine(to: CGPoint(x: 16.0, y: 5.0))
+path.addLine(to: CGPoint(x: 19.0, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Tie Bow icon path
+    static let tieBowPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 12.0))
+path.addLine(to: CGPoint(x: 10.0, y: 12.0))
+path.move(to: CGPoint(x: 10.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 7.0), control1: CGPoint(x: 8.8, y: 8.5), control2: CGPoint(x: 6.6, y: 7.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 2.9, y: 7.0), control2: CGPoint(x: 2.0, y: 9.2))
+path.addCurve(to: CGPoint(x: 4.0, y: 17.0), control1: CGPoint(x: 2.0, y: 14.8), control2: CGPoint(x: 2.9, y: 17.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 14.0), control1: CGPoint(x: 6.6, y: 17.0), control2: CGPoint(x: 8.8, y: 15.5))
+path.move(to: CGPoint(x: 14.0, y: 12.0))
+path.addLine(to: CGPoint(x: 16.0, y: 12.0))
+path.move(to: CGPoint(x: 14.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 17.0), control1: CGPoint(x: 15.2, y: 15.5), control2: CGPoint(x: 17.4, y: 17.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 21.1, y: 17.0), control2: CGPoint(x: 22.0, y: 14.8))
+path.addCurve(to: CGPoint(x: 20.0, y: 7.0), control1: CGPoint(x: 22.0, y: 9.2), control2: CGPoint(x: 21.1, y: 7.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 10.0), control1: CGPoint(x: 17.4, y: 7.0), control2: CGPoint(x: 15.2, y: 8.5))
+path.move(to: CGPoint(x: 10.0, y: 10.0))
+path.addLine(to: CGPoint(x: 14.0, y: 10.0))
+path.addLine(to: CGPoint(x: 14.0, y: 14.0))
+path.addLine(to: CGPoint(x: 10.0, y: 14.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Tie Bow Ribbon icon path
+    static let tieBowRibbonPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 9.0))
+path.addLine(to: CGPoint(x: 10.0, y: 9.0))
+path.move(to: CGPoint(x: 10.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 4.0), control1: CGPoint(x: 8.8, y: 5.5), control2: CGPoint(x: 6.6, y: 4.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 9.0), control1: CGPoint(x: 2.9, y: 4.0), control2: CGPoint(x: 2.0, y: 6.2))
+path.addCurve(to: CGPoint(x: 4.0, y: 14.0), control1: CGPoint(x: 2.0, y: 11.8), control2: CGPoint(x: 2.9, y: 14.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 11.0), control1: CGPoint(x: 6.6, y: 14.0), control2: CGPoint(x: 8.8, y: 12.5))
+path.move(to: CGPoint(x: 14.0, y: 9.0))
+path.addLine(to: CGPoint(x: 16.0, y: 9.0))
+path.move(to: CGPoint(x: 14.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 14.0), control1: CGPoint(x: 15.2, y: 12.5), control2: CGPoint(x: 17.4, y: 14.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 9.0), control1: CGPoint(x: 21.1, y: 14.0), control2: CGPoint(x: 22.0, y: 11.8))
+path.addCurve(to: CGPoint(x: 20.0, y: 4.0), control1: CGPoint(x: 22.0, y: 6.199999999999999), control2: CGPoint(x: 21.1, y: 4.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 7.0), control1: CGPoint(x: 17.4, y: 4.0), control2: CGPoint(x: 15.2, y: 5.5))
+path.move(to: CGPoint(x: 5.5, y: 13.83))
+path.addLine(to: CGPoint(x: 4.0, y: 20.0))
+path.addLine(to: CGPoint(x: 7.0, y: 19.0))
+path.addLine(to: CGPoint(x: 9.0, y: 21.0))
+path.addLine(to: CGPoint(x: 11.5, y: 11.0))
+path.move(to: CGPoint(x: 18.5, y: 13.83))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.addLine(to: CGPoint(x: 17.0, y: 19.0))
+path.addLine(to: CGPoint(x: 15.0, y: 21.0))
+path.addLine(to: CGPoint(x: 12.5, y: 11.0))
+path.move(to: CGPoint(x: 10.0, y: 7.0))
+path.addLine(to: CGPoint(x: 14.0, y: 7.0))
+path.addLine(to: CGPoint(x: 14.0, y: 11.0))
+path.addLine(to: CGPoint(x: 10.0, y: 11.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Tire icon path
+    static let tirePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 10.1, y: 12.62))
+path.addLine(to: CGPoint(x: 6.3, y: 13.85))
+path.move(to: CGPoint(x: 10.82, y: 10.38))
+path.addLine(to: CGPoint(x: 8.47, y: 7.15))
+path.move(to: CGPoint(x: 13.9, y: 12.62))
+path.addLine(to: CGPoint(x: 17.7, y: 13.85))
+path.move(to: CGPoint(x: 13.18, y: 10.38))
+path.addLine(to: CGPoint(x: 15.53, y: 7.15))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 10.0, y: 13.104569499661586), control2: CGPoint(x: 10.895430500338414, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 13.104569499661586, y: 14.0), control2: CGPoint(x: 14.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 14.0, y: 10.895430500338414), control2: CGPoint(x: 13.104569499661586, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 10.895430500338414, y: 10.0), control2: CGPoint(x: 10.0, y: 10.895430500338414))
+path.move(to: CGPoint(x: 6.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 6.000000000000001, y: 15.313708498984761), control2: CGPoint(x: 8.68629150101524, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 12.0), control1: CGPoint(x: 15.313708498984761, y: 18.0), control2: CGPoint(x: 18.0, y: 15.313708498984761))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 18.0, y: 8.686291501015239), control2: CGPoint(x: 15.313708498984761, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 12.0), control1: CGPoint(x: 8.68629150101524, y: 6.0), control2: CGPoint(x: 6.000000000000001, y: 8.686291501015239))
+        return path
+    }()
+        
+    /// Toast icon path
+    static let toastPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 5.5, y: 3.0))
+path.addCurve(to: CGPoint(x: 2.324616335039853, y: 5.134159463999937), control1: CGPoint(x: 4.111975184988702, y: 3.0187389944822614), control2: CGPoint(x: 2.8662022247824703, y: 3.8560167642073613))
+path.addCurve(to: CGPoint(x: 2.9999999999999996, y: 8.899999999999999), control1: CGPoint(x: 1.7830304452972356, y: 6.412302163792512), control2: CGPoint(x: 2.0479983346445207, y: 7.889724361294527))
+path.addLine(to: CGPoint(x: 3.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 21.0), control1: CGPoint(x: 3.0, y: 20.104569499661586), control2: CGPoint(x: 3.8954305003384135, y: 21.0))
+path.addLine(to: CGPoint(x: 19.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 20.104569499661586, y: 21.0), control2: CGPoint(x: 21.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 21.0, y: 8.9))
+path.addCurve(to: CGPoint(x: 21.675383664960147, y: 5.1341594639999375), control1: CGPoint(x: 21.952001665355482, y: 7.889724361294528), control2: CGPoint(x: 22.216969554702764, y: 6.412302163792512))
+path.addCurve(to: CGPoint(x: 18.5, y: 3.0000000000000004), control1: CGPoint(x: 21.13379777521753, y: 3.8560167642073617), control2: CGPoint(x: 19.8880248150113, y: 3.0187389944822614))
+path.closeSubpath()
+path.move(to: CGPoint(x: 7.5, y: 10.0))
+path.addCurve(to: CGPoint(x: 10.7, y: 7.0), control1: CGPoint(x: 7.5, y: 8.2), control2: CGPoint(x: 8.7, y: 7.0))
+path.addCurve(to: CGPoint(x: 14.5, y: 9.5), control1: CGPoint(x: 13.2, y: 7.0), control2: CGPoint(x: 13.1, y: 8.5))
+path.addCurve(to: CGPoint(x: 17.0, y: 12.5), control1: CGPoint(x: 15.9, y: 10.5), control2: CGPoint(x: 17.0, y: 10.5))
+path.addCurve(to: CGPoint(x: 13.5, y: 15.7), control1: CGPoint(x: 17.0, y: 14.7), control2: CGPoint(x: 15.8, y: 15.7))
+path.addCurve(to: CGPoint(x: 10.5, y: 16.9), control1: CGPoint(x: 12.3, y: 15.7), control2: CGPoint(x: 12.3, y: 16.9))
+path.addCurve(to: CGPoint(x: 7.0, y: 14.2), control1: CGPoint(x: 8.7, y: 16.9), control2: CGPoint(x: 7.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 7.8, y: 11.7), control1: CGPoint(x: 7.0, y: 12.7), control2: CGPoint(x: 7.8, y: 12.7))
+path.addCurve(to: CGPoint(x: 7.5, y: 10.0), control1: CGPoint(x: 7.8, y: 11.0), control2: CGPoint(x: 7.5, y: 10.5))
+        return path
+    }()
+        
+    /// Toaster icon path
+    static let toasterPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.0, y: 10.0))
+path.addLine(to: CGPoint(x: 16.0, y: 5.7))
+path.addCurve(to: CGPoint(x: 16.87827233327677, y: 3.4774939639792515), control1: CGPoint(x: 16.75183230730215, y: 5.234735785634561), control2: CGPoint(x: 17.108955252206485, y: 4.331020764019198))
+path.addCurve(to: CGPoint(x: 15.0, y: 2.0), control1: CGPoint(x: 16.647589414347053, y: 2.6239671639393056), control2: CGPoint(x: 15.88384664165885, y: 2.0231888227543586))
+path.addLine(to: CGPoint(x: 9.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 7.12172766672323, y: 3.4774939639792524), control1: CGPoint(x: 8.116153358341148, y: 2.023188822754359), control2: CGPoint(x: 7.352410585652946, y: 2.623967163939306))
+path.addCurve(to: CGPoint(x: 8.0, y: 5.700000000000001), control1: CGPoint(x: 6.891044747793515, y: 4.331020764019199), control2: CGPoint(x: 7.2481676926978515, y: 5.234735785634561))
+path.addLine(to: CGPoint(x: 8.0, y: 10.0))
+path.move(to: CGPoint(x: 6.0, y: 10.0))
+path.addLine(to: CGPoint(x: 18.0, y: 10.0))
+path.move(to: CGPoint(x: 4.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 9.0), control1: CGPoint(x: 2.8954305003384135, y: 7.0), control2: CGPoint(x: 2.0, y: 7.895430500338413))
+path.addLine(to: CGPoint(x: 2.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 22.0), control1: CGPoint(x: 2.0, y: 21.104569499661586), control2: CGPoint(x: 2.8954305003384135, y: 22.0))
+path.addLine(to: CGPoint(x: 20.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 20.0), control1: CGPoint(x: 21.104569499661586, y: 22.0), control2: CGPoint(x: 22.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 22.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 7.0), control1: CGPoint(x: 22.0, y: 7.8954305003384135), control2: CGPoint(x: 21.104569499661586, y: 7.0))
+path.move(to: CGPoint(x: 14.0, y: 16.0))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.move(to: CGPoint(x: 16.0, y: 14.0))
+path.addLine(to: CGPoint(x: 16.0, y: 22.0))
+path.move(to: CGPoint(x: 6.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 18.0), control1: CGPoint(x: 6.0, y: 17.104569499661586), control2: CGPoint(x: 6.8954305003384135, y: 18.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 16.0), control1: CGPoint(x: 9.104569499661586, y: 18.0), control2: CGPoint(x: 10.0, y: 17.104569499661586))
+path.addCurve(to: CGPoint(x: 8.0, y: 14.0), control1: CGPoint(x: 10.0, y: 14.895430500338414), control2: CGPoint(x: 9.104569499661586, y: 14.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 14.0), control2: CGPoint(x: 6.0, y: 14.895430500338414))
+        return path
+    }()
+        
+    /// Toilet Roll icon path
+    static let toiletRollPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 3.0, y: 8.0))
+path.addLine(to: CGPoint(x: 3.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 22.0), control1: CGPoint(x: 3.0, y: 19.3), control2: CGPoint(x: 6.1, y: 22.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 16.0), control1: CGPoint(x: 13.9, y: 22.0), control2: CGPoint(x: 17.0, y: 19.3))
+path.addLine(to: CGPoint(x: 17.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.0, y: 10.2), control2: CGPoint(x: 19.2, y: 12.0))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 16.0), control1: CGPoint(x: 19.2, y: 20.0), control2: CGPoint(x: 17.0, y: 18.2))
+path.move(to: CGPoint(x: 10.0, y: 14.0))
+path.addLine(to: CGPoint(x: 10.0, y: 16.0))
+path.move(to: CGPoint(x: 10.0, y: 20.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.move(to: CGPoint(x: 7.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 10.0), control1: CGPoint(x: 7.0, y: 9.104569499661586), control2: CGPoint(x: 8.34314575050762, y: 10.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 8.0), control1: CGPoint(x: 11.65685424949238, y: 10.0), control2: CGPoint(x: 13.0, y: 9.104569499661586))
+path.addCurve(to: CGPoint(x: 10.0, y: 6.0), control1: CGPoint(x: 13.0, y: 6.8954305003384135), control2: CGPoint(x: 11.65685424949238, y: 6.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 8.0), control1: CGPoint(x: 8.34314575050762, y: 6.0), control2: CGPoint(x: 7.0, y: 6.895430500338413))
+path.move(to: CGPoint(x: 3.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 14.0), control1: CGPoint(x: 3.000000000000001, y: 11.313708498984761), control2: CGPoint(x: 6.1340067511844465, y: 14.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 8.0), control1: CGPoint(x: 13.865993248815554, y: 14.0), control2: CGPoint(x: 17.0, y: 11.313708498984761))
+path.addCurve(to: CGPoint(x: 10.0, y: 2.0), control1: CGPoint(x: 17.0, y: 4.686291501015239), control2: CGPoint(x: 13.865993248815554, y: 2.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 7.999999999999999), control1: CGPoint(x: 6.1340067511844465, y: 2.0), control2: CGPoint(x: 3.000000000000001, y: 4.686291501015239))
+        return path
+    }()
+        
+    /// Toolbox icon path
+    static let toolboxPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 7.0))
+path.addLine(to: CGPoint(x: 8.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 3.0), control1: CGPoint(x: 8.0, y: 3.8954305003384135), control2: CGPoint(x: 8.895430500338414, y: 3.0))
+path.addLine(to: CGPoint(x: 14.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 5.0), control1: CGPoint(x: 15.104569499661586, y: 3.0), control2: CGPoint(x: 16.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 16.0, y: 7.0))
+path.move(to: CGPoint(x: 8.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 19.0), control1: CGPoint(x: 9.104569499661586, y: 21.0), control2: CGPoint(x: 10.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 10.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 7.0), control1: CGPoint(x: 10.0, y: 8.790861000676827), control2: CGPoint(x: 8.209138999323175, y: 7.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.0), control1: CGPoint(x: 3.7908610006768266, y: 7.0), control2: CGPoint(x: 2.0000000000000004, y: 8.790861000676825))
+path.addLine(to: CGPoint(x: 2.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 21.0), control1: CGPoint(x: 2.0, y: 20.104569499661586), control2: CGPoint(x: 2.8954305003384135, y: 21.0))
+path.addLine(to: CGPoint(x: 20.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 19.0), control1: CGPoint(x: 21.104569499661586, y: 21.0), control2: CGPoint(x: 22.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 22.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 7.0), control1: CGPoint(x: 22.0, y: 8.790861000676827), control2: CGPoint(x: 20.209138999323173, y: 7.0))
+path.addLine(to: CGPoint(x: 6.0, y: 7.0))
+path.move(to: CGPoint(x: 2.0, y: 13.0))
+path.addLine(to: CGPoint(x: 22.0, y: 13.0))
+path.move(to: CGPoint(x: 14.0, y: 15.0))
+path.addLine(to: CGPoint(x: 14.0, y: 11.0))
+path.move(to: CGPoint(x: 18.0, y: 15.0))
+path.addLine(to: CGPoint(x: 18.0, y: 11.0))
+        return path
+    }()
+        
+    /// Toolbox 2 icon path
+    static let toolbox2Path: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 7.0))
+path.addLine(to: CGPoint(x: 8.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 3.0), control1: CGPoint(x: 8.0, y: 3.8954305003384135), control2: CGPoint(x: 8.895430500338414, y: 3.0))
+path.addLine(to: CGPoint(x: 14.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 5.0), control1: CGPoint(x: 15.104569499661586, y: 3.0), control2: CGPoint(x: 16.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 16.0, y: 7.0))
+path.move(to: CGPoint(x: 4.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 19.0), control1: CGPoint(x: 2.8954305003384135, y: 21.0), control2: CGPoint(x: 2.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 2.7, y: 10.3), control1: CGPoint(x: 2.0, y: 11.4), control2: CGPoint(x: 2.3, y: 10.7))
+path.addLine(to: CGPoint(x: 5.300000000000001, y: 7.700000000000001))
+path.addCurve(to: CGPoint(x: 7.0, y: 7.0), control1: CGPoint(x: 5.7, y: 7.3), control2: CGPoint(x: 6.4, y: 7.0))
+path.addLine(to: CGPoint(x: 17.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 18.7, y: 7.7), control1: CGPoint(x: 17.6, y: 7.0), control2: CGPoint(x: 18.3, y: 7.3))
+path.addLine(to: CGPoint(x: 21.3, y: 10.3))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 21.7, y: 10.700000000000001), control2: CGPoint(x: 22.0, y: 11.5))
+path.addLine(to: CGPoint(x: 22.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 21.0), control1: CGPoint(x: 22.0, y: 20.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 21.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 2.0, y: 14.0))
+path.addLine(to: CGPoint(x: 22.0, y: 14.0))
+path.move(to: CGPoint(x: 9.0, y: 16.0))
+path.addLine(to: CGPoint(x: 9.0, y: 12.0))
+path.move(to: CGPoint(x: 15.0, y: 16.0))
+path.addLine(to: CGPoint(x: 15.0, y: 12.0))
+        return path
+    }()
+        
+    /// Top Crop icon path
+    static let topCropPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 19.0), control1: CGPoint(x: 2.0, y: 18.104569499661586), control2: CGPoint(x: 2.8954305003384135, y: 19.0))
+path.addLine(to: CGPoint(x: 20.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 17.0), control1: CGPoint(x: 21.104569499661586, y: 19.0), control2: CGPoint(x: 22.0, y: 18.104569499661586))
+path.addLine(to: CGPoint(x: 22.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 9.0), control1: CGPoint(x: 20.3, y: 12.0), control2: CGPoint(x: 19.0, y: 10.7))
+path.addLine(to: CGPoint(x: 19.0, y: 5.0))
+path.addLine(to: CGPoint(x: 15.0, y: 5.0))
+path.addLine(to: CGPoint(x: 15.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 9.0), control1: CGPoint(x: 15.0, y: 7.656854249492381), control2: CGPoint(x: 13.65685424949238, y: 9.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 6.0), control1: CGPoint(x: 10.34314575050762, y: 9.0), control2: CGPoint(x: 9.0, y: 7.656854249492381))
+path.addLine(to: CGPoint(x: 9.0, y: 5.0))
+path.addLine(to: CGPoint(x: 5.0, y: 5.0))
+path.addLine(to: CGPoint(x: 5.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 5.0, y: 10.7), control2: CGPoint(x: 3.7, y: 12.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Towel Folded icon path
+    static let towelFoldedPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 13.0))
+path.addLine(to: CGPoint(x: 17.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 17.0), control1: CGPoint(x: 19.209138999323173, y: 13.0), control2: CGPoint(x: 21.0, y: 14.790861000676827))
+path.addCurve(to: CGPoint(x: 17.0, y: 21.0), control1: CGPoint(x: 21.0, y: 19.209138999323173), control2: CGPoint(x: 19.209138999323173, y: 21.0))
+path.addLine(to: CGPoint(x: 7.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 17.0), control1: CGPoint(x: 4.790861000676827, y: 21.0), control2: CGPoint(x: 3.0000000000000004, y: 19.209138999323173))
+path.addLine(to: CGPoint(x: 3.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 6.999999999999999, y: 3.0), control1: CGPoint(x: 3.0, y: 4.790861000676827), control2: CGPoint(x: 4.790861000676825, y: 3.0000000000000004))
+path.addLine(to: CGPoint(x: 17.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 7.0), control1: CGPoint(x: 19.209138999323173, y: 3.0), control2: CGPoint(x: 21.0, y: 4.790861000676826))
+path.addLine(to: CGPoint(x: 21.0, y: 17.0))
+path.move(to: CGPoint(x: 17.0, y: 17.0))
+path.addLine(to: CGPoint(x: 7.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 13.0), control1: CGPoint(x: 4.790861000676827, y: 17.0), control2: CGPoint(x: 3.0000000000000004, y: 15.209138999323175))
+        return path
+    }()
+        
+    /// Towel Rack icon path
+    static let towelRackPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 6.0))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.move(to: CGPoint(x: 6.0, y: 2.0))
+path.addLine(to: CGPoint(x: 18.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 4.0), control1: CGPoint(x: 19.104569499661586, y: 2.0), control2: CGPoint(x: 20.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 20.0, y: 22.0))
+path.addLine(to: CGPoint(x: 8.0, y: 22.0))
+path.addLine(to: CGPoint(x: 8.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 2.0), control1: CGPoint(x: 8.0, y: 2.895430500338413), control2: CGPoint(x: 7.104569499661587, y: 2.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 3.9999999999999996), control1: CGPoint(x: 4.8954305003384135, y: 2.0), control2: CGPoint(x: 4.0, y: 2.8954305003384126))
+path.addLine(to: CGPoint(x: 4.0, y: 19.0))
+path.addLine(to: CGPoint(x: 8.0, y: 19.0))
+path.move(to: CGPoint(x: 22.0, y: 6.0))
+path.addLine(to: CGPoint(x: 20.0, y: 6.0))
+path.move(to: CGPoint(x: 8.0, y: 18.0))
+path.addLine(to: CGPoint(x: 20.0, y: 18.0))
+        return path
+    }()
+        
+    /// Trees Forest icon path
+    static let treesForestPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 9.0, y: 5.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 15.0, y: 5.0))
+path.move(to: CGPoint(x: 9.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 7.0))
+path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.move(to: CGPoint(x: 2.0, y: 15.0))
+path.addLine(to: CGPoint(x: 5.0, y: 12.0))
+path.addLine(to: CGPoint(x: 8.0, y: 15.0))
+path.move(to: CGPoint(x: 2.0, y: 20.0))
+path.addLine(to: CGPoint(x: 5.0, y: 17.0))
+path.addLine(to: CGPoint(x: 8.0, y: 20.0))
+path.move(to: CGPoint(x: 5.0, y: 22.0))
+path.addLine(to: CGPoint(x: 5.0, y: 12.0))
+path.move(to: CGPoint(x: 16.0, y: 15.0))
+path.addLine(to: CGPoint(x: 19.0, y: 12.0))
+path.addLine(to: CGPoint(x: 22.0, y: 15.0))
+path.move(to: CGPoint(x: 16.0, y: 20.0))
+path.addLine(to: CGPoint(x: 19.0, y: 17.0))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.move(to: CGPoint(x: 19.0, y: 22.0))
+path.addLine(to: CGPoint(x: 19.0, y: 12.0))
+        return path
+    }()
+        
+    /// Triangle Stripes icon path
+    static let triangleStripesPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 13.75, y: 4.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.968245836551854), control1: CGPoint(x: 13.397762321350626, y: 3.363368357119301), control2: CGPoint(x: 12.727579020435083, y: 2.968245836551854))
+path.addCurve(to: CGPoint(x: 10.25, y: 4.0), control1: CGPoint(x: 11.272420979564917, y: 2.968245836551854), control2: CGPoint(x: 10.602237678649374, y: 3.363368357119301))
+path.addLine(to: CGPoint(x: 2.2, y: 18.0))
+path.addCurve(to: CGPoint(x: 2.3148269424003605, y: 20.01939197760216), control1: CGPoint(x: 1.9066224057553587, y: 18.649407586696338), control2: CGPoint(x: 1.9499424598144062, y: 19.411251173292236))
+path.addCurve(to: CGPoint(x: 4.0, y: 21.0), control1: CGPoint(x: 2.6797114249863148, y: 20.627532781912084), control2: CGPoint(x: 3.3154662959950265, y: 20.99748073709578))
+path.addLine(to: CGPoint(x: 20.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.74555374197613, y: 20.007823016152745), control1: CGPoint(x: 20.717734512685194, y: 21.006458415130567), control2: CGPoint(x: 21.38389347608479, y: 20.627812043395046))
+path.addCurve(to: CGPoint(x: 21.75, y: 18.0), control1: CGPoint(x: 22.107214007867473, y: 19.387833988910444), control2: CGPoint(x: 22.10891084169445, y: 18.621584708257558))
+path.closeSubpath()
+path.move(to: CGPoint(x: 7.5, y: 9.0))
+path.addLine(to: CGPoint(x: 16.5, y: 9.0))
+path.move(to: CGPoint(x: 5.5, y: 13.0))
+path.addLine(to: CGPoint(x: 18.5, y: 13.0))
+path.move(to: CGPoint(x: 3.0, y: 17.0))
+path.addLine(to: CGPoint(x: 21.0, y: 17.0))
+        return path
+    }()
+        
+    /// Trousers icon path
+    static let trousersPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 6.0))
+path.addLine(to: CGPoint(x: 20.0, y: 6.0))
+path.move(to: CGPoint(x: 6.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 20.0), control1: CGPoint(x: 4.8954305003384135, y: 22.0), control2: CGPoint(x: 4.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 4.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 2.0), control1: CGPoint(x: 4.0, y: 2.4), control2: CGPoint(x: 4.4, y: 2.0))
+path.addLine(to: CGPoint(x: 19.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 3.0), control1: CGPoint(x: 19.6, y: 2.0), control2: CGPoint(x: 20.0, y: 2.4))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 22.0), control1: CGPoint(x: 20.0, y: 21.104569499661586), control2: CGPoint(x: 19.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 15.0, y: 22.0))
+path.addLine(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 9.0, y: 22.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 6.0, y: 11.0))
+path.addLine(to: CGPoint(x: 4.0, y: 12.0))
+path.move(to: CGPoint(x: 9.0, y: 8.5))
+path.addLine(to: CGPoint(x: 9.0, y: 6.0))
+path.move(to: CGPoint(x: 15.0, y: 6.0))
+path.addLine(to: CGPoint(x: 15.0, y: 8.5))
+path.move(to: CGPoint(x: 20.0, y: 12.0))
+path.addLine(to: CGPoint(x: 18.0, y: 11.0))
+path.move(to: CGPoint(x: 4.0, y: 18.0))
+path.addLine(to: CGPoint(x: 10.0, y: 18.0))
+path.move(to: CGPoint(x: 14.0, y: 18.0))
+path.addLine(to: CGPoint(x: 20.0, y: 18.0))
+        return path
+    }()
+        
+    /// Tuxedo icon path
+    static let tuxedoPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 3.0))
+path.addLine(to: CGPoint(x: 10.0, y: 5.0))
+path.addLine(to: CGPoint(x: 14.0, y: 3.0))
+path.addLine(to: CGPoint(x: 14.0, y: 5.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 18.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 20.70814051328907, y: 4.01372037580286), control1: CGPoint(x: 19.708797137430306, y: 3.011308120602937), control2: CGPoint(x: 20.358650144356197, y: 3.396972665921319))
+path.addCurve(to: CGPoint(x: 20.7, y: 6.0), control1: CGPoint(x: 21.057630882221943, y: 4.630468085684402), control2: CGPoint(x: 21.05453386707731, y: 5.386137643509417))
+path.addCurve(to: CGPoint(x: 12.00000000007094, y: 20.999999999876763), control1: CGPoint(x: 17.791776733393817, y: 10.995225984645913), control2: CGPoint(x: 14.891772809462054, y: 15.995232750044124))
+path.addCurve(to: CGPoint(x: 3.3, y: 6.0), control1: CGPoint(x: 12.0, y: 21.0), control2: CGPoint(x: 6.8, y: 12.0))
+path.addCurve(to: CGPoint(x: 3.2918594867109294, y: 4.01372037580286), control1: CGPoint(x: 2.9454661329226917, y: 5.386137643509416), control2: CGPoint(x: 2.9423691177780555, y: 4.630468085684401))
+path.addCurve(to: CGPoint(x: 5.000000000000001, y: 3.0), control1: CGPoint(x: 3.641349855643803, y: 3.396972665921318), control2: CGPoint(x: 4.291202862569698, y: 3.011308120602937))
+path.addLine(to: CGPoint(x: 6.0, y: 3.0))
+path.move(to: CGPoint(x: 12.0, y: 9.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 8.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.0, y: 13.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 12.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 21.0, y: 5.0))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+        return path
+    }()
+        
+    /// Type Square icon path
+    static let typeSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 9.0))
+path.addLine(to: CGPoint(x: 7.0, y: 7.0))
+path.addLine(to: CGPoint(x: 17.0, y: 7.0))
+path.addLine(to: CGPoint(x: 17.0, y: 9.0))
+path.move(to: CGPoint(x: 12.0, y: 7.0))
+path.addLine(to: CGPoint(x: 12.0, y: 17.0))
+path.move(to: CGPoint(x: 10.0, y: 17.0))
+path.addLine(to: CGPoint(x: 14.0, y: 17.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Ufo icon path
+    static let ufoPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 18.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 18.0, y: 9.0), control2: CGPoint(x: 15.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 8.0), control1: CGPoint(x: 9.0, y: 10.0), control2: CGPoint(x: 6.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 2.0), control1: CGPoint(x: 6.0, y: 4.68629150101524), control2: CGPoint(x: 8.686291501015237, y: 2.000000000000001))
+path.addCurve(to: CGPoint(x: 18.0, y: 7.999999999999998), control1: CGPoint(x: 15.31370849898476, y: 2.0), control2: CGPoint(x: 18.0, y: 4.686291501015238))
+path.move(to: CGPoint(x: 7.0, y: 13.0))
+path.addEllipse(in: CGRect(x: 6.66, y: 12.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.0, y: 14.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 13.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 17.0, y: 13.0))
+path.addEllipse(in: CGRect(x: 16.66, y: 12.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 6.0, y: 8.1))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.5), control1: CGPoint(x: 3.6, y: 9.1), control2: CGPoint(x: 2.0, y: 10.7))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 2.0, y: 15.5), control2: CGPoint(x: 6.5, y: 18.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.5), control1: CGPoint(x: 17.5, y: 18.0), control2: CGPoint(x: 22.0, y: 15.5))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.1), control1: CGPoint(x: 22.0, y: 10.7), control2: CGPoint(x: 20.4, y: 9.1))
+path.move(to: CGPoint(x: 7.0, y: 22.0))
+path.addLine(to: CGPoint(x: 9.0, y: 18.0))
+path.move(to: CGPoint(x: 17.0, y: 22.0))
+path.addLine(to: CGPoint(x: 15.0, y: 18.0))
+        return path
+    }()
+        
+    /// Underline Square icon path
+    static let underlineSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.0, y: 7.0))
+path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 13.0), control1: CGPoint(x: 15.0, y: 11.65685424949238), control2: CGPoint(x: 13.65685424949238, y: 13.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 10.0), control1: CGPoint(x: 10.34314575050762, y: 13.0), control2: CGPoint(x: 9.0, y: 11.65685424949238))
+path.addLine(to: CGPoint(x: 9.0, y: 7.0))
+path.move(to: CGPoint(x: 7.0, y: 17.0))
+path.addLine(to: CGPoint(x: 17.0, y: 17.0))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addLine(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 3.0, y: 3.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Unicorn Head icon path
+    static let unicornHeadPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.6, y: 4.8))
+path.addLine(to: CGPoint(x: 18.3, y: 7.1))
+path.move(to: CGPoint(x: 15.5, y: 10.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 2.0), control1: CGPoint(x: 15.5, y: 10.0), control2: CGPoint(x: 19.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.0), control1: CGPoint(x: 16.0, y: 4.0), control2: CGPoint(x: 12.0, y: 7.0))
+path.move(to: CGPoint(x: 11.5, y: 12.0))
+path.addLine(to: CGPoint(x: 11.0, y: 12.0))
+path.move(to: CGPoint(x: 5.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 19.0), control1: CGPoint(x: 5.0, y: 17.209138999323173), control2: CGPoint(x: 6.790861000676827, y: 19.0))
+path.addLine(to: CGPoint(x: 16.8, y: 19.0))
+path.addLine(to: CGPoint(x: 17.1, y: 19.3))
+path.addCurve(to: CGPoint(x: 21.210812230568976, y: 18.96310513952374), control1: CGPoint(x: 18.342410347595525, y: 20.29685761359986), control2: CGPoint(x: 20.147281054331042, y: 20.14894240102904))
+path.addCurve(to: CGPoint(x: 21.100000000000005, y: 14.84), control1: CGPoint(x: 22.274343406806913, y: 17.777267878018442), control2: CGPoint(x: 22.225690795672136, y: 15.96699991399444))
+path.addLine(to: CGPoint(x: 12.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 2.0), control1: CGPoint(x: 12.0, y: 4.0), control2: CGPoint(x: 11.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 7.0), control1: CGPoint(x: 11.0, y: 2.0), control2: CGPoint(x: 8.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 10.0), control1: CGPoint(x: 4.0, y: 8.0), control2: CGPoint(x: 2.0, y: 10.0))
+path.move(to: CGPoint(x: 2.0, y: 4.5))
+path.addCurve(to: CGPoint(x: 6.0, y: 3.0), control1: CGPoint(x: 4.0, y: 3.0), control2: CGPoint(x: 6.0, y: 3.0))
+path.addLine(to: CGPoint(x: 8.0, y: 7.0))
+path.move(to: CGPoint(x: 6.14, y: 17.8))
+path.addCurve(to: CGPoint(x: 2.0, y: 22.0), control1: CGPoint(x: 6.14, y: 17.8), control2: CGPoint(x: 4.0, y: 19.0))
+        return path
+    }()
+        
+    /// Venn icon path
+    static let vennPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 18.0), control1: CGPoint(x: 2.000000000000001, y: 15.313708498984761), control2: CGPoint(x: 4.68629150101524, y: 18.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 12.0), control1: CGPoint(x: 11.313708498984761, y: 18.0), control2: CGPoint(x: 14.0, y: 15.313708498984761))
+path.addCurve(to: CGPoint(x: 8.0, y: 6.0), control1: CGPoint(x: 14.0, y: 8.686291501015239), control2: CGPoint(x: 11.313708498984761, y: 6.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.0), control1: CGPoint(x: 4.68629150101524, y: 6.0), control2: CGPoint(x: 2.000000000000001, y: 8.686291501015239))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 10.0, y: 15.313708498984761), control2: CGPoint(x: 12.68629150101524, y: 18.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 19.31370849898476, y: 18.0), control2: CGPoint(x: 22.0, y: 15.313708498984761))
+path.addCurve(to: CGPoint(x: 16.0, y: 6.0), control1: CGPoint(x: 22.0, y: 8.686291501015239), control2: CGPoint(x: 19.31370849898476, y: 6.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 12.68629150101524, y: 6.0), control2: CGPoint(x: 10.0, y: 8.686291501015239))
+        return path
+    }()
+        
+    /// Vest icon path
+    static let vestPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 10.0, y: 5.104569499661587), control2: CGPoint(x: 10.895430500338414, y: 6.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 4.0), control1: CGPoint(x: 13.104569499661586, y: 6.0), control2: CGPoint(x: 14.0, y: 5.1045694996615865))
+path.addLine(to: CGPoint(x: 14.0, y: 3.0))
+path.addLine(to: CGPoint(x: 18.0, y: 3.0))
+path.addLine(to: CGPoint(x: 18.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 9.0), control1: CGPoint(x: 18.0, y: 7.7), control2: CGPoint(x: 19.3, y: 9.0))
+path.addLine(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.addLine(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 6.0), control1: CGPoint(x: 4.7, y: 9.0), control2: CGPoint(x: 6.0, y: 7.7))
+path.addLine(to: CGPoint(x: 6.0, y: 3.0))
+path.addLine(to: CGPoint(x: 10.0, y: 3.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Volleyball icon path
+    static let volleyballPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.3, y: 3.8))
+path.addCurve(to: CGPoint(x: 8.2, y: 15.3), control1: CGPoint(x: 5.517838499032759, y: 7.736904604071115), control2: CGPoint(x: 6.193081210935276, y: 11.823899965586342))
+path.move(to: CGPoint(x: 20.7, y: 17.0))
+path.addCurve(to: CGPoint(x: 12.000000000000007, y: 12.0), control1: CGPoint(x: 18.60138008699043, y: 14.218707077723705), control2: CGPoint(x: 15.45964373451677, y: 12.413111472853785))
+path.addCurve(to: CGPoint(x: 12.000000000000002, y: 1.9999999999999947), control1: CGPoint(x: 10.699154812613001, y: 8.793581531782758), control2: CGPoint(x: 10.699154812613001, y: 5.206418468217233))
+path.move(to: CGPoint(x: 22.0, y: 11.1))
+path.addCurve(to: CGPoint(x: 19.4, y: 9.299999999999999), control1: CGPoint(x: 21.2, y: 10.5), control2: CGPoint(x: 20.3, y: 9.799999999999999))
+path.addCurve(to: CGPoint(x: 11.099999999999998, y: 7.099999999999999), control1: CGPoint(x: 16.4, y: 7.599999999999999), control2: CGPoint(x: 13.299999999999999, y: 6.799999999999999))
+path.move(to: CGPoint(x: 7.8, y: 21.1))
+path.addCurve(to: CGPoint(x: 10.7, y: 19.700000000000003), control1: CGPoint(x: 8.8, y: 20.700000000000003), control2: CGPoint(x: 9.7, y: 20.3))
+path.addCurve(to: CGPoint(x: 16.799999999999997, y: 13.600000000000003), control1: CGPoint(x: 13.7, y: 18.000000000000004), control2: CGPoint(x: 15.899999999999999, y: 15.700000000000003))
+path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 3.300000000000002, y: 17.0), control1: CGPoint(x: 9.91736261069947, y: 14.799343812192292), control2: CGPoint(x: 6.767194368103819, y: 16.609785330925426))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Waffle icon path
+    static let wafflePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 7.0, y: 14.0))
+path.addLine(to: CGPoint(x: 14.0, y: 7.0))
+path.move(to: CGPoint(x: 10.0, y: 17.0))
+path.addLine(to: CGPoint(x: 17.0, y: 10.0))
+path.move(to: CGPoint(x: 7.0, y: 10.0))
+path.addLine(to: CGPoint(x: 14.0, y: 17.0))
+path.move(to: CGPoint(x: 10.0, y: 7.0))
+path.addLine(to: CGPoint(x: 17.0, y: 14.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Wardrobe icon path
+    static let wardrobePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 8.0, y: 10.0))
+path.addEllipse(in: CGRect(x: 7.66, y: 9.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 17.0))
+path.move(to: CGPoint(x: 16.0, y: 10.0))
+path.addEllipse(in: CGRect(x: 15.660000000000002, y: 9.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 3.0, y: 17.0))
+path.addLine(to: CGPoint(x: 21.0, y: 17.0))
+path.move(to: CGPoint(x: 5.0, y: 2.0))
+path.addLine(to: CGPoint(x: 19.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 4.0), control1: CGPoint(x: 20.104569499661586, y: 2.0), control2: CGPoint(x: 21.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 21.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 22.0), control1: CGPoint(x: 21.0, y: 21.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 5.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 20.0), control1: CGPoint(x: 3.8954305003384135, y: 22.0), control2: CGPoint(x: 3.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 3.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 2.0), control1: CGPoint(x: 3.0, y: 2.8954305003384135), control2: CGPoint(x: 3.8954305003384126, y: 2.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Watch Activity icon path
+    static let watchActivityPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.8, y: 6.0))
+path.addLine(to: CGPoint(x: 15.3, y: 3.6))
+path.addCurve(to: CGPoint(x: 13.3, y: 2.0), control1: CGPoint(x: 15.100000000000001, y: 2.6), control2: CGPoint(x: 14.3, y: 2.0))
+path.addLine(to: CGPoint(x: 10.600000000000001, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.600000000000001, y: 3.6), control1: CGPoint(x: 9.634478472500701, y: 1.9805285892049467), control2: CGPoint(x: 8.792947251602236, y: 2.65375356592372))
+path.addLine(to: CGPoint(x: 8.2, y: 6.0))
+path.move(to: CGPoint(x: 8.2, y: 18.0))
+path.addLine(to: CGPoint(x: 8.7, y: 20.4))
+path.addCurve(to: CGPoint(x: 10.7, y: 22.0), control1: CGPoint(x: 8.899999999999999, y: 21.4), control2: CGPoint(x: 9.7, y: 22.0))
+path.addLine(to: CGPoint(x: 13.399999999999999, y: 22.0))
+path.addCurve(to: CGPoint(x: 15.399999999999999, y: 20.4), control1: CGPoint(x: 14.365521527499299, y: 22.019471410795052), control2: CGPoint(x: 15.207052748397766, y: 21.34624643407628))
+path.addLine(to: CGPoint(x: 15.899999999999999, y: 18.0))
+path.move(to: CGPoint(x: 6.0, y: 12.0))
+path.addLine(to: CGPoint(x: 9.0, y: 12.0))
+path.addLine(to: CGPoint(x: 11.0, y: 14.0))
+path.addLine(to: CGPoint(x: 13.2, y: 10.0))
+path.addLine(to: CGPoint(x: 15.0, y: 12.0))
+path.addLine(to: CGPoint(x: 18.0, y: 12.0))
+path.move(to: CGPoint(x: 8.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 17.104569499661586, y: 6.0), control2: CGPoint(x: 18.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 18.0), control2: CGPoint(x: 6.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 6.0), control1: CGPoint(x: 6.0, y: 6.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 6.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Watch Alarm icon path
+    static let watchAlarmPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.5, y: 9.0))
+path.addCurve(to: CGPoint(x: 2.5, y: 15.0), control1: CGPoint(x: 1.8813153038817632, y: 10.952153655848637), control2: CGPoint(x: 1.8813153038817632, y: 13.047846344151365))
+path.move(to: CGPoint(x: 21.5, y: 15.0))
+path.addCurve(to: CGPoint(x: 21.5, y: 9.0), control1: CGPoint(x: 22.118684696118237, y: 13.047846344151363), control2: CGPoint(x: 22.118684696118237, y: 10.952153655848633))
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 13.0, y: 13.0))
+path.move(to: CGPoint(x: 16.13, y: 7.66))
+path.addLine(to: CGPoint(x: 15.319999999999999, y: 3.6100000000000003))
+path.addCurve(to: CGPoint(x: 13.319999999999999, y: 2.0), control1: CGPoint(x: 15.131263034365858, y: 2.659768453012978), control2: CGPoint(x: 14.288616061120543, y: 1.9814376395504971))
+path.addLine(to: CGPoint(x: 10.639999999999999, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.64, y: 3.6099999999999994), control1: CGPoint(x: 9.671383938879456, y: 1.9814376395504962), control2: CGPoint(x: 8.828736965634139, y: 2.659768453012976))
+path.addLine(to: CGPoint(x: 7.8599999999999985, y: 7.66))
+path.move(to: CGPoint(x: 7.88, y: 16.36))
+path.addLine(to: CGPoint(x: 8.68, y: 20.36))
+path.addCurve(to: CGPoint(x: 10.68, y: 21.97), control1: CGPoint(x: 8.86873696563414, y: 21.31023154698702), control2: CGPoint(x: 9.711383938879457, y: 21.9885623604495))
+path.addLine(to: CGPoint(x: 13.4, y: 21.97))
+path.addCurve(to: CGPoint(x: 15.4, y: 20.359999999999996), control1: CGPoint(x: 14.368616061120543, y: 21.9885623604495), control2: CGPoint(x: 15.21126303436586, y: 21.31023154698702))
+path.addLine(to: CGPoint(x: 16.21, y: 16.31))
+path.move(to: CGPoint(x: 6.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 6.000000000000001, y: 15.313708498984761), control2: CGPoint(x: 8.68629150101524, y: 18.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 12.0), control1: CGPoint(x: 15.313708498984761, y: 18.0), control2: CGPoint(x: 18.0, y: 15.313708498984761))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 18.0, y: 8.686291501015239), control2: CGPoint(x: 15.313708498984761, y: 6.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 12.0), control1: CGPoint(x: 8.68629150101524, y: 6.0), control2: CGPoint(x: 6.000000000000001, y: 8.686291501015239))
+        return path
+    }()
+        
+    /// Watch Bars icon path
+    static let watchBarsPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.8, y: 6.0))
+path.addLine(to: CGPoint(x: 15.3, y: 3.6))
+path.addCurve(to: CGPoint(x: 13.3, y: 2.0), control1: CGPoint(x: 15.100000000000001, y: 2.6), control2: CGPoint(x: 14.3, y: 2.0))
+path.addLine(to: CGPoint(x: 10.600000000000001, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.600000000000001, y: 3.6), control1: CGPoint(x: 9.634478472500701, y: 1.9805285892049467), control2: CGPoint(x: 8.792947251602236, y: 2.65375356592372))
+path.addLine(to: CGPoint(x: 8.2, y: 6.0))
+path.move(to: CGPoint(x: 8.2, y: 18.0))
+path.addLine(to: CGPoint(x: 8.7, y: 20.4))
+path.addCurve(to: CGPoint(x: 10.7, y: 22.0), control1: CGPoint(x: 8.899999999999999, y: 21.4), control2: CGPoint(x: 9.7, y: 22.0))
+path.addLine(to: CGPoint(x: 13.399999999999999, y: 22.0))
+path.addCurve(to: CGPoint(x: 15.399999999999999, y: 20.4), control1: CGPoint(x: 14.365521527499299, y: 22.019471410795052), control2: CGPoint(x: 15.207052748397766, y: 21.34624643407628))
+path.addLine(to: CGPoint(x: 15.899999999999999, y: 18.0))
+path.move(to: CGPoint(x: 10.0, y: 12.0))
+path.addLine(to: CGPoint(x: 10.0, y: 14.0))
+path.move(to: CGPoint(x: 14.0, y: 10.0))
+path.addLine(to: CGPoint(x: 14.0, y: 14.0))
+path.move(to: CGPoint(x: 8.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 17.104569499661586, y: 6.0), control2: CGPoint(x: 18.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 18.0), control2: CGPoint(x: 6.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 6.0), control1: CGPoint(x: 6.0, y: 6.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 6.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Watch Charging icon path
+    static let watchChargingPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.8, y: 6.0))
+path.addLine(to: CGPoint(x: 15.3, y: 3.6))
+path.addCurve(to: CGPoint(x: 13.3, y: 2.0), control1: CGPoint(x: 15.100000000000001, y: 2.6), control2: CGPoint(x: 14.3, y: 2.0))
+path.addLine(to: CGPoint(x: 10.600000000000001, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.600000000000001, y: 3.6), control1: CGPoint(x: 9.634478472500701, y: 1.9805285892049467), control2: CGPoint(x: 8.792947251602236, y: 2.65375356592372))
+path.addLine(to: CGPoint(x: 8.2, y: 6.0))
+path.move(to: CGPoint(x: 8.2, y: 18.0))
+path.addLine(to: CGPoint(x: 8.7, y: 20.4))
+path.addCurve(to: CGPoint(x: 10.7, y: 22.0), control1: CGPoint(x: 8.899999999999999, y: 21.4), control2: CGPoint(x: 9.7, y: 22.0))
+path.addLine(to: CGPoint(x: 13.399999999999999, y: 22.0))
+path.addCurve(to: CGPoint(x: 15.399999999999999, y: 20.4), control1: CGPoint(x: 14.365521527499299, y: 22.019471410795052), control2: CGPoint(x: 15.207052748397766, y: 21.34624643407628))
+path.addLine(to: CGPoint(x: 15.899999999999999, y: 18.0))
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 11.0, y: 12.0))
+path.addLine(to: CGPoint(x: 13.0, y: 12.0))
+path.addLine(to: CGPoint(x: 12.0, y: 14.0))
+path.move(to: CGPoint(x: 8.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 17.104569499661586, y: 6.0), control2: CGPoint(x: 18.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 18.0), control2: CGPoint(x: 6.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 6.0), control1: CGPoint(x: 6.0, y: 6.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 6.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Watch Check icon path
+    static let watchCheckPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.8, y: 6.0))
+path.addLine(to: CGPoint(x: 15.3, y: 3.6))
+path.addCurve(to: CGPoint(x: 13.3, y: 2.0), control1: CGPoint(x: 15.100000000000001, y: 2.6), control2: CGPoint(x: 14.3, y: 2.0))
+path.addLine(to: CGPoint(x: 10.600000000000001, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.600000000000001, y: 3.6), control1: CGPoint(x: 9.634478472500701, y: 1.9805285892049467), control2: CGPoint(x: 8.792947251602236, y: 2.65375356592372))
+path.addLine(to: CGPoint(x: 8.2, y: 6.0))
+path.move(to: CGPoint(x: 8.2, y: 18.0))
+path.addLine(to: CGPoint(x: 8.7, y: 20.4))
+path.addCurve(to: CGPoint(x: 10.7, y: 22.0), control1: CGPoint(x: 8.899999999999999, y: 21.4), control2: CGPoint(x: 9.7, y: 22.0))
+path.addLine(to: CGPoint(x: 13.399999999999999, y: 22.0))
+path.addCurve(to: CGPoint(x: 15.399999999999999, y: 20.4), control1: CGPoint(x: 14.365521527499299, y: 22.019471410795052), control2: CGPoint(x: 15.207052748397766, y: 21.34624643407628))
+path.addLine(to: CGPoint(x: 15.899999999999999, y: 18.0))
+path.move(to: CGPoint(x: 14.0, y: 11.0))
+path.addLine(to: CGPoint(x: 11.5, y: 13.5))
+path.addLine(to: CGPoint(x: 10.0, y: 12.0))
+path.move(to: CGPoint(x: 8.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 17.104569499661586, y: 6.0), control2: CGPoint(x: 18.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 18.0), control2: CGPoint(x: 6.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 6.0), control1: CGPoint(x: 6.0, y: 6.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 6.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Watch Loader icon path
+    static let watchLoaderPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.8, y: 6.0))
+path.addLine(to: CGPoint(x: 15.3, y: 3.6))
+path.addCurve(to: CGPoint(x: 13.3, y: 2.0), control1: CGPoint(x: 15.100000000000001, y: 2.6), control2: CGPoint(x: 14.3, y: 2.0))
+path.addLine(to: CGPoint(x: 10.600000000000001, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.600000000000001, y: 3.6), control1: CGPoint(x: 9.634478472500701, y: 1.9805285892049467), control2: CGPoint(x: 8.792947251602236, y: 2.65375356592372))
+path.addLine(to: CGPoint(x: 8.2, y: 6.0))
+path.move(to: CGPoint(x: 8.2, y: 18.0))
+path.addLine(to: CGPoint(x: 8.7, y: 20.4))
+path.addCurve(to: CGPoint(x: 10.7, y: 22.0), control1: CGPoint(x: 8.899999999999999, y: 21.4), control2: CGPoint(x: 9.7, y: 22.0))
+path.addLine(to: CGPoint(x: 13.399999999999999, y: 22.0))
+path.addCurve(to: CGPoint(x: 15.399999999999999, y: 20.4), control1: CGPoint(x: 14.365521527499299, y: 22.019471410795052), control2: CGPoint(x: 15.207052748397766, y: 21.34624643407628))
+path.addLine(to: CGPoint(x: 15.899999999999999, y: 18.0))
+path.move(to: CGPoint(x: 14.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 14.0, y: 13.104569499661586), control2: CGPoint(x: 13.104569499661586, y: 14.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 10.895430500338414, y: 14.0), control2: CGPoint(x: 10.0, y: 13.104569499661586))
+path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 10.0, y: 10.895430500338414), control2: CGPoint(x: 10.895430500338414, y: 10.0))
+path.move(to: CGPoint(x: 8.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 17.104569499661586, y: 6.0), control2: CGPoint(x: 18.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 18.0), control2: CGPoint(x: 6.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 6.0), control1: CGPoint(x: 6.0, y: 6.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 6.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Watch Music icon path
+    static let watchMusicPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.8, y: 6.0))
+path.addLine(to: CGPoint(x: 15.3, y: 3.6))
+path.addCurve(to: CGPoint(x: 13.3, y: 2.0), control1: CGPoint(x: 15.100000000000001, y: 2.6), control2: CGPoint(x: 14.3, y: 2.0))
+path.addLine(to: CGPoint(x: 10.600000000000001, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.600000000000001, y: 3.6), control1: CGPoint(x: 9.634478472500701, y: 1.9805285892049467), control2: CGPoint(x: 8.792947251602236, y: 2.65375356592372))
+path.addLine(to: CGPoint(x: 8.2, y: 6.0))
+path.move(to: CGPoint(x: 8.2, y: 18.0))
+path.addLine(to: CGPoint(x: 8.7, y: 20.4))
+path.addCurve(to: CGPoint(x: 10.7, y: 22.0), control1: CGPoint(x: 8.899999999999999, y: 21.4), control2: CGPoint(x: 9.7, y: 22.0))
+path.addLine(to: CGPoint(x: 13.399999999999999, y: 22.0))
+path.addCurve(to: CGPoint(x: 15.399999999999999, y: 20.4), control1: CGPoint(x: 14.365521527499299, y: 22.019471410795052), control2: CGPoint(x: 15.207052748397766, y: 21.34624643407628))
+path.addLine(to: CGPoint(x: 15.899999999999999, y: 18.0))
+path.move(to: CGPoint(x: 14.0, y: 11.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 13.5))
+path.move(to: CGPoint(x: 11.0, y: 13.5))
+path.addCurve(to: CGPoint(x: 11.5, y: 14.0), control1: CGPoint(x: 11.0, y: 13.776142374915397), control2: CGPoint(x: 11.223857625084603, y: 14.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 13.5), control1: CGPoint(x: 11.776142374915397, y: 14.0), control2: CGPoint(x: 12.0, y: 13.776142374915397))
+path.addCurve(to: CGPoint(x: 11.5, y: 13.0), control1: CGPoint(x: 12.0, y: 13.223857625084603), control2: CGPoint(x: 11.776142374915397, y: 13.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 13.5), control1: CGPoint(x: 11.223857625084603, y: 13.0), control2: CGPoint(x: 11.0, y: 13.223857625084603))
+path.move(to: CGPoint(x: 8.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 17.104569499661586, y: 6.0), control2: CGPoint(x: 18.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 18.0), control2: CGPoint(x: 6.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 6.0), control1: CGPoint(x: 6.0, y: 6.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 6.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Watch Square icon path
+    static let watchSquarePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.8, y: 6.0))
+path.addLine(to: CGPoint(x: 15.3, y: 3.6))
+path.addCurve(to: CGPoint(x: 13.3, y: 2.0), control1: CGPoint(x: 15.100000000000001, y: 2.6), control2: CGPoint(x: 14.3, y: 2.0))
+path.addLine(to: CGPoint(x: 10.600000000000001, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.600000000000001, y: 3.6), control1: CGPoint(x: 9.634478472500701, y: 1.9805285892049467), control2: CGPoint(x: 8.792947251602236, y: 2.65375356592372))
+path.addLine(to: CGPoint(x: 8.2, y: 6.0))
+path.move(to: CGPoint(x: 8.2, y: 18.0))
+path.addLine(to: CGPoint(x: 8.7, y: 20.4))
+path.addCurve(to: CGPoint(x: 10.7, y: 22.0), control1: CGPoint(x: 8.899999999999999, y: 21.4), control2: CGPoint(x: 9.7, y: 22.0))
+path.addLine(to: CGPoint(x: 13.399999999999999, y: 22.0))
+path.addCurve(to: CGPoint(x: 15.399999999999999, y: 20.4), control1: CGPoint(x: 14.365521527499299, y: 22.019471410795052), control2: CGPoint(x: 15.207052748397766, y: 21.34624643407628))
+path.addLine(to: CGPoint(x: 15.899999999999999, y: 18.0))
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 13.0, y: 13.0))
+path.move(to: CGPoint(x: 8.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 17.104569499661586, y: 6.0), control2: CGPoint(x: 18.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 18.0), control2: CGPoint(x: 6.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 6.0), control1: CGPoint(x: 6.0, y: 6.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 6.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Watch Square Alarm icon path
+    static let watchSquareAlarmPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.8, y: 6.0))
+path.addLine(to: CGPoint(x: 15.3, y: 3.6))
+path.addCurve(to: CGPoint(x: 13.3, y: 2.0), control1: CGPoint(x: 15.100000000000001, y: 2.6), control2: CGPoint(x: 14.3, y: 2.0))
+path.addLine(to: CGPoint(x: 10.600000000000001, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.600000000000001, y: 3.6), control1: CGPoint(x: 9.634478472500701, y: 1.9805285892049467), control2: CGPoint(x: 8.792947251602236, y: 2.65375356592372))
+path.addLine(to: CGPoint(x: 8.2, y: 6.0))
+path.move(to: CGPoint(x: 8.2, y: 18.0))
+path.addLine(to: CGPoint(x: 8.7, y: 20.4))
+path.addCurve(to: CGPoint(x: 10.7, y: 22.0), control1: CGPoint(x: 8.899999999999999, y: 21.4), control2: CGPoint(x: 9.7, y: 22.0))
+path.addLine(to: CGPoint(x: 13.399999999999999, y: 22.0))
+path.addCurve(to: CGPoint(x: 15.399999999999999, y: 20.4), control1: CGPoint(x: 14.365521527499299, y: 22.019471410795052), control2: CGPoint(x: 15.207052748397766, y: 21.34624643407628))
+path.addLine(to: CGPoint(x: 15.899999999999999, y: 18.0))
+path.move(to: CGPoint(x: 12.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 13.0, y: 13.0))
+path.move(to: CGPoint(x: 2.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 4.7, y: 21.0), control1: CGPoint(x: 2.0, y: 18.1), control2: CGPoint(x: 3.1, y: 20.0))
+path.move(to: CGPoint(x: 22.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 19.3, y: 3.0), control1: CGPoint(x: 22.0, y: 5.9), control2: CGPoint(x: 20.9, y: 4.0))
+path.move(to: CGPoint(x: 8.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 17.104569499661586, y: 6.0), control2: CGPoint(x: 18.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 18.0), control2: CGPoint(x: 6.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 6.0), control1: CGPoint(x: 6.0, y: 6.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 6.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Watch Text icon path
+    static let watchTextPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.8, y: 6.0))
+path.addLine(to: CGPoint(x: 15.3, y: 3.6))
+path.addCurve(to: CGPoint(x: 13.3, y: 2.0), control1: CGPoint(x: 15.100000000000001, y: 2.6), control2: CGPoint(x: 14.3, y: 2.0))
+path.addLine(to: CGPoint(x: 10.600000000000001, y: 2.0))
+path.addCurve(to: CGPoint(x: 8.600000000000001, y: 3.6), control1: CGPoint(x: 9.634478472500701, y: 1.9805285892049467), control2: CGPoint(x: 8.792947251602236, y: 2.65375356592372))
+path.addLine(to: CGPoint(x: 8.2, y: 6.0))
+path.move(to: CGPoint(x: 8.2, y: 18.0))
+path.addLine(to: CGPoint(x: 8.7, y: 20.4))
+path.addCurve(to: CGPoint(x: 10.7, y: 22.0), control1: CGPoint(x: 8.899999999999999, y: 21.4), control2: CGPoint(x: 9.7, y: 22.0))
+path.addLine(to: CGPoint(x: 13.399999999999999, y: 22.0))
+path.addCurve(to: CGPoint(x: 15.399999999999999, y: 20.4), control1: CGPoint(x: 14.365521527499299, y: 22.019471410795052), control2: CGPoint(x: 15.207052748397766, y: 21.34624643407628))
+path.addLine(to: CGPoint(x: 15.899999999999999, y: 18.0))
+path.move(to: CGPoint(x: 10.0, y: 10.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.move(to: CGPoint(x: 14.0, y: 14.0))
+path.addLine(to: CGPoint(x: 10.0, y: 14.0))
+path.move(to: CGPoint(x: 8.0, y: 6.0))
+path.addLine(to: CGPoint(x: 16.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 17.104569499661586, y: 6.0), control2: CGPoint(x: 18.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 18.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.104569499661586), control2: CGPoint(x: 17.104569499661586, y: 18.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 16.0), control1: CGPoint(x: 6.8954305003384135, y: 18.0), control2: CGPoint(x: 6.0, y: 17.104569499661586))
+path.addLine(to: CGPoint(x: 6.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 6.0), control1: CGPoint(x: 6.0, y: 6.8954305003384135), control2: CGPoint(x: 6.895430500338413, y: 6.0))
+path.closeSubpath()
+        return path
+    }()
+        
+    /// Watermelon icon path
+    static let watermelonPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 21.7, y: 17.7))
+path.addCurve(to: CGPoint(x: 21.99890182288374, y: 18.50226888269471), control1: CGPoint(x: 21.905901822852325, y: 17.914826195336648), control2: CGPoint(x: 22.01404480362372, y: 18.20508788567263))
+path.addCurve(to: CGPoint(x: 21.62, y: 19.27), control1: CGPoint(x: 21.98375884214376, y: 18.799449879716796), control2: CGPoint(x: 21.84667178074334, y: 19.07721577172555))
+path.addCurve(to: CGPoint(x: 5.515536402271474, y: 18.484463597728528), control1: CGPoint(x: 16.849327000323463, y: 23.190757347352616), control2: CGPoint(x: 9.881979980669245, y: 22.8509071761263))
+path.addCurve(to: CGPoint(x: 4.729999999999999, y: 2.380000000000001), control1: CGPoint(x: 1.1490928238737048, y: 14.118020019330757), control2: CGPoint(x: 0.8092426526473844, y: 7.150672999676538))
+path.addCurve(to: CGPoint(x: 5.526291707837522, y: 2.009491240460271), control1: CGPoint(x: 4.932475226949529, y: 2.15129440286225), control2: CGPoint(x: 5.220931410281175, y: 2.017077831703907))
+path.addCurve(to: CGPoint(x: 6.340000000000001, y: 2.34), control1: CGPoint(x: 5.831652005393869, y: 2.001904649216635), control2: CGPoint(x: 6.126417335727302, y: 2.121631244880193))
+path.closeSubpath()
+path.move(to: CGPoint(x: 19.7, y: 15.7))
+path.addCurve(to: CGPoint(x: 8.345000000000002, y: 15.695), control1: CGPoint(x: 16.563022620961092, y: 18.83421595528975), control2: CGPoint(x: 11.479215955289757, y: 18.831977379038904))
+path.addCurve(to: CGPoint(x: 8.349999999999996, y: 4.340000000000003), control1: CGPoint(x: 5.210784044710248, y: 12.558022620961097), control2: CGPoint(x: 5.213022620961091, y: 7.474215955289758))
+path.move(to: CGPoint(x: 10.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 9.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 13.0, y: 14.0))
+path.addEllipse(in: CGRect(x: 12.66, y: 13.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Wave Circle icon path
+    static let waveCirclePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 16.5, y: 20.93))
+path.addCurve(to: CGPoint(x: 10.350278478316115, y: 19.94124485523787), control1: CGPoint(x: 14.470086705341416, y: 22.07343109318939), control2: CGPoint(x: 11.919470805735866, y: 21.66334185839156))
+path.addCurve(to: CGPoint(x: 9.935951475600323, y: 13.726339814501035), control1: CGPoint(x: 8.781086150896364, y: 18.219147852084173), control2: CGPoint(x: 8.609242753266638, y: 15.641496887638294))
+path.addCurve(to: CGPoint(x: 15.899999999999995, y: 11.929999999999996), control1: CGPoint(x: 11.26266019793401, y: 11.811182741363776), control2: CGPoint(x: 13.736267651330948, y: 11.066145283032448))
+path.addCurve(to: CGPoint(x: 8.68173568544748, y: 6.015210046199994), control1: CGPoint(x: 15.350729600811103, y: 8.408191642185745), control2: CGPoint(x: 12.242803465120385, y: 5.86149489024289))
+path.addCurve(to: CGPoint(x: 1.9999999999999991, y: 12.529999999999996), control1: CGPoint(x: 5.120667905774574, y: 6.168925202157097), control2: CGPoint(x: 2.243751785272698, y: 8.973960468755749))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Waves Birds icon path
+    static let wavesBirdsPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 5.0), control1: CGPoint(x: 5.0, y: 2.0), control2: CGPoint(x: 7.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 3.8), control1: CGPoint(x: 7.0, y: 5.0), control2: CGPoint(x: 9.0, y: 2.9))
+path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 10.0), control1: CGPoint(x: 13.0, y: 7.0), control2: CGPoint(x: 15.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 8.0), control1: CGPoint(x: 15.0, y: 10.0), control2: CGPoint(x: 17.0, y: 7.0))
+path.move(to: CGPoint(x: 2.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 4.5, y: 16.0), control1: CGPoint(x: 2.6, y: 15.5), control2: CGPoint(x: 3.2, y: 16.0))
+path.addCurve(to: CGPoint(x: 9.5, y: 14.0), control1: CGPoint(x: 7.0, y: 16.0), control2: CGPoint(x: 7.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.5, y: 16.0), control1: CGPoint(x: 12.1, y: 14.0), control2: CGPoint(x: 11.9, y: 16.0))
+path.addCurve(to: CGPoint(x: 19.5, y: 14.0), control1: CGPoint(x: 17.0, y: 16.0), control2: CGPoint(x: 17.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 15.0), control1: CGPoint(x: 20.8, y: 14.0), control2: CGPoint(x: 21.4, y: 14.5))
+path.move(to: CGPoint(x: 2.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 4.5, y: 22.0), control1: CGPoint(x: 2.6, y: 21.5), control2: CGPoint(x: 3.2, y: 22.0))
+path.addCurve(to: CGPoint(x: 9.5, y: 20.0), control1: CGPoint(x: 7.0, y: 22.0), control2: CGPoint(x: 7.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 14.5, y: 22.0), control1: CGPoint(x: 12.1, y: 20.0), control2: CGPoint(x: 11.9, y: 22.0))
+path.addCurve(to: CGPoint(x: 19.5, y: 20.0), control1: CGPoint(x: 17.0, y: 22.0), control2: CGPoint(x: 17.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 21.0), control1: CGPoint(x: 20.8, y: 20.0), control2: CGPoint(x: 21.4, y: 20.5))
+        return path
+    }()
+        
+    /// Waves Shark Fin icon path
+    static let wavesSharkFinPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 17.3, y: 14.8))
+path.addCurve(to: CGPoint(x: 19.0, y: 3.0), control1: CGPoint(x: 15.3, y: 11.0), control2: CGPoint(x: 15.8, y: 6.2))
+path.addCurve(to: CGPoint(x: 5.1, y: 16.0), control1: CGPoint(x: 11.6, y: 3.0), control2: CGPoint(x: 5.6, y: 8.7))
+path.move(to: CGPoint(x: 2.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 4.5, y: 16.0), control1: CGPoint(x: 2.6, y: 15.5), control2: CGPoint(x: 3.2, y: 16.0))
+path.addCurve(to: CGPoint(x: 9.5, y: 14.0), control1: CGPoint(x: 7.0, y: 16.0), control2: CGPoint(x: 7.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 14.5, y: 16.0), control1: CGPoint(x: 12.1, y: 14.0), control2: CGPoint(x: 11.9, y: 16.0))
+path.addCurve(to: CGPoint(x: 19.5, y: 14.0), control1: CGPoint(x: 17.0, y: 16.0), control2: CGPoint(x: 17.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 15.0), control1: CGPoint(x: 20.8, y: 14.0), control2: CGPoint(x: 21.4, y: 14.5))
+path.move(to: CGPoint(x: 2.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 4.5, y: 22.0), control1: CGPoint(x: 2.6, y: 21.5), control2: CGPoint(x: 3.2, y: 22.0))
+path.addCurve(to: CGPoint(x: 9.5, y: 20.0), control1: CGPoint(x: 7.0, y: 22.0), control2: CGPoint(x: 7.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 14.5, y: 22.0), control1: CGPoint(x: 12.1, y: 20.0), control2: CGPoint(x: 11.9, y: 22.0))
+path.addCurve(to: CGPoint(x: 19.5, y: 20.0), control1: CGPoint(x: 17.0, y: 22.0), control2: CGPoint(x: 17.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 21.0), control1: CGPoint(x: 20.8, y: 20.0), control2: CGPoint(x: 21.4, y: 20.5))
+        return path
+    }()
+        
+    /// Whale icon path
+    static let whalePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 18.0, y: 9.1))
+path.addLine(to: CGPoint(x: 18.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 3.0), control1: CGPoint(x: 18.0, y: 3.895430500338413), control2: CGPoint(x: 17.104569499661586, y: 3.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 5.0), control1: CGPoint(x: 14.895430500338414, y: 3.0), control2: CGPoint(x: 14.0, y: 3.8954305003384126))
+path.move(to: CGPoint(x: 18.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 3.0), control1: CGPoint(x: 18.0, y: 3.8954305003384135), control2: CGPoint(x: 18.895430500338414, y: 3.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 4.999999999999999), control1: CGPoint(x: 21.104569499661586, y: 3.0), control2: CGPoint(x: 22.0, y: 3.8954305003384126))
+path.move(to: CGPoint(x: 6.0, y: 9.7))
+path.addLine(to: CGPoint(x: 3.9, y: 8.4))
+path.addCurve(to: CGPoint(x: 2.0, y: 5.0), control1: CGPoint(x: 2.7, y: 7.7), control2: CGPoint(x: 2.0, y: 6.4))
+path.addLine(to: CGPoint(x: 2.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 5.0), control1: CGPoint(x: 4.0, y: 3.0), control2: CGPoint(x: 6.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 3.0), control1: CGPoint(x: 6.0, y: 5.0), control2: CGPoint(x: 8.0, y: 3.0))
+path.addLine(to: CGPoint(x: 10.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 8.1, y: 8.4), control1: CGPoint(x: 10.0, y: 6.4), control2: CGPoint(x: 9.3, y: 7.7))
+path.addLine(to: CGPoint(x: 4.3, y: 10.8))
+path.addCurve(to: CGPoint(x: 2.2152491393823723, y: 16.408024709094306), control1: CGPoint(x: 2.43993472171253, y: 12.001467291299887), control2: CGPoint(x: 1.5916833054754536, y: 14.2832818676337))
+path.addCurve(to: CGPoint(x: 7.0000000000000036, y: 20.0), control1: CGPoint(x: 2.838814973289291, y: 18.532767550554915), control2: CGPoint(x: 4.78565273243431, y: 19.99428421672224))
+path.addLine(to: CGPoint(x: 19.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 17.0), control1: CGPoint(x: 20.7, y: 20.0), control2: CGPoint(x: 22.0, y: 18.7))
+path.addLine(to: CGPoint(x: 22.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 9.0), control1: CGPoint(x: 22.0, y: 11.2), control2: CGPoint(x: 19.8, y: 9.0))
+path.addCurve(to: CGPoint(x: 10.6, y: 12.6), control1: CGPoint(x: 14.3, y: 9.0), control2: CGPoint(x: 11.9, y: 10.4))
+path.addLine(to: CGPoint(x: 9.7, y: 14.0))
+path.addCurve(to: CGPoint(x: 7.477493963979251, y: 14.878272333276767), control1: CGPoint(x: 9.234735785634559, y: 14.751832307302148), control2: CGPoint(x: 8.331020764019197, y: 15.108955252206483))
+path.addCurve(to: CGPoint(x: 6.0, y: 12.999999999999998), control1: CGPoint(x: 6.623967163939305, y: 14.647589414347053), control2: CGPoint(x: 6.023188822754359, y: 13.88384664165885))
+path.closeSubpath()
+path.move(to: CGPoint(x: 15.0, y: 15.0))
+path.addEllipse(in: CGRect(x: 14.66, y: 14.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Whale Narwhal icon path
+    static let whaleNarwhalPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 20.0, y: 9.98))
+path.addCurve(to: CGPoint(x: 21.0, y: 2.9800000000000004), control1: CGPoint(x: 20.0, y: 9.98), control2: CGPoint(x: 21.0, y: 6.98))
+path.addCurve(to: CGPoint(x: 16.0, y: 9.06), control1: CGPoint(x: 18.0, y: 4.98), control2: CGPoint(x: 16.0, y: 8.98))
+path.move(to: CGPoint(x: 6.0, y: 9.7))
+path.addLine(to: CGPoint(x: 3.9, y: 8.4))
+path.addCurve(to: CGPoint(x: 2.0, y: 5.0), control1: CGPoint(x: 2.7, y: 7.7), control2: CGPoint(x: 2.0, y: 6.4))
+path.addLine(to: CGPoint(x: 2.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 5.0), control1: CGPoint(x: 4.0, y: 3.0), control2: CGPoint(x: 6.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 3.0), control1: CGPoint(x: 6.0, y: 5.0), control2: CGPoint(x: 8.0, y: 3.0))
+path.addLine(to: CGPoint(x: 10.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 8.1, y: 8.4), control1: CGPoint(x: 10.0, y: 6.4), control2: CGPoint(x: 9.3, y: 7.7))
+path.addLine(to: CGPoint(x: 4.3, y: 10.8))
+path.addCurve(to: CGPoint(x: 2.2152491393823723, y: 16.408024709094306), control1: CGPoint(x: 2.43993472171253, y: 12.001467291299887), control2: CGPoint(x: 1.5916833054754536, y: 14.2832818676337))
+path.addCurve(to: CGPoint(x: 7.0000000000000036, y: 20.0), control1: CGPoint(x: 2.838814973289291, y: 18.532767550554915), control2: CGPoint(x: 4.78565273243431, y: 19.99428421672224))
+path.addLine(to: CGPoint(x: 19.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 17.0), control1: CGPoint(x: 20.7, y: 20.0), control2: CGPoint(x: 22.0, y: 18.7))
+path.addLine(to: CGPoint(x: 22.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 9.0), control1: CGPoint(x: 22.0, y: 11.2), control2: CGPoint(x: 19.8, y: 9.0))
+path.addCurve(to: CGPoint(x: 10.6, y: 12.6), control1: CGPoint(x: 14.3, y: 9.0), control2: CGPoint(x: 11.9, y: 10.4))
+path.addLine(to: CGPoint(x: 9.7, y: 14.0))
+path.addCurve(to: CGPoint(x: 7.477493963979251, y: 14.878272333276767), control1: CGPoint(x: 9.234735785634559, y: 14.751832307302148), control2: CGPoint(x: 8.331020764019197, y: 15.108955252206483))
+path.addCurve(to: CGPoint(x: 6.0, y: 12.999999999999998), control1: CGPoint(x: 6.623967163939305, y: 14.647589414347053), control2: CGPoint(x: 6.023188822754359, y: 13.88384664165885))
+path.closeSubpath()
+path.move(to: CGPoint(x: 15.0, y: 15.0))
+path.addEllipse(in: CGRect(x: 14.66, y: 14.65, width: 0.7, height: 0.7))
+        return path
+    }()
+        
+    /// Wheel icon path
+    static let wheelPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 9.5))
+path.move(to: CGPoint(x: 19.0, y: 5.0))
+path.addLine(to: CGPoint(x: 13.77, y: 10.23))
+path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addLine(to: CGPoint(x: 14.5, y: 12.0))
+path.move(to: CGPoint(x: 19.0, y: 19.0))
+path.addLine(to: CGPoint(x: 13.77, y: 13.77))
+path.move(to: CGPoint(x: 12.0, y: 14.5))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 10.23, y: 13.77))
+path.addLine(to: CGPoint(x: 5.0, y: 19.0))
+path.move(to: CGPoint(x: 9.5, y: 12.0))
+path.addLine(to: CGPoint(x: 2.0, y: 12.0))
+path.move(to: CGPoint(x: 10.23, y: 10.23))
+path.addLine(to: CGPoint(x: 5.0, y: 5.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+path.move(to: CGPoint(x: 9.5, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.5), control1: CGPoint(x: 9.5, y: 13.380711874576985), control2: CGPoint(x: 10.619288125423017, y: 14.5))
+path.addCurve(to: CGPoint(x: 14.5, y: 12.0), control1: CGPoint(x: 13.380711874576985, y: 14.5), control2: CGPoint(x: 14.5, y: 13.380711874576983))
+path.addCurve(to: CGPoint(x: 12.0, y: 9.5), control1: CGPoint(x: 14.5, y: 10.619288125423017), control2: CGPoint(x: 13.380711874576985, y: 9.5))
+path.addCurve(to: CGPoint(x: 9.5, y: 12.0), control1: CGPoint(x: 10.619288125423017, y: 9.5), control2: CGPoint(x: 9.5, y: 10.619288125423015))
+        return path
+    }()
+        
+    /// Whisk icon path
+    static let whiskPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 22.0, y: 2.0))
+path.addLine(to: CGPoint(x: 3.45, y: 20.55))
+path.move(to: CGPoint(x: 3.5, y: 13.5))
+path.addCurve(to: CGPoint(x: 2.200609762872406, y: 18.349390207772654), control1: CGPoint(x: 2.231707127948323, y: 14.768292838119017), control2: CGPoint(x: 1.7363823667441123, y: 16.616869946071503))
+path.addCurve(to: CGPoint(x: 5.750609787644544, y: 21.899390235899638), control1: CGPoint(x: 2.6648371590006983, y: 20.0819104694738), control2: CGPoint(x: 4.018089526382104, y: 21.435162838134065))
+path.addCurve(to: CGPoint(x: 10.599999996645154, y: 20.600000003354847), control1: CGPoint(x: 7.483130048906985, y: 22.363617633665207), control2: CGPoint(x: 9.331707157327571, y: 21.868292874207953))
+path.addCurve(to: CGPoint(x: 15.0, y: 9.0), control1: CGPoint(x: 12.6, y: 18.6), control2: CGPoint(x: 15.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 3.5, y: 13.5), control1: CGPoint(x: 15.0, y: 9.0), control2: CGPoint(x: 5.4, y: 11.5))
+        return path
+    }()
+        
+    /// Whisk Fork Knife icon path
+    static let whiskForkKnifePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 6.0), control1: CGPoint(x: 3.8, y: 2.0), control2: CGPoint(x: 2.0, y: 3.8))
+path.addCurve(to: CGPoint(x: 6.0, y: 14.0), control1: CGPoint(x: 2.0, y: 8.2), control2: CGPoint(x: 6.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 6.0), control1: CGPoint(x: 6.0, y: 14.0), control2: CGPoint(x: 10.0, y: 8.2))
+path.addCurve(to: CGPoint(x: 6.0, y: 2.0), control1: CGPoint(x: 10.0, y: 3.8000000000000007), control2: CGPoint(x: 8.2, y: 2.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 6.0, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 2.0))
+path.move(to: CGPoint(x: 18.0, y: 22.0))
+path.addLine(to: CGPoint(x: 18.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 16.0), control1: CGPoint(x: 18.0, y: 16.895430500338414), control2: CGPoint(x: 17.104569499661586, y: 16.0))
+path.addLine(to: CGPoint(x: 12.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 18.0), control1: CGPoint(x: 10.895430500338414, y: 16.0), control2: CGPoint(x: 10.0, y: 16.895430500338414))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.move(to: CGPoint(x: 14.0, y: 22.0))
+path.addLine(to: CGPoint(x: 14.0, y: 2.0))
+path.move(to: CGPoint(x: 22.0, y: 13.0))
+path.addLine(to: CGPoint(x: 20.0, y: 13.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 11.0), control1: CGPoint(x: 18.895430500338414, y: 13.0), control2: CGPoint(x: 18.0, y: 12.104569499661586))
+path.addLine(to: CGPoint(x: 18.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 2.0), control1: CGPoint(x: 18.0, y: 3.7908610006768266), control2: CGPoint(x: 19.790861000676827, y: 2.0000000000000004))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+        return path
+    }()
+        
+    /// Whisks icon path
+    static let whisksPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 6.0, y: 2.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.move(to: CGPoint(x: 6.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 6.0, y: 10.0), control2: CGPoint(x: 2.0, y: 15.8))
+path.addCurve(to: CGPoint(x: 6.0, y: 22.0), control1: CGPoint(x: 2.0, y: 20.2), control2: CGPoint(x: 3.8, y: 22.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 18.0), control1: CGPoint(x: 8.2, y: 22.0), control2: CGPoint(x: 10.0, y: 20.2))
+path.addCurve(to: CGPoint(x: 6.0, y: 10.0), control1: CGPoint(x: 10.0, y: 15.8), control2: CGPoint(x: 6.0, y: 10.0))
+path.move(to: CGPoint(x: 18.0, y: 2.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.move(to: CGPoint(x: 18.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 18.0), control1: CGPoint(x: 18.0, y: 10.0), control2: CGPoint(x: 14.0, y: 15.8))
+path.addCurve(to: CGPoint(x: 18.0, y: 22.0), control1: CGPoint(x: 14.0, y: 20.2), control2: CGPoint(x: 15.8, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 18.0), control1: CGPoint(x: 20.2, y: 22.0), control2: CGPoint(x: 22.0, y: 20.2))
+path.addCurve(to: CGPoint(x: 18.0, y: 10.0), control1: CGPoint(x: 22.0, y: 15.8), control2: CGPoint(x: 18.0, y: 10.0))
+        return path
+    }()
+        
+    /// Windmill icon path
+    static let windmillPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 14.0))
+path.addLine(to: CGPoint(x: 18.0, y: 18.0))
+path.addLine(to: CGPoint(x: 20.0, y: 14.0))
+path.addLine(to: CGPoint(x: 4.0, y: 6.0))
+path.addLine(to: CGPoint(x: 6.0, y: 2.0))
+path.addLine(to: CGPoint(x: 14.0, y: 6.0))
+path.move(to: CGPoint(x: 8.0, y: 8.0))
+path.addLine(to: CGPoint(x: 4.0, y: 16.0))
+path.addLine(to: CGPoint(x: 8.0, y: 18.0))
+path.move(to: CGPoint(x: 16.0, y: 12.0))
+path.addLine(to: CGPoint(x: 20.0, y: 4.0))
+path.addLine(to: CGPoint(x: 16.0, y: 2.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.move(to: CGPoint(x: 19.0, y: 22.0))
+path.addLine(to: CGPoint(x: 16.6, y: 17.4))
+path.move(to: CGPoint(x: 12.5, y: 20.0))
+path.addLine(to: CGPoint(x: 12.5, y: 22.0))
+path.move(to: CGPoint(x: 4.0, y: 22.0))
+path.addLine(to: CGPoint(x: 21.0, y: 22.0))
+        return path
+    }()
+        
+    /// Wine Glass Bottle icon path
+    static let wineGlassBottlePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 3.0, y: 13.0))
+path.addLine(to: CGPoint(x: 11.0, y: 13.0))
+path.move(to: CGPoint(x: 5.0, y: 7.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 13.0), control1: CGPoint(x: 5.0, y: 7.0), control2: CGPoint(x: 3.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 17.0), control1: CGPoint(x: 3.0000000000000004, y: 15.209138999323175), control2: CGPoint(x: 4.790861000676827, y: 17.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 13.0), control1: CGPoint(x: 9.209138999323175, y: 17.0), control2: CGPoint(x: 11.0, y: 15.209138999323173))
+path.addCurve(to: CGPoint(x: 9.0, y: 7.0), control1: CGPoint(x: 11.0, y: 10.0), control2: CGPoint(x: 9.0, y: 7.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 7.0, y: 17.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.move(to: CGPoint(x: 4.0, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 22.0))
+path.move(to: CGPoint(x: 18.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 10.0), control1: CGPoint(x: 18.0, y: 7.0), control2: CGPoint(x: 15.0, y: 7.0))
+path.addLine(to: CGPoint(x: 15.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 22.0), control1: CGPoint(x: 15.0, y: 21.6), control2: CGPoint(x: 15.4, y: 22.0))
+path.addLine(to: CGPoint(x: 20.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 21.0), control1: CGPoint(x: 20.6, y: 22.0), control2: CGPoint(x: 21.0, y: 21.6))
+path.addLine(to: CGPoint(x: 21.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 4.0), control1: CGPoint(x: 21.0, y: 7.0), control2: CGPoint(x: 18.0, y: 7.0))
+path.move(to: CGPoint(x: 18.0, y: 4.0))
+path.addLine(to: CGPoint(x: 18.0, y: 2.0))
+        return path
+    }()
+        
+    /// Yarn Ball icon path
+    static let yarnBallPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.0, y: 6.0))
+path.addLine(to: CGPoint(x: 20.0, y: 6.0))
+path.move(to: CGPoint(x: 14.0, y: 10.0))
+path.addLine(to: CGPoint(x: 21.8, y: 10.0))
+path.move(to: CGPoint(x: 7.2, y: 3.2))
+path.addLine(to: CGPoint(x: 20.8, y: 16.8))
+path.move(to: CGPoint(x: 4.0, y: 6.0))
+path.addLine(to: CGPoint(x: 19.3, y: 21.3))
+path.addCurve(to: CGPoint(x: 21.0, y: 22.0), control1: CGPoint(x: 19.7, y: 21.7), control2: CGPoint(x: 20.5, y: 22.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.move(to: CGPoint(x: 2.2, y: 10.2))
+path.addLine(to: CGPoint(x: 13.8, y: 21.799999999999997))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+        return path
+    }()
+        
+    /// Yin Yang icon path
+    static let yinYangPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 17.0), control1: CGPoint(x: 14.761423749153968, y: 22.0), control2: CGPoint(x: 17.0, y: 19.761423749153966))
+path.addCurve(to: CGPoint(x: 12.0, y: 12.0), control1: CGPoint(x: 17.0, y: 14.238576250846034), control2: CGPoint(x: 14.761423749153968, y: 12.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 7.000000000000001), control1: CGPoint(x: 9.238576250846034, y: 12.0), control2: CGPoint(x: 7.000000000000001, y: 9.761423749153968))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 2.0), control1: CGPoint(x: 7.0, y: 4.238576250846034), control2: CGPoint(x: 9.238576250846032, y: 2.000000000000001))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+path.move(to: CGPoint(x: 11.5, y: 7.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 7.5), control1: CGPoint(x: 11.5, y: 7.276142374915397), control2: CGPoint(x: 11.723857625084603, y: 7.5))
+path.addCurve(to: CGPoint(x: 12.5, y: 7.0), control1: CGPoint(x: 12.276142374915397, y: 7.5), control2: CGPoint(x: 12.5, y: 7.276142374915397))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.5), control1: CGPoint(x: 12.5, y: 6.723857625084603), control2: CGPoint(x: 12.276142374915397, y: 6.5))
+path.addCurve(to: CGPoint(x: 11.5, y: 7.0), control1: CGPoint(x: 11.723857625084603, y: 6.5), control2: CGPoint(x: 11.5, y: 6.723857625084603))
+path.move(to: CGPoint(x: 11.5, y: 17.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 17.5), control1: CGPoint(x: 11.5, y: 17.2761423749154), control2: CGPoint(x: 11.723857625084603, y: 17.5))
+path.addCurve(to: CGPoint(x: 12.5, y: 17.0), control1: CGPoint(x: 12.276142374915397, y: 17.5), control2: CGPoint(x: 12.5, y: 17.2761423749154))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.5), control1: CGPoint(x: 12.5, y: 16.7238576250846), control2: CGPoint(x: 12.276142374915397, y: 16.5))
+path.addCurve(to: CGPoint(x: 11.5, y: 17.0), control1: CGPoint(x: 11.723857625084603, y: 16.5), control2: CGPoint(x: 11.5, y: 16.7238576250846))
+        return path
+    }()
+}
+
 // MARK: - Convenient Access
 
 public struct Lucide {
@@ -48355,9 +59520,6 @@ public struct Lucide {
     /// Lucide icon
     public static let lucide: LucideShape = LucideShape(path: LucideIconName.lucidePath)
 
-    /// Lucide Lab icon
-    public static let lucideLab: LucideShape = LucideShape(path: LucideIconName.lucideLabPath)
-
     /// Luggage icon
     public static let luggage: LucideShape = LucideShape(path: LucideIconName.luggagePath)
 
@@ -50685,6 +61847,1131 @@ public struct Lucide {
 
 }
 
+public struct LucideLab {
+    /// Ampersand Square icon (Experimental)
+    public static let ampersandSquare: LucideShape = LucideShape(path: LucideLabIconName.ampersandSquarePath)
+
+    /// Apple Core icon (Experimental)
+    public static let appleCore: LucideShape = LucideShape(path: LucideLabIconName.appleCorePath)
+
+    /// Arrows Up Down Square icon (Experimental)
+    public static let arrowsUpDownSquare: LucideShape = LucideShape(path: LucideLabIconName.arrowsUpDownSquarePath)
+
+    /// Astronaut Helmet icon (Experimental)
+    public static let astronautHelmet: LucideShape = LucideShape(path: LucideLabIconName.astronautHelmetPath)
+
+    /// At Sign Circle icon (Experimental)
+    public static let atSignCircle: LucideShape = LucideShape(path: LucideLabIconName.atSignCirclePath)
+
+    /// At Sign Square icon (Experimental)
+    public static let atSignSquare: LucideShape = LucideShape(path: LucideLabIconName.atSignSquarePath)
+
+    /// Avocado icon (Experimental)
+    public static let avocado: LucideShape = LucideShape(path: LucideLabIconName.avocadoPath)
+
+    /// Baby Pacifier icon (Experimental)
+    public static let babyPacifier: LucideShape = LucideShape(path: LucideLabIconName.babyPacifierPath)
+
+    /// Bacon icon (Experimental)
+    public static let bacon: LucideShape = LucideShape(path: LucideLabIconName.baconPath)
+
+    /// Bag Hand icon (Experimental)
+    public static let bagHand: LucideShape = LucideShape(path: LucideLabIconName.bagHandPath)
+
+    /// Barbecue icon (Experimental)
+    public static let barbecue: LucideShape = LucideShape(path: LucideLabIconName.barbecuePath)
+
+    /// Barber Pole icon (Experimental)
+    public static let barberPole: LucideShape = LucideShape(path: LucideLabIconName.barberPolePath)
+
+    /// Barn icon (Experimental)
+    public static let barn: LucideShape = LucideShape(path: LucideLabIconName.barnPath)
+
+    /// Baseball icon (Experimental)
+    public static let baseball: LucideShape = LucideShape(path: LucideLabIconName.baseballPath)
+
+    /// Baseline Square icon (Experimental)
+    public static let baselineSquare: LucideShape = LucideShape(path: LucideLabIconName.baselineSquarePath)
+
+    /// Basketball icon (Experimental)
+    public static let basketball: LucideShape = LucideShape(path: LucideLabIconName.basketballPath)
+
+    /// Bat Ball icon (Experimental)
+    public static let batBall: LucideShape = LucideShape(path: LucideLabIconName.batBallPath)
+
+    /// Bath Bubble icon (Experimental)
+    public static let bathBubble: LucideShape = LucideShape(path: LucideLabIconName.bathBubblePath)
+
+    /// Beach Ball icon (Experimental)
+    public static let beachBall: LucideShape = LucideShape(path: LucideLabIconName.beachBallPath)
+
+    /// Bear Face icon (Experimental)
+    public static let bearFace: LucideShape = LucideShape(path: LucideLabIconName.bearFacePath)
+
+    /// Bed Bunk icon (Experimental)
+    public static let bedBunk: LucideShape = LucideShape(path: LucideLabIconName.bedBunkPath)
+
+    /// Bee icon (Experimental)
+    public static let bee: LucideShape = LucideShape(path: LucideLabIconName.beePath)
+
+    /// Bee Hive icon (Experimental)
+    public static let beeHive: LucideShape = LucideShape(path: LucideLabIconName.beeHivePath)
+
+    /// Beetle Scarab icon (Experimental)
+    public static let beetleScarab: LucideShape = LucideShape(path: LucideLabIconName.beetleScarabPath)
+
+    /// Bell Concierge icon (Experimental)
+    public static let bellConcierge: LucideShape = LucideShape(path: LucideLabIconName.bellConciergePath)
+
+    /// Bell Concierge Dot icon (Experimental)
+    public static let bellConciergeDot: LucideShape = LucideShape(path: LucideLabIconName.bellConciergeDotPath)
+
+    /// Bell Concierge Off icon (Experimental)
+    public static let bellConciergeOff: LucideShape = LucideShape(path: LucideLabIconName.bellConciergeOffPath)
+
+    /// Belt icon (Experimental)
+    public static let belt: LucideShape = LucideShape(path: LucideLabIconName.beltPath)
+
+    /// Bold Square icon (Experimental)
+    public static let boldSquare: LucideShape = LucideShape(path: LucideLabIconName.boldSquarePath)
+
+    /// Bottle Baby icon (Experimental)
+    public static let bottleBaby: LucideShape = LucideShape(path: LucideLabIconName.bottleBabyPath)
+
+    /// Bottle Champagne icon (Experimental)
+    public static let bottleChampagne: LucideShape = LucideShape(path: LucideLabIconName.bottleChampagnePath)
+
+    /// Bottle Dispenser icon (Experimental)
+    public static let bottleDispenser: LucideShape = LucideShape(path: LucideLabIconName.bottleDispenserPath)
+
+    /// Bottle Perfume icon (Experimental)
+    public static let bottlePerfume: LucideShape = LucideShape(path: LucideLabIconName.bottlePerfumePath)
+
+    /// Bottle Plastic icon (Experimental)
+    public static let bottlePlastic: LucideShape = LucideShape(path: LucideLabIconName.bottlePlasticPath)
+
+    /// Bottle Spray icon (Experimental)
+    public static let bottleSpray: LucideShape = LucideShape(path: LucideLabIconName.bottleSprayPath)
+
+    /// Bottle Toothbrush Comb icon (Experimental)
+    public static let bottleToothbrushComb: LucideShape = LucideShape(path: LucideLabIconName.bottleToothbrushCombPath)
+
+    /// Bowl Chopsticks icon (Experimental)
+    public static let bowlChopsticks: LucideShape = LucideShape(path: LucideLabIconName.bowlChopsticksPath)
+
+    /// Bowl Overflow icon (Experimental)
+    public static let bowlOverflow: LucideShape = LucideShape(path: LucideLabIconName.bowlOverflowPath)
+
+    /// Bowling icon (Experimental)
+    public static let bowling: LucideShape = LucideShape(path: LucideLabIconName.bowlingPath)
+
+    /// Bra Sports icon (Experimental)
+    public static let braSports: LucideShape = LucideShape(path: LucideLabIconName.braSportsPath)
+
+    /// Briefcase Plus icon (Experimental)
+    public static let briefcasePlus: LucideShape = LucideShape(path: LucideLabIconName.briefcasePlusPath)
+
+    /// Broom icon (Experimental)
+    public static let broom: LucideShape = LucideShape(path: LucideLabIconName.broomPath)
+
+    /// Bucket icon (Experimental)
+    public static let bucket: LucideShape = LucideShape(path: LucideLabIconName.bucketPath)
+
+    /// Bull Head icon (Experimental)
+    public static let bullHead: LucideShape = LucideShape(path: LucideLabIconName.bullHeadPath)
+
+    /// Burger icon (Experimental)
+    public static let burger: LucideShape = LucideShape(path: LucideLabIconName.burgerPath)
+
+    /// Butterfly icon (Experimental)
+    public static let butterfly: LucideShape = LucideShape(path: LucideLabIconName.butterflyPath)
+
+    /// Cabin icon (Experimental)
+    public static let cabin: LucideShape = LucideShape(path: LucideLabIconName.cabinPath)
+
+    /// Cabinet Filing icon (Experimental)
+    public static let cabinetFiling: LucideShape = LucideShape(path: LucideLabIconName.cabinetFilingPath)
+
+    /// Cactus icon (Experimental)
+    public static let cactus: LucideShape = LucideShape(path: LucideLabIconName.cactusPath)
+
+    /// Candle Holder icon (Experimental)
+    public static let candleHolder: LucideShape = LucideShape(path: LucideLabIconName.candleHolderPath)
+
+    /// Candle Holder Lit icon (Experimental)
+    public static let candleHolderLit: LucideShape = LucideShape(path: LucideLabIconName.candleHolderLitPath)
+
+    /// Candle Tealight icon (Experimental)
+    public static let candleTealight: LucideShape = LucideShape(path: LucideLabIconName.candleTealightPath)
+
+    /// Candle Tealight Lit icon (Experimental)
+    public static let candleTealightLit: LucideShape = LucideShape(path: LucideLabIconName.candleTealightLitPath)
+
+    /// Candlestick icon (Experimental)
+    public static let candlestick: LucideShape = LucideShape(path: LucideLabIconName.candlestickPath)
+
+    /// Candlestick Big icon (Experimental)
+    public static let candlestickBig: LucideShape = LucideShape(path: LucideLabIconName.candlestickBigPath)
+
+    /// Candlestick Big Lit icon (Experimental)
+    public static let candlestickBigLit: LucideShape = LucideShape(path: LucideLabIconName.candlestickBigLitPath)
+
+    /// Candlestick Lit icon (Experimental)
+    public static let candlestickLit: LucideShape = LucideShape(path: LucideLabIconName.candlestickLitPath)
+
+    /// Card Credit icon (Experimental)
+    public static let cardCredit: LucideShape = LucideShape(path: LucideLabIconName.cardCreditPath)
+
+    /// Card Sd icon (Experimental)
+    public static let cardSd: LucideShape = LucideShape(path: LucideLabIconName.cardSdPath)
+
+    /// Card Sim icon (Experimental)
+    public static let cardSim: LucideShape = LucideShape(path: LucideLabIconName.cardSimPath)
+
+    /// Carton icon (Experimental)
+    public static let carton: LucideShape = LucideShape(path: LucideLabIconName.cartonPath)
+
+    /// Carton Off icon (Experimental)
+    public static let cartonOff: LucideShape = LucideShape(path: LucideLabIconName.cartonOffPath)
+
+    /// Case Camel icon (Experimental)
+    public static let caseCamel: LucideShape = LucideShape(path: LucideLabIconName.caseCamelPath)
+
+    /// Case Kebab icon (Experimental)
+    public static let caseKebab: LucideShape = LucideShape(path: LucideLabIconName.caseKebabPath)
+
+    /// Case Snake icon (Experimental)
+    public static let caseSnake: LucideShape = LucideShape(path: LucideLabIconName.caseSnakePath)
+
+    /// Case Snake Upper icon (Experimental)
+    public static let caseSnakeUpper: LucideShape = LucideShape(path: LucideLabIconName.caseSnakeUpperPath)
+
+    /// Cat Big icon (Experimental)
+    public static let catBig: LucideShape = LucideShape(path: LucideLabIconName.catBigPath)
+
+    /// Cauldron icon (Experimental)
+    public static let cauldron: LucideShape = LucideShape(path: LucideLabIconName.cauldronPath)
+
+    /// Cent icon (Experimental)
+    public static let cent: LucideShape = LucideShape(path: LucideLabIconName.centPath)
+
+    /// Cent Circle icon (Experimental)
+    public static let centCircle: LucideShape = LucideShape(path: LucideLabIconName.centCirclePath)
+
+    /// Cent Square icon (Experimental)
+    public static let centSquare: LucideShape = LucideShape(path: LucideLabIconName.centSquarePath)
+
+    /// Chairs Table Parasol icon (Experimental)
+    public static let chairsTableParasol: LucideShape = LucideShape(path: LucideLabIconName.chairsTableParasolPath)
+
+    /// Chairs Table Platter icon (Experimental)
+    public static let chairsTablePlatter: LucideShape = LucideShape(path: LucideLabIconName.chairsTablePlatterPath)
+
+    /// Chameleon icon (Experimental)
+    public static let chameleon: LucideShape = LucideShape(path: LucideLabIconName.chameleonPath)
+
+    /// Cheese icon (Experimental)
+    public static let cheese: LucideShape = LucideShape(path: LucideLabIconName.cheesePath)
+
+    /// Chest icon (Experimental)
+    public static let chest: LucideShape = LucideShape(path: LucideLabIconName.chestPath)
+
+    /// Chevrons Left Right Square icon (Experimental)
+    public static let chevronsLeftRightSquare: LucideShape = LucideShape(path: LucideLabIconName.chevronsLeftRightSquarePath)
+
+    /// Chevrons Up Down Square icon (Experimental)
+    public static let chevronsUpDownSquare: LucideShape = LucideShape(path: LucideLabIconName.chevronsUpDownSquarePath)
+
+    /// Cloth icon (Experimental)
+    public static let cloth: LucideShape = LucideShape(path: LucideLabIconName.clothPath)
+
+    /// Coat Hanger icon (Experimental)
+    public static let coatHanger: LucideShape = LucideShape(path: LucideLabIconName.coatHangerPath)
+
+    /// Cocktail icon (Experimental)
+    public static let cocktail: LucideShape = LucideShape(path: LucideLabIconName.cocktailPath)
+
+    /// Coconut icon (Experimental)
+    public static let coconut: LucideShape = LucideShape(path: LucideLabIconName.coconutPath)
+
+    /// Coffee Bean icon (Experimental)
+    public static let coffeeBean: LucideShape = LucideShape(path: LucideLabIconName.coffeeBeanPath)
+
+    /// Coffeemaker icon (Experimental)
+    public static let coffeemaker: LucideShape = LucideShape(path: LucideLabIconName.coffeemakerPath)
+
+    /// Coins Exchange icon (Experimental)
+    public static let coinsExchange: LucideShape = LucideShape(path: LucideLabIconName.coinsExchangePath)
+
+    /// Coins Stack icon (Experimental)
+    public static let coinsStack: LucideShape = LucideShape(path: LucideLabIconName.coinsStackPath)
+
+    /// Copy Code icon (Experimental)
+    public static let copyCode: LucideShape = LucideShape(path: LucideLabIconName.copyCodePath)
+
+    /// Copy Down icon (Experimental)
+    public static let copyDown: LucideShape = LucideShape(path: LucideLabIconName.copyDownPath)
+
+    /// Copy File Path icon (Experimental)
+    public static let copyFilePath: LucideShape = LucideShape(path: LucideLabIconName.copyFilePathPath)
+
+    /// Copy Image icon (Experimental)
+    public static let copyImage: LucideShape = LucideShape(path: LucideLabIconName.copyImagePath)
+
+    /// Copy Text icon (Experimental)
+    public static let copyText: LucideShape = LucideShape(path: LucideLabIconName.copyTextPath)
+
+    /// Copy Type icon (Experimental)
+    public static let copyType: LucideShape = LucideShape(path: LucideLabIconName.copyTypePath)
+
+    /// Cow Head icon (Experimental)
+    public static let cowHead: LucideShape = LucideShape(path: LucideLabIconName.cowHeadPath)
+
+    /// Cow Udder Droplets icon (Experimental)
+    public static let cowUdderDroplets: LucideShape = LucideShape(path: LucideLabIconName.cowUdderDropletsPath)
+
+    /// Crab icon (Experimental)
+    public static let crab: LucideShape = LucideShape(path: LucideLabIconName.crabPath)
+
+    /// Cricket Ball icon (Experimental)
+    public static let cricketBall: LucideShape = LucideShape(path: LucideLabIconName.cricketBallPath)
+
+    /// Cricket Wicket icon (Experimental)
+    public static let cricketWicket: LucideShape = LucideShape(path: LucideLabIconName.cricketWicketPath)
+
+    /// Cross Square icon (Experimental)
+    public static let crossSquare: LucideShape = LucideShape(path: LucideLabIconName.crossSquarePath)
+
+    /// Crosshair 2 icon (Experimental)
+    public static let crosshair2: LucideShape = LucideShape(path: LucideLabIconName.crosshair2Path)
+
+    /// Crosshair 2 Dot icon (Experimental)
+    public static let crosshair2Dot: LucideShape = LucideShape(path: LucideLabIconName.crosshair2DotPath)
+
+    /// Crosshair Plus icon (Experimental)
+    public static let crosshairPlus: LucideShape = LucideShape(path: LucideLabIconName.crosshairPlusPath)
+
+    /// Crosshair Plus Dot icon (Experimental)
+    public static let crosshairPlusDot: LucideShape = LucideShape(path: LucideLabIconName.crosshairPlusDotPath)
+
+    /// Crosshair Square icon (Experimental)
+    public static let crosshairSquare: LucideShape = LucideShape(path: LucideLabIconName.crosshairSquarePath)
+
+    /// Cup Saucer icon (Experimental)
+    public static let cupSaucer: LucideShape = LucideShape(path: LucideLabIconName.cupSaucerPath)
+
+    /// Cup To Go icon (Experimental)
+    public static let cupToGo: LucideShape = LucideShape(path: LucideLabIconName.cupToGoPath)
+
+    /// Currency Square icon (Experimental)
+    public static let currencySquare: LucideShape = LucideShape(path: LucideLabIconName.currencySquarePath)
+
+    /// Desk Lamp icon (Experimental)
+    public static let deskLamp: LucideShape = LucideShape(path: LucideLabIconName.deskLampPath)
+
+    /// Diaper icon (Experimental)
+    public static let diaper: LucideShape = LucideShape(path: LucideLabIconName.diaperPath)
+
+    /// Dishwasher icon (Experimental)
+    public static let dishwasher: LucideShape = LucideShape(path: LucideLabIconName.dishwasherPath)
+
+    /// Dollar Sign Circle icon (Experimental)
+    public static let dollarSignCircle: LucideShape = LucideShape(path: LucideLabIconName.dollarSignCirclePath)
+
+    /// Dollar Sign Square icon (Experimental)
+    public static let dollarSignSquare: LucideShape = LucideShape(path: LucideLabIconName.dollarSignSquarePath)
+
+    /// Doorbell Intercom icon (Experimental)
+    public static let doorbellIntercom: LucideShape = LucideShape(path: LucideLabIconName.doorbellIntercomPath)
+
+    /// Dress icon (Experimental)
+    public static let dress: LucideShape = LucideShape(path: LucideLabIconName.dressPath)
+
+    /// Egg Cup icon (Experimental)
+    public static let eggCup: LucideShape = LucideShape(path: LucideLabIconName.eggCupPath)
+
+    /// Elephant icon (Experimental)
+    public static let elephant: LucideShape = LucideShape(path: LucideLabIconName.elephantPath)
+
+    /// Elephant Face icon (Experimental)
+    public static let elephantFace: LucideShape = LucideShape(path: LucideLabIconName.elephantFacePath)
+
+    /// Escalator Arrow Down Left icon (Experimental)
+    public static let escalatorArrowDownLeft: LucideShape = LucideShape(path: LucideLabIconName.escalatorArrowDownLeftPath)
+
+    /// Escalator Arrow Up Right icon (Experimental)
+    public static let escalatorArrowUpRight: LucideShape = LucideShape(path: LucideLabIconName.escalatorArrowUpRightPath)
+
+    /// Euro Circle icon (Experimental)
+    public static let euroCircle: LucideShape = LucideShape(path: LucideLabIconName.euroCirclePath)
+
+    /// Euro Square icon (Experimental)
+    public static let euroSquare: LucideShape = LucideShape(path: LucideLabIconName.euroSquarePath)
+
+    /// Face Alien icon (Experimental)
+    public static let faceAlien: LucideShape = LucideShape(path: LucideLabIconName.faceAlienPath)
+
+    /// Fan Handheld icon (Experimental)
+    public static let fanHandheld: LucideShape = LucideShape(path: LucideLabIconName.fanHandheldPath)
+
+    /// Farm icon (Experimental)
+    public static let farm: LucideShape = LucideShape(path: LucideLabIconName.farmPath)
+
+    /// Faucet icon (Experimental)
+    public static let faucet: LucideShape = LucideShape(path: LucideLabIconName.faucetPath)
+
+    /// Feather Plus icon (Experimental)
+    public static let featherPlus: LucideShape = LucideShape(path: LucideLabIconName.featherPlusPath)
+
+    /// Feather Square icon (Experimental)
+    public static let featherSquare: LucideShape = LucideShape(path: LucideLabIconName.featherSquarePath)
+
+    /// Feather Text icon (Experimental)
+    public static let featherText: LucideShape = LucideShape(path: LucideLabIconName.featherTextPath)
+
+    /// Flippers icon (Experimental)
+    public static let flippers: LucideShape = LucideShape(path: LucideLabIconName.flippersPath)
+
+    /// Floor Plan icon (Experimental)
+    public static let floorPlan: LucideShape = LucideShape(path: LucideLabIconName.floorPlanPath)
+
+    /// Floppy Disk icon (Experimental)
+    public static let floppyDisk: LucideShape = LucideShape(path: LucideLabIconName.floppyDiskPath)
+
+    /// Floppy Disk 2 icon (Experimental)
+    public static let floppyDisk2: LucideShape = LucideShape(path: LucideLabIconName.floppyDisk2Path)
+
+    /// Floppy Disk Rear icon (Experimental)
+    public static let floppyDiskRear: LucideShape = LucideShape(path: LucideLabIconName.floppyDiskRearPath)
+
+    /// Floppy Disks icon (Experimental)
+    public static let floppyDisks: LucideShape = LucideShape(path: LucideLabIconName.floppyDisksPath)
+
+    /// Floppy Disks 2 icon (Experimental)
+    public static let floppyDisks2: LucideShape = LucideShape(path: LucideLabIconName.floppyDisks2Path)
+
+    /// Floppy Disks Rear icon (Experimental)
+    public static let floppyDisksRear: LucideShape = LucideShape(path: LucideLabIconName.floppyDisksRearPath)
+
+    /// Flower Lotus icon (Experimental)
+    public static let flowerLotus: LucideShape = LucideShape(path: LucideLabIconName.flowerLotusPath)
+
+    /// Flower Pot icon (Experimental)
+    public static let flowerPot: LucideShape = LucideShape(path: LucideLabIconName.flowerPotPath)
+
+    /// Flower Rose icon (Experimental)
+    public static let flowerRose: LucideShape = LucideShape(path: LucideLabIconName.flowerRosePath)
+
+    /// Flower Rose Single icon (Experimental)
+    public static let flowerRoseSingle: LucideShape = LucideShape(path: LucideLabIconName.flowerRoseSinglePath)
+
+    /// Flower Stem icon (Experimental)
+    public static let flowerStem: LucideShape = LucideShape(path: LucideLabIconName.flowerStemPath)
+
+    /// Flower Tulip icon (Experimental)
+    public static let flowerTulip: LucideShape = LucideShape(path: LucideLabIconName.flowerTulipPath)
+
+    /// Football icon (Experimental)
+    public static let football: LucideShape = LucideShape(path: LucideLabIconName.footballPath)
+
+    /// Football Goal icon (Experimental)
+    public static let footballGoal: LucideShape = LucideShape(path: LucideLabIconName.footballGoalPath)
+
+    /// Football Helmet icon (Experimental)
+    public static let footballHelmet: LucideShape = LucideShape(path: LucideLabIconName.footballHelmetPath)
+
+    /// Fork Knife icon (Experimental)
+    public static let forkKnife: LucideShape = LucideShape(path: LucideLabIconName.forkKnifePath)
+
+    /// Fork Knife Crossed icon (Experimental)
+    public static let forkKnifeCrossed: LucideShape = LucideShape(path: LucideLabIconName.forkKnifeCrossedPath)
+
+    /// Fox Face Tail icon (Experimental)
+    public static let foxFaceTail: LucideShape = LucideShape(path: LucideLabIconName.foxFaceTailPath)
+
+    /// Frog Face icon (Experimental)
+    public static let frogFace: LucideShape = LucideShape(path: LucideLabIconName.frogFacePath)
+
+    /// Fruit icon (Experimental)
+    public static let fruit: LucideShape = LucideShape(path: LucideLabIconName.fruitPath)
+
+    /// Garlic icon (Experimental)
+    public static let garlic: LucideShape = LucideShape(path: LucideLabIconName.garlicPath)
+
+    /// Gearbox icon (Experimental)
+    public static let gearbox: LucideShape = LucideShape(path: LucideLabIconName.gearboxPath)
+
+    /// Gearbox Square icon (Experimental)
+    public static let gearboxSquare: LucideShape = LucideShape(path: LucideLabIconName.gearboxSquarePath)
+
+    /// Gem Ring icon (Experimental)
+    public static let gemRing: LucideShape = LucideShape(path: LucideLabIconName.gemRingPath)
+
+    /// Glasses Square icon (Experimental)
+    public static let glassesSquare: LucideShape = LucideShape(path: LucideLabIconName.glassesSquarePath)
+
+    /// Glasses Sun icon (Experimental)
+    public static let glassesSun: LucideShape = LucideShape(path: LucideLabIconName.glassesSunPath)
+
+    /// Goal Net icon (Experimental)
+    public static let goalNet: LucideShape = LucideShape(path: LucideLabIconName.goalNetPath)
+
+    /// Goblet icon (Experimental)
+    public static let goblet: LucideShape = LucideShape(path: LucideLabIconName.gobletPath)
+
+    /// Goblet Crack icon (Experimental)
+    public static let gobletCrack: LucideShape = LucideShape(path: LucideLabIconName.gobletCrackPath)
+
+    /// Golf Driver icon (Experimental)
+    public static let golfDriver: LucideShape = LucideShape(path: LucideLabIconName.golfDriverPath)
+
+    /// Grapes icon (Experimental)
+    public static let grapes: LucideShape = LucideShape(path: LucideLabIconName.grapesPath)
+
+    /// Grid Lines icon (Experimental)
+    public static let gridLines: LucideShape = LucideShape(path: LucideLabIconName.gridLinesPath)
+
+    /// Grid Lines Offset icon (Experimental)
+    public static let gridLinesOffset: LucideShape = LucideShape(path: LucideLabIconName.gridLinesOffsetPath)
+
+    /// Hairdryer icon (Experimental)
+    public static let hairdryer: LucideShape = LucideShape(path: LucideLabIconName.hairdryerPath)
+
+    /// Hat Baseball icon (Experimental)
+    public static let hatBaseball: LucideShape = LucideShape(path: LucideLabIconName.hatBaseballPath)
+
+    /// Hat Beanie icon (Experimental)
+    public static let hatBeanie: LucideShape = LucideShape(path: LucideLabIconName.hatBeaniePath)
+
+    /// Hat Bowler icon (Experimental)
+    public static let hatBowler: LucideShape = LucideShape(path: LucideLabIconName.hatBowlerPath)
+
+    /// Hat Chef icon (Experimental)
+    public static let hatChef: LucideShape = LucideShape(path: LucideLabIconName.hatChefPath)
+
+    /// Hat Hard icon (Experimental)
+    public static let hatHard: LucideShape = LucideShape(path: LucideLabIconName.hatHardPath)
+
+    /// Hat Top icon (Experimental)
+    public static let hatTop: LucideShape = LucideShape(path: LucideLabIconName.hatTopPath)
+
+    /// Heading Circle icon (Experimental)
+    public static let headingCircle: LucideShape = LucideShape(path: LucideLabIconName.headingCirclePath)
+
+    /// Heading Square icon (Experimental)
+    public static let headingSquare: LucideShape = LucideShape(path: LucideLabIconName.headingSquarePath)
+
+    /// Hedgehog icon (Experimental)
+    public static let hedgehog: LucideShape = LucideShape(path: LucideLabIconName.hedgehogPath)
+
+    /// Helmet Diving icon (Experimental)
+    public static let helmetDiving: LucideShape = LucideShape(path: LucideLabIconName.helmetDivingPath)
+
+    /// Hexagons 3 icon (Experimental)
+    public static let hexagons3: LucideShape = LucideShape(path: LucideLabIconName.hexagons3Path)
+
+    /// Hexagons 7 icon (Experimental)
+    public static let hexagons7: LucideShape = LucideShape(path: LucideLabIconName.hexagons7Path)
+
+    /// High Heel icon (Experimental)
+    public static let highHeel: LucideShape = LucideShape(path: LucideLabIconName.highHeelPath)
+
+    /// Hockey icon (Experimental)
+    public static let hockey: LucideShape = LucideShape(path: LucideLabIconName.hockeyPath)
+
+    /// Hockey Mask icon (Experimental)
+    public static let hockeyMask: LucideShape = LucideShape(path: LucideLabIconName.hockeyMaskPath)
+
+    /// Horse Head icon (Experimental)
+    public static let horseHead: LucideShape = LucideShape(path: LucideLabIconName.horseHeadPath)
+
+    /// Hot Dog icon (Experimental)
+    public static let hotDog: LucideShape = LucideShape(path: LucideLabIconName.hotDogPath)
+
+    /// House icon (Experimental)
+    public static let house: LucideShape = LucideShape(path: LucideLabIconName.housePath)
+
+    /// House Manor icon (Experimental)
+    public static let houseManor: LucideShape = LucideShape(path: LucideLabIconName.houseManorPath)
+
+    /// House Off icon (Experimental)
+    public static let houseOff: LucideShape = LucideShape(path: LucideLabIconName.houseOffPath)
+
+    /// House Roof icon (Experimental)
+    public static let houseRoof: LucideShape = LucideShape(path: LucideLabIconName.houseRoofPath)
+
+    /// House Roof Off icon (Experimental)
+    public static let houseRoofOff: LucideShape = LucideShape(path: LucideLabIconName.houseRoofOffPath)
+
+    /// Houses icon (Experimental)
+    public static let houses: LucideShape = LucideShape(path: LucideLabIconName.housesPath)
+
+    /// Ice Hockey icon (Experimental)
+    public static let iceHockey: LucideShape = LucideShape(path: LucideLabIconName.iceHockeyPath)
+
+    /// Ice Skate icon (Experimental)
+    public static let iceSkate: LucideShape = LucideShape(path: LucideLabIconName.iceSkatePath)
+
+    /// Igloo icon (Experimental)
+    public static let igloo: LucideShape = LucideShape(path: LucideLabIconName.iglooPath)
+
+    /// Indian Rupee Circle icon (Experimental)
+    public static let indianRupeeCircle: LucideShape = LucideShape(path: LucideLabIconName.indianRupeeCirclePath)
+
+    /// Indian Rupee Square icon (Experimental)
+    public static let indianRupeeSquare: LucideShape = LucideShape(path: LucideLabIconName.indianRupeeSquarePath)
+
+    /// Intercom icon (Experimental)
+    public static let intercom: LucideShape = LucideShape(path: LucideLabIconName.intercomPath)
+
+    /// Iron icon (Experimental)
+    public static let iron: LucideShape = LucideShape(path: LucideLabIconName.ironPath)
+
+    /// Iron Off icon (Experimental)
+    public static let ironOff: LucideShape = LucideShape(path: LucideLabIconName.ironOffPath)
+
+    /// Ironing Board icon (Experimental)
+    public static let ironingBoard: LucideShape = LucideShape(path: LucideLabIconName.ironingBoardPath)
+
+    /// Italic Square icon (Experimental)
+    public static let italicSquare: LucideShape = LucideShape(path: LucideLabIconName.italicSquarePath)
+
+    /// Jacket icon (Experimental)
+    public static let jacket: LucideShape = LucideShape(path: LucideLabIconName.jacketPath)
+
+    /// Jacket Sports icon (Experimental)
+    public static let jacketSports: LucideShape = LucideShape(path: LucideLabIconName.jacketSportsPath)
+
+    /// Japanese Yen Circle icon (Experimental)
+    public static let japaneseYenCircle: LucideShape = LucideShape(path: LucideLabIconName.japaneseYenCirclePath)
+
+    /// Japanese Yen Square icon (Experimental)
+    public static let japaneseYenSquare: LucideShape = LucideShape(path: LucideLabIconName.japaneseYenSquarePath)
+
+    /// Jar icon (Experimental)
+    public static let jar: LucideShape = LucideShape(path: LucideLabIconName.jarPath)
+
+    /// Jug icon (Experimental)
+    public static let jug: LucideShape = LucideShape(path: LucideLabIconName.jugPath)
+
+    /// Kebab icon (Experimental)
+    public static let kebab: LucideShape = LucideShape(path: LucideLabIconName.kebabPath)
+
+    /// Kettle icon (Experimental)
+    public static let kettle: LucideShape = LucideShape(path: LucideLabIconName.kettlePath)
+
+    /// Kettle Electric icon (Experimental)
+    public static let kettleElectric: LucideShape = LucideShape(path: LucideLabIconName.kettleElectricPath)
+
+    /// Kiwi icon (Experimental)
+    public static let kiwi: LucideShape = LucideShape(path: LucideLabIconName.kiwiPath)
+
+    /// Layout Grid Move Horizontal icon (Experimental)
+    public static let layoutGridMoveHorizontal: LucideShape = LucideShape(path: LucideLabIconName.layoutGridMoveHorizontalPath)
+
+    /// Layout Grid Move Vertical icon (Experimental)
+    public static let layoutGridMoveVertical: LucideShape = LucideShape(path: LucideLabIconName.layoutGridMoveVerticalPath)
+
+    /// Layout Grid Plus icon (Experimental)
+    public static let layoutGridPlus: LucideShape = LucideShape(path: LucideLabIconName.layoutGridPlusPath)
+
+    /// Layout List Move icon (Experimental)
+    public static let layoutListMove: LucideShape = LucideShape(path: LucideLabIconName.layoutListMovePath)
+
+    /// Lemon icon (Experimental)
+    public static let lemon: LucideShape = LucideShape(path: LucideLabIconName.lemonPath)
+
+    /// Life Jacket icon (Experimental)
+    public static let lifeJacket: LucideShape = LucideShape(path: LucideLabIconName.lifeJacketPath)
+
+    /// Ligature Square icon (Experimental)
+    public static let ligatureSquare: LucideShape = LucideShape(path: LucideLabIconName.ligatureSquarePath)
+
+    /// Light Switch icon (Experimental)
+    public static let lightSwitch: LucideShape = LucideShape(path: LucideLabIconName.lightSwitchPath)
+
+    /// Lingerie icon (Experimental)
+    public static let lingerie: LucideShape = LucideShape(path: LucideLabIconName.lingeriePath)
+
+    /// Locate Square icon (Experimental)
+    public static let locateSquare: LucideShape = LucideShape(path: LucideLabIconName.locateSquarePath)
+
+    /// Lucide Lab icon (Experimental)
+    public static let lucideLab: LucideShape = LucideShape(path: LucideLabIconName.lucideLabPath)
+
+    /// Luggage Cabin icon (Experimental)
+    public static let luggageCabin: LucideShape = LucideShape(path: LucideLabIconName.luggageCabinPath)
+
+    /// Lunch Box icon (Experimental)
+    public static let lunchBox: LucideShape = LucideShape(path: LucideLabIconName.lunchBoxPath)
+
+    /// Mailbox Flag icon (Experimental)
+    public static let mailboxFlag: LucideShape = LucideShape(path: LucideLabIconName.mailboxFlagPath)
+
+    /// Mask Snorkel icon (Experimental)
+    public static let maskSnorkel: LucideShape = LucideShape(path: LucideLabIconName.maskSnorkelPath)
+
+    /// Meal Box icon (Experimental)
+    public static let mealBox: LucideShape = LucideShape(path: LucideLabIconName.mealBoxPath)
+
+    /// Mortar Pestle icon (Experimental)
+    public static let mortarPestle: LucideShape = LucideShape(path: LucideLabIconName.mortarPestlePath)
+
+    /// Motor Racing Helmet icon (Experimental)
+    public static let motorRacingHelmet: LucideShape = LucideShape(path: LucideLabIconName.motorRacingHelmetPath)
+
+    /// Mug icon (Experimental)
+    public static let mug: LucideShape = LucideShape(path: LucideLabIconName.mugPath)
+
+    /// Mug Teabag icon (Experimental)
+    public static let mugTeabag: LucideShape = LucideShape(path: LucideLabIconName.mugTeabagPath)
+
+    /// Mustache icon (Experimental)
+    public static let mustache: LucideShape = LucideShape(path: LucideLabIconName.mustachePath)
+
+    /// Olive icon (Experimental)
+    public static let olive: LucideShape = LucideShape(path: LucideLabIconName.olivePath)
+
+    /// Onion icon (Experimental)
+    public static let onion: LucideShape = LucideShape(path: LucideLabIconName.onionPath)
+
+    /// Owl icon (Experimental)
+    public static let owl: LucideShape = LucideShape(path: LucideLabIconName.owlPath)
+
+    /// Pac Man icon (Experimental)
+    public static let pacMan: LucideShape = LucideShape(path: LucideLabIconName.pacManPath)
+
+    /// Pac Man Ghost icon (Experimental)
+    public static let pacManGhost: LucideShape = LucideShape(path: LucideLabIconName.pacManGhostPath)
+
+    /// Palmtree Island Sun icon (Experimental)
+    public static let palmtreeIslandSun: LucideShape = LucideShape(path: LucideLabIconName.palmtreeIslandSunPath)
+
+    /// Pancakes icon (Experimental)
+    public static let pancakes: LucideShape = LucideShape(path: LucideLabIconName.pancakesPath)
+
+    /// Peace icon (Experimental)
+    public static let peace: LucideShape = LucideShape(path: LucideLabIconName.peacePath)
+
+    /// Peach icon (Experimental)
+    public static let peach: LucideShape = LucideShape(path: LucideLabIconName.peachPath)
+
+    /// Pear icon (Experimental)
+    public static let pear: LucideShape = LucideShape(path: LucideLabIconName.pearPath)
+
+    /// Penguin icon (Experimental)
+    public static let penguin: LucideShape = LucideShape(path: LucideLabIconName.penguinPath)
+
+    /// Pepper Chilli icon (Experimental)
+    public static let pepperChilli: LucideShape = LucideShape(path: LucideLabIconName.pepperChilliPath)
+
+    /// Pie icon (Experimental)
+    public static let pie: LucideShape = LucideShape(path: LucideLabIconName.piePath)
+
+    /// Pig icon (Experimental)
+    public static let pig: LucideShape = LucideShape(path: LucideLabIconName.pigPath)
+
+    /// Pig Head icon (Experimental)
+    public static let pigHead: LucideShape = LucideShape(path: LucideLabIconName.pigHeadPath)
+
+    /// Pillow icon (Experimental)
+    public static let pillow: LucideShape = LucideShape(path: LucideLabIconName.pillowPath)
+
+    /// Pin Safety icon (Experimental)
+    public static let pinSafety: LucideShape = LucideShape(path: LucideLabIconName.pinSafetyPath)
+
+    /// Pin Safety Open icon (Experimental)
+    public static let pinSafetyOpen: LucideShape = LucideShape(path: LucideLabIconName.pinSafetyOpenPath)
+
+    /// Pineapple Ring icon (Experimental)
+    public static let pineappleRing: LucideShape = LucideShape(path: LucideLabIconName.pineappleRingPath)
+
+    /// Planet icon (Experimental)
+    public static let planet: LucideShape = LucideShape(path: LucideLabIconName.planetPath)
+
+    /// Pond icon (Experimental)
+    public static let pond: LucideShape = LucideShape(path: LucideLabIconName.pondPath)
+
+    /// Pound Sterling Circle icon (Experimental)
+    public static let poundSterlingCircle: LucideShape = LucideShape(path: LucideLabIconName.poundSterlingCirclePath)
+
+    /// Pound Sterling Square icon (Experimental)
+    public static let poundSterlingSquare: LucideShape = LucideShape(path: LucideLabIconName.poundSterlingSquarePath)
+
+    /// Pram icon (Experimental)
+    public static let pram: LucideShape = LucideShape(path: LucideLabIconName.pramPath)
+
+    /// Pretzel icon (Experimental)
+    public static let pretzel: LucideShape = LucideShape(path: LucideLabIconName.pretzelPath)
+
+    /// Pumpkin icon (Experimental)
+    public static let pumpkin: LucideShape = LucideShape(path: LucideLabIconName.pumpkinPath)
+
+    /// Razor icon (Experimental)
+    public static let razor: LucideShape = LucideShape(path: LucideLabIconName.razorPath)
+
+    /// Razor Blade icon (Experimental)
+    public static let razorBlade: LucideShape = LucideShape(path: LucideLabIconName.razorBladePath)
+
+    /// Reel Thread icon (Experimental)
+    public static let reelThread: LucideShape = LucideShape(path: LucideLabIconName.reelThreadPath)
+
+    /// Refrigerator Freezer icon (Experimental)
+    public static let refrigeratorFreezer: LucideShape = LucideShape(path: LucideLabIconName.refrigeratorFreezerPath)
+
+    /// Remove Formatting Square icon (Experimental)
+    public static let removeFormattingSquare: LucideShape = LucideShape(path: LucideLabIconName.removeFormattingSquarePath)
+
+    /// Rugby icon (Experimental)
+    public static let rugby: LucideShape = LucideShape(path: LucideLabIconName.rugbyPath)
+
+    /// Russian Ruble Circle icon (Experimental)
+    public static let russianRubleCircle: LucideShape = LucideShape(path: LucideLabIconName.russianRubleCirclePath)
+
+    /// Russian Ruble Square icon (Experimental)
+    public static let russianRubleSquare: LucideShape = LucideShape(path: LucideLabIconName.russianRubleSquarePath)
+
+    /// Sausage icon (Experimental)
+    public static let sausage: LucideShape = LucideShape(path: LucideLabIconName.sausagePath)
+
+    /// Scarf icon (Experimental)
+    public static let scarf: LucideShape = LucideShape(path: LucideLabIconName.scarfPath)
+
+    /// Scissors Hair Comb icon (Experimental)
+    public static let scissorsHairComb: LucideShape = LucideShape(path: LucideLabIconName.scissorsHairCombPath)
+
+    /// Shark icon (Experimental)
+    public static let shark: LucideShape = LucideShape(path: LucideLabIconName.sharkPath)
+
+    /// Shave Face icon (Experimental)
+    public static let shaveFace: LucideShape = LucideShape(path: LucideLabIconName.shaveFacePath)
+
+    /// Shirt Folded Buttons icon (Experimental)
+    public static let shirtFoldedButtons: LucideShape = LucideShape(path: LucideLabIconName.shirtFoldedButtonsPath)
+
+    /// Shirt Long Sleeve icon (Experimental)
+    public static let shirtLongSleeve: LucideShape = LucideShape(path: LucideLabIconName.shirtLongSleevePath)
+
+    /// Shirt T icon (Experimental)
+    public static let shirtT: LucideShape = LucideShape(path: LucideLabIconName.shirtTPath)
+
+    /// Shirt T Ruler icon (Experimental)
+    public static let shirtTRuler: LucideShape = LucideShape(path: LucideLabIconName.shirtTRulerPath)
+
+    /// Shirt T V Neck icon (Experimental)
+    public static let shirtTVNeck: LucideShape = LucideShape(path: LucideLabIconName.shirtTVNeckPath)
+
+    /// Shorts icon (Experimental)
+    public static let shorts: LucideShape = LucideShape(path: LucideLabIconName.shortsPath)
+
+    /// Shorts Boxer icon (Experimental)
+    public static let shortsBoxer: LucideShape = LucideShape(path: LucideLabIconName.shortsBoxerPath)
+
+    /// Shovel Dig icon (Experimental)
+    public static let shovelDig: LucideShape = LucideShape(path: LucideLabIconName.shovelDigPath)
+
+    /// Shower icon (Experimental)
+    public static let shower: LucideShape = LucideShape(path: LucideLabIconName.showerPath)
+
+    /// Skirt icon (Experimental)
+    public static let skirt: LucideShape = LucideShape(path: LucideLabIconName.skirtPath)
+
+    /// Skis icon (Experimental)
+    public static let skis: LucideShape = LucideShape(path: LucideLabIconName.skisPath)
+
+    /// Slot Card icon (Experimental)
+    public static let slotCard: LucideShape = LucideShape(path: LucideLabIconName.slotCardPath)
+
+    /// Slot Card Credit icon (Experimental)
+    public static let slotCardCredit: LucideShape = LucideShape(path: LucideLabIconName.slotCardCreditPath)
+
+    /// Slot Disc icon (Experimental)
+    public static let slotDisc: LucideShape = LucideShape(path: LucideLabIconName.slotDiscPath)
+
+    /// Sneaker icon (Experimental)
+    public static let sneaker: LucideShape = LucideShape(path: LucideLabIconName.sneakerPath)
+
+    /// Snowboard icon (Experimental)
+    public static let snowboard: LucideShape = LucideShape(path: LucideLabIconName.snowboardPath)
+
+    /// Snowman icon (Experimental)
+    public static let snowman: LucideShape = LucideShape(path: LucideLabIconName.snowmanPath)
+
+    /// Soap Bar icon (Experimental)
+    public static let soapBar: LucideShape = LucideShape(path: LucideLabIconName.soapBarPath)
+
+    /// Soccer Ball icon (Experimental)
+    public static let soccerBall: LucideShape = LucideShape(path: LucideLabIconName.soccerBallPath)
+
+    /// Soccer Pitch icon (Experimental)
+    public static let soccerPitch: LucideShape = LucideShape(path: LucideLabIconName.soccerPitchPath)
+
+    /// Socket Eu icon (Experimental)
+    public static let socketEu: LucideShape = LucideShape(path: LucideLabIconName.socketEuPath)
+
+    /// Socket Uk icon (Experimental)
+    public static let socketUk: LucideShape = LucideShape(path: LucideLabIconName.socketUkPath)
+
+    /// Socket Usa icon (Experimental)
+    public static let socketUsa: LucideShape = LucideShape(path: LucideLabIconName.socketUsaPath)
+
+    /// Socks icon (Experimental)
+    public static let socks: LucideShape = LucideShape(path: LucideLabIconName.socksPath)
+
+    /// Spider icon (Experimental)
+    public static let spider: LucideShape = LucideShape(path: LucideLabIconName.spiderPath)
+
+    /// Spider Web icon (Experimental)
+    public static let spiderWeb: LucideShape = LucideShape(path: LucideLabIconName.spiderWebPath)
+
+    /// Stairs icon (Experimental)
+    public static let stairs: LucideShape = LucideShape(path: LucideLabIconName.stairsPath)
+
+    /// Stairs Arch icon (Experimental)
+    public static let stairsArch: LucideShape = LucideShape(path: LucideLabIconName.stairsArchPath)
+
+    /// Stairs Arrow Down Left icon (Experimental)
+    public static let stairsArrowDownLeft: LucideShape = LucideShape(path: LucideLabIconName.stairsArrowDownLeftPath)
+
+    /// Stairs Arrow Up Right icon (Experimental)
+    public static let stairsArrowUpRight: LucideShape = LucideShape(path: LucideLabIconName.stairsArrowUpRightPath)
+
+    /// Star North icon (Experimental)
+    public static let starNorth: LucideShape = LucideShape(path: LucideLabIconName.starNorthPath)
+
+    /// Steering Wheel icon (Experimental)
+    public static let steeringWheel: LucideShape = LucideShape(path: LucideLabIconName.steeringWheelPath)
+
+    /// Strawberry icon (Experimental)
+    public static let strawberry: LucideShape = LucideShape(path: LucideLabIconName.strawberryPath)
+
+    /// Strikethrough Square icon (Experimental)
+    public static let strikethroughSquare: LucideShape = LucideShape(path: LucideLabIconName.strikethroughSquarePath)
+
+    /// Stroller icon (Experimental)
+    public static let stroller: LucideShape = LucideShape(path: LucideLabIconName.strollerPath)
+
+    /// Sunlounger Parasol Sun icon (Experimental)
+    public static let sunloungerParasolSun: LucideShape = LucideShape(path: LucideLabIconName.sunloungerParasolSunPath)
+
+    /// Sunlounger Parasol Sun Palmtree icon (Experimental)
+    public static let sunloungerParasolSunPalmtree: LucideShape = LucideShape(path: LucideLabIconName.sunloungerParasolSunPalmtreePath)
+
+    /// Sunlounger Parasol Table icon (Experimental)
+    public static let sunloungerParasolTable: LucideShape = LucideShape(path: LucideLabIconName.sunloungerParasolTablePath)
+
+    /// Surfboard icon (Experimental)
+    public static let surfboard: LucideShape = LucideShape(path: LucideLabIconName.surfboardPath)
+
+    /// Sushi icon (Experimental)
+    public static let sushi: LucideShape = LucideShape(path: LucideLabIconName.sushiPath)
+
+    /// Sushi 2 icon (Experimental)
+    public static let sushi2: LucideShape = LucideShape(path: LucideLabIconName.sushi2Path)
+
+    /// Sushi 3 icon (Experimental)
+    public static let sushi3: LucideShape = LucideShape(path: LucideLabIconName.sushi3Path)
+
+    /// Sushi Chopsticks icon (Experimental)
+    public static let sushiChopsticks: LucideShape = LucideShape(path: LucideLabIconName.sushiChopsticksPath)
+
+    /// Sweater icon (Experimental)
+    public static let sweater: LucideShape = LucideShape(path: LucideLabIconName.sweaterPath)
+
+    /// Swiss Franc Circle icon (Experimental)
+    public static let swissFrancCircle: LucideShape = LucideShape(path: LucideLabIconName.swissFrancCirclePath)
+
+    /// Swiss Franc Square icon (Experimental)
+    public static let swissFrancSquare: LucideShape = LucideShape(path: LucideLabIconName.swissFrancSquarePath)
+
+    /// Tab icon (Experimental)
+    public static let tab: LucideShape = LucideShape(path: LucideLabIconName.tabPath)
+
+    /// Tab Arrow Down icon (Experimental)
+    public static let tabArrowDown: LucideShape = LucideShape(path: LucideLabIconName.tabArrowDownPath)
+
+    /// Tab Arrow Up Right icon (Experimental)
+    public static let tabArrowUpRight: LucideShape = LucideShape(path: LucideLabIconName.tabArrowUpRightPath)
+
+    /// Tab Check icon (Experimental)
+    public static let tabCheck: LucideShape = LucideShape(path: LucideLabIconName.tabCheckPath)
+
+    /// Tab Dot icon (Experimental)
+    public static let tabDot: LucideShape = LucideShape(path: LucideLabIconName.tabDotPath)
+
+    /// Tab Plus icon (Experimental)
+    public static let tabPlus: LucideShape = LucideShape(path: LucideLabIconName.tabPlusPath)
+
+    /// Tab Slash icon (Experimental)
+    public static let tabSlash: LucideShape = LucideShape(path: LucideLabIconName.tabSlashPath)
+
+    /// Tab Text icon (Experimental)
+    public static let tabText: LucideShape = LucideShape(path: LucideLabIconName.tabTextPath)
+
+    /// Tab X icon (Experimental)
+    public static let tabX: LucideShape = LucideShape(path: LucideLabIconName.tabXPath)
+
+    /// Target Arrow icon (Experimental)
+    public static let targetArrow: LucideShape = LucideShape(path: LucideLabIconName.targetArrowPath)
+
+    /// Tennis Ball icon (Experimental)
+    public static let tennisBall: LucideShape = LucideShape(path: LucideLabIconName.tennisBallPath)
+
+    /// Tennis Racket icon (Experimental)
+    public static let tennisRacket: LucideShape = LucideShape(path: LucideLabIconName.tennisRacketPath)
+
+    /// Text Square icon (Experimental)
+    public static let textSquare: LucideShape = LucideShape(path: LucideLabIconName.textSquarePath)
+
+    /// Tie icon (Experimental)
+    public static let tie: LucideShape = LucideShape(path: LucideLabIconName.tiePath)
+
+    /// Tie Bow icon (Experimental)
+    public static let tieBow: LucideShape = LucideShape(path: LucideLabIconName.tieBowPath)
+
+    /// Tie Bow Ribbon icon (Experimental)
+    public static let tieBowRibbon: LucideShape = LucideShape(path: LucideLabIconName.tieBowRibbonPath)
+
+    /// Tire icon (Experimental)
+    public static let tire: LucideShape = LucideShape(path: LucideLabIconName.tirePath)
+
+    /// Toast icon (Experimental)
+    public static let toast: LucideShape = LucideShape(path: LucideLabIconName.toastPath)
+
+    /// Toaster icon (Experimental)
+    public static let toaster: LucideShape = LucideShape(path: LucideLabIconName.toasterPath)
+
+    /// Toilet Roll icon (Experimental)
+    public static let toiletRoll: LucideShape = LucideShape(path: LucideLabIconName.toiletRollPath)
+
+    /// Toolbox icon (Experimental)
+    public static let toolbox: LucideShape = LucideShape(path: LucideLabIconName.toolboxPath)
+
+    /// Toolbox 2 icon (Experimental)
+    public static let toolbox2: LucideShape = LucideShape(path: LucideLabIconName.toolbox2Path)
+
+    /// Top Crop icon (Experimental)
+    public static let topCrop: LucideShape = LucideShape(path: LucideLabIconName.topCropPath)
+
+    /// Towel Folded icon (Experimental)
+    public static let towelFolded: LucideShape = LucideShape(path: LucideLabIconName.towelFoldedPath)
+
+    /// Towel Rack icon (Experimental)
+    public static let towelRack: LucideShape = LucideShape(path: LucideLabIconName.towelRackPath)
+
+    /// Trees Forest icon (Experimental)
+    public static let treesForest: LucideShape = LucideShape(path: LucideLabIconName.treesForestPath)
+
+    /// Triangle Stripes icon (Experimental)
+    public static let triangleStripes: LucideShape = LucideShape(path: LucideLabIconName.triangleStripesPath)
+
+    /// Trousers icon (Experimental)
+    public static let trousers: LucideShape = LucideShape(path: LucideLabIconName.trousersPath)
+
+    /// Tuxedo icon (Experimental)
+    public static let tuxedo: LucideShape = LucideShape(path: LucideLabIconName.tuxedoPath)
+
+    /// Type Square icon (Experimental)
+    public static let typeSquare: LucideShape = LucideShape(path: LucideLabIconName.typeSquarePath)
+
+    /// Ufo icon (Experimental)
+    public static let ufo: LucideShape = LucideShape(path: LucideLabIconName.ufoPath)
+
+    /// Underline Square icon (Experimental)
+    public static let underlineSquare: LucideShape = LucideShape(path: LucideLabIconName.underlineSquarePath)
+
+    /// Unicorn Head icon (Experimental)
+    public static let unicornHead: LucideShape = LucideShape(path: LucideLabIconName.unicornHeadPath)
+
+    /// Venn icon (Experimental)
+    public static let venn: LucideShape = LucideShape(path: LucideLabIconName.vennPath)
+
+    /// Vest icon (Experimental)
+    public static let vest: LucideShape = LucideShape(path: LucideLabIconName.vestPath)
+
+    /// Volleyball icon (Experimental)
+    public static let volleyball: LucideShape = LucideShape(path: LucideLabIconName.volleyballPath)
+
+    /// Waffle icon (Experimental)
+    public static let waffle: LucideShape = LucideShape(path: LucideLabIconName.wafflePath)
+
+    /// Wardrobe icon (Experimental)
+    public static let wardrobe: LucideShape = LucideShape(path: LucideLabIconName.wardrobePath)
+
+    /// Watch Activity icon (Experimental)
+    public static let watchActivity: LucideShape = LucideShape(path: LucideLabIconName.watchActivityPath)
+
+    /// Watch Alarm icon (Experimental)
+    public static let watchAlarm: LucideShape = LucideShape(path: LucideLabIconName.watchAlarmPath)
+
+    /// Watch Bars icon (Experimental)
+    public static let watchBars: LucideShape = LucideShape(path: LucideLabIconName.watchBarsPath)
+
+    /// Watch Charging icon (Experimental)
+    public static let watchCharging: LucideShape = LucideShape(path: LucideLabIconName.watchChargingPath)
+
+    /// Watch Check icon (Experimental)
+    public static let watchCheck: LucideShape = LucideShape(path: LucideLabIconName.watchCheckPath)
+
+    /// Watch Loader icon (Experimental)
+    public static let watchLoader: LucideShape = LucideShape(path: LucideLabIconName.watchLoaderPath)
+
+    /// Watch Music icon (Experimental)
+    public static let watchMusic: LucideShape = LucideShape(path: LucideLabIconName.watchMusicPath)
+
+    /// Watch Square icon (Experimental)
+    public static let watchSquare: LucideShape = LucideShape(path: LucideLabIconName.watchSquarePath)
+
+    /// Watch Square Alarm icon (Experimental)
+    public static let watchSquareAlarm: LucideShape = LucideShape(path: LucideLabIconName.watchSquareAlarmPath)
+
+    /// Watch Text icon (Experimental)
+    public static let watchText: LucideShape = LucideShape(path: LucideLabIconName.watchTextPath)
+
+    /// Watermelon icon (Experimental)
+    public static let watermelon: LucideShape = LucideShape(path: LucideLabIconName.watermelonPath)
+
+    /// Wave Circle icon (Experimental)
+    public static let waveCircle: LucideShape = LucideShape(path: LucideLabIconName.waveCirclePath)
+
+    /// Waves Birds icon (Experimental)
+    public static let wavesBirds: LucideShape = LucideShape(path: LucideLabIconName.wavesBirdsPath)
+
+    /// Waves Shark Fin icon (Experimental)
+    public static let wavesSharkFin: LucideShape = LucideShape(path: LucideLabIconName.wavesSharkFinPath)
+
+    /// Whale icon (Experimental)
+    public static let whale: LucideShape = LucideShape(path: LucideLabIconName.whalePath)
+
+    /// Whale Narwhal icon (Experimental)
+    public static let whaleNarwhal: LucideShape = LucideShape(path: LucideLabIconName.whaleNarwhalPath)
+
+    /// Wheel icon (Experimental)
+    public static let wheel: LucideShape = LucideShape(path: LucideLabIconName.wheelPath)
+
+    /// Whisk icon (Experimental)
+    public static let whisk: LucideShape = LucideShape(path: LucideLabIconName.whiskPath)
+
+    /// Whisk Fork Knife icon (Experimental)
+    public static let whiskForkKnife: LucideShape = LucideShape(path: LucideLabIconName.whiskForkKnifePath)
+
+    /// Whisks icon (Experimental)
+    public static let whisks: LucideShape = LucideShape(path: LucideLabIconName.whisksPath)
+
+    /// Windmill icon (Experimental)
+    public static let windmill: LucideShape = LucideShape(path: LucideLabIconName.windmillPath)
+
+    /// Wine Glass Bottle icon (Experimental)
+    public static let wineGlassBottle: LucideShape = LucideShape(path: LucideLabIconName.wineGlassBottlePath)
+
+    /// Yarn Ball icon (Experimental)
+    public static let yarnBall: LucideShape = LucideShape(path: LucideLabIconName.yarnBallPath)
+
+    /// Yin Yang icon (Experimental)
+    public static let yinYang: LucideShape = LucideShape(path: LucideLabIconName.yinYangPath)
+
+}
+
 // MARK: - Version Information
 
 /// Version information for LucideSwift
@@ -50694,4 +62981,7 @@ public struct LucideVersions {
     
     /// The version of upstream Lucide Icons bundled with this release
     public static let lucideVersion = "1.7.0"
+    
+    /// The version of upstream Lucide Lab icons bundled with this release
+    public static let lucideLabVersion = "main"
 }

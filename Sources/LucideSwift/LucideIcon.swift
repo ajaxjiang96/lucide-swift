@@ -12,6 +12,8 @@ public enum LucideIconError: Error {
     case iconNotFound(String)
 }
 
+// MARK: - Regular Icons
+
 /// A view that displays a Lucide icon
 public struct LucideIcon: View {
     let iconShape: LucideShape
@@ -66,11 +68,13 @@ public struct LucideIcon: View {
     ) {
         if let iconName = LucideIconName(rawValue: name) {
             self.iconShape = LucideShape(path: iconName.path)
+        } else if let labIconName = LucideLabIconName(rawValue: name) {
+            self.iconShape = LucideShape(path: labIconName.path)
         } else {
             // Fallback to house if not found
             self.iconShape = LucideShape(path: LucideIconName.house.path)
             #if DEBUG
-            print("⚠️ LucideIcon: Icon '\(name)' not found, using fallback")
+            print("⚠️ LucideIcon: Icon '\(name)' not found in regular or lab sets, using fallback")
             #endif
         }
         self._size = ScaledMetric(wrappedValue: size)
@@ -117,10 +121,12 @@ public struct LucideIconFill: View {
     public init(name: String, size: CGFloat = 24, color: Color? = nil) {
         if let iconName = LucideIconName(rawValue: name) {
             self.iconShape = LucideShape(path: iconName.path)
+        } else if let labIconName = LucideLabIconName(rawValue: name) {
+            self.iconShape = LucideShape(path: labIconName.path)
         } else {
             self.iconShape = LucideShape(path: LucideIconName.house.path)
             #if DEBUG
-            print("⚠️ LucideIconFill: Icon '\(name)' not found, using fallback")
+            print("⚠️ LucideIconFill: Icon '\(name)' not found in regular or lab sets, using fallback")
             #endif
         }
         self._size = ScaledMetric(wrappedValue: size)
@@ -139,6 +145,54 @@ public struct LucideIconFill: View {
     }
 }
 
+// MARK: - Lab Icons
+
+/// A view that displays an experimental Lucide Lab icon
+public struct LucideLabIcon: View {
+    let iconShape: LucideShape
+    @ScaledMetric var size: CGFloat
+    var color: Color?
+    var strokeWidth: CGFloat
+    var absoluteStrokeWidth: Bool
+    
+    /// Initialize with a LucideLabIconName enum case
+    public init(
+        _ iconName: LucideLabIconName,
+        size: CGFloat = 24,
+        color: Color? = nil,
+        strokeWidth: CGFloat = 2,
+        absoluteStrokeWidth: Bool = false
+    ) {
+        self.iconShape = LucideShape(path: iconName.path)
+        self._size = ScaledMetric(wrappedValue: size)
+        self.color = color
+        self.strokeWidth = strokeWidth
+        self.absoluteStrokeWidth = absoluteStrokeWidth
+    }
+    
+    public var body: some View {
+        LucideIcon(iconShape, size: size, color: color, strokeWidth: strokeWidth, absoluteStrokeWidth: absoluteStrokeWidth)
+    }
+}
+
+/// A view that displays a filled experimental Lucide Lab icon
+public struct LucideLabIconFill: View {
+    let iconShape: LucideShape
+    @ScaledMetric var size: CGFloat
+    var color: Color?
+    
+    /// Initialize with a LucideLabIconName enum case
+    public init(_ iconName: LucideLabIconName, size: CGFloat = 24, color: Color? = nil) {
+        self.iconShape = LucideShape(path: iconName.path)
+        self._size = ScaledMetric(wrappedValue: size)
+        self.color = color
+    }
+    
+    public var body: some View {
+        LucideIconFill(iconShape, size: size, color: color)
+    }
+}
+
 // MARK: - Icon Lookup Helpers
 
 extension LucideIconName {
@@ -154,41 +208,48 @@ extension LucideIconName {
     }
 }
 
+extension LucideLabIconName {
+    /// Get a lab icon shape by name, returns nil if not found
+    public static func shape(named name: String) -> LucideShape? {
+        guard let iconName = LucideLabIconName(rawValue: name) else { return nil }
+        return LucideShape(path: iconName.path)
+    }
+    
+    /// All available lab icon names
+    public static var allNames: [String] {
+        LucideLabIconName.allCases.map { $0.rawValue }
+    }
+}
+
 // MARK: - Label Extensions
 
 public extension Label where Title == Text, Icon == LucideIcon {
     /// Creates a label with a Lucide icon
-    /// - Parameters:
-    ///   - titleKey: The title key for the label
-    ///   - icon: The Lucide icon name
-    ///   - size: The icon size (default: 24)
     init(_ titleKey: LocalizedStringKey, lucide icon: LucideIconName, size: CGFloat = 24) {
         self.init(title: { Text(titleKey) }, icon: { LucideIcon(icon, size: size) })
     }
     
+    /// Creates a label with a Lucide Lab icon
+    init(_ titleKey: LocalizedStringKey, lucideLab icon: LucideLabIconName, size: CGFloat = 24) {
+        self.init(title: { Text(titleKey) }, icon: { LucideIcon(LucideShape(path: icon.path), size: size) })
+    }
+    
     /// Creates a label with a Lucide icon from a string name
-    /// - Parameters:
-    ///   - titleKey: The title key for the label
-    ///   - iconName: The Lucide icon name (e.g., "settings", "house")
-    ///   - size: The icon size (default: 24)
     init(_ titleKey: LocalizedStringKey, lucideName iconName: String, size: CGFloat = 24) {
         self.init(title: { Text(titleKey) }, icon: { LucideIcon(name: iconName, size: size) })
     }
     
     /// Creates a label with a Lucide icon
-    /// - Parameters:
-    ///   - title: The title string for the label
-    ///   - icon: The Lucide icon name
-    ///   - size: The icon size (default: 24)
     init<S: StringProtocol>(_ title: S, lucide icon: LucideIconName, size: CGFloat = 24) {
         self.init(title: { Text(title) }, icon: { LucideIcon(icon, size: size) })
     }
     
+    /// Creates a label with a Lucide Lab icon
+    init<S: StringProtocol>(_ title: S, lucideLab icon: LucideLabIconName, size: CGFloat = 24) {
+        self.init(title: { Text(title) }, icon: { LucideIcon(LucideShape(path: icon.path), size: size) })
+    }
+    
     /// Creates a label with a Lucide icon from a string name
-    /// - Parameters:
-    ///   - title: The title string for the label
-    ///   - iconName: The Lucide icon name (e.g., "settings", "house")
-    ///   - size: The icon size (default: 24)
     init<S: StringProtocol>(_ title: S, lucideName iconName: String, size: CGFloat = 24) {
         self.init(title: { Text(title) }, icon: { LucideIcon(name: iconName, size: size) })
     }
@@ -284,13 +345,37 @@ public extension Label where Title == Text, Icon == LucideIcon {
                 Text("Label Integration").font(.headline)
                 VStack(alignment: .leading, spacing: 10) {
                     Label("Default Label", lucide: .info)
-                    Label("Large Blue Label", lucide: .cloudRain, size: 32)
-                        .foregroundColor(.blue)
+                    Label("Lab Label", lucideLab: .broom)
+                        .foregroundColor(.purple)
                     
                     Button(action: {}) {
                         Label("System Button", lucide: .trash)
                     }
                     .buttonStyle(.borderless)
+                }
+            }
+
+            // 7. Lab Icons Integration (Experimental)
+            VStack(spacing: 12) {
+                Text("Lucide Lab (Experimental)").font(.headline)
+                Text("Experimental icons from the lab repository").font(.caption).foregroundColor(.secondary)
+                HStack(spacing: 20) {
+                    VStack {
+                        LucideLabIcon(.broom, size: 32, color: .purple)
+                        Text("broom").font(.caption2)
+                    }
+                    VStack {
+                        LucideLabIcon(.avocado, size: 32, color: .green)
+                        Text("avocado").font(.caption2)
+                    }
+                    VStack {
+                        LucideLabIcon(.cactus, size: 32, color: .green)
+                        Text("cactus").font(.caption2)
+                    }
+                    VStack {
+                        LucideLabIcon(.burger, size: 32, color: .orange)
+                        Text("burger").font(.caption2)
+                    }
                 }
             }
         }
