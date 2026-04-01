@@ -150,7 +150,7 @@ public struct LucideIconFill: View {
 /// A view that displays an experimental Lucide Lab icon
 public struct LucideLabIcon: View {
     let iconShape: LucideShape
-    @ScaledMetric var size: CGFloat
+    var size: CGFloat
     var color: Color?
     var strokeWidth: CGFloat
     var absoluteStrokeWidth: Bool
@@ -164,7 +164,7 @@ public struct LucideLabIcon: View {
         absoluteStrokeWidth: Bool = false
     ) {
         self.iconShape = LucideShape(path: iconName.path)
-        self._size = ScaledMetric(wrappedValue: size)
+        self.size = size
         self.color = color
         self.strokeWidth = strokeWidth
         self.absoluteStrokeWidth = absoluteStrokeWidth
@@ -178,13 +178,13 @@ public struct LucideLabIcon: View {
 /// A view that displays a filled experimental Lucide Lab icon
 public struct LucideLabIconFill: View {
     let iconShape: LucideShape
-    @ScaledMetric var size: CGFloat
+    var size: CGFloat
     var color: Color?
     
     /// Initialize with a LucideLabIconName enum case
     public init(_ iconName: LucideLabIconName, size: CGFloat = 24, color: Color? = nil) {
         self.iconShape = LucideShape(path: iconName.path)
-        self._size = ScaledMetric(wrappedValue: size)
+        self.size = size
         self.color = color
     }
     
