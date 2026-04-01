@@ -103,8 +103,7 @@ import XCTest     // For tests only
     - `strokeWidth`: Adjustable stroke thickness (default 2).
     - `absoluteStrokeWidth`: Constant stroke width vs. proportional scaling.
 3. **LucideIconFill**: SwiftUI View wrapper for solid/filled icons.
-4. **SVGPathParser**: Converts SVG path strings to Swift Path commands.
-5. **LucideGenerator**: Fetches icons from upstream and generates Swift code.
+4. **LucideGenerator**: Fetches icons from upstream and generates Swift code using `nicklockwood/SVGPath`.
 
 ### SVG Path Commands Supported
 - `M/m`: Move to
@@ -129,12 +128,6 @@ Sources/
 
 ## Workflow
 
-### Adding New SVG Path Commands
-1. Update `SVGPathParser.swift` to handle new command
-2. Update `LucideShape.path(in:)` to render it
-3. Add tests in `LucideSwiftTests.swift`
-4. Regenerate icons: `swift run LucideGenerator`
-
 ### Syncing with Upstream
 The `.github/workflows/release.yml` runs daily to:
 1. Check upstream Lucide releases
@@ -145,3 +138,4 @@ The `.github/workflows/release.yml` runs daily to:
 ## Resources
 - Lucide Icons: https://lucide.dev
 - Upstream repo: https://github.com/lucide-icons/lucide
+b.com/lucide-icons/lucide

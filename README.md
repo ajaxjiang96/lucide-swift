@@ -139,7 +139,7 @@ This package generates pure Swift code from SVG paths:
 - **Icons**: 1694 Lucide icons (v1.7.0)
 - **Generated Code**: ~3.3MB of Swift path data
 - **Build Time**: Zero impact (generated at package build time)
-- **Runtime Memory**: Lazy-loaded paths, minimal overhead
+- **Runtime Memory**: Cached `static let` paths executed exactly once, negligible overhead during view diffing
 - **Stroke Scaling**: Configurable via `strokeWidth` and `absoluteStrokeWidth` parameters
 
 ## Icon Gallery
@@ -147,6 +147,14 @@ This package generates pure Swift code from SVG paths:
 Browse all 1694 icons at [lucide.dev/icons](https://lucide.dev/icons)
 
 Names are converted from kebab-case to camelCase:
+- `arrow-right` → `.arrowRight`
+- `circle-x` → `.circleX`
+- `a-arrow-down` → `.aArrowDown`
+
+## License
+
+ISC License (same as Lucide Icons)
+ebab-case to camelCase:
 - `arrow-right` → `.arrowRight`
 - `circle-x` → `.circleX`
 - `a-arrow-down` → `.aArrowDown`

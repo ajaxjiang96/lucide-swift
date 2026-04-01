@@ -325,11 +325,11 @@ struct SwiftCodeGenerator {
             
             code += "        \n"
             code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon path\n"
-            code += "    static var \(icon.swiftName)Path: Path {\n"
+            code += "    static let \(icon.swiftName)Path: Path = {\n"
             code += "        var path = Path()\n"
             code += "        \(pathCode)"
             code += "        return path\n"
-            code += "    }\n"
+            code += "    }()\n"
         }
         
         code += "}\n"
@@ -345,9 +345,7 @@ struct SwiftCodeGenerator {
         // Generate static properties
         for icon in icons {
             code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon\n"
-            code += "    public static var \(icon.swiftName): LucideShape {\n"
-            code += "        LucideShape(path: LucideIconName.\(icon.swiftName)Path)\n"
-            code += "    }\n\n"
+            code += "    public static let \(icon.swiftName): LucideShape = LucideShape(path: LucideIconName.\(icon.swiftName)Path)\n\n"
         }
         
         code += "}\n"

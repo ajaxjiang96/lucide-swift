@@ -19,14 +19,6 @@ final class LucideSwiftTests: XCTestCase {
         let _: any Shape = settingsIcon
     }
     
-    func testSVGPathParser() {
-        let pathData = "M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
-        let commands = SVGPathParser.parse(pathData: pathData)
-        
-        // Should have parsed some commands
-        XCTAssertGreaterThan(commands.count, 0)
-    }
-    
     func testIconView() {
         let icon = LucideIcon(Lucide.house, size: 24, color: .blue)
         // Just verify it compiles and creates a view

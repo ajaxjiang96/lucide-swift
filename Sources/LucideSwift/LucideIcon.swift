@@ -15,7 +15,7 @@ public enum LucideIconError: Error {
 /// A view that displays a Lucide icon
 public struct LucideIcon: View {
     let iconShape: LucideShape
-    var size: CGFloat
+    @ScaledMetric var size: CGFloat
     var color: Color?
     var strokeWidth: CGFloat
     var absoluteStrokeWidth: Bool
@@ -29,7 +29,7 @@ public struct LucideIcon: View {
         absoluteStrokeWidth: Bool = false
     ) {
         self.iconShape = icon
-        self.size = size
+        self._size = ScaledMetric(wrappedValue: size)
         self.color = color
         self.strokeWidth = strokeWidth
         self.absoluteStrokeWidth = absoluteStrokeWidth
@@ -44,7 +44,7 @@ public struct LucideIcon: View {
         absoluteStrokeWidth: Bool = false
     ) {
         self.iconShape = LucideShape(path: iconName.path)
-        self.size = size
+        self._size = ScaledMetric(wrappedValue: size)
         self.color = color
         self.strokeWidth = strokeWidth
         self.absoluteStrokeWidth = absoluteStrokeWidth
@@ -73,7 +73,7 @@ public struct LucideIcon: View {
             print("⚠️ LucideIcon: Icon '\(name)' not found, using fallback")
             #endif
         }
-        self.size = size
+        self._size = ScaledMetric(wrappedValue: size)
         self.color = color
         self.strokeWidth = strokeWidth
         self.absoluteStrokeWidth = absoluteStrokeWidth
@@ -96,20 +96,20 @@ public struct LucideIcon: View {
 /// A view that displays a filled Lucide icon
 public struct LucideIconFill: View {
     let iconShape: LucideShape
-    var size: CGFloat
+    @ScaledMetric var size: CGFloat
     var color: Color?
     
     /// Initialize with a LucideShape
     public init(_ icon: LucideShape, size: CGFloat = 24, color: Color? = nil) {
         self.iconShape = icon
-        self.size = size
+        self._size = ScaledMetric(wrappedValue: size)
         self.color = color
     }
     
     /// Initialize with an icon name enum case
     public init(_ iconName: LucideIconName, size: CGFloat = 24, color: Color? = nil) {
         self.iconShape = LucideShape(path: iconName.path)
-        self.size = size
+        self._size = ScaledMetric(wrappedValue: size)
         self.color = color
     }
     
@@ -123,7 +123,7 @@ public struct LucideIconFill: View {
             print("⚠️ LucideIconFill: Icon '\(name)' not found, using fallback")
             #endif
         }
-        self.size = size
+        self._size = ScaledMetric(wrappedValue: size)
         self.color = color
     }
     
