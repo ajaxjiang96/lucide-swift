@@ -11,7 +11,6 @@ A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) w
 - **Multi-Platform**: iOS 14+, macOS 11+, tvOS 14+, watchOS 7+, visionOS 1+
 - **Adjustable Stroke Width**: Control stroke width with `strokeWidth` parameter
 - **Absolute Stroke Width**: Keep stroke constant regardless of icon size with `absoluteStrokeWidth`
-- **Version Aligned**: Matches Lucide Icons upstream releases (currently 1.7.0)
 
 ## Requirements
 
@@ -26,7 +25,7 @@ Add to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "1.7.0")
+    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "1.0.0")
 ]
 ```
 
@@ -121,6 +120,33 @@ LucideIcon(.heart, size: 48, absoluteStrokeWidth: true)  // 2px stroke (same!)
 - `allCases` array for iteration
 - `rawValue` for string access
 
+## Versioning
+
+LucideSwift uses **dual versioning** to track both the library and the upstream Lucide icons:
+
+- **Library Version** (git tags): Independent semantic versioning for the Swift library itself (e.g., `1.0.0`, `1.1.0`)
+- **Upstream Version** (`.lucide-version`): Version of the Lucide icons bundled with each release (e.g., `1.7.0`, `1.8.0`)
+
+This allows independent bug fixes and features in the Swift library while still tracking which icon set is included.
+
+### Checking Versions
+
+Access version information programmatically:
+
+```swift
+import LucideSwift
+
+print("Library: \(LucideVersions.libraryVersion)")  // e.g., "1.0.0"
+print("Icons: \(LucideVersions.lucideVersion)")     // e.g., "1.7.0"
+```
+
+### Version Compatibility
+
+- Library versions follow [Semantic Versioning](https://semver.org/)
+- Major version bumps indicate breaking API changes
+- Minor/patch versions add features or fix bugs without breaking changes
+- Icon updates are tracked separately and noted in release notes
+
 ## Why This Package?
 
 Other Lucide packages for Swift use image assets (PDFs/PNGs) which can:
@@ -136,7 +162,8 @@ This package generates pure Swift code from SVG paths:
 
 ## Technical Details
 
-- **Icons**: 1694 Lucide icons (v1.7.0)
+- **Library Version**: 1.0.0
+- **Lucide Icons**: 1694 icons (v1.7.0)
 - **Generated Code**: ~3.3MB of Swift path data
 - **Build Time**: Zero impact (generated at package build time)
 - **Runtime Memory**: Cached `static let` paths executed exactly once, negligible overhead during view diffing
@@ -147,14 +174,6 @@ This package generates pure Swift code from SVG paths:
 Browse all 1694 icons at [lucide.dev/icons](https://lucide.dev/icons)
 
 Names are converted from kebab-case to camelCase:
-- `arrow-right` → `.arrowRight`
-- `circle-x` → `.circleX`
-- `a-arrow-down` → `.aArrowDown`
-
-## License
-
-ISC License (same as Lucide Icons)
-ebab-case to camelCase:
 - `arrow-right` → `.arrowRight`
 - `circle-x` → `.circleX`
 - `a-arrow-down` → `.aArrowDown`

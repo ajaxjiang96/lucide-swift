@@ -13,10 +13,48 @@ import SVGPath
 
 struct Config {
     static let lucideRepoURL = "https://github.com/lucide-icons/lucide.git"
-    static let version = "1.7.0"  // Lucide version to fetch
     static let iconsPath = "icons"
     static let outputFile = "Sources/LucideSwift/Lucide+Generated.swift"
     static let tempDirectory = FileManager.default.temporaryDirectory.appendingPathComponent("lucide-generator")
+    static let lucideVersionFile = ".lucide-version"
+    
+    /// Get the library version from git tags, or return "dev" if not on a tag
+    static var libraryVersion: String {
+        let task = Process()
+        task.executableURL = URL(fileURLWithPath: "/usr/bin/git")
+        task.arguments = ["describe", "--tags", "--exact-match", "HEAD"]
+        
+        let pipe = Pipe()
+        task.standardOutput = pipe
+        task.standardError = FileHandle.nullDevice
+        
+        do {
+            try task.run()
+            task.waitUntilExit()
+            
+            if task.terminationStatus == 0 {
+                let data = pipe.fileHandleForReading.readDataToEndOfFile()
+                if let version = String(data: data, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines) {
+                    return version
+                }
+            }
+        } catch {
+            // Fall through to default
+        }
+        
+        return "dev"
+    }
+    
+    /// Get the upstream Lucide version from the version file
+    static var lucideVersion: String {
+        let fileURL = URL(fileURLWithPath: lucideVersionFile)
+        do {
+            let content = try String(contentsOf: fileURL, encoding: .utf8)
+            return content.trimmingCharacters(in: .whitespacesAndNewlines)
+        } catch {
+            return "unknown"
+        }
+    }
 }
 
 // MARK: - Icon Data Structure
@@ -258,12 +296,17 @@ struct SVGParser {
 
 struct SwiftCodeGenerator {
     static func generateSwiftCode(icons: [Icon]) -> String {
+        let libraryVersion = Config.libraryVersion
+        let lucideVersion = Config.lucideVersion
+        
         var code = """
         //
         //  Lucide+Generated.swift
         //  LucideSwift
         //
         //  Auto-generated from Lucide Icons using SVGPath
+        //  Library Version: \(libraryVersion)
+        //  Lucide Icons Version: \(lucideVersion)
         //  DO NOT EDIT MANUALLY
         //
         
@@ -349,6 +392,20 @@ struct SwiftCodeGenerator {
         }
         
         code += "}\n"
+        code += "\n"
+        
+        code += """
+        // MARK: - Version Information
+        
+        /// Version information for LucideSwift
+        public struct LucideVersions {
+            /// The version of the LucideSwift library (from git tags)
+            public static let libraryVersion = "\(libraryVersion)"
+            
+            /// The version of upstream Lucide Icons bundled with this release
+            public static let lucideVersion = "\(lucideVersion)"
+        }
+        """
         
         return code
     }
@@ -437,7 +494,7 @@ func main() async throws {
     
     #if os(macOS)
     // Clone specific version
-    let tag = Config.version
+    let tag = Config.lucideVersion
     let cloneProcess = Process()
     cloneProcess.executableURL = URL(fileURLWithPath: "/usr/bin/git")
     cloneProcess.arguments = ["clone", "--depth", "1", "--branch", tag, Config.lucideRepoURL, Config.tempDirectory.path]
@@ -452,7 +509,7 @@ func main() async throws {
     throw GeneratorError.unsupportedPlatform
     #endif
     
-    print("✅ Repository cloned (version \(Config.version))")
+    print("✅ Repository cloned (version \(Config.lucideVersion))")
     
     // Find and parse icons
     let iconsDirectory = Config.tempDirectory.appendingPathComponent(Config.iconsPath)

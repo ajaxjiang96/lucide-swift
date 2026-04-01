@@ -3,6 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
+//  Library Version: dev
+//  Lucide Icons Version: 1.7.0
 //  DO NOT EDIT MANUALLY
 //
 
@@ -50640,4 +50642,15 @@ public struct Lucide {
     /// Zoom Out icon
     public static let zoomOut: LucideShape = LucideShape(path: LucideIconName.zoomOutPath)
 
+}
+
+// MARK: - Version Information
+
+/// Version information for LucideSwift
+public struct LucideVersions {
+    /// The version of the LucideSwift library (from git tags)
+    public static let libraryVersion = "dev"
+    
+    /// The version of upstream Lucide Icons bundled with this release
+    public static let lucideVersion = "1.7.0"
 }
