@@ -382,7 +382,7 @@ public struct LucideGallery: View {
             }
             .padding()
             .frame(width: 600) // Fixed width for screenshot
-            .background(Color(NSColor.windowBackgroundColor))
+            .background(Color.white)
     }
 }
 
