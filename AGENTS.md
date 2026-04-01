@@ -93,6 +93,7 @@ import XCTest     // For tests only
 - Track upstream Lucide version in `.lucide-version`
 - Commit messages: concise, imperative mood
 - Generated code updates go in separate commits
+- **IMPORTANT: You are not allowed to commit until explicitly instructed to do so. If you find the current working directory worth committing before proceeding, let the user know and wait for a decision.**
 
 ## Architecture
 

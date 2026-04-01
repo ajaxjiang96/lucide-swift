@@ -386,6 +386,8 @@ public struct LucideGallery: View {
     }
 }
 
+#if DEBUG
 #Preview {
     LucideGallery()
 }
+#endif
