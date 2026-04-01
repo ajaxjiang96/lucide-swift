@@ -128,12 +128,25 @@ Sources/
 
 ## Workflow
 
+### Versioning Strategy
+- **Dual versioning**: Library version (git tags) is independent from upstream Lucide version
+- **Library Version**: Tracked via git tags (e.g., `1.0.0`)
+- **Upstream Version**: Tracked in `.lucide-version` file (e.g., `1.7.0`)
+- Access programmatically via `LucideVersions.libraryVersion` and `LucideVersions.lucideVersion`
+
 ### Syncing with Upstream
-The `.github/workflows/release.yml` runs daily to:
+The `.github/workflows/sync-icons.yml` runs daily to:
 1. Check upstream Lucide releases
 2. Run `swift run LucideGenerator`
-3. Commit generated files
-4. Create tag and release
+3. Commit generated files with icon updates
+4. Does NOT create releases (library releases are manual)
+
+### Creating Releases
+The `.github/workflows/release.yml` is manually triggered to:
+1. Run generator and tests
+2. Create git tag with specified library version
+3. Create GitHub release with version info
+4. Library releases are decoupled from icon syncs
 
 ## Resources
 - Lucide Icons: https://lucide.dev
