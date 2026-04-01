@@ -18,42 +18,54 @@ struct Config {
     static let tempDirectory = FileManager.default.temporaryDirectory.appendingPathComponent("lucide-generator")
     static let lucideVersionFile = ".lucide-version"
     
-    /// Get the library version from git tags, or return "dev" if not on a tag
+    static let libraryVersionFile = ".library-version"
+    
+    /// Get the library version from .library-version file, or return "dev" if not found
     static var libraryVersion: String {
-        let task = Process()
-        task.executableURL = URL(fileURLWithPath: "/usr/bin/git")
-        task.arguments = ["describe", "--tags", "--exact-match", "HEAD"]
-        
-        let pipe = Pipe()
-        task.standardOutput = pipe
-        task.standardError = FileHandle.nullDevice
-        
-        do {
-            try task.run()
-            task.waitUntilExit()
-            
-            if task.terminationStatus == 0 {
-                let data = pipe.fileHandleForReading.readDataToEndOfFile()
-                if let version = String(data: data, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines) {
-                    return version
+        // Search for .library-version file starting from current directory and going up
+        var searchDir = FileManager.default.currentDirectoryPath
+        for _ in 0..<10 {  // Search up to 10 levels up
+            let filePath = "\(searchDir)/\(libraryVersionFile)"
+            if FileManager.default.fileExists(atPath: filePath) {
+                do {
+                    let content = try String(contentsOfFile: filePath, encoding: .utf8)
+                    return content.trimmingCharacters(in: .whitespacesAndNewlines)
+                } catch {
+                    print("⚠️  Warning: Could not read \(libraryVersionFile) at \(filePath)")
                 }
             }
-        } catch {
-            // Fall through to default
+            // Go up one directory
+            let parentDir = (searchDir as NSString).deletingLastPathComponent
+            if parentDir == searchDir {  // Reached root
+                break
+            }
+            searchDir = parentDir
         }
-        
         return "dev"
     }
     
     /// Get the upstream Lucide version from the version file
     static var lucideVersion: String {
-        let fileURL = URL(fileURLWithPath: lucideVersionFile)
-        do {
-            let content = try String(contentsOf: fileURL, encoding: .utf8)
-            return content.trimmingCharacters(in: .whitespacesAndNewlines)
-        } catch {
-            return "unknown"
+        // Search for .lucide-version file starting from current directory and going up
+        var searchDir = FileManager.default.currentDirectoryPath
+        for _ in 0..<10 {  // Search up to 10 levels up
+            let filePath = "\(searchDir)/\(lucideVersionFile)"
+            if FileManager.default.fileExists(atPath: filePath) {
+                do {
+                    let content = try String(contentsOfFile: filePath, encoding: .utf8)
+                    return content.trimmingCharacters(in: .whitespacesAndNewlines)
+                } catch {
+                    print("⚠️  Warning: Could not read \(lucideVersionFile) at \(filePath)")
+                }
+            }
+            // Go up one directory
+            let parentDir = (searchDir as NSString).deletingLastPathComponent
+            if parentDir == searchDir {  // Reached root
+                break
+            }
+            searchDir = parentDir
         }
+        return "unknown"
     }
 }
 
