@@ -355,6 +355,7 @@ struct SwiftCodeGenerator {
     
     private static func convertToSwiftPathCode(cgPath: CGPath) -> String {
         var code = ""
+        var currentPoint: CGPoint?
         
         cgPath.applyWithBlock { elementPtr in
             let element = elementPtr.pointee
@@ -364,24 +365,49 @@ struct SwiftCodeGenerator {
             case .moveToPoint:
                 let point = points[0]
                 code += "path.move(to: CGPoint(x: \(point.x), y: \(point.y)))\n"
+                currentPoint = point
                 
             case .addLineToPoint:
-                let point = points[0]
-                code += "path.addLine(to: CGPoint(x: \(point.x), y: \(point.y)))\n"
+                let endPoint = points[0]
+                
+                // Check if this is a near-zero-length line (dot indicator)
+                // These are used in icons like "info" to create dots
+                if let start = currentPoint {
+                    let dx = endPoint.x - start.x
+                    let dy = endPoint.y - start.y
+                    let distance = sqrt(dx * dx + dy * dy)
+                    
+                    // If the line is extremely short (< 0.1 units), render it as a circle
+                    // This matches SVG stroke-linecap="round" behavior for tiny lines
+                    if distance < 0.1 && distance > 0 {
+                        // Use a small circle with radius proportional to the viewbox
+                        // 0.35 is chosen to match the visual appearance of a 2px stroke at 24x24
+                        let radius = 0.35
+                        code += "path.addEllipse(in: CGRect(x: \(endPoint.x - radius), y: \(endPoint.y - radius), width: \(radius * 2), height: \(radius * 2)))\n"
+                    } else {
+                        code += "path.addLine(to: CGPoint(x: \(endPoint.x), y: \(endPoint.y)))\n"
+                    }
+                } else {
+                    code += "path.addLine(to: CGPoint(x: \(endPoint.x), y: \(endPoint.y)))\n"
+                }
+                currentPoint = endPoint
                 
             case .addQuadCurveToPoint:
                 let controlPoint = points[0]
                 let endPoint = points[1]
                 code += "path.addQuadCurve(to: CGPoint(x: \(endPoint.x), y: \(endPoint.y)), control: CGPoint(x: \(controlPoint.x), y: \(controlPoint.y)))\n"
+                currentPoint = endPoint
                 
             case .addCurveToPoint:
                 let controlPoint1 = points[0]
                 let controlPoint2 = points[1]
                 let endPoint = points[2]
                 code += "path.addCurve(to: CGPoint(x: \(endPoint.x), y: \(endPoint.y)), control1: CGPoint(x: \(controlPoint1.x), y: \(controlPoint1.y)), control2: CGPoint(x: \(controlPoint2.x), y: \(controlPoint2.y)))\n"
+                currentPoint = endPoint
                 
             case .closeSubpath:
                 code += "path.closeSubpath()\n"
+                currentPoint = nil
                 
             @unknown default:
                 break
