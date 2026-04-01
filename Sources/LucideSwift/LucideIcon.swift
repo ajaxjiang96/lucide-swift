@@ -350,9 +350,12 @@ public struct LucideGallery: View {
                             .foregroundColor(.purple)
                         
                         Button(action: {}) {
-                            Label("System Button", lucide: .trash)
+                            HStack {
+                                LucideIcon(.trash)
+                                Text("System Button")
+                            }
                         }
-                        .buttonStyle(.borderless)
+                        .buttonStyle(.plain)
                     }
                 }
 
