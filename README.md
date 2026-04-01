@@ -6,9 +6,9 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-ISC-blue.svg" alt="License: ISC"></a>
   <br>
   <a href="https://github.com/ajaxjiang96/lucide-swift/releases/latest"><img src="https://img.shields.io/github/v/release/ajaxjiang96/lucide-swift?label=Library" alt="Library Version"></a>
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fajaxjiang96%2Flucide-swift%2Fmain%2F.lucide-version&query=%24&label=Lucide&color=orange" alt="Lucide Icons Version">
-  <a href="https://github.com/ajaxjiang96/lucide-swift/actions/workflows/release.yml"><img src="https://github.com/ajaxjiang96/lucide-swift/actions/workflows/release.yml/badge.svg" alt="Release"></a>
-  <a href="https://github.com/ajaxjiang96/lucide-swift/actions/workflows/sync-icons.yml"><img src="https://github.com/ajaxjiang96/lucide-swift/actions/workflows/sync-icons.yml/badge.svg" alt="Sync Icons"></a>
+  <img src="https://img.shields.io/badge/Lucide-1.7.0-orange.svg" alt="Lucide Icons Version">
+  <a href="https://github.com/ajaxjiang96/lucide-swift/actions/workflows/release.yml"><img src="https://img.shields.io/github/actions/workflow/status/ajaxjiang96/lucide-swift/release.yml?branch=main&label=Release" alt="Release Workflow"></a>
+  <a href="https://github.com/ajaxjiang96/lucide-swift/actions/workflows/sync-icons.yml"><img src="https://img.shields.io/github/actions/workflow/status/ajaxjiang96/lucide-swift/sync-icons.yml?branch=main&label=Sync%20Icons" alt="Sync Icons Workflow"></a>
   <br>
   <a href="https://buymeacoffee.com/ajaxjiang"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
 </p>
