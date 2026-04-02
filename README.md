@@ -206,9 +206,6 @@ This package generates pure Swift code from SVG paths:
 
 ## Technical Details
 
-- **Library Version**: 0.2.0
-- **Lucide Icons**: 1694 icons (v1.7.0)
-- **Lucide Lab Icons**: 373 icons (experimental)
 - **Total Icons**: 2069 icons
 - **Generated Code**: ~4.1MB of Swift path data
 - **Build Time**: Zero impact (generated at package build time)
