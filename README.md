@@ -12,6 +12,9 @@
   <a href="https://buymeacoffee.com/ajaxjiang"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
 </p>
 
+> [!CAUTION]
+> **Active Development**: This repository is currently under active development. APIs and rendering behavior are subject to change.
+
 A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) with native SwiftUI support.
 
 ![Lucide Swift Preview](docs/preview.png)
