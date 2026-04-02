@@ -1,6 +1,3 @@
-# Ignore version tracking
-.lucide-version
-
 # Swift Package Manager
 .build/
 Packages/
