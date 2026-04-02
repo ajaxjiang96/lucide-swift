@@ -606,13 +606,40 @@ func main() async throws {
 
 func clone(url: String, to path: URL, branch: String) throws {
     #if os(macOS)
-    let cloneProcess = Process()
-    cloneProcess.executableURL = URL(fileURLWithPath: "/usr/bin/git")
-    cloneProcess.arguments = ["clone", "--depth", "1", "--branch", branch, url, path.path]
-    try cloneProcess.run()
-    cloneProcess.waitUntilExit()
-    if cloneProcess.terminationStatus != 0 {
-        throw GeneratorError.cloneFailed
+    // Check if branch is a commit SHA (40 hex characters)
+    let isCommitSHA = branch.count == 40 && branch.range(of: "^[a-f0-9]+$", options: .regularExpression) != nil
+    
+    if isCommitSHA {
+        // For commit SHAs, we need to clone without --depth 1, then checkout
+        print("  Detected commit SHA, cloning full repo...")
+        let cloneProcess = Process()
+        cloneProcess.executableURL = URL(fileURLWithPath: "/usr/bin/git")
+        cloneProcess.arguments = ["clone", url, path.path]
+        try cloneProcess.run()
+        cloneProcess.waitUntilExit()
+        if cloneProcess.terminationStatus != 0 {
+            throw GeneratorError.cloneFailed
+        }
+        
+        // Checkout the specific commit
+        let checkoutProcess = Process()
+        checkoutProcess.executableURL = URL(fileURLWithPath: "/usr/bin/git")
+        checkoutProcess.arguments = ["-C", path.path, "checkout", branch]
+        try checkoutProcess.run()
+        checkoutProcess.waitUntilExit()
+        if checkoutProcess.terminationStatus != 0 {
+            throw GeneratorError.cloneFailed
+        }
+    } else {
+        // For branches/tags, use shallow clone
+        let cloneProcess = Process()
+        cloneProcess.executableURL = URL(fileURLWithPath: "/usr/bin/git")
+        cloneProcess.arguments = ["clone", "--depth", "1", "--branch", branch, url, path.path]
+        try cloneProcess.run()
+        cloneProcess.waitUntilExit()
+        if cloneProcess.terminationStatus != 0 {
+            throw GeneratorError.cloneFailed
+        }
     }
     #else
     throw GeneratorError.unsupportedPlatform
