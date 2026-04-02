@@ -85,12 +85,13 @@ public struct LucideIcon: View {
     
     public var body: some View {
         let actualStrokeWidth: CGFloat = absoluteStrokeWidth ? strokeWidth : strokeWidth * (size / 24)
+        let style = StrokeStyle(lineWidth: actualStrokeWidth, lineCap: .round, lineJoin: .round)
         
         return Group {
             if let color = color {
-                iconShape.stroke(color, lineWidth: actualStrokeWidth)
+                iconShape.stroke(color, style: style)
             } else {
-                iconShape.stroke(lineWidth: actualStrokeWidth)
+                iconShape.stroke(style: style)
             }
         }
         .frame(width: size, height: size)
@@ -102,23 +103,47 @@ public struct LucideIconFill: View {
     let iconShape: LucideShape
     @ScaledMetric var size: CGFloat
     var color: Color?
+    var strokeWidth: CGFloat
+    var absoluteStrokeWidth: Bool
     
     /// Initialize with a LucideShape
-    public init(_ icon: LucideShape, size: CGFloat = 24, color: Color? = nil) {
+    public init(
+        _ icon: LucideShape,
+        size: CGFloat = 24,
+        color: Color? = nil,
+        strokeWidth: CGFloat = 2,
+        absoluteStrokeWidth: Bool = false
+    ) {
         self.iconShape = icon
         self._size = ScaledMetric(wrappedValue: size)
         self.color = color
+        self.strokeWidth = strokeWidth
+        self.absoluteStrokeWidth = absoluteStrokeWidth
     }
     
     /// Initialize with an icon name enum case
-    public init(_ iconName: LucideIconName, size: CGFloat = 24, color: Color? = nil) {
+    public init(
+        _ iconName: LucideIconName,
+        size: CGFloat = 24,
+        color: Color? = nil,
+        strokeWidth: CGFloat = 2,
+        absoluteStrokeWidth: Bool = false
+    ) {
         self.iconShape = LucideShape(path: iconName.path)
         self._size = ScaledMetric(wrappedValue: size)
         self.color = color
+        self.strokeWidth = strokeWidth
+        self.absoluteStrokeWidth = absoluteStrokeWidth
     }
     
     /// Initialize with a string icon name (type-safe lookup with fallback)
-    public init(name: String, size: CGFloat = 24, color: Color? = nil) {
+    public init(
+        name: String,
+        size: CGFloat = 24,
+        color: Color? = nil,
+        strokeWidth: CGFloat = 2,
+        absoluteStrokeWidth: Bool = false
+    ) {
         if let iconName = LucideIconName(rawValue: name) {
             self.iconShape = LucideShape(path: iconName.path)
         } else if let labIconName = LucideLabIconName(rawValue: name) {
@@ -131,14 +156,23 @@ public struct LucideIconFill: View {
         }
         self._size = ScaledMetric(wrappedValue: size)
         self.color = color
+        self.strokeWidth = strokeWidth
+        self.absoluteStrokeWidth = absoluteStrokeWidth
     }
     
     public var body: some View {
-        Group {
+        let actualStrokeWidth: CGFloat = absoluteStrokeWidth ? strokeWidth : strokeWidth * (size / 24)
+        let strokeStyle = StrokeStyle(lineWidth: actualStrokeWidth, lineCap: .round, lineJoin: .round)
+        let fillStyle = FillStyle(eoFill: true)
+        let rect = CGRect(x: 0, y: 0, width: size, height: size)
+        
+        return ZStack {
             if let color = color {
-                iconShape.fill(color)
+                iconShape.closedPath(in: rect).fill(color, style: fillStyle)
+                iconShape.openPath(in: rect).stroke(color, style: strokeStyle)
             } else {
-                iconShape.fill()
+                iconShape.closedPath(in: rect).fill(style: fillStyle)
+                iconShape.openPath(in: rect).stroke(style: strokeStyle)
             }
         }
         .frame(width: size, height: size)
@@ -180,16 +214,26 @@ public struct LucideLabIconFill: View {
     let iconShape: LucideShape
     var size: CGFloat
     var color: Color?
+    var strokeWidth: CGFloat
+    var absoluteStrokeWidth: Bool
     
     /// Initialize with a LucideLabIconName enum case
-    public init(_ iconName: LucideLabIconName, size: CGFloat = 24, color: Color? = nil) {
+    public init(
+        _ iconName: LucideLabIconName,
+        size: CGFloat = 24,
+        color: Color? = nil,
+        strokeWidth: CGFloat = 2,
+        absoluteStrokeWidth: Bool = false
+    ) {
         self.iconShape = LucideShape(path: iconName.path)
         self.size = size
         self.color = color
+        self.strokeWidth = strokeWidth
+        self.absoluteStrokeWidth = absoluteStrokeWidth
     }
     
     public var body: some View {
-        LucideIconFill(iconShape, size: size, color: color)
+        LucideIconFill(iconShape, size: size, color: color, strokeWidth: strokeWidth, absoluteStrokeWidth: absoluteStrokeWidth)
     }
 }
 
