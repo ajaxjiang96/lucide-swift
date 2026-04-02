@@ -104,10 +104,19 @@ struct ExperimentalView: View {
 
 ### Advanced Usage
 
+#### Filled Icons (Experimental)
+
+> [!WARNING]
+> `LucideIconFill` is **experimental**. Lucide icons are stroke-based, and filling them can result in artifacts on complex or open paths.
+
 ```swift
 // Filled icons
 LucideIconFill(.star, size: 48, color: .yellow)
+```
 
+#### Other Components
+
+```swift
 // Access the underlying Shape directly
 let shape: LucideShape = Lucide.house
 
@@ -207,6 +216,7 @@ This package generates pure Swift code from SVG paths:
 ## Technical Details
 
 - **Total Icons**: 2069 icons
+- **Filled Icons**: Experimental support included
 - **Generated Code**: ~4.1MB of Swift path data
 - **Build Time**: Zero impact (generated at package build time)
 - **Runtime Memory**: Cached `static let` paths executed exactly once, negligible overhead during view diffing
