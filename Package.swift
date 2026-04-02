@@ -39,6 +39,7 @@ let package = Package(
         .executableTarget(
             name: "LucideGenerator",
             dependencies: [
+                "LucideSwift",
                 .product(name: "SVGPath", package: "SVGPath")
             ]
         ),
