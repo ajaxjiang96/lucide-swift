@@ -28,9 +28,11 @@ jobs:
     
     outputs:
       library_version: ${{ steps.bump_version.outputs.new_version }}
-      lucide_version: ${{ steps.version.outputs.version }}
-      icon_count: ${{ steps.generate.outputs.icon_count }}
-      needs_update: ${{ steps.check.outputs.needs_update }}
+      lucide_version: ${{ steps.lucide_version.outputs.version }}
+      lucide_lab_version: ${{ steps.lucide_lab_version.outputs.version }}
+      icon_count: ${{ steps.check_changes.outputs.icon_count }}
+      needs_update: ${{ steps.check_changes.outputs.needs_update }}
+      update_reason: ${{ steps.check_changes.outputs.update_reason }}
     
     steps:
     - name: Checkout repository
@@ -40,7 +42,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Get upstream Lucide version
-      id: version
+      id: lucide_version
       run: |
         if [ -n "${{ github.event.inputs.force_version }}" ]; then
           VERSION="${{ github.event.inputs.force_version }}"
@@ -48,24 +50,86 @@ jobs:
           VERSION=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/lucide-icons/lucide/releases/latest | jq -r .tag_name)
         fi
         echo "version=$VERSION" >> $GITHUB_OUTPUT
-        echo "Upstream version: $VERSION"
+        echo "Upstream Lucide version: $VERSION"
     
-    - name: Check if update needed
-      id: check
+    - name: Get upstream Lucide Lab commit
+      id: lucide_lab_version
       run: |
-        CURRENT_VERSION=$(cat .lucide-version 2>/dev/null || echo "v0.0.0")
-        UPSTREAM_VERSION=${{ steps.version.outputs.version }}
+        # Get the latest commit SHA from lucide-lab main branch
+        LAB_COMMIT=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/lucide-icons/lucide-lab/commits/main | jq -r .sha)
+        echo "version=$LAB_COMMIT" >> $GITHUB_OUTPUT
+        echo "Upstream Lucide Lab commit: $LAB_COMMIT"
+    
+    - name: Check for updates and generate icons
+      id: check_changes
+      run: |
+        CURRENT_LUCIDE_VERSION=$(cat .lucide-version 2>/dev/null || echo "v0.0.0")
+        CURRENT_LAB_VERSION=$(cat .lucide-lab-version 2>/dev/null || echo "")
+        UPSTREAM_LUCIDE_VERSION="${{ steps.lucide_version.outputs.version }}"
+        UPSTREAM_LAB_VERSION="${{ steps.lucide_lab_version.outputs.version }}"
         
-        if [ "$CURRENT_VERSION" != "$UPSTREAM_VERSION" ] || [ -n "${{ github.event.inputs.force_version }}" ]; then
-          echo "needs_update=true" >> $GITHUB_OUTPUT
-          echo "Update required: $CURRENT_VERSION → $UPSTREAM_VERSION"
+        NEEDS_UPDATE=false
+        UPDATE_REASON=""
+        
+        # Check Lucide main repo
+        if [ "$CURRENT_LUCIDE_VERSION" != "$UPSTREAM_LUCIDE_VERSION" ]; then
+          NEEDS_UPDATE=true
+          UPDATE_REASON="Lucide main updated ($CURRENT_LUCIDE_VERSION → $UPSTREAM_LUCIDE_VERSION)"
+          echo "✓ Lucide main has update: $CURRENT_LUCIDE_VERSION → $UPSTREAM_LUCIDE_VERSION"
         else
-          echo "needs_update=false" >> $GITHUB_OUTPUT
-          echo "Already up to date: $CURRENT_VERSION"
+          echo "✓ Lucide main is up to date: $CURRENT_LUCIDE_VERSION"
+        fi
+        
+        # Check Lucide Lab repo
+        if [ "$CURRENT_LAB_VERSION" != "$UPSTREAM_LAB_VERSION" ]; then
+          NEEDS_UPDATE=true
+          if [ -n "$UPDATE_REASON" ]; then
+            UPDATE_REASON="$UPDATE_REASON, Lucide Lab updated"
+          else
+            UPDATE_REASON="Lucide Lab updated"
+          fi
+          echo "✓ Lucide Lab has update: ${CURRENT_LAB_VERSION:0:7} → ${UPSTREAM_LAB_VERSION:0:7}"
+        else
+          echo "✓ Lucide Lab is up to date: ${CURRENT_LAB_VERSION:0:7}"
+        fi
+        
+        # Run generator to check for local codebase changes
+        echo "📦 Running generator to check for local changes..."
+        swift run LucideGenerator
+        ICON_COUNT=$(grep -c "case " Sources/LucideSwift/Lucide+Generated.swift || echo "0")
+        echo "icon_count=$ICON_COUNT" >> $GITHUB_OUTPUT
+        
+        # Check if generated file has changes
+        if [ -n "$(git status --porcelain Sources/LucideSwift/Lucide+Generated.swift)" ]; then
+          NEEDS_UPDATE=true
+          if [ -n "$UPDATE_REASON" ]; then
+            UPDATE_REASON="$UPDATE_REASON, local codebase changed"
+          else
+            UPDATE_REASON="Local codebase changed"
+          fi
+          echo "✓ Local codebase has changes"
+        else
+          echo "✓ No local codebase changes"
+        fi
+        
+        # Check if forced
+        if [ -n "${{ github.event.inputs.force_version }}" ]; then
+          NEEDS_UPDATE=true
+          UPDATE_REASON="Forced update to ${{ github.event.inputs.force_version }}"
+          echo "✓ Forced update requested"
+        fi
+        
+        echo "needs_update=$NEEDS_UPDATE" >> $GITHUB_OUTPUT
+        echo "update_reason=$UPDATE_REASON" >> $GITHUB_OUTPUT
+        
+        if [ "$NEEDS_UPDATE" = "true" ]; then
+          echo "Update required: $UPDATE_REASON"
+        else
+          echo "No update needed - all sources are up to date"
         fi
     
     - name: Get current library version
-      if: steps.check.outputs.needs_update == 'true'
+      if: steps.check_changes.outputs.needs_update == 'true'
       id: current_lib_version
       run: |
         LIB_VERSION=$(cat .library-version 2>/dev/null || echo "0.1.0")
@@ -73,7 +137,7 @@ jobs:
         echo "Current library version: $LIB_VERSION"
     
     - name: Bump patch version
-      if: steps.check.outputs.needs_update == 'true'
+      if: steps.check_changes.outputs.needs_update == 'true'
       id: bump_version
       run: |
         CURRENT_VERSION="${{ steps.current_lib_version.outputs.version }}"
@@ -91,66 +155,67 @@ jobs:
         echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
         echo "Bumped version: $CURRENT_VERSION → $NEW_VERSION"
     
-    - name: Write version files
-      if: steps.check.outputs.needs_update == 'true'
+    - name: Update version files
+      if: steps.check_changes.outputs.needs_update == 'true'
       run: |
         NEW_VERSION="${{ steps.bump_version.outputs.new_version }}"
-        LUCIDE_VERSION="${{ steps.version.outputs.version }}"
+        LUCIDE_VERSION="${{ steps.lucide_version.outputs.version }}"
+        LUCIDE_LAB_VERSION="${{ steps.lucide_lab_version.outputs.version }}"
         
         echo "$LUCIDE_VERSION" > .lucide-version
+        echo "$LUCIDE_LAB_VERSION" > .lucide-lab-version
         echo "$NEW_VERSION" > .library-version
+        echo "Updated version files:"
+        echo "  - Library: $NEW_VERSION"
+        echo "  - Lucide: $LUCIDE_VERSION"
+        echo "  - Lucide Lab: ${LUCIDE_LAB_VERSION:0:7}"
 
-    - name: Run generator
-      if: steps.check.outputs.needs_update == 'true'
-      id: generate
-      run: |
-        swift run LucideGenerator
-        ICON_COUNT=$(grep -c "case " Sources/LucideSwift/Lucide+Generated.swift || echo "0")
-        echo "icon_count=$ICON_COUNT" >> $GITHUB_OUTPUT
-    
     - name: Generate Preview Screenshot
-      if: steps.check.outputs.needs_update == 'true'
+      if: steps.check_changes.outputs.needs_update == 'true'
       run: swift run PreviewGenerator
     
     - name: Run tests
-      if: steps.check.outputs.needs_update == 'true'
+      if: steps.check_changes.outputs.needs_update == 'true'
       run: swift test
     
     - name: Build release
-      if: steps.check.outputs.needs_update == 'true'
+      if: steps.check_changes.outputs.needs_update == 'true'
       run: swift build -c release
     
     - name: Configure Git
-      if: steps.check.outputs.needs_update == 'true'
+      if: steps.check_changes.outputs.needs_update == 'true'
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
     
     - name: Commit changes
-      if: steps.check.outputs.needs_update == 'true'
+      if: steps.check_changes.outputs.needs_update == 'true'
       run: |
         NEW_VERSION="${{ steps.bump_version.outputs.new_version }}"
-        LUCIDE_VERSION="${{ steps.version.outputs.version }}"
+        LUCIDE_VERSION="${{ steps.lucide_version.outputs.version }}"
+        UPDATE_REASON="${{ steps.check_changes.outputs.update_reason }}"
+        ICON_COUNT="${{ steps.check_changes.outputs.icon_count }}"
         
         git add -A
-        git commit -m "chore: release $NEW_VERSION" -m "- Library version: $NEW_VERSION" -m "- Lucide Icons version: $LUCIDE_VERSION" -m "- ${{ steps.generate.outputs.icon_count }} icons" -m "Auto-generated by sync and release pipeline"
+        git commit -m "chore: release $NEW_VERSION" -m "- Library version: $NEW_VERSION" -m "- Lucide Icons version: $LUCIDE_VERSION" -m "- $ICON_COUNT icons" -m "Reason: $UPDATE_REASON" -m "Auto-generated by sync and release pipeline"
     
     - name: Create tag
-      if: steps.check.outputs.needs_update == 'true'
+      if: steps.check_changes.outputs.needs_update == 'true'
       run: |
         NEW_VERSION="${{ steps.bump_version.outputs.new_version }}"
-        LUCIDE_VERSION="${{ steps.version.outputs.version }}"
+        LUCIDE_VERSION="${{ steps.lucide_version.outputs.version }}"
+        ICON_COUNT="${{ steps.check_changes.outputs.icon_count }}"
         
-        git tag -a "$NEW_VERSION" -m "Release $NEW_VERSION" -m "LucideSwift Library $NEW_VERSION" -m "" -m "Bundled with Lucide Icons $LUCIDE_VERSION" -m "" -m "Changes:" -m "- Updated to ${{ steps.generate.outputs.icon_count }} icons from Lucide $LUCIDE_VERSION" -m "- Auto-generated from upstream"
+        git tag -a "$NEW_VERSION" -m "Release $NEW_VERSION" -m "LucideSwift Library $NEW_VERSION" -m "" -m "Bundled with Lucide Icons $LUCIDE_VERSION" -m "" -m "Changes:" -m "- Updated to $ICON_COUNT icons from Lucide $LUCIDE_VERSION" -m "- Auto-generated from upstream"
     
     - name: Push changes and tag
-      if: steps.check.outputs.needs_update == 'true'
+      if: steps.check_changes.outputs.needs_update == 'true'
       run: |
         git push
         git push --tags
 
     - name: Create GitHub Release
-      if: steps.check.outputs.needs_update == 'true'
+      if: steps.check_changes.outputs.needs_update == 'true'
       uses: softprops/action-gh-release@v1
       with:
         tag_name: ${{ steps.bump_version.outputs.new_version }}
@@ -159,11 +224,12 @@ jobs:
           ## LucideSwift ${{ steps.bump_version.outputs.new_version }}
 
           **Library Version:** ${{ steps.bump_version.outputs.new_version }}  
-          **Lucide Icons:** ${{ steps.version.outputs.version }}  
-          **Total Icons:** ${{ steps.generate.outputs.icon_count }}
+          **Lucide Icons:** ${{ steps.lucide_version.outputs.version }}  
+          **Lucide Lab:** ${{ steps.lucide_lab_version.outputs.version }}  
+          **Total Icons:** ${{ steps.check_changes.outputs.icon_count }}
 
           ### Changes
-          - Updated icons to Lucide ${{ steps.version.outputs.version }}
+          - ${{ steps.check_changes.outputs.update_reason }}
           - Auto-generated from upstream
 
           ### Installation
@@ -182,7 +248,8 @@ jobs:
           import LucideSwift
           
           print(LucideVersions.libraryVersion)  // "${{ steps.bump_version.outputs.new_version }}"
-          print(LucideVersions.lucideVersion)   // "${{ steps.version.outputs.version }}"
+          print(LucideVersions.lucideVersion)   // "${{ steps.lucide_version.outputs.version }}"
+          print(LucideVersions.lucideLabVersion) // "${{ steps.lucide_lab_version.outputs.version }}"
           ```
         draft: false
         prerelease: false
@@ -201,14 +268,16 @@ jobs:
         echo "✅ Successfully released LucideSwift ${{ needs.sync-and-release.outputs.library_version }}"
         echo "Library: ${{ needs.sync-and-release.outputs.library_version }}"
         echo "Lucide Icons: ${{ needs.sync-and-release.outputs.lucide_version }}"
+        echo "Lucide Lab: ${{ needs.sync-and-release.outputs.lucide_lab_version }}"
         echo "Icons: ${{ needs.sync-and-release.outputs.icon_count }}"
+        echo "Reason: ${{ needs.sync-and-release.outputs.update_reason }}"
         echo ""
         echo "Release URL: https://github.com/${{ github.repository }}/releases/tag/${{ needs.sync-and-release.outputs.library_version }}"
     
     - name: Print skip message
       if: needs.sync-and-release.result == 'success' && needs.sync-and-release.outputs.needs_update != 'true'
       run: |
-        echo "ℹ️ No update needed - already at latest Lucide version"
+        echo "ℹ️ No update needed - all sources are up to date"
     
     - name: Print failure message
       if: needs.sync-and-release.result == 'failure'
