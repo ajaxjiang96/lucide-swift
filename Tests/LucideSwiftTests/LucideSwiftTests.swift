@@ -38,6 +38,19 @@ final class LucideSwiftTests: XCTestCase {
         XCTAssertNotNil(iconView)
     }
     
+    func testImageExtension() {
+        // Verify Image initializers compile and return non-nil Image views
+        let image1 = Image(lucide: .house)
+        let image2 = Image(lucideFill: .heart)
+        let image3 = Image(lucideLab: .broom)
+        let image4 = Image(lucideLabFill: .avocado)
+        
+        XCTAssertNotNil(image1)
+        XCTAssertNotNil(image2)
+        XCTAssertNotNil(image3)
+        XCTAssertNotNil(image4)
+    }
+    
     func testAllIconsExist() {
         // Test that we can access various icons
         let icons: [LucideShape] = [
