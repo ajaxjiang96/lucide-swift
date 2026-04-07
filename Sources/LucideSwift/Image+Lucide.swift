@@ -80,8 +80,9 @@ public extension Image {
         context.setAllowsAntialiasing(true)
         context.setShouldAntialias(true)
         
-        // Scale context for Retina resolution
-        context.scaleBy(x: scale, y: scale)
+        // Flip coordinate system to match SwiftUI (Top-left origin)
+        context.translateBy(x: 0, y: CGFloat(pixelHeight))
+        context.scaleBy(x: scale, y: -scale)
         
         let rect = CGRect(origin: .zero, size: size)
         
