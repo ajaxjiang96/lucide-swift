@@ -111,7 +111,10 @@ import XCTest     // For tests only
 - `V/v`: Vertical line
 - `C/c`: Cubic bezier curve
 - `Z/z`: Close path
-- TODO: `Q/q`, `T/t`, `S/s`, `A/a`
+- `Q/q`: Quadratic bezier curve (supported via conversion)
+- `T/t`: Smooth quadratic curve (supported via conversion)
+- `S/s`: Smooth cubic curve (supported via conversion)
+- `A/a`: Elliptical arc (supported via conversion)
 
 ### File Structure
 ```
