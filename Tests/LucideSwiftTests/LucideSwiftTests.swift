@@ -104,4 +104,52 @@ final class LucideSwiftTests: XCTestCase {
         // Polygon conversion: M x1 y1 L x2 y2 ... Z
         XCTAssertTrue(paths.contains("M12 2 L19 21 L12 17 L5 21 Z"))
     }
+    
+    func testSVGParserEdgeCases() {
+        let svgContent = """
+        <svg>
+            <polyline points='1,2 3,4 5,6' />
+            <circle cx="10" cy="10" /> <!-- Missing r -->
+            <rect width='10' height='10' /> <!-- Missing x, y -->
+            <line x1="0" y1="0" x2="10" y2="10" stroke-width="2" /> <!-- Extra attributes -->
+            <ellipse cx='12' cy='12' rx='5' ry='3'></ellipse> <!-- Non-self-closing -->
+        </svg>
+        """
+        
+        let paths = SVGParser.extractPaths(from: svgContent)
+        XCTAssertEqual(paths.count, 5)
+        
+        // Polyline (no Z)
+        XCTAssertTrue(paths.contains("M1 2 L3 4 L5 6"))
+        
+        // Circle missing r (fallback to 0)
+        XCTAssertTrue(paths.contains("M10.0 10.0 A0.0 0.0 0 1 0 10.0 10.0 A0.0 0.0 0 1 0 10.0 10.0"))
+        
+        // Rect missing x,y (fallback to 0)
+        XCTAssertTrue(paths.contains("M0.0 0.0 H10.0 V10.0 H0.0 Z"))
+        
+        // Line with extra attributes
+        XCTAssertTrue(paths.contains("M0.0 0.0 L10.0 10.0"))
+        
+        // Ellipse non-self-closing + single quotes
+        XCTAssertTrue(paths.contains("M7.0 12.0 A5.0 3.0 0 1 0 17.0 12.0 A5.0 3.0 0 1 0 7.0 12.0"))
+    }
+    
+    func testIconInitialization() {
+        // String lookup - Regular
+        let house = LucideIcon(name: "house")
+        XCTAssertNotNil(house)
+        
+        // String lookup - Lab
+        let broom = LucideIcon(name: "broom")
+        XCTAssertNotNil(broom)
+        
+        // String lookup - Non-existent (Fallback to house)
+        let unknown = LucideIcon(name: "non-existent-icon")
+        XCTAssertNotNil(unknown)
+        
+        // Filled version
+        let filledHouse = LucideIconFill(name: "house")
+        XCTAssertNotNil(filledHouse)
+    }
 }
