@@ -12,10 +12,14 @@ env:
 jobs:
   test:
     runs-on: macos-latest
+    permissions:
+      contents: write
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v6
+      with:
+        ref: ${{ github.head_ref }}
     
     - name: Run tests
       run: swift test
@@ -25,3 +29,20 @@ jobs:
     
     - name: Build release
       run: swift build -c release
+
+    - name: Generate preview
+      if: github.event_name == 'pull_request'
+      run: swift run PreviewGenerator
+
+    - name: Commit preview changes
+      if: github.event_name == 'pull_request'
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add docs/preview.png
+        if git diff --staged --quiet; then
+          echo "No changes in preview.png"
+        else
+          git commit -m "docs: update preview for PR verification"
+          git push
+        fi
