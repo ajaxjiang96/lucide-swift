@@ -18,16 +18,100 @@ public struct LucideShape: Shape {
     }
     
     public func path(in rect: CGRect) -> Path {
+        let transform = transform(in: rect)
+        return path.applying(transform)
+    }
+    
+    /// Returns a path containing only the open subpaths, scaled to the given rect
+    public func openPath(in rect: CGRect) -> Path {
+        let (open, _) = separatePaths()
+        return open.applying(transform(in: rect))
+    }
+    
+    /// Returns a path containing only the closed subpaths, scaled to the given rect
+    public func closedPath(in rect: CGRect) -> Path {
+        let (_, closed) = separatePaths()
+        return closed.applying(transform(in: rect))
+    }
+    
+    private func transform(in rect: CGRect) -> CGAffineTransform {
         // Scale the pre-generated path to fit the rect
         // Lucide icons are designed for 24x24 viewBox
         let scaleX = rect.width / 24
         let scaleY = rect.height / 24
         
-        var transform = CGAffineTransform.identity
-        transform = transform.translatedBy(x: rect.minX, y: rect.minY)
-        transform = transform.scaledBy(x: scaleX, y: scaleY)
+        // Apply scaling first, then translation to avoid scaling the offset
+        let transform = CGAffineTransform(scaleX: scaleX, y: scaleY)
+        return transform.concatenating(CGAffineTransform(translationX: rect.minX, y: rect.minY))
+    }
+    
+    private func separatePaths() -> (open: Path, closed: Path) {
+        var openPath = Path()
+        var closedPath = Path()
         
-        return path.applying(transform)
+        var currentSubpath = Path()
+        var startPoint: CGPoint?
+        var lastPoint: CGPoint?
+        var isExplicitlyClosed = false
+        
+        func finishCurrentSubpath() {
+            guard !currentSubpath.isEmpty else { return }
+            
+            // A subpath is considered closed if it was explicitly closed OR if it's a loop (ends where it started)
+            // Use fuzzy comparison for coordinates to handle floating point precision
+            let isLoop = startPoint != nil && lastPoint != nil && startPoint!.isClose(to: lastPoint!)
+            let actuallyClosed = isExplicitlyClosed || isLoop
+            
+            if actuallyClosed {
+                closedPath.addPath(currentSubpath)
+            } else {
+                openPath.addPath(currentSubpath)
+            }
+        }
+        
+        path.cgPath.applyWithBlock { elementPtr in
+            let element = elementPtr.pointee
+            let points = element.points
+            
+            switch element.type {
+            case .moveToPoint:
+                finishCurrentSubpath()
+                currentSubpath = Path()
+                currentSubpath.move(to: points[0])
+                startPoint = points[0]
+                lastPoint = points[0]
+                isExplicitlyClosed = false
+                
+            case .addLineToPoint:
+                currentSubpath.addLine(to: points[0])
+                lastPoint = points[0]
+                
+            case .addQuadCurveToPoint:
+                currentSubpath.addQuadCurve(to: points[1], control: points[0])
+                lastPoint = points[1]
+                
+            case .addCurveToPoint:
+                currentSubpath.addCurve(to: points[2], control1: points[0], control2: points[1])
+                lastPoint = points[2]
+                
+            case .closeSubpath:
+                currentSubpath.closeSubpath()
+                isExplicitlyClosed = true
+                
+            @unknown default:
+                break
+            }
+        }
+        
+        finishCurrentSubpath()
+        
+        return (openPath, closedPath)
+    }
+}
+
+private extension CGPoint {
+    func isClose(to other: CGPoint, tolerance: CGFloat = 0.001) -> Bool {
+        abs(x - other.x) < tolerance && abs(y - other.y) < tolerance
     }
 }
 
