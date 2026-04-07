@@ -25,3 +25,33 @@ jobs:
     
     - name: Build release
       run: swift build -c release
+
+    - name: Generate PR preview
+      if: github.event_name == 'pull_request'
+      run: |
+        swift run PreviewGenerator
+        mv docs/preview.png docs/preview-pr.png
+
+    - name: Checkout main for preview
+      if: github.event_name == 'pull_request'
+      uses: actions/checkout@v6
+      with:
+        ref: main
+        path: main-repo
+
+    - name: Generate main preview
+      if: github.event_name == 'pull_request'
+      run: |
+        cd main-repo
+        swift run PreviewGenerator
+        cp docs/preview.png ../docs/preview-main.png
+        cd ..
+
+    - name: Upload preview artifacts
+      if: github.event_name == 'pull_request'
+      uses: actions/upload-artifact@v4
+      with:
+        name: visual-diff
+        path: |
+          docs/preview-pr.png
+          docs/preview-main.png
