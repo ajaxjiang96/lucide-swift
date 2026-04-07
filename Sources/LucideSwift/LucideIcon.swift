@@ -426,6 +426,24 @@ public struct LucideGallery: View {
                         }
                     }
                 }
+                
+                // 8. SwiftUI Image Extension
+                VStack(spacing: 12) {
+                    Text("SwiftUI Image Extension").font(.headline)
+                    Text("Directly use as Image for modifiers like .resizable()").font(.caption).foregroundColor(.secondary)
+                    HStack(spacing: 20) {
+                        Image(lucide: .house, size: CGSize(width: 32, height: 32))
+                            .foregroundColor(.blue)
+                        
+                        Image(lucideFill: .heart, size: CGSize(width: 32, height: 32))
+                            .foregroundColor(.red)
+                        
+                        Image(lucide: .settings, size: CGSize(width: 32, height: 32))
+                            .resizable()
+                            .frame(width: 48, height: 48)
+                            .foregroundColor(.gray)
+                    }
+                }
             }
             .padding()
             .frame(width: 600) // Fixed width for screenshot
