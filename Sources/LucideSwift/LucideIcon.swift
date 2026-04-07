@@ -14,7 +14,15 @@ public enum LucideIconError: Error {
 
 // MARK: - Regular Icons
 
-/// A view that displays a Lucide icon
+/// A SwiftUI view that displays a Lucide icon.
+///
+/// `LucideIcon` is the primary way to display icons in your app. It provides
+/// high-level controls for sizing, coloring, and stroke width.
+///
+/// ### Example
+/// ```swift
+/// LucideIcon(.house, size: 32, color: .blue, strokeWidth: 1.5)
+/// ```
 public struct LucideIcon: View {
     let iconShape: LucideShape
     @ScaledMetric var size: CGFloat
@@ -22,7 +30,13 @@ public struct LucideIcon: View {
     var strokeWidth: CGFloat
     var absoluteStrokeWidth: Bool
     
-    /// Initialize with a LucideShape
+    /// Initialize with a ``LucideShape``.
+    /// - Parameters:
+    ///   - icon: The icon shape to display.
+    ///   - size: The base size of the icon in points (default 24).
+    ///   - color: The color of the icon (default nil, inherits from environment).
+    ///   - strokeWidth: The stroke width in points (default 2).
+    ///   - absoluteStrokeWidth: If true, stroke width remains constant regardless of size.
     public init(
         _ icon: LucideShape,
         size: CGFloat = 24,
@@ -37,7 +51,7 @@ public struct LucideIcon: View {
         self.absoluteStrokeWidth = absoluteStrokeWidth
     }
     
-    /// Initialize with an icon name enum case
+    /// Initialize with a ``LucideIconName`` enum case.
     public init(
         _ iconName: LucideIconName,
         size: CGFloat = 24,
@@ -52,13 +66,13 @@ public struct LucideIcon: View {
         self.absoluteStrokeWidth = absoluteStrokeWidth
     }
     
-    /// Initialize with a string icon name (type-safe lookup with fallback)
+    /// Initialize with a string icon name (type-safe lookup with fallback).
     /// - Parameters:
-    ///   - name: The icon name (e.g., "house", "settings", "heart")
-    ///   - size: The icon size (default: 24)
-    ///   - color: The icon color (default: nil, inherits from environment)
-    ///   - strokeWidth: The stroke width (default: 2)
-    ///   - absoluteStrokeWidth: When true, stroke width stays constant regardless of icon size
+    ///   - name: The icon name (e.g., "house", "settings", "heart").
+    ///   - size: The icon size (default: 24).
+    ///   - color: The icon color (default: nil, inherits from environment).
+    ///   - strokeWidth: The stroke width (default: 2).
+    ///   - absoluteStrokeWidth: When true, stroke width stays constant regardless of icon size.
     public init(
         name: String,
         size: CGFloat = 24,
@@ -98,7 +112,15 @@ public struct LucideIcon: View {
     }
 }
 
-/// A view that displays a filled Lucide icon
+/// A SwiftUI view that displays a filled Lucide icon.
+///
+/// `LucideIconFill` renders closed areas of the icon with a solid fill,
+/// while keeping decorative lines as strokes.
+///
+/// ### Example
+/// ```swift
+/// LucideIconFill(.star, color: .yellow)
+/// ```
 public struct LucideIconFill: View {
     let iconShape: LucideShape
     @ScaledMetric var size: CGFloat
@@ -106,7 +128,7 @@ public struct LucideIconFill: View {
     var strokeWidth: CGFloat
     var absoluteStrokeWidth: Bool
     
-    /// Initialize with a LucideShape
+    /// Initialize with a ``LucideShape``.
     public init(
         _ icon: LucideShape,
         size: CGFloat = 24,
@@ -121,7 +143,7 @@ public struct LucideIconFill: View {
         self.absoluteStrokeWidth = absoluteStrokeWidth
     }
     
-    /// Initialize with an icon name enum case
+    /// Initialize with a ``LucideIconName`` enum case.
     public init(
         _ iconName: LucideIconName,
         size: CGFloat = 24,
@@ -136,7 +158,7 @@ public struct LucideIconFill: View {
         self.absoluteStrokeWidth = absoluteStrokeWidth
     }
     
-    /// Initialize with a string icon name (type-safe lookup with fallback)
+    /// Initialize with a string icon name (type-safe lookup with fallback).
     public init(
         name: String,
         size: CGFloat = 24,
@@ -240,26 +262,28 @@ public struct LucideLabIconFill: View {
 // MARK: - Icon Lookup Helpers
 
 extension LucideIconName {
-    /// Get an icon shape by name, returns nil if not found
+    /// Returns the ``LucideShape`` for the given icon name.
+    /// - Parameter name: The raw name of the icon.
+    /// - Returns: A ``LucideShape`` if found, otherwise `nil`.
     public static func shape(named name: String) -> LucideShape? {
         guard let iconName = LucideIconName(rawValue: name) else { return nil }
         return LucideShape(path: iconName.path)
     }
     
-    /// All available icon names
+    /// A list of all available icon names in the regular set.
     public static var allNames: [String] {
         LucideIconName.allCases.map { $0.rawValue }
     }
 }
 
 extension LucideLabIconName {
-    /// Get a lab icon shape by name, returns nil if not found
+    /// Returns the ``LucideShape`` for the given experimental lab icon name.
     public static func shape(named name: String) -> LucideShape? {
         guard let iconName = LucideLabIconName(rawValue: name) else { return nil }
         return LucideShape(path: iconName.path)
     }
     
-    /// All available lab icon names
+    /// A list of all available icon names in the experimental lab set.
     public static var allNames: [String] {
         LucideLabIconName.allCases.map { $0.rawValue }
     }
@@ -267,33 +291,38 @@ extension LucideLabIconName {
 
 // MARK: - Label Extensions
 
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, visionOS 1.0, *)
 public extension Label where Title == Text, Icon == LucideIcon {
-    /// Creates a label with a Lucide icon
+    /// Creates a label with a Lucide icon.
+    /// - Parameters:
+    ///   - titleKey: A key for the localized title.
+    ///   - icon: The Lucide icon to display.
+    ///   - size: The size of the icon (default 24).
     init(_ titleKey: LocalizedStringKey, lucide icon: LucideIconName, size: CGFloat = 24) {
         self.init(title: { Text(titleKey) }, icon: { LucideIcon(icon, size: size) })
     }
     
-    /// Creates a label with a Lucide Lab icon
+    /// Creates a label with an experimental Lucide Lab icon.
     init(_ titleKey: LocalizedStringKey, lucideLab icon: LucideLabIconName, size: CGFloat = 24) {
         self.init(title: { Text(titleKey) }, icon: { LucideIcon(LucideShape(path: icon.path), size: size) })
     }
     
-    /// Creates a label with a Lucide icon from a string name
+    /// Creates a label with a Lucide icon from its string name.
     init(_ titleKey: LocalizedStringKey, lucideName iconName: String, size: CGFloat = 24) {
         self.init(title: { Text(titleKey) }, icon: { LucideIcon(name: iconName, size: size) })
     }
     
-    /// Creates a label with a Lucide icon
+    /// Creates a label with a Lucide icon using a title string.
     init<S: StringProtocol>(_ title: S, lucide icon: LucideIconName, size: CGFloat = 24) {
         self.init(title: { Text(title) }, icon: { LucideIcon(icon, size: size) })
     }
     
-    /// Creates a label with a Lucide Lab icon
+    /// Creates a label with an experimental Lucide Lab icon using a title string.
     init<S: StringProtocol>(_ title: S, lucideLab icon: LucideLabIconName, size: CGFloat = 24) {
         self.init(title: { Text(title) }, icon: { LucideIcon(LucideShape(path: icon.path), size: size) })
     }
     
-    /// Creates a label with a Lucide icon from a string name
+    /// Creates a label with a Lucide icon from its string name using a title string.
     init<S: StringProtocol>(_ title: S, lucideName iconName: String, size: CGFloat = 24) {
         self.init(title: { Text(title) }, icon: { LucideIcon(name: iconName, size: size) })
     }

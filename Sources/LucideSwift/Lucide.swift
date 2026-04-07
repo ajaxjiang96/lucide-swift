@@ -9,7 +9,18 @@
 
 import SwiftUI
 
-/// A Shape representing a Lucide icon
+/// A Shape representing a Lucide icon.
+///
+/// `LucideShape` is the underlying vector representation of a Lucide icon.
+/// While you can use it directly like any other SwiftUI `Shape`, it is usually
+/// easier to use the ``LucideIcon`` or ``LucideIconFill`` views.
+///
+/// ### Example
+/// ```swift
+/// Lucide.house
+///     .stroke(Color.blue, lineWidth: 2)
+///     .frame(width: 24, height: 24)
+/// ```
 public struct LucideShape: Shape {
     let path: Path
     
@@ -17,18 +28,25 @@ public struct LucideShape: Shape {
         self.path = path
     }
     
+    /// Generates a path for the icon within the given rectangle.
+    /// - Parameter rect: The frame to fit the icon into.
+    /// - Returns: A `Path` containing all icon elements.
     public func path(in rect: CGRect) -> Path {
         let transform = transform(in: rect)
         return path.applying(transform)
     }
     
-    /// Returns a path containing only the open subpaths, scaled to the given rect
+    /// Returns a path containing only the open subpaths, scaled to the given rect.
+    ///
+    /// Open subpaths are typically decorative lines that should be stroked rather than filled.
     public func openPath(in rect: CGRect) -> Path {
         let (open, _) = separatePaths()
         return open.applying(transform(in: rect))
     }
     
-    /// Returns a path containing only the closed subpaths, scaled to the given rect
+    /// Returns a path containing only the closed subpaths, scaled to the given rect.
+    ///
+    /// Closed subpaths represent solid areas that can be safely filled.
     public func closedPath(in rect: CGRect) -> Path {
         let (_, closed) = separatePaths()
         return closed.applying(transform(in: rect))
