@@ -12,10 +12,14 @@ env:
 jobs:
   test:
     runs-on: macos-latest
+    permissions:
+      contents: write
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v6
+      with:
+        ref: ${{ github.head_ref }}
     
     - name: Run tests
       run: swift test
@@ -26,32 +30,19 @@ jobs:
     - name: Build release
       run: swift build -c release
 
-    - name: Generate PR preview
+    - name: Generate preview
+      if: github.event_name == 'pull_request'
+      run: swift run PreviewGenerator
+
+    - name: Commit preview changes
       if: github.event_name == 'pull_request'
       run: |
-        swift run PreviewGenerator
-        mv docs/preview.png docs/preview-pr.png
-
-    - name: Checkout main for preview
-      if: github.event_name == 'pull_request'
-      uses: actions/checkout@v6
-      with:
-        ref: main
-        path: main-repo
-
-    - name: Generate main preview
-      if: github.event_name == 'pull_request'
-      run: |
-        cd main-repo
-        swift run PreviewGenerator
-        cp docs/preview.png ../docs/preview-main.png
-        cd ..
-
-    - name: Upload preview artifacts
-      if: github.event_name == 'pull_request'
-      uses: actions/upload-artifact@v4
-      with:
-        name: visual-diff
-        path: |
-          docs/preview-pr.png
-          docs/preview-main.png
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add docs/preview.png
+        if git diff --staged --quiet; then
+          echo "No changes in preview.png"
+        else
+          git commit -m "docs: update preview for PR verification"
+          git push
+        fi
