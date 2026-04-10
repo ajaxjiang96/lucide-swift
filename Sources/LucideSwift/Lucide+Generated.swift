@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.3.0
-//  Lucide Icons Version: 1.7.0
+//  Library Version: 0.3.1
+//  Lucide Icons Version: 1.8.0
 //  Lucide Lab Version: 86fbd78b2c16815983e04fd8da898ae45d1d0d6d
 //  DO NOT EDIT MANUALLY
 //
@@ -227,6 +227,7 @@ public enum LucideIconName: String, CaseIterable {
     case bookmark
     case bookmarkCheck
     case bookmarkMinus
+    case bookmarkOff
     case bookmarkPlus
     case bookmarkX
     case boomBox
@@ -1420,6 +1421,7 @@ public enum LucideIconName: String, CaseIterable {
     case squareDashedBottomCode
     case squareDashedKanban
     case squareDashedMousePointer
+    case squareDashedText
     case squareDashedTopSolid
     case squareDivide
     case squareDot
@@ -1528,7 +1530,6 @@ public enum LucideIconName: String, CaseIterable {
     case textInitial
     case textQuote
     case textSearch
-    case textSelect
     case textWrap
     case theater
     case thermometer
@@ -2139,6 +2140,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.bookmarkCheckPath
         case .bookmarkMinus:
             return Self.bookmarkMinusPath
+        case .bookmarkOff:
+            return Self.bookmarkOffPath
         case .bookmarkPlus:
             return Self.bookmarkPlusPath
         case .bookmarkX:
@@ -4525,6 +4528,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.squareDashedKanbanPath
         case .squareDashedMousePointer:
             return Self.squareDashedMousePointerPath
+        case .squareDashedText:
+            return Self.squareDashedTextPath
         case .squareDashedTopSolid:
             return Self.squareDashedTopSolidPath
         case .squareDivide:
@@ -4741,8 +4746,6 @@ public enum LucideIconName: String, CaseIterable {
             return Self.textQuotePath
         case .textSearch:
             return Self.textSearchPath
-        case .textSelect:
-            return Self.textSelectPath
         case .textWrap:
             return Self.textWrapPath
         case .theater:
@@ -10057,6 +10060,28 @@ path.addCurve(to: CGPoint(x: 5.0, y: 19.999999999999996), control1: CGPoint(x: 5
 path.addLine(to: CGPoint(x: 5.0, y: 5.0))
 path.addCurve(to: CGPoint(x: 7.0, y: 3.0), control1: CGPoint(x: 5.0, y: 3.8954305003384135), control2: CGPoint(x: 5.895430500338413, y: 3.0))
 path.closeSubpath()
+        return path
+    }()
+        
+    /// Bookmark Off icon path
+    static let bookmarkOffPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 19.0, y: 19.0))
+path.addLine(to: CGPoint(x: 19.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 18.501856579099446, y: 20.86462838978384), control1: CGPoint(x: 18.999885069306764, y: 20.356384144897852), control2: CGPoint(x: 18.810111375163835, y: 20.685774671211625))
+path.addCurve(to: CGPoint(x: 17.5040000000002, y: 20.868000000000112), control1: CGPoint(x: 18.19360178303506, y: 21.04348210835605), control2: CGPoint(x: 17.81345638455093, y: 21.04476656359345))
+path.addLine(to: CGPoint(x: 12.992, y: 18.29))
+path.addCurve(to: CGPoint(x: 11.008, y: 18.29), control1: CGPoint(x: 12.377276770290182, y: 17.9388600552694), control2: CGPoint(x: 11.622723229709818, y: 17.9388600552694))
+path.addLine(to: CGPoint(x: 6.496000000000001, y: 20.868))
+path.addCurve(to: CGPoint(x: 5.498143420900753, y: 20.864628389783952), control1: CGPoint(x: 6.186543615449317, y: 21.044766563593406), control2: CGPoint(x: 5.8063982169651815, y: 21.043482108356095))
+path.addCurve(to: CGPoint(x: 5.0, y: 19.999999999999996), control1: CGPoint(x: 5.189888624836325, y: 20.685774671211814), control2: CGPoint(x: 5.000114930693319, y: 20.356384144898083))
+path.addLine(to: CGPoint(x: 5.0, y: 5.0))
+path.move(to: CGPoint(x: 2.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.move(to: CGPoint(x: 8.656, y: 3.0))
+path.addLine(to: CGPoint(x: 17.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 5.0), control1: CGPoint(x: 18.104569499661586, y: 3.0), control2: CGPoint(x: 19.0, y: 3.895430500338413))
+path.addLine(to: CGPoint(x: 19.0, y: 13.344))
         return path
     }()
         
@@ -33376,20 +33401,20 @@ path.addCurve(to: CGPoint(x: 10.0, y: 12.0), control1: CGPoint(x: 10.89543050033
     /// Radio Off icon path
     static let radioOffPath: Path = {
         var path = Path()
-        path.move(to: CGPoint(x: 10.4103, y: 10.7852))
-path.addCurve(to: CGPoint(x: 10.0, y: 11.999), control1: CGPoint(x: 10.1529, y: 11.1218), control2: CGPoint(x: 10.0, y: 11.5425))
-path.addCurve(to: CGPoint(x: 12.0, y: 13.999), control1: CGPoint(x: 10.0, y: 13.1036), control2: CGPoint(x: 10.8954, y: 13.999))
-path.addCurve(to: CGPoint(x: 13.324, y: 13.498), control1: CGPoint(x: 12.5077, y: 13.999), control2: CGPoint(x: 12.9713, y: 13.8098))
-path.move(to: CGPoint(x: 16.1992, y: 7.80078))
-path.addCurve(to: CGPoint(x: 17.9039, y: 12.5134), control1: CGPoint(x: 17.4739, y: 9.07549), control2: CGPoint(x: 18.0422, y: 10.8109))
-path.move(to: CGPoint(x: 19.0996, y: 4.89844))
-path.addCurve(to: CGPoint(x: 21.1932, y: 15.936), control1: CGPoint(x: 22.0892, y: 7.88804), control2: CGPoint(x: 22.7871, y: 12.2879))
+        path.move(to: CGPoint(x: 13.414, y: 13.414))
+path.addCurve(to: CGPoint(x: 11.468985352213405, y: 13.959394313165882), control1: CGPoint(x: 12.911851059476943, y: 13.933913168906228), control2: CGPoint(x: 12.16824421571562, y: 14.142425194396719))
+path.addCurve(to: CGPoint(x: 10.040605686834118, y: 12.531014647786595), control1: CGPoint(x: 10.769726488711193, y: 13.776363431935044), control2: CGPoint(x: 10.223636568064956, y: 13.230273511288807))
+path.addCurve(to: CGPoint(x: 10.585999999999999, y: 10.586000000000002), control1: CGPoint(x: 9.857574805603281, y: 11.83175578428438), control2: CGPoint(x: 10.066086831093772, y: 11.088148940523057))
+path.move(to: CGPoint(x: 16.247, y: 7.761))
+path.addCurve(to: CGPoint(x: 17.991, y: 12.333), control1: CGPoint(x: 17.451609597251995, y: 8.967933466255804), control2: CGPoint(x: 18.085767467491962, y: 10.630416139843618))
+path.move(to: CGPoint(x: 19.075, y: 4.933))
+path.addCurve(to: CGPoint(x: 21.308999999999997, y: 15.653), control1: CGPoint(x: 21.883791570298996, y: 7.744890008251956), control2: CGPoint(x: 22.760789524399495, y: 11.953223968841662))
 path.move(to: CGPoint(x: 2.0, y: 2.0))
 path.addLine(to: CGPoint(x: 22.0, y: 22.0))
-path.move(to: CGPoint(x: 4.89961, y: 19.0984))
-path.addCurve(to: CGPoint(x: 4.89961, y: 4.89844), control1: CGPoint(x: 0.999609, y: 15.1984), control2: CGPoint(x: 0.999609, y: 8.79844))
-path.move(to: CGPoint(x: 7.79922, y: 16.1992))
-path.addCurve(to: CGPoint(x: 7.32931, y: 8.25), control1: CGPoint(x: 5.66828, y: 14.0683), control2: CGPoint(x: 5.51165, y: 10.6498))
+path.move(to: CGPoint(x: 4.925, y: 19.067))
+path.addCurve(to: CGPoint(x: 4.925, y: 4.932999999999999), control1: CGPoint(x: 1.0251777132848137, y: 15.162689476980118), control2: CGPoint(x: 1.0251777132848172, y: 8.83731052301988))
+path.move(to: CGPoint(x: 7.753, y: 16.239))
+path.addCurve(to: CGPoint(x: 7.753000000000001, y: 7.761000000000001), control1: CGPoint(x: 5.4147043370349195, y: 13.896689544182705), control2: CGPoint(x: 5.4147043370349195, y: 10.103310455817294))
         return path
     }()
         
@@ -38769,6 +38794,42 @@ path.addLine(to: CGPoint(x: 3.0, y: 15.0))
         return path
     }()
         
+    /// Square Dashed Text icon path
+    static let squareDashedTextPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 14.0, y: 21.0))
+path.addLine(to: CGPoint(x: 15.0, y: 21.0))
+path.move(to: CGPoint(x: 14.0, y: 3.0))
+path.addLine(to: CGPoint(x: 15.0, y: 3.0))
+path.move(to: CGPoint(x: 19.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
+path.move(to: CGPoint(x: 21.0, y: 14.0))
+path.addLine(to: CGPoint(x: 21.0, y: 15.0))
+path.move(to: CGPoint(x: 21.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
+path.move(to: CGPoint(x: 21.0, y: 9.0))
+path.addLine(to: CGPoint(x: 21.0, y: 10.0))
+path.move(to: CGPoint(x: 3.0, y: 14.0))
+path.addLine(to: CGPoint(x: 3.0, y: 15.0))
+path.move(to: CGPoint(x: 3.0, y: 9.0))
+path.addLine(to: CGPoint(x: 3.0, y: 10.0))
+path.move(to: CGPoint(x: 5.0, y: 21.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
+path.move(to: CGPoint(x: 5.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 5.0), control1: CGPoint(x: 3.8954305003384135, y: 3.0), control2: CGPoint(x: 3.0, y: 3.8954305003384126))
+path.move(to: CGPoint(x: 7.0, y: 12.0))
+path.addLine(to: CGPoint(x: 17.0, y: 12.0))
+path.move(to: CGPoint(x: 7.0, y: 16.0))
+path.addLine(to: CGPoint(x: 13.0, y: 16.0))
+path.move(to: CGPoint(x: 7.0, y: 8.0))
+path.addLine(to: CGPoint(x: 15.0, y: 8.0))
+path.move(to: CGPoint(x: 9.0, y: 21.0))
+path.addLine(to: CGPoint(x: 10.0, y: 21.0))
+path.move(to: CGPoint(x: 9.0, y: 3.0))
+path.addLine(to: CGPoint(x: 10.0, y: 3.0))
+        return path
+    }()
+        
     /// Square Dashed Top Solid icon path
     static let squareDashedTopSolidPath: Path = {
         var path = Path()
@@ -41205,42 +41266,6 @@ path.addCurve(to: CGPoint(x: 17.0, y: 18.0), control1: CGPoint(x: 14.0, y: 16.65
 path.addCurve(to: CGPoint(x: 20.0, y: 15.0), control1: CGPoint(x: 18.65685424949238, y: 18.0), control2: CGPoint(x: 20.0, y: 16.65685424949238))
 path.addCurve(to: CGPoint(x: 17.0, y: 12.0), control1: CGPoint(x: 20.0, y: 13.34314575050762), control2: CGPoint(x: 18.65685424949238, y: 12.0))
 path.addCurve(to: CGPoint(x: 14.0, y: 15.0), control1: CGPoint(x: 15.34314575050762, y: 12.0), control2: CGPoint(x: 14.0, y: 13.34314575050762))
-        return path
-    }()
-        
-    /// Text Select icon path
-    static let textSelectPath: Path = {
-        var path = Path()
-        path.move(to: CGPoint(x: 14.0, y: 21.0))
-path.addLine(to: CGPoint(x: 15.0, y: 21.0))
-path.move(to: CGPoint(x: 14.0, y: 3.0))
-path.addLine(to: CGPoint(x: 15.0, y: 3.0))
-path.move(to: CGPoint(x: 19.0, y: 3.0))
-path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
-path.move(to: CGPoint(x: 21.0, y: 14.0))
-path.addLine(to: CGPoint(x: 21.0, y: 15.0))
-path.move(to: CGPoint(x: 21.0, y: 19.0))
-path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 21.0, y: 20.104569499661586), control2: CGPoint(x: 20.104569499661586, y: 21.0))
-path.move(to: CGPoint(x: 21.0, y: 9.0))
-path.addLine(to: CGPoint(x: 21.0, y: 10.0))
-path.move(to: CGPoint(x: 3.0, y: 14.0))
-path.addLine(to: CGPoint(x: 3.0, y: 15.0))
-path.move(to: CGPoint(x: 3.0, y: 9.0))
-path.addLine(to: CGPoint(x: 3.0, y: 10.0))
-path.move(to: CGPoint(x: 5.0, y: 21.0))
-path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 21.0), control2: CGPoint(x: 3.0, y: 20.104569499661586))
-path.move(to: CGPoint(x: 5.0, y: 3.0))
-path.addCurve(to: CGPoint(x: 3.0, y: 5.0), control1: CGPoint(x: 3.8954305003384135, y: 3.0), control2: CGPoint(x: 3.0, y: 3.8954305003384126))
-path.move(to: CGPoint(x: 7.0, y: 12.0))
-path.addLine(to: CGPoint(x: 17.0, y: 12.0))
-path.move(to: CGPoint(x: 7.0, y: 16.0))
-path.addLine(to: CGPoint(x: 13.0, y: 16.0))
-path.move(to: CGPoint(x: 7.0, y: 8.0))
-path.addLine(to: CGPoint(x: 15.0, y: 8.0))
-path.move(to: CGPoint(x: 9.0, y: 21.0))
-path.addLine(to: CGPoint(x: 10.0, y: 21.0))
-path.move(to: CGPoint(x: 9.0, y: 3.0))
-path.addLine(to: CGPoint(x: 10.0, y: 3.0))
         return path
     }()
         
@@ -57399,6 +57424,9 @@ public struct Lucide {
     /// Bookmark Minus icon
     public static let bookmarkMinus: LucideShape = LucideShape(path: LucideIconName.bookmarkMinusPath)
 
+    /// Bookmark Off icon
+    public static let bookmarkOff: LucideShape = LucideShape(path: LucideIconName.bookmarkOffPath)
+
     /// Bookmark Plus icon
     public static let bookmarkPlus: LucideShape = LucideShape(path: LucideIconName.bookmarkPlusPath)
 
@@ -60978,6 +61006,9 @@ public struct Lucide {
     /// Square Dashed Mouse Pointer icon
     public static let squareDashedMousePointer: LucideShape = LucideShape(path: LucideIconName.squareDashedMousePointerPath)
 
+    /// Square Dashed Text icon
+    public static let squareDashedText: LucideShape = LucideShape(path: LucideIconName.squareDashedTextPath)
+
     /// Square Dashed Top Solid icon
     public static let squareDashedTopSolid: LucideShape = LucideShape(path: LucideIconName.squareDashedTopSolidPath)
 
@@ -61301,9 +61332,6 @@ public struct Lucide {
 
     /// Text Search icon
     public static let textSearch: LucideShape = LucideShape(path: LucideIconName.textSearchPath)
-
-    /// Text Select icon
-    public static let textSelect: LucideShape = LucideShape(path: LucideIconName.textSelectPath)
 
     /// Text Wrap icon
     public static let textWrap: LucideShape = LucideShape(path: LucideIconName.textWrapPath)
@@ -62977,10 +63005,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.3.0"
+    public static let libraryVersion = "0.3.1"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.7.0"
+    public static let lucideVersion = "1.8.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "86fbd78b2c16815983e04fd8da898ae45d1d0d6d"
