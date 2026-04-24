@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.3.1
-//  Lucide Icons Version: 1.8.0
+//  Library Version: 0.3.2
+//  Lucide Icons Version: 1.9.0
 //  Lucide Lab Version: 86fbd78b2c16815983e04fd8da898ae45d1d0d6d
 //  DO NOT EDIT MANUALLY
 //
@@ -1546,6 +1546,7 @@ public enum LucideIconName: String, CaseIterable {
     case ticketX
     case tickets
     case ticketsPlane
+    case timeline
     case timer
     case timerOff
     case timerReset
@@ -4778,6 +4779,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.ticketsPath
         case .ticketsPlane:
             return Self.ticketsPlanePath
+        case .timeline:
+            return Self.timelinePath
         case .timer:
             return Self.timerPath
         case .timerOff:
@@ -41678,6 +41681,52 @@ path.closeSubpath()
         return path
     }()
         
+    /// Timeline icon path
+    static let timelinePath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 4.0, y: 12.0))
+path.addEllipse(in: CGRect(x: 3.6599999999999997, y: 11.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 4.0, y: 16.0))
+path.addEllipse(in: CGRect(x: 3.6599999999999997, y: 15.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 4.0, y: 20.0))
+path.addEllipse(in: CGRect(x: 3.6599999999999997, y: 19.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 4.0, y: 4.0))
+path.addEllipse(in: CGRect(x: 3.6599999999999997, y: 3.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 4.0, y: 8.0))
+path.addEllipse(in: CGRect(x: 3.6599999999999997, y: 7.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.414, y: 13.414))
+path.addCurve(to: CGPoint(x: 10.827999999999998, y: 14.0), control1: CGPoint(x: 9.788985462714916, y: 13.789098749621903), control2: CGPoint(x: 10.29761037304237, y: 13.999886725189011))
+path.addLine(to: CGPoint(x: 19.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 13.0), control1: CGPoint(x: 19.552284749830793, y: 14.0), control2: CGPoint(x: 20.0, y: 13.552284749830793))
+path.addLine(to: CGPoint(x: 20.0, y: 11.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 10.0), control1: CGPoint(x: 20.0, y: 10.447715250169207), control2: CGPoint(x: 19.552284749830793, y: 10.0))
+path.addLine(to: CGPoint(x: 10.828, y: 10.0))
+path.addCurve(to: CGPoint(x: 9.413999999999998, y: 10.586), control1: CGPoint(x: 10.29761037304237, y: 10.000113274810989), control2: CGPoint(x: 9.788985462714916, y: 10.210901250378097))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.414, y: 21.414))
+path.addCurve(to: CGPoint(x: 10.828, y: 22.0), control1: CGPoint(x: 9.788985462714916, y: 21.789098749621903), control2: CGPoint(x: 10.29761037304237, y: 21.999886725189008))
+path.addLine(to: CGPoint(x: 19.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 21.0), control1: CGPoint(x: 19.552284749830793, y: 22.0), control2: CGPoint(x: 20.0, y: 21.552284749830793))
+path.addLine(to: CGPoint(x: 20.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 18.0), control1: CGPoint(x: 20.0, y: 18.447715250169207), control2: CGPoint(x: 19.552284749830793, y: 18.0))
+path.addLine(to: CGPoint(x: 10.828, y: 18.0))
+path.addCurve(to: CGPoint(x: 9.413999999999998, y: 18.586), control1: CGPoint(x: 10.29761037304237, y: 18.000113274810992), control2: CGPoint(x: 9.788985462714916, y: 18.210901250378097))
+path.addLine(to: CGPoint(x: 8.0, y: 20.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 9.414, y: 5.414))
+path.addCurve(to: CGPoint(x: 10.827999999999998, y: 6.0), control1: CGPoint(x: 9.788985462714916, y: 5.789098749621903), control2: CGPoint(x: 10.29761037304237, y: 5.999886725189009))
+path.addLine(to: CGPoint(x: 19.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 5.0), control1: CGPoint(x: 19.552284749830793, y: 6.0), control2: CGPoint(x: 20.0, y: 5.552284749830793))
+path.addLine(to: CGPoint(x: 20.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 2.0), control1: CGPoint(x: 20.0, y: 2.4477152501692068), control2: CGPoint(x: 19.552284749830793, y: 2.0))
+path.addLine(to: CGPoint(x: 10.828, y: 2.0))
+path.addCurve(to: CGPoint(x: 9.414, y: 2.5859999999999994), control1: CGPoint(x: 10.297610373042371, y: 2.0001132748109898), control2: CGPoint(x: 9.788985462714916, y: 2.210901250378096))
+path.addLine(to: CGPoint(x: 8.0, y: 4.0))
+path.closeSubpath()
+        return path
+    }()
+        
     /// Timer icon path
     static let timerPath: Path = {
         var path = Path()
@@ -61381,6 +61430,9 @@ public struct Lucide {
     /// Tickets Plane icon
     public static let ticketsPlane: LucideShape = LucideShape(path: LucideIconName.ticketsPlanePath)
 
+    /// Timeline icon
+    public static let timeline: LucideShape = LucideShape(path: LucideIconName.timelinePath)
+
     /// Timer icon
     public static let timer: LucideShape = LucideShape(path: LucideIconName.timerPath)
 
@@ -63005,10 +63057,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.3.1"
+    public static let libraryVersion = "0.3.2"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.8.0"
+    public static let lucideVersion = "1.9.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "86fbd78b2c16815983e04fd8da898ae45d1d0d6d"
