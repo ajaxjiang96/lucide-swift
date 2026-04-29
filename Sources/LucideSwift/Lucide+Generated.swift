@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.3.3
-//  Lucide Icons Version: 1.11.0
+//  Library Version: 0.3.4
+//  Lucide Icons Version: 1.12.0
 //  Lucide Lab Version: 14d067fd7b15b179085c89d29dc1b44a37bc6569
 //  DO NOT EDIT MANUALLY
 //
@@ -111,6 +111,7 @@ public enum LucideIconName: String, CaseIterable {
     case arrowUpZA
     case arrowsUpFromLine
     case asterisk
+    case astroid
     case atSign
     case atom
     case audioLines
@@ -681,6 +682,7 @@ public enum LucideIconName: String, CaseIterable {
     case foldVertical
     case folder
     case folderArchive
+    case folderBookmark
     case folderCheck
     case folderClock
     case folderClosed
@@ -1912,6 +1914,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.arrowsUpFromLinePath
         case .asterisk:
             return Self.asteriskPath
+        case .astroid:
+            return Self.astroidPath
         case .atSign:
             return Self.atSignPath
         case .atom:
@@ -3052,6 +3056,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.folderPath
         case .folderArchive:
             return Self.folderArchivePath
+        case .folderBookmark:
+            return Self.folderBookmarkPath
         case .folderCheck:
             return Self.folderCheckPath
         case .folderClock:
@@ -7224,6 +7230,25 @@ path.move(to: CGPoint(x: 17.196, y: 9.0))
 path.addLine(to: CGPoint(x: 6.804, y: 15.0))
 path.move(to: CGPoint(x: 6.804, y: 9.0))
 path.addLine(to: CGPoint(x: 17.195999999999998, y: 15.0))
+        return path
+    }()
+        
+    /// Astroid icon path
+    static let astroidPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.983, y: 21.186))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.00239444452849), control1: CGPoint(x: 12.89459817226775, y: 21.65929176090364), control2: CGPoint(x: 12.481476867653754, y: 22.00239444452849))
+path.addCurve(to: CGPoint(x: 11.017000000000001, y: 21.186), control1: CGPoint(x: 11.518523132346246, y: 22.00239444452849), control2: CGPoint(x: 11.10540182773225, y: 21.65929176090364))
+path.addCurve(to: CGPoint(x: 2.814000000000008, y: 12.983), control1: CGPoint(x: 10.310135676260721, y: 16.982977471917604), control2: CGPoint(x: 7.017022528082407, y: 13.689864323739286))
+path.addCurve(to: CGPoint(x: 1.997605555471512, y: 12.000000000000004), control1: CGPoint(x: 2.340708239096368, y: 12.894598172267752), control2: CGPoint(x: 1.9976055554715135, y: 12.481476867653758))
+path.addCurve(to: CGPoint(x: 2.814000000000002, y: 11.017000000000001), control1: CGPoint(x: 1.9976055554715104, y: 11.51852313234625), control2: CGPoint(x: 2.340708239096362, y: 11.105401827732251))
+path.addCurve(to: CGPoint(x: 11.017, y: 2.8140000000000005), control1: CGPoint(x: 7.0170225280824035, y: 10.310135676260717), control2: CGPoint(x: 10.310135676260717, y: 7.017022528082401))
+path.addCurve(to: CGPoint(x: 12.0, y: 1.9976055554715035), control1: CGPoint(x: 11.105401827732248, y: 2.340708239096358), control2: CGPoint(x: 11.518523132346244, y: 1.997605555471503))
+path.addCurve(to: CGPoint(x: 12.983, y: 2.814000000000002), control1: CGPoint(x: 12.481476867653756, y: 1.997605555471504), control2: CGPoint(x: 12.894598172267754, y: 2.34070823909636))
+path.addCurve(to: CGPoint(x: 21.185999999999993, y: 11.017), control1: CGPoint(x: 13.689864323739279, y: 7.0170225280823955), control2: CGPoint(x: 16.982977471917593, y: 10.310135676260714))
+path.addCurve(to: CGPoint(x: 22.002394444528495, y: 11.999999999999996), control1: CGPoint(x: 21.659291760903635, y: 11.105401827732244), control2: CGPoint(x: 22.002394444528495, y: 11.51852313234624))
+path.addCurve(to: CGPoint(x: 21.186, y: 12.983), control1: CGPoint(x: 22.0023944445285, y: 12.481476867653752), control2: CGPoint(x: 21.659291760903642, y: 12.89459817226775))
+path.addCurve(to: CGPoint(x: 12.982999999999999, y: 21.186), control1: CGPoint(x: 16.9829774719176, y: 13.689864323739283), control2: CGPoint(x: 13.68986432373928, y: 16.9829774719176))
         return path
     }()
         
@@ -20919,6 +20944,30 @@ path.addCurve(to: CGPoint(x: 15.0, y: 21.0), control1: CGPoint(x: 13.0, y: 20.10
 path.addCurve(to: CGPoint(x: 17.0, y: 19.0), control1: CGPoint(x: 16.104569499661586, y: 21.0), control2: CGPoint(x: 17.0, y: 20.104569499661586))
 path.addCurve(to: CGPoint(x: 15.0, y: 17.0), control1: CGPoint(x: 17.0, y: 17.895430500338414), control2: CGPoint(x: 16.104569499661586, y: 17.0))
 path.addCurve(to: CGPoint(x: 13.0, y: 19.0), control1: CGPoint(x: 13.895430500338414, y: 17.0), control2: CGPoint(x: 13.0, y: 17.895430500338414))
+        return path
+    }()
+        
+    /// Folder Bookmark icon path
+    static let folderBookmarkPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 14.0))
+path.addLine(to: CGPoint(x: 15.0, y: 11.0))
+path.addLine(to: CGPoint(x: 18.0, y: 14.0))
+path.addLine(to: CGPoint(x: 18.0, y: 6.0))
+path.move(to: CGPoint(x: 20.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 18.0), control1: CGPoint(x: 21.104569499661586, y: 20.0), control2: CGPoint(x: 22.0, y: 19.104569499661586))
+path.addLine(to: CGPoint(x: 22.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 6.0), control1: CGPoint(x: 22.0, y: 6.8954305003384135), control2: CGPoint(x: 21.104569499661586, y: 6.0))
+path.addLine(to: CGPoint(x: 12.1, y: 6.0))
+path.addCurve(to: CGPoint(x: 10.41, y: 5.1), control1: CGPoint(x: 11.420332594295717, y: 6.006663575045611), control2: CGPoint(x: 10.78380237405493, y: 5.667682984384836))
+path.addLine(to: CGPoint(x: 9.6, y: 3.9))
+path.addCurve(to: CGPoint(x: 7.9300000000000015, y: 3.0000000000000004), control1: CGPoint(x: 9.23007753052734, y: 3.338279668547436), control2: CGPoint(x: 8.602586315592502, y: 3.0001107503190796))
+path.addLine(to: CGPoint(x: 4.0, y: 3.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 5.0), control1: CGPoint(x: 2.8954305003384135, y: 3.0), control2: CGPoint(x: 2.0, y: 3.8954305003384126))
+path.addLine(to: CGPoint(x: 2.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 20.0), control1: CGPoint(x: 2.0, y: 19.104569499661586), control2: CGPoint(x: 2.8954305003384135, y: 20.0))
+path.closeSubpath()
         return path
     }()
         
@@ -57208,6 +57257,9 @@ public struct Lucide {
     /// Asterisk icon
     public static let asterisk: LucideShape = LucideShape(path: LucideIconName.asteriskPath)
 
+    /// Astroid icon
+    public static let astroid: LucideShape = LucideShape(path: LucideIconName.astroidPath)
+
     /// At Sign icon
     public static let atSign: LucideShape = LucideShape(path: LucideIconName.atSignPath)
 
@@ -58917,6 +58969,9 @@ public struct Lucide {
 
     /// Folder Archive icon
     public static let folderArchive: LucideShape = LucideShape(path: LucideIconName.folderArchivePath)
+
+    /// Folder Bookmark icon
+    public static let folderBookmark: LucideShape = LucideShape(path: LucideIconName.folderBookmarkPath)
 
     /// Folder Check icon
     public static let folderCheck: LucideShape = LucideShape(path: LucideIconName.folderCheckPath)
@@ -63149,10 +63204,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.3.3"
+    public static let libraryVersion = "0.3.4"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.11.0"
+    public static let lucideVersion = "1.12.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "14d067fd7b15b179085c89d29dc1b44a37bc6569"
