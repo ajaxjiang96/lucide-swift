@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.3.4
-//  Lucide Icons Version: 1.12.0
+//  Library Version: 0.3.5
+//  Lucide Icons Version: 1.14.0
 //  Lucide Lab Version: 14d067fd7b15b179085c89d29dc1b44a37bc6569
 //  DO NOT EDIT MANUALLY
 //
@@ -1242,6 +1242,7 @@ public enum LucideIconName: String, CaseIterable {
     case repeatIcon
     case repeat1
     case repeat2
+    case repeatOff
     case replace
     case replaceAll
     case reply
@@ -1669,10 +1670,11 @@ public enum LucideIconName: String, CaseIterable {
     case warehouse
     case washingMachine
     case watch
-    case waves
     case wavesArrowDown
     case wavesArrowUp
+    case wavesHorizontal
     case wavesLadder
+    case wavesVertical
     case waypoints
     case webcam
     case webhook
@@ -4176,6 +4178,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.repeat1Path
         case .repeat2:
             return Self.repeat2Path
+        case .repeatOff:
+            return Self.repeatOffPath
         case .replace:
             return Self.replacePath
         case .replaceAll:
@@ -5030,14 +5034,16 @@ public enum LucideIconName: String, CaseIterable {
             return Self.washingMachinePath
         case .watch:
             return Self.watchPath
-        case .waves:
-            return Self.wavesPath
         case .wavesArrowDown:
             return Self.wavesArrowDownPath
         case .wavesArrowUp:
             return Self.wavesArrowUpPath
+        case .wavesHorizontal:
+            return Self.wavesHorizontalPath
         case .wavesLadder:
             return Self.wavesLadderPath
+        case .wavesVertical:
+            return Self.wavesVerticalPath
         case .waypoints:
             return Self.waypointsPath
         case .webcam:
@@ -34557,6 +34563,31 @@ path.addLine(to: CGPoint(x: 19.0, y: 18.0))
         return path
     }()
         
+    /// Repeat Off icon path
+    static let repeatOffPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 11.656, y: 6.0))
+path.addLine(to: CGPoint(x: 21.0, y: 6.0))
+path.addLine(to: CGPoint(x: 17.0, y: 2.0))
+path.move(to: CGPoint(x: 17.898, y: 17.898))
+path.addCurve(to: CGPoint(x: 17.0, y: 18.0), control1: CGPoint(x: 17.603481255174678, y: 17.965815631884176), control2: CGPoint(x: 17.302225494996474, y: 18.00003399217168))
+path.addLine(to: CGPoint(x: 3.0, y: 18.0))
+path.addLine(to: CGPoint(x: 7.0, y: 14.0))
+path.move(to: CGPoint(x: 2.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.move(to: CGPoint(x: 21.0, y: 13.0))
+path.addLine(to: CGPoint(x: 21.0, y: 14.0))
+path.addCurve(to: CGPoint(x: 20.828999999999965, y: 15.159000000000121), control1: CGPoint(x: 21.000191495489, y: 14.392632038841056), control2: CGPoint(x: 20.942573651295962, y: 14.783152982816))
+path.move(to: CGPoint(x: 21.0, y: 6.0))
+path.addLine(to: CGPoint(x: 17.0, y: 10.0))
+path.move(to: CGPoint(x: 3.0, y: 11.0))
+path.addLine(to: CGPoint(x: 3.0, y: 10.0))
+path.addCurve(to: CGPoint(x: 6.102000000002766, y: 6.101999999999363), control1: CGPoint(x: 2.9999517222645578, y: 8.136785369643166), control2: CGPoint(x: 4.2863456198497545, y: 6.5202916840275))
+path.move(to: CGPoint(x: 7.0, y: 22.0))
+path.addLine(to: CGPoint(x: 3.0, y: 18.0))
+        return path
+    }()
+        
     /// Replace icon path
     static let replacePath: Path = {
         var path = Path()
@@ -44718,30 +44749,6 @@ path.addCurve(to: CGPoint(x: 6.0, y: 12.0), control1: CGPoint(x: 8.6862915010152
         return path
     }()
         
-    /// Waves icon path
-    static let wavesPath: Path = {
-        var path = Path()
-        path.move(to: CGPoint(x: 2.0, y: 6.0))
-path.addCurve(to: CGPoint(x: 4.5, y: 7.0), control1: CGPoint(x: 2.6, y: 6.5), control2: CGPoint(x: 3.2, y: 7.0))
-path.addCurve(to: CGPoint(x: 9.5, y: 5.0), control1: CGPoint(x: 7.0, y: 7.0), control2: CGPoint(x: 7.0, y: 5.0))
-path.addCurve(to: CGPoint(x: 14.5, y: 7.0), control1: CGPoint(x: 12.1, y: 5.0), control2: CGPoint(x: 11.9, y: 7.0))
-path.addCurve(to: CGPoint(x: 19.5, y: 5.0), control1: CGPoint(x: 17.0, y: 7.0), control2: CGPoint(x: 17.0, y: 5.0))
-path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 20.8, y: 5.0), control2: CGPoint(x: 21.4, y: 5.5))
-path.move(to: CGPoint(x: 2.0, y: 12.0))
-path.addCurve(to: CGPoint(x: 4.5, y: 13.0), control1: CGPoint(x: 2.6, y: 12.5), control2: CGPoint(x: 3.2, y: 13.0))
-path.addCurve(to: CGPoint(x: 9.5, y: 11.0), control1: CGPoint(x: 7.0, y: 13.0), control2: CGPoint(x: 7.0, y: 11.0))
-path.addCurve(to: CGPoint(x: 14.5, y: 13.0), control1: CGPoint(x: 12.1, y: 11.0), control2: CGPoint(x: 11.9, y: 13.0))
-path.addCurve(to: CGPoint(x: 19.5, y: 11.0), control1: CGPoint(x: 17.0, y: 13.0), control2: CGPoint(x: 17.0, y: 11.0))
-path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 20.8, y: 11.0), control2: CGPoint(x: 21.4, y: 11.5))
-path.move(to: CGPoint(x: 2.0, y: 18.0))
-path.addCurve(to: CGPoint(x: 4.5, y: 19.0), control1: CGPoint(x: 2.6, y: 18.5), control2: CGPoint(x: 3.2, y: 19.0))
-path.addCurve(to: CGPoint(x: 9.5, y: 17.0), control1: CGPoint(x: 7.0, y: 19.0), control2: CGPoint(x: 7.0, y: 17.0))
-path.addCurve(to: CGPoint(x: 14.5, y: 19.0), control1: CGPoint(x: 12.1, y: 17.0), control2: CGPoint(x: 11.9, y: 19.0))
-path.addCurve(to: CGPoint(x: 19.5, y: 17.0), control1: CGPoint(x: 17.0, y: 19.0), control2: CGPoint(x: 17.0, y: 17.0))
-path.addCurve(to: CGPoint(x: 22.0, y: 18.0), control1: CGPoint(x: 20.8, y: 17.0), control2: CGPoint(x: 21.4, y: 17.5))
-        return path
-    }()
-        
     /// Waves Arrow Down icon path
     static let wavesArrowDownPath: Path = {
         var path = Path()
@@ -44788,6 +44795,27 @@ path.addLine(to: CGPoint(x: 16.0, y: 6.0))
         return path
     }()
         
+    /// Waves Horizontal icon path
+    static let wavesHorizontalPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addQuadCurve(to: CGPoint(x: 7.0, y: 12.0), control: CGPoint(x: 4.5, y: 14.0))
+path.addQuadCurve(to: CGPoint(x: 12.0, y: 12.0), control: CGPoint(x: 9.5, y: 10.0))
+path.addQuadCurve(to: CGPoint(x: 17.0, y: 12.0), control: CGPoint(x: 14.5, y: 14.0))
+path.addQuadCurve(to: CGPoint(x: 22.0, y: 12.0), control: CGPoint(x: 19.5, y: 10.0))
+path.move(to: CGPoint(x: 2.0, y: 19.0))
+path.addQuadCurve(to: CGPoint(x: 7.0, y: 19.0), control: CGPoint(x: 4.5, y: 21.0))
+path.addQuadCurve(to: CGPoint(x: 12.0, y: 19.0), control: CGPoint(x: 9.5, y: 17.0))
+path.addQuadCurve(to: CGPoint(x: 17.0, y: 19.0), control: CGPoint(x: 14.5, y: 21.0))
+path.addQuadCurve(to: CGPoint(x: 22.0, y: 19.0), control: CGPoint(x: 19.5, y: 17.0))
+path.move(to: CGPoint(x: 2.0, y: 5.0))
+path.addQuadCurve(to: CGPoint(x: 7.0, y: 5.0), control: CGPoint(x: 4.5, y: 7.0))
+path.addQuadCurve(to: CGPoint(x: 12.0, y: 5.0), control: CGPoint(x: 9.5, y: 3.0))
+path.addQuadCurve(to: CGPoint(x: 17.0, y: 5.0), control: CGPoint(x: 14.5, y: 7.0))
+path.addQuadCurve(to: CGPoint(x: 22.0, y: 5.0), control: CGPoint(x: 19.5, y: 3.0))
+        return path
+    }()
+        
     /// Waves Ladder icon path
     static let wavesLadderPath: Path = {
         var path = Path()
@@ -44807,6 +44835,27 @@ path.addLine(to: CGPoint(x: 17.0, y: 9.0))
 path.move(to: CGPoint(x: 9.0, y: 5.0))
 path.addCurve(to: CGPoint(x: 7.0, y: 7.0), control1: CGPoint(x: 7.8954305003384135, y: 5.0), control2: CGPoint(x: 7.0, y: 5.895430500338413))
 path.addLine(to: CGPoint(x: 7.0, y: 18.0))
+        return path
+    }()
+        
+    /// Waves Vertical icon path
+    static let wavesVerticalPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addQuadCurve(to: CGPoint(x: 12.0, y: 7.0), control: CGPoint(x: 14.0, y: 4.5))
+path.addQuadCurve(to: CGPoint(x: 12.0, y: 12.0), control: CGPoint(x: 10.0, y: 9.5))
+path.addQuadCurve(to: CGPoint(x: 12.0, y: 17.0), control: CGPoint(x: 14.0, y: 14.5))
+path.addQuadCurve(to: CGPoint(x: 12.0, y: 22.0), control: CGPoint(x: 10.0, y: 19.5))
+path.move(to: CGPoint(x: 19.0, y: 2.0))
+path.addQuadCurve(to: CGPoint(x: 19.0, y: 7.0), control: CGPoint(x: 21.0, y: 4.5))
+path.addQuadCurve(to: CGPoint(x: 19.0, y: 12.0), control: CGPoint(x: 17.0, y: 9.5))
+path.addQuadCurve(to: CGPoint(x: 19.0, y: 17.0), control: CGPoint(x: 21.0, y: 14.5))
+path.addQuadCurve(to: CGPoint(x: 19.0, y: 22.0), control: CGPoint(x: 17.0, y: 19.5))
+path.move(to: CGPoint(x: 5.0, y: 2.0))
+path.addQuadCurve(to: CGPoint(x: 5.0, y: 7.0), control: CGPoint(x: 7.0, y: 4.5))
+path.addQuadCurve(to: CGPoint(x: 5.0, y: 12.0), control: CGPoint(x: 3.0, y: 9.5))
+path.addQuadCurve(to: CGPoint(x: 5.0, y: 17.0), control: CGPoint(x: 7.0, y: 14.5))
+path.addQuadCurve(to: CGPoint(x: 5.0, y: 22.0), control: CGPoint(x: 3.0, y: 19.5))
         return path
     }()
         
@@ -60650,6 +60699,9 @@ public struct Lucide {
     /// Repeat 2 icon
     public static let repeat2: LucideShape = LucideShape(path: LucideIconName.repeat2Path)
 
+    /// Repeat Off icon
+    public static let repeatOff: LucideShape = LucideShape(path: LucideIconName.repeatOffPath)
+
     /// Replace icon
     public static let replace: LucideShape = LucideShape(path: LucideIconName.replacePath)
 
@@ -61931,17 +61983,20 @@ public struct Lucide {
     /// Watch icon
     public static let watch: LucideShape = LucideShape(path: LucideIconName.watchPath)
 
-    /// Waves icon
-    public static let waves: LucideShape = LucideShape(path: LucideIconName.wavesPath)
-
     /// Waves Arrow Down icon
     public static let wavesArrowDown: LucideShape = LucideShape(path: LucideIconName.wavesArrowDownPath)
 
     /// Waves Arrow Up icon
     public static let wavesArrowUp: LucideShape = LucideShape(path: LucideIconName.wavesArrowUpPath)
 
+    /// Waves Horizontal icon
+    public static let wavesHorizontal: LucideShape = LucideShape(path: LucideIconName.wavesHorizontalPath)
+
     /// Waves Ladder icon
     public static let wavesLadder: LucideShape = LucideShape(path: LucideIconName.wavesLadderPath)
+
+    /// Waves Vertical icon
+    public static let wavesVertical: LucideShape = LucideShape(path: LucideIconName.wavesVerticalPath)
 
     /// Waypoints icon
     public static let waypoints: LucideShape = LucideShape(path: LucideIconName.waypointsPath)
@@ -63204,10 +63259,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.3.4"
+    public static let libraryVersion = "0.3.5"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.12.0"
+    public static let lucideVersion = "1.14.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "14d067fd7b15b179085c89d29dc1b44a37bc6569"
