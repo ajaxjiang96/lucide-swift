@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.3.6
-//  Lucide Icons Version: 1.16.0
+//  Library Version: 0.3.7
+//  Lucide Icons Version: 1.17.0
 //  Lucide Lab Version: 14d067fd7b15b179085c89d29dc1b44a37bc6569
 //  DO NOT EDIT MANUALLY
 //
@@ -759,6 +759,7 @@ public enum LucideIconName: String, CaseIterable {
     case glassWater
     case glasses
     case globe
+    case globeCheck
     case globeLock
     case globeOff
     case globeX
@@ -1136,6 +1137,7 @@ public enum LucideIconName: String, CaseIterable {
     case panelsRightBottom
     case panelsTopLeft
     case paperclip
+    case parasol
     case parentheses
     case parkingMeter
     case partyPopper
@@ -3220,6 +3222,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.glassesPath
         case .globe:
             return Self.globePath
+        case .globeCheck:
+            return Self.globeCheckPath
         case .globeLock:
             return Self.globeLockPath
         case .globeOff:
@@ -3974,6 +3978,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.panelsTopLeftPath
         case .paperclip:
             return Self.paperclipPath
+        case .parasol:
+            return Self.parasolPath
         case .parentheses:
             return Self.parenthesesPath
         case .parkingMeter:
@@ -22890,6 +22896,22 @@ path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6
         return path
     }()
         
+    /// Globe Check icon path
+    static let globeCheckPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 15.0, y: 6.0))
+path.addLine(to: CGPoint(x: 17.0, y: 8.0))
+path.addLine(to: CGPoint(x: 21.0, y: 4.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addLine(to: CGPoint(x: 22.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 22.0, y: 17.522847498307932), control2: CGPoint(x: 17.522847498307936, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 12.000000000000002), control1: CGPoint(x: 6.477152501692067, y: 22.0), control2: CGPoint(x: 2.0000000000000018, y: 17.522847498307936))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 2.0), control1: CGPoint(x: 2.0, y: 6.477152501692067), control2: CGPoint(x: 6.477152501692063, y: 2.0000000000000018))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 21.999999999999996), control1: CGPoint(x: 6.666666666666664, y: 7.600000000000001), control2: CGPoint(x: 6.666666666666668, y: 16.4))
+path.addCurve(to: CGPoint(x: 16.0, y: 12.000000000000002), control1: CGPoint(x: 14.567765380896692, y: 19.30384635005847), control2: CGPoint(x: 16.0, y: 15.723259802300205))
+        return path
+    }()
+        
     /// Globe Lock icon path
     static let globeLockPath: Path = {
         var path = Path()
@@ -28093,14 +28115,18 @@ path.addCurve(to: CGPoint(x: 3.0, y: 15.0), control1: CGPoint(x: 5.6862915010152
     /// Martini icon path
     static let martiniPath: Path = {
         var path = Path()
-        path.move(to: CGPoint(x: 8.0, y: 22.0))
-path.addLine(to: CGPoint(x: 16.0, y: 22.0))
-path.move(to: CGPoint(x: 12.0, y: 11.0))
-path.addLine(to: CGPoint(x: 12.0, y: 22.0))
-path.move(to: CGPoint(x: 19.0, y: 3.0))
-path.addLine(to: CGPoint(x: 12.0, y: 11.0))
-path.addLine(to: CGPoint(x: 5.0, y: 3.0))
+        path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 4.207, y: 4.207))
+path.addCurve(to: CGPoint(x: 4.053674594334077, y: 3.436422367164075), control1: CGPoint(x: 4.00473568128075, y: 4.00479678738437), control2: CGPoint(x: 3.944218203259915, y: 3.7006500952171018))
+path.addCurve(to: CGPoint(x: 4.707000000000001, y: 3.0), control1: CGPoint(x: 4.163130985408239, y: 3.172194639111048), control2: CGPoint(x: 4.420998269085858, y: 2.999938900422841))
+path.addLine(to: CGPoint(x: 19.293, y: 3.0))
+path.addCurve(to: CGPoint(x: 19.946325405665924, y: 3.436422367164075), control1: CGPoint(x: 19.579001730914143, y: 2.9999389004228414), control2: CGPoint(x: 19.836869014591763, y: 3.1721946391110483))
+path.addCurve(to: CGPoint(x: 19.793, y: 4.207), control1: CGPoint(x: 20.055781796740085, y: 3.700650095217102), control2: CGPoint(x: 19.99526431871925, y: 4.00479678738437))
 path.closeSubpath()
+path.move(to: CGPoint(x: 12.0, y: 12.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 7.0, y: 22.0))
+path.addLine(to: CGPoint(x: 17.0, y: 22.0))
         return path
     }()
         
@@ -31801,6 +31827,22 @@ path.addCurve(to: CGPoint(x: 3.201200190688609, y: 17.53722670950295), control1:
 path.addCurve(to: CGPoint(x: 7.46377329049707, y: 21.7997998093114), control1: CGPoint(x: 3.7533629714333605, y: 19.620531130553985), control2: CGPoint(x: 5.380468869446033, y: 21.247637028566654))
 path.addCurve(to: CGPoint(x: 13.278000000000016, y: 20.207999999999984), control1: CGPoint(x: 9.547077711548106, y: 22.35196259005614), control2: CGPoint(x: 11.766479549334809, y: 21.74434207598157))
 path.addLine(to: CGPoint(x: 21.657, y: 11.656999999999998))
+        return path
+    }()
+        
+    /// Parasol icon path
+    static let parasolPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.5, y: 11.134))
+path.addLine(to: CGPoint(x: 18.196, y: 21.0))
+path.move(to: CGPoint(x: 20.425, y: 5.299))
+path.addCurve(to: CGPoint(x: 7.996227319802157, y: 3.332446065927231), control1: CGPoint(x: 17.26539692341607, y: 1.792365343429518), control2: CGPoint(x: 12.084068397708142, y: 0.9725448946905555))
+path.addCurve(to: CGPoint(x: 3.4840000000000018, y: 15.079), control1: CGPoint(x: 3.9083862418961726, y: 5.692347237163908), control2: CGPoint(x: 2.027321013000426, y: 10.589271216982734))
+path.addCurve(to: CGPoint(x: 4.839000000000002, y: 15.557), control1: CGPoint(x: 3.6670000000000016, y: 15.642000000000001), control2: CGPoint(x: 4.327000000000002, y: 15.853000000000002))
+path.addLine(to: CGPoint(x: 20.16, y: 6.711))
+path.addCurve(to: CGPoint(x: 20.424, y: 5.298), control1: CGPoint(x: 20.672, y: 6.415), control2: CGPoint(x: 20.82, y: 5.738))
+path.move(to: CGPoint(x: 21.0, y: 21.0))
+path.addLine(to: CGPoint(x: 3.0, y: 21.0))
         return path
     }()
         
@@ -59485,6 +59527,9 @@ public struct Lucide {
     /// Globe icon
     public static let globe: LucideShape = LucideShape(path: LucideIconName.globePath)
 
+    /// Globe Check icon
+    public static let globeCheck: LucideShape = LucideShape(path: LucideIconName.globeCheckPath)
+
     /// Globe Lock icon
     public static let globeLock: LucideShape = LucideShape(path: LucideIconName.globeLockPath)
 
@@ -60615,6 +60660,9 @@ public struct Lucide {
 
     /// Paperclip icon
     public static let paperclip: LucideShape = LucideShape(path: LucideIconName.paperclipPath)
+
+    /// Parasol icon
+    public static let parasol: LucideShape = LucideShape(path: LucideIconName.parasolPath)
 
     /// Parentheses icon
     public static let parentheses: LucideShape = LucideShape(path: LucideIconName.parenthesesPath)
@@ -63518,10 +63566,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.3.6"
+    public static let libraryVersion = "0.3.7"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.16.0"
+    public static let lucideVersion = "1.17.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "14d067fd7b15b179085c89d29dc1b44a37bc6569"
