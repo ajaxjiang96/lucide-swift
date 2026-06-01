@@ -6,7 +6,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-ISC-blue.svg" alt="License: ISC"></a>
   <br>
   <a href="https://github.com/ajaxjiang96/lucide-swift/releases/latest"><img src="https://img.shields.io/github/v/release/ajaxjiang96/lucide-swift?label=Library" alt="Library Version"></a>
-  <img src="https://img.shields.io/badge/Lucide-1.7.0-orange.svg" alt="Lucide Icons Version">
+  <img src="https://img.shields.io/badge/Lucide-1.17.0-orange.svg" alt="Lucide Icons Version">
   <a href="https://github.com/ajaxjiang96/lucide-swift/actions/workflows/sync-and-release.yml"><img src="https://img.shields.io/github/actions/workflow/status/ajaxjiang96/lucide-swift/sync-and-release.yml?branch=main&label=Sync%20%26%20Release" alt="Sync & Release Workflow"></a>
   <br>
   <a href="https://buymeacoffee.com/ajaxjiang"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
@@ -169,7 +169,7 @@ LucideIcon(.heart, size: 48, absoluteStrokeWidth: true)  // 2px stroke (same!)
 - Access via `Lucide.house`, `Lucide.settings`, etc.
 
 **LucideIconName** - Type-safe enum
-- 1694 enum cases (e.g., `.house`, `.settings`, `.heart`)
+- 1714 enum cases (e.g., `.house`, `.settings`, `.heart`)
 - `allCases` array for iteration
 - `rawValue` for string access
 
@@ -211,11 +211,11 @@ This package generates pure Swift code from SVG paths:
 - **Smaller binary**: Code compresses better than image assets
 - **True vectors**: Native SwiftUI rendering at any resolution
 - **Type safety**: Compile-time verification prevents runtime icon-not-found errors
-- **Better tooling**: Xcode autocomplete shows all 1694 available icons
+- **Better tooling**: Xcode autocomplete shows all 1714 available icons
 
 ## Technical Details
 
-- **Total Icons**: 2069 icons
+- **Total Icons**: 2088 icons
 - **Filled Icons**: Experimental support included
 - **Generated Code**: ~4.1MB of Swift path data
 - **Build Time**: Zero impact (generated at package build time)
@@ -224,7 +224,7 @@ This package generates pure Swift code from SVG paths:
 
 ## Icon Gallery
 
-Browse all 1694 icons at [lucide.dev/icons](https://lucide.dev/icons)
+Browse all 1714 icons at [lucide.dev/icons](https://lucide.dev/icons)
 
 Names are converted from kebab-case to camelCase following Swift API Design Guidelines:
 - `arrow-right` → `.arrowRight`

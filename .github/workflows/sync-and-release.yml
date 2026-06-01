@@ -159,6 +159,27 @@ jobs:
         ICON_COUNT=$(grep -c "case " Sources/LucideSwift/Lucide+Generated.swift || echo "0")
         echo "icon_count=$ICON_COUNT" >> $GITHUB_OUTPUT
 
+    - name: Update README
+      if: steps.check_changes.outputs.needs_update == 'true'
+      run: |
+        LUCIDE_VERSION="${{ steps.lucide_version.outputs.version }}"
+        TOTAL_COUNT="${{ steps.generate.outputs.icon_count }}"
+        # Count regular icons separately (used in API reference section)
+        REGULAR_COUNT=$(sed -n '/public enum LucideIconName/,/public enum LucideLabIconName/p' Sources/LucideSwift/Lucide+Generated.swift | grep -c "^    case ")
+        # Strip leading 'v' if present (e.g. v1.8.0 → 1.8.0)
+        BADGE_VERSION="${LUCIDE_VERSION#v}"
+        # Update Lucide icons version badge
+        sed -i '' "s|Lucide-[0-9.]*-orange|Lucide-${BADGE_VERSION}-orange|g" README.md
+        # Update enum cases count (line: "1694 enum cases")
+        sed -i '' "s/[0-9]* enum cases/${REGULAR_COUNT} enum cases/g" README.md
+        # Update autocomplete reference (line: "all 1694 available icons")
+        sed -i '' "s/all [0-9]* available icons/all ${REGULAR_COUNT} available icons/g" README.md
+        # Update total icons in Technical Details (line: "Total Icons: 2069 icons")
+        sed -i '' "s|\\*\\*Total Icons\\*\\*: [0-9]* icons|**Total Icons**: ${TOTAL_COUNT} icons|g" README.md
+        # Update "Browse all X icons" link text
+        sed -i '' "s/Browse all [0-9]* icons/Browse all ${REGULAR_COUNT} icons/g" README.md
+        echo "README updated: Lucide ${BADGE_VERSION}, ${REGULAR_COUNT} regular + $((TOTAL_COUNT - REGULAR_COUNT)) lab = ${TOTAL_COUNT} total"
+
     - name: Generate Preview Screenshot
       if: steps.check_changes.outputs.needs_update == 'true'
       run: swift run PreviewGenerator
