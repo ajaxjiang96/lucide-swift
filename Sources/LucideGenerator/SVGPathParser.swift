@@ -1,6 +1,6 @@
 //
 //  SVGPathParser.swift
-//  LucideSwift
+//  LucideGenerator
 //
 //  SVG parsing logic for extracting path data from SVG content
 //

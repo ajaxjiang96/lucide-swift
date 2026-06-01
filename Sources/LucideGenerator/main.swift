@@ -8,7 +8,6 @@
 import Foundation
 import CoreGraphics
 import SVGPath
-import LucideSwift
 
 // MARK: - Configuration
 

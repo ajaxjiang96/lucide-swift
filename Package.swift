@@ -36,10 +36,13 @@ let package = Package(
             name: "LucideSwiftTests",
             dependencies: ["LucideSwift"]
         ),
+        .testTarget(
+            name: "LucideGeneratorTests",
+            dependencies: ["LucideGenerator"]
+        ),
         .executableTarget(
             name: "LucideGenerator",
             dependencies: [
-                "LucideSwift",
                 .product(name: "SVGPath", package: "SVGPath")
             ]
         ),
