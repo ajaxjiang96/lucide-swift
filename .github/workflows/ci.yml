@@ -14,6 +14,7 @@ jobs:
     runs-on: macos-latest
     permissions:
       contents: write
+      issues: write
     
     steps:
     - name: Checkout repository
@@ -35,6 +36,7 @@ jobs:
       run: swift run PreviewGenerator
 
     - name: Commit preview changes
+      id: commit_preview
       if: github.event_name == 'pull_request'
       run: |
         git config --global user.name "github-actions[bot]"
@@ -42,7 +44,55 @@ jobs:
         git add docs/preview.png
         if git diff --staged --quiet; then
           echo "No changes in preview.png"
+          echo "committed=false" >> $GITHUB_OUTPUT
         else
           git commit -m "docs: update preview for PR verification"
           git push
+          echo "committed=true" >> $GITHUB_OUTPUT
+          echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         fi
+
+    - name: Post preview to PR
+      if: github.event_name == 'pull_request' && steps.commit_preview.outputs.committed == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const sha = '${{ steps.commit_preview.outputs.sha }}';
+          const repo = context.repo;
+          const prNumber = context.issue.number;
+          const imageUrl = `https://raw.githubusercontent.com/${repo.owner}/${repo.repo}/${sha}/docs/preview.png`;
+          const commentMarker = '<!-- preview-image-comment -->';
+
+          const body = `${commentMarker}
+          ## 🖼 Icon Preview
+
+          ![Lucide Swift Preview](${imageUrl})
+
+          > Preview auto-generated from this PR's changes.`;
+
+          // Find and update existing preview comment, or create a new one
+          const { data: comments } = await github.rest.issues.listComments({
+            owner: repo.owner,
+            repo: repo.repo,
+            issue_number: prNumber,
+          });
+
+          const existingComment = comments.find(c => c.body.includes(commentMarker));
+
+          if (existingComment) {
+            await github.rest.issues.updateComment({
+              owner: repo.owner,
+              repo: repo.repo,
+              comment_id: existingComment.id,
+              body,
+            });
+            console.log(`Updated existing preview comment: ${existingComment.html_url}`);
+          } else {
+            await github.rest.issues.createComment({
+              owner: repo.owner,
+              repo: repo.repo,
+              issue_number: prNumber,
+              body,
+            });
+            console.log('Posted new preview comment');
+          }
