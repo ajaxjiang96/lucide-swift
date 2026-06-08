@@ -1,20 +1,93 @@
 import Foundation
 
 /// Converts between LucideSwift camelCase icon names and lucide-icons-swift kebab-case IDs.
+///
+/// The generator's kebab→camelCase transform is lossy: dashes are removed, subsequent
+/// segments are capitalized, and reserved Swift keywords get an "Icon" suffix.
+/// We reverse this as accurately as possible for benchmark comparison.
 enum NameConversion {
 
-    /// Convert a camelCase name (e.g. "airVent") back to kebab-case (e.g. "air-vent")
-    /// for use with lucide-icons-swift's `lucideId` parameter.
+    /// Swift reserved keywords that receive an "Icon" suffix during generation.
+    private static let reservedKeywords: Set<String> = [
+        "import", "subscript", "default", "return", "class", "struct", "enum",
+        "func", "var", "let", "if", "else", "while", "for", "switch", "case",
+        "break", "continue", "guard", "where", "in", "as", "is", "throw",
+        "throws", "catch", "do", "try", "protocol", "extension", "typealias",
+        "associatedtype", "lazy", "mutating", "nonmutating", "optional",
+        "override", "required", "static", "final", "dynamic", "indirect",
+        "convenience", "prefix", "postfix", "infix", "operator", "precedence",
+        "associativity", "right", "left", "none", "true", "false", "nil",
+        "self", "Self", "super", "init", "deinit", "get", "set", "willSet",
+        "didSet", "repeat", "fallthrough", "defer", "internal", "private",
+        "public", "open", "fileprivate", "unowned", "weak", "strong",
+        "async", "await", "yield", "each", "any", "some", "package",
+    ]
+
+    /// Convert a LucideSwift camelCase name back to the kebab-case ID used by
+    /// lucide-icons-swift (and the upstream Lucide icon set).
+    ///
+    /// Examples:
+    /// - "airVent" → "air-vent"
+    /// - "axis3d" → "axis-3d"
+    /// - "arrowDown01" → "arrow-down-01"
+    /// - "importIcon" → "import" (reserved keyword)
     static func camelToKebab(_ camelCase: String) -> String {
-        var result = ""
-        for char in camelCase {
-            if char.isUppercase {
-                result += "-"
-                result += char.lowercased()
-            } else {
-                result.append(char)
+        var name = camelCase
+
+        // Undo reserved-keyword suffix: e.g. "importIcon" → "import"
+        for keyword in reservedKeywords {
+            let suffixed = keyword + "Icon"
+            if name.hasPrefix(suffixed) && name.count == suffixed.count {
+                // Exact match — the icon IS the keyword
+                return keyword
+            }
+            // Also handle: the keyword followed by more segments, e.g. "importIconSomething"
+            // But that wouldn't happen in practice since keywords only get the suffix
+            // when the entire name IS the keyword.
+        }
+
+        // Check if the base name (minus trailing "Icon" if present) would be a keyword
+        // Only when the name ends with "Icon" and removing it gives a reserved keyword
+        if name.hasSuffix("Icon") {
+            let base = String(name.dropLast(4))
+            if reservedKeywords.contains(base) {
+                return base
             }
         }
+
+        // Build kebab-case: insert dash before uppercase letters and at
+        // letter↔digit and digit↔letter boundaries.
+        var result = ""
+        var previousWasDigit = false
+        let scalars = Array(name.unicodeScalars)
+
+        for (i, scalar) in scalars.enumerated() {
+            let isUpper = CharacterSet.uppercaseLetters.contains(scalar)
+            let isDigit = CharacterSet.decimalDigits.contains(scalar)
+            let isLower = CharacterSet.lowercaseLetters.contains(scalar)
+
+            // Insert dash before uppercase (but not at start)
+            if i > 0 && isUpper {
+                result += "-"
+            }
+
+            // Insert dash at letter→digit and digit→letter boundaries
+            if i > 0 {
+                let prevScalar = scalars[i - 1]
+                let prevIsLetter = CharacterSet.letters.contains(prevScalar)
+                let prevIsDigit = CharacterSet.decimalDigits.contains(prevScalar)
+
+                if (prevIsLetter && isDigit) || (prevIsDigit && (isLower || isUpper)) {
+                    // Don't double-dash — we might have already added one for uppercase
+                    if !result.hasSuffix("-") {
+                        result += "-"
+                    }
+                }
+            }
+
+            result.append(isUpper ? Character(scalar).lowercased() : Character(scalar))
+        }
+
         return result
     }
 }

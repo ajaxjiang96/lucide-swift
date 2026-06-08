@@ -96,7 +96,7 @@ enum RenderBenchmark {
     }
 
     private static func renderLucideIconsImage(named name: String, size: CGSize) -> CGImage? {
-        let nsImage = NSImage.image(lucideId: name)
+        guard let nsImage = NSImage.image(lucideId: name) else { return nil }
         guard let tiffData = nsImage.tiffRepresentation,
               let bitmap = NSBitmapImageRep(data: tiffData) else {
             return nil
