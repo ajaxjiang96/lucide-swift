@@ -93,7 +93,7 @@ enum NameConversion {
                 // The "01" part: the '0' already got a dash from letter→digit, '1' follows '0' — no new dash needed
             }
 
-            result.append(isUpper ? Character(scalar).lowercased() : Character(scalar))
+            result.append(isUpper ? Character(scalar).lowercased() : String(scalar))
         }
 
         return result

@@ -1,4 +1,5 @@
 import Foundation
+import AppKit
 import SwiftUI
 import CoreGraphics
 import LucideSwift
@@ -98,7 +99,7 @@ enum RenderBenchmark {
     private static func renderLucideIconsImage(named name: String, size: CGSize) -> CGImage? {
         guard let nsImage = NSImage.image(lucideId: name) else { return nil }
         guard let tiffData = nsImage.tiffRepresentation,
-              let bitmap = NSBitmapImageRep(data: tiffData) else {
+              let _ = NSBitmapImageRep(data: tiffData) else {
             return nil
         }
 
