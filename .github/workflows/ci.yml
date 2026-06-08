@@ -53,14 +53,15 @@ jobs:
         fi
 
     - name: Post preview to PR
-      if: github.event_name == 'pull_request' && steps.commit_preview.outputs.committed == 'true'
+      if: github.event_name == 'pull_request'
       uses: actions/github-script@v7
       with:
         script: |
-          const sha = '${{ steps.commit_preview.outputs.sha }}';
+          // Use the commit SHA if preview was just committed, otherwise fall back to PR head SHA
+          const commitSha = '${{ steps.commit_preview.outputs.sha }}' || '${{ github.event.pull_request.head.sha }}';
           const repo = context.repo;
           const prNumber = context.issue.number;
-          const imageUrl = `https://raw.githubusercontent.com/${repo.owner}/${repo.repo}/${sha}/docs/preview.png`;
+          const imageUrl = `https://raw.githubusercontent.com/${repo.owner}/${repo.repo}/${commitSha}/docs/preview.png`;
           const commentMarker = '<!-- preview-image-comment -->';
 
           const body = `${commentMarker}
