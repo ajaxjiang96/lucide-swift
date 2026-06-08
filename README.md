@@ -231,12 +231,18 @@ This package generates pure Swift code from SVG paths:
 
 ## Icon Gallery
 
-Browse all 1714 icons at [lucide.dev/icons](https://lucide.dev/icons)
+Find the right icon at the official Lucide catalog:
 
-Names are converted from kebab-case to camelCase following Swift API Design Guidelines:
+### [🔍 Browse all icons on lucide.dev/icons →](https://lucide.dev/icons)
+
+The catalog includes visual previews, search, categories, and tags for every icon.
+
+Names are converted from kebab-case to camelCase when used in Swift:
 - `arrow-right` → `.arrowRight`
 - `circle-x` → `.circleX`
 - `a-arrow-down` → `.aArrowDown`
+
+For a full list of available Swift names, see `LucideIconName.allCases` or `LucideLabIconName.allCases`.
 
 ## Support
 
