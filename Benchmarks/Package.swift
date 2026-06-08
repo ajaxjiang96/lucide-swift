@@ -8,7 +8,7 @@ let package = Package(
         // The parent LucideSwift package (path reference — identity matches repo dir name)
         .package(path: "../"),
         // The image-asset-based comparison package
-        .package(url: "https://github.com/JakubMazur/lucide-icons-swift.git", from: "0.486.0"),
+        .package(url: "https://github.com/JakubMazur/lucide-icons-swift.git", from: "1.0.0"),
     ],
     targets: [
         .executableTarget(
