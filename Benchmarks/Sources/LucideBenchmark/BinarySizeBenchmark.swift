@@ -42,11 +42,8 @@ enum BinarySizeBenchmark {
     private static func measureLucideIconsSwiftSize() -> UInt64 {
         var total: UInt64 = 0
 
-        // Measure the full checkout (includes PDF asset catalog and generated Swift source)
-        let checkoutPath = "./.build/checkouts/lucide-icons-swift"
-        total += directorySize(at: checkoutPath)
-
-        // Measure compiled objects for LucideIcons target
+        // Measure the asset catalog (the shipped product) + compiled objects, not the full checkout
+        total += directorySize(at: "./.build/checkouts/lucide-icons-swift/Sources/LucideIcons/icons.xcassets")
         total += directorySize(at: "./.build/release/LucideIcons.build")
 
         return total
