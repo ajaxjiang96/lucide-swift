@@ -163,28 +163,58 @@ struct SwiftCodeGenerator {
         code += """
                 }
             }
-            
+
+            /// Returns a Path containing only the open subpaths (stroked in filled mode).
+            public var openPath: Path {
+                switch self {
+
+        """
+
+        for icon in regularIcons {
+            code += "        case .\(icon.swiftName):\n"
+            code += "            return Self.\(icon.swiftName)PathOpen\n"
+        }
+
+        code += """
+                }
+            }
+
+            /// Returns a Path containing only the closed subpaths (filled in filled mode).
+            public var closedPath: Path {
+                switch self {
+
+        """
+
+        for icon in regularIcons {
+            code += "        case .\(icon.swiftName):\n"
+            code += "            return Self.\(icon.swiftName)PathClosed\n"
+        }
+
+        code += """
+                }
+            }
+
             /// Returns a SwiftUI Shape for this icon
             public var shape: LucideShape {
-                LucideShape(path: self.path)
+                LucideShape(combined: self.path, open: self.openPath, closed: self.closedPath)
             }
-        
+
         """
-        
+
         // Generate regular path definitions
         for icon in regularIcons {
             code += generatePathStaticProperty(for: icon)
         }
-        
+
         code += "}\n\n"
-        
+
         // MARK: - Lucide Lab Icon Enum
-        
+
         code += """
         // MARK: - Lucide Lab Icon Enum
-        
+
         public enum LucideLabIconName: String, CaseIterable {
-        
+
         """
         
         // Generate lab enum cases
@@ -209,19 +239,49 @@ struct SwiftCodeGenerator {
         code += """
                 }
             }
-            
+
+            /// Returns a Path containing only the open subpaths (stroked in filled mode).
+            public var openPath: Path {
+                switch self {
+
+        """
+
+        for icon in labIcons {
+            code += "        case .\(icon.swiftName):\n"
+            code += "            return Self.\(icon.swiftName)PathOpen\n"
+        }
+
+        code += """
+                }
+            }
+
+            /// Returns a Path containing only the closed subpaths (filled in filled mode).
+            public var closedPath: Path {
+                switch self {
+
+        """
+
+        for icon in labIcons {
+            code += "        case .\(icon.swiftName):\n"
+            code += "            return Self.\(icon.swiftName)PathClosed\n"
+        }
+
+        code += """
+                }
+            }
+
             /// Returns a SwiftUI Shape for this icon
             public var shape: LucideShape {
-                LucideShape(path: self.path)
+                LucideShape(combined: self.path, open: self.openPath, closed: self.closedPath)
             }
-        
+
         """
-        
+
         // Generate lab path definitions
         for icon in labIcons {
             code += generatePathStaticProperty(for: icon)
         }
-        
+
         code += "}\n\n"
         
         code += """
@@ -234,7 +294,7 @@ struct SwiftCodeGenerator {
         // Generate regular static properties
         for icon in regularIcons {
             code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon\n"
-            code += "    public static let \(icon.swiftName): LucideShape = LucideShape(path: LucideIconName.\(icon.swiftName)Path)\n\n"
+            code += "    public static let \(icon.swiftName): LucideShape = LucideShape(combined: LucideIconName.\(icon.swiftName)Path, open: LucideIconName.\(icon.swiftName)PathOpen, closed: LucideIconName.\(icon.swiftName)PathClosed)\n\n"
         }
         
         code += "}\n\n"
@@ -247,7 +307,7 @@ struct SwiftCodeGenerator {
         // Generate lab static properties
         for icon in labIcons {
             code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon (Experimental)\n"
-            code += "    public static let \(icon.swiftName): LucideShape = LucideShape(path: LucideLabIconName.\(icon.swiftName)Path)\n\n"
+            code += "    public static let \(icon.swiftName): LucideShape = LucideShape(combined: LucideLabIconName.\(icon.swiftName)Path, open: LucideLabIconName.\(icon.swiftName)PathOpen, closed: LucideLabIconName.\(icon.swiftName)PathClosed)\n\n"
         }
         
         code += "}\n\n"
@@ -272,25 +332,61 @@ struct SwiftCodeGenerator {
     }
     
     private static func generatePathStaticProperty(for icon: Icon) -> String {
-        var pathCode = ""
+        var combinedPathCode = ""
         for pathString in icon.pathStrings {
             do {
                 let options = SVGPath.ParseOptions(invertYAxis: false)
                 let svgPath = try SVGPath(string: pathString, with: options)
                 let cgPath = CGPath.from(svgPath)
-                pathCode += convertToSwiftPathCode(cgPath: cgPath)
+                combinedPathCode += convertToSwiftPathCode(cgPath: cgPath)
             } catch {
                 print("⚠️  Failed to parse path for \(icon.name): \(error)")
             }
         }
-        
+
+        // Build the combined CGPath again to separate into open/closed subpaths
+        var openPathCode = ""
+        var closedPathCode = ""
+        for pathString in icon.pathStrings {
+            do {
+                let options = SVGPath.ParseOptions(invertYAxis: false)
+                let svgPath = try SVGPath(string: pathString, with: options)
+                let cgPath = CGPath.from(svgPath)
+                let (open, closed) = separateCGPathIntoOpenAndClosed(cgPath: cgPath)
+                openPathCode += convertToSwiftPathCode(cgPath: open)
+                closedPathCode += convertToSwiftPathCode(cgPath: closed)
+            } catch {
+                // Already logged above
+            }
+        }
+
+        let name = icon.name.replacingOccurrences(of: "-", with: " ").capitalized
         var code = "        \n"
-        code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon path\n"
+
+        // Combined path (all subpaths)
+        code += "    /// \(name) icon path\n"
         code += "    static let \(icon.swiftName)Path: Path = {\n"
         code += "        var path = Path()\n"
-        code += "        \(pathCode)"
+        code += "        \(combinedPathCode)"
         code += "        return path\n"
         code += "    }()\n"
+
+        // Open subpaths only
+        code += "    /// \(name) icon open subpaths\n"
+        code += "    static let \(icon.swiftName)PathOpen: Path = {\n"
+        code += "        var path = Path()\n"
+        code += "        \(openPathCode)"
+        code += "        return path\n"
+        code += "    }()\n"
+
+        // Closed subpaths only
+        code += "    /// \(name) icon closed subpaths\n"
+        code += "    static let \(icon.swiftName)PathClosed: Path = {\n"
+        code += "        var path = Path()\n"
+        code += "        \(closedPathCode)"
+        code += "        return path\n"
+        code += "    }()\n"
+
         return code
     }
     
@@ -348,6 +444,72 @@ struct SwiftCodeGenerator {
         }
         
         return code
+    }
+
+    /// Separates a CGPath into open and closed subpaths.
+    /// Mirrors the original runtime `separatePaths()` — a subpath is closed if it ends with
+    /// `closeSubpath` or if its last point matches its first point (a geometric loop).
+    private static func separateCGPathIntoOpenAndClosed(cgPath: CGPath) -> (open: CGPath, closed: CGPath) {
+        let openMutable = CGMutablePath()
+        let closedMutable = CGMutablePath()
+
+        var currentSubpath = CGMutablePath()
+        var startPoint: CGPoint?
+        var lastPoint: CGPoint?
+        var isExplicitlyClosed = false
+
+        func finishCurrentSubpath() {
+            guard !currentSubpath.isEmpty else { return }
+
+            let isLoop = startPoint != nil && lastPoint != nil &&
+                abs(startPoint!.x - lastPoint!.x) < 0.001 &&
+                abs(startPoint!.y - lastPoint!.y) < 0.001
+            let actuallyClosed = isExplicitlyClosed || isLoop
+
+            if actuallyClosed {
+                closedMutable.addPath(currentSubpath)
+            } else {
+                openMutable.addPath(currentSubpath)
+            }
+        }
+
+        cgPath.applyWithBlock { elementPtr in
+            let element = elementPtr.pointee
+            let points = element.points
+
+            switch element.type {
+            case .moveToPoint:
+                finishCurrentSubpath()
+                currentSubpath = CGMutablePath()
+                currentSubpath.move(to: points[0])
+                startPoint = points[0]
+                lastPoint = points[0]
+                isExplicitlyClosed = false
+
+            case .addLineToPoint:
+                currentSubpath.addLine(to: points[0])
+                lastPoint = points[0]
+
+            case .addQuadCurveToPoint:
+                currentSubpath.addQuadCurve(to: points[1], control: points[0])
+                lastPoint = points[1]
+
+            case .addCurveToPoint:
+                currentSubpath.addCurve(to: points[2], control1: points[0], control2: points[1])
+                lastPoint = points[2]
+
+            case .closeSubpath:
+                currentSubpath.closeSubpath()
+                isExplicitlyClosed = true
+
+            @unknown default:
+                break
+            }
+        }
+
+        finishCurrentSubpath()
+
+        return (openMutable, closedMutable)
     }
 }
 

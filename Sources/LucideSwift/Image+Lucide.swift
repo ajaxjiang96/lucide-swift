@@ -32,12 +32,12 @@ public extension Image {
 
     /// Creates a SwiftUI Image from a ``LucideIconName``.
     init(lucide iconName: LucideIconName, size: CGSize = CGSize(width: 24, height: 24), strokeWidth: CGFloat = 2, style: LucideIconStyle = .stroked) {
-        self.init(lucide: LucideShape(path: iconName.path), size: size, strokeWidth: strokeWidth, style: style)
+        self.init(lucide: iconName.shape, size: size, strokeWidth: strokeWidth, style: style)
     }
 
     /// Creates a SwiftUI Image from a ``LucideLabIconName``.
     init(lucideLab iconName: LucideLabIconName, size: CGSize = CGSize(width: 24, height: 24), strokeWidth: CGFloat = 2, style: LucideIconStyle = .stroked) {
-        self.init(lucide: LucideShape(path: iconName.path), size: size, strokeWidth: strokeWidth, style: style)
+        self.init(lucide: iconName.shape, size: size, strokeWidth: strokeWidth, style: style)
     }
 
     // MARK: - Private Renderer
