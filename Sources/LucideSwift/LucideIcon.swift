@@ -19,14 +19,14 @@ public enum LucideIconStyle: Sendable {
 
 private func resolveShape(named name: String, caller: String = "LucideIcon") -> LucideShape {
     if let iconName = LucideIconName(rawValue: name) {
-        return LucideShape(path: iconName.path)
+        return iconName.shape
     } else if let labIconName = LucideLabIconName(rawValue: name) {
-        return LucideShape(path: labIconName.path)
+        return labIconName.shape
     }
     #if DEBUG
     print("⚠️ \(caller): Icon '\(name)' not found in regular or lab sets, using fallback")
     #endif
-    return LucideShape(path: LucideIconName.house.path)
+    return LucideIconName.house.shape
 }
 
 // MARK: - LucideIcon
@@ -95,7 +95,7 @@ public struct LucideIcon: View {
         strokeWidth: CGFloat = 2,
         absoluteStrokeWidth: Bool = false
     ) {
-        self.init(shape: LucideShape(path: iconName.path), style: style, size: size, color: color, strokeWidth: strokeWidth, absoluteStrokeWidth: absoluteStrokeWidth)
+        self.init(shape: iconName.shape, style: style, size: size, color: color, strokeWidth: strokeWidth, absoluteStrokeWidth: absoluteStrokeWidth)
     }
 
     /// Initialize with a ``LucideLabIconName`` enum case.
@@ -108,7 +108,7 @@ public struct LucideIcon: View {
         strokeWidth: CGFloat = 2,
         absoluteStrokeWidth: Bool = false
     ) {
-        self.init(shape: LucideShape(path: iconName.path), style: style, size: size, color: color, strokeWidth: strokeWidth, absoluteStrokeWidth: absoluteStrokeWidth)
+        self.init(shape: iconName.shape, style: style, size: size, color: color, strokeWidth: strokeWidth, absoluteStrokeWidth: absoluteStrokeWidth)
     }
 
     /// Initialize with a string icon name (looks up across regular and lab sets).
@@ -165,7 +165,7 @@ extension LucideIconName {
     /// - Returns: A ``LucideShape`` if found, otherwise `nil`.
     public static func shape(named name: String) -> LucideShape? {
         guard let iconName = LucideIconName(rawValue: name) else { return nil }
-        return LucideShape(path: iconName.path)
+        return iconName.shape
     }
 
     /// A list of all available icon names in the regular set.
@@ -178,7 +178,7 @@ extension LucideLabIconName {
     /// Returns the ``LucideShape`` for the given experimental lab icon name.
     public static func shape(named name: String) -> LucideShape? {
         guard let iconName = LucideLabIconName(rawValue: name) else { return nil }
-        return LucideShape(path: iconName.path)
+        return iconName.shape
     }
 
     /// A list of all available icon names in the experimental lab set.
