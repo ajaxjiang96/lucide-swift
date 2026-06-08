@@ -1,0 +1,32 @@
+name: Benchmark
+
+on:
+  workflow_run:
+    workflows: ["Sync & Release"]
+    types: [completed]
+  workflow_dispatch:
+
+jobs:
+  benchmark:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Run benchmark
+        id: benchmark
+        run: |
+          cd Benchmarks
+          swift run -c release LucideBenchmark
+
+      - name: Upload benchmark report to release
+        if: success() && github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'
+        uses: softprops/action-gh-release@v3
+        with:
+          files: Benchmarks/benchmark-report.md
+
+      - name: Upload benchmark report artifact
+        if: always() && steps.benchmark.outcome != 'cancelled'
+        uses: actions/upload-artifact@v6
+        with:
+          name: benchmark-report
+          path: Benchmarks/benchmark-report.md
