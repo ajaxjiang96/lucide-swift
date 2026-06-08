@@ -10,7 +10,7 @@ import CoreGraphics
 
 @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, visionOS 1.0, *)
 public extension Image {
-    
+
     /// Creates a SwiftUI Image from a LucideShape.
     ///
     /// The resulting image is generated in template rendering mode, meaning it
@@ -24,47 +24,32 @@ public extension Image {
     ///   - shape: The LucideShape to render
     ///   - size: The target point size of the image (default 24x24)
     ///   - strokeWidth: The stroke width to use (default 2)
-    init(lucide shape: LucideShape, size: CGSize = CGSize(width: 24, height: 24), strokeWidth: CGFloat = 2) {
-        let cgImage = Self.renderTemplate(shape: shape, size: size, strokeWidth: strokeWidth, isFilled: false)
+    ///   - style: The rendering style — `.stroked` (default) or `.filled`
+    init(lucide shape: LucideShape, size: CGSize = CGSize(width: 24, height: 24), strokeWidth: CGFloat = 2, style: LucideIconStyle = .stroked) {
+        let cgImage = Self.renderTemplate(shape: shape, size: size, strokeWidth: strokeWidth, style: style)
         self = Image(cgImage, scale: 3.0, label: Text("Lucide Icon")).renderingMode(.template)
     }
-    
-    /// Creates a filled SwiftUI Image from a LucideShape.
-    init(lucideFill shape: LucideShape, size: CGSize = CGSize(width: 24, height: 24), strokeWidth: CGFloat = 2) {
-        let cgImage = Self.renderTemplate(shape: shape, size: size, strokeWidth: strokeWidth, isFilled: true)
-        self = Image(cgImage, scale: 3.0, label: Text("Lucide Filled Icon")).renderingMode(.template)
+
+    /// Creates a SwiftUI Image from a ``LucideIconName``.
+    init(lucide iconName: LucideIconName, size: CGSize = CGSize(width: 24, height: 24), strokeWidth: CGFloat = 2, style: LucideIconStyle = .stroked) {
+        self.init(lucide: LucideShape(path: iconName.path), size: size, strokeWidth: strokeWidth, style: style)
     }
-    
-    /// Creates a SwiftUI Image from a LucideIconName.
-    init(lucide iconName: LucideIconName, size: CGSize = CGSize(width: 24, height: 24), strokeWidth: CGFloat = 2) {
-        self.init(lucide: LucideShape(path: iconName.path), size: size, strokeWidth: strokeWidth)
+
+    /// Creates a SwiftUI Image from a ``LucideLabIconName``.
+    init(lucideLab iconName: LucideLabIconName, size: CGSize = CGSize(width: 24, height: 24), strokeWidth: CGFloat = 2, style: LucideIconStyle = .stroked) {
+        self.init(lucide: LucideShape(path: iconName.path), size: size, strokeWidth: strokeWidth, style: style)
     }
-    
-    /// Creates a filled SwiftUI Image from a LucideIconName.
-    init(lucideFill iconName: LucideIconName, size: CGSize = CGSize(width: 24, height: 24), strokeWidth: CGFloat = 2) {
-        self.init(lucideFill: LucideShape(path: iconName.path), size: size, strokeWidth: strokeWidth)
-    }
-    
-    /// Creates a SwiftUI Image from a LucideLabIconName.
-    init(lucideLab iconName: LucideLabIconName, size: CGSize = CGSize(width: 24, height: 24), strokeWidth: CGFloat = 2) {
-        self.init(lucide: LucideShape(path: iconName.path), size: size, strokeWidth: strokeWidth)
-    }
-    
-    /// Creates a filled SwiftUI Image from a LucideLabIconName.
-    init(lucideLabFill iconName: LucideLabIconName, size: CGSize = CGSize(width: 24, height: 24), strokeWidth: CGFloat = 2) {
-        self.init(lucideFill: LucideShape(path: iconName.path), size: size, strokeWidth: strokeWidth)
-    }
-    
+
     // MARK: - Private Renderer
-    
-    private static func renderTemplate(shape: LucideShape, size: CGSize, strokeWidth: CGFloat, isFilled: Bool) -> CGImage {
+
+    private static func renderTemplate(shape: LucideShape, size: CGSize, strokeWidth: CGFloat, style: LucideIconStyle) -> CGImage {
         let scale: CGFloat = 3.0 // Render at @3x scale for retina sharpness
         let pixelWidth = max(1, Int(size.width * scale))
         let pixelHeight = max(1, Int(size.height * scale))
-        
+
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         let bitmapInfo = CGImageAlphaInfo.premultipliedLast.rawValue
-        
+
         guard let context = CGContext(
             data: nil,
             width: pixelWidth,
@@ -76,17 +61,17 @@ public extension Image {
         ) else {
             return createEmptyCGImage()
         }
-        
+
         context.setAllowsAntialiasing(true)
         context.setShouldAntialias(true)
-        
+
         // Flip coordinate system to match SwiftUI (Top-left origin)
         context.translateBy(x: 0, y: CGFloat(pixelHeight))
         context.scaleBy(x: scale, y: -scale)
-        
+
         let rect = CGRect(origin: .zero, size: size)
-        
-        if isFilled {
+
+        if style == .filled {
             // Draw filled portions
             let closedPath = shape.closedPath(in: rect)
             if !closedPath.isEmpty {
@@ -95,7 +80,7 @@ public extension Image {
                 // EO fill rule matches how Lucide shapes are generated
                 context.drawPath(using: .eoFill)
             }
-            
+
             // Draw stroked portions
             let openPath = shape.openPath(in: rect)
             if !openPath.isEmpty {
@@ -118,10 +103,10 @@ public extension Image {
                 context.strokePath()
             }
         }
-        
+
         return context.makeImage() ?? createEmptyCGImage()
     }
-    
+
     private static func createEmptyCGImage() -> CGImage {
         let context = CGContext(
             data: nil, width: 1, height: 1, bitsPerComponent: 8, bytesPerRow: 4,

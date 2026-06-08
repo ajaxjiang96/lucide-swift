@@ -12,7 +12,7 @@ LucideSwift is a collection of over 1,000 high-quality, open-source icons for Sw
 - **Pure SwiftUI:** Icons are implemented as native `Shape` and `View` components.
 - **Zero Runtime Dependencies:** Icons are pre-generated into Swift code for maximum performance.
 - **Customizable:** Easily adjust size, color, stroke width, and scaling behavior.
-- **Filled Icons:** Supports both stroked and filled variations of almost every icon.
+- **Filled Icons:** Switch between stroked and filled rendering with a `style:` parameter.
 
 ## Getting Started
 
@@ -34,7 +34,6 @@ struct ContentView: View {
 ### Core Components
 
 - ``LucideIcon``
-- ``LucideIconFill``
 - ``LucideShape``
 
 ### Icon Sets

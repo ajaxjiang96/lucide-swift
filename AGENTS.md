@@ -99,10 +99,8 @@ import XCTest     // For tests only
 
 ### Key Components
 1. **LucideShape**: Shape protocol implementation for SVG rendering.
-2. **LucideIcon**: SwiftUI View wrapper for standard icons.
-3. **LucideLabIcon**: SwiftUI View wrapper for experimental Lab icons.
-4. **LucideIconFill / LucideLabIconFill**: SwiftUI View wrappers for solid/filled icons.
-5. **LucideGenerator**: Fetches icons from both `lucide` and `lucide-lab` repositories and generates Swift code.
+2. **LucideIcon**: SwiftUI View wrapper for all icons — supports `.stroked` and `.filled` styles via `LucideIconStyle`, and handles both regular and Lab icons through a unified interface.
+3. **LucideGenerator**: Fetches icons from both `lucide` and `lucide-lab` repositories and generates Swift code.
 
 ### SVG Path Commands Supported
 - `M/m`: Move to
@@ -120,12 +118,13 @@ import XCTest     // For tests only
 ```
 Sources/
 ├── LucideSwift/
-│   ├── LucideIcon.swift        # SwiftUI components
-│   ├── Lucide.swift             # Type-safe icon definitions
+│   ├── LucideIcon.swift        # Unified icon View + Label extensions
+│   ├── Lucide.swift             # LucideShape definition
+│   ├── Image+Lucide.swift       # Image extensions for rasterized icons
 │   ├── Lucide+Generated.swift   # Auto-generated icons (DO NOT EDIT)
-│   └── SVGPathParser.swift      # SVG parsing logic
 └── LucideGenerator/
-    └── main.swift               # Code generation tool
+    ├── main.swift               # Code generation tool
+    └── SVGPathParser.swift      # SVG parsing logic
 ```
 
 ## Workflow

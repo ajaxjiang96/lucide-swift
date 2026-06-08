@@ -78,7 +78,7 @@ struct ContentView: View {
 
 ### Lucide Lab (Experimental)
 
-Experimental icons from the [Lucide Lab](https://github.com/lucide-icons/lucide-lab) repository are available in a separate namespace to clearly distinguish them from the stable set.
+Experimental icons from the [Lucide Lab](https://github.com/lucide-icons/lucide-lab) repository are accessed through the `lab:` parameter.
 
 ```swift
 import LucideSwift
@@ -87,11 +87,11 @@ import SwiftUI
 struct ExperimentalView: View {
     var body: some View {
         VStack {
-            // Dedicated Lab View
-            LucideLabIcon(.broom, size: 32, color: .purple)
+            // Lab icon using lab: label
+            LucideIcon(lab: .broom, size: 32, color: .purple)
             
             // Lab icons in standard Label
-            Label("New Idea", lucideLab: .sparkles)
+            Label("New Idea", lucide: LucideLab.sparkles)
             
             // Access underlying shape
             LucideLab.avocado
@@ -104,14 +104,14 @@ struct ExperimentalView: View {
 
 ### Advanced Usage
 
-#### Filled Icons (Experimental)
+#### Filled Icons
 
 > [!WARNING]
-> `LucideIconFill` is **experimental**. Lucide icons are stroke-based, and filling them can result in artifacts on complex or open paths.
+> Filled rendering is **experimental**. Lucide icons are stroke-based, and filling them can result in artifacts on complex or open paths.
 
 ```swift
-// Filled icons
-LucideIconFill(.star, size: 48, color: .yellow)
+// Filled icons using style: parameter
+LucideIcon(.star, style: .filled, size: 48, color: .yellow)
 ```
 
 #### Other Components
@@ -125,6 +125,11 @@ Label("Settings", lucide: .settings)
 Button(action: {}) {
     Label("Save", lucide: .save)
 }
+
+// Create a SwiftUI Image for more customization
+Image(lucide: .house)
+    .resizable()
+    .frame(width: 48, height: 48)
 ```
 
 ### Stroke Width
@@ -153,11 +158,13 @@ LucideIcon(.heart, size: 48, absoluteStrokeWidth: true)  // 2px stroke (same!)
 ### API Reference
 
 **LucideIcon** - SwiftUI View wrapper
-- `init(_ iconName: LucideIconName, size: CGFloat = 24, color: Color? = nil, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - Type-safe enum
-- `init(name: String, size: CGFloat = 24, color: Color? = nil, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - String lookup with fallback
-- `init(_ icon: LucideShape, size: CGFloat = 24, color: Color? = nil, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - From Shape
+- `init(_ iconName: LucideIconName, style: LucideIconStyle = .stroked, size: CGFloat = 24, color: Color? = nil, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - Type-safe enum
+- `init(lab iconName: LucideLabIconName, style: LucideIconStyle = .stroked, size: CGFloat = 24, color: Color? = nil, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - Lab (experimental) icon
+- `init(name: String, style: LucideIconStyle = .stroked, size: CGFloat = 24, color: Color? = nil, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - String lookup with fallback
+- `init(shape: LucideShape, style: LucideIconStyle = .stroked, size: CGFloat = 24, color: Color? = nil, strokeWidth: CGFloat = 2, absoluteStrokeWidth: Bool = false)` - From Shape
 
 **Parameters:**
+- `style`: Rendering style — `.stroked` (default) or `.filled`
 - `size`: Icon size in points (default: 24)
 - `color`: Icon color (default: `nil`, inherits from environment foreground color)
 - `strokeWidth`: Stroke width multiplier (default: 2)

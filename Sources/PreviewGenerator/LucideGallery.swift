@@ -81,7 +81,7 @@ public struct LucideGallery: View {
                             Text("String").font(.caption2)
                         }
                         VStack {
-                            LucideIcon(Lucide.star, size: 32, color: .yellow)
+                            LucideIcon(shape: Lucide.star, size: 32, color: .yellow)
                             Text("Shape").font(.caption2)
                         }
                     }
@@ -91,10 +91,10 @@ public struct LucideGallery: View {
                 VStack(spacing: 12) {
                     Text("Filled Icons").font(.headline)
                     HStack(spacing: 25) {
-                        LucideIconFill(.star, size: 32, color: .yellow)
-                        LucideIconFill(.heart, size: 32, color: .red)
-                        LucideIconFill(.bell, size: 32, color: .blue)
-                        LucideIconFill(name: "circleCheck", size: 32, color: .green)
+                        LucideIcon(.star, style: .filled, size: 32, color: .yellow)
+                        LucideIcon(.heart, style: .filled, size: 32, color: .red)
+                        LucideIcon(.bell, style: .filled, size: 32, color: .blue)
+                        LucideIcon(name: "circleCheck", style: .filled, size: 32, color: .green)
                     }
                 }
 
@@ -103,7 +103,7 @@ public struct LucideGallery: View {
                     Text("Label Integration").font(.headline)
                     VStack(alignment: .leading, spacing: 10) {
                         Label("Default Label", lucide: .info)
-                        Label("Lab Label", lucideLab: .broom)
+                        Label("Lab Label", lucide: LucideLab.broom)
                             .foregroundColor(.purple)
 
                         Button(action: {}) {
@@ -122,19 +122,19 @@ public struct LucideGallery: View {
                     Text("Experimental icons from the lab repository").font(.caption).foregroundColor(.secondary)
                     HStack(spacing: 20) {
                         VStack {
-                            LucideLabIcon(.broom, size: 32, color: .purple)
+                            LucideIcon(lab: .broom, size: 32, color: .purple)
                             Text("broom").font(.caption2)
                         }
                         VStack {
-                            LucideLabIcon(.avocado, size: 32, color: .green)
+                            LucideIcon(lab: .avocado, size: 32, color: .green)
                             Text("avocado").font(.caption2)
                         }
                         VStack {
-                            LucideLabIcon(.cactus, size: 32, color: .green)
+                            LucideIcon(lab: .cactus, size: 32, color: .green)
                             Text("cactus").font(.caption2)
                         }
                         VStack {
-                            LucideLabIcon(.burger, size: 32, color: .orange)
+                            LucideIcon(lab: .burger, size: 32, color: .orange)
                             Text("burger").font(.caption2)
                         }
                     }
@@ -148,7 +148,7 @@ public struct LucideGallery: View {
                         Image(lucide: .house, size: CGSize(width: 32, height: 32))
                             .foregroundColor(.blue)
 
-                        Image(lucideFill: .heart, size: CGSize(width: 32, height: 32))
+                        Image(lucide: .heart, size: CGSize(width: 32, height: 32), style: .filled)
                             .foregroundColor(.red)
 
                         Image(lucide: .settings, size: CGSize(width: 32, height: 32))

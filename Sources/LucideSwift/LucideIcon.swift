@@ -7,21 +7,52 @@
 
 import SwiftUI
 
-/// Error thrown when an invalid icon name is provided
-public enum LucideIconError: Error {
-    case iconNotFound(String)
+/// The rendering style for a Lucide icon.
+public enum LucideIconStyle: Sendable {
+    /// Stroke-only rendering — the standard Lucide look.
+    case stroked
+    /// Filled rendering: closed paths are filled, open paths are stroked.
+    case filled
 }
 
-// MARK: - Regular Icons
+// MARK: - Icon Resolution
+
+private func resolveShape(named name: String, caller: String = "LucideIcon") -> LucideShape {
+    if let iconName = LucideIconName(rawValue: name) {
+        return LucideShape(path: iconName.path)
+    } else if let labIconName = LucideLabIconName(rawValue: name) {
+        return LucideShape(path: labIconName.path)
+    }
+    #if DEBUG
+    print("⚠️ \(caller): Icon '\(name)' not found in regular or lab sets, using fallback")
+    #endif
+    return LucideShape(path: LucideIconName.house.path)
+}
+
+// MARK: - LucideIcon
 
 /// A SwiftUI view that displays a Lucide icon.
 ///
 /// `LucideIcon` is the primary way to display icons in your app. It provides
-/// high-level controls for sizing, coloring, and stroke width.
+/// high-level controls for sizing, coloring, and stroke width, and supports
+/// both regular and experimental (Lab) icons through a unified interface.
 ///
 /// ### Example
 /// ```swift
+/// // Stroked (default)
 /// LucideIcon(.house, size: 32, color: .blue, strokeWidth: 1.5)
+///
+/// // Filled
+/// LucideIcon(.star, style: .filled, color: .yellow)
+///
+/// // Lab icons — explicit lab: label
+/// LucideIcon(lab: .broom, color: .purple)
+///
+/// // From a Shape
+/// LucideIcon(Lucide.settings)
+///
+/// // From a string
+/// LucideIcon(name: "house")
 /// ```
 public struct LucideIcon: View {
     let iconShape: LucideShape
@@ -29,233 +60,100 @@ public struct LucideIcon: View {
     var color: Color?
     var strokeWidth: CGFloat
     var absoluteStrokeWidth: Bool
-    
+    var style: LucideIconStyle
+
     /// Initialize with a ``LucideShape``.
     /// - Parameters:
-    ///   - icon: The icon shape to display.
+    ///   - shape: The icon shape to display.
+    ///   - style: The rendering style — `.stroked` (default) or `.filled`.
     ///   - size: The base size of the icon in points (default 24).
     ///   - color: The color of the icon (default nil, inherits from environment).
     ///   - strokeWidth: The stroke width in points (default 2).
     ///   - absoluteStrokeWidth: If true, stroke width remains constant regardless of size.
     public init(
-        _ icon: LucideShape,
+        shape: LucideShape,
+        style: LucideIconStyle = .stroked,
         size: CGFloat = 24,
         color: Color? = nil,
         strokeWidth: CGFloat = 2,
         absoluteStrokeWidth: Bool = false
     ) {
-        self.iconShape = icon
+        self.iconShape = shape
+        self.style = style
         self._size = ScaledMetric(wrappedValue: size)
         self.color = color
         self.strokeWidth = strokeWidth
         self.absoluteStrokeWidth = absoluteStrokeWidth
     }
-    
+
     /// Initialize with a ``LucideIconName`` enum case.
     public init(
         _ iconName: LucideIconName,
+        style: LucideIconStyle = .stroked,
         size: CGFloat = 24,
         color: Color? = nil,
         strokeWidth: CGFloat = 2,
         absoluteStrokeWidth: Bool = false
     ) {
-        self.iconShape = LucideShape(path: iconName.path)
-        self._size = ScaledMetric(wrappedValue: size)
-        self.color = color
-        self.strokeWidth = strokeWidth
-        self.absoluteStrokeWidth = absoluteStrokeWidth
+        self.init(shape: LucideShape(path: iconName.path), style: style, size: size, color: color, strokeWidth: strokeWidth, absoluteStrokeWidth: absoluteStrokeWidth)
     }
-    
-    /// Initialize with a string icon name (type-safe lookup with fallback).
+
+    /// Initialize with a ``LucideLabIconName`` enum case.
+    /// Use this to explicitly render a lab (experimental) icon.
+    public init(
+        lab iconName: LucideLabIconName,
+        style: LucideIconStyle = .stroked,
+        size: CGFloat = 24,
+        color: Color? = nil,
+        strokeWidth: CGFloat = 2,
+        absoluteStrokeWidth: Bool = false
+    ) {
+        self.init(shape: LucideShape(path: iconName.path), style: style, size: size, color: color, strokeWidth: strokeWidth, absoluteStrokeWidth: absoluteStrokeWidth)
+    }
+
+    /// Initialize with a string icon name (looks up across regular and lab sets).
     /// - Parameters:
-    ///   - name: The icon name (e.g., "house", "settings", "heart").
+    ///   - name: The icon name (e.g., "house", "settings", "broom").
+    ///   - style: The rendering style — `.stroked` (default) or `.filled`.
     ///   - size: The icon size (default: 24).
     ///   - color: The icon color (default: nil, inherits from environment).
     ///   - strokeWidth: The stroke width (default: 2).
     ///   - absoluteStrokeWidth: When true, stroke width stays constant regardless of icon size.
     public init(
         name: String,
+        style: LucideIconStyle = .stroked,
         size: CGFloat = 24,
         color: Color? = nil,
         strokeWidth: CGFloat = 2,
         absoluteStrokeWidth: Bool = false
     ) {
-        if let iconName = LucideIconName(rawValue: name) {
-            self.iconShape = LucideShape(path: iconName.path)
-        } else if let labIconName = LucideLabIconName(rawValue: name) {
-            self.iconShape = LucideShape(path: labIconName.path)
-        } else {
-            // Fallback to house if not found
-            self.iconShape = LucideShape(path: LucideIconName.house.path)
-            #if DEBUG
-            print("⚠️ LucideIcon: Icon '\(name)' not found in regular or lab sets, using fallback")
-            #endif
-        }
-        self._size = ScaledMetric(wrappedValue: size)
-        self.color = color
-        self.strokeWidth = strokeWidth
-        self.absoluteStrokeWidth = absoluteStrokeWidth
+        self.init(shape: resolveShape(named: name), style: style, size: size, color: color, strokeWidth: strokeWidth, absoluteStrokeWidth: absoluteStrokeWidth)
     }
-    
-    public var body: some View {
-        let actualStrokeWidth: CGFloat = absoluteStrokeWidth ? strokeWidth : strokeWidth * (size / 24)
-        let style = StrokeStyle(lineWidth: actualStrokeWidth, lineCap: .round, lineJoin: .round)
-        
-        return Group {
-            if let color = color {
-                iconShape.stroke(color, style: style)
-            } else {
-                iconShape.stroke(style: style)
-            }
-        }
-        .frame(width: size, height: size)
-    }
-}
 
-/// A SwiftUI view that displays a filled Lucide icon.
-///
-/// `LucideIconFill` renders closed areas of the icon with a solid fill,
-/// while keeping decorative lines as strokes.
-///
-/// ### Example
-/// ```swift
-/// LucideIconFill(.star, color: .yellow)
-/// ```
-public struct LucideIconFill: View {
-    let iconShape: LucideShape
-    @ScaledMetric var size: CGFloat
-    var color: Color?
-    var strokeWidth: CGFloat
-    var absoluteStrokeWidth: Bool
-    
-    /// Initialize with a ``LucideShape``.
-    public init(
-        _ icon: LucideShape,
-        size: CGFloat = 24,
-        color: Color? = nil,
-        strokeWidth: CGFloat = 2,
-        absoluteStrokeWidth: Bool = false
-    ) {
-        self.iconShape = icon
-        self._size = ScaledMetric(wrappedValue: size)
-        self.color = color
-        self.strokeWidth = strokeWidth
-        self.absoluteStrokeWidth = absoluteStrokeWidth
-    }
-    
-    /// Initialize with a ``LucideIconName`` enum case.
-    public init(
-        _ iconName: LucideIconName,
-        size: CGFloat = 24,
-        color: Color? = nil,
-        strokeWidth: CGFloat = 2,
-        absoluteStrokeWidth: Bool = false
-    ) {
-        self.iconShape = LucideShape(path: iconName.path)
-        self._size = ScaledMetric(wrappedValue: size)
-        self.color = color
-        self.strokeWidth = strokeWidth
-        self.absoluteStrokeWidth = absoluteStrokeWidth
-    }
-    
-    /// Initialize with a string icon name (type-safe lookup with fallback).
-    public init(
-        name: String,
-        size: CGFloat = 24,
-        color: Color? = nil,
-        strokeWidth: CGFloat = 2,
-        absoluteStrokeWidth: Bool = false
-    ) {
-        if let iconName = LucideIconName(rawValue: name) {
-            self.iconShape = LucideShape(path: iconName.path)
-        } else if let labIconName = LucideLabIconName(rawValue: name) {
-            self.iconShape = LucideShape(path: labIconName.path)
-        } else {
-            self.iconShape = LucideShape(path: LucideIconName.house.path)
-            #if DEBUG
-            print("⚠️ LucideIconFill: Icon '\(name)' not found in regular or lab sets, using fallback")
-            #endif
-        }
-        self._size = ScaledMetric(wrappedValue: size)
-        self.color = color
-        self.strokeWidth = strokeWidth
-        self.absoluteStrokeWidth = absoluteStrokeWidth
-    }
-    
     public var body: some View {
         let actualStrokeWidth: CGFloat = absoluteStrokeWidth ? strokeWidth : strokeWidth * (size / 24)
         let strokeStyle = StrokeStyle(lineWidth: actualStrokeWidth, lineCap: .round, lineJoin: .round)
         let fillStyle = FillStyle(eoFill: true)
         let rect = CGRect(x: 0, y: 0, width: size, height: size)
-        
+
+        // For filled style, stroke only the open subpaths; for stroked style, stroke the full path.
+        let strokePath = style == .filled ? iconShape.openPath(in: rect) : iconShape.path(in: rect)
+
         return ZStack {
+            if style == .filled {
+                if let color = color {
+                    iconShape.closedPath(in: rect).fill(color, style: fillStyle)
+                } else {
+                    iconShape.closedPath(in: rect).fill(style: fillStyle)
+                }
+            }
             if let color = color {
-                iconShape.closedPath(in: rect).fill(color, style: fillStyle)
-                iconShape.openPath(in: rect).stroke(color, style: strokeStyle)
+                strokePath.stroke(color, style: strokeStyle)
             } else {
-                iconShape.closedPath(in: rect).fill(style: fillStyle)
-                iconShape.openPath(in: rect).stroke(style: strokeStyle)
+                strokePath.stroke(style: strokeStyle)
             }
         }
         .frame(width: size, height: size)
-    }
-}
-
-// MARK: - Lab Icons
-
-/// A view that displays an experimental Lucide Lab icon
-public struct LucideLabIcon: View {
-    let iconShape: LucideShape
-    var size: CGFloat
-    var color: Color?
-    var strokeWidth: CGFloat
-    var absoluteStrokeWidth: Bool
-    
-    /// Initialize with a LucideLabIconName enum case
-    public init(
-        _ iconName: LucideLabIconName,
-        size: CGFloat = 24,
-        color: Color? = nil,
-        strokeWidth: CGFloat = 2,
-        absoluteStrokeWidth: Bool = false
-    ) {
-        self.iconShape = LucideShape(path: iconName.path)
-        self.size = size
-        self.color = color
-        self.strokeWidth = strokeWidth
-        self.absoluteStrokeWidth = absoluteStrokeWidth
-    }
-    
-    public var body: some View {
-        LucideIcon(iconShape, size: size, color: color, strokeWidth: strokeWidth, absoluteStrokeWidth: absoluteStrokeWidth)
-    }
-}
-
-/// A view that displays a filled experimental Lucide Lab icon
-public struct LucideLabIconFill: View {
-    let iconShape: LucideShape
-    var size: CGFloat
-    var color: Color?
-    var strokeWidth: CGFloat
-    var absoluteStrokeWidth: Bool
-    
-    /// Initialize with a LucideLabIconName enum case
-    public init(
-        _ iconName: LucideLabIconName,
-        size: CGFloat = 24,
-        color: Color? = nil,
-        strokeWidth: CGFloat = 2,
-        absoluteStrokeWidth: Bool = false
-    ) {
-        self.iconShape = LucideShape(path: iconName.path)
-        self.size = size
-        self.color = color
-        self.strokeWidth = strokeWidth
-        self.absoluteStrokeWidth = absoluteStrokeWidth
-    }
-    
-    public var body: some View {
-        LucideIconFill(iconShape, size: size, color: color, strokeWidth: strokeWidth, absoluteStrokeWidth: absoluteStrokeWidth)
     }
 }
 
@@ -269,7 +167,7 @@ extension LucideIconName {
         guard let iconName = LucideIconName(rawValue: name) else { return nil }
         return LucideShape(path: iconName.path)
     }
-    
+
     /// A list of all available icon names in the regular set.
     public static var allNames: [String] {
         LucideIconName.allCases.map { $0.rawValue }
@@ -282,7 +180,7 @@ extension LucideLabIconName {
         guard let iconName = LucideLabIconName(rawValue: name) else { return nil }
         return LucideShape(path: iconName.path)
     }
-    
+
     /// A list of all available icon names in the experimental lab set.
     public static var allNames: [String] {
         LucideLabIconName.allCases.map { $0.rawValue }
@@ -293,37 +191,23 @@ extension LucideLabIconName {
 
 @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, visionOS 1.0, *)
 public extension Label where Title == Text, Icon == LucideIcon {
-    /// Creates a label with a Lucide icon.
-    /// - Parameters:
-    ///   - titleKey: A key for the localized title.
-    ///   - icon: The Lucide icon to display.
-    ///   - size: The size of the icon (default 24).
-    init(_ titleKey: LocalizedStringKey, lucide icon: LucideIconName, size: CGFloat = 24) {
-        self.init(title: { Text(titleKey) }, icon: { LucideIcon(icon, size: size) })
+    /// Creates a label with a Lucide icon from a shape.
+    init(_ titleKey: LocalizedStringKey, lucide shape: LucideShape, style: LucideIconStyle = .stroked, size: CGFloat = 24) {
+        self.init(title: { Text(titleKey) }, icon: { LucideIcon(shape: shape, style: style, size: size) })
     }
-    
-    /// Creates a label with an experimental Lucide Lab icon.
-    init(_ titleKey: LocalizedStringKey, lucideLab icon: LucideLabIconName, size: CGFloat = 24) {
-        self.init(title: { Text(titleKey) }, icon: { LucideIcon(LucideShape(path: icon.path), size: size) })
+
+    /// Creates a label with a Lucide icon from a shape using a title string.
+    init<S: StringProtocol>(_ title: S, lucide shape: LucideShape, style: LucideIconStyle = .stroked, size: CGFloat = 24) {
+        self.init(title: { Text(title) }, icon: { LucideIcon(shape: shape, style: style, size: size) })
     }
-    
-    /// Creates a label with a Lucide icon from its string name.
-    init(_ titleKey: LocalizedStringKey, lucideName iconName: String, size: CGFloat = 24) {
-        self.init(title: { Text(titleKey) }, icon: { LucideIcon(name: iconName, size: size) })
+
+    /// Creates a label with a Lucide icon from a ``LucideIconName`` case (shorthand convenience).
+    init(_ titleKey: LocalizedStringKey, lucide iconName: LucideIconName, style: LucideIconStyle = .stroked, size: CGFloat = 24) {
+        self.init(title: { Text(titleKey) }, icon: { LucideIcon(iconName, style: style, size: size) })
     }
-    
-    /// Creates a label with a Lucide icon using a title string.
-    init<S: StringProtocol>(_ title: S, lucide icon: LucideIconName, size: CGFloat = 24) {
-        self.init(title: { Text(title) }, icon: { LucideIcon(icon, size: size) })
-    }
-    
-    /// Creates a label with an experimental Lucide Lab icon using a title string.
-    init<S: StringProtocol>(_ title: S, lucideLab icon: LucideLabIconName, size: CGFloat = 24) {
-        self.init(title: { Text(title) }, icon: { LucideIcon(LucideShape(path: icon.path), size: size) })
-    }
-    
-    /// Creates a label with a Lucide icon from its string name using a title string.
-    init<S: StringProtocol>(_ title: S, lucideName iconName: String, size: CGFloat = 24) {
-        self.init(title: { Text(title) }, icon: { LucideIcon(name: iconName, size: size) })
+
+    /// Creates a label with a Lucide icon from a ``LucideIconName`` case using a title string.
+    init<S: StringProtocol>(_ title: S, lucide iconName: LucideIconName, style: LucideIconStyle = .stroked, size: CGFloat = 24) {
+        self.init(title: { Text(title) }, icon: { LucideIcon(iconName, style: style, size: size) })
     }
 }

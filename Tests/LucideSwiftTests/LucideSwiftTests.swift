@@ -20,7 +20,7 @@ final class LucideSwiftTests: XCTestCase {
     }
 
     func testIconView() {
-        let icon = LucideIcon(Lucide.house, size: 24, color: .blue)
+        let icon = LucideIcon(shape: Lucide.house, size: 24, color: .blue)
         // Just verify it compiles and creates a view
         XCTAssertNotNil(icon)
     }
@@ -34,16 +34,16 @@ final class LucideSwiftTests: XCTestCase {
         XCTAssertNotNil(avocadoIcon)
 
         // Test lab icon view
-        let iconView = LucideLabIcon(.broom, size: 32, color: .purple)
+        let iconView = LucideIcon(lab: .broom, size: 32, color: .purple)
         XCTAssertNotNil(iconView)
     }
 
     func testImageExtension() {
         // Verify Image initializers compile and return non-nil Image views
         let image1 = Image(lucide: .house)
-        let image2 = Image(lucideFill: .heart)
+        let image2 = Image(lucide: .heart, style: .filled)
         let image3 = Image(lucideLab: .broom)
-        let image4 = Image(lucideLabFill: .avocado)
+        let image4 = Image(lucideLab: .avocado, style: .filled)
 
         XCTAssertNotNil(image1)
         XCTAssertNotNil(image2)
@@ -93,7 +93,7 @@ final class LucideSwiftTests: XCTestCase {
         XCTAssertNotNil(unknown)
 
         // Filled version
-        let filledHouse = LucideIconFill(name: "house")
+        let filledHouse = LucideIcon(name: "house", style: .filled)
         XCTAssertNotNil(filledHouse)
     }
 }
