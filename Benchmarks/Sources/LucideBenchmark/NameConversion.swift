@@ -75,15 +75,22 @@ enum NameConversion {
                 }
             }
 
-            // Insert dash at letter→digit boundaries
-            // (e.g. arrowDown01 → arrow-down-01; aLargeSmall → a-large-small)
-            if i > 0 {
+            // Insert dash at letter→digit boundaries, but NOT when this forms
+            // a compact digit-letter-digit group (e.g. grid3X3 → grid-3x3, not grid-3x-3)
+            // Only when the letter is NOT preceded by a digit.
+            if i > 0 && isDigit {
                 let prevScalar = scalars[i - 1]
-                if CharacterSet.letters.contains(prevScalar) && isDigit {
+                let prevIsLetter = CharacterSet.letters.contains(prevScalar)
+                let prevIsDigit  = CharacterSet.decimalDigits.contains(prevScalar)
+
+                // Dash before digit when preceded by a letter that wasn't itself after a digit
+                if prevIsLetter && (i < 2 || !CharacterSet.decimalDigits.contains(scalars[i - 2])) {
                     if !result.hasSuffix("-") {
                         result += "-"
                     }
                 }
+                // Dash before digit when preceded by another digit (e.g. arrowDown01 → arrow-down-01)
+                // The "01" part: the '0' already got a dash from letter→digit, '1' follows '0' — no new dash needed
             }
 
             result.append(isUpper ? Character(scalar).lowercased() : Character(scalar))

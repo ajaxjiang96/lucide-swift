@@ -19,7 +19,7 @@ jobs:
           swift run -c release LucideBenchmark
 
       - name: Upload benchmark report to release
-        if: success() && github.event_name == 'release'
+        if: success() && github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'
         uses: softprops/action-gh-release@v3
         with:
           files: Benchmarks/benchmark-report.md
