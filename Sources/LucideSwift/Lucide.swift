@@ -13,7 +13,7 @@ import SwiftUI
 ///
 /// `LucideShape` is the underlying vector representation of a Lucide icon.
 /// While you can use it directly like any other SwiftUI `Shape`, it is usually
-/// easier to use the ``LucideIcon`` or ``LucideIconFill`` views.
+/// easier to use the ``LucideIcon`` view.
 ///
 /// ### Example
 /// ```swift
