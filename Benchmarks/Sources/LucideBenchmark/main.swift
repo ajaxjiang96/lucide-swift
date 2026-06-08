@@ -42,8 +42,8 @@ struct LucideBenchmarkMain {
         let lookupResult = LookupSpeedBenchmark.measure(iterations: 10)
         rows.append(BenchmarkRow(
             dimension: "Lookup Speed (avg)",
-            lucideSwift: ReportFormatter.formatTime(lookupResult.lucideSwiftAvgNanos / 1_000_000_000),
-            lucideIconsSwift: ReportFormatter.formatTime(lookupResult.lucideIconsSwiftAvgNanos / 1_000_000_000),
+            lucideSwift: ReportFormatter.formatTime(lookupResult.lucideSwiftAvgSeconds),
+            lucideIconsSwift: ReportFormatter.formatTime(lookupResult.lucideIconsSwiftAvgSeconds),
             note: "Enum raw-value lookup vs NSImage bundle lookup. \(lookupResult.iterations) iterations × \(lookupResult.iconCount) icons."
         ))
 
@@ -52,8 +52,8 @@ struct LucideBenchmarkMain {
         let renderResult = RenderBenchmark.measure(iconCount: 200)
         rows.append(BenchmarkRow(
             dimension: "Render (per icon)",
-            lucideSwift: ReportFormatter.formatTime(renderResult.lucideSwiftAvgMillis / 1000),
-            lucideIconsSwift: ReportFormatter.formatTime(renderResult.lucideIconsSwiftAvgMillis / 1000),
+            lucideSwift: ReportFormatter.formatTime(renderResult.lucideSwiftAvgSeconds),
+            lucideIconsSwift: ReportFormatter.formatTime(renderResult.lucideIconsSwiftAvgSeconds),
             note: "Time to rasterize to 24×24 CGImage. \(renderResult.iconCount) icons."
         ))
 

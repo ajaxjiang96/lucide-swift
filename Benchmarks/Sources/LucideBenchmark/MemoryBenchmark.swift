@@ -33,7 +33,8 @@ enum MemoryBenchmark {
         let beforeLucideIcons = residentMemory()
         var images: [NSImage] = []
         for name in allLucideNames {
-            let image = NSImage.image(lucideId: name)
+            let kebabName = NameConversion.camelToKebab(name)
+            let image = NSImage.image(lucideId: kebabName)
             images.append(image)
         }
         let afterLucideIcons = residentMemory()

@@ -12,18 +12,19 @@ enum RenderBenchmark {
         let lucideIconsSwiftTime: Duration
         let iconCount: Int
 
-        var lucideSwiftAvgMillis: Double {
-            Double(lucideSwiftTime.components.attoseconds) / 1_000_000_000_000 / Double(iconCount)
+        var lucideSwiftAvgSeconds: Double {
+            durationToSeconds(lucideSwiftTime) / Double(iconCount)
         }
 
-        var lucideIconsSwiftAvgMillis: Double {
-            Double(lucideIconsSwiftTime.components.attoseconds) / 1_000_000_000_000 / Double(iconCount)
+        var lucideIconsSwiftAvgSeconds: Double {
+            durationToSeconds(lucideIconsSwiftTime) / Double(iconCount)
         }
     }
 
     /// Time how long it takes to render N icons to a 24x24 CGImage.
     static func measure(iconCount: Int = 200) -> Result {
-        let sampleNames = Array(LucideIconName.allNames.prefix(iconCount))
+        let allNames = LucideIconName.allNames
+        let sampleNames = Array(allNames.prefix(iconCount))
         let size = CGSize(width: 24, height: 24)
 
         // Warm up
@@ -31,7 +32,8 @@ enum RenderBenchmark {
             if let shape = LucideIconName(rawValue: name)?.shape {
                 _ = renderLucideShape(shape, size: size)
             }
-            _ = renderLucideIconsImage(named: name, size: size)
+            let kebabName = NameConversion.camelToKebab(name)
+            _ = renderLucideIconsImage(named: kebabName, size: size)
         }
 
         // LucideSwift: render via CoreGraphics rasterization of Shape
@@ -43,11 +45,12 @@ enum RenderBenchmark {
             }
         }
 
-        // lucide-icons-swift: extract CGImage from NSImage
+        // lucide-icons-swift: extract CGImage from NSImage (uses kebab-case IDs)
         let lucideIconsClock = ContinuousClock()
         let lucideIconsSwiftTime = lucideIconsClock.measure {
             for name in sampleNames {
-                _ = renderLucideIconsImage(named: name, size: size)
+                let kebabName = NameConversion.camelToKebab(name)
+                _ = renderLucideIconsImage(named: kebabName, size: size)
             }
         }
 
@@ -116,5 +119,11 @@ enum RenderBenchmark {
         }
 
         return cgImage
+    }
+
+    /// Convert a Duration to seconds as Double, including both the seconds
+    /// and attoseconds components (not just the sub-second attoseconds part).
+    private static func durationToSeconds(_ duration: Duration) -> Double {
+        Double(duration.components.seconds) + Double(duration.components.attoseconds) / 1_000_000_000_000_000_000
     }
 }
