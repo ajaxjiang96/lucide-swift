@@ -14,7 +14,8 @@ enum ReportFormatter {
     static func generate(rows: [BenchmarkRow]) -> String {
         let date = ISO8601DateFormatter().string(from: Date())
         let osVersion = ProcessInfo.processInfo.operatingSystemVersionString
-        let swiftVersion = "5.9"
+        // Detect Swift version from compiler, fall back to tools version in Package.swift
+        let swiftVersion = detectSwiftVersion()
 
         var report = """
         # LucideSwift Benchmark Report
@@ -62,6 +63,30 @@ enum ReportFormatter {
         """
 
         return report
+    }
+
+    // MARK: - Helpers
+
+    private static func detectSwiftVersion() -> String {
+        let process = Process()
+        process.executableURL = URL(fileURLWithPath: "/usr/bin/swift")
+        process.arguments = ["--version"]
+        let pipe = Pipe()
+        process.standardOutput = pipe
+        process.standardError = FileHandle.nullDevice
+
+        do {
+            try process.run()
+            process.waitUntilExit()
+            let data = pipe.fileHandleForReading.readDataToEndOfFile()
+            let output = String(data: data, encoding: .utf8) ?? ""
+            // Parse "Apple Swift version 5.10 (...)" or "swift-driver version: 1.0 (...)"
+            if let range = output.range(of: #"version (\d+\.\d+)"#, options: .regularExpression) {
+                return String(output[range].dropFirst(8)) // "5.10"
+            }
+        } catch { }
+
+        return "unknown"
     }
 
     // MARK: - Formatting Helpers

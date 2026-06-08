@@ -26,8 +26,10 @@ enum MemoryBenchmark {
         let afterLucide = residentMemory()
         let lucideDelta = afterLucide > beforeLucide ? afterLucide - beforeLucide : 0
 
-        // Clear
+        // Clear and drain autorelease pool to avoid contaminating the next phase
         shapes.removeAll()
+        autoreleasepool { }
+        Thread.sleep(forTimeInterval: 0.1)
 
         // --- lucide-icons-swift ---
         let beforeLucideIcons = residentMemory()
@@ -56,12 +58,14 @@ enum MemoryBenchmark {
         var count = mach_msg_type_number_t(MemoryLayout<mach_task_basic_info>.size) / 4
 
         let result = withUnsafeMutablePointer(to: &info) { ptr in
-            ptr.withMemoryRebound(to: integer_t.self, capacity: 1) { reboundPtr in
+            ptr.withMemoryRebound(to: integer_t.self, capacity: Int(count)) { reboundPtr in
                 task_info(mach_task_self_, task_flavor_t(MACH_TASK_BASIC_INFO), reboundPtr, &count)
             }
         }
 
         guard result == KERN_SUCCESS else { return 0 }
+        // resident_size includes shared pages, but the delta between phases
+        // cancels out shared overhead since both libraries share the same runtime deps
         return info.resident_size
     }
 }

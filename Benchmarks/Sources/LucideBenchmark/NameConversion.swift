@@ -66,19 +66,20 @@ enum NameConversion {
             let isDigit = CharacterSet.decimalDigits.contains(scalar)
             let isLower = CharacterSet.lowercaseLetters.contains(scalar)
 
-            // Insert dash before uppercase (but not at start)
+            // Insert dash before uppercase, but NOT when it follows a digit
+            // (e.g. axis3D → axis-3d, not axis-3-d; grid2X2 → grid-2x2, not grid-2-x-2)
             if i > 0 && isUpper {
-                result += "-"
+                let prevScalar = scalars[i - 1]
+                if !CharacterSet.decimalDigits.contains(prevScalar) {
+                    result += "-"
+                }
             }
 
-            // Insert dash at letter→digit and digit→letter boundaries
+            // Insert dash at letter→digit boundaries
+            // (e.g. arrowDown01 → arrow-down-01; aLargeSmall → a-large-small)
             if i > 0 {
                 let prevScalar = scalars[i - 1]
-                let prevIsLetter = CharacterSet.letters.contains(prevScalar)
-                let prevIsDigit = CharacterSet.decimalDigits.contains(prevScalar)
-
-                if (prevIsLetter && isDigit) || (prevIsDigit && (isLower || isUpper)) {
-                    // Don't double-dash — we might have already added one for uppercase
+                if CharacterSet.letters.contains(prevScalar) && isDigit {
                     if !result.hasSuffix("-") {
                         result += "-"
                     }
