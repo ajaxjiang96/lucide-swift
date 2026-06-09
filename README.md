@@ -9,7 +9,6 @@
   <img src="https://img.shields.io/badge/Lucide-1.17.0-orange.svg" alt="Lucide Icons Version">
   <a href="https://github.com/ajaxjiang96/lucide-swift/actions/workflows/sync-and-release.yml"><img src="https://img.shields.io/github/actions/workflow/status/ajaxjiang96/lucide-swift/sync-and-release.yml?branch=main&label=Sync%20%26%20Release" alt="Sync & Release Workflow"></a>
   <br>
-  <a href="https://github.com/ajaxjiang96/lucide-swift/releases/latest/download/benchmark-report.md"><img src="https://img.shields.io/badge/Benchmark-Report-blue" alt="Benchmark Report"></a>
   <a href="https://buymeacoffee.com/ajaxjiang"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
 </p>
 
@@ -229,6 +228,19 @@ This package generates pure Swift code from SVG paths:
 - **Build Time**: Zero impact (generated at package build time)
 - **Runtime Memory**: Cached `static let` paths executed exactly once, negligible overhead during view diffing
 - **Stroke Scaling**: Configurable via `strokeWidth` and `absoluteStrokeWidth` parameters
+
+## Benchmark
+
+Comparison against [lucide-icons-swift](https://github.com/JakubMazur/lucide-icons-swift) (PDF asset catalog).
+
+| Dimension | LucideSwift (Shape) | lucide-icons-swift (Assets) |
+|---|---|---|
+| Binary Size | 23.3 MB | 4.9 MB |
+| Lookup Speed | 1.2 µs | 5.5 µs |
+| Render (View/Image creation) | 8.1 µs | 5.2 µs |
+| Memory (all icons) | 4.0 MB | 1.5 MB |
+
+> *Lower is better. Run locally: `cd Benchmarks && swift run -c release LucideBenchmark`*
 
 ## Icon Gallery
 
