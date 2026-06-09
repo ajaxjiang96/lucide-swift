@@ -26,26 +26,32 @@ enum BinarySizeBenchmark {
     // MARK: - Private
 
     private static func measureLucideSwiftSize() -> UInt64 {
-        var total: UInt64 = 0
-
-        // Measure the generated code file (the bulk of the library) — relative to Benchmarks/
-        let generatedPath = "../Sources/LucideSwift/Lucide+Generated.swift"
-        total += fileSize(at: generatedPath)
-
-        // Measure compiled objects for LucideSwift (built as dependency under Benchmarks/.build)
-        // With -c release, SPM uses the release configuration subdirectory
-        total += directorySize(at: "./.build/release/LucideSwift.build")
-
-        return total
+        // Only .o files — the linked code that ships in the app binary.
+        // Source text and intermediate build files are not shipped.
+        return objectFileSize(at: "./.build/release/LucideSwift.build")
     }
 
     private static func measureLucideIconsSwiftSize() -> UInt64 {
+        // .o files + compiled asset catalog — what ships in the app bundle.
+        return objectFileSize(at: "./.build/release/LucideIcons.build")
+            + directorySize(at: "./.build/checkouts/lucide-icons-swift/Sources/LucideIcons/icons.xcassets")
+    }
+
+    /// Sum only the .o object files in a build directory — these are what get linked.
+    private static func objectFileSize(at path: String) -> UInt64 {
+        let fileManager = FileManager.default
+        guard fileManager.fileExists(atPath: path),
+              let enumerator = fileManager.enumerator(atPath: path) else {
+            return 0
+        }
+
         var total: UInt64 = 0
-
-        // Measure the asset catalog (the shipped product) + compiled objects, not the full checkout
-        total += directorySize(at: "./.build/checkouts/lucide-icons-swift/Sources/LucideIcons/icons.xcassets")
-        total += directorySize(at: "./.build/release/LucideIcons.build")
-
+        for case let file as String in enumerator {
+            if file.hasSuffix(".o") {
+                let fullPath = "\(path)/\(file)"
+                total += fileSize(at: fullPath)
+            }
+        }
         return total
     }
 
