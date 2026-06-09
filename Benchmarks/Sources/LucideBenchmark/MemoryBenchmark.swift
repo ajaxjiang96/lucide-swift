@@ -1,9 +1,13 @@
 import Foundation
 import AppKit
+import SwiftUI
 import LucideSwift
 import LucideIcons
 
-/// Measures memory footprint of loading all icons from each library.
+/// Measures memory footprint using each library's recommended access pattern.
+///
+/// LucideSwift: loading all `LucideIcon` Views (one per icon).
+/// lucide-icons-swift: loading all `NSImage`s via `image(lucideId:)`.
 enum MemoryBenchmark {
 
     struct Result {
@@ -12,30 +16,31 @@ enum MemoryBenchmark {
         let iconCount: Int
     }
 
-    /// Measure memory delta before and after loading all icons.
+    /// Measure resident memory delta after loading all icons through each library's recommended API.
     static func measure() -> Result {
-        let allLucideNames = LucideIconName.allNames
+        let allNames = LucideIconName.allNames
 
         // --- LucideSwift ---
         let beforeLucide = residentMemory()
-        var shapes: [LucideShape] = []
-        for name in allLucideNames {
-            if let shape = LucideIconName(rawValue: name)?.shape {
-                shapes.append(shape)
-            }
+        var icons: [LucideIcon] = []
+        icons.reserveCapacity(allNames.count)
+        for name in allNames {
+            guard let iconName = LucideIconName(rawValue: name) else { continue }
+            icons.append(LucideIcon(iconName, size: 24))
         }
         let afterLucide = residentMemory()
         let lucideDelta = afterLucide > beforeLucide ? afterLucide - beforeLucide : 0
 
-        // Clear and drain autorelease pool to avoid contaminating the next phase
-        shapes.removeAll()
+        // Clear
+        icons.removeAll()
         autoreleasepool { }
         Thread.sleep(forTimeInterval: 0.1)
 
         // --- lucide-icons-swift ---
         let beforeLucideIcons = residentMemory()
         var images: [NSImage] = []
-        for name in allLucideNames {
+        images.reserveCapacity(allNames.count)
+        for name in allNames {
             let kebabName = NameConversion.camelToKebab(name)
             guard let image = NSImage.image(lucideId: kebabName) else { continue }
             images.append(image)
@@ -46,14 +51,12 @@ enum MemoryBenchmark {
         return Result(
             lucideSwiftDeltaBytes: lucideDelta,
             lucideIconsSwiftDeltaBytes: lucideIconsDelta,
-            iconCount: allLucideNames.count
+            iconCount: allNames.count
         )
     }
 
     // MARK: - Private
 
-    /// Returns the current resident memory size in bytes.
-    /// Uses `task_info` to get the phys_footprint of the current process.
     private static func residentMemory() -> UInt64 {
         var info = mach_task_basic_info()
         var count = mach_msg_type_number_t(MemoryLayout<mach_task_basic_info>.size) / 4

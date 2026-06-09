@@ -3,7 +3,10 @@ import AppKit
 import LucideSwift
 import LucideIcons
 
-/// Benchmarks icon resolution speed for both libraries.
+/// Benchmarks icon resolution speed using each library's recommended accessor.
+///
+/// LucideSwift: `LucideIconName(rawValue:)` — type-safe enum lookup.
+/// lucide-icons-swift: `NSImage.image(lucideId:)` — string-based bundle lookup.
 enum LookupSpeedBenchmark {
 
     struct Result {
@@ -21,30 +24,28 @@ enum LookupSpeedBenchmark {
         }
     }
 
-    /// Time how long it takes to look up every icon N times.
-    /// - Parameter iterations: how many times to repeat the full set of lookups.
     static func measure(iterations: Int = 10) -> Result {
         let allNames = LucideIconName.allNames
         let sampleNames = Array(allNames.prefix(200))
 
         // Warm up
         for name in sampleNames {
-            _ = LucideIconName(rawValue: name)?.shape
+            _ = LucideIconName(rawValue: name)
             let kebabName = NameConversion.camelToKebab(name)
             _ = NSImage.image(lucideId: kebabName)
         }
 
-        // LucideSwift: enum raw-value lookup + shape access
+        // LucideSwift: enum raw-value lookup (the recommended API)
         let lucideSwiftClock = ContinuousClock()
         let lucideSwiftTime = lucideSwiftClock.measure {
             for _ in 0..<iterations {
                 for name in sampleNames {
-                    _ = LucideIconName(rawValue: name)?.shape
+                    _ = LucideIconName(rawValue: name)
                 }
             }
         }
 
-        // lucide-icons-swift: NSImage bundle lookup (uses kebab-case IDs)
+        // lucide-icons-swift: NSImage bundle lookup (the recommended API)
         let lucideIconsClock = ContinuousClock()
         let lucideIconsSwiftTime = lucideIconsClock.measure {
             for _ in 0..<iterations {
@@ -63,8 +64,6 @@ enum LookupSpeedBenchmark {
         )
     }
 
-    /// Convert a Duration to seconds as Double, including both the seconds
-    /// and attoseconds components (not just the sub-second attoseconds part).
     private static func durationToSeconds(_ duration: Duration) -> Double {
         Double(duration.components.seconds) + Double(duration.components.attoseconds) / 1_000_000_000_000_000_000
     }
