@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.5.0
-//  Lucide Icons Version: 1.17.0
+//  Library Version: 0.6.2
+//  Lucide Icons Version: 1.18.0
 //  Lucide Lab Version: 14d067fd7b15b179085c89d29dc1b44a37bc6569
 //  DO NOT EDIT MANUALLY
 //
@@ -1182,6 +1182,7 @@ public enum LucideIconName: String, CaseIterable {
     case planeLanding
     case planeTakeoff
     case play
+    case playOff
     case plug
     case plug2
     case plugZap
@@ -1687,6 +1688,7 @@ public enum LucideIconName: String, CaseIterable {
     case wavesVertical
     case waypoints
     case webcam
+    case webcamOff
     case webhook
     case webhookOff
     case weight
@@ -4068,6 +4070,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.planeTakeoffPath
         case .play:
             return Self.playPath
+        case .playOff:
+            return Self.playOffPath
         case .plug:
             return Self.plugPath
         case .plug2:
@@ -5078,6 +5082,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.waypointsPath
         case .webcam:
             return Self.webcamPath
+        case .webcamOff:
+            return Self.webcamOffPath
         case .webhook:
             return Self.webhookPath
         case .webhookOff:
@@ -7502,6 +7508,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.planeTakeoffPathOpen
         case .play:
             return Self.playPathOpen
+        case .playOff:
+            return Self.playOffPathOpen
         case .plug:
             return Self.plugPathOpen
         case .plug2:
@@ -8512,6 +8520,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.waypointsPathOpen
         case .webcam:
             return Self.webcamPathOpen
+        case .webcamOff:
+            return Self.webcamOffPathOpen
         case .webhook:
             return Self.webhookPathOpen
         case .webhookOff:
@@ -10936,6 +10946,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.planeTakeoffPathClosed
         case .play:
             return Self.playPathClosed
+        case .playOff:
+            return Self.playOffPathClosed
         case .plug:
             return Self.plugPathClosed
         case .plug2:
@@ -11946,6 +11958,8 @@ public enum LucideIconName: String, CaseIterable {
             return Self.waypointsPathClosed
         case .webcam:
             return Self.webcamPathClosed
+        case .webcamOff:
+            return Self.webcamOffPathClosed
         case .webhook:
             return Self.webhookPathClosed
         case .webhookOff:
@@ -72226,6 +72240,46 @@ path.closeSubpath()
         return path
     }()
         
+    /// Play Off icon path
+    static let playOffPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.215, y: 4.56))
+path.addLine(to: CGPoint(x: 20.005, y: 10.27))
+path.addCurve(to: CGPoint(x: 21.001235108228716, y: 11.998137014076145), control1: CGPoint(x: 20.621144047171555, y: 10.627519663900944), control2: CGPoint(x: 21.000617099860786, y: 11.285779368643427))
+path.addCurve(to: CGPoint(x: 20.008, y: 13.727999999999998), control1: CGPoint(x: 21.001853116596646, y: 12.710494659508862), control2: CGPoint(x: 20.6235227852878, y: 13.369411799228788))
+path.addLine(to: CGPoint(x: 19.615, y: 13.958))
+path.move(to: CGPoint(x: 16.042, y: 16.042))
+path.addLine(to: CGPoint(x: 8.008000000000001, y: 20.728))
+path.addCurve(to: CGPoint(x: 6.003750991026565, y: 20.73480383043524), control1: CGPoint(x: 7.389337968155891, y: 21.089010051806454), control2: CGPoint(x: 6.624849779779278, y: 21.091605262271905))
+path.addCurve(to: CGPoint(x: 5.0, y: 19.0), control1: CGPoint(x: 5.382652202273853, y: 20.378002398598575), control2: CGPoint(x: 4.999787711247279, y: 19.716289691454698))
+path.addLine(to: CGPoint(x: 5.0, y: 5.0))
+path.move(to: CGPoint(x: 2.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+        return path
+    }()
+    /// Play Off icon open subpaths
+    static let playOffPathOpen: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 10.215, y: 4.56))
+path.addLine(to: CGPoint(x: 20.005, y: 10.27))
+path.addCurve(to: CGPoint(x: 21.001235108228716, y: 11.998137014076145), control1: CGPoint(x: 20.621144047171555, y: 10.627519663900944), control2: CGPoint(x: 21.000617099860786, y: 11.285779368643427))
+path.addCurve(to: CGPoint(x: 20.008, y: 13.727999999999998), control1: CGPoint(x: 21.001853116596646, y: 12.710494659508862), control2: CGPoint(x: 20.6235227852878, y: 13.369411799228788))
+path.addLine(to: CGPoint(x: 19.615, y: 13.958))
+path.move(to: CGPoint(x: 16.042, y: 16.042))
+path.addLine(to: CGPoint(x: 8.008000000000001, y: 20.728))
+path.addCurve(to: CGPoint(x: 6.003750991026565, y: 20.73480383043524), control1: CGPoint(x: 7.389337968155891, y: 21.089010051806454), control2: CGPoint(x: 6.624849779779278, y: 21.091605262271905))
+path.addCurve(to: CGPoint(x: 5.0, y: 19.0), control1: CGPoint(x: 5.382652202273853, y: 20.378002398598575), control2: CGPoint(x: 4.999787711247279, y: 19.716289691454698))
+path.addLine(to: CGPoint(x: 5.0, y: 5.0))
+path.move(to: CGPoint(x: 2.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+        return path
+    }()
+    /// Play Off icon closed subpaths
+    static let playOffPathClosed: Path = {
+        var path = Path()
+                return path
+    }()
+        
     /// Plug icon path
     static let plugPath: Path = {
         var path = Path()
@@ -98766,6 +98820,56 @@ path.addCurve(to: CGPoint(x: 15.0, y: 10.0), control1: CGPoint(x: 13.65685424949
 path.addCurve(to: CGPoint(x: 12.0, y: 7.0), control1: CGPoint(x: 15.0, y: 8.34314575050762), control2: CGPoint(x: 13.65685424949238, y: 7.0))
 path.addCurve(to: CGPoint(x: 9.0, y: 10.0), control1: CGPoint(x: 10.34314575050762, y: 7.0), control2: CGPoint(x: 9.0, y: 8.34314575050762))
         return path
+    }()
+        
+    /// Webcam Off icon path
+    static let webcamOffPath: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 22.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 12.754, y: 7.096))
+path.addCurve(to: CGPoint(x: 14.904000000000002, y: 9.245999999999999), control1: CGPoint(x: 13.807663943358273, y: 7.369511675966315), control2: CGPoint(x: 14.630488324033685, y: 8.192336056641727))
+path.move(to: CGPoint(x: 12.863, y: 12.873))
+path.addCurve(to: CGPoint(x: 9.879567460525745, y: 12.12123118272445), control1: CGPoint(x: 11.805947996321509, y: 13.190256951329406), control2: CGPoint(x: 10.660059925361592, y: 12.901514736300973))
+path.addCurve(to: CGPoint(x: 9.126999999999999, y: 9.138), control1: CGPoint(x: 9.099074995689897, y: 11.340947629147928), control2: CGPoint(x: 8.81002603473668, y: 10.195136896051212))
+path.move(to: CGPoint(x: 16.566, y: 16.57))
+path.addCurve(to: CGPoint(x: 6.3382288245457765, y: 15.660852770930973), control1: CGPoint(x: 13.38635343741155, y: 18.783471163891964), control2: CGPoint(x: 9.077595454940107, y: 18.400465393300017))
+path.addCurve(to: CGPoint(x: 5.429999999999998, y: 5.433), control1: CGPoint(x: 3.5988621941514456, y: 12.921240148561928), control2: CGPoint(x: 3.2162433292452803, y: 8.612447791527764))
+path.move(to: CGPoint(x: 2.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.move(to: CGPoint(x: 7.0, y: 22.0))
+path.addLine(to: CGPoint(x: 17.0, y: 22.0))
+path.move(to: CGPoint(x: 8.478, y: 2.817))
+path.addCurve(to: CGPoint(x: 17.656850561979024, y: 4.343149438020976), control1: CGPoint(x: 11.549250544098632, y: 1.311093340110391), control2: CGPoint(x: 15.23813863484446, y: 1.9244375108864116))
+path.addCurve(to: CGPoint(x: 19.183, y: 13.521999999999998), control1: CGPoint(x: 20.07556248911359, y: 6.761861365155541), control2: CGPoint(x: 20.68890665988961, y: 10.450749455901368))
+        return path
+    }()
+    /// Webcam Off icon open subpaths
+    static let webcamOffPathOpen: Path = {
+        var path = Path()
+        path.move(to: CGPoint(x: 12.0, y: 22.0))
+path.addLine(to: CGPoint(x: 12.0, y: 18.0))
+path.move(to: CGPoint(x: 12.754, y: 7.096))
+path.addCurve(to: CGPoint(x: 14.904000000000002, y: 9.245999999999999), control1: CGPoint(x: 13.807663943358273, y: 7.369511675966315), control2: CGPoint(x: 14.630488324033685, y: 8.192336056641727))
+path.move(to: CGPoint(x: 12.863, y: 12.873))
+path.addCurve(to: CGPoint(x: 9.879567460525745, y: 12.12123118272445), control1: CGPoint(x: 11.805947996321509, y: 13.190256951329406), control2: CGPoint(x: 10.660059925361592, y: 12.901514736300973))
+path.addCurve(to: CGPoint(x: 9.126999999999999, y: 9.138), control1: CGPoint(x: 9.099074995689897, y: 11.340947629147928), control2: CGPoint(x: 8.81002603473668, y: 10.195136896051212))
+path.move(to: CGPoint(x: 16.566, y: 16.57))
+path.addCurve(to: CGPoint(x: 6.3382288245457765, y: 15.660852770930973), control1: CGPoint(x: 13.38635343741155, y: 18.783471163891964), control2: CGPoint(x: 9.077595454940107, y: 18.400465393300017))
+path.addCurve(to: CGPoint(x: 5.429999999999998, y: 5.433), control1: CGPoint(x: 3.5988621941514456, y: 12.921240148561928), control2: CGPoint(x: 3.2162433292452803, y: 8.612447791527764))
+path.move(to: CGPoint(x: 2.0, y: 2.0))
+path.addLine(to: CGPoint(x: 22.0, y: 22.0))
+path.move(to: CGPoint(x: 7.0, y: 22.0))
+path.addLine(to: CGPoint(x: 17.0, y: 22.0))
+path.move(to: CGPoint(x: 8.478, y: 2.817))
+path.addCurve(to: CGPoint(x: 17.656850561979024, y: 4.343149438020976), control1: CGPoint(x: 11.549250544098632, y: 1.311093340110391), control2: CGPoint(x: 15.23813863484446, y: 1.9244375108864116))
+path.addCurve(to: CGPoint(x: 19.183, y: 13.521999999999998), control1: CGPoint(x: 20.07556248911359, y: 6.761861365155541), control2: CGPoint(x: 20.68890665988961, y: 10.450749455901368))
+        return path
+    }()
+    /// Webcam Off icon closed subpaths
+    static let webcamOffPathClosed: Path = {
+        var path = Path()
+                return path
     }()
         
     /// Webhook icon path
@@ -128506,6 +128610,9 @@ public struct Lucide {
     /// Play icon
     public static let play: LucideShape = LucideShape(combined: LucideIconName.playPath, open: LucideIconName.playPathOpen, closed: LucideIconName.playPathClosed)
 
+    /// Play Off icon
+    public static let playOff: LucideShape = LucideShape(combined: LucideIconName.playOffPath, open: LucideIconName.playOffPathOpen, closed: LucideIconName.playOffPathClosed)
+
     /// Plug icon
     public static let plug: LucideShape = LucideShape(combined: LucideIconName.plugPath, open: LucideIconName.plugPathOpen, closed: LucideIconName.plugPathClosed)
 
@@ -130021,6 +130128,9 @@ public struct Lucide {
     /// Webcam icon
     public static let webcam: LucideShape = LucideShape(combined: LucideIconName.webcamPath, open: LucideIconName.webcamPathOpen, closed: LucideIconName.webcamPathClosed)
 
+    /// Webcam Off icon
+    public static let webcamOff: LucideShape = LucideShape(combined: LucideIconName.webcamOffPath, open: LucideIconName.webcamOffPathOpen, closed: LucideIconName.webcamOffPathClosed)
+
     /// Webhook icon
     public static let webhook: LucideShape = LucideShape(combined: LucideIconName.webhookPath, open: LucideIconName.webhookPathOpen, closed: LucideIconName.webhookPathClosed)
 
@@ -131276,10 +131386,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.5.0"
+    public static let libraryVersion = "0.6.2"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.17.0"
+    public static let lucideVersion = "1.18.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "14d067fd7b15b179085c89d29dc1b44a37bc6569"
