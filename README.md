@@ -215,10 +215,10 @@ Other Lucide packages for Swift use image assets (PDFs/PNGs) which can:
 - Have larger binary sizes due to multiple resolutions
 
 This package generates pure Swift code from SVG paths:
-- **Pay for what you use**: The linker only includes icons actually referenced — 10 icons cost ~200 KB, not the full set
 - **True vectors**: Native SwiftUI rendering at any resolution
 - **Type safety**: Compile-time verification prevents runtime icon-not-found errors
 - **Better tooling**: Xcode autocomplete shows all 1,728 available icons
+- **Faster at runtime**: Enum lookup is 7× faster than bundle lookup, Shape rendering is 2× faster than PDF rasterization
 
 ## Technical Details
 
@@ -236,14 +236,14 @@ Comparison against [lucide-icons-swift](https://github.com/JakubMazur/lucide-ico
 
 | Dimension | LucideSwift (Shape) | lucide-icons-swift (Assets) |
 |---|---|---|
-| Binary Size | 42.3 MB¹ | 4.9 MB² |
+| Binary Size | 42.3 MB | 4.9 MB |
 | Lookup Speed (avg) | 1.3 µs | 9.6 µs |
 | Render (per icon) | 4.2 µs | 9.3 µs |
 | Memory (all icons) | 4.7 MB | 6.5 MB |
 
-> ¹ Compiled object file size for all 2,102 icons. The linker only includes icons referenced
-> in your code — a typical app using 10–20 icons contributes ~200–400 KB to the final binary.
-> ² Includes the PDF asset catalog which is always bundled in full.
+> Binary size reflects the full icon set in both cases — the lucide-icons-swift PDF
+> asset catalog is always bundled, and LucideSwift's switch-dispatch architecture
+> means the linker includes all icon code regardless of usage.
 
 > *Lower is better. Run locally: `cd Benchmarks && swift run -c release LucideBenchmark`*
 
