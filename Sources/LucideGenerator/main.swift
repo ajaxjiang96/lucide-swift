@@ -16,6 +16,7 @@ struct Config {
     static let lucideLabRepoURL = "https://github.com/lucide-icons/lucide-lab.git"
     static let iconsPath = "icons"
     static let outputFile = "Sources/LucideSwift/Lucide+Generated.swift"
+    static let iconsOutputDir = "Sources/LucideSwift/Icons"
     static let tempDirectory = FileManager.default.temporaryDirectory.appendingPathComponent("lucide-generator")
     static let lucideVersionFile = ".lucide-version"
     static let lucideLabVersionFile = ".lucide-lab-version"
@@ -108,6 +109,23 @@ struct Icon {
         
         return reservedKeywords.contains(baseName) ? baseName + "Icon" : baseName
     }
+
+    /// PascalCase file name, prefixed to avoid collisions with existing source files.
+    /// e.g. "house" → "Icon_House.swift", "arrow-right" → "Icon_ArrowRight.swift"
+    /// Lab: "house" → "Icon_Lab_House.swift"
+    var fileName: String {
+        let pascal = name.components(separatedBy: "-")
+            .map { $0.capitalized }
+            .joined()
+        let scope = type == .lab ? "Lab_" : ""
+        return "Icon_\(scope)\(pascal)"
+    }
+
+    /// Namespace enum type name, e.g. "LucideHouseIcon" or "LucideLabHouseIcon"
+    var iconNamespaceEnum: String {
+        let prefix = type == .lab ? "LucideLab" : "Lucide"
+        return prefix + fileName
+    }
 }
 
 // MARK: - Swift Code Generator
@@ -157,7 +175,7 @@ struct SwiftCodeGenerator {
         // Generate regular path switches
         for icon in regularIcons {
             code += "        case .\(icon.swiftName):\n"
-            code += "            return Self.\(icon.swiftName)Path\n"
+            code += "            return \(icon.iconNamespaceEnum).combinedPath\n"
         }
         
         code += """
@@ -172,7 +190,7 @@ struct SwiftCodeGenerator {
 
         for icon in regularIcons {
             code += "        case .\(icon.swiftName):\n"
-            code += "            return Self.\(icon.swiftName)PathOpen\n"
+            code += "            return \(icon.iconNamespaceEnum).openPath\n"
         }
 
         code += """
@@ -187,7 +205,7 @@ struct SwiftCodeGenerator {
 
         for icon in regularIcons {
             code += "        case .\(icon.swiftName):\n"
-            code += "            return Self.\(icon.swiftName)PathClosed\n"
+            code += "            return \(icon.iconNamespaceEnum).closedPath\n"
         }
 
         code += """
@@ -201,12 +219,8 @@ struct SwiftCodeGenerator {
 
         """
 
-        // Generate regular path definitions
-        for icon in regularIcons {
-            code += generatePathStaticProperty(for: icon)
-        }
-
-        code += "}\n\n"
+        // Path data lives in individual icon files under Sources/LucideSwift/Icons/
+        code += "\n}\n\n"
 
         // MARK: - Lucide Lab Icon Enum
 
@@ -233,7 +247,7 @@ struct SwiftCodeGenerator {
         // Generate lab path switches
         for icon in labIcons {
             code += "        case .\(icon.swiftName):\n"
-            code += "            return Self.\(icon.swiftName)Path\n"
+            code += "            return \(icon.iconNamespaceEnum).combinedPath\n"
         }
         
         code += """
@@ -248,7 +262,7 @@ struct SwiftCodeGenerator {
 
         for icon in labIcons {
             code += "        case .\(icon.swiftName):\n"
-            code += "            return Self.\(icon.swiftName)PathOpen\n"
+            code += "            return \(icon.iconNamespaceEnum).openPath\n"
         }
 
         code += """
@@ -263,7 +277,7 @@ struct SwiftCodeGenerator {
 
         for icon in labIcons {
             code += "        case .\(icon.swiftName):\n"
-            code += "            return Self.\(icon.swiftName)PathClosed\n"
+            code += "            return \(icon.iconNamespaceEnum).closedPath\n"
         }
 
         code += """
@@ -277,12 +291,8 @@ struct SwiftCodeGenerator {
 
         """
 
-        // Generate lab path definitions
-        for icon in labIcons {
-            code += generatePathStaticProperty(for: icon)
-        }
-
-        code += "}\n\n"
+        // Path data lives in individual icon files under Sources/LucideSwift/Icons/Lab/
+        code += "\n}\n\n"
         
         code += """
         // MARK: - Convenient Access
@@ -294,7 +304,7 @@ struct SwiftCodeGenerator {
         // Generate regular static properties
         for icon in regularIcons {
             code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon\n"
-            code += "    public static let \(icon.swiftName): LucideShape = LucideShape(combined: LucideIconName.\(icon.swiftName)Path, open: LucideIconName.\(icon.swiftName)PathOpen, closed: LucideIconName.\(icon.swiftName)PathClosed)\n\n"
+            code += "    public static let \(icon.swiftName): LucideShape = LucideShape(combined: \(icon.iconNamespaceEnum).combinedPath, open: \(icon.iconNamespaceEnum).openPath, closed: \(icon.iconNamespaceEnum).closedPath)\n\n"
         }
         
         code += "}\n\n"
@@ -307,7 +317,7 @@ struct SwiftCodeGenerator {
         // Generate lab static properties
         for icon in labIcons {
             code += "    /// \(icon.name.replacingOccurrences(of: "-", with: " ").capitalized) icon (Experimental)\n"
-            code += "    public static let \(icon.swiftName): LucideShape = LucideShape(combined: LucideLabIconName.\(icon.swiftName)Path, open: LucideLabIconName.\(icon.swiftName)PathOpen, closed: LucideLabIconName.\(icon.swiftName)PathClosed)\n\n"
+            code += "    public static let \(icon.swiftName): LucideShape = LucideShape(combined: \(icon.iconNamespaceEnum).combinedPath, open: \(icon.iconNamespaceEnum).openPath, closed: \(icon.iconNamespaceEnum).closedPath)\n\n"
         }
         
         code += "}\n\n"
@@ -364,8 +374,8 @@ struct SwiftCodeGenerator {
         var code = "        \n"
 
         // Combined path (all subpaths)
-        code += "    /// \(name) icon path\n"
-        code += "    static let \(icon.swiftName)Path: Path = {\n"
+        code += "    /// \(name) icon path (combined)\n"
+        code += "    static let combinedPath: Path = {\n"
         code += "        var path = Path()\n"
         code += "        \(combinedPathCode)"
         code += "        return path\n"
@@ -373,7 +383,7 @@ struct SwiftCodeGenerator {
 
         // Open subpaths only
         code += "    /// \(name) icon open subpaths\n"
-        code += "    static let \(icon.swiftName)PathOpen: Path = {\n"
+        code += "    static let openPath: Path = {\n"
         code += "        var path = Path()\n"
         code += "        \(openPathCode)"
         code += "        return path\n"
@@ -381,7 +391,7 @@ struct SwiftCodeGenerator {
 
         // Closed subpaths only
         code += "    /// \(name) icon closed subpaths\n"
-        code += "    static let \(icon.swiftName)PathClosed: Path = {\n"
+        code += "    static let closedPath: Path = {\n"
         code += "        var path = Path()\n"
         code += "        \(closedPathCode)"
         code += "        return path\n"
@@ -511,6 +521,64 @@ struct SwiftCodeGenerator {
 
         return (openMutable, closedMutable)
     }
+
+    /// Generates a single icon file containing a namespace enum with the three static path properties.
+    /// e.g. `Sources/LucideSwift/Icons/HouseIcon.swift`
+    static func generateIconFile(icon: Icon) -> String {
+        let pathData = generatePathStaticProperty(for: icon)
+        // Strip the leading 4-space indent (was for embedding inside the main enum body)
+        let dedented = pathData.components(separatedBy: "\n")
+            .map { line in
+                if line.hasPrefix("    ") {
+                    return String(line.dropFirst(4))
+                }
+                if line.isEmpty { return line }
+                return line
+            }
+            .joined(separator: "\n")
+
+        let iconName = icon.name.replacingOccurrences(of: "-", with: " ").capitalized
+
+        // Use caseless enum as a namespace for static stored properties
+        return """
+        //
+        //  \(icon.fileName).swift
+        //  LucideSwift
+        //
+        //  Auto-generated — DO NOT EDIT
+        //  Icon: \(icon.name)
+        //
+
+        import SwiftUI
+
+        /// \(iconName) icon
+        internal enum \(icon.iconNamespaceEnum) {
+        \(dedented)
+        }
+
+        """
+    }
+
+    /// Writes one Swift file per icon under `Sources/LucideSwift/Icons/`.
+    /// Cleans the output directory first to remove stale files from previous generations.
+    static func writeIconFiles(icons: [Icon]) throws {
+        let fileManager = FileManager.default
+        let baseDir = URL(fileURLWithPath: Config.iconsOutputDir)
+        let labDir = baseDir.appendingPathComponent("Lab")
+
+        // Clean directories
+        if fileManager.fileExists(atPath: baseDir.path) {
+            try fileManager.removeItem(at: baseDir)
+        }
+        try fileManager.createDirectory(at: labDir, withIntermediateDirectories: true)
+
+        for icon in icons {
+            let code = generateIconFile(icon: icon)
+            let dir = icon.type == .lab ? labDir : baseDir
+            let fileURL = dir.appendingPathComponent("\(icon.fileName).swift")
+            try code.write(to: fileURL, atomically: true, encoding: .utf8)
+        }
+    }
 }
 
 // MARK: - Main
@@ -553,11 +621,16 @@ func main() async throws {
     print("📝 Generating Swift code...")
     let swiftCode = SwiftCodeGenerator.generateSwiftCode(icons: icons)
     
-    // Write to file
+    // Write main generated file
     let outputURL = URL(fileURLWithPath: Config.outputFile)
     try swiftCode.write(to: outputURL, atomically: true, encoding: .utf8)
-    
     print("✅ Generated: \(Config.outputFile)")
+
+    // Write individual icon files
+    print("📝 Writing individual icon files...")
+    try SwiftCodeGenerator.writeIconFiles(icons: icons)
+    print("✅ Generated \(icons.count) icon files in \(Config.iconsOutputDir)")
+
     print("🎉 Done! Generated \(icons.count) icons")
     
     // Cleanup

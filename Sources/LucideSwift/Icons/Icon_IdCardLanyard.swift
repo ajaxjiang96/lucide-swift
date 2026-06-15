@@ -1,0 +1,76 @@
+//
+//  Icon_IdCardLanyard.swift
+//  LucideSwift
+//
+//  Auto-generated — DO NOT EDIT
+//  Icon: id-card-lanyard
+//
+
+import SwiftUI
+
+/// Id Card Lanyard icon
+internal enum LucideIcon_IdCardLanyard {
+    
+/// Id Card Lanyard icon path (combined)
+static let combinedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 13.5, y: 8.0))
+path.addLine(to: CGPoint(x: 10.5, y: 8.0))
+path.move(to: CGPoint(x: 15.0, y: 2.0))
+path.addLine(to: CGPoint(x: 14.0, y: 4.0))
+path.addLine(to: CGPoint(x: 17.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 6.0), control1: CGPoint(x: 18.104569499661586, y: 4.0), control2: CGPoint(x: 19.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 19.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 19.0, y: 21.104569499661586), control2: CGPoint(x: 18.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 20.0), control1: CGPoint(x: 5.8954305003384135, y: 22.0), control2: CGPoint(x: 5.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 5.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 4.0), control1: CGPoint(x: 5.0, y: 4.8954305003384135), control2: CGPoint(x: 5.895430500338413, y: 4.0))
+path.addLine(to: CGPoint(x: 10.0, y: 4.0))
+path.move(to: CGPoint(x: 16.899, y: 22.0))
+path.addCurve(to: CGPoint(x: 11.999500000000001, y: 17.997446615112807), control1: CGPoint(x: 16.424826101096837, y: 19.670837734595644), control2: CGPoint(x: 14.37643873395689, y: 17.997446615112807))
+path.addCurve(to: CGPoint(x: 7.1000000000000005, y: 22.0), control1: CGPoint(x: 9.62256126604311, y: 17.997446615112807), control2: CGPoint(x: 7.574173898903164, y: 19.670837734595644))
+path.move(to: CGPoint(x: 9.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 8.0))
+path.move(to: CGPoint(x: 9.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 9.0, y: 16.65685424949238), control2: CGPoint(x: 10.34314575050762, y: 18.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 15.0), control1: CGPoint(x: 13.65685424949238, y: 18.0), control2: CGPoint(x: 15.0, y: 16.65685424949238))
+path.addCurve(to: CGPoint(x: 12.0, y: 12.0), control1: CGPoint(x: 15.0, y: 13.34314575050762), control2: CGPoint(x: 13.65685424949238, y: 12.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 15.0), control1: CGPoint(x: 10.34314575050762, y: 12.0), control2: CGPoint(x: 9.0, y: 13.34314575050762))
+    return path
+}()
+/// Id Card Lanyard icon open subpaths
+static let openPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 13.5, y: 8.0))
+path.addLine(to: CGPoint(x: 10.5, y: 8.0))
+path.move(to: CGPoint(x: 15.0, y: 2.0))
+path.addLine(to: CGPoint(x: 14.0, y: 4.0))
+path.addLine(to: CGPoint(x: 17.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 6.0), control1: CGPoint(x: 18.104569499661586, y: 4.0), control2: CGPoint(x: 19.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 19.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 22.0), control1: CGPoint(x: 19.0, y: 21.104569499661586), control2: CGPoint(x: 18.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 7.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 20.0), control1: CGPoint(x: 5.8954305003384135, y: 22.0), control2: CGPoint(x: 5.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 5.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 4.0), control1: CGPoint(x: 5.0, y: 4.8954305003384135), control2: CGPoint(x: 5.895430500338413, y: 4.0))
+path.addLine(to: CGPoint(x: 10.0, y: 4.0))
+path.move(to: CGPoint(x: 16.899, y: 22.0))
+path.addCurve(to: CGPoint(x: 11.999500000000001, y: 17.997446615112807), control1: CGPoint(x: 16.424826101096837, y: 19.670837734595644), control2: CGPoint(x: 14.37643873395689, y: 17.997446615112807))
+path.addCurve(to: CGPoint(x: 7.1000000000000005, y: 22.0), control1: CGPoint(x: 9.62256126604311, y: 17.997446615112807), control2: CGPoint(x: 7.574173898903164, y: 19.670837734595644))
+path.move(to: CGPoint(x: 9.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 8.0))
+    return path
+}()
+/// Id Card Lanyard icon closed subpaths
+static let closedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 9.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 9.0, y: 16.65685424949238), control2: CGPoint(x: 10.34314575050762, y: 18.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 15.0), control1: CGPoint(x: 13.65685424949238, y: 18.0), control2: CGPoint(x: 15.0, y: 16.65685424949238))
+path.addCurve(to: CGPoint(x: 12.0, y: 12.0), control1: CGPoint(x: 15.0, y: 13.34314575050762), control2: CGPoint(x: 13.65685424949238, y: 12.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 15.0), control1: CGPoint(x: 10.34314575050762, y: 12.0), control2: CGPoint(x: 9.0, y: 13.34314575050762))
+    return path
+}()
+
+}

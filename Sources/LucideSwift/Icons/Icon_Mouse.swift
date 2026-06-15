@@ -1,0 +1,54 @@
+//
+//  Icon_Mouse.swift
+//  LucideSwift
+//
+//  Auto-generated — DO NOT EDIT
+//  Icon: mouse
+//
+
+import SwiftUI
+
+/// Mouse icon
+internal enum LucideIcon_Mouse {
+    
+/// Mouse icon path (combined)
+static let combinedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 12.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 9.0), control1: CGPoint(x: 15.865993248815554, y: 2.0), control2: CGPoint(x: 19.0, y: 5.134006751184446))
+path.addLine(to: CGPoint(x: 19.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 19.0, y: 18.865993248815556), control2: CGPoint(x: 15.865993248815554, y: 22.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 15.0), control1: CGPoint(x: 8.134006751184447, y: 22.0), control2: CGPoint(x: 5.000000000000001, y: 18.865993248815556))
+path.addLine(to: CGPoint(x: 5.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 2.0), control1: CGPoint(x: 5.0, y: 5.1340067511844465), control2: CGPoint(x: 8.134006751184444, y: 2.000000000000001))
+path.closeSubpath()
+    return path
+}()
+/// Mouse icon open subpaths
+static let openPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 12.0, y: 6.0))
+path.addLine(to: CGPoint(x: 12.0, y: 10.0))
+    return path
+}()
+/// Mouse icon closed subpaths
+static let closedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 9.0), control1: CGPoint(x: 15.865993248815554, y: 2.0), control2: CGPoint(x: 19.0, y: 5.134006751184446))
+path.addLine(to: CGPoint(x: 19.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 19.0, y: 18.865993248815556), control2: CGPoint(x: 15.865993248815554, y: 22.0))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 15.0), control1: CGPoint(x: 8.134006751184447, y: 22.0), control2: CGPoint(x: 5.000000000000001, y: 18.865993248815556))
+path.addLine(to: CGPoint(x: 5.0, y: 9.0))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 2.0), control1: CGPoint(x: 5.0, y: 5.1340067511844465), control2: CGPoint(x: 8.134006751184444, y: 2.000000000000001))
+path.closeSubpath()
+    return path
+}()
+
+}

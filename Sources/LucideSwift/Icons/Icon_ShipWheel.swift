@@ -1,0 +1,82 @@
+//
+//  Icon_ShipWheel.swift
+//  LucideSwift
+//
+//  Auto-generated — DO NOT EDIT
+//  Icon: ship-wheel
+//
+
+import SwiftUI
+
+/// Ship Wheel icon
+internal enum LucideIcon_ShipWheel {
+    
+/// Ship Wheel icon path (combined)
+static let combinedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 9.5))
+path.move(to: CGPoint(x: 19.0, y: 5.0))
+path.addLine(to: CGPoint(x: 13.77, y: 10.23))
+path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addLine(to: CGPoint(x: 14.5, y: 12.0))
+path.move(to: CGPoint(x: 19.0, y: 19.0))
+path.addLine(to: CGPoint(x: 13.77, y: 13.77))
+path.move(to: CGPoint(x: 12.0, y: 14.5))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 10.23, y: 13.77))
+path.addLine(to: CGPoint(x: 5.0, y: 19.0))
+path.move(to: CGPoint(x: 9.5, y: 12.0))
+path.addLine(to: CGPoint(x: 2.0, y: 12.0))
+path.move(to: CGPoint(x: 10.23, y: 10.23))
+path.addLine(to: CGPoint(x: 5.0, y: 5.0))
+path.move(to: CGPoint(x: 4.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 20.0), control1: CGPoint(x: 4.000000000000001, y: 16.41827799864635), control2: CGPoint(x: 7.581722001353653, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 12.0), control1: CGPoint(x: 16.41827799864635, y: 20.0), control2: CGPoint(x: 20.0, y: 16.418277998646346))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 20.0, y: 7.581722001353652), control2: CGPoint(x: 16.41827799864635, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 11.999999999999998), control1: CGPoint(x: 7.581722001353653, y: 4.0), control2: CGPoint(x: 4.000000000000001, y: 7.5817220013536515))
+path.move(to: CGPoint(x: 9.5, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.5), control1: CGPoint(x: 9.5, y: 13.380711874576985), control2: CGPoint(x: 10.619288125423017, y: 14.5))
+path.addCurve(to: CGPoint(x: 14.5, y: 12.0), control1: CGPoint(x: 13.380711874576985, y: 14.5), control2: CGPoint(x: 14.5, y: 13.380711874576983))
+path.addCurve(to: CGPoint(x: 12.0, y: 9.5), control1: CGPoint(x: 14.5, y: 10.619288125423017), control2: CGPoint(x: 13.380711874576985, y: 9.5))
+path.addCurve(to: CGPoint(x: 9.5, y: 12.0), control1: CGPoint(x: 10.619288125423017, y: 9.5), control2: CGPoint(x: 9.5, y: 10.619288125423015))
+    return path
+}()
+/// Ship Wheel icon open subpaths
+static let openPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 12.0, y: 2.0))
+path.addLine(to: CGPoint(x: 12.0, y: 9.5))
+path.move(to: CGPoint(x: 19.0, y: 5.0))
+path.addLine(to: CGPoint(x: 13.77, y: 10.23))
+path.move(to: CGPoint(x: 22.0, y: 12.0))
+path.addLine(to: CGPoint(x: 14.5, y: 12.0))
+path.move(to: CGPoint(x: 19.0, y: 19.0))
+path.addLine(to: CGPoint(x: 13.77, y: 13.77))
+path.move(to: CGPoint(x: 12.0, y: 14.5))
+path.addLine(to: CGPoint(x: 12.0, y: 22.0))
+path.move(to: CGPoint(x: 10.23, y: 13.77))
+path.addLine(to: CGPoint(x: 5.0, y: 19.0))
+path.move(to: CGPoint(x: 9.5, y: 12.0))
+path.addLine(to: CGPoint(x: 2.0, y: 12.0))
+path.move(to: CGPoint(x: 10.23, y: 10.23))
+path.addLine(to: CGPoint(x: 5.0, y: 5.0))
+    return path
+}()
+/// Ship Wheel icon closed subpaths
+static let closedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 4.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 20.0), control1: CGPoint(x: 4.000000000000001, y: 16.41827799864635), control2: CGPoint(x: 7.581722001353653, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 12.0), control1: CGPoint(x: 16.41827799864635, y: 20.0), control2: CGPoint(x: 20.0, y: 16.418277998646346))
+path.addCurve(to: CGPoint(x: 12.0, y: 4.0), control1: CGPoint(x: 20.0, y: 7.581722001353652), control2: CGPoint(x: 16.41827799864635, y: 4.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 11.999999999999998), control1: CGPoint(x: 7.581722001353653, y: 4.0), control2: CGPoint(x: 4.000000000000001, y: 7.5817220013536515))
+path.move(to: CGPoint(x: 9.5, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 14.5), control1: CGPoint(x: 9.5, y: 13.380711874576985), control2: CGPoint(x: 10.619288125423017, y: 14.5))
+path.addCurve(to: CGPoint(x: 14.5, y: 12.0), control1: CGPoint(x: 13.380711874576985, y: 14.5), control2: CGPoint(x: 14.5, y: 13.380711874576983))
+path.addCurve(to: CGPoint(x: 12.0, y: 9.5), control1: CGPoint(x: 14.5, y: 10.619288125423017), control2: CGPoint(x: 13.380711874576985, y: 9.5))
+path.addCurve(to: CGPoint(x: 9.5, y: 12.0), control1: CGPoint(x: 10.619288125423017, y: 9.5), control2: CGPoint(x: 9.5, y: 10.619288125423015))
+    return path
+}()
+
+}

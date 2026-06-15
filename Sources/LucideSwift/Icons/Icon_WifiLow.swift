@@ -1,0 +1,38 @@
+//
+//  Icon_WifiLow.swift
+//  LucideSwift
+//
+//  Auto-generated — DO NOT EDIT
+//  Icon: wifi-low
+//
+
+import SwiftUI
+
+/// Wifi Low icon
+internal enum LucideIcon_WifiLow {
+    
+/// Wifi Low icon path (combined)
+static let combinedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 12.0, y: 20.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 19.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 8.5, y: 16.429))
+path.addCurve(to: CGPoint(x: 15.5, y: 16.429), control1: CGPoint(x: 10.44421755099319, y: 14.523285619028565), control2: CGPoint(x: 13.55578244900681, y: 14.523285619028567))
+    return path
+}()
+/// Wifi Low icon open subpaths
+static let openPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 12.0, y: 20.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 19.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 8.5, y: 16.429))
+path.addCurve(to: CGPoint(x: 15.5, y: 16.429), control1: CGPoint(x: 10.44421755099319, y: 14.523285619028565), control2: CGPoint(x: 13.55578244900681, y: 14.523285619028567))
+    return path
+}()
+/// Wifi Low icon closed subpaths
+static let closedPath: Path = {
+    var path = Path()
+            return path
+}()
+
+}

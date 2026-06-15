@@ -1,0 +1,64 @@
+//
+//  Icon_Aperture.swift
+//  LucideSwift
+//
+//  Auto-generated — DO NOT EDIT
+//  Icon: aperture
+//
+
+import SwiftUI
+
+/// Aperture icon
+internal enum LucideIcon_Aperture {
+    
+/// Aperture icon path (combined)
+static let combinedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 14.31, y: 8.0))
+path.addLine(to: CGPoint(x: 20.05, y: 17.939999999999998))
+path.move(to: CGPoint(x: 9.69, y: 8.0))
+path.addLine(to: CGPoint(x: 21.17, y: 8.0))
+path.move(to: CGPoint(x: 7.38, y: 12.0))
+path.addLine(to: CGPoint(x: 13.120000000000001, y: 2.0600000000000005))
+path.move(to: CGPoint(x: 9.69, y: 16.0))
+path.addLine(to: CGPoint(x: 3.95, y: 6.06))
+path.move(to: CGPoint(x: 14.31, y: 16.0))
+path.addLine(to: CGPoint(x: 2.83, y: 16.0))
+path.move(to: CGPoint(x: 16.62, y: 12.0))
+path.addLine(to: CGPoint(x: 10.88, y: 21.939999999999998))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+    return path
+}()
+/// Aperture icon open subpaths
+static let openPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 14.31, y: 8.0))
+path.addLine(to: CGPoint(x: 20.05, y: 17.939999999999998))
+path.move(to: CGPoint(x: 9.69, y: 8.0))
+path.addLine(to: CGPoint(x: 21.17, y: 8.0))
+path.move(to: CGPoint(x: 7.38, y: 12.0))
+path.addLine(to: CGPoint(x: 13.120000000000001, y: 2.0600000000000005))
+path.move(to: CGPoint(x: 9.69, y: 16.0))
+path.addLine(to: CGPoint(x: 3.95, y: 6.06))
+path.move(to: CGPoint(x: 14.31, y: 16.0))
+path.addLine(to: CGPoint(x: 2.83, y: 16.0))
+path.move(to: CGPoint(x: 16.62, y: 12.0))
+path.addLine(to: CGPoint(x: 10.88, y: 21.939999999999998))
+    return path
+}()
+/// Aperture icon closed subpaths
+static let closedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 2.0000000000000018, y: 17.522847498307936), control2: CGPoint(x: 6.477152501692067, y: 22.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 12.0), control1: CGPoint(x: 17.522847498307936, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307932))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.477152501692066), control2: CGPoint(x: 17.522847498307936, y: 2.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
+    return path
+}()
+
+}
