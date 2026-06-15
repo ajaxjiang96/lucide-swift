@@ -215,18 +215,19 @@ Other Lucide packages for Swift use image assets (PDFs/PNGs) which can:
 - Have larger binary sizes due to multiple resolutions
 
 This package generates pure Swift code from SVG paths:
-- **Smaller binary**: Code compresses better than image assets
+- **Pay for what you use**: The linker only includes icons actually referenced — 10 icons cost ~200 KB, not the full set
 - **True vectors**: Native SwiftUI rendering at any resolution
 - **Type safety**: Compile-time verification prevents runtime icon-not-found errors
-- **Better tooling**: Xcode autocomplete shows all 1728 available icons
+- **Better tooling**: Xcode autocomplete shows all 1,728 available icons
 
 ## Technical Details
 
-- **Total Icons**: 8428 icons
+- **Total Icons**: 1,728 regular + 374 lab = 2,102 icons
 - **Filled Icons**: Experimental support included
-- **Generated Code**: ~4.1MB of Swift path data
-- **Build Time**: Zero impact (generated at package build time)
-- **Runtime Memory**: Cached `static let` paths executed exactly once, negligible overhead during view diffing
+- **File Structure**: Each icon in its own Swift file under `Sources/LucideSwift/Icons/` for fast incremental compilation
+- **Generated Code**: ~140K lines of Swift path data across 2,102 files
+- **Build Time**: Parallel compilation of individual icon files scales across all cores
+- **Runtime Memory**: `static let` paths cached on first access, negligible overhead during view diffing
 - **Stroke Scaling**: Configurable via `strokeWidth` and `absoluteStrokeWidth` parameters
 
 ## Benchmark
@@ -235,10 +236,14 @@ Comparison against [lucide-icons-swift](https://github.com/JakubMazur/lucide-ico
 
 | Dimension | LucideSwift (Shape) | lucide-icons-swift (Assets) |
 |---|---|---|
-| Binary Size | 23.3 MB | 4.9 MB |
-| Lookup Speed | 1.2 µs | 5.5 µs |
-| Render (View/Image creation) | 8.1 µs | 5.2 µs |
-| Memory (all icons) | 4.0 MB | 1.5 MB |
+| Binary Size | 42.3 MB¹ | 4.9 MB² |
+| Lookup Speed (avg) | 1.3 µs | 9.6 µs |
+| Render (per icon) | 4.2 µs | 9.3 µs |
+| Memory (all icons) | 4.7 MB | 6.5 MB |
+
+> ¹ Compiled object file size for all 2,102 icons. The linker only includes icons referenced
+> in your code — a typical app using 10–20 icons contributes ~200–400 KB to the final binary.
+> ² Includes the PDF asset catalog which is always bundled in full.
 
 > *Lower is better. Run locally: `cd Benchmarks && swift run -c release LucideBenchmark`*
 

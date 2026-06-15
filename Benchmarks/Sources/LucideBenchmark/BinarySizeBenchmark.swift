@@ -26,29 +26,34 @@ enum BinarySizeBenchmark {
     // MARK: - Private
 
     private static func measureLucideSwiftSize() -> UInt64 {
-        // Only .o files — the linked code that ships in the app binary.
-        // Source text and intermediate build files are not shipped.
-        return objectFileSize(at: "./.build/release/LucideSwift.build")
+        // Sum all .o files from the LucideSwift module — the linked code that ships
+        // in the app binary. SPM places these under out/Intermediates.noindex/.
+        return moduleObjectFileSize(moduleName: "LucideSwift")
     }
 
     private static func measureLucideIconsSwiftSize() -> UInt64 {
         // .o files + compiled asset catalog — what ships in the app bundle.
-        return objectFileSize(at: "./.build/release/LucideIcons.build")
+        return moduleObjectFileSize(moduleName: "LucideIcons")
             + directorySize(at: "./.build/checkouts/lucide-icons-swift/Sources/LucideIcons/icons.xcassets")
     }
 
-    /// Sum only the .o object files in a build directory — these are what get linked.
-    private static func objectFileSize(at path: String) -> UInt64 {
+    /// Sum all .o object files for a given module inside the SPM build output directory.
+    /// Searches under `.build/out/Intermediates.noindex/<Module>.build/` which is
+    /// the standard layout for Swift 5.9+ SPM release and debug builds.
+    private static func moduleObjectFileSize(moduleName: String) -> UInt64 {
+        let intermediatesPath = "./.build/out/Intermediates.noindex/\(moduleName).build"
         let fileManager = FileManager.default
-        guard fileManager.fileExists(atPath: path),
-              let enumerator = fileManager.enumerator(atPath: path) else {
-            return 0
+
+        guard fileManager.fileExists(atPath: intermediatesPath),
+              let enumerator = fileManager.enumerator(atPath: intermediatesPath) else {
+            // Fallback: try the top-level product .o file
+            return directorySize(at: "./.build/out/Products/Release")
         }
 
         var total: UInt64 = 0
         for case let file as String in enumerator {
             if file.hasSuffix(".o") {
-                let fullPath = "\(path)/\(file)"
+                let fullPath = "\(intermediatesPath)/\(file)"
                 total += fileSize(at: fullPath)
             }
         }
