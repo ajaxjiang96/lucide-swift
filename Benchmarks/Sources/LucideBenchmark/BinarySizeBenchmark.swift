@@ -38,26 +38,66 @@ enum BinarySizeBenchmark {
     }
 
     /// Sum all .o object files for a given module inside the SPM build output directory.
-    /// Searches under `.build/out/Intermediates.noindex/<Module>.build/` which is
-    /// the standard layout for Swift 5.9+ SPM release and debug builds.
+    /// SPM 5.9+ places intermediates under `.build/out/Intermediates.noindex/<Module>.build/`;
+    /// older versions or custom configurations may use `.build/<triple>/release/<Module>.build/`.
+    /// We try the modern path first, then fall back.
     private static func moduleObjectFileSize(moduleName: String) -> UInt64 {
+        // Primary: SPM 5.9+ intermediates directory
         let intermediatesPath = "./.build/out/Intermediates.noindex/\(moduleName).build"
-        let fileManager = FileManager.default
+        if let size = objectFilesSize(in: intermediatesPath), size > 0 {
+            return size
+        }
 
-        guard fileManager.fileExists(atPath: intermediatesPath),
-              let enumerator = fileManager.enumerator(atPath: intermediatesPath) else {
-            // Fallback: try the top-level product .o file
-            return directorySize(at: "./.build/out/Products/Release")
+        // Fallback 1: toolchain-triple-scoped release directory (older SPM, custom scratch paths)
+        if let releaseDir = findReleaseBuildDir() {
+            let legacyPath = "\(releaseDir)/\(moduleName).build"
+            if let size = objectFilesSize(in: legacyPath), size > 0 {
+                return size
+            }
+        }
+
+        // Last resort: sum the top-level .o products
+        return fileSize(at: "./.build/release/\(moduleName).o")
+            + fileSize(at: "./.build/out/Products/Release/\(moduleName).o")
+    }
+
+    /// Sum .o file sizes in a directory, returning nil if the path doesn't exist or has no .o files.
+    private static func objectFilesSize(in directory: String) -> UInt64? {
+        let fileManager = FileManager.default
+        guard fileManager.fileExists(atPath: directory),
+              let enumerator = fileManager.enumerator(atPath: directory) else {
+            return nil
         }
 
         var total: UInt64 = 0
         for case let file as String in enumerator {
             if file.hasSuffix(".o") {
-                let fullPath = "\(intermediatesPath)/\(file)"
-                total += fileSize(at: fullPath)
+                total += fileSize(at: "\(directory)/\(file)")
             }
         }
         return total
+    }
+
+    /// Find a release build directory that contains compiled products.
+    /// Returns a path like `.build/arm64-apple-macosx/release` if one exists.
+    private static func findReleaseBuildDir() -> String? {
+        let buildDir = "./.build"
+        let fileManager = FileManager.default
+        guard let contents = try? fileManager.contentsOfDirectory(atPath: buildDir) else { return nil }
+
+        for entry in contents {
+            guard entry != "out",
+                  entry != "artifacts",
+                  entry != "checkouts",
+                  entry != "repositories",
+                  let subContents = try? fileManager.contentsOfDirectory(atPath: "\(buildDir)/\(entry)") else {
+                continue
+            }
+            if subContents.contains("release") {
+                return "\(buildDir)/\(entry)/release"
+            }
+        }
+        return nil
     }
 
     private static func fileSize(at path: String) -> UInt64 {

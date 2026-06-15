@@ -22,7 +22,7 @@ A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) w
 ## Features
 
 - **True Vector Rendering**: SVG paths converted to native SwiftUI `Shape` - scales infinitely to any size without pixelation
-- **Type-safe API**: 2000+ icons as compile-time checked1728 enum cases with full Xcode autocomplete
+- **Type-safe API**: 1728 enum cases with full Xcode autocomplete
 - **Lucide Lab Support**: Full integration of experimental icons from the [Lucide Lab](https://github.com/lucide-icons/lucide-lab) repository
 - **Zero Runtime Dependencies**: Pure Swift implementation, no external dependencies at runtime
 - **SwiftUI Native**: Built on SwiftUI's `Shape` protocol with full modifier support
@@ -217,12 +217,12 @@ Other Lucide packages for Swift use image assets (PDFs/PNGs) which can:
 This package generates pure Swift code from SVG paths:
 - **True vectors**: Native SwiftUI rendering at any resolution
 - **Type safety**: Compile-time verification prevents runtime icon-not-found errors
-- **Better tooling**: Xcode autocomplete shows all 1,728 available icons
+- **Better tooling**: Xcode autocomplete shows all 1728 available icons
 - **Faster at runtime**: Enum lookup is 7× faster than bundle lookup, Shape rendering is 2× faster than PDF rasterization
 
 ## Technical Details
 
-- **Total Icons**: 1,728 regular + 374 lab = 2,102 icons
+- **Total Icons**: 2102 icons
 - **Filled Icons**: Experimental support included
 - **File Structure**: Each icon in its own Swift file under `Sources/LucideSwift/Icons/` for fast incremental compilation
 - **Generated Code**: ~140K lines of Swift path data across 2,102 files
@@ -251,7 +251,7 @@ Comparison against [lucide-icons-swift](https://github.com/JakubMazur/lucide-ico
 
 Find the right icon at the official Lucide catalog:
 
-### [🔍 Browse all icons on lucide.dev/icons →](https://lucide.dev/icons)
+### [🔍 Browse all 1728 icons on lucide.dev/icons →](https://lucide.dev/icons)
 
 The catalog includes visual previews, search, categories, and tags for every icon.
 
