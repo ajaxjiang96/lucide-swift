@@ -30,8 +30,8 @@ path.addLine(to: CGPoint(x: 7.770000000000002, y: 18.32))
 path.addCurve(to: CGPoint(x: 8.718000000000002, y: 19.0), control1: CGPoint(x: 7.907337734974842, y: 18.726613300627566), control2: CGPoint(x: 8.288819423531507, y: 19.000249954866526))
 path.closeSubpath()
 path.move(to: CGPoint(x: 9.0, y: 9.0))
-path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 9.0, y: 7.34314575050762), control2: CGPoint(x: 10.343145750507619, y: 6.0))
-path.addCurve(to: CGPoint(x: 15.0, y: 9.0), control1: CGPoint(x: 13.65685424949238, y: 6.0), control2: CGPoint(x: 15.0, y: 7.3431457505076185))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 9.0, y: 7.343145750507619), control2: CGPoint(x: 10.34314575050762, y: 6.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 9.0), control1: CGPoint(x: 13.65685424949238, y: 6.0), control2: CGPoint(x: 15.0, y: 7.343145750507619))
     return path
 }()
 /// Parking Meter icon open subpaths
@@ -44,8 +44,8 @@ path.addLine(to: CGPoint(x: 12.0, y: 15.0))
 path.move(to: CGPoint(x: 12.0, y: 19.0))
 path.addLine(to: CGPoint(x: 12.0, y: 22.0))
 path.move(to: CGPoint(x: 9.0, y: 9.0))
-path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 9.0, y: 7.34314575050762), control2: CGPoint(x: 10.343145750507619, y: 6.0))
-path.addCurve(to: CGPoint(x: 15.0, y: 9.0), control1: CGPoint(x: 13.65685424949238, y: 6.0), control2: CGPoint(x: 15.0, y: 7.3431457505076185))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 9.0, y: 7.343145750507619), control2: CGPoint(x: 10.34314575050762, y: 6.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 9.0), control1: CGPoint(x: 13.65685424949238, y: 6.0), control2: CGPoint(x: 15.0, y: 7.343145750507619))
     return path
 }()
 /// Parking Meter icon closed subpaths

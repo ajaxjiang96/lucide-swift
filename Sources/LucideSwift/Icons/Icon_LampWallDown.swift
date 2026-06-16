@@ -32,7 +32,7 @@ path.addCurve(to: CGPoint(x: 6.0, y: 9.0), control1: CGPoint(x: 8.0, y: 8.104569
 path.addLine(to: CGPoint(x: 5.0, y: 9.0))
 path.addCurve(to: CGPoint(x: 4.0, y: 8.0), control1: CGPoint(x: 4.447715250169207, y: 9.0), control2: CGPoint(x: 4.0, y: 8.552284749830793))
 path.addLine(to: CGPoint(x: 4.0, y: 4.0))
-path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 4.0, y: 3.4477152501692068), control2: CGPoint(x: 4.447715250169207, y: 3.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 4.0, y: 3.4477152501692063), control2: CGPoint(x: 4.447715250169207, y: 3.0))
 path.closeSubpath()
 path.move(to: CGPoint(x: 8.0, y: 6.0))
 path.addLine(to: CGPoint(x: 12.0, y: 6.0))
@@ -70,7 +70,7 @@ path.addCurve(to: CGPoint(x: 6.0, y: 9.0), control1: CGPoint(x: 8.0, y: 8.104569
 path.addLine(to: CGPoint(x: 5.0, y: 9.0))
 path.addCurve(to: CGPoint(x: 4.0, y: 8.0), control1: CGPoint(x: 4.447715250169207, y: 9.0), control2: CGPoint(x: 4.0, y: 8.552284749830793))
 path.addLine(to: CGPoint(x: 4.0, y: 4.0))
-path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 4.0, y: 3.4477152501692068), control2: CGPoint(x: 4.447715250169207, y: 3.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 4.0, y: 3.4477152501692063), control2: CGPoint(x: 4.447715250169207, y: 3.0))
 path.closeSubpath()
     return path
 }()

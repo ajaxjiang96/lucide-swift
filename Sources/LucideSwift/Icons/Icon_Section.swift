@@ -21,11 +21,11 @@ path.addCurve(to: CGPoint(x: 16.0, y: 12.0), control1: CGPoint(x: 8.0, y: 9.0), 
 path.addCurve(to: CGPoint(x: 12.0, y: 15.0), control1: CGPoint(x: 16.0, y: 13.65685424949238), control2: CGPoint(x: 14.209138999323175, y: 15.0))
 path.addCurve(to: CGPoint(x: 8.0, y: 12.0), control1: CGPoint(x: 9.790861000676827, y: 15.0), control2: CGPoint(x: 8.0, y: 13.65685424949238))
 path.move(to: CGPoint(x: 8.0, y: 19.0))
-path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 8.0, y: 20.65685424949238), control2: CGPoint(x: 9.790861000676827, y: 22.0))
-path.addCurve(to: CGPoint(x: 16.0, y: 19.0), control1: CGPoint(x: 14.209138999323175, y: 22.0), control2: CGPoint(x: 16.0, y: 20.65685424949238))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 8.0, y: 20.65685424949238), control2: CGPoint(x: 9.790861000676825, y: 22.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 19.0), control1: CGPoint(x: 14.209138999323173, y: 22.0), control2: CGPoint(x: 16.0, y: 20.65685424949238))
 path.addCurve(to: CGPoint(x: 8.0, y: 12.0), control1: CGPoint(x: 16.0, y: 15.0), control2: CGPoint(x: 8.0, y: 16.0))
-path.addCurve(to: CGPoint(x: 12.0, y: 9.0), control1: CGPoint(x: 8.0, y: 10.34314575050762), control2: CGPoint(x: 9.790861000676825, y: 9.0))
-path.addCurve(to: CGPoint(x: 16.0, y: 12.0), control1: CGPoint(x: 14.209138999323173, y: 9.0), control2: CGPoint(x: 16.0, y: 10.343145750507619))
+path.addCurve(to: CGPoint(x: 12.0, y: 9.0), control1: CGPoint(x: 8.0, y: 10.34314575050762), control2: CGPoint(x: 9.790861000676827, y: 9.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 12.0), control1: CGPoint(x: 14.209138999323175, y: 9.0), control2: CGPoint(x: 16.0, y: 10.34314575050762))
     return path
 }()
 /// Section icon open subpaths
@@ -38,11 +38,11 @@ path.addCurve(to: CGPoint(x: 16.0, y: 12.0), control1: CGPoint(x: 8.0, y: 9.0), 
 path.addCurve(to: CGPoint(x: 12.0, y: 15.0), control1: CGPoint(x: 16.0, y: 13.65685424949238), control2: CGPoint(x: 14.209138999323175, y: 15.0))
 path.addCurve(to: CGPoint(x: 8.0, y: 12.0), control1: CGPoint(x: 9.790861000676827, y: 15.0), control2: CGPoint(x: 8.0, y: 13.65685424949238))
 path.move(to: CGPoint(x: 8.0, y: 19.0))
-path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 8.0, y: 20.65685424949238), control2: CGPoint(x: 9.790861000676827, y: 22.0))
-path.addCurve(to: CGPoint(x: 16.0, y: 19.0), control1: CGPoint(x: 14.209138999323175, y: 22.0), control2: CGPoint(x: 16.0, y: 20.65685424949238))
+path.addCurve(to: CGPoint(x: 12.0, y: 22.0), control1: CGPoint(x: 8.0, y: 20.65685424949238), control2: CGPoint(x: 9.790861000676825, y: 22.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 19.0), control1: CGPoint(x: 14.209138999323173, y: 22.0), control2: CGPoint(x: 16.0, y: 20.65685424949238))
 path.addCurve(to: CGPoint(x: 8.0, y: 12.0), control1: CGPoint(x: 16.0, y: 15.0), control2: CGPoint(x: 8.0, y: 16.0))
-path.addCurve(to: CGPoint(x: 12.0, y: 9.0), control1: CGPoint(x: 8.0, y: 10.34314575050762), control2: CGPoint(x: 9.790861000676825, y: 9.0))
-path.addCurve(to: CGPoint(x: 16.0, y: 12.0), control1: CGPoint(x: 14.209138999323173, y: 9.0), control2: CGPoint(x: 16.0, y: 10.343145750507619))
+path.addCurve(to: CGPoint(x: 12.0, y: 9.0), control1: CGPoint(x: 8.0, y: 10.34314575050762), control2: CGPoint(x: 9.790861000676827, y: 9.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 12.0), control1: CGPoint(x: 14.209138999323175, y: 9.0), control2: CGPoint(x: 16.0, y: 10.34314575050762))
     return path
 }()
 /// Section icon closed subpaths

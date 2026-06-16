@@ -341,13 +341,24 @@ struct SwiftCodeGenerator {
         return code
     }
     
+    /// Parse an SVG path string into a CGPath, correctly handling arc direction.
+    ///
+    /// Uses invertYAxis: true to let SVGPath compute arcs in y-up math space,
+    /// then flips Y back to y-down for SwiftUI. This ensures arc sweep directions
+    /// are interpreted correctly and bezier approximations stay within bounds.
+    private static func parseSVGPath(_ pathString: String) throws -> CGPath {
+        let options = SVGPath.ParseOptions(invertYAxis: true)
+        let svgPath = try SVGPath(string: pathString, with: options)
+        let cgPath = CGPath.from(svgPath)
+        var flip = CGAffineTransform(scaleX: 1, y: -1)
+        return cgPath.copy(using: &flip) ?? cgPath
+    }
+
     private static func generatePathStaticProperty(for icon: Icon) -> String {
         var combinedPathCode = ""
         for pathString in icon.pathStrings {
             do {
-                let options = SVGPath.ParseOptions(invertYAxis: false)
-                let svgPath = try SVGPath(string: pathString, with: options)
-                let cgPath = CGPath.from(svgPath)
+                let cgPath = try parseSVGPath(pathString)
                 combinedPathCode += convertToSwiftPathCode(cgPath: cgPath)
             } catch {
                 print("⚠️  Failed to parse path for \(icon.name): \(error)")
@@ -359,9 +370,7 @@ struct SwiftCodeGenerator {
         var closedPathCode = ""
         for pathString in icon.pathStrings {
             do {
-                let options = SVGPath.ParseOptions(invertYAxis: false)
-                let svgPath = try SVGPath(string: pathString, with: options)
-                let cgPath = CGPath.from(svgPath)
+                let cgPath = try parseSVGPath(pathString)
                 let (open, closed) = separateCGPathIntoOpenAndClosed(cgPath: cgPath)
                 openPathCode += convertToSwiftPathCode(cgPath: open)
                 closedPathCode += convertToSwiftPathCode(cgPath: closed)

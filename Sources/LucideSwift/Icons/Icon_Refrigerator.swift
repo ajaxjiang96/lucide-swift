@@ -15,7 +15,7 @@ internal enum LucideIcon_Refrigerator {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 5.0, y: 6.0))
-path.addCurve(to: CGPoint(x: 9.0, y: 2.0), control1: CGPoint(x: 5.0, y: 3.7908610006768266), control2: CGPoint(x: 6.790861000676825, y: 2.0000000000000004))
+path.addCurve(to: CGPoint(x: 9.0, y: 2.0), control1: CGPoint(x: 5.0, y: 3.7908610006768257), control2: CGPoint(x: 6.790861000676827, y: 2.0))
 path.addLine(to: CGPoint(x: 15.0, y: 2.0))
 path.addCurve(to: CGPoint(x: 19.0, y: 6.0), control1: CGPoint(x: 17.209138999323173, y: 2.0), control2: CGPoint(x: 19.0, y: 3.790861000676826))
 path.addLine(to: CGPoint(x: 19.0, y: 20.0))
@@ -43,7 +43,7 @@ path.addLine(to: CGPoint(x: 15.0, y: 13.0))
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 5.0, y: 6.0))
-path.addCurve(to: CGPoint(x: 9.0, y: 2.0), control1: CGPoint(x: 5.0, y: 3.7908610006768266), control2: CGPoint(x: 6.790861000676825, y: 2.0000000000000004))
+path.addCurve(to: CGPoint(x: 9.0, y: 2.0), control1: CGPoint(x: 5.0, y: 3.7908610006768257), control2: CGPoint(x: 6.790861000676827, y: 2.0))
 path.addLine(to: CGPoint(x: 15.0, y: 2.0))
 path.addCurve(to: CGPoint(x: 19.0, y: 6.0), control1: CGPoint(x: 17.209138999323173, y: 2.0), control2: CGPoint(x: 19.0, y: 3.790861000676826))
 path.addLine(to: CGPoint(x: 19.0, y: 20.0))

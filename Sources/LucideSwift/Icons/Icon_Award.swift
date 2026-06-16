@@ -25,8 +25,8 @@ path.addCurve(to: CGPoint(x: 7.251663058099746, y: 21.9308687056273), control1: 
 path.addCurve(to: CGPoint(x: 7.009, y: 21.415999999999997), control1: CGPoint(x: 7.071450667406582, y: 21.82652350657163), control2: CGPoint(x: 6.974778564916071, y: 21.62141012561728))
 path.addLine(to: CGPoint(x: 8.523, y: 12.889999999999997))
 path.move(to: CGPoint(x: 6.0, y: 8.0))
-path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 6.000000000000001, y: 11.313708498984761), control2: CGPoint(x: 8.68629150101524, y: 14.0))
-path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 15.313708498984761, y: 14.0), control2: CGPoint(x: 18.0, y: 11.313708498984761))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 14.0), control1: CGPoint(x: 6.0, y: 11.31370849898476), control2: CGPoint(x: 8.686291501015237, y: 14.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.000000000000002), control1: CGPoint(x: 15.31370849898476, y: 14.0), control2: CGPoint(x: 18.0, y: 11.313708498984763))
 path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 18.0, y: 4.686291501015239), control2: CGPoint(x: 15.313708498984761, y: 2.0))
 path.addCurve(to: CGPoint(x: 6.0, y: 7.999999999999999), control1: CGPoint(x: 8.68629150101524, y: 2.0), control2: CGPoint(x: 6.000000000000001, y: 4.686291501015239))
     return path
@@ -50,8 +50,8 @@ path.addLine(to: CGPoint(x: 8.523, y: 12.889999999999997))
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 6.0, y: 8.0))
-path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 6.000000000000001, y: 11.313708498984761), control2: CGPoint(x: 8.68629150101524, y: 14.0))
-path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 15.313708498984761, y: 14.0), control2: CGPoint(x: 18.0, y: 11.313708498984761))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 14.0), control1: CGPoint(x: 6.0, y: 11.31370849898476), control2: CGPoint(x: 8.686291501015237, y: 14.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.000000000000002), control1: CGPoint(x: 15.31370849898476, y: 14.0), control2: CGPoint(x: 18.0, y: 11.313708498984763))
 path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 18.0, y: 4.686291501015239), control2: CGPoint(x: 15.313708498984761, y: 2.0))
 path.addCurve(to: CGPoint(x: 6.0, y: 7.999999999999999), control1: CGPoint(x: 8.68629150101524, y: 2.0), control2: CGPoint(x: 6.000000000000001, y: 4.686291501015239))
     return path
