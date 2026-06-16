@@ -21,3 +21,11 @@ Package.resolved
 # Temp files
 tmp/
 temp/
+
+# Stale root-level build artifacts
+Icon_*.*
+*.swiftmodule
+*.swiftdeps
+*.dia
+*.d
+*.o
