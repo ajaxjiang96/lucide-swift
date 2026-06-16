@@ -15,10 +15,8 @@ internal enum LucideLabIcon_Lab_PacManGhost {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 9.0, y: 10.0))
-path.move(to: CGPoint(x: 9.01, y: 10.0))
 path.addLine(to: CGPoint(x: 9.01, y: 10.0))
 path.move(to: CGPoint(x: 15.0, y: 10.0))
-path.move(to: CGPoint(x: 15.01, y: 10.0))
 path.addLine(to: CGPoint(x: 15.01, y: 10.0))
 path.move(to: CGPoint(x: 12.0, y: 2.0))
 path.addCurve(to: CGPoint(x: 4.0, y: 9.999999999999998), control1: CGPoint(x: 7.581722001353653, y: 2.0), control2: CGPoint(x: 4.000000000000001, y: 5.5817220013536515))
@@ -38,10 +36,8 @@ path.closeSubpath()
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 9.0, y: 10.0))
-path.move(to: CGPoint(x: 9.01, y: 10.0))
 path.addLine(to: CGPoint(x: 9.01, y: 10.0))
 path.move(to: CGPoint(x: 15.0, y: 10.0))
-path.move(to: CGPoint(x: 15.01, y: 10.0))
 path.addLine(to: CGPoint(x: 15.01, y: 10.0))
     return path
 }()

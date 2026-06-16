@@ -15,7 +15,6 @@ internal enum LucideIcon_FishOff {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 18.0, y: 12.47))
-path.move(to: CGPoint(x: 18.0, y: 12.5))
 path.addLine(to: CGPoint(x: 18.0, y: 12.5))
 path.move(to: CGPoint(x: 18.0, y: 11.97))
 path.addLine(to: CGPoint(x: 18.0, y: 12.440000000000001))
@@ -53,7 +52,6 @@ path.addLine(to: CGPoint(x: 22.0, y: 22.0))
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 18.0, y: 12.47))
-path.move(to: CGPoint(x: 18.0, y: 12.5))
 path.addLine(to: CGPoint(x: 18.0, y: 12.5))
 path.move(to: CGPoint(x: 18.0, y: 11.97))
 path.addLine(to: CGPoint(x: 18.0, y: 12.440000000000001))

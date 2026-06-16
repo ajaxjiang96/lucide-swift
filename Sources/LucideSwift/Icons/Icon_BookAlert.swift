@@ -15,7 +15,6 @@ internal enum LucideIcon_BookAlert {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 13.0))
-path.move(to: CGPoint(x: 12.01, y: 13.0))
 path.addLine(to: CGPoint(x: 12.01, y: 13.0))
 path.move(to: CGPoint(x: 12.0, y: 6.0))
 path.addLine(to: CGPoint(x: 12.0, y: 9.0))
@@ -36,7 +35,6 @@ path.addLine(to: CGPoint(x: 20.0, y: 17.0))
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 13.0))
-path.move(to: CGPoint(x: 12.01, y: 13.0))
 path.addLine(to: CGPoint(x: 12.01, y: 13.0))
 path.move(to: CGPoint(x: 12.0, y: 6.0))
 path.addLine(to: CGPoint(x: 12.0, y: 9.0))

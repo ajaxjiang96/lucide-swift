@@ -15,7 +15,6 @@ internal enum LucideIcon_BatteryWarning {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 17.0))
-path.move(to: CGPoint(x: 10.01, y: 17.0))
 path.addLine(to: CGPoint(x: 10.01, y: 17.0))
 path.move(to: CGPoint(x: 10.0, y: 7.0))
 path.addLine(to: CGPoint(x: 10.0, y: 13.0))
@@ -39,7 +38,6 @@ path.addLine(to: CGPoint(x: 6.0, y: 6.0))
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 17.0))
-path.move(to: CGPoint(x: 10.01, y: 17.0))
 path.addLine(to: CGPoint(x: 10.01, y: 17.0))
 path.move(to: CGPoint(x: 10.0, y: 7.0))
 path.addLine(to: CGPoint(x: 10.0, y: 13.0))

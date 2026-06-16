@@ -15,7 +15,6 @@ internal enum LucideLabIcon_Lab_BathBubble {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.0, y: 3.0))
-path.move(to: CGPoint(x: 15.01, y: 3.0))
 path.addLine(to: CGPoint(x: 15.01, y: 3.0))
 path.move(to: CGPoint(x: 2.0, y: 12.0))
 path.addLine(to: CGPoint(x: 8.0, y: 12.0))
@@ -54,7 +53,6 @@ path.addCurve(to: CGPoint(x: 16.0, y: 7.5), control1: CGPoint(x: 16.223857625084
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.0, y: 3.0))
-path.move(to: CGPoint(x: 15.01, y: 3.0))
 path.addLine(to: CGPoint(x: 15.01, y: 3.0))
 path.move(to: CGPoint(x: 2.0, y: 12.0))
 path.addLine(to: CGPoint(x: 8.0, y: 12.0))

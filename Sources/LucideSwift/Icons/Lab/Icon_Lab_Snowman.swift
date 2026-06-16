@@ -15,10 +15,8 @@ internal enum LucideLabIcon_Lab_Snowman {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 14.0))
-path.move(to: CGPoint(x: 12.01, y: 14.0))
 path.addLine(to: CGPoint(x: 12.01, y: 14.0))
 path.move(to: CGPoint(x: 12.0, y: 18.0))
-path.move(to: CGPoint(x: 12.01, y: 18.0))
 path.addLine(to: CGPoint(x: 12.01, y: 18.0))
 path.move(to: CGPoint(x: 2.0, y: 9.0))
 path.addLine(to: CGPoint(x: 4.0, y: 9.0))
@@ -48,10 +46,8 @@ path.addCurve(to: CGPoint(x: 8.0, y: 5.999999999999999), control1: CGPoint(x: 9.
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 14.0))
-path.move(to: CGPoint(x: 12.01, y: 14.0))
 path.addLine(to: CGPoint(x: 12.01, y: 14.0))
 path.move(to: CGPoint(x: 12.0, y: 18.0))
-path.move(to: CGPoint(x: 12.01, y: 18.0))
 path.addLine(to: CGPoint(x: 12.01, y: 18.0))
 path.move(to: CGPoint(x: 2.0, y: 9.0))
 path.addLine(to: CGPoint(x: 4.0, y: 9.0))

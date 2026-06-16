@@ -15,7 +15,6 @@ internal enum LucideLabIcon_Lab_Cauldron {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 19.0, y: 2.0))
-path.move(to: CGPoint(x: 19.01, y: 2.0))
 path.addLine(to: CGPoint(x: 19.01, y: 2.0))
 path.move(to: CGPoint(x: 22.0, y: 8.0))
 path.addLine(to: CGPoint(x: 2.0, y: 8.0))
@@ -48,7 +47,6 @@ path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 12.895430500338
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 19.0, y: 2.0))
-path.move(to: CGPoint(x: 19.01, y: 2.0))
 path.addLine(to: CGPoint(x: 19.01, y: 2.0))
 path.move(to: CGPoint(x: 22.0, y: 8.0))
 path.addLine(to: CGPoint(x: 2.0, y: 8.0))

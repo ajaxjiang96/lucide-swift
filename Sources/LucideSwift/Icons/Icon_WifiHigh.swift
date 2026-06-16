@@ -15,7 +15,6 @@ internal enum LucideIcon_WifiHigh {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 20.0))
-path.move(to: CGPoint(x: 12.01, y: 20.0))
 path.addLine(to: CGPoint(x: 12.01, y: 20.0))
 path.move(to: CGPoint(x: 5.0, y: 12.859))
 path.addCurve(to: CGPoint(x: 19.0, y: 12.859000000000002), control1: CGPoint(x: 8.888435101986383, y: 9.047571238057131), control2: CGPoint(x: 15.11156489801362, y: 9.047571238057134))
@@ -27,7 +26,6 @@ path.addCurve(to: CGPoint(x: 15.5, y: 16.429), control1: CGPoint(x: 10.444217550
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 20.0))
-path.move(to: CGPoint(x: 12.01, y: 20.0))
 path.addLine(to: CGPoint(x: 12.01, y: 20.0))
 path.move(to: CGPoint(x: 5.0, y: 12.859))
 path.addCurve(to: CGPoint(x: 19.0, y: 12.859000000000002), control1: CGPoint(x: 8.888435101986383, y: 9.047571238057131), control2: CGPoint(x: 15.11156489801362, y: 9.047571238057134))

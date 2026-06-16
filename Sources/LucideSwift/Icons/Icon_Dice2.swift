@@ -15,10 +15,8 @@ internal enum LucideIcon_Dice2 {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.0, y: 9.0))
-path.move(to: CGPoint(x: 15.01, y: 9.0))
 path.addLine(to: CGPoint(x: 15.01, y: 9.0))
 path.move(to: CGPoint(x: 9.0, y: 15.0))
-path.move(to: CGPoint(x: 9.01, y: 15.0))
 path.addLine(to: CGPoint(x: 9.01, y: 15.0))
 path.move(to: CGPoint(x: 5.0, y: 3.0))
 path.addLine(to: CGPoint(x: 19.0, y: 3.0))
@@ -36,10 +34,8 @@ path.closeSubpath()
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.0, y: 9.0))
-path.move(to: CGPoint(x: 15.01, y: 9.0))
 path.addLine(to: CGPoint(x: 15.01, y: 9.0))
 path.move(to: CGPoint(x: 9.0, y: 15.0))
-path.move(to: CGPoint(x: 9.01, y: 15.0))
 path.addLine(to: CGPoint(x: 9.01, y: 15.0))
     return path
 }()

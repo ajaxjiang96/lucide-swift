@@ -15,7 +15,6 @@ internal enum LucideLabIcon_Lab_BottleDispenser {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 20.0, y: 10.0))
-path.move(to: CGPoint(x: 20.01, y: 10.0))
 path.addLine(to: CGPoint(x: 20.01, y: 10.0))
 path.move(to: CGPoint(x: 9.0, y: 2.0))
 path.addLine(to: CGPoint(x: 16.0, y: 2.0))
@@ -54,7 +53,6 @@ path.closeSubpath()
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 20.0, y: 10.0))
-path.move(to: CGPoint(x: 20.01, y: 10.0))
 path.addLine(to: CGPoint(x: 20.01, y: 10.0))
 path.move(to: CGPoint(x: 9.0, y: 2.0))
 path.addLine(to: CGPoint(x: 16.0, y: 2.0))

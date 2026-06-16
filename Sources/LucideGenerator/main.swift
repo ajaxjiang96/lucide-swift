@@ -421,9 +421,9 @@ struct SwiftCodeGenerator {
                     let dy = endPoint.y - start.y
                     let distance = sqrt(dx * dx + dy * dy)
                     if distance < 0.1 && distance > 0 {
-                        // Zero-length segment: break into its own subpath so round
-                        // line caps render a solid filled dot — NOT a ring/annulus.
-                        code += "path.move(to: CGPoint(x: \(endPoint.x), y: \(endPoint.y)))\n"
+                        // Near-zero-length segment: round caps render this as a
+                        // filled dot. Keep the path connected (no extra move)
+                        // to preserve closed contours for .filled rendering.
                         code += "path.addLine(to: CGPoint(x: \(endPoint.x), y: \(endPoint.y)))\n"
                     } else {
                         code += "path.addLine(to: CGPoint(x: \(endPoint.x), y: \(endPoint.y)))\n"

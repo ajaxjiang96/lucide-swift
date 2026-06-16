@@ -15,7 +15,6 @@ internal enum LucideIcon_DoorClosedLocked {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 12.0))
-path.move(to: CGPoint(x: 10.01, y: 12.0))
 path.addLine(to: CGPoint(x: 10.01, y: 12.0))
 path.move(to: CGPoint(x: 18.0, y: 9.0))
 path.addLine(to: CGPoint(x: 18.0, y: 6.0))
@@ -46,7 +45,6 @@ path.closeSubpath()
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 12.0))
-path.move(to: CGPoint(x: 10.01, y: 12.0))
 path.addLine(to: CGPoint(x: 10.01, y: 12.0))
 path.move(to: CGPoint(x: 18.0, y: 9.0))
 path.addLine(to: CGPoint(x: 18.0, y: 6.0))

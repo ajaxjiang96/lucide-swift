@@ -15,7 +15,6 @@ internal enum LucideIcon_WifiLow {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 20.0))
-path.move(to: CGPoint(x: 12.01, y: 20.0))
 path.addLine(to: CGPoint(x: 12.01, y: 20.0))
 path.move(to: CGPoint(x: 8.5, y: 16.429))
 path.addCurve(to: CGPoint(x: 15.5, y: 16.429), control1: CGPoint(x: 10.44421755099319, y: 14.523285619028565), control2: CGPoint(x: 13.55578244900681, y: 14.523285619028567))
@@ -25,7 +24,6 @@ path.addCurve(to: CGPoint(x: 15.5, y: 16.429), control1: CGPoint(x: 10.444217550
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 20.0))
-path.move(to: CGPoint(x: 12.01, y: 20.0))
 path.addLine(to: CGPoint(x: 12.01, y: 20.0))
 path.move(to: CGPoint(x: 8.5, y: 16.429))
 path.addCurve(to: CGPoint(x: 15.5, y: 16.429), control1: CGPoint(x: 10.44421755099319, y: 14.523285619028565), control2: CGPoint(x: 13.55578244900681, y: 14.523285619028567))

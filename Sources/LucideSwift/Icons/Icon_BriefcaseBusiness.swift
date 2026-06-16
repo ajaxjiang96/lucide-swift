@@ -15,7 +15,6 @@ internal enum LucideIcon_BriefcaseBusiness {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 12.0))
-path.move(to: CGPoint(x: 12.01, y: 12.0))
 path.addLine(to: CGPoint(x: 12.01, y: 12.0))
 path.move(to: CGPoint(x: 16.0, y: 6.0))
 path.addLine(to: CGPoint(x: 16.0, y: 4.0))
@@ -41,7 +40,6 @@ path.closeSubpath()
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 12.0))
-path.move(to: CGPoint(x: 12.01, y: 12.0))
 path.addLine(to: CGPoint(x: 12.01, y: 12.0))
 path.move(to: CGPoint(x: 16.0, y: 6.0))
 path.addLine(to: CGPoint(x: 16.0, y: 4.0))

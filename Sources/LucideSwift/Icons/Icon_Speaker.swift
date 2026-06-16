@@ -15,10 +15,8 @@ internal enum LucideIcon_Speaker {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 6.0))
-path.move(to: CGPoint(x: 12.01, y: 6.0))
 path.addLine(to: CGPoint(x: 12.01, y: 6.0))
 path.move(to: CGPoint(x: 12.0, y: 14.0))
-path.move(to: CGPoint(x: 12.01, y: 14.0))
 path.addLine(to: CGPoint(x: 12.01, y: 14.0))
 path.move(to: CGPoint(x: 8.0, y: 14.0))
 path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 8.0, y: 16.209138999323173), control2: CGPoint(x: 9.790861000676827, y: 18.0))
@@ -41,10 +39,8 @@ path.closeSubpath()
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 6.0))
-path.move(to: CGPoint(x: 12.01, y: 6.0))
 path.addLine(to: CGPoint(x: 12.01, y: 6.0))
 path.move(to: CGPoint(x: 12.0, y: 14.0))
-path.move(to: CGPoint(x: 12.01, y: 14.0))
 path.addLine(to: CGPoint(x: 12.01, y: 14.0))
     return path
 }()

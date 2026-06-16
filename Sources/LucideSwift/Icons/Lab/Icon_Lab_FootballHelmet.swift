@@ -15,7 +15,6 @@ internal enum LucideLabIcon_Lab_FootballHelmet {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 7.0, y: 14.0))
-path.move(to: CGPoint(x: 7.01, y: 14.0))
 path.addLine(to: CGPoint(x: 7.01, y: 14.0))
 path.move(to: CGPoint(x: 21.6, y: 9.0))
 path.addCurve(to: CGPoint(x: 12.000000000000002, y: 2.0), control1: CGPoint(x: 20.3, y: 5.0), control2: CGPoint(x: 16.5, y: 2.0))
@@ -43,7 +42,6 @@ path.addLine(to: CGPoint(x: 15.0, y: 14.0))
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 7.0, y: 14.0))
-path.move(to: CGPoint(x: 7.01, y: 14.0))
 path.addLine(to: CGPoint(x: 7.01, y: 14.0))
 path.move(to: CGPoint(x: 22.0, y: 18.0))
 path.addLine(to: CGPoint(x: 10.7, y: 18.0))

@@ -15,7 +15,6 @@ internal enum LucideIcon_WalletMinimal {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 17.0, y: 14.0))
-path.move(to: CGPoint(x: 17.01, y: 14.0))
 path.addLine(to: CGPoint(x: 17.01, y: 14.0))
 path.move(to: CGPoint(x: 7.0, y: 7.0))
 path.addLine(to: CGPoint(x: 19.0, y: 7.0))
@@ -33,7 +32,6 @@ path.addLine(to: CGPoint(x: 19.0, y: 3.0))
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 17.0, y: 14.0))
-path.move(to: CGPoint(x: 17.01, y: 14.0))
 path.addLine(to: CGPoint(x: 17.01, y: 14.0))
 path.move(to: CGPoint(x: 7.0, y: 7.0))
 path.addLine(to: CGPoint(x: 19.0, y: 7.0))

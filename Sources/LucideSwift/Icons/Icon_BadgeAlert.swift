@@ -35,7 +35,6 @@ path.closeSubpath()
 path.move(to: CGPoint(x: 12.0, y: 8.0))
 path.addLine(to: CGPoint(x: 12.0, y: 12.0))
 path.move(to: CGPoint(x: 12.0, y: 16.0))
-path.move(to: CGPoint(x: 12.01, y: 16.0))
 path.addLine(to: CGPoint(x: 12.01, y: 16.0))
     return path
 }()
@@ -45,7 +44,6 @@ static let openPath: Path = {
     path.move(to: CGPoint(x: 12.0, y: 8.0))
 path.addLine(to: CGPoint(x: 12.0, y: 12.0))
 path.move(to: CGPoint(x: 12.0, y: 16.0))
-path.move(to: CGPoint(x: 12.01, y: 16.0))
 path.addLine(to: CGPoint(x: 12.01, y: 16.0))
     return path
 }()

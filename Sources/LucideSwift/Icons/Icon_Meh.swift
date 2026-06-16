@@ -22,10 +22,8 @@ path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6
 path.move(to: CGPoint(x: 8.0, y: 15.0))
 path.addLine(to: CGPoint(x: 16.0, y: 15.0))
 path.move(to: CGPoint(x: 9.0, y: 9.0))
-path.move(to: CGPoint(x: 9.01, y: 9.0))
 path.addLine(to: CGPoint(x: 9.01, y: 9.0))
 path.move(to: CGPoint(x: 15.0, y: 9.0))
-path.move(to: CGPoint(x: 15.01, y: 9.0))
 path.addLine(to: CGPoint(x: 15.01, y: 9.0))
     return path
 }()
@@ -35,10 +33,8 @@ static let openPath: Path = {
     path.move(to: CGPoint(x: 8.0, y: 15.0))
 path.addLine(to: CGPoint(x: 16.0, y: 15.0))
 path.move(to: CGPoint(x: 9.0, y: 9.0))
-path.move(to: CGPoint(x: 9.01, y: 9.0))
 path.addLine(to: CGPoint(x: 9.01, y: 9.0))
 path.move(to: CGPoint(x: 15.0, y: 9.0))
-path.move(to: CGPoint(x: 15.01, y: 9.0))
 path.addLine(to: CGPoint(x: 15.01, y: 9.0))
     return path
 }()
