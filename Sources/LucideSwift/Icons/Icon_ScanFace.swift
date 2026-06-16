@@ -34,9 +34,9 @@ path.move(to: CGPoint(x: 8.0, y: 14.0))
 path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 8.0, y: 14.0), control2: CGPoint(x: 9.5, y: 16.0))
 path.addCurve(to: CGPoint(x: 16.0, y: 14.0), control1: CGPoint(x: 14.5, y: 16.0), control2: CGPoint(x: 16.0, y: 14.0))
 path.move(to: CGPoint(x: 9.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 8.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 9.01, y: 9.0))
 path.move(to: CGPoint(x: 15.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 8.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 15.01, y: 9.0))
     return path
 }()
 /// Scan Face icon open subpaths
@@ -62,9 +62,9 @@ path.move(to: CGPoint(x: 8.0, y: 14.0))
 path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 8.0, y: 14.0), control2: CGPoint(x: 9.5, y: 16.0))
 path.addCurve(to: CGPoint(x: 16.0, y: 14.0), control1: CGPoint(x: 14.5, y: 16.0), control2: CGPoint(x: 16.0, y: 14.0))
 path.move(to: CGPoint(x: 9.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 8.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 9.01, y: 9.0))
 path.move(to: CGPoint(x: 15.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 8.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 15.01, y: 9.0))
     return path
 }()
 /// Scan Face icon closed subpaths

@@ -15,7 +15,7 @@ internal enum LucideIcon_Turntable {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 12.01))
-path.addEllipse(in: CGRect(x: 9.66, y: 11.66, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 10.01, y: 12.01))
 path.move(to: CGPoint(x: 18.0, y: 8.0))
 path.addLine(to: CGPoint(x: 18.0, y: 12.0))
 path.addCurve(to: CGPoint(x: 16.92999999999929, y: 16.00000000000123), control1: CGPoint(x: 18.00054632282602, y: 13.404130067475984), control2: CGPoint(x: 17.63151876405172, y: 14.783672343266785))
@@ -40,7 +40,7 @@ path.closeSubpath()
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 12.01))
-path.addEllipse(in: CGRect(x: 9.66, y: 11.66, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 10.01, y: 12.01))
 path.move(to: CGPoint(x: 18.0, y: 8.0))
 path.addLine(to: CGPoint(x: 18.0, y: 12.0))
 path.addCurve(to: CGPoint(x: 16.92999999999929, y: 16.00000000000123), control1: CGPoint(x: 18.00054632282602, y: 13.404130067475984), control2: CGPoint(x: 17.63151876405172, y: 14.783672343266785))

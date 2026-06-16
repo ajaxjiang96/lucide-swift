@@ -41,7 +41,7 @@ path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.10
 path.move(to: CGPoint(x: 18.0, y: 10.0))
 path.addLine(to: CGPoint(x: 22.0, y: 10.0))
 path.move(to: CGPoint(x: 3.0, y: 17.5))
-path.addEllipse(in: CGRect(x: 2.6599999999999997, y: 17.15, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 3.01, y: 17.5))
 path.move(to: CGPoint(x: 4.0, y: 21.5))
 path.addCurve(to: CGPoint(x: 4.5, y: 22.0), control1: CGPoint(x: 4.0, y: 21.7761423749154), control2: CGPoint(x: 4.223857625084603, y: 22.0))
 path.addCurve(to: CGPoint(x: 5.0, y: 21.5), control1: CGPoint(x: 4.776142374915397, y: 22.0), control2: CGPoint(x: 5.0, y: 21.7761423749154))
@@ -66,7 +66,7 @@ path.addCurve(to: CGPoint(x: 16.0, y: 18.0), control1: CGPoint(x: 18.0, y: 17.10
 path.move(to: CGPoint(x: 18.0, y: 10.0))
 path.addLine(to: CGPoint(x: 22.0, y: 10.0))
 path.move(to: CGPoint(x: 3.0, y: 17.5))
-path.addEllipse(in: CGRect(x: 2.6599999999999997, y: 17.15, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 3.01, y: 17.5))
     return path
 }()
 /// Mask Snorkel icon closed subpaths

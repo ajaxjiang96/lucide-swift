@@ -35,18 +35,18 @@ path.addLine(to: CGPoint(x: 2.0, y: 16.0))
 path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 14.0), control1: CGPoint(x: 2.0, y: 14.895430500338414), control2: CGPoint(x: 2.8954305003384126, y: 14.0))
 path.closeSubpath()
 path.move(to: CGPoint(x: 6.0, y: 6.0))
-path.addEllipse(in: CGRect(x: 5.66, y: 5.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 6.01, y: 6.0))
 path.move(to: CGPoint(x: 6.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 5.66, y: 17.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 6.01, y: 18.0))
     return path
 }()
 /// Server icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 6.0, y: 6.0))
-path.addEllipse(in: CGRect(x: 5.66, y: 5.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 6.01, y: 6.0))
 path.move(to: CGPoint(x: 6.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 5.66, y: 17.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 6.01, y: 18.0))
     return path
 }()
 /// Server icon closed subpaths

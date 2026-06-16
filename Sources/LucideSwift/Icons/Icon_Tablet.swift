@@ -25,14 +25,14 @@ path.addLine(to: CGPoint(x: 4.0, y: 4.0))
 path.addCurve(to: CGPoint(x: 6.0, y: 2.0), control1: CGPoint(x: 4.0, y: 2.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 2.0))
 path.closeSubpath()
 path.move(to: CGPoint(x: 12.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 17.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 12.01, y: 18.0))
     return path
 }()
 /// Tablet icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 17.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 12.01, y: 18.0))
     return path
 }()
 /// Tablet icon closed subpaths

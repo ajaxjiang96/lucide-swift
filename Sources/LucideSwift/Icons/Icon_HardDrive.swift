@@ -15,7 +15,7 @@ internal enum LucideIcon_HardDrive {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 16.0))
-path.addEllipse(in: CGRect(x: 9.66, y: 15.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 10.01, y: 16.0))
 path.move(to: CGPoint(x: 2.212, y: 11.577))
 path.addCurve(to: CGPoint(x: 2.0, y: 12.473), control1: CGPoint(x: 2.072610938553921, y: 11.855114279115543), control2: CGPoint(x: 2.000020831741116, y: 12.161910202248908))
 path.addLine(to: CGPoint(x: 2.0, y: 18.0))
@@ -32,18 +32,18 @@ path.closeSubpath()
 path.move(to: CGPoint(x: 21.946, y: 12.013))
 path.addLine(to: CGPoint(x: 2.054, y: 12.013))
 path.move(to: CGPoint(x: 6.0, y: 16.0))
-path.addEllipse(in: CGRect(x: 5.66, y: 15.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 6.01, y: 16.0))
     return path
 }()
 /// Hard Drive icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 16.0))
-path.addEllipse(in: CGRect(x: 9.66, y: 15.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 10.01, y: 16.0))
 path.move(to: CGPoint(x: 21.946, y: 12.013))
 path.addLine(to: CGPoint(x: 2.054, y: 12.013))
 path.move(to: CGPoint(x: 6.0, y: 16.0))
-path.addEllipse(in: CGRect(x: 5.66, y: 15.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 6.01, y: 16.0))
     return path
 }()
 /// Hard Drive icon closed subpaths

@@ -24,7 +24,7 @@ path.move(to: CGPoint(x: 20.83, y: 14.83))
 path.addCurve(to: CGPoint(x: 22.003146625663085, y: 12.0), control1: CGPoint(x: 21.58110817212036, y: 14.079726971430928), control2: CGPoint(x: 22.003146625663085, y: 13.06163699239627))
 path.addCurve(to: CGPoint(x: 20.83, y: 9.17), control1: CGPoint(x: 22.003146625663085, y: 10.93836300760373), control2: CGPoint(x: 21.58110817212036, y: 9.920273028569072))
 path.move(to: CGPoint(x: 18.0, y: 12.0))
-path.addEllipse(in: CGRect(x: 17.66, y: 11.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 18.01, y: 12.0))
     return path
 }()
 /// Bluetooth Searching icon open subpaths
@@ -40,7 +40,7 @@ path.move(to: CGPoint(x: 20.83, y: 14.83))
 path.addCurve(to: CGPoint(x: 22.003146625663085, y: 12.0), control1: CGPoint(x: 21.58110817212036, y: 14.079726971430928), control2: CGPoint(x: 22.003146625663085, y: 13.06163699239627))
 path.addCurve(to: CGPoint(x: 20.83, y: 9.17), control1: CGPoint(x: 22.003146625663085, y: 10.93836300760373), control2: CGPoint(x: 21.58110817212036, y: 9.920273028569072))
 path.move(to: CGPoint(x: 18.0, y: 12.0))
-path.addEllipse(in: CGRect(x: 17.66, y: 11.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 18.01, y: 12.0))
     return path
 }()
 /// Bluetooth Searching icon closed subpaths

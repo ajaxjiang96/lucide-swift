@@ -42,7 +42,7 @@ path.addCurve(to: CGPoint(x: 7.477493963979251, y: 14.878272333276767), control1
 path.addCurve(to: CGPoint(x: 6.0, y: 12.999999999999998), control1: CGPoint(x: 6.623967163939305, y: 14.647589414347053), control2: CGPoint(x: 6.023188822754359, y: 13.88384664165885))
 path.closeSubpath()
 path.move(to: CGPoint(x: 15.0, y: 15.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 14.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 15.01, y: 15.0))
     return path
 }()
 /// Whale icon open subpaths
@@ -56,7 +56,7 @@ path.move(to: CGPoint(x: 18.0, y: 5.0))
 path.addCurve(to: CGPoint(x: 20.0, y: 3.0), control1: CGPoint(x: 18.0, y: 3.8954305003384135), control2: CGPoint(x: 18.895430500338414, y: 3.0))
 path.addCurve(to: CGPoint(x: 22.0, y: 4.999999999999999), control1: CGPoint(x: 21.104569499661586, y: 3.0), control2: CGPoint(x: 22.0, y: 3.8954305003384126))
 path.move(to: CGPoint(x: 15.0, y: 15.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 14.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 15.01, y: 15.0))
     return path
 }()
 /// Whale icon closed subpaths

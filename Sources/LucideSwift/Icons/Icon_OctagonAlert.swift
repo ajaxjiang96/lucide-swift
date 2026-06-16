@@ -15,7 +15,7 @@ internal enum LucideIcon_OctagonAlert {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 16.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 15.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 12.01, y: 16.0))
 path.move(to: CGPoint(x: 12.0, y: 8.0))
 path.addLine(to: CGPoint(x: 12.0, y: 12.0))
 path.move(to: CGPoint(x: 15.312, y: 2.0))
@@ -41,7 +41,7 @@ path.closeSubpath()
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 16.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 15.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 12.01, y: 16.0))
 path.move(to: CGPoint(x: 12.0, y: 8.0))
 path.addLine(to: CGPoint(x: 12.0, y: 12.0))
     return path

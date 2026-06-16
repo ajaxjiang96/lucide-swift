@@ -15,7 +15,7 @@ internal enum LucideIcon_PcCase {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.0, y: 14.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 13.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 15.01, y: 14.0))
 path.move(to: CGPoint(x: 9.0, y: 6.0))
 path.addLine(to: CGPoint(x: 15.0, y: 6.0))
 path.move(to: CGPoint(x: 9.0, y: 10.0))
@@ -36,7 +36,7 @@ path.closeSubpath()
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.0, y: 14.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 13.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 15.01, y: 14.0))
 path.move(to: CGPoint(x: 9.0, y: 6.0))
 path.addLine(to: CGPoint(x: 15.0, y: 6.0))
 path.move(to: CGPoint(x: 9.0, y: 10.0))

@@ -28,9 +28,9 @@ path.addLine(to: CGPoint(x: 22.0, y: 5.0))
 path.move(to: CGPoint(x: 19.0, y: 2.0))
 path.addLine(to: CGPoint(x: 19.0, y: 8.0))
 path.move(to: CGPoint(x: 9.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 8.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 9.01, y: 9.0))
 path.move(to: CGPoint(x: 15.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 8.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 15.01, y: 9.0))
     return path
 }()
 /// Smile Plus icon open subpaths
@@ -50,9 +50,9 @@ path.addLine(to: CGPoint(x: 22.0, y: 5.0))
 path.move(to: CGPoint(x: 19.0, y: 2.0))
 path.addLine(to: CGPoint(x: 19.0, y: 8.0))
 path.move(to: CGPoint(x: 9.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 8.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 9.01, y: 9.0))
 path.move(to: CGPoint(x: 15.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 8.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 15.01, y: 9.0))
     return path
 }()
 /// Smile Plus icon closed subpaths

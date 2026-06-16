@@ -15,11 +15,11 @@ internal enum LucideLabIcon_Lab_RefrigeratorFreezer {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 9.0, y: 6.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 5.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 9.01, y: 6.0))
 path.move(to: CGPoint(x: 5.0, y: 10.0))
 path.addLine(to: CGPoint(x: 19.0, y: 10.0))
 path.move(to: CGPoint(x: 9.0, y: 14.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 13.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 9.01, y: 14.0))
 path.move(to: CGPoint(x: 7.0, y: 2.0))
 path.addLine(to: CGPoint(x: 17.0, y: 2.0))
 path.addCurve(to: CGPoint(x: 19.0, y: 4.0), control1: CGPoint(x: 18.104569499661586, y: 2.0), control2: CGPoint(x: 19.0, y: 2.895430500338413))
@@ -36,11 +36,11 @@ path.closeSubpath()
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 9.0, y: 6.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 5.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 9.01, y: 6.0))
 path.move(to: CGPoint(x: 5.0, y: 10.0))
 path.addLine(to: CGPoint(x: 19.0, y: 10.0))
 path.move(to: CGPoint(x: 9.0, y: 14.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 13.65, width: 0.7, height: 0.7))
+path.addLine(to: CGPoint(x: 9.01, y: 14.0))
     return path
 }()
 /// Refrigerator Freezer icon closed subpaths
