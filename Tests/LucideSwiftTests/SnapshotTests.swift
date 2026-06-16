@@ -229,6 +229,18 @@ final class SnapshotTests: XCTestCase {
         try? (data as Data).write(to: outputURL)
     }
 
+    // MARK: - Set up / Tear down
+
+    override func setUpWithError() throws {
+        try super.setUpWithError()
+        // Clear stale diffs from previous runs
+        let diffDir = FileManager.default.temporaryDirectory
+            .appendingPathComponent("lucide-snapshot-diffs", isDirectory: true)
+        if FileManager.default.fileExists(atPath: diffDir.path) {
+            try FileManager.default.removeItem(at: diffDir)
+        }
+    }
+
     // MARK: - Tests
 
     func testSnapshotAllRegularIcons() throws {
