@@ -112,15 +112,17 @@ final class SnapshotTests: XCTestCase {
     private func assertSnapshot(_ iconName: LucideIconName, file: StaticString = #filePath, line: UInt = #line) throws {
         let name = iconName.rawValue
         let baselineURL = Self.snapshotDir.appendingPathComponent("\(name).png")
-        let diffURL = Self.snapshotDir.appendingPathComponent("\(name).diff.png")
+        // Write diff images to a temp directory so they're never accidentally committed
+        let diffDir = FileManager.default.temporaryDirectory
+            .appendingPathComponent("lucide-snapshot-diffs", isDirectory: true)
+        let diffURL = diffDir.appendingPathComponent("\(name).diff.png")
+        try FileManager.default.createDirectory(at: diffDir, withIntermediateDirectories: true)
         let record = ProcessInfo.processInfo.environment["SNAPSHOT_RECORD"] == "1"
 
         if record {
             let actual = try renderPNG(iconName: iconName)
             try FileManager.default.createDirectory(at: Self.snapshotDir, withIntermediateDirectories: true)
             try actual.write(to: baselineURL)
-            // Clean up any stale diff from a previous failure
-            try? FileManager.default.removeItem(at: diffURL)
             return
         }
 
