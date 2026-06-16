@@ -25,7 +25,7 @@ path.addCurve(to: CGPoint(x: 20.0, y: 12.0), control1: CGPoint(x: 17.31370849898
 path.addLine(to: CGPoint(x: 20.0, y: 15.0))
 path.move(to: CGPoint(x: 4.0, y: 15.0))
 path.addLine(to: CGPoint(x: 4.0, y: 12.0))
-path.addCurve(to: CGPoint(x: 9.999999999999998, y: 6.0), control1: CGPoint(x: 4.0, y: 8.68629150101524), control2: CGPoint(x: 6.686291501015238, y: 6.000000000000001))
+path.addCurve(to: CGPoint(x: 10.0, y: 6.0), control1: CGPoint(x: 4.000000000000001, y: 8.686291501015239), control2: CGPoint(x: 6.68629150101524, y: 6.0))
 path.move(to: CGPoint(x: 3.0, y: 15.0))
 path.addLine(to: CGPoint(x: 21.0, y: 15.0))
 path.addCurve(to: CGPoint(x: 22.0, y: 16.0), control1: CGPoint(x: 21.552284749830793, y: 15.0), control2: CGPoint(x: 22.0, y: 15.447715250169207))
@@ -34,7 +34,7 @@ path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 22.0, y: 18.55
 path.addLine(to: CGPoint(x: 3.0, y: 19.0))
 path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 2.4477152501692068, y: 19.0), control2: CGPoint(x: 2.0, y: 18.552284749830793))
 path.addLine(to: CGPoint(x: 2.0, y: 16.0))
-path.addCurve(to: CGPoint(x: 3.0, y: 15.0), control1: CGPoint(x: 2.0, y: 15.447715250169207), control2: CGPoint(x: 2.4477152501692063, y: 15.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 15.0), control1: CGPoint(x: 2.0, y: 15.447715250169207), control2: CGPoint(x: 2.4477152501692068, y: 15.0))
 path.closeSubpath()
     return path
 }()
@@ -52,7 +52,7 @@ path.addCurve(to: CGPoint(x: 20.0, y: 12.0), control1: CGPoint(x: 17.31370849898
 path.addLine(to: CGPoint(x: 20.0, y: 15.0))
 path.move(to: CGPoint(x: 4.0, y: 15.0))
 path.addLine(to: CGPoint(x: 4.0, y: 12.0))
-path.addCurve(to: CGPoint(x: 9.999999999999998, y: 6.0), control1: CGPoint(x: 4.0, y: 8.68629150101524), control2: CGPoint(x: 6.686291501015238, y: 6.000000000000001))
+path.addCurve(to: CGPoint(x: 10.0, y: 6.0), control1: CGPoint(x: 4.000000000000001, y: 8.686291501015239), control2: CGPoint(x: 6.68629150101524, y: 6.0))
     return path
 }()
 /// Hard Hat icon closed subpaths
@@ -66,7 +66,7 @@ path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 22.0, y: 18.55
 path.addLine(to: CGPoint(x: 3.0, y: 19.0))
 path.addCurve(to: CGPoint(x: 2.0, y: 18.0), control1: CGPoint(x: 2.4477152501692068, y: 19.0), control2: CGPoint(x: 2.0, y: 18.552284749830793))
 path.addLine(to: CGPoint(x: 2.0, y: 16.0))
-path.addCurve(to: CGPoint(x: 3.0, y: 15.0), control1: CGPoint(x: 2.0, y: 15.447715250169207), control2: CGPoint(x: 2.4477152501692063, y: 15.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 15.0), control1: CGPoint(x: 2.0, y: 15.447715250169207), control2: CGPoint(x: 2.4477152501692068, y: 15.0))
 path.closeSubpath()
     return path
 }()

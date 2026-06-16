@@ -15,7 +15,7 @@ internal enum LucideIcon_ReceiptRussianRuble {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 4.0, y: 3.0))
-path.addCurve(to: CGPoint(x: 5.0, y: 2.0), control1: CGPoint(x: 4.0, y: 2.4477152501692068), control2: CGPoint(x: 4.447715250169207, y: 2.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 2.0), control1: CGPoint(x: 4.0, y: 2.4477152501692063), control2: CGPoint(x: 4.447715250169207, y: 2.0))
 path.addCurve(to: CGPoint(x: 5.7, y: 2.2), control1: CGPoint(x: 5.247619197366837, y: 1.9986383647537913), control2: CGPoint(x: 5.4904766397242675, y: 2.0680262054273433))
 path.addLine(to: CGPoint(x: 6.633, y: 2.8000000000000003))
 path.addCurve(to: CGPoint(x: 8.033, y: 2.8000000000000003), control1: CGPoint(x: 7.05981647526368, y: 3.0727398466528903), control2: CGPoint(x: 7.60618352473632, y: 3.0727398466528903))
@@ -75,7 +75,7 @@ path.addLine(to: CGPoint(x: 13.0, y: 15.0))
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 4.0, y: 3.0))
-path.addCurve(to: CGPoint(x: 5.0, y: 2.0), control1: CGPoint(x: 4.0, y: 2.4477152501692068), control2: CGPoint(x: 4.447715250169207, y: 2.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 2.0), control1: CGPoint(x: 4.0, y: 2.4477152501692063), control2: CGPoint(x: 4.447715250169207, y: 2.0))
 path.addCurve(to: CGPoint(x: 5.7, y: 2.2), control1: CGPoint(x: 5.247619197366837, y: 1.9986383647537913), control2: CGPoint(x: 5.4904766397242675, y: 2.0680262054273433))
 path.addLine(to: CGPoint(x: 6.633, y: 2.8000000000000003))
 path.addCurve(to: CGPoint(x: 8.033, y: 2.8000000000000003), control1: CGPoint(x: 7.05981647526368, y: 3.0727398466528903), control2: CGPoint(x: 7.60618352473632, y: 3.0727398466528903))

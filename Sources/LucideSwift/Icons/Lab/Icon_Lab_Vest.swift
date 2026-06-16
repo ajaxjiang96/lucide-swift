@@ -15,8 +15,8 @@ internal enum LucideLabIcon_Lab_Vest {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 4.0))
-path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 10.0, y: 5.104569499661587), control2: CGPoint(x: 10.895430500338414, y: 6.0))
-path.addCurve(to: CGPoint(x: 14.0, y: 4.0), control1: CGPoint(x: 13.104569499661586, y: 6.0), control2: CGPoint(x: 14.0, y: 5.1045694996615865))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 10.0, y: 5.1045694996615865), control2: CGPoint(x: 10.895430500338414, y: 6.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 4.000000000000001), control1: CGPoint(x: 13.104569499661586, y: 6.0), control2: CGPoint(x: 14.0, y: 5.104569499661587))
 path.addLine(to: CGPoint(x: 14.0, y: 3.0))
 path.addLine(to: CGPoint(x: 18.0, y: 3.0))
 path.addLine(to: CGPoint(x: 18.0, y: 6.0))
@@ -41,8 +41,8 @@ static let openPath: Path = {
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 4.0))
-path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 10.0, y: 5.104569499661587), control2: CGPoint(x: 10.895430500338414, y: 6.0))
-path.addCurve(to: CGPoint(x: 14.0, y: 4.0), control1: CGPoint(x: 13.104569499661586, y: 6.0), control2: CGPoint(x: 14.0, y: 5.1045694996615865))
+path.addCurve(to: CGPoint(x: 12.0, y: 6.0), control1: CGPoint(x: 10.0, y: 5.1045694996615865), control2: CGPoint(x: 10.895430500338414, y: 6.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 4.000000000000001), control1: CGPoint(x: 13.104569499661586, y: 6.0), control2: CGPoint(x: 14.0, y: 5.104569499661587))
 path.addLine(to: CGPoint(x: 14.0, y: 3.0))
 path.addLine(to: CGPoint(x: 18.0, y: 3.0))
 path.addLine(to: CGPoint(x: 18.0, y: 6.0))

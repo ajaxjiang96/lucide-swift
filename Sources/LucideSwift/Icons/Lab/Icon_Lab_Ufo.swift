@@ -17,8 +17,8 @@ static let combinedPath: Path = {
     path.move(to: CGPoint(x: 18.0, y: 8.0))
 path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 18.0, y: 9.0), control2: CGPoint(x: 15.0, y: 10.0))
 path.addCurve(to: CGPoint(x: 6.0, y: 8.0), control1: CGPoint(x: 9.0, y: 10.0), control2: CGPoint(x: 6.0, y: 9.0))
-path.addCurve(to: CGPoint(x: 11.999999999999998, y: 2.0), control1: CGPoint(x: 6.0, y: 4.68629150101524), control2: CGPoint(x: 8.686291501015237, y: 2.000000000000001))
-path.addCurve(to: CGPoint(x: 18.0, y: 7.999999999999998), control1: CGPoint(x: 15.31370849898476, y: 2.0), control2: CGPoint(x: 18.0, y: 4.686291501015238))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 6.000000000000001, y: 4.686291501015239), control2: CGPoint(x: 8.68629150101524, y: 2.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 15.313708498984761, y: 2.0), control2: CGPoint(x: 18.0, y: 4.686291501015239))
 path.move(to: CGPoint(x: 7.0, y: 13.0))
 path.addLine(to: CGPoint(x: 7.01, y: 13.0))
 path.move(to: CGPoint(x: 12.0, y: 14.0))
@@ -62,8 +62,8 @@ static let closedPath: Path = {
     path.move(to: CGPoint(x: 18.0, y: 8.0))
 path.addCurve(to: CGPoint(x: 12.0, y: 10.0), control1: CGPoint(x: 18.0, y: 9.0), control2: CGPoint(x: 15.0, y: 10.0))
 path.addCurve(to: CGPoint(x: 6.0, y: 8.0), control1: CGPoint(x: 9.0, y: 10.0), control2: CGPoint(x: 6.0, y: 9.0))
-path.addCurve(to: CGPoint(x: 11.999999999999998, y: 2.0), control1: CGPoint(x: 6.0, y: 4.68629150101524), control2: CGPoint(x: 8.686291501015237, y: 2.000000000000001))
-path.addCurve(to: CGPoint(x: 18.0, y: 7.999999999999998), control1: CGPoint(x: 15.31370849898476, y: 2.0), control2: CGPoint(x: 18.0, y: 4.686291501015238))
+path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 6.000000000000001, y: 4.686291501015239), control2: CGPoint(x: 8.68629150101524, y: 2.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 8.0), control1: CGPoint(x: 15.313708498984761, y: 2.0), control2: CGPoint(x: 18.0, y: 4.686291501015239))
     return path
 }()
 
