@@ -107,7 +107,7 @@ struct ExperimentalView: View {
 #### Filled Icons
 
 > [!WARNING]
-> Filled rendering is **experimental**. Lucide icons are stroke-based, and filling them can result in artifacts on complex or open paths.
+> Filled rendering is **experimental**. Per the [Lucide docs](https://lucide.dev/guide/design/icon-properties), fills are **not officially supported** — Lucide icons are designed as stroke-based line art. Filling can produce visual artifacts on icons with complex or open paths.
 
 ```swift
 // Filled icons using style: parameter
