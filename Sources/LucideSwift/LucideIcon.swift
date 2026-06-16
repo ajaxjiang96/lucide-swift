@@ -11,7 +11,12 @@ import SwiftUI
 public enum LucideIconStyle: Sendable {
     /// Stroke-only rendering — the standard Lucide look.
     case stroked
-    /// Filled rendering: closed paths are filled, open paths are stroked.
+    /// **Experimental.** Filled rendering: closed paths are filled, open paths are stroked.
+    ///
+    /// > Important: Lucide icons are designed as stroke-based line art. Fills are
+    /// > [not officially supported](https://lucide.dev/guide/design/icon-properties)
+    /// > by Lucide. Filled rendering may produce visual artifacts on icons with
+    /// > complex or open paths. Use with caution.
     case filled
 }
 
