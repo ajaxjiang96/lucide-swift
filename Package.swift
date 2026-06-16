@@ -25,7 +25,9 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/nicklockwood/SVGPath.git", from: "1.3.0")
+        // Using local patched copy with fix for relative move (m) command
+        // See PatchedDependencies/SVGPath for details
+        .package(path: "PatchedDependencies/SVGPath")
     ],
     targets: [
         .target(
