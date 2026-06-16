@@ -1,0 +1,54 @@
+//
+//  Icon_RedoDot.swift
+//  LucideSwift
+//
+//  Auto-generated — DO NOT EDIT
+//  Icon: redo-dot
+//
+
+import SwiftUI
+
+/// Redo Dot icon
+internal enum LucideIcon_RedoDot {
+    
+/// Redo Dot icon path (combined)
+static let combinedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 21.0, y: 7.0))
+path.addLine(to: CGPoint(x: 21.0, y: 13.0))
+path.addLine(to: CGPoint(x: 15.0, y: 13.0))
+path.move(to: CGPoint(x: 3.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 8.0), control1: CGPoint(x: 3.0, y: 12.029437251522861), control2: CGPoint(x: 7.029437251522857, y: 8.000000000000002))
+path.addCurve(to: CGPoint(x: 18.0, y: 10.3), control1: CGPoint(x: 14.214877740043733, y: 8.002255454948946), control2: CGPoint(x: 16.351146864777572, y: 8.82115861943025))
+path.addLine(to: CGPoint(x: 21.0, y: 13.0))
+path.move(to: CGPoint(x: 11.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 11.0, y: 17.552284749830793), control2: CGPoint(x: 11.447715250169207, y: 18.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 17.0), control1: CGPoint(x: 12.552284749830793, y: 18.0), control2: CGPoint(x: 13.0, y: 17.552284749830793))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 13.0, y: 16.447715250169207), control2: CGPoint(x: 12.552284749830793, y: 16.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 17.0), control1: CGPoint(x: 11.447715250169207, y: 16.0), control2: CGPoint(x: 11.0, y: 16.447715250169207))
+    return path
+}()
+/// Redo Dot icon open subpaths
+static let openPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 21.0, y: 7.0))
+path.addLine(to: CGPoint(x: 21.0, y: 13.0))
+path.addLine(to: CGPoint(x: 15.0, y: 13.0))
+path.move(to: CGPoint(x: 3.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 11.999999999999998, y: 8.0), control1: CGPoint(x: 3.0, y: 12.029437251522861), control2: CGPoint(x: 7.029437251522857, y: 8.000000000000002))
+path.addCurve(to: CGPoint(x: 18.0, y: 10.3), control1: CGPoint(x: 14.214877740043733, y: 8.002255454948946), control2: CGPoint(x: 16.351146864777572, y: 8.82115861943025))
+path.addLine(to: CGPoint(x: 21.0, y: 13.0))
+    return path
+}()
+/// Redo Dot icon closed subpaths
+static let closedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 11.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 18.0), control1: CGPoint(x: 11.0, y: 17.552284749830793), control2: CGPoint(x: 11.447715250169207, y: 18.0))
+path.addCurve(to: CGPoint(x: 13.0, y: 17.0), control1: CGPoint(x: 12.552284749830793, y: 18.0), control2: CGPoint(x: 13.0, y: 17.552284749830793))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 13.0, y: 16.447715250169207), control2: CGPoint(x: 12.552284749830793, y: 16.0))
+path.addCurve(to: CGPoint(x: 11.0, y: 17.0), control1: CGPoint(x: 11.447715250169207, y: 16.0), control2: CGPoint(x: 11.0, y: 16.447715250169207))
+    return path
+}()
+
+}

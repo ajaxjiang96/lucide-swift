@@ -1,0 +1,100 @@
+//
+//  Icon_Lab_HouseManor.swift
+//  LucideSwift
+//
+//  Auto-generated — DO NOT EDIT
+//  Icon: house-manor
+//
+
+import SwiftUI
+
+/// House Manor icon
+internal enum LucideLabIcon_Lab_HouseManor {
+    
+/// House Manor icon path (combined)
+static let combinedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 9.0, y: 6.0))
+path.addLine(to: CGPoint(x: 9.0, y: 2.0))
+path.addLine(to: CGPoint(x: 5.0, y: 2.0))
+path.addLine(to: CGPoint(x: 5.0, y: 6.0))
+path.move(to: CGPoint(x: 19.0, y: 6.0))
+path.addLine(to: CGPoint(x: 19.0, y: 2.0))
+path.addLine(to: CGPoint(x: 15.0, y: 2.0))
+path.addLine(to: CGPoint(x: 15.0, y: 6.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addLine(to: CGPoint(x: 6.0, y: 12.0))
+path.move(to: CGPoint(x: 6.0, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 12.0))
+path.addLine(to: CGPoint(x: 11.5, y: 6.0))
+path.move(to: CGPoint(x: 12.5, y: 6.0))
+path.addLine(to: CGPoint(x: 18.0, y: 12.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.move(to: CGPoint(x: 18.0, y: 12.0))
+path.addLine(to: CGPoint(x: 22.0, y: 12.0))
+path.move(to: CGPoint(x: 12.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.0, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 15.0), control1: CGPoint(x: 10.0, y: 15.895430500338414), control2: CGPoint(x: 10.895430500338414, y: 15.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 17.0), control1: CGPoint(x: 13.104569499661586, y: 15.0), control2: CGPoint(x: 14.0, y: 15.895430500338414))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+path.move(to: CGPoint(x: 4.0, y: 6.0))
+path.addLine(to: CGPoint(x: 20.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 8.0), control1: CGPoint(x: 21.104569499661586, y: 6.0), control2: CGPoint(x: 22.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 6.0), control1: CGPoint(x: 2.0, y: 6.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 6.0))
+path.closeSubpath()
+    return path
+}()
+/// House Manor icon open subpaths
+static let openPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 9.0, y: 6.0))
+path.addLine(to: CGPoint(x: 9.0, y: 2.0))
+path.addLine(to: CGPoint(x: 5.0, y: 2.0))
+path.addLine(to: CGPoint(x: 5.0, y: 6.0))
+path.move(to: CGPoint(x: 19.0, y: 6.0))
+path.addLine(to: CGPoint(x: 19.0, y: 2.0))
+path.addLine(to: CGPoint(x: 15.0, y: 2.0))
+path.addLine(to: CGPoint(x: 15.0, y: 6.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addLine(to: CGPoint(x: 6.0, y: 12.0))
+path.move(to: CGPoint(x: 6.0, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 12.0))
+path.addLine(to: CGPoint(x: 11.5, y: 6.0))
+path.move(to: CGPoint(x: 12.5, y: 6.0))
+path.addLine(to: CGPoint(x: 18.0, y: 12.0))
+path.addLine(to: CGPoint(x: 18.0, y: 22.0))
+path.move(to: CGPoint(x: 18.0, y: 12.0))
+path.addLine(to: CGPoint(x: 22.0, y: 12.0))
+path.move(to: CGPoint(x: 12.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.0, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 15.0), control1: CGPoint(x: 10.0, y: 15.895430500338414), control2: CGPoint(x: 10.895430500338414, y: 15.0))
+path.addCurve(to: CGPoint(x: 14.0, y: 17.0), control1: CGPoint(x: 13.104569499661586, y: 15.0), control2: CGPoint(x: 14.0, y: 15.895430500338414))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+    return path
+}()
+/// House Manor icon closed subpaths
+static let closedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 4.0, y: 6.0))
+path.addLine(to: CGPoint(x: 20.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 8.0), control1: CGPoint(x: 21.104569499661586, y: 6.0), control2: CGPoint(x: 22.0, y: 6.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 22.0), control1: CGPoint(x: 22.0, y: 21.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 4.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 20.0), control1: CGPoint(x: 2.8954305003384135, y: 22.0), control2: CGPoint(x: 2.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 8.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 6.0), control1: CGPoint(x: 2.0, y: 6.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 6.0))
+path.closeSubpath()
+    return path
+}()
+
+}

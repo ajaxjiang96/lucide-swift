@@ -1,0 +1,72 @@
+//
+//  Icon_SunMedium.swift
+//  LucideSwift
+//
+//  Auto-generated — DO NOT EDIT
+//  Icon: sun-medium
+//
+
+import SwiftUI
+
+/// Sun Medium icon
+internal enum LucideIcon_SunMedium {
+    
+/// Sun Medium icon path (combined)
+static let combinedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 12.0, y: 3.0))
+path.addLine(to: CGPoint(x: 12.0, y: 4.0))
+path.move(to: CGPoint(x: 12.0, y: 20.0))
+path.addLine(to: CGPoint(x: 12.0, y: 21.0))
+path.move(to: CGPoint(x: 3.0, y: 12.0))
+path.addLine(to: CGPoint(x: 4.0, y: 12.0))
+path.move(to: CGPoint(x: 20.0, y: 12.0))
+path.addLine(to: CGPoint(x: 21.0, y: 12.0))
+path.move(to: CGPoint(x: 18.364, y: 5.636))
+path.addLine(to: CGPoint(x: 17.657, y: 6.343))
+path.move(to: CGPoint(x: 6.343, y: 17.657))
+path.addLine(to: CGPoint(x: 5.636, y: 18.364))
+path.move(to: CGPoint(x: 5.636, y: 5.636))
+path.addLine(to: CGPoint(x: 6.343, y: 6.343))
+path.move(to: CGPoint(x: 17.657, y: 17.657))
+path.addLine(to: CGPoint(x: 18.364, y: 18.364))
+path.move(to: CGPoint(x: 8.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 8.0, y: 14.209138999323175), control2: CGPoint(x: 9.790861000676827, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 12.0), control1: CGPoint(x: 14.209138999323175, y: 16.0), control2: CGPoint(x: 16.0, y: 14.209138999323173))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.0), control1: CGPoint(x: 16.0, y: 9.790861000676827), control2: CGPoint(x: 14.209138999323175, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 12.0), control1: CGPoint(x: 9.790861000676827, y: 8.0), control2: CGPoint(x: 8.0, y: 9.790861000676825))
+    return path
+}()
+/// Sun Medium icon open subpaths
+static let openPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 12.0, y: 3.0))
+path.addLine(to: CGPoint(x: 12.0, y: 4.0))
+path.move(to: CGPoint(x: 12.0, y: 20.0))
+path.addLine(to: CGPoint(x: 12.0, y: 21.0))
+path.move(to: CGPoint(x: 3.0, y: 12.0))
+path.addLine(to: CGPoint(x: 4.0, y: 12.0))
+path.move(to: CGPoint(x: 20.0, y: 12.0))
+path.addLine(to: CGPoint(x: 21.0, y: 12.0))
+path.move(to: CGPoint(x: 18.364, y: 5.636))
+path.addLine(to: CGPoint(x: 17.657, y: 6.343))
+path.move(to: CGPoint(x: 6.343, y: 17.657))
+path.addLine(to: CGPoint(x: 5.636, y: 18.364))
+path.move(to: CGPoint(x: 5.636, y: 5.636))
+path.addLine(to: CGPoint(x: 6.343, y: 6.343))
+path.move(to: CGPoint(x: 17.657, y: 17.657))
+path.addLine(to: CGPoint(x: 18.364, y: 18.364))
+    return path
+}()
+/// Sun Medium icon closed subpaths
+static let closedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 8.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 12.0, y: 16.0), control1: CGPoint(x: 8.0, y: 14.209138999323175), control2: CGPoint(x: 9.790861000676827, y: 16.0))
+path.addCurve(to: CGPoint(x: 16.0, y: 12.0), control1: CGPoint(x: 14.209138999323175, y: 16.0), control2: CGPoint(x: 16.0, y: 14.209138999323173))
+path.addCurve(to: CGPoint(x: 12.0, y: 8.0), control1: CGPoint(x: 16.0, y: 9.790861000676827), control2: CGPoint(x: 14.209138999323175, y: 8.0))
+path.addCurve(to: CGPoint(x: 8.0, y: 12.0), control1: CGPoint(x: 9.790861000676827, y: 8.0), control2: CGPoint(x: 8.0, y: 9.790861000676825))
+    return path
+}()
+
+}

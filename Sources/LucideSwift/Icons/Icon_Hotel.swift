@@ -1,0 +1,86 @@
+//
+//  Icon_Hotel.swift
+//  LucideSwift
+//
+//  Auto-generated — DO NOT EDIT
+//  Icon: hotel
+//
+
+import SwiftUI
+
+/// Hotel icon
+internal enum LucideIcon_Hotel {
+    
+/// Hotel icon path (combined)
+static let combinedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 10.0, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 15.43))
+path.move(to: CGPoint(x: 12.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.0, y: 7.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 6.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.0, y: 15.43))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+path.move(to: CGPoint(x: 15.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 16.0), control1: CGPoint(x: 13.222222222222221, y: 14.666666666666668), control2: CGPoint(x: 10.777777777777779, y: 14.666666666666666))
+path.move(to: CGPoint(x: 16.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 15.660000000000002, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 16.0, y: 7.0))
+path.addEllipse(in: CGRect(x: 15.660000000000002, y: 6.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 8.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 7.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 8.0, y: 7.0))
+path.addEllipse(in: CGRect(x: 7.66, y: 6.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 6.0, y: 2.0))
+path.addLine(to: CGPoint(x: 18.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 4.0), control1: CGPoint(x: 19.104569499661586, y: 2.0), control2: CGPoint(x: 20.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 22.0), control1: CGPoint(x: 20.0, y: 21.104569499661586), control2: CGPoint(x: 19.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 20.0), control1: CGPoint(x: 4.8954305003384135, y: 22.0), control2: CGPoint(x: 4.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 4.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 2.0), control1: CGPoint(x: 4.0, y: 2.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 2.0))
+path.closeSubpath()
+    return path
+}()
+/// Hotel icon open subpaths
+static let openPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 10.0, y: 22.0))
+path.addLine(to: CGPoint(x: 10.0, y: 15.43))
+path.move(to: CGPoint(x: 12.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.0, y: 7.0))
+path.addEllipse(in: CGRect(x: 11.66, y: 6.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.0, y: 15.43))
+path.addLine(to: CGPoint(x: 14.0, y: 22.0))
+path.move(to: CGPoint(x: 15.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 9.0, y: 16.0), control1: CGPoint(x: 13.222222222222221, y: 14.666666666666668), control2: CGPoint(x: 10.777777777777779, y: 14.666666666666666))
+path.move(to: CGPoint(x: 16.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 15.660000000000002, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 16.0, y: 7.0))
+path.addEllipse(in: CGRect(x: 15.660000000000002, y: 6.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 8.0, y: 11.0))
+path.addEllipse(in: CGRect(x: 7.66, y: 10.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 8.0, y: 7.0))
+path.addEllipse(in: CGRect(x: 7.66, y: 6.65, width: 0.7, height: 0.7))
+    return path
+}()
+/// Hotel icon closed subpaths
+static let closedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 6.0, y: 2.0))
+path.addLine(to: CGPoint(x: 18.0, y: 2.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 4.0), control1: CGPoint(x: 19.104569499661586, y: 2.0), control2: CGPoint(x: 20.0, y: 2.895430500338413))
+path.addLine(to: CGPoint(x: 20.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 18.0, y: 22.0), control1: CGPoint(x: 20.0, y: 21.104569499661586), control2: CGPoint(x: 19.104569499661586, y: 22.0))
+path.addLine(to: CGPoint(x: 6.0, y: 22.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 20.0), control1: CGPoint(x: 4.8954305003384135, y: 22.0), control2: CGPoint(x: 4.0, y: 21.104569499661586))
+path.addLine(to: CGPoint(x: 4.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 2.0), control1: CGPoint(x: 4.0, y: 2.8954305003384135), control2: CGPoint(x: 4.895430500338413, y: 2.0))
+path.closeSubpath()
+    return path
+}()
+
+}

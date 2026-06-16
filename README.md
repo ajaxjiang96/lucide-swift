@@ -22,7 +22,7 @@ A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) w
 ## Features
 
 - **True Vector Rendering**: SVG paths converted to native SwiftUI `Shape` - scales infinitely to any size without pixelation
-- **Type-safe API**: 2000+ icons as compile-time checked1728 enum cases with full Xcode autocomplete
+- **Type-safe API**: 1728 enum cases with full Xcode autocomplete
 - **Lucide Lab Support**: Full integration of experimental icons from the [Lucide Lab](https://github.com/lucide-icons/lucide-lab) repository
 - **Zero Runtime Dependencies**: Pure Swift implementation, no external dependencies at runtime
 - **SwiftUI Native**: Built on SwiftUI's `Shape` protocol with full modifier support
@@ -215,18 +215,19 @@ Other Lucide packages for Swift use image assets (PDFs/PNGs) which can:
 - Have larger binary sizes due to multiple resolutions
 
 This package generates pure Swift code from SVG paths:
-- **Smaller binary**: Code compresses better than image assets
 - **True vectors**: Native SwiftUI rendering at any resolution
 - **Type safety**: Compile-time verification prevents runtime icon-not-found errors
 - **Better tooling**: Xcode autocomplete shows all 1728 available icons
+- **Faster at runtime**: Enum lookup is 7× faster than bundle lookup, Shape rendering is 2× faster than PDF rasterization
 
 ## Technical Details
 
-- **Total Icons**: 8428 icons
+- **Total Icons**: 2102 icons
 - **Filled Icons**: Experimental support included
-- **Generated Code**: ~4.1MB of Swift path data
-- **Build Time**: Zero impact (generated at package build time)
-- **Runtime Memory**: Cached `static let` paths executed exactly once, negligible overhead during view diffing
+- **File Structure**: Each icon in its own Swift file under `Sources/LucideSwift/Icons/` for fast incremental compilation
+- **Generated Code**: ~140K lines of Swift path data across 2,102 files
+- **Build Time**: Parallel compilation of individual icon files scales across all cores
+- **Runtime Memory**: `static let` paths cached on first access, negligible overhead during view diffing
 - **Stroke Scaling**: Configurable via `strokeWidth` and `absoluteStrokeWidth` parameters
 
 ## Benchmark
@@ -235,10 +236,14 @@ Comparison against [lucide-icons-swift](https://github.com/JakubMazur/lucide-ico
 
 | Dimension | LucideSwift (Shape) | lucide-icons-swift (Assets) |
 |---|---|---|
-| Binary Size | 23.3 MB | 4.9 MB |
-| Lookup Speed | 1.2 µs | 5.5 µs |
-| Render (View/Image creation) | 8.1 µs | 5.2 µs |
-| Memory (all icons) | 4.0 MB | 1.5 MB |
+| Binary Size | 42.3 MB | 4.9 MB |
+| Lookup Speed (avg) | 1.3 µs | 9.6 µs |
+| Render (per icon) | 4.2 µs | 9.3 µs |
+| Memory (all icons) | 4.7 MB | 6.5 MB |
+
+> Binary size reflects the full icon set in both cases — the lucide-icons-swift PDF
+> asset catalog is always bundled, and LucideSwift's switch-dispatch architecture
+> means the linker includes all icon code regardless of usage.
 
 > *Lower is better. Run locally: `cd Benchmarks && swift run -c release LucideBenchmark`*
 
@@ -246,7 +251,7 @@ Comparison against [lucide-icons-swift](https://github.com/JakubMazur/lucide-ico
 
 Find the right icon at the official Lucide catalog:
 
-### [🔍 Browse all icons on lucide.dev/icons →](https://lucide.dev/icons)
+### [🔍 Browse all 1728 icons on lucide.dev/icons →](https://lucide.dev/icons)
 
 The catalog includes visual previews, search, categories, and tags for every icon.
 

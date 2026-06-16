@@ -1,0 +1,58 @@
+//
+//  Icon_Cast.swift
+//  LucideSwift
+//
+//  Auto-generated — DO NOT EDIT
+//  Icon: cast
+//
+
+import SwiftUI
+
+/// Cast icon
+internal enum LucideIcon_Cast {
+    
+/// Cast icon path (combined)
+static let combinedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 2.0, y: 8.0))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 4.0), control1: CGPoint(x: 2.0, y: 4.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 4.0))
+path.addLine(to: CGPoint(x: 20.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 21.104569499661586, y: 4.0), control2: CGPoint(x: 22.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 20.0), control1: CGPoint(x: 22.0, y: 19.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 20.0))
+path.addLine(to: CGPoint(x: 14.0, y: 20.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 20.0), control1: CGPoint(x: 6.218951416497459, y: 12.447715250169209), control2: CGPoint(x: 9.552284749830793, y: 15.781048583502542))
+path.move(to: CGPoint(x: 2.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 20.0), control1: CGPoint(x: 4.0319199873762175, y: 16.378432098015985), control2: CGPoint(x: 5.621567901984015, y: 17.968080012623783))
+path.move(to: CGPoint(x: 2.0, y: 20.0))
+path.addEllipse(in: CGRect(x: 1.6599999999999997, y: 19.65, width: 0.7, height: 0.7))
+    return path
+}()
+/// Cast icon open subpaths
+static let openPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 2.0, y: 8.0))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 3.9999999999999996, y: 4.0), control1: CGPoint(x: 2.0, y: 4.8954305003384135), control2: CGPoint(x: 2.8954305003384126, y: 4.0))
+path.addLine(to: CGPoint(x: 20.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 21.104569499661586, y: 4.0), control2: CGPoint(x: 22.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 18.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 20.0), control1: CGPoint(x: 22.0, y: 19.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 20.0))
+path.addLine(to: CGPoint(x: 14.0, y: 20.0))
+path.move(to: CGPoint(x: 2.0, y: 12.0))
+path.addCurve(to: CGPoint(x: 10.0, y: 20.0), control1: CGPoint(x: 6.218951416497459, y: 12.447715250169209), control2: CGPoint(x: 9.552284749830793, y: 15.781048583502542))
+path.move(to: CGPoint(x: 2.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 6.0, y: 20.0), control1: CGPoint(x: 4.0319199873762175, y: 16.378432098015985), control2: CGPoint(x: 5.621567901984015, y: 17.968080012623783))
+path.move(to: CGPoint(x: 2.0, y: 20.0))
+path.addEllipse(in: CGRect(x: 1.6599999999999997, y: 19.65, width: 0.7, height: 0.7))
+    return path
+}()
+/// Cast icon closed subpaths
+static let closedPath: Path = {
+    var path = Path()
+            return path
+}()
+
+}
