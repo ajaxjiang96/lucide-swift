@@ -38,7 +38,8 @@ path.addCurve(to: CGPoint(x: 3.0, y: 3.9999999999999996), control1: CGPoint(x: 3
 path.addLine(to: CGPoint(x: 3.0, y: 9.0))
 path.addCurve(to: CGPoint(x: 3.6879999999999855, y: 10.499999999999988), control1: CGPoint(x: 3.002746660205416, y: 9.575719021921968), control2: CGPoint(x: 3.2534591594330027, y: 10.1223305754705))
 path.move(to: CGPoint(x: 12.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.01, y: 18.0))
+path.addLine(to: CGPoint(x: 12.01, y: 18.0))
     return path
 }()
 /// Blender icon open subpaths
@@ -57,7 +58,8 @@ path.addCurve(to: CGPoint(x: 3.0, y: 3.9999999999999996), control1: CGPoint(x: 3
 path.addLine(to: CGPoint(x: 3.0, y: 9.0))
 path.addCurve(to: CGPoint(x: 3.6879999999999855, y: 10.499999999999988), control1: CGPoint(x: 3.002746660205416, y: 9.575719021921968), control2: CGPoint(x: 3.2534591594330027, y: 10.1223305754705))
 path.move(to: CGPoint(x: 12.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.01, y: 18.0))
+path.addLine(to: CGPoint(x: 12.01, y: 18.0))
     return path
 }()
 /// Blender icon closed subpaths

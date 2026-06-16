@@ -421,8 +421,10 @@ struct SwiftCodeGenerator {
                     let dy = endPoint.y - start.y
                     let distance = sqrt(dx * dx + dy * dy)
                     if distance < 0.1 && distance > 0 {
-                        let radius = 0.35
-                        code += "path.addEllipse(in: CGRect(x: \(endPoint.x - radius), y: \(endPoint.y - radius), width: \(radius * 2), height: \(radius * 2)))\n"
+                        // Zero-length segment: break into its own subpath so round
+                        // line caps render a solid filled dot — NOT a ring/annulus.
+                        code += "path.move(to: CGPoint(x: \(endPoint.x), y: \(endPoint.y)))\n"
+                        code += "path.addLine(to: CGPoint(x: \(endPoint.x), y: \(endPoint.y)))\n"
                     } else {
                         code += "path.addLine(to: CGPoint(x: \(endPoint.x), y: \(endPoint.y)))\n"
                     }

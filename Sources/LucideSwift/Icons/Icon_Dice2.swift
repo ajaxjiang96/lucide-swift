@@ -15,9 +15,11 @@ internal enum LucideIcon_Dice2 {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 8.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.01, y: 9.0))
+path.addLine(to: CGPoint(x: 15.01, y: 9.0))
 path.move(to: CGPoint(x: 9.0, y: 15.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 14.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.01, y: 15.0))
+path.addLine(to: CGPoint(x: 9.01, y: 15.0))
 path.move(to: CGPoint(x: 5.0, y: 3.0))
 path.addLine(to: CGPoint(x: 19.0, y: 3.0))
 path.addCurve(to: CGPoint(x: 21.0, y: 5.0), control1: CGPoint(x: 20.104569499661586, y: 3.0), control2: CGPoint(x: 21.0, y: 3.895430500338413))
@@ -34,9 +36,11 @@ path.closeSubpath()
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 8.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.01, y: 9.0))
+path.addLine(to: CGPoint(x: 15.01, y: 9.0))
 path.move(to: CGPoint(x: 9.0, y: 15.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 14.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.01, y: 15.0))
+path.addLine(to: CGPoint(x: 9.01, y: 15.0))
     return path
 }()
 /// Dice 2 icon closed subpaths

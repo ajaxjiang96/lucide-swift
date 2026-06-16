@@ -28,22 +28,26 @@ path.addCurve(to: CGPoint(x: 11.995, y: 2.0032542382157743), control1: CGPoint(x
 path.addCurve(to: CGPoint(x: 10.29, y: 2.7099999999999995), control1: CGPoint(x: 11.355400487899935, y: 2.0032542382157743), control2: CGPoint(x: 10.74203343557891, y: 2.2575032497383356))
 path.closeSubpath()
 path.move(to: CGPoint(x: 9.2, y: 9.2))
-path.addEllipse(in: CGRect(x: 8.86, y: 8.85, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.209999999999999, y: 9.2))
+path.addLine(to: CGPoint(x: 9.209999999999999, y: 9.2))
 path.move(to: CGPoint(x: 14.5, y: 9.5))
 path.addLine(to: CGPoint(x: 9.5, y: 14.5))
 path.move(to: CGPoint(x: 14.7, y: 14.8))
-path.addEllipse(in: CGRect(x: 14.36, y: 14.450000000000001, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.709999999999999, y: 14.8))
+path.addLine(to: CGPoint(x: 14.709999999999999, y: 14.8))
     return path
 }()
 /// Diamond Percent icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 9.2, y: 9.2))
-path.addEllipse(in: CGRect(x: 8.86, y: 8.85, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.209999999999999, y: 9.2))
+path.addLine(to: CGPoint(x: 9.209999999999999, y: 9.2))
 path.move(to: CGPoint(x: 14.5, y: 9.5))
 path.addLine(to: CGPoint(x: 9.5, y: 14.5))
 path.move(to: CGPoint(x: 14.7, y: 14.8))
-path.addEllipse(in: CGRect(x: 14.36, y: 14.450000000000001, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.709999999999999, y: 14.8))
+path.addLine(to: CGPoint(x: 14.709999999999999, y: 14.8))
     return path
 }()
 /// Diamond Percent icon closed subpaths

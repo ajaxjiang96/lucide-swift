@@ -41,9 +41,11 @@ path.addCurve(to: CGPoint(x: 5.162565374294619, y: 18.94665996024936), control1:
 path.addCurve(to: CGPoint(x: 9.0, y: 22.0), control1: CGPoint(x: 5.594658612095882, y: 20.721147608268737), control2: CGPoint(x: 7.173798924652623, y: 21.977625650243862))
 path.closeSubpath()
 path.move(to: CGPoint(x: 9.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.01, y: 18.0))
+path.addLine(to: CGPoint(x: 9.01, y: 18.0))
 path.move(to: CGPoint(x: 15.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.01, y: 18.0))
+path.addLine(to: CGPoint(x: 15.01, y: 18.0))
     return path
 }()
 /// Bull Head icon open subpaths
@@ -68,9 +70,11 @@ path.addCurve(to: CGPoint(x: 15.0, y: 6.0), control1: CGPoint(x: 18.0, y: 9.0), 
 path.move(to: CGPoint(x: 14.0, y: 12.5))
 path.addLine(to: CGPoint(x: 14.0, y: 14.1))
 path.move(to: CGPoint(x: 9.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.01, y: 18.0))
+path.addLine(to: CGPoint(x: 9.01, y: 18.0))
 path.move(to: CGPoint(x: 15.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.01, y: 18.0))
+path.addLine(to: CGPoint(x: 15.01, y: 18.0))
     return path
 }()
 /// Bull Head icon closed subpaths

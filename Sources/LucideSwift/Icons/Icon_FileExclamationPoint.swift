@@ -28,7 +28,8 @@ path.closeSubpath()
 path.move(to: CGPoint(x: 12.0, y: 9.0))
 path.addLine(to: CGPoint(x: 12.0, y: 13.0))
 path.move(to: CGPoint(x: 12.0, y: 17.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 16.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.01, y: 17.0))
+path.addLine(to: CGPoint(x: 12.01, y: 17.0))
     return path
 }()
 /// File Exclamation Point icon open subpaths
@@ -37,7 +38,8 @@ static let openPath: Path = {
     path.move(to: CGPoint(x: 12.0, y: 9.0))
 path.addLine(to: CGPoint(x: 12.0, y: 13.0))
 path.move(to: CGPoint(x: 12.0, y: 17.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 16.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.01, y: 17.0))
+path.addLine(to: CGPoint(x: 12.01, y: 17.0))
     return path
 }()
 /// File Exclamation Point icon closed subpaths

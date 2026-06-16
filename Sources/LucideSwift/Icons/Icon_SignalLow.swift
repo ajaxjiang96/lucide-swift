@@ -15,7 +15,8 @@ internal enum LucideIcon_SignalLow {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 2.0, y: 20.0))
-path.addEllipse(in: CGRect(x: 1.6599999999999997, y: 19.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 2.01, y: 20.0))
+path.addLine(to: CGPoint(x: 2.01, y: 20.0))
 path.move(to: CGPoint(x: 7.0, y: 20.0))
 path.addLine(to: CGPoint(x: 7.0, y: 16.0))
     return path
@@ -24,7 +25,8 @@ path.addLine(to: CGPoint(x: 7.0, y: 16.0))
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 2.0, y: 20.0))
-path.addEllipse(in: CGRect(x: 1.6599999999999997, y: 19.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 2.01, y: 20.0))
+path.addLine(to: CGPoint(x: 2.01, y: 20.0))
 path.move(to: CGPoint(x: 7.0, y: 20.0))
 path.addLine(to: CGPoint(x: 7.0, y: 16.0))
     return path

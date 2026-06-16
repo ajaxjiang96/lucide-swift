@@ -39,7 +39,8 @@ path.addLine(to: CGPoint(x: 8.0, y: 21.0))
 path.move(to: CGPoint(x: 3.0, y: 12.0))
 path.addLine(to: CGPoint(x: 8.0, y: 12.0))
 path.move(to: CGPoint(x: 12.0, y: 12.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 11.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.01, y: 12.0))
+path.addLine(to: CGPoint(x: 12.01, y: 12.0))
     return path
 }()
 /// Crosshair Square icon open subpaths
@@ -70,7 +71,8 @@ path.addLine(to: CGPoint(x: 8.0, y: 21.0))
 path.move(to: CGPoint(x: 3.0, y: 12.0))
 path.addLine(to: CGPoint(x: 8.0, y: 12.0))
 path.move(to: CGPoint(x: 12.0, y: 12.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 11.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.01, y: 12.0))
+path.addLine(to: CGPoint(x: 12.01, y: 12.0))
     return path
 }()
 /// Crosshair Square icon closed subpaths

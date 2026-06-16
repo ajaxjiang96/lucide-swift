@@ -40,7 +40,8 @@ path.addLine(to: CGPoint(x: 9.0, y: 15.0))
 path.move(to: CGPoint(x: 2.0, y: 21.0))
 path.addLine(to: CGPoint(x: 2.0, y: 17.0))
 path.move(to: CGPoint(x: 7.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 6.66, y: 8.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 7.01, y: 9.0))
+path.addLine(to: CGPoint(x: 7.01, y: 9.0))
     return path
 }()
 /// Cctv icon open subpaths
@@ -61,7 +62,8 @@ path.addLine(to: CGPoint(x: 9.0, y: 15.0))
 path.move(to: CGPoint(x: 2.0, y: 21.0))
 path.addLine(to: CGPoint(x: 2.0, y: 17.0))
 path.move(to: CGPoint(x: 7.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 6.66, y: 8.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 7.01, y: 9.0))
+path.addLine(to: CGPoint(x: 7.01, y: 9.0))
     return path
 }()
 /// Cctv icon closed subpaths

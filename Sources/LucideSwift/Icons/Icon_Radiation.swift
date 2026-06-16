@@ -15,7 +15,8 @@ internal enum LucideIcon_Radiation {
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 12.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 11.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.01, y: 12.0))
+path.addLine(to: CGPoint(x: 12.01, y: 12.0))
 path.move(to: CGPoint(x: 14.0, y: 15.4641))
 path.addCurve(to: CGPoint(x: 10.0, y: 15.4641), control1: CGPoint(x: 12.762395692965988, y: 16.17863117981633), control2: CGPoint(x: 11.237604307034013, y: 16.17863117981633))
 path.addLine(to: CGPoint(x: 7.52786, y: 19.74597))
@@ -49,7 +50,8 @@ path.closeSubpath()
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 12.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 11.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.01, y: 12.0))
+path.addLine(to: CGPoint(x: 12.01, y: 12.0))
     return path
 }()
 /// Radiation icon closed subpaths

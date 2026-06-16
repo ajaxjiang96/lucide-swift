@@ -41,9 +41,11 @@ path.addCurve(to: CGPoint(x: 5.077446677648892, y: 18.960631012718714), control1
 path.addCurve(to: CGPoint(x: 9.0, y: 22.0), control1: CGPoint(x: 5.5226016611414455, y: 20.76036666967991), control2: CGPoint(x: 7.146118926841305, y: 22.018340143123027))
 path.closeSubpath()
 path.move(to: CGPoint(x: 9.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.01, y: 18.0))
+path.addLine(to: CGPoint(x: 9.01, y: 18.0))
 path.move(to: CGPoint(x: 15.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.01, y: 18.0))
+path.addLine(to: CGPoint(x: 15.01, y: 18.0))
     return path
 }()
 /// Cow Head icon open subpaths
@@ -68,9 +70,11 @@ path.addLine(to: CGPoint(x: 9.0, y: 10.0))
 path.move(to: CGPoint(x: 15.0, y: 9.5))
 path.addLine(to: CGPoint(x: 15.0, y: 10.0))
 path.move(to: CGPoint(x: 9.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.01, y: 18.0))
+path.addLine(to: CGPoint(x: 9.01, y: 18.0))
 path.move(to: CGPoint(x: 15.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.01, y: 18.0))
+path.addLine(to: CGPoint(x: 15.01, y: 18.0))
     return path
 }()
 /// Cow Head icon closed subpaths

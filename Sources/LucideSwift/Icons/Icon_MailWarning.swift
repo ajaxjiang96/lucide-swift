@@ -29,7 +29,8 @@ path.addLine(to: CGPoint(x: 2.0, y: 7.0))
 path.move(to: CGPoint(x: 20.0, y: 14.0))
 path.addLine(to: CGPoint(x: 20.0, y: 18.0))
 path.move(to: CGPoint(x: 20.0, y: 22.0))
-path.addEllipse(in: CGRect(x: 19.65, y: 21.66, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 20.0, y: 22.01))
+path.addLine(to: CGPoint(x: 20.0, y: 22.01))
     return path
 }()
 /// Mail Warning icon open subpaths
@@ -50,7 +51,8 @@ path.addLine(to: CGPoint(x: 2.0, y: 7.0))
 path.move(to: CGPoint(x: 20.0, y: 14.0))
 path.addLine(to: CGPoint(x: 20.0, y: 18.0))
 path.move(to: CGPoint(x: 20.0, y: 22.0))
-path.addEllipse(in: CGRect(x: 19.65, y: 21.66, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 20.0, y: 22.01))
+path.addLine(to: CGPoint(x: 20.0, y: 22.01))
     return path
 }()
 /// Mail Warning icon closed subpaths

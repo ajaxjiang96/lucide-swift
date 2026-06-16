@@ -41,9 +41,11 @@ path.addCurve(to: CGPoint(x: 6.219446996310425, y: 19.374515905997363), control1
 path.addCurve(to: CGPoint(x: 9.999999999999996, y: 22.0), control1: CGPoint(x: 6.799443914745863, y: 20.959687602027614), control2: CGPoint(x: 8.312083453920879, y: 22.010171762992332))
 path.closeSubpath()
 path.move(to: CGPoint(x: 10.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 9.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.01, y: 18.0))
+path.addLine(to: CGPoint(x: 10.01, y: 18.0))
 path.move(to: CGPoint(x: 14.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 13.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.01, y: 18.0))
+path.addLine(to: CGPoint(x: 14.01, y: 18.0))
     return path
 }()
 /// Pig Head icon open subpaths
@@ -68,9 +70,11 @@ path.addLine(to: CGPoint(x: 10.0, y: 12.0))
 path.move(to: CGPoint(x: 14.0, y: 14.0))
 path.addLine(to: CGPoint(x: 14.0, y: 12.0))
 path.move(to: CGPoint(x: 10.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 9.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 10.01, y: 18.0))
+path.addLine(to: CGPoint(x: 10.01, y: 18.0))
 path.move(to: CGPoint(x: 14.0, y: 18.0))
-path.addEllipse(in: CGRect(x: 13.66, y: 17.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 14.01, y: 18.0))
+path.addLine(to: CGPoint(x: 14.01, y: 18.0))
     return path
 }()
 /// Pig Head icon closed subpaths

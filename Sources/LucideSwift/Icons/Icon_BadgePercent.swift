@@ -35,9 +35,11 @@ path.closeSubpath()
 path.move(to: CGPoint(x: 15.0, y: 9.0))
 path.addLine(to: CGPoint(x: 9.0, y: 15.0))
 path.move(to: CGPoint(x: 9.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 8.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.01, y: 9.0))
+path.addLine(to: CGPoint(x: 9.01, y: 9.0))
 path.move(to: CGPoint(x: 15.0, y: 15.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 14.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.01, y: 15.0))
+path.addLine(to: CGPoint(x: 15.01, y: 15.0))
     return path
 }()
 /// Badge Percent icon open subpaths
@@ -46,9 +48,11 @@ static let openPath: Path = {
     path.move(to: CGPoint(x: 15.0, y: 9.0))
 path.addLine(to: CGPoint(x: 9.0, y: 15.0))
 path.move(to: CGPoint(x: 9.0, y: 9.0))
-path.addEllipse(in: CGRect(x: 8.66, y: 8.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 9.01, y: 9.0))
+path.addLine(to: CGPoint(x: 9.01, y: 9.0))
 path.move(to: CGPoint(x: 15.0, y: 15.0))
-path.addEllipse(in: CGRect(x: 14.66, y: 14.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 15.01, y: 15.0))
+path.addLine(to: CGPoint(x: 15.01, y: 15.0))
     return path
 }()
 /// Badge Percent icon closed subpaths

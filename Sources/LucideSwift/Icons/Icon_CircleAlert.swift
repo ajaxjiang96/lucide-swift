@@ -22,7 +22,8 @@ path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6
 path.move(to: CGPoint(x: 12.0, y: 8.0))
 path.addLine(to: CGPoint(x: 12.0, y: 12.0))
 path.move(to: CGPoint(x: 12.0, y: 16.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 15.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.01, y: 16.0))
+path.addLine(to: CGPoint(x: 12.01, y: 16.0))
     return path
 }()
 /// Circle Alert icon open subpaths
@@ -31,7 +32,8 @@ static let openPath: Path = {
     path.move(to: CGPoint(x: 12.0, y: 8.0))
 path.addLine(to: CGPoint(x: 12.0, y: 12.0))
 path.move(to: CGPoint(x: 12.0, y: 16.0))
-path.addEllipse(in: CGRect(x: 11.66, y: 15.65, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 12.01, y: 16.0))
+path.addLine(to: CGPoint(x: 12.01, y: 16.0))
     return path
 }()
 /// Circle Alert icon closed subpaths

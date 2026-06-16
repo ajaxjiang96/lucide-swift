@@ -33,7 +33,8 @@ path.addLine(to: CGPoint(x: 21.965, y: 18.105))
 path.move(to: CGPoint(x: 5.0, y: 12.86))
 path.addCurve(to: CGPoint(x: 7.999999999999996, y: 10.828000000000003), control1: CGPoint(x: 5.867920597612493, y: 12.005636247946818), control2: CGPoint(x: 6.8846068629390444, y: 11.317000750898966))
 path.move(to: CGPoint(x: 8.5, y: 16.429))
-path.addEllipse(in: CGRect(x: 8.16, y: 16.078999999999997, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 8.51, y: 16.429))
+path.addLine(to: CGPoint(x: 8.51, y: 16.429))
     return path
 }()
 /// Wifi Sync icon open subpaths
@@ -58,7 +59,8 @@ path.addLine(to: CGPoint(x: 21.965, y: 18.105))
 path.move(to: CGPoint(x: 5.0, y: 12.86))
 path.addCurve(to: CGPoint(x: 7.999999999999996, y: 10.828000000000003), control1: CGPoint(x: 5.867920597612493, y: 12.005636247946818), control2: CGPoint(x: 6.8846068629390444, y: 11.317000750898966))
 path.move(to: CGPoint(x: 8.5, y: 16.429))
-path.addEllipse(in: CGRect(x: 8.16, y: 16.078999999999997, width: 0.7, height: 0.7))
+path.move(to: CGPoint(x: 8.51, y: 16.429))
+path.addLine(to: CGPoint(x: 8.51, y: 16.429))
     return path
 }()
 /// Wifi Sync icon closed subpaths
