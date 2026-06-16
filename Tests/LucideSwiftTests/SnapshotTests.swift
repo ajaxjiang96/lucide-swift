@@ -112,12 +112,15 @@ final class SnapshotTests: XCTestCase {
     private func assertSnapshot(_ iconName: LucideIconName, file: StaticString = #filePath, line: UInt = #line) throws {
         let name = iconName.rawValue
         let baselineURL = Self.snapshotDir.appendingPathComponent("\(name).png")
+        let diffURL = Self.snapshotDir.appendingPathComponent("\(name).diff.png")
         let record = ProcessInfo.processInfo.environment["SNAPSHOT_RECORD"] == "1"
 
         if record {
             let actual = try renderPNG(iconName: iconName)
             try FileManager.default.createDirectory(at: Self.snapshotDir, withIntermediateDirectories: true)
             try actual.write(to: baselineURL)
+            // Clean up any stale diff from a previous failure
+            try? FileManager.default.removeItem(at: diffURL)
             return
         }
 
@@ -129,11 +132,99 @@ final class SnapshotTests: XCTestCase {
         let actual = try renderPNG(iconName: iconName)
         let expected = try Data(contentsOf: baselineURL)
 
-        XCTAssertEqual(
-            actual, expected,
-            "Snapshot mismatch for '\(name)'. Re-run with SNAPSHOT_RECORD=1 if the change is intentional.",
-            file: file, line: line
-        )
+        if actual != expected {
+            // Generate a visual diff image for quick triage
+            renderDiffPNG(expected: expected, actual: actual, outputURL: diffURL)
+            XCTFail("""
+                Snapshot mismatch for '\(name)'.
+                Diff image: \(diffURL.path)
+                Expected: \(expected.count) bytes, Actual: \(actual.count) bytes.
+                Re-run with SNAPSHOT_RECORD=1 if the change is intentional.
+                """, file: file, line: line)
+        }
+    }
+
+    /// Generates a 3-panel diff image: expected | actual | pixel diff (red where different).
+    /// Saves to `outputURL` as PNG. The diff panel highlights changed pixels in red.
+    private func renderDiffPNG(expected: Data, actual: Data, outputURL: URL) {
+        guard
+            let expectedSource = CGImageSourceCreateWithData(expected as CFData, nil),
+            let actualSource = CGImageSourceCreateWithData(actual as CFData, nil),
+            let expectedImage = CGImageSourceCreateImageAtIndex(expectedSource, 0, nil),
+            let actualImage = CGImageSourceCreateImageAtIndex(actualSource, 0, nil)
+        else { return }
+
+        let w = expectedImage.width
+        let h = expectedImage.height
+        // If the sizes differ (shouldn't happen), use the larger dimensions
+        let panelW = max(w, max(actualImage.width, w))
+        let panelH = max(h, max(actualImage.height, h))
+        let totalW = panelW * 3
+        let totalH = panelH
+
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        guard let ctx = CGContext(
+            data: nil,
+            width: totalW,
+            height: totalH,
+            bitsPerComponent: 8,
+            bytesPerRow: totalW * 4,
+            space: colorSpace,
+            bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue
+        ) else { return }
+
+        // White background
+        ctx.setFillColor(red: 1, green: 1, blue: 1, alpha: 1)
+        ctx.fill(CGRect(x: 0, y: 0, width: totalW, height: totalH))
+
+        // Panel 1: Expected (left)
+        ctx.draw(expectedImage, in: CGRect(x: 0, y: 0, width: panelW, height: panelH))
+
+        // Panel 2: Actual (middle)
+        ctx.draw(actualImage, in: CGRect(x: panelW, y: 0, width: panelW, height: panelH))
+
+        // Panel 3: Diff (right) — red pixels where expected ≠ actual
+        guard
+            let expectedData = expectedImage.dataProvider?.data as Data?,
+            let actualData = actualImage.dataProvider?.data as Data?
+        else { return }
+        // Each row is padded to a multiple of bytesPerRow; use the minimum byte count
+        let expectedBPR = expectedImage.bytesPerRow
+        let actualBPR = actualImage.bytesPerRow
+        let expectedBPP = expectedImage.bitsPerPixel / 8
+        let actualBPP = actualImage.bitsPerPixel / 8
+        let cmpW = min(expectedImage.width, actualImage.width)
+        let cmpH = min(expectedImage.height, actualImage.height)
+
+        for y in 0..<cmpH {
+            for x in 0..<cmpW {
+                let eOffset = y * expectedBPR + x * expectedBPP
+                let aOffset = y * actualBPR + x * actualBPP
+                // Compare RGBA quad
+                let match = expectedData[eOffset] == actualData[aOffset]
+                    && expectedData[eOffset + 1] == actualData[aOffset + 1]
+                    && expectedData[eOffset + 2] == actualData[aOffset + 2]
+                    && expectedData[eOffset + 3] == actualData[aOffset + 3]
+                if match {
+                    // Grayscale the expected pixel (dim to highlight diffs)
+                    let r = expectedData[eOffset]
+                    let g = expectedData[eOffset + 1]
+                    let b = expectedData[eOffset + 2]
+                    let gray = UInt8((UInt16(r) + UInt16(g) + UInt16(b)) / 3 / 2) // 50% brightness
+                    ctx.setFillColor(red: CGFloat(gray) / 255, green: CGFloat(gray) / 255, blue: CGFloat(gray) / 255, alpha: 1)
+                } else {
+                    ctx.setFillColor(red: 1, green: 0, blue: 0, alpha: 1) // Red
+                }
+                ctx.fill(CGRect(x: panelW * 2 + x, y: y, width: 1, height: 1))
+            }
+        }
+
+        guard let diffImage = ctx.makeImage() else { return }
+        let data = NSMutableData()
+        guard let dest = CGImageDestinationCreateWithData(data, "public.png" as CFString, 1, nil) else { return }
+        CGImageDestinationAddImage(dest, diffImage, nil)
+        CGImageDestinationFinalize(dest)
+        try? (data as Data).write(to: outputURL)
     }
 
     // MARK: - Tests
