@@ -6,7 +6,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-ISC-blue.svg" alt="License: ISC"></a>
   <br>
   <a href="https://github.com/ajaxjiang96/lucide-swift/releases/latest"><img src="https://img.shields.io/github/v/release/ajaxjiang96/lucide-swift?label=Library" alt="Library Version"></a>
-  <img src="https://img.shields.io/badge/Lucide-1.19.0-orange.svg" alt="Lucide Icons Version">
+  <img src="https://img.shields.io/badge/Lucide-1.20.0-orange.svg" alt="Lucide Icons Version">
   <a href="https://github.com/ajaxjiang96/lucide-swift/actions/workflows/sync-and-release.yml"><img src="https://img.shields.io/github/actions/workflow/status/ajaxjiang96/lucide-swift/sync-and-release.yml?branch=main&label=Sync%20%26%20Release" alt="Sync & Release Workflow"></a>
   <br>
   <a href="https://buymeacoffee.com/ajaxjiang"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
@@ -22,7 +22,7 @@ A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) w
 ## Features
 
 - **True Vector Rendering**: SVG paths converted to native SwiftUI `Shape` - scales infinitely to any size without pixelation
-- **Type-safe API**: 1728 enum cases with full Xcode autocomplete
+- **Type-safe API**: 1737 enum cases with full Xcode autocomplete
 - **Lucide Lab Support**: Full integration of experimental icons from the [Lucide Lab](https://github.com/lucide-icons/lucide-lab) repository
 - **Zero Runtime Dependencies**: Pure Swift implementation, no external dependencies at runtime
 - **SwiftUI Native**: Built on SwiftUI's `Shape` protocol with full modifier support
@@ -176,7 +176,7 @@ LucideIcon(.heart, size: 48, absoluteStrokeWidth: true)  // 2px stroke (same!)
 - Access via `Lucide.house`, `Lucide.settings`, etc.
 
 **LucideIconName** - Type-safe enum
-- 1728 enum cases (e.g., `.house`, `.settings`, `.heart`)
+- 1737 enum cases (e.g., `.house`, `.settings`, `.heart`)
 - `allCases` array for iteration
 - `rawValue` for string access
 
@@ -217,12 +217,12 @@ Other Lucide packages for Swift use image assets (PDFs/PNGs) which can:
 This package generates pure Swift code from SVG paths:
 - **True vectors**: Native SwiftUI rendering at any resolution
 - **Type safety**: Compile-time verification prevents runtime icon-not-found errors
-- **Better tooling**: Xcode autocomplete shows all 1728 available icons
+- **Better tooling**: Xcode autocomplete shows all 1737 available icons
 - **Faster at runtime**: Enum lookup is 7× faster than bundle lookup, Shape rendering is 2× faster than PDF rasterization
 
 ## Technical Details
 
-- **Total Icons**: 2102 icons
+- **Total Icons**: 8449 icons
 - **Filled Icons**: Experimental support included
 - **File Structure**: Each icon in its own Swift file under `Sources/LucideSwift/Icons/` for fast incremental compilation
 - **Generated Code**: ~140K lines of Swift path data across 2,102 files
@@ -251,7 +251,7 @@ Comparison against [lucide-icons-swift](https://github.com/JakubMazur/lucide-ico
 
 Find the right icon at the official Lucide catalog:
 
-### [🔍 Browse all 1728 icons on lucide.dev/icons →](https://lucide.dev/icons)
+### [🔍 Browse all 1737 icons on lucide.dev/icons →](https://lucide.dev/icons)
 
 The catalog includes visual previews, search, categories, and tags for every icon.
 

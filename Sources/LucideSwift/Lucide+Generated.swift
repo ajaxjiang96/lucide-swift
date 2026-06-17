@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.7.1
-//  Lucide Icons Version: 1.19.0
+//  Library Version: 0.7.3
+//  Lucide Icons Version: 1.20.0
 //  Lucide Lab Version: 14d067fd7b15b179085c89d29dc1b44a37bc6569
 //  DO NOT EDIT MANUALLY
 //
@@ -148,6 +148,7 @@ public enum LucideIconName: String, CaseIterable {
     case banknote
     case banknoteArrowDown
     case banknoteArrowUp
+    case banknoteCheck
     case banknoteX
     case barcode
     case barrel
@@ -445,6 +446,8 @@ public enum LucideIconName: String, CaseIterable {
     case clock9
     case clockAlert
     case clockArrowDown
+    case clockArrowLeft
+    case clockArrowRight
     case clockArrowUp
     case clockCheck
     case clockFading
@@ -1156,6 +1159,7 @@ public enum LucideIconName: String, CaseIterable {
     case pencilLine
     case pencilOff
     case pencilRuler
+    case pencilSparkles
     case pentagon
     case percent
     case personStanding
@@ -1288,6 +1292,7 @@ public enum LucideIconName: String, CaseIterable {
     case saudiRiyal
     case save
     case saveAll
+    case saveCheck
     case saveOff
     case savePen
     case savePlus
@@ -1508,6 +1513,7 @@ public enum LucideIconName: String, CaseIterable {
     case stretchVertical
     case strikethrough
     case subscriptIcon
+    case summary
     case sun
     case sunDim
     case sunMedium
@@ -1534,6 +1540,8 @@ public enum LucideIconName: String, CaseIterable {
     case tabletSmartphone
     case tablets
     case tag
+    case tagPlus
+    case tagX
     case tags
     case tally1
     case tally2
@@ -1645,6 +1653,7 @@ public enum LucideIconName: String, CaseIterable {
     case userPen
     case userPlus
     case userRound
+    case userRoundArrowLeft
     case userRoundCheck
     case userRoundCog
     case userRoundKey
@@ -2014,6 +2023,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BanknoteArrowDown.combinedPath
         case .banknoteArrowUp:
             return LucideIcon_BanknoteArrowUp.combinedPath
+        case .banknoteCheck:
+            return LucideIcon_BanknoteCheck.combinedPath
         case .banknoteX:
             return LucideIcon_BanknoteX.combinedPath
         case .barcode:
@@ -2608,6 +2619,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ClockAlert.combinedPath
         case .clockArrowDown:
             return LucideIcon_ClockArrowDown.combinedPath
+        case .clockArrowLeft:
+            return LucideIcon_ClockArrowLeft.combinedPath
+        case .clockArrowRight:
+            return LucideIcon_ClockArrowRight.combinedPath
         case .clockArrowUp:
             return LucideIcon_ClockArrowUp.combinedPath
         case .clockCheck:
@@ -4030,6 +4045,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PencilOff.combinedPath
         case .pencilRuler:
             return LucideIcon_PencilRuler.combinedPath
+        case .pencilSparkles:
+            return LucideIcon_PencilSparkles.combinedPath
         case .pentagon:
             return LucideIcon_Pentagon.combinedPath
         case .percent:
@@ -4294,6 +4311,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Save.combinedPath
         case .saveAll:
             return LucideIcon_SaveAll.combinedPath
+        case .saveCheck:
+            return LucideIcon_SaveCheck.combinedPath
         case .saveOff:
             return LucideIcon_SaveOff.combinedPath
         case .savePen:
@@ -4734,6 +4753,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Strikethrough.combinedPath
         case .subscriptIcon:
             return LucideIcon_Subscript.combinedPath
+        case .summary:
+            return LucideIcon_Summary.combinedPath
         case .sun:
             return LucideIcon_Sun.combinedPath
         case .sunDim:
@@ -4786,6 +4807,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Tablets.combinedPath
         case .tag:
             return LucideIcon_Tag.combinedPath
+        case .tagPlus:
+            return LucideIcon_TagPlus.combinedPath
+        case .tagX:
+            return LucideIcon_TagX.combinedPath
         case .tags:
             return LucideIcon_Tags.combinedPath
         case .tally1:
@@ -5008,6 +5033,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserPlus.combinedPath
         case .userRound:
             return LucideIcon_UserRound.combinedPath
+        case .userRoundArrowLeft:
+            return LucideIcon_UserRoundArrowLeft.combinedPath
         case .userRoundCheck:
             return LucideIcon_UserRoundCheck.combinedPath
         case .userRoundCog:
@@ -5476,6 +5503,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BanknoteArrowDown.openPath
         case .banknoteArrowUp:
             return LucideIcon_BanknoteArrowUp.openPath
+        case .banknoteCheck:
+            return LucideIcon_BanknoteCheck.openPath
         case .banknoteX:
             return LucideIcon_BanknoteX.openPath
         case .barcode:
@@ -6070,6 +6099,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ClockAlert.openPath
         case .clockArrowDown:
             return LucideIcon_ClockArrowDown.openPath
+        case .clockArrowLeft:
+            return LucideIcon_ClockArrowLeft.openPath
+        case .clockArrowRight:
+            return LucideIcon_ClockArrowRight.openPath
         case .clockArrowUp:
             return LucideIcon_ClockArrowUp.openPath
         case .clockCheck:
@@ -7492,6 +7525,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PencilOff.openPath
         case .pencilRuler:
             return LucideIcon_PencilRuler.openPath
+        case .pencilSparkles:
+            return LucideIcon_PencilSparkles.openPath
         case .pentagon:
             return LucideIcon_Pentagon.openPath
         case .percent:
@@ -7756,6 +7791,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Save.openPath
         case .saveAll:
             return LucideIcon_SaveAll.openPath
+        case .saveCheck:
+            return LucideIcon_SaveCheck.openPath
         case .saveOff:
             return LucideIcon_SaveOff.openPath
         case .savePen:
@@ -8196,6 +8233,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Strikethrough.openPath
         case .subscriptIcon:
             return LucideIcon_Subscript.openPath
+        case .summary:
+            return LucideIcon_Summary.openPath
         case .sun:
             return LucideIcon_Sun.openPath
         case .sunDim:
@@ -8248,6 +8287,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Tablets.openPath
         case .tag:
             return LucideIcon_Tag.openPath
+        case .tagPlus:
+            return LucideIcon_TagPlus.openPath
+        case .tagX:
+            return LucideIcon_TagX.openPath
         case .tags:
             return LucideIcon_Tags.openPath
         case .tally1:
@@ -8470,6 +8513,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserPlus.openPath
         case .userRound:
             return LucideIcon_UserRound.openPath
+        case .userRoundArrowLeft:
+            return LucideIcon_UserRoundArrowLeft.openPath
         case .userRoundCheck:
             return LucideIcon_UserRoundCheck.openPath
         case .userRoundCog:
@@ -8938,6 +8983,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BanknoteArrowDown.closedPath
         case .banknoteArrowUp:
             return LucideIcon_BanknoteArrowUp.closedPath
+        case .banknoteCheck:
+            return LucideIcon_BanknoteCheck.closedPath
         case .banknoteX:
             return LucideIcon_BanknoteX.closedPath
         case .barcode:
@@ -9532,6 +9579,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ClockAlert.closedPath
         case .clockArrowDown:
             return LucideIcon_ClockArrowDown.closedPath
+        case .clockArrowLeft:
+            return LucideIcon_ClockArrowLeft.closedPath
+        case .clockArrowRight:
+            return LucideIcon_ClockArrowRight.closedPath
         case .clockArrowUp:
             return LucideIcon_ClockArrowUp.closedPath
         case .clockCheck:
@@ -10954,6 +11005,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PencilOff.closedPath
         case .pencilRuler:
             return LucideIcon_PencilRuler.closedPath
+        case .pencilSparkles:
+            return LucideIcon_PencilSparkles.closedPath
         case .pentagon:
             return LucideIcon_Pentagon.closedPath
         case .percent:
@@ -11218,6 +11271,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Save.closedPath
         case .saveAll:
             return LucideIcon_SaveAll.closedPath
+        case .saveCheck:
+            return LucideIcon_SaveCheck.closedPath
         case .saveOff:
             return LucideIcon_SaveOff.closedPath
         case .savePen:
@@ -11658,6 +11713,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Strikethrough.closedPath
         case .subscriptIcon:
             return LucideIcon_Subscript.closedPath
+        case .summary:
+            return LucideIcon_Summary.closedPath
         case .sun:
             return LucideIcon_Sun.closedPath
         case .sunDim:
@@ -11710,6 +11767,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Tablets.closedPath
         case .tag:
             return LucideIcon_Tag.closedPath
+        case .tagPlus:
+            return LucideIcon_TagPlus.closedPath
+        case .tagX:
+            return LucideIcon_TagX.closedPath
         case .tags:
             return LucideIcon_Tags.closedPath
         case .tally1:
@@ -11932,6 +11993,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserPlus.closedPath
         case .userRound:
             return LucideIcon_UserRound.closedPath
+        case .userRoundArrowLeft:
+            return LucideIcon_UserRoundArrowLeft.closedPath
         case .userRoundCheck:
             return LucideIcon_UserRoundCheck.closedPath
         case .userRoundCog:
@@ -15188,6 +15251,9 @@ public struct Lucide {
     /// Banknote Arrow Up icon
     public static let banknoteArrowUp: LucideShape = LucideShape(combined: LucideIcon_BanknoteArrowUp.combinedPath, open: LucideIcon_BanknoteArrowUp.openPath, closed: LucideIcon_BanknoteArrowUp.closedPath)
 
+    /// Banknote Check icon
+    public static let banknoteCheck: LucideShape = LucideShape(combined: LucideIcon_BanknoteCheck.combinedPath, open: LucideIcon_BanknoteCheck.openPath, closed: LucideIcon_BanknoteCheck.closedPath)
+
     /// Banknote X icon
     public static let banknoteX: LucideShape = LucideShape(combined: LucideIcon_BanknoteX.combinedPath, open: LucideIcon_BanknoteX.openPath, closed: LucideIcon_BanknoteX.closedPath)
 
@@ -16078,6 +16144,12 @@ public struct Lucide {
 
     /// Clock Arrow Down icon
     public static let clockArrowDown: LucideShape = LucideShape(combined: LucideIcon_ClockArrowDown.combinedPath, open: LucideIcon_ClockArrowDown.openPath, closed: LucideIcon_ClockArrowDown.closedPath)
+
+    /// Clock Arrow Left icon
+    public static let clockArrowLeft: LucideShape = LucideShape(combined: LucideIcon_ClockArrowLeft.combinedPath, open: LucideIcon_ClockArrowLeft.openPath, closed: LucideIcon_ClockArrowLeft.closedPath)
+
+    /// Clock Arrow Right icon
+    public static let clockArrowRight: LucideShape = LucideShape(combined: LucideIcon_ClockArrowRight.combinedPath, open: LucideIcon_ClockArrowRight.openPath, closed: LucideIcon_ClockArrowRight.closedPath)
 
     /// Clock Arrow Up icon
     public static let clockArrowUp: LucideShape = LucideShape(combined: LucideIcon_ClockArrowUp.combinedPath, open: LucideIcon_ClockArrowUp.openPath, closed: LucideIcon_ClockArrowUp.closedPath)
@@ -18212,6 +18284,9 @@ public struct Lucide {
     /// Pencil Ruler icon
     public static let pencilRuler: LucideShape = LucideShape(combined: LucideIcon_PencilRuler.combinedPath, open: LucideIcon_PencilRuler.openPath, closed: LucideIcon_PencilRuler.closedPath)
 
+    /// Pencil Sparkles icon
+    public static let pencilSparkles: LucideShape = LucideShape(combined: LucideIcon_PencilSparkles.combinedPath, open: LucideIcon_PencilSparkles.openPath, closed: LucideIcon_PencilSparkles.closedPath)
+
     /// Pentagon icon
     public static let pentagon: LucideShape = LucideShape(combined: LucideIcon_Pentagon.combinedPath, open: LucideIcon_Pentagon.openPath, closed: LucideIcon_Pentagon.closedPath)
 
@@ -18607,6 +18682,9 @@ public struct Lucide {
 
     /// Save All icon
     public static let saveAll: LucideShape = LucideShape(combined: LucideIcon_SaveAll.combinedPath, open: LucideIcon_SaveAll.openPath, closed: LucideIcon_SaveAll.closedPath)
+
+    /// Save Check icon
+    public static let saveCheck: LucideShape = LucideShape(combined: LucideIcon_SaveCheck.combinedPath, open: LucideIcon_SaveCheck.openPath, closed: LucideIcon_SaveCheck.closedPath)
 
     /// Save Off icon
     public static let saveOff: LucideShape = LucideShape(combined: LucideIcon_SaveOff.combinedPath, open: LucideIcon_SaveOff.openPath, closed: LucideIcon_SaveOff.closedPath)
@@ -19268,6 +19346,9 @@ public struct Lucide {
     /// Subscript icon
     public static let subscriptIcon: LucideShape = LucideShape(combined: LucideIcon_Subscript.combinedPath, open: LucideIcon_Subscript.openPath, closed: LucideIcon_Subscript.closedPath)
 
+    /// Summary icon
+    public static let summary: LucideShape = LucideShape(combined: LucideIcon_Summary.combinedPath, open: LucideIcon_Summary.openPath, closed: LucideIcon_Summary.closedPath)
+
     /// Sun icon
     public static let sun: LucideShape = LucideShape(combined: LucideIcon_Sun.combinedPath, open: LucideIcon_Sun.openPath, closed: LucideIcon_Sun.closedPath)
 
@@ -19345,6 +19426,12 @@ public struct Lucide {
 
     /// Tag icon
     public static let tag: LucideShape = LucideShape(combined: LucideIcon_Tag.combinedPath, open: LucideIcon_Tag.openPath, closed: LucideIcon_Tag.closedPath)
+
+    /// Tag Plus icon
+    public static let tagPlus: LucideShape = LucideShape(combined: LucideIcon_TagPlus.combinedPath, open: LucideIcon_TagPlus.openPath, closed: LucideIcon_TagPlus.closedPath)
+
+    /// Tag X icon
+    public static let tagX: LucideShape = LucideShape(combined: LucideIcon_TagX.combinedPath, open: LucideIcon_TagX.openPath, closed: LucideIcon_TagX.closedPath)
 
     /// Tags icon
     public static let tags: LucideShape = LucideShape(combined: LucideIcon_Tags.combinedPath, open: LucideIcon_Tags.openPath, closed: LucideIcon_Tags.closedPath)
@@ -19678,6 +19765,9 @@ public struct Lucide {
 
     /// User Round icon
     public static let userRound: LucideShape = LucideShape(combined: LucideIcon_UserRound.combinedPath, open: LucideIcon_UserRound.openPath, closed: LucideIcon_UserRound.closedPath)
+
+    /// User Round Arrow Left icon
+    public static let userRoundArrowLeft: LucideShape = LucideShape(combined: LucideIcon_UserRoundArrowLeft.combinedPath, open: LucideIcon_UserRoundArrowLeft.openPath, closed: LucideIcon_UserRoundArrowLeft.closedPath)
 
     /// User Round Check icon
     public static let userRoundCheck: LucideShape = LucideShape(combined: LucideIcon_UserRoundCheck.combinedPath, open: LucideIcon_UserRoundCheck.openPath, closed: LucideIcon_UserRoundCheck.closedPath)
@@ -21102,10 +21192,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.7.1"
+    public static let libraryVersion = "0.7.3"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.19.0"
+    public static let lucideVersion = "1.20.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "14d067fd7b15b179085c89d29dc1b44a37bc6569"
