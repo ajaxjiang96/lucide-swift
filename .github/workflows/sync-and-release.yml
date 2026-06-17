@@ -184,9 +184,9 @@ jobs:
       if: steps.check_changes.outputs.needs_update == 'true'
       run: swift run PreviewGenerator
     
-    - name: Run tests
+    - name: Run tests (record snapshot baselines)
       if: steps.check_changes.outputs.needs_update == 'true'
-      run: swift test
+      run: SNAPSHOT_RECORD=1 swift test
     
     - name: Build release
       if: steps.check_changes.outputs.needs_update == 'true'
