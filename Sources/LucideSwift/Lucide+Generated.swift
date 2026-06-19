@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.7.3
-//  Lucide Icons Version: 1.20.0
+//  Library Version: 0.7.4
+//  Lucide Icons Version: 1.21.0
 //  Lucide Lab Version: 14d067fd7b15b179085c89d29dc1b44a37bc6569
 //  DO NOT EDIT MANUALLY
 //
@@ -203,6 +203,7 @@ public enum LucideIconName: String, CaseIterable {
     case bolt
     case bomb
     case bone
+    case boneFracture
     case book
     case bookA
     case bookAlert
@@ -2133,6 +2134,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Bomb.combinedPath
         case .bone:
             return LucideIcon_Bone.combinedPath
+        case .boneFracture:
+            return LucideIcon_BoneFracture.combinedPath
         case .book:
             return LucideIcon_Book.combinedPath
         case .bookA:
@@ -5613,6 +5616,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Bomb.openPath
         case .bone:
             return LucideIcon_Bone.openPath
+        case .boneFracture:
+            return LucideIcon_BoneFracture.openPath
         case .book:
             return LucideIcon_Book.openPath
         case .bookA:
@@ -9093,6 +9098,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Bomb.closedPath
         case .bone:
             return LucideIcon_Bone.closedPath
+        case .boneFracture:
+            return LucideIcon_BoneFracture.closedPath
         case .book:
             return LucideIcon_Book.closedPath
         case .bookA:
@@ -15416,6 +15423,9 @@ public struct Lucide {
     /// Bone icon
     public static let bone: LucideShape = LucideShape(combined: LucideIcon_Bone.combinedPath, open: LucideIcon_Bone.openPath, closed: LucideIcon_Bone.closedPath)
 
+    /// Bone Fracture icon
+    public static let boneFracture: LucideShape = LucideShape(combined: LucideIcon_BoneFracture.combinedPath, open: LucideIcon_BoneFracture.openPath, closed: LucideIcon_BoneFracture.closedPath)
+
     /// Book icon
     public static let book: LucideShape = LucideShape(combined: LucideIcon_Book.combinedPath, open: LucideIcon_Book.openPath, closed: LucideIcon_Book.closedPath)
 
@@ -21192,10 +21202,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.7.3"
+    public static let libraryVersion = "0.7.4"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.20.0"
+    public static let lucideVersion = "1.21.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "14d067fd7b15b179085c89d29dc1b44a37bc6569"
