@@ -1,5 +1,7 @@
 # Lucide Swift
 
+![Lucide Swift — 2,112+ icons as native SwiftUI Shapes](docs/social-preview.png)
+
 <p align="center">
   <a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-5.9+-F05138.svg?style=flat&logo=swift" alt="Swift 5.9+"></a>
   <a href="https://developer.apple.com/swiftui/"><img src="https://img.shields.io/badge/SwiftUI-iOS%2014+-007AFF.svg?style=flat&logo=apple" alt="SwiftUI iOS 14+"></a>
@@ -13,8 +15,6 @@
   <br>
   <a href="https://buymeacoffee.com/ajaxjiang"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
 </p>
-
-![Lucide Swift — 2,112+ icons as native SwiftUI Shapes](docs/social-preview.png)
 
 > [!CAUTION]
 > **Active Development**: This repository is currently under active development. APIs and rendering behavior are subject to change.
