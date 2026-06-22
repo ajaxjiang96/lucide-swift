@@ -83,14 +83,12 @@ public struct SocialPreview: View {
         let subtitleSize = canvasHeight * 0.05
 
         return VStack(spacing: canvasHeight * 0.02) {
-            Spacer()
             Text("Lucide Swift")
                 .font(.system(size: titleSize, weight: .bold, design: .rounded))
                 .foregroundColor(.black)
             Text("Native SwiftUI Shapes · Zero dependencies")
                 .font(.system(size: subtitleSize, weight: .medium, design: .rounded))
                 .foregroundColor(.black)
-            Spacer()
         }
         .padding(.horizontal, canvasWidth * 0.06)
         .padding(.vertical, canvasHeight * 0.05)
@@ -99,7 +97,6 @@ public struct SocialPreview: View {
                 .fill(.white)
                 .shadow(color: .black.opacity(0.06), radius: canvasHeight * 0.03)
         )
-        .padding(canvasHeight * 0.05)
     }
 }
 
