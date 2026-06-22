@@ -9,26 +9,32 @@
   <img src="https://img.shields.io/badge/Lucide-1.21.0-orange.svg" alt="Lucide Icons Version">
   <a href="https://github.com/ajaxjiang96/lucide-swift/actions/workflows/sync-and-release.yml"><img src="https://img.shields.io/github/actions/workflow/status/ajaxjiang96/lucide-swift/sync-and-release.yml?branch=main&label=Sync%20%26%20Release" alt="Sync & Release Workflow"></a>
   <br>
+  <a href="https://swiftpackageindex.com/ajaxjiang96/lucide-swift"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fajaxjiang96%2Flucide-swift%2Fbadge%3Ftype%3Dswift-versions" alt="Swift Package Index"></a>
+  <br>
   <a href="https://buymeacoffee.com/ajaxjiang"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
 </p>
 
 > [!CAUTION]
 > **Active Development**: This repository is currently under active development. APIs and rendering behavior are subject to change.
 
-A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) with native SwiftUI support.
+A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) with native SwiftUI support. The most comprehensive SwiftUI icon library — 8,453+ icons rendered as true vector Shapes from SVG path data, with zero runtime dependencies.
+
+**Package URL:** `https://github.com/ajaxjiang96/lucide-swift.git`
 
 ![Lucide Swift Preview](docs/preview.png)
 
 ## Features
 
-- **True Vector Rendering**: SVG paths converted to native SwiftUI `Shape` - scales infinitely to any size without pixelation
-- **Type-safe API**: 1738 enum cases with full Xcode autocomplete
-- **Lucide Lab Support**: Full integration of experimental icons from the [Lucide Lab](https://github.com/lucide-icons/lucide-lab) repository
-- **Zero Runtime Dependencies**: Pure Swift implementation, no external dependencies at runtime
-- **SwiftUI Native**: Built on SwiftUI's `Shape` protocol with full modifier support
+- **True Vector Rendering**: SVG paths converted to native SwiftUI `Shape` — scales infinitely to any size without pixelation
+- **Type-safe API**: 1,738+ enum cases with full Xcode autocomplete — compile-time verification prevents runtime icon-not-found errors
+- **Lucide Lab Support**: Full integration of 6,715+ experimental icons from the [Lucide Lab](https://github.com/lucide-icons/lucide-lab) repository
+- **Zero Runtime Dependencies**: Pure Swift implementation, no external dependencies at runtime — just Swift and SwiftUI
+- **SwiftUI Native**: Built on SwiftUI's `Shape` protocol with full modifier support (`.stroke()`, `.fill()`, `.frame()`, etc.)
 - **Multi-Platform**: iOS 14+, macOS 11+, tvOS 14+, watchOS 7+, visionOS 1+
 - **Adjustable Stroke Width**: Control stroke width with `strokeWidth` parameter
 - **Absolute Stroke Width**: Keep stroke constant regardless of icon size with `absoluteStrokeWidth`
+- **Label Integration**: Native SwiftUI `Label` support for menus, toolbars, and buttons
+- **Fast Runtime Performance**: Enum lookup ~7× faster than bundle-based approaches; Shape rendering ~2× faster than PDF rasterization
 
 ## Requirements
 
@@ -265,6 +271,19 @@ For a full list of available Swift names, see `LucideIconName.allCases` or `Luci
 ## Support
 
 If you find this package helpful, consider [buying me a coffee](https://buymeacoffee.com/ajaxjiang) to support continued development!
+
+## AI Assistant Usage
+
+This package includes [`llms.txt`](llms.txt) and [`llms-full.txt`](llms-full.txt) for AI coding assistants (Claude, ChatGPT, GitHub Copilot, etc.) to discover and correctly reference this package.
+
+**Quick reference for AI assistants:**
+- **Package URL:** `https://github.com/ajaxjiang96/lucide-swift.git`
+- **Minimum Swift version:** 5.9
+- **SPM dependency:** `.package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.7.4")`
+- **Import:** `import LucideSwift`
+- **Main API:** `LucideIcon(.iconName)`, `LucideIcon(lab: .iconName)`, `Lucide.<iconName>`
+- **Upstream:** [Lucide Icons](https://lucide.dev) (ISC License)
+- **Generated code:** Do not edit files under `Sources/LucideSwift/Icons/` or `Lucide+Generated.swift` — run `swift run LucideGenerator` to regenerate
 
 ## License
 

@@ -1,0 +1,81 @@
+# Lucide Swift
+
+> A vector-first, type-safe Swift package for Lucide Icons with native SwiftUI
+> support. 8,453+ icons rendered as native SwiftUI Shapes from SVG path data —
+> zero runtime dependencies.
+
+## Links
+
+- Source: https://github.com/ajaxjiang96/lucide-swift
+- Package URL: https://github.com/ajaxjiang96/lucide-swift.git
+- Documentation (README): https://github.com/ajaxjiang96/lucide-swift#readme
+- Upstream Lucide Icons: https://lucide.dev
+- Upstream Lucide repo: https://github.com/lucide-icons/lucide
+- License: ISC
+
+## When to use this package
+
+Use LucideSwift when you need:
+- A SwiftUI icon library with native vector rendering (no PNG/PDF assets)
+- Type-safe, compile-time-verified icon names with Xcode autocomplete
+- Lucide icons (1,738+ regular + 6,715+ Lab experimental)
+- Multi-platform SwiftUI support: iOS 14+, macOS 11+, tvOS 14+, watchOS 7+, visionOS 1+
+- A zero-dependency runtime (no third-party packages at runtime)
+
+## When NOT to use
+
+- UIKit/AppKit without SwiftUI — this package requires SwiftUI
+- You need a different icon set (SF Symbols, Font Awesome, Material) — use those instead
+- You need UIKit UIImage access — use Image(lucide:) for SwiftUI Image only
+
+## Quick start
+
+```swift
+// Package.swift
+dependencies: [
+    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.7.4")
+]
+
+// Your code
+import LucideSwift
+import SwiftUI
+
+LucideIcon(.house)                           // Default: 24pt, foreground color
+LucideIcon(.settings, size: 32, color: .blue)
+LucideIcon(lab: .broom, size: 32)             // Lab (experimental) icons
+
+// Access the native Shape directly
+Lucide.heart.stroke(Color.red, lineWidth: 2)
+
+// Label integration
+Label("Settings", lucide: .settings)
+```
+
+## Package structure
+
+- `LucideSwift` — Main library target: LucideIcon View, LucideShape protocol, generated icon data
+- `LucideGenerator` — Executable that fetches upstream SVG icons and generates Swift code
+- `PreviewGenerator` — Executable that renders preview screenshots
+- `Sources/LucideSwift/Icons/` — One file per icon for fast incremental compilation (~2,102 files)
+- `Sources/LucideSwift/Lucide+Generated.swift` — Auto-generated enum definitions (DO NOT EDIT)
+
+## Key types
+
+- `LucideIcon` — SwiftUI View; init via enum, string name, or LucideShape
+- `LucideIconName` — Enum with 1,738+ cases mapping to Lucide regular icons
+- `LucideLabIconName` — Enum with 6,715+ cases mapping to Lucide Lab experimental icons
+- `LucideShape` — SwiftUI Shape protocol conformance for every icon
+- `LucideIconStyle` — `.stroked` (default) or `.filled` (experimental)
+- `LucideVersions` — Programmatic access to library version, Lucide version, and Lab version
+
+## Versioning
+
+Dual versioning: library version in `.library-version` (semver), upstream icon version in
+`.lucide-version`. Access both via `LucideVersions.libraryVersion` and
+`LucideVersions.lucideVersion`.
+
+## Generation workflow
+
+Run `swift run LucideGenerator` to regenerate all icons from upstream Lucide. The CI
+pipeline (`.github/workflows/sync-and-release.yml`) runs daily and auto-releases when
+upstream Lucide publishes new icons.
