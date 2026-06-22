@@ -3,13 +3,13 @@
 //  PreviewGenerator
 //
 //  Social media preview and README header banner generator.
-//  Renders a tilted grid of icon tiles with edge fade.
+//  Renders a tilted grid of icon tiles.
 //
 
 import SwiftUI
 import LucideSwift
 
-/// Configurable icon-grid preview — grid, tilted, with white edge fade.
+/// Configurable icon-grid preview — grid, tilted, with centered branding.
 public struct SocialPreview: View {
     private let icons: [LucideIconName]
     private let columns: Int
@@ -21,19 +21,12 @@ public struct SocialPreview: View {
     private let canvasWidth: CGFloat
     private let canvasHeight: CGFloat
     private let showText: Bool
-    private let textOpacity: Double
 
-    /// - Parameters:
-    ///   - width: Canvas width in points
-    ///   - height: Canvas height in points
-    ///   - showText: Whether to overlay centered branding text
-    public init(width: CGFloat, height: CGFloat, showText: Bool = true, textOpacity: Double = 0.12) {
+    public init(width: CGFloat, height: CGFloat, showText: Bool = true) {
         self.canvasWidth = width
         self.canvasHeight = height
         self.showText = showText
-        self.textOpacity = textOpacity
 
-        // Size the grid to overflow the canvas so rotation doesn't leave gaps
         let overflowW = width * 1.6
         let overflowH = height * 1.9
         self.columns = max(Int(overflowW / cellSize), 1)
@@ -58,8 +51,6 @@ public struct SocialPreview: View {
                 .frame(width: canvasWidth * 1.6, height: canvasHeight * 1.9)
                 .clipped()
 
-            edgeFadeOverlay
-
             if showText {
                 brandingText
             }
@@ -76,53 +67,11 @@ public struct SocialPreview: View {
                     ForEach(0..<columns, id: \.self) { col in
                         let idx = row * columns + col
                         if idx < icons.count {
-                            LucideIcon(icons[idx], size: iconSize, color: .black.opacity(0.06))
+                            LucideIcon(icons[idx], size: iconSize, color: Color(white: 0.85))
                                 .frame(width: cellSize, height: cellSize)
                         }
                     }
                 }
-            }
-        }
-    }
-
-    // MARK: - Edge Fade
-
-    private var edgeFadeOverlay: some View {
-        let hFade = canvasWidth * 0.06
-        let vFade = canvasHeight * 0.09
-
-        return ZStack {
-            VStack {
-                LinearGradient(
-                    gradient: Gradient(colors: [.white, .white.opacity(0)]),
-                    startPoint: .top, endPoint: .bottom
-                )
-                .frame(height: vFade)
-                Spacer()
-            }
-            VStack {
-                Spacer()
-                LinearGradient(
-                    gradient: Gradient(colors: [.white.opacity(0), .white]),
-                    startPoint: .top, endPoint: .bottom
-                )
-                .frame(height: vFade)
-            }
-            HStack {
-                LinearGradient(
-                    gradient: Gradient(colors: [.white, .white.opacity(0)]),
-                    startPoint: .leading, endPoint: .trailing
-                )
-                .frame(width: hFade)
-                Spacer()
-            }
-            HStack {
-                Spacer()
-                LinearGradient(
-                    gradient: Gradient(colors: [.white.opacity(0), .white]),
-                    startPoint: .leading, endPoint: .trailing
-                )
-                .frame(width: hFade)
             }
         }
     }
@@ -137,10 +86,10 @@ public struct SocialPreview: View {
             Spacer()
             Text("Lucide Swift")
                 .font(.system(size: titleSize, weight: .bold, design: .rounded))
-                .foregroundColor(.black.opacity(textOpacity))
+                .foregroundColor(.black)
             Text("Native SwiftUI Shapes · Zero dependencies")
                 .font(.system(size: subtitleSize, weight: .medium, design: .rounded))
-                .foregroundColor(.black.opacity(textOpacity * 0.67))
+                .foregroundColor(.black)
             Spacer()
         }
     }
@@ -152,6 +101,6 @@ public struct SocialPreview: View {
 }
 
 #Preview("Banner 1280×280") {
-    SocialPreview(width: 1280, height: 280, showText: false)
+    SocialPreview(width: 1280, height: 280)
 }
 #endif

@@ -49,8 +49,8 @@ if #available(macOS 13.0, *) {
         // Social media preview (1280×640, 1× scale)
         renderToPNG(SocialPreview(width: 1280, height: 640), scale: 1.0, outputPath: "docs/social-preview.png")
 
-        // README header banner (1280×280, 1× scale, no text)
-        renderToPNG(SocialPreview(width: 1280, height: 280, showText: false), scale: 1.0, outputPath: "docs/banner.png")
+        // README header banner (1280×280, 1× scale)
+        renderToPNG(SocialPreview(width: 1280, height: 280), scale: 1.0, outputPath: "docs/banner.png")
     }
 } else {
     print("❌ ImageRenderer requires macOS 13.0 or newer")
