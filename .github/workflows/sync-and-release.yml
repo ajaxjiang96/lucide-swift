@@ -178,6 +178,8 @@ jobs:
         # Update total icons in Technical Details
         LAB_COUNT=$((TOTAL_COUNT - REGULAR_COUNT))
         sed -i '' "s|\\*\\*Total Icons\\*\\*: [0-9]* icons.*|**Total Icons**: ${TOTAL_COUNT} icons (${REGULAR_COUNT} regular + ${LAB_COUNT} Lab)|g" README.md
+        # Update Lab icon count in Features section
+        sed -i '' "s/Full integration of [0-9,]*+ experimental icons/Full integration of ${LAB_COUNT}+ experimental icons/g" README.md
         # Update "Browse all X icons" link text
         sed -i '' "s/Browse all [0-9]* icons/Browse all ${REGULAR_COUNT} icons/g" README.md
         echo "README updated: Lucide ${BADGE_VERSION}, ${REGULAR_COUNT} regular + $((TOTAL_COUNT - REGULAR_COUNT)) lab = ${TOTAL_COUNT} total"

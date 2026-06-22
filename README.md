@@ -27,7 +27,7 @@ A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) w
 
 - **True Vector Rendering**: SVG paths converted to native SwiftUI `Shape` — scales infinitely to any size without pixelation
 - **Type-safe API**: 1,738+ enum cases with full Xcode autocomplete — compile-time verification prevents runtime icon-not-found errors
-- **Lucide Lab Support**: Full integration of 6,715+ experimental icons from the [Lucide Lab](https://github.com/lucide-icons/lucide-lab) repository
+- **Lucide Lab Support**: Full integration of 374+ experimental icons from the [Lucide Lab](https://github.com/lucide-icons/lucide-lab) repository
 - **Zero Runtime Dependencies**: Pure Swift implementation, no external dependencies at runtime — just Swift and SwiftUI
 - **SwiftUI Native**: Built on SwiftUI's `Shape` protocol with full modifier support (`.stroke()`, `.fill()`, `.frame()`, etc.)
 - **Multi-Platform**: iOS 14+, macOS 11+, tvOS 14+, watchOS 7+, visionOS 1+
