@@ -2,67 +2,69 @@
 //  SocialPreview.swift
 //  PreviewGenerator
 //
-//  Social media preview image generator.
-//  Renders a tilted grid of 48pt icon tiles with subtle edge fade for use as
-//  an og:image / social card banner (1280×640).
+//  Social media preview and README header banner generator.
+//  Renders a tilted grid of icon tiles with edge fade.
 //
 
 import SwiftUI
 import LucideSwift
 
-/// Social media preview view — icon grid, tilted, with white edge fade.
-/// Output: 1280×640 px.
+/// Configurable icon-grid preview — grid, tilted, with white edge fade.
 public struct SocialPreview: View {
     private let icons: [LucideIconName]
     private let columns: Int
     private let rows: Int
-
     private let tiltDegrees: Double = 6
     private let iconSize: CGFloat = 48
     private let cellSize: CGFloat = 56
 
-    public init() {
+    private let canvasWidth: CGFloat
+    private let canvasHeight: CGFloat
+    private let showText: Bool
+    private let textOpacity: Double
+
+    /// - Parameters:
+    ///   - width: Canvas width in points
+    ///   - height: Canvas height in points
+    ///   - showText: Whether to overlay centered branding text
+    public init(width: CGFloat, height: CGFloat, showText: Bool = true, textOpacity: Double = 0.12) {
+        self.canvasWidth = width
+        self.canvasHeight = height
+        self.showText = showText
+        self.textOpacity = textOpacity
+
+        // Size the grid to overflow the canvas so rotation doesn't leave gaps
+        let overflowW = width * 1.6
+        let overflowH = height * 1.9
+        self.columns = max(Int(overflowW / cellSize), 1)
+        self.rows = max(Int(overflowH / cellSize), 1)
+
         let all = LucideIconName.allCases
-        let columns = 36
         let count = all.count
-        let rows = 22
         var filled: [LucideIconName] = []
         filled.reserveCapacity(columns * rows)
         for i in 0..<(columns * rows) {
             filled.append(all[i % count])
         }
         self.icons = filled
-        self.columns = columns
-        self.rows = rows
     }
 
     public var body: some View {
         ZStack {
-            // White background
             Color.white
 
-            // Tilted icon grid
             gridView
                 .rotationEffect(.degrees(tiltDegrees))
-                .frame(width: 2000, height: 1200) // oversized to avoid gaps after rotation
+                .frame(width: canvasWidth * 1.6, height: canvasHeight * 1.9)
                 .clipped()
 
-            // Edge fade — narrow gradients only at the very edges
             edgeFadeOverlay
 
-            // Center branding
-            VStack(spacing: 8) {
-                Spacer()
-                Text("Lucide Swift")
-                    .font(.system(size: 64, weight: .bold, design: .rounded))
-                    .foregroundColor(.black.opacity(0.12))
-                Text("Native SwiftUI Shapes · Zero dependencies")
-                    .font(.system(size: 22, weight: .medium, design: .rounded))
-                    .foregroundColor(.black.opacity(0.08))
-                Spacer()
+            if showText {
+                brandingText
             }
         }
-        .frame(width: 1280, height: 640)
+        .frame(width: canvasWidth, height: canvasHeight)
     }
 
     // MARK: - Grid
@@ -85,59 +87,71 @@ public struct SocialPreview: View {
 
     // MARK: - Edge Fade
 
-    /// Narrow white gradients on all four edges — fades the grid to white
-    /// only at the perimeter, leaving the vast majority of the image clear.
     private var edgeFadeOverlay: some View {
-        ZStack {
-            // Top edge
+        let hFade = canvasWidth * 0.06
+        let vFade = canvasHeight * 0.09
+
+        return ZStack {
             VStack {
                 LinearGradient(
                     gradient: Gradient(colors: [.white, .white.opacity(0)]),
-                    startPoint: .top,
-                    endPoint: .bottom
+                    startPoint: .top, endPoint: .bottom
                 )
-                .frame(height: 60)
+                .frame(height: vFade)
                 Spacer()
             }
-
-            // Bottom edge
             VStack {
                 Spacer()
                 LinearGradient(
                     gradient: Gradient(colors: [.white.opacity(0), .white]),
-                    startPoint: .top,
-                    endPoint: .bottom
+                    startPoint: .top, endPoint: .bottom
                 )
-                .frame(height: 60)
+                .frame(height: vFade)
             }
-
-            // Left edge
             HStack {
                 LinearGradient(
                     gradient: Gradient(colors: [.white, .white.opacity(0)]),
-                    startPoint: .leading,
-                    endPoint: .trailing
+                    startPoint: .leading, endPoint: .trailing
                 )
-                .frame(width: 80)
+                .frame(width: hFade)
                 Spacer()
             }
-
-            // Right edge
             HStack {
                 Spacer()
                 LinearGradient(
                     gradient: Gradient(colors: [.white.opacity(0), .white]),
-                    startPoint: .leading,
-                    endPoint: .trailing
+                    startPoint: .leading, endPoint: .trailing
                 )
-                .frame(width: 80)
+                .frame(width: hFade)
             }
+        }
+    }
+
+    // MARK: - Branding
+
+    private var brandingText: some View {
+        let titleSize = canvasHeight * 0.10
+        let subtitleSize = canvasHeight * 0.035
+
+        return VStack(spacing: canvasHeight * 0.015) {
+            Spacer()
+            Text("Lucide Swift")
+                .font(.system(size: titleSize, weight: .bold, design: .rounded))
+                .foregroundColor(.black.opacity(textOpacity))
+            Text("Native SwiftUI Shapes · Zero dependencies")
+                .font(.system(size: subtitleSize, weight: .medium, design: .rounded))
+                .foregroundColor(.black.opacity(textOpacity * 0.67))
+            Spacer()
         }
     }
 }
 
 #if DEBUG
-#Preview {
-    SocialPreview()
+#Preview("Social 1280×640") {
+    SocialPreview(width: 1280, height: 640)
+}
+
+#Preview("Banner 1280×280") {
+    SocialPreview(width: 1280, height: 280, showText: false)
 }
 #endif
