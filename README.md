@@ -1,7 +1,5 @@
 # Lucide Swift
 
-![Lucide Swift — 2,112+ icons as native SwiftUI Shapes](docs/social-preview.png)
-
 <p align="center">
   <a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-5.9+-F05138.svg?style=flat&logo=swift" alt="Swift 5.9+"></a>
   <a href="https://developer.apple.com/swiftui/"><img src="https://img.shields.io/badge/SwiftUI-iOS%2014+-007AFF.svg?style=flat&logo=apple" alt="SwiftUI iOS 14+"></a>
