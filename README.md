@@ -1,4 +1,4 @@
-# Lucide Swift
+![Lucide Swift](docs/banner.png)
 
 <p align="center">
   <a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-5.9+-F05138.svg?style=flat&logo=swift" alt="Swift 5.9+"></a>
