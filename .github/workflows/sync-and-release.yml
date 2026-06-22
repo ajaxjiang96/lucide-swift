@@ -156,8 +156,8 @@ jobs:
       id: generate
       run: |
         swift run LucideGenerator
-        # Count enum case declarations only (4-space indent), not switch branches (8-space)
-ICON_COUNT=$(grep -c "^    case " Sources/LucideSwift/Lucide+Generated.swift || echo "0")
+        # Count only enum case declarations (4-space indent), not switch branches
+        ICON_COUNT=$(grep -c "^    case " Sources/LucideSwift/Lucide+Generated.swift || echo "0")
         echo "icon_count=$ICON_COUNT" >> $GITHUB_OUTPUT
 
     - name: Update README
