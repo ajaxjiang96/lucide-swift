@@ -17,7 +17,7 @@
 > [!CAUTION]
 > **Active Development**: This repository is currently under active development. APIs and rendering behavior are subject to change.
 
-A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) with native SwiftUI support. The most comprehensive SwiftUI icon library — 8,453+ icons rendered as true vector Shapes from SVG path data, with zero runtime dependencies.
+A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) with native SwiftUI support. The most comprehensive SwiftUI icon library — 2,112+ icons (1,738 regular + 374 experimental Lab) rendered as true vector Shapes from SVG path data, with zero runtime dependencies.
 
 **Package URL:** `https://github.com/ajaxjiang96/lucide-swift.git`
 
@@ -228,7 +228,7 @@ This package generates pure Swift code from SVG paths:
 
 ## Technical Details
 
-- **Total Icons**: 8453 icons
+- **Total Icons**: 2112 icons (1738 regular + 374 Lab)
 - **Filled Icons**: Experimental support included
 - **File Structure**: Each icon in its own Swift file under `Sources/LucideSwift/Icons/` for fast incremental compilation
 - **Generated Code**: ~140K lines of Swift path data across 2,102 files

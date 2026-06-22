@@ -23,7 +23,7 @@ tmp/
 temp/
 
 # Stale root-level build artifacts
-Icon_*.*
+/Icon_*.*
 *.swiftmodule
 *.swiftdeps
 *.dia

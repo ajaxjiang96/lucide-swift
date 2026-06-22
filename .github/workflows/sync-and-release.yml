@@ -156,7 +156,8 @@ jobs:
       id: generate
       run: |
         swift run LucideGenerator
-        ICON_COUNT=$(grep -c "case " Sources/LucideSwift/Lucide+Generated.swift || echo "0")
+        # Count enum case declarations only (4-space indent), not switch branches (8-space)
+ICON_COUNT=$(grep -c "^    case " Sources/LucideSwift/Lucide+Generated.swift || echo "0")
         echo "icon_count=$ICON_COUNT" >> $GITHUB_OUTPUT
 
     - name: Update README
@@ -174,8 +175,9 @@ jobs:
         sed -i '' "s/[0-9]* enum cases/${REGULAR_COUNT} enum cases/g" README.md
         # Update autocomplete reference (line: "all 1694 available icons")
         sed -i '' "s/all [0-9]* available icons/all ${REGULAR_COUNT} available icons/g" README.md
-        # Update total icons in Technical Details (line: "Total Icons: 2069 icons")
-        sed -i '' "s|\\*\\*Total Icons\\*\\*: [0-9]* icons|**Total Icons**: ${TOTAL_COUNT} icons|g" README.md
+        # Update total icons in Technical Details
+        LAB_COUNT=$((TOTAL_COUNT - REGULAR_COUNT))
+        sed -i '' "s|\\*\\*Total Icons\\*\\*: [0-9]* icons.*|**Total Icons**: ${TOTAL_COUNT} icons (${REGULAR_COUNT} regular + ${LAB_COUNT} Lab)|g" README.md
         # Update "Browse all X icons" link text
         sed -i '' "s/Browse all [0-9]* icons/Browse all ${REGULAR_COUNT} icons/g" README.md
         echo "README updated: Lucide ${BADGE_VERSION}, ${REGULAR_COUNT} regular + $((TOTAL_COUNT - REGULAR_COUNT)) lab = ${TOTAL_COUNT} total"
