@@ -79,10 +79,10 @@ public struct SocialPreview: View {
     // MARK: - Branding
 
     private var brandingText: some View {
-        let titleSize = canvasHeight * 0.10
-        let subtitleSize = canvasHeight * 0.035
+        let titleSize = canvasHeight * 0.14
+        let subtitleSize = canvasHeight * 0.05
 
-        return VStack(spacing: canvasHeight * 0.015) {
+        return VStack(spacing: canvasHeight * 0.02) {
             Spacer()
             Text("Lucide Swift")
                 .font(.system(size: titleSize, weight: .bold, design: .rounded))
@@ -92,6 +92,14 @@ public struct SocialPreview: View {
                 .foregroundColor(.black)
             Spacer()
         }
+        .padding(.horizontal, canvasWidth * 0.06)
+        .padding(.vertical, canvasHeight * 0.05)
+        .background(
+            RoundedRectangle(cornerRadius: canvasHeight * 0.04)
+                .fill(.white)
+                .shadow(color: .black.opacity(0.06), radius: canvasHeight * 0.03)
+        )
+        .padding(canvasHeight * 0.05)
     }
 }
 
