@@ -51,6 +51,9 @@ if #available(macOS 13.0, *) {
 
         // README header banner (1280×280, 1× scale)
         renderToPNG(SocialPreview(width: 1280, height: 280), scale: 1.0, outputPath: "docs/banner.png")
+
+        // XHS social card (1080×1440, 3:4 ratio, 1× scale)
+        renderToPNG(SocialPreview(width: 1080, height: 1440), scale: 1.0, outputPath: "docs/xhs-card.png")
     }
 } else {
     print("❌ ImageRenderer requires macOS 13.0 or newer")
