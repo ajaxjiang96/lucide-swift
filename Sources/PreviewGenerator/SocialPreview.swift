@@ -3,35 +3,29 @@
 //  PreviewGenerator
 //
 //  Social media preview image generator.
-//  Renders a tilted grid of 24pt icon tiles with edge fade for use as
+//  Renders a tilted grid of 48pt icon tiles with subtle edge fade for use as
 //  an og:image / social card banner (1280×640).
 //
 
 import SwiftUI
 import LucideSwift
 
-/// Social media preview view — dense icon grid, tilted, with white edge fade.
-/// Output: 1280×640 px at 2× scale.
+/// Social media preview view — icon grid, tilted, with white edge fade.
+/// Output: 1280×640 px.
 public struct SocialPreview: View {
-    /// Icons to tile (sampled from the full set for performance).
     private let icons: [LucideIconName]
-    /// Columns in the grid (before rotation, spans wider area to avoid gaps).
     private let columns: Int
-    /// Rows in the grid.
     private let rows: Int
 
-    /// Rotation angle in degrees for the grid tilt.
     private let tiltDegrees: Double = 6
-    /// Size of each icon cell (icon + spacing).
-    private let cellSize: CGFloat = 28
+    private let iconSize: CGFloat = 48
+    private let cellSize: CGFloat = 56
 
     public init() {
         let all = LucideIconName.allCases
-        let columns = 70
+        let columns = 36
         let count = all.count
-        // Tile as many rows as needed to fill ~1100px vertically (accounts for rotation overflow)
-        let rows = 40
-        // Repeat icons cyclically to fill the grid
+        let rows = 22
         var filled: [LucideIconName] = []
         filled.reserveCapacity(columns * rows)
         for i in 0..<(columns * rows) {
@@ -50,23 +44,11 @@ public struct SocialPreview: View {
             // Tilted icon grid
             gridView
                 .rotationEffect(.degrees(tiltDegrees))
-                .frame(width: 1600, height: 1000) // oversized to cover after rotation
+                .frame(width: 2000, height: 1200) // oversized to avoid gaps after rotation
                 .clipped()
 
-            // Edge fade — linear gradients on all four sides
+            // Edge fade — narrow gradients only at the very edges
             edgeFadeOverlay
-
-            // Subtle center text branding
-            VStack(spacing: 8) {
-                Spacer()
-                Text("Lucide Swift")
-                    .font(.system(size: 72, weight: .bold, design: .rounded))
-                    .foregroundColor(.black.opacity(0.15))
-                Text("2,112+ icons · Native SwiftUI Shapes · Zero dependencies")
-                    .font(.system(size: 24, weight: .medium, design: .rounded))
-                    .foregroundColor(.black.opacity(0.10))
-                Spacer()
-            }
         }
         .frame(width: 1280, height: 640)
     }
@@ -80,7 +62,7 @@ public struct SocialPreview: View {
                     ForEach(0..<columns, id: \.self) { col in
                         let idx = row * columns + col
                         if idx < icons.count {
-                            LucideIcon(icons[idx], size: 22, color: .black.opacity(0.07))
+                            LucideIcon(icons[idx], size: iconSize, color: .black.opacity(0.06))
                                 .frame(width: cellSize, height: cellSize)
                         }
                     }
@@ -91,21 +73,22 @@ public struct SocialPreview: View {
 
     // MARK: - Edge Fade
 
-    /// White gradient overlays on all four edges that fade the icon grid toward the center.
+    /// Narrow white gradients on all four edges — fades the grid to white
+    /// only at the perimeter, leaving the vast majority of the image clear.
     private var edgeFadeOverlay: some View {
         ZStack {
-            // Top fade
+            // Top edge
             VStack {
                 LinearGradient(
                     gradient: Gradient(colors: [.white, .white.opacity(0)]),
                     startPoint: .top,
                     endPoint: .bottom
                 )
-                .frame(height: 180)
+                .frame(height: 60)
                 Spacer()
             }
 
-            // Bottom fade
+            // Bottom edge
             VStack {
                 Spacer()
                 LinearGradient(
@@ -113,21 +96,21 @@ public struct SocialPreview: View {
                     startPoint: .top,
                     endPoint: .bottom
                 )
-                .frame(height: 180)
+                .frame(height: 60)
             }
 
-            // Left fade
+            // Left edge
             HStack {
                 LinearGradient(
                     gradient: Gradient(colors: [.white, .white.opacity(0)]),
                     startPoint: .leading,
                     endPoint: .trailing
                 )
-                .frame(width: 200)
+                .frame(width: 80)
                 Spacer()
             }
 
-            // Right fade
+            // Right edge
             HStack {
                 Spacer()
                 LinearGradient(
@@ -135,7 +118,7 @@ public struct SocialPreview: View {
                     startPoint: .leading,
                     endPoint: .trailing
                 )
-                .frame(width: 200)
+                .frame(width: 80)
             }
         }
     }
