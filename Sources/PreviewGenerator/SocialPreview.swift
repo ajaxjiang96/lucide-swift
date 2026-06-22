@@ -49,6 +49,18 @@ public struct SocialPreview: View {
 
             // Edge fade — narrow gradients only at the very edges
             edgeFadeOverlay
+
+            // Center branding
+            VStack(spacing: 8) {
+                Spacer()
+                Text("Lucide Swift")
+                    .font(.system(size: 64, weight: .bold, design: .rounded))
+                    .foregroundColor(.black.opacity(0.12))
+                Text("Native SwiftUI Shapes · Zero dependencies")
+                    .font(.system(size: 22, weight: .medium, design: .rounded))
+                    .foregroundColor(.black.opacity(0.08))
+                Spacer()
+            }
         }
         .frame(width: 1280, height: 640)
     }
