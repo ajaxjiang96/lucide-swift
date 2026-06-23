@@ -14,7 +14,7 @@ Key differentiator vs other Lucide Swift packages: this package generates pure S
 Shape code from SVG paths rather than bundling image assets (PDFs/PNGs). This means:
 - True vector rendering at any resolution
 - Compile-time verification of icon names
-- Xcode autocomplete for all 1,738+ regular icons + 6,715+ Lab icons
+- Xcode autocomplete for all 1,738+ regular icons + 374 Lab icons
 - ~7× faster enum lookup vs bundle-based image lookup
 - ~2× faster rendering vs PDF rasterization
 

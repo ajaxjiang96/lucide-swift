@@ -1,32 +1,20 @@
 version: 1
 metadata:
   authors: "Jiacheng Jiang"
-  keywords:
-    - icons
-    - swiftui
-    - lucide
-    - svg
-    - vector-graphics
-    - shapes
-    - symbol
-    - icon-library
-    - ios
-    - macos
-  summary: "Vector-first, type-safe Swift package for Lucide Icons with native SwiftUI Shape rendering"
-  description: >
-    LucideSwift provides 8,453+ Lucide icons as native SwiftUI Shapes —
-    true vector rendering from SVG path data with zero runtime dependencies.
-    Type-safe API with Xcode autocomplete for all icons, including Lucide Lab
-    experimental icons. Supports iOS 14+, macOS 11+, tvOS 14+, watchOS 7+, visionOS 1+.
 builder:
   configs:
     - platform: ios
       scheme: LucideSwift
+      documentation_targets: ["LucideSwift"]
     - platform: macos-spm
       scheme: LucideSwift
+      documentation_targets: ["LucideSwift"]
     - platform: tvos
       scheme: LucideSwift
+      documentation_targets: ["LucideSwift"]
     - platform: watchos
       scheme: LucideSwift
+      documentation_targets: ["LucideSwift"]
     - platform: visionos
       scheme: LucideSwift
+      documentation_targets: ["LucideSwift"]
