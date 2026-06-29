@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.7.4
-//  Lucide Icons Version: 1.21.0
+//  Library Version: 0.7.5
+//  Lucide Icons Version: 1.22.0
 //  Lucide Lab Version: 14d067fd7b15b179085c89d29dc1b44a37bc6569
 //  DO NOT EDIT MANUALLY
 //
@@ -530,8 +530,14 @@ public enum LucideIconName: String, CaseIterable {
     case cylinder
     case dam
     case database
+    case databaseArrowDown
+    case databaseArrowUp
     case databaseBackup
+    case databaseCheck
+    case databaseMinus
+    case databasePlus
     case databaseSearch
+    case databaseX
     case databaseZap
     case decimalsArrowLeft
     case decimalsArrowRight
@@ -1164,6 +1170,7 @@ public enum LucideIconName: String, CaseIterable {
     case pentagon
     case percent
     case personStanding
+    case phi
     case philippinePeso
     case phone
     case phoneCall
@@ -2788,10 +2795,22 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Dam.combinedPath
         case .database:
             return LucideIcon_Database.combinedPath
+        case .databaseArrowDown:
+            return LucideIcon_DatabaseArrowDown.combinedPath
+        case .databaseArrowUp:
+            return LucideIcon_DatabaseArrowUp.combinedPath
         case .databaseBackup:
             return LucideIcon_DatabaseBackup.combinedPath
+        case .databaseCheck:
+            return LucideIcon_DatabaseCheck.combinedPath
+        case .databaseMinus:
+            return LucideIcon_DatabaseMinus.combinedPath
+        case .databasePlus:
+            return LucideIcon_DatabasePlus.combinedPath
         case .databaseSearch:
             return LucideIcon_DatabaseSearch.combinedPath
+        case .databaseX:
+            return LucideIcon_DatabaseX.combinedPath
         case .databaseZap:
             return LucideIcon_DatabaseZap.combinedPath
         case .decimalsArrowLeft:
@@ -4056,6 +4075,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Percent.combinedPath
         case .personStanding:
             return LucideIcon_PersonStanding.combinedPath
+        case .phi:
+            return LucideIcon_Phi.combinedPath
         case .philippinePeso:
             return LucideIcon_PhilippinePeso.combinedPath
         case .phone:
@@ -6270,10 +6291,22 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Dam.openPath
         case .database:
             return LucideIcon_Database.openPath
+        case .databaseArrowDown:
+            return LucideIcon_DatabaseArrowDown.openPath
+        case .databaseArrowUp:
+            return LucideIcon_DatabaseArrowUp.openPath
         case .databaseBackup:
             return LucideIcon_DatabaseBackup.openPath
+        case .databaseCheck:
+            return LucideIcon_DatabaseCheck.openPath
+        case .databaseMinus:
+            return LucideIcon_DatabaseMinus.openPath
+        case .databasePlus:
+            return LucideIcon_DatabasePlus.openPath
         case .databaseSearch:
             return LucideIcon_DatabaseSearch.openPath
+        case .databaseX:
+            return LucideIcon_DatabaseX.openPath
         case .databaseZap:
             return LucideIcon_DatabaseZap.openPath
         case .decimalsArrowLeft:
@@ -7538,6 +7571,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Percent.openPath
         case .personStanding:
             return LucideIcon_PersonStanding.openPath
+        case .phi:
+            return LucideIcon_Phi.openPath
         case .philippinePeso:
             return LucideIcon_PhilippinePeso.openPath
         case .phone:
@@ -9752,10 +9787,22 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Dam.closedPath
         case .database:
             return LucideIcon_Database.closedPath
+        case .databaseArrowDown:
+            return LucideIcon_DatabaseArrowDown.closedPath
+        case .databaseArrowUp:
+            return LucideIcon_DatabaseArrowUp.closedPath
         case .databaseBackup:
             return LucideIcon_DatabaseBackup.closedPath
+        case .databaseCheck:
+            return LucideIcon_DatabaseCheck.closedPath
+        case .databaseMinus:
+            return LucideIcon_DatabaseMinus.closedPath
+        case .databasePlus:
+            return LucideIcon_DatabasePlus.closedPath
         case .databaseSearch:
             return LucideIcon_DatabaseSearch.closedPath
+        case .databaseX:
+            return LucideIcon_DatabaseX.closedPath
         case .databaseZap:
             return LucideIcon_DatabaseZap.closedPath
         case .decimalsArrowLeft:
@@ -11020,6 +11067,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Percent.closedPath
         case .personStanding:
             return LucideIcon_PersonStanding.closedPath
+        case .phi:
+            return LucideIcon_Phi.closedPath
         case .philippinePeso:
             return LucideIcon_PhilippinePeso.closedPath
         case .phone:
@@ -16404,11 +16453,29 @@ public struct Lucide {
     /// Database icon
     public static let database: LucideShape = LucideShape(combined: LucideIcon_Database.combinedPath, open: LucideIcon_Database.openPath, closed: LucideIcon_Database.closedPath)
 
+    /// Database Arrow Down icon
+    public static let databaseArrowDown: LucideShape = LucideShape(combined: LucideIcon_DatabaseArrowDown.combinedPath, open: LucideIcon_DatabaseArrowDown.openPath, closed: LucideIcon_DatabaseArrowDown.closedPath)
+
+    /// Database Arrow Up icon
+    public static let databaseArrowUp: LucideShape = LucideShape(combined: LucideIcon_DatabaseArrowUp.combinedPath, open: LucideIcon_DatabaseArrowUp.openPath, closed: LucideIcon_DatabaseArrowUp.closedPath)
+
     /// Database Backup icon
     public static let databaseBackup: LucideShape = LucideShape(combined: LucideIcon_DatabaseBackup.combinedPath, open: LucideIcon_DatabaseBackup.openPath, closed: LucideIcon_DatabaseBackup.closedPath)
 
+    /// Database Check icon
+    public static let databaseCheck: LucideShape = LucideShape(combined: LucideIcon_DatabaseCheck.combinedPath, open: LucideIcon_DatabaseCheck.openPath, closed: LucideIcon_DatabaseCheck.closedPath)
+
+    /// Database Minus icon
+    public static let databaseMinus: LucideShape = LucideShape(combined: LucideIcon_DatabaseMinus.combinedPath, open: LucideIcon_DatabaseMinus.openPath, closed: LucideIcon_DatabaseMinus.closedPath)
+
+    /// Database Plus icon
+    public static let databasePlus: LucideShape = LucideShape(combined: LucideIcon_DatabasePlus.combinedPath, open: LucideIcon_DatabasePlus.openPath, closed: LucideIcon_DatabasePlus.closedPath)
+
     /// Database Search icon
     public static let databaseSearch: LucideShape = LucideShape(combined: LucideIcon_DatabaseSearch.combinedPath, open: LucideIcon_DatabaseSearch.openPath, closed: LucideIcon_DatabaseSearch.closedPath)
+
+    /// Database X icon
+    public static let databaseX: LucideShape = LucideShape(combined: LucideIcon_DatabaseX.combinedPath, open: LucideIcon_DatabaseX.openPath, closed: LucideIcon_DatabaseX.closedPath)
 
     /// Database Zap icon
     public static let databaseZap: LucideShape = LucideShape(combined: LucideIcon_DatabaseZap.combinedPath, open: LucideIcon_DatabaseZap.openPath, closed: LucideIcon_DatabaseZap.closedPath)
@@ -18305,6 +18372,9 @@ public struct Lucide {
 
     /// Person Standing icon
     public static let personStanding: LucideShape = LucideShape(combined: LucideIcon_PersonStanding.combinedPath, open: LucideIcon_PersonStanding.openPath, closed: LucideIcon_PersonStanding.closedPath)
+
+    /// Phi icon
+    public static let phi: LucideShape = LucideShape(combined: LucideIcon_Phi.combinedPath, open: LucideIcon_Phi.openPath, closed: LucideIcon_Phi.closedPath)
 
     /// Philippine Peso icon
     public static let philippinePeso: LucideShape = LucideShape(combined: LucideIcon_PhilippinePeso.combinedPath, open: LucideIcon_PhilippinePeso.openPath, closed: LucideIcon_PhilippinePeso.closedPath)
@@ -21202,10 +21272,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.7.4"
+    public static let libraryVersion = "0.7.5"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.21.0"
+    public static let lucideVersion = "1.22.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "14d067fd7b15b179085c89d29dc1b44a37bc6569"
