@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.7.5
-//  Lucide Icons Version: 1.22.0
+//  Library Version: 0.7.6
+//  Lucide Icons Version: 1.23.0
 //  Lucide Lab Version: 14d067fd7b15b179085c89d29dc1b44a37bc6569
 //  DO NOT EDIT MANUALLY
 //
@@ -1150,6 +1150,7 @@ public enum LucideIconName: String, CaseIterable {
     case panelsLeftBottom
     case panelsRightBottom
     case panelsTopLeft
+    case paperBag
     case paperclip
     case parasol
     case parentheses
@@ -4035,6 +4036,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PanelsRightBottom.combinedPath
         case .panelsTopLeft:
             return LucideIcon_PanelsTopLeft.combinedPath
+        case .paperBag:
+            return LucideIcon_PaperBag.combinedPath
         case .paperclip:
             return LucideIcon_Paperclip.combinedPath
         case .parasol:
@@ -7531,6 +7534,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PanelsRightBottom.openPath
         case .panelsTopLeft:
             return LucideIcon_PanelsTopLeft.openPath
+        case .paperBag:
+            return LucideIcon_PaperBag.openPath
         case .paperclip:
             return LucideIcon_Paperclip.openPath
         case .parasol:
@@ -11027,6 +11032,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PanelsRightBottom.closedPath
         case .panelsTopLeft:
             return LucideIcon_PanelsTopLeft.closedPath
+        case .paperBag:
+            return LucideIcon_PaperBag.closedPath
         case .paperclip:
             return LucideIcon_Paperclip.closedPath
         case .parasol:
@@ -18313,6 +18320,9 @@ public struct Lucide {
     /// Panels Top Left icon
     public static let panelsTopLeft: LucideShape = LucideShape(combined: LucideIcon_PanelsTopLeft.combinedPath, open: LucideIcon_PanelsTopLeft.openPath, closed: LucideIcon_PanelsTopLeft.closedPath)
 
+    /// Paper Bag icon
+    public static let paperBag: LucideShape = LucideShape(combined: LucideIcon_PaperBag.combinedPath, open: LucideIcon_PaperBag.openPath, closed: LucideIcon_PaperBag.closedPath)
+
     /// Paperclip icon
     public static let paperclip: LucideShape = LucideShape(combined: LucideIcon_Paperclip.combinedPath, open: LucideIcon_Paperclip.openPath, closed: LucideIcon_Paperclip.closedPath)
 
@@ -21272,10 +21282,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.7.5"
+    public static let libraryVersion = "0.7.6"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.22.0"
+    public static let lucideVersion = "1.23.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "14d067fd7b15b179085c89d29dc1b44a37bc6569"
