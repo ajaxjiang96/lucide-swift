@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.7.6
-//  Lucide Icons Version: 1.23.0
+//  Library Version: 0.7.7
+//  Lucide Icons Version: 1.24.0
 //  Lucide Lab Version: 14d067fd7b15b179085c89d29dc1b44a37bc6569
 //  DO NOT EDIT MANUALLY
 //
@@ -394,6 +394,7 @@ public enum LucideIconName: String, CaseIterable {
     case circleDotDashed
     case circleEllipsis
     case circleEqual
+    case circleEuroSign
     case circleFadingArrowUp
     case circleFadingPlus
     case circleGauge
@@ -1341,6 +1342,7 @@ public enum LucideIconName: String, CaseIterable {
     case serverCog
     case serverCrash
     case serverOff
+    case serverPlus
     case settings
     case settings2
     case shapes
@@ -2524,6 +2526,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleEllipsis.combinedPath
         case .circleEqual:
             return LucideIcon_CircleEqual.combinedPath
+        case .circleEuroSign:
+            return LucideIcon_CircleEuroSign.combinedPath
         case .circleFadingArrowUp:
             return LucideIcon_CircleFadingArrowUp.combinedPath
         case .circleFadingPlus:
@@ -4418,6 +4422,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ServerCrash.combinedPath
         case .serverOff:
             return LucideIcon_ServerOff.combinedPath
+        case .serverPlus:
+            return LucideIcon_ServerPlus.combinedPath
         case .settings:
             return LucideIcon_Settings.combinedPath
         case .settings2:
@@ -6022,6 +6028,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleEllipsis.openPath
         case .circleEqual:
             return LucideIcon_CircleEqual.openPath
+        case .circleEuroSign:
+            return LucideIcon_CircleEuroSign.openPath
         case .circleFadingArrowUp:
             return LucideIcon_CircleFadingArrowUp.openPath
         case .circleFadingPlus:
@@ -7916,6 +7924,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ServerCrash.openPath
         case .serverOff:
             return LucideIcon_ServerOff.openPath
+        case .serverPlus:
+            return LucideIcon_ServerPlus.openPath
         case .settings:
             return LucideIcon_Settings.openPath
         case .settings2:
@@ -9520,6 +9530,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleEllipsis.closedPath
         case .circleEqual:
             return LucideIcon_CircleEqual.closedPath
+        case .circleEuroSign:
+            return LucideIcon_CircleEuroSign.closedPath
         case .circleFadingArrowUp:
             return LucideIcon_CircleFadingArrowUp.closedPath
         case .circleFadingPlus:
@@ -11414,6 +11426,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ServerCrash.closedPath
         case .serverOff:
             return LucideIcon_ServerOff.closedPath
+        case .serverPlus:
+            return LucideIcon_ServerPlus.closedPath
         case .settings:
             return LucideIcon_Settings.closedPath
         case .settings2:
@@ -16052,6 +16066,9 @@ public struct Lucide {
     /// Circle Equal icon
     public static let circleEqual: LucideShape = LucideShape(combined: LucideIcon_CircleEqual.combinedPath, open: LucideIcon_CircleEqual.openPath, closed: LucideIcon_CircleEqual.closedPath)
 
+    /// Circle Euro Sign icon
+    public static let circleEuroSign: LucideShape = LucideShape(combined: LucideIcon_CircleEuroSign.combinedPath, open: LucideIcon_CircleEuroSign.openPath, closed: LucideIcon_CircleEuroSign.closedPath)
+
     /// Circle Fading Arrow Up icon
     public static let circleFadingArrowUp: LucideShape = LucideShape(combined: LucideIcon_CircleFadingArrowUp.combinedPath, open: LucideIcon_CircleFadingArrowUp.openPath, closed: LucideIcon_CircleFadingArrowUp.closedPath)
 
@@ -18893,6 +18910,9 @@ public struct Lucide {
     /// Server Off icon
     public static let serverOff: LucideShape = LucideShape(combined: LucideIcon_ServerOff.combinedPath, open: LucideIcon_ServerOff.openPath, closed: LucideIcon_ServerOff.closedPath)
 
+    /// Server Plus icon
+    public static let serverPlus: LucideShape = LucideShape(combined: LucideIcon_ServerPlus.combinedPath, open: LucideIcon_ServerPlus.openPath, closed: LucideIcon_ServerPlus.closedPath)
+
     /// Settings icon
     public static let settings: LucideShape = LucideShape(combined: LucideIcon_Settings.combinedPath, open: LucideIcon_Settings.openPath, closed: LucideIcon_Settings.closedPath)
 
@@ -21282,10 +21302,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.7.6"
+    public static let libraryVersion = "0.7.7"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.23.0"
+    public static let lucideVersion = "1.24.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "14d067fd7b15b179085c89d29dc1b44a37bc6569"
