@@ -1,17 +1,17 @@
 //
-//  Icon_CircleEuroSign.swift
+//  Icon_CircleEuro.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: circle-euro-sign
+//  Icon: circle-euro
 //
 
 import SwiftUI
 
-/// Circle Euro Sign icon
-internal enum LucideIcon_CircleEuroSign {
+/// Circle Euro icon
+internal enum LucideIcon_CircleEuro {
     
-/// Circle Euro Sign icon path (combined)
+/// Circle Euro icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.0, y: 9.4))
@@ -28,7 +28,7 @@ path.addCurve(to: CGPoint(x: 12.0, y: 2.0), control1: CGPoint(x: 22.0, y: 6.4771
 path.addCurve(to: CGPoint(x: 2.0, y: 11.999999999999998), control1: CGPoint(x: 6.477152501692067, y: 2.0), control2: CGPoint(x: 2.0000000000000018, y: 6.477152501692064))
     return path
 }()
-/// Circle Euro Sign icon open subpaths
+/// Circle Euro icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.0, y: 9.4))
@@ -40,7 +40,7 @@ path.move(to: CGPoint(x: 7.0, y: 12.0))
 path.addLine(to: CGPoint(x: 12.0, y: 12.0))
     return path
 }()
-/// Circle Euro Sign icon closed subpaths
+/// Circle Euro icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 2.0, y: 12.0))
