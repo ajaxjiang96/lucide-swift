@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.7.8
-//  Lucide Icons Version: 1.25.0
+//  Library Version: 0.7.9
+//  Lucide Icons Version: 1.26.0
 //  Lucide Lab Version: 14d067fd7b15b179085c89d29dc1b44a37bc6569
 //  DO NOT EDIT MANUALLY
 //
@@ -1360,6 +1360,7 @@ public enum LucideIconName: String, CaseIterable {
     case shieldCogCorner
     case shieldEllipsis
     case shieldHalf
+    case shieldKeyhole
     case shieldMinus
     case shieldOff
     case shieldPlus
@@ -4459,6 +4460,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShieldEllipsis.combinedPath
         case .shieldHalf:
             return LucideIcon_ShieldHalf.combinedPath
+        case .shieldKeyhole:
+            return LucideIcon_ShieldKeyhole.combinedPath
         case .shieldMinus:
             return LucideIcon_ShieldMinus.combinedPath
         case .shieldOff:
@@ -7963,6 +7966,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShieldEllipsis.openPath
         case .shieldHalf:
             return LucideIcon_ShieldHalf.openPath
+        case .shieldKeyhole:
+            return LucideIcon_ShieldKeyhole.openPath
         case .shieldMinus:
             return LucideIcon_ShieldMinus.openPath
         case .shieldOff:
@@ -11467,6 +11472,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShieldEllipsis.closedPath
         case .shieldHalf:
             return LucideIcon_ShieldHalf.closedPath
+        case .shieldKeyhole:
+            return LucideIcon_ShieldKeyhole.closedPath
         case .shieldMinus:
             return LucideIcon_ShieldMinus.closedPath
         case .shieldOff:
@@ -18971,6 +18978,9 @@ public struct Lucide {
     /// Shield Half icon
     public static let shieldHalf: LucideShape = LucideShape(combined: LucideIcon_ShieldHalf.combinedPath, open: LucideIcon_ShieldHalf.openPath, closed: LucideIcon_ShieldHalf.closedPath)
 
+    /// Shield Keyhole icon
+    public static let shieldKeyhole: LucideShape = LucideShape(combined: LucideIcon_ShieldKeyhole.combinedPath, open: LucideIcon_ShieldKeyhole.openPath, closed: LucideIcon_ShieldKeyhole.closedPath)
+
     /// Shield Minus icon
     public static let shieldMinus: LucideShape = LucideShape(combined: LucideIcon_ShieldMinus.combinedPath, open: LucideIcon_ShieldMinus.openPath, closed: LucideIcon_ShieldMinus.closedPath)
 
@@ -21312,10 +21322,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.7.8"
+    public static let libraryVersion = "0.7.9"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.25.0"
+    public static let lucideVersion = "1.26.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "14d067fd7b15b179085c89d29dc1b44a37bc6569"
