@@ -1,17 +1,17 @@
 //
-//  Icon_History.swift
+//  Icon_RotateCcwClock.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: history
+//  Icon: rotate-ccw-clock
 //
 
 import SwiftUI
 
-/// History icon
-internal enum LucideIcon_History {
+/// Rotate Ccw Clock icon
+internal enum LucideIcon_RotateCcwClock {
     
-/// History icon path (combined)
+/// Rotate Ccw Clock icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 3.0, y: 12.0))
@@ -28,7 +28,7 @@ path.addLine(to: CGPoint(x: 12.0, y: 12.0))
 path.addLine(to: CGPoint(x: 16.0, y: 14.0))
     return path
 }()
-/// History icon open subpaths
+/// Rotate Ccw Clock icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 3.0, y: 12.0))
@@ -45,7 +45,7 @@ path.addLine(to: CGPoint(x: 12.0, y: 12.0))
 path.addLine(to: CGPoint(x: 16.0, y: 14.0))
     return path
 }()
-/// History icon closed subpaths
+/// Rotate Ccw Clock icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
             return path
