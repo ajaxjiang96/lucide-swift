@@ -6,7 +6,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-ISC-blue.svg" alt="License: ISC"></a>
   <br>
   <a href="https://github.com/ajaxjiang96/lucide-swift/releases/latest"><img src="https://img.shields.io/github/v/release/ajaxjiang96/lucide-swift?label=Library" alt="Library Version"></a>
-  <img src="https://img.shields.io/badge/Lucide-1.27.0-orange.svg" alt="Lucide Icons Version">
+  <img src="https://img.shields.io/badge/Lucide-1.28.0-orange.svg" alt="Lucide Icons Version">
   <a href="https://github.com/ajaxjiang96/lucide-swift/actions/workflows/sync-and-release.yml"><img src="https://img.shields.io/github/actions/workflow/status/ajaxjiang96/lucide-swift/sync-and-release.yml?branch=main&label=Sync%20%26%20Release" alt="Sync & Release Workflow"></a>
   <br>
   <a href="https://swiftpackageindex.com/ajaxjiang96/lucide-swift"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fajaxjiang96%2Flucide-swift%2Fbadge%3Ftype%3Dswift-versions" alt="Swift Versions"></a>

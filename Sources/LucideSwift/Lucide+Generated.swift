@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.7.11
-//  Lucide Icons Version: 1.27.0
+//  Library Version: 0.7.12
+//  Lucide Icons Version: 1.28.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -21392,10 +21392,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.7.11"
+    public static let libraryVersion = "0.7.12"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.27.0"
+    public static let lucideVersion = "1.28.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
