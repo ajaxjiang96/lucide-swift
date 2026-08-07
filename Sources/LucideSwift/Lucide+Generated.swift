@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.7.12
-//  Lucide Icons Version: 1.28.0
+//  Library Version: 0.7.13
+//  Lucide Icons Version: 1.29.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -892,8 +892,12 @@ public enum LucideIconName: String, CaseIterable {
     case lasso
     case lassoSelect
     case laugh
+    case layerArrowDown
+    case layerArrowUp
     case layers
     case layers2
+    case layersArrowDown
+    case layersArrowUp
     case layersMinus
     case layersPlus
     case layoutDashboard
@@ -3531,10 +3535,18 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LassoSelect.combinedPath
         case .laugh:
             return LucideIcon_Laugh.combinedPath
+        case .layerArrowDown:
+            return LucideIcon_LayerArrowDown.combinedPath
+        case .layerArrowUp:
+            return LucideIcon_LayerArrowUp.combinedPath
         case .layers:
             return LucideIcon_Layers.combinedPath
         case .layers2:
             return LucideIcon_Layers2.combinedPath
+        case .layersArrowDown:
+            return LucideIcon_LayersArrowDown.combinedPath
+        case .layersArrowUp:
+            return LucideIcon_LayersArrowUp.combinedPath
         case .layersMinus:
             return LucideIcon_LayersMinus.combinedPath
         case .layersPlus:
@@ -7051,10 +7063,18 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LassoSelect.openPath
         case .laugh:
             return LucideIcon_Laugh.openPath
+        case .layerArrowDown:
+            return LucideIcon_LayerArrowDown.openPath
+        case .layerArrowUp:
+            return LucideIcon_LayerArrowUp.openPath
         case .layers:
             return LucideIcon_Layers.openPath
         case .layers2:
             return LucideIcon_Layers2.openPath
+        case .layersArrowDown:
+            return LucideIcon_LayersArrowDown.openPath
+        case .layersArrowUp:
+            return LucideIcon_LayersArrowUp.openPath
         case .layersMinus:
             return LucideIcon_LayersMinus.openPath
         case .layersPlus:
@@ -10571,10 +10591,18 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LassoSelect.closedPath
         case .laugh:
             return LucideIcon_Laugh.closedPath
+        case .layerArrowDown:
+            return LucideIcon_LayerArrowDown.closedPath
+        case .layerArrowUp:
+            return LucideIcon_LayerArrowUp.closedPath
         case .layers:
             return LucideIcon_Layers.closedPath
         case .layers2:
             return LucideIcon_Layers2.closedPath
+        case .layersArrowDown:
+            return LucideIcon_LayersArrowDown.closedPath
+        case .layersArrowUp:
+            return LucideIcon_LayersArrowUp.closedPath
         case .layersMinus:
             return LucideIcon_LayersMinus.closedPath
         case .layersPlus:
@@ -17623,11 +17651,23 @@ public struct Lucide {
     /// Laugh icon
     public static let laugh: LucideShape = LucideShape(combined: LucideIcon_Laugh.combinedPath, open: LucideIcon_Laugh.openPath, closed: LucideIcon_Laugh.closedPath)
 
+    /// Layer Arrow Down icon
+    public static let layerArrowDown: LucideShape = LucideShape(combined: LucideIcon_LayerArrowDown.combinedPath, open: LucideIcon_LayerArrowDown.openPath, closed: LucideIcon_LayerArrowDown.closedPath)
+
+    /// Layer Arrow Up icon
+    public static let layerArrowUp: LucideShape = LucideShape(combined: LucideIcon_LayerArrowUp.combinedPath, open: LucideIcon_LayerArrowUp.openPath, closed: LucideIcon_LayerArrowUp.closedPath)
+
     /// Layers icon
     public static let layers: LucideShape = LucideShape(combined: LucideIcon_Layers.combinedPath, open: LucideIcon_Layers.openPath, closed: LucideIcon_Layers.closedPath)
 
     /// Layers 2 icon
     public static let layers2: LucideShape = LucideShape(combined: LucideIcon_Layers2.combinedPath, open: LucideIcon_Layers2.openPath, closed: LucideIcon_Layers2.closedPath)
+
+    /// Layers Arrow Down icon
+    public static let layersArrowDown: LucideShape = LucideShape(combined: LucideIcon_LayersArrowDown.combinedPath, open: LucideIcon_LayersArrowDown.openPath, closed: LucideIcon_LayersArrowDown.closedPath)
+
+    /// Layers Arrow Up icon
+    public static let layersArrowUp: LucideShape = LucideShape(combined: LucideIcon_LayersArrowUp.combinedPath, open: LucideIcon_LayersArrowUp.openPath, closed: LucideIcon_LayersArrowUp.closedPath)
 
     /// Layers Minus icon
     public static let layersMinus: LucideShape = LucideShape(combined: LucideIcon_LayersMinus.combinedPath, open: LucideIcon_LayersMinus.openPath, closed: LucideIcon_LayersMinus.closedPath)
@@ -21392,10 +21432,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.7.12"
+    public static let libraryVersion = "0.7.13"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.28.0"
+    public static let lucideVersion = "1.29.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
