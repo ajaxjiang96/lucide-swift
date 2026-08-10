@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.7.14
-//  Lucide Icons Version: 1.30.0
+//  Library Version: 0.7.15
+//  Lucide Icons Version: 1.31.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -56,6 +56,7 @@ public enum LucideIconName: String, CaseIterable {
     case ampersands
     case amphora
     case anchor
+    case angle
     case antenna
     case anvil
     case aperture
@@ -592,6 +593,7 @@ public enum LucideIconName: String, CaseIterable {
     case egg
     case eggFried
     case eggOff
+    case eject
     case ellipse
     case ellipsis
     case ellipsisVertical
@@ -971,6 +973,7 @@ public enum LucideIconName: String, CaseIterable {
     case luggage
     case magnet
     case mail
+    case mailBadge
     case mailCheck
     case mailMinus
     case mailOpen
@@ -1867,6 +1870,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Amphora.combinedPath
         case .anchor:
             return LucideIcon_Anchor.combinedPath
+        case .angle:
+            return LucideIcon_Angle.combinedPath
         case .antenna:
             return LucideIcon_Antenna.combinedPath
         case .anvil:
@@ -2939,6 +2944,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_EggFried.combinedPath
         case .eggOff:
             return LucideIcon_EggOff.combinedPath
+        case .eject:
+            return LucideIcon_Eject.combinedPath
         case .ellipse:
             return LucideIcon_Ellipse.combinedPath
         case .ellipsis:
@@ -3697,6 +3704,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Magnet.combinedPath
         case .mail:
             return LucideIcon_Mail.combinedPath
+        case .mailBadge:
+            return LucideIcon_MailBadge.combinedPath
         case .mailCheck:
             return LucideIcon_MailCheck.combinedPath
         case .mailMinus:
@@ -5403,6 +5412,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Amphora.openPath
         case .anchor:
             return LucideIcon_Anchor.openPath
+        case .angle:
+            return LucideIcon_Angle.openPath
         case .antenna:
             return LucideIcon_Antenna.openPath
         case .anvil:
@@ -6475,6 +6486,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_EggFried.openPath
         case .eggOff:
             return LucideIcon_EggOff.openPath
+        case .eject:
+            return LucideIcon_Eject.openPath
         case .ellipse:
             return LucideIcon_Ellipse.openPath
         case .ellipsis:
@@ -7233,6 +7246,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Magnet.openPath
         case .mail:
             return LucideIcon_Mail.openPath
+        case .mailBadge:
+            return LucideIcon_MailBadge.openPath
         case .mailCheck:
             return LucideIcon_MailCheck.openPath
         case .mailMinus:
@@ -8939,6 +8954,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Amphora.closedPath
         case .anchor:
             return LucideIcon_Anchor.closedPath
+        case .angle:
+            return LucideIcon_Angle.closedPath
         case .antenna:
             return LucideIcon_Antenna.closedPath
         case .anvil:
@@ -10011,6 +10028,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_EggFried.closedPath
         case .eggOff:
             return LucideIcon_EggOff.closedPath
+        case .eject:
+            return LucideIcon_Eject.closedPath
         case .ellipse:
             return LucideIcon_Ellipse.closedPath
         case .ellipsis:
@@ -10769,6 +10788,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Magnet.closedPath
         case .mail:
             return LucideIcon_Mail.closedPath
+        case .mailBadge:
+            return LucideIcon_MailBadge.closedPath
         case .mailCheck:
             return LucideIcon_MailCheck.closedPath
         case .mailMinus:
@@ -15171,6 +15192,9 @@ public struct Lucide {
     /// Anchor icon
     public static let anchor: LucideShape = LucideShape(combined: LucideIcon_Anchor.combinedPath, open: LucideIcon_Anchor.openPath, closed: LucideIcon_Anchor.closedPath)
 
+    /// Angle icon
+    public static let angle: LucideShape = LucideShape(combined: LucideIcon_Angle.combinedPath, open: LucideIcon_Angle.openPath, closed: LucideIcon_Angle.closedPath)
+
     /// Antenna icon
     public static let antenna: LucideShape = LucideShape(combined: LucideIcon_Antenna.combinedPath, open: LucideIcon_Antenna.openPath, closed: LucideIcon_Antenna.closedPath)
 
@@ -16779,6 +16803,9 @@ public struct Lucide {
     /// Egg Off icon
     public static let eggOff: LucideShape = LucideShape(combined: LucideIcon_EggOff.combinedPath, open: LucideIcon_EggOff.openPath, closed: LucideIcon_EggOff.closedPath)
 
+    /// Eject icon
+    public static let eject: LucideShape = LucideShape(combined: LucideIcon_Eject.combinedPath, open: LucideIcon_Eject.openPath, closed: LucideIcon_Eject.closedPath)
+
     /// Ellipse icon
     public static let ellipse: LucideShape = LucideShape(combined: LucideIcon_Ellipse.combinedPath, open: LucideIcon_Ellipse.openPath, closed: LucideIcon_Ellipse.closedPath)
 
@@ -17915,6 +17942,9 @@ public struct Lucide {
 
     /// Mail icon
     public static let mail: LucideShape = LucideShape(combined: LucideIcon_Mail.combinedPath, open: LucideIcon_Mail.openPath, closed: LucideIcon_Mail.closedPath)
+
+    /// Mail Badge icon
+    public static let mailBadge: LucideShape = LucideShape(combined: LucideIcon_MailBadge.combinedPath, open: LucideIcon_MailBadge.openPath, closed: LucideIcon_MailBadge.closedPath)
 
     /// Mail Check icon
     public static let mailCheck: LucideShape = LucideShape(combined: LucideIcon_MailCheck.combinedPath, open: LucideIcon_MailCheck.openPath, closed: LucideIcon_MailCheck.closedPath)
@@ -21472,10 +21502,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.7.14"
+    public static let libraryVersion = "0.7.15"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.30.0"
+    public static let lucideVersion = "1.31.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
