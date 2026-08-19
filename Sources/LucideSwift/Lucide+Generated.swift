@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.7.15
-//  Lucide Icons Version: 1.31.0
+//  Library Version: 0.7.16
+//  Lucide Icons Version: 1.32.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -307,6 +307,7 @@ public enum LucideIconName: String, CaseIterable {
     case captions
     case captionsOff
     case car
+    case carBattery
     case carFront
     case carTaxiFront
     case caravan
@@ -1508,6 +1509,7 @@ public enum LucideIconName: String, CaseIterable {
     case squareStar
     case squareStop
     case squareTerminal
+    case squareText
     case squareUser
     case squareUserRound
     case squareX
@@ -2372,6 +2374,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CaptionsOff.combinedPath
         case .car:
             return LucideIcon_Car.combinedPath
+        case .carBattery:
+            return LucideIcon_CarBattery.combinedPath
         case .carFront:
             return LucideIcon_CarFront.combinedPath
         case .carTaxiFront:
@@ -4774,6 +4778,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareStop.combinedPath
         case .squareTerminal:
             return LucideIcon_SquareTerminal.combinedPath
+        case .squareText:
+            return LucideIcon_SquareText.combinedPath
         case .squareUser:
             return LucideIcon_SquareUser.combinedPath
         case .squareUserRound:
@@ -5914,6 +5920,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CaptionsOff.openPath
         case .car:
             return LucideIcon_Car.openPath
+        case .carBattery:
+            return LucideIcon_CarBattery.openPath
         case .carFront:
             return LucideIcon_CarFront.openPath
         case .carTaxiFront:
@@ -8316,6 +8324,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareStop.openPath
         case .squareTerminal:
             return LucideIcon_SquareTerminal.openPath
+        case .squareText:
+            return LucideIcon_SquareText.openPath
         case .squareUser:
             return LucideIcon_SquareUser.openPath
         case .squareUserRound:
@@ -9456,6 +9466,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CaptionsOff.closedPath
         case .car:
             return LucideIcon_Car.closedPath
+        case .carBattery:
+            return LucideIcon_CarBattery.closedPath
         case .carFront:
             return LucideIcon_CarFront.closedPath
         case .carTaxiFront:
@@ -11858,6 +11870,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareStop.closedPath
         case .squareTerminal:
             return LucideIcon_SquareTerminal.closedPath
+        case .squareText:
+            return LucideIcon_SquareText.closedPath
         case .squareUser:
             return LucideIcon_SquareUser.closedPath
         case .squareUserRound:
@@ -15945,6 +15959,9 @@ public struct Lucide {
     /// Car icon
     public static let car: LucideShape = LucideShape(combined: LucideIcon_Car.combinedPath, open: LucideIcon_Car.openPath, closed: LucideIcon_Car.closedPath)
 
+    /// Car Battery icon
+    public static let carBattery: LucideShape = LucideShape(combined: LucideIcon_CarBattery.combinedPath, open: LucideIcon_CarBattery.openPath, closed: LucideIcon_CarBattery.closedPath)
+
     /// Car Front icon
     public static let carFront: LucideShape = LucideShape(combined: LucideIcon_CarFront.combinedPath, open: LucideIcon_CarFront.openPath, closed: LucideIcon_CarFront.closedPath)
 
@@ -19548,6 +19565,9 @@ public struct Lucide {
     /// Square Terminal icon
     public static let squareTerminal: LucideShape = LucideShape(combined: LucideIcon_SquareTerminal.combinedPath, open: LucideIcon_SquareTerminal.openPath, closed: LucideIcon_SquareTerminal.closedPath)
 
+    /// Square Text icon
+    public static let squareText: LucideShape = LucideShape(combined: LucideIcon_SquareText.combinedPath, open: LucideIcon_SquareText.openPath, closed: LucideIcon_SquareText.closedPath)
+
     /// Square User icon
     public static let squareUser: LucideShape = LucideShape(combined: LucideIcon_SquareUser.combinedPath, open: LucideIcon_SquareUser.openPath, closed: LucideIcon_SquareUser.closedPath)
 
@@ -21502,10 +21522,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.7.15"
+    public static let libraryVersion = "0.7.16"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.31.0"
+    public static let lucideVersion = "1.32.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
