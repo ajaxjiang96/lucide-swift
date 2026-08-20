@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.7.16
-//  Lucide Icons Version: 1.32.0
+//  Library Version: 0.7.17
+//  Lucide Icons Version: 1.33.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -115,6 +115,7 @@ public enum LucideIconName: String, CaseIterable {
     case atSign
     case atom
     case audioLines
+    case audioLinesOff
     case audioLinesX
     case audioWaveform
     case award
@@ -938,6 +939,7 @@ public enum LucideIconName: String, CaseIterable {
     case listChecks
     case listChevronsDownUp
     case listChevronsUpDown
+    case listClock
     case listCollapse
     case listEnd
     case listFilter
@@ -1052,6 +1054,7 @@ public enum LucideIconName: String, CaseIterable {
     case microchip
     case microscope
     case microwave
+    case midiPort
     case milestone
     case milk
     case milkOff
@@ -1076,6 +1079,8 @@ public enum LucideIconName: String, CaseIterable {
     case monitorX
     case moon
     case moonStar
+    case mop
+    case mopSparkles
     case mosque
     case motorbike
     case mountain
@@ -1476,6 +1481,7 @@ public enum LucideIconName: String, CaseIterable {
     case squareDashedMousePointer
     case squareDashedText
     case squareDashedTopSolid
+    case squareDimensions
     case squareDivide
     case squareDot
     case squareEqual
@@ -1676,6 +1682,7 @@ public enum LucideIconName: String, CaseIterable {
     case unplug
     case upload
     case usb
+    case usbCPort
     case user
     case userCheck
     case userCog
@@ -1990,6 +1997,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Atom.combinedPath
         case .audioLines:
             return LucideIcon_AudioLines.combinedPath
+        case .audioLinesOff:
+            return LucideIcon_AudioLinesOff.combinedPath
         case .audioLinesX:
             return LucideIcon_AudioLinesX.combinedPath
         case .audioWaveform:
@@ -3636,6 +3645,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ListChevronsDownUp.combinedPath
         case .listChevronsUpDown:
             return LucideIcon_ListChevronsUpDown.combinedPath
+        case .listClock:
+            return LucideIcon_ListClock.combinedPath
         case .listCollapse:
             return LucideIcon_ListCollapse.combinedPath
         case .listEnd:
@@ -3864,6 +3875,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Microscope.combinedPath
         case .microwave:
             return LucideIcon_Microwave.combinedPath
+        case .midiPort:
+            return LucideIcon_MidiPort.combinedPath
         case .milestone:
             return LucideIcon_Milestone.combinedPath
         case .milk:
@@ -3912,6 +3925,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Moon.combinedPath
         case .moonStar:
             return LucideIcon_MoonStar.combinedPath
+        case .mop:
+            return LucideIcon_Mop.combinedPath
+        case .mopSparkles:
+            return LucideIcon_MopSparkles.combinedPath
         case .mosque:
             return LucideIcon_Mosque.combinedPath
         case .motorbike:
@@ -4712,6 +4729,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareDashedText.combinedPath
         case .squareDashedTopSolid:
             return LucideIcon_SquareDashedTopSolid.combinedPath
+        case .squareDimensions:
+            return LucideIcon_SquareDimensions.combinedPath
         case .squareDivide:
             return LucideIcon_SquareDivide.combinedPath
         case .squareDot:
@@ -5112,6 +5131,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Upload.combinedPath
         case .usb:
             return LucideIcon_Usb.combinedPath
+        case .usbCPort:
+            return LucideIcon_UsbCPort.combinedPath
         case .user:
             return LucideIcon_User.combinedPath
         case .userCheck:
@@ -5536,6 +5557,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Atom.openPath
         case .audioLines:
             return LucideIcon_AudioLines.openPath
+        case .audioLinesOff:
+            return LucideIcon_AudioLinesOff.openPath
         case .audioLinesX:
             return LucideIcon_AudioLinesX.openPath
         case .audioWaveform:
@@ -7182,6 +7205,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ListChevronsDownUp.openPath
         case .listChevronsUpDown:
             return LucideIcon_ListChevronsUpDown.openPath
+        case .listClock:
+            return LucideIcon_ListClock.openPath
         case .listCollapse:
             return LucideIcon_ListCollapse.openPath
         case .listEnd:
@@ -7410,6 +7435,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Microscope.openPath
         case .microwave:
             return LucideIcon_Microwave.openPath
+        case .midiPort:
+            return LucideIcon_MidiPort.openPath
         case .milestone:
             return LucideIcon_Milestone.openPath
         case .milk:
@@ -7458,6 +7485,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Moon.openPath
         case .moonStar:
             return LucideIcon_MoonStar.openPath
+        case .mop:
+            return LucideIcon_Mop.openPath
+        case .mopSparkles:
+            return LucideIcon_MopSparkles.openPath
         case .mosque:
             return LucideIcon_Mosque.openPath
         case .motorbike:
@@ -8258,6 +8289,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareDashedText.openPath
         case .squareDashedTopSolid:
             return LucideIcon_SquareDashedTopSolid.openPath
+        case .squareDimensions:
+            return LucideIcon_SquareDimensions.openPath
         case .squareDivide:
             return LucideIcon_SquareDivide.openPath
         case .squareDot:
@@ -8658,6 +8691,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Upload.openPath
         case .usb:
             return LucideIcon_Usb.openPath
+        case .usbCPort:
+            return LucideIcon_UsbCPort.openPath
         case .user:
             return LucideIcon_User.openPath
         case .userCheck:
@@ -9082,6 +9117,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Atom.closedPath
         case .audioLines:
             return LucideIcon_AudioLines.closedPath
+        case .audioLinesOff:
+            return LucideIcon_AudioLinesOff.closedPath
         case .audioLinesX:
             return LucideIcon_AudioLinesX.closedPath
         case .audioWaveform:
@@ -10728,6 +10765,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ListChevronsDownUp.closedPath
         case .listChevronsUpDown:
             return LucideIcon_ListChevronsUpDown.closedPath
+        case .listClock:
+            return LucideIcon_ListClock.closedPath
         case .listCollapse:
             return LucideIcon_ListCollapse.closedPath
         case .listEnd:
@@ -10956,6 +10995,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Microscope.closedPath
         case .microwave:
             return LucideIcon_Microwave.closedPath
+        case .midiPort:
+            return LucideIcon_MidiPort.closedPath
         case .milestone:
             return LucideIcon_Milestone.closedPath
         case .milk:
@@ -11004,6 +11045,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Moon.closedPath
         case .moonStar:
             return LucideIcon_MoonStar.closedPath
+        case .mop:
+            return LucideIcon_Mop.closedPath
+        case .mopSparkles:
+            return LucideIcon_MopSparkles.closedPath
         case .mosque:
             return LucideIcon_Mosque.closedPath
         case .motorbike:
@@ -11804,6 +11849,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareDashedText.closedPath
         case .squareDashedTopSolid:
             return LucideIcon_SquareDashedTopSolid.closedPath
+        case .squareDimensions:
+            return LucideIcon_SquareDimensions.closedPath
         case .squareDivide:
             return LucideIcon_SquareDivide.closedPath
         case .squareDot:
@@ -12204,6 +12251,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Upload.closedPath
         case .usb:
             return LucideIcon_Usb.closedPath
+        case .usbCPort:
+            return LucideIcon_UsbCPort.closedPath
         case .user:
             return LucideIcon_User.closedPath
         case .userCheck:
@@ -15383,6 +15432,9 @@ public struct Lucide {
     /// Audio Lines icon
     public static let audioLines: LucideShape = LucideShape(combined: LucideIcon_AudioLines.combinedPath, open: LucideIcon_AudioLines.openPath, closed: LucideIcon_AudioLines.closedPath)
 
+    /// Audio Lines Off icon
+    public static let audioLinesOff: LucideShape = LucideShape(combined: LucideIcon_AudioLinesOff.combinedPath, open: LucideIcon_AudioLinesOff.openPath, closed: LucideIcon_AudioLinesOff.closedPath)
+
     /// Audio Lines X icon
     public static let audioLinesX: LucideShape = LucideShape(combined: LucideIcon_AudioLinesX.combinedPath, open: LucideIcon_AudioLinesX.openPath, closed: LucideIcon_AudioLinesX.closedPath)
 
@@ -17852,6 +17904,9 @@ public struct Lucide {
     /// List Chevrons Up Down icon
     public static let listChevronsUpDown: LucideShape = LucideShape(combined: LucideIcon_ListChevronsUpDown.combinedPath, open: LucideIcon_ListChevronsUpDown.openPath, closed: LucideIcon_ListChevronsUpDown.closedPath)
 
+    /// List Clock icon
+    public static let listClock: LucideShape = LucideShape(combined: LucideIcon_ListClock.combinedPath, open: LucideIcon_ListClock.openPath, closed: LucideIcon_ListClock.closedPath)
+
     /// List Collapse icon
     public static let listCollapse: LucideShape = LucideShape(combined: LucideIcon_ListCollapse.combinedPath, open: LucideIcon_ListCollapse.openPath, closed: LucideIcon_ListCollapse.closedPath)
 
@@ -18194,6 +18249,9 @@ public struct Lucide {
     /// Microwave icon
     public static let microwave: LucideShape = LucideShape(combined: LucideIcon_Microwave.combinedPath, open: LucideIcon_Microwave.openPath, closed: LucideIcon_Microwave.closedPath)
 
+    /// Midi Port icon
+    public static let midiPort: LucideShape = LucideShape(combined: LucideIcon_MidiPort.combinedPath, open: LucideIcon_MidiPort.openPath, closed: LucideIcon_MidiPort.closedPath)
+
     /// Milestone icon
     public static let milestone: LucideShape = LucideShape(combined: LucideIcon_Milestone.combinedPath, open: LucideIcon_Milestone.openPath, closed: LucideIcon_Milestone.closedPath)
 
@@ -18265,6 +18323,12 @@ public struct Lucide {
 
     /// Moon Star icon
     public static let moonStar: LucideShape = LucideShape(combined: LucideIcon_MoonStar.combinedPath, open: LucideIcon_MoonStar.openPath, closed: LucideIcon_MoonStar.closedPath)
+
+    /// Mop icon
+    public static let mop: LucideShape = LucideShape(combined: LucideIcon_Mop.combinedPath, open: LucideIcon_Mop.openPath, closed: LucideIcon_Mop.closedPath)
+
+    /// Mop Sparkles icon
+    public static let mopSparkles: LucideShape = LucideShape(combined: LucideIcon_MopSparkles.combinedPath, open: LucideIcon_MopSparkles.openPath, closed: LucideIcon_MopSparkles.closedPath)
 
     /// Mosque icon
     public static let mosque: LucideShape = LucideShape(combined: LucideIcon_Mosque.combinedPath, open: LucideIcon_Mosque.openPath, closed: LucideIcon_Mosque.closedPath)
@@ -19466,6 +19530,9 @@ public struct Lucide {
     /// Square Dashed Top Solid icon
     public static let squareDashedTopSolid: LucideShape = LucideShape(combined: LucideIcon_SquareDashedTopSolid.combinedPath, open: LucideIcon_SquareDashedTopSolid.openPath, closed: LucideIcon_SquareDashedTopSolid.closedPath)
 
+    /// Square Dimensions icon
+    public static let squareDimensions: LucideShape = LucideShape(combined: LucideIcon_SquareDimensions.combinedPath, open: LucideIcon_SquareDimensions.openPath, closed: LucideIcon_SquareDimensions.closedPath)
+
     /// Square Divide icon
     public static let squareDivide: LucideShape = LucideShape(combined: LucideIcon_SquareDivide.combinedPath, open: LucideIcon_SquareDivide.openPath, closed: LucideIcon_SquareDivide.closedPath)
 
@@ -20065,6 +20132,9 @@ public struct Lucide {
 
     /// Usb icon
     public static let usb: LucideShape = LucideShape(combined: LucideIcon_Usb.combinedPath, open: LucideIcon_Usb.openPath, closed: LucideIcon_Usb.closedPath)
+
+    /// Usb C Port icon
+    public static let usbCPort: LucideShape = LucideShape(combined: LucideIcon_UsbCPort.combinedPath, open: LucideIcon_UsbCPort.openPath, closed: LucideIcon_UsbCPort.closedPath)
 
     /// User icon
     public static let user: LucideShape = LucideShape(combined: LucideIcon_User.combinedPath, open: LucideIcon_User.openPath, closed: LucideIcon_User.closedPath)
@@ -21522,10 +21592,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.7.16"
+    public static let libraryVersion = "0.7.17"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.32.0"
+    public static let lucideVersion = "1.33.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
