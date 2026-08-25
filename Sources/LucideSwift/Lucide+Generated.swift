@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.7.17
-//  Lucide Icons Version: 1.33.0
+//  Library Version: 0.7.18
+//  Lucide Icons Version: 1.34.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -978,6 +978,7 @@ public enum LucideIconName: String, CaseIterable {
     case mail
     case mailBadge
     case mailCheck
+    case mailClock
     case mailMinus
     case mailOpen
     case mailPlus
@@ -3723,6 +3724,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailBadge.combinedPath
         case .mailCheck:
             return LucideIcon_MailCheck.combinedPath
+        case .mailClock:
+            return LucideIcon_MailClock.combinedPath
         case .mailMinus:
             return LucideIcon_MailMinus.combinedPath
         case .mailOpen:
@@ -7283,6 +7286,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailBadge.openPath
         case .mailCheck:
             return LucideIcon_MailCheck.openPath
+        case .mailClock:
+            return LucideIcon_MailClock.openPath
         case .mailMinus:
             return LucideIcon_MailMinus.openPath
         case .mailOpen:
@@ -10843,6 +10848,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailBadge.closedPath
         case .mailCheck:
             return LucideIcon_MailCheck.closedPath
+        case .mailClock:
+            return LucideIcon_MailClock.closedPath
         case .mailMinus:
             return LucideIcon_MailMinus.closedPath
         case .mailOpen:
@@ -18021,6 +18028,9 @@ public struct Lucide {
     /// Mail Check icon
     public static let mailCheck: LucideShape = LucideShape(combined: LucideIcon_MailCheck.combinedPath, open: LucideIcon_MailCheck.openPath, closed: LucideIcon_MailCheck.closedPath)
 
+    /// Mail Clock icon
+    public static let mailClock: LucideShape = LucideShape(combined: LucideIcon_MailClock.combinedPath, open: LucideIcon_MailClock.openPath, closed: LucideIcon_MailClock.closedPath)
+
     /// Mail Minus icon
     public static let mailMinus: LucideShape = LucideShape(combined: LucideIcon_MailMinus.combinedPath, open: LucideIcon_MailMinus.openPath, closed: LucideIcon_MailMinus.closedPath)
 
@@ -21592,10 +21602,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.7.17"
+    public static let libraryVersion = "0.7.18"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.33.0"
+    public static let lucideVersion = "1.34.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
