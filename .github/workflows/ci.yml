@@ -22,17 +22,21 @@ jobs:
         ref: ${{ github.head_ref }}
     
     - name: Run tests
-      run: swift test
+      run: |
+        swift test
+        swift test --package-path Tools
     
     - name: Build package
-      run: swift build
+      run: |
+        swift build
+        swift build --package-path Tools
     
     - name: Build release
       run: swift build -c release
 
     - name: Generate preview
       if: github.event_name == 'pull_request'
-      run: swift run PreviewGenerator
+      run: swift run --package-path Tools PreviewGenerator
 
     - name: Commit preview changes
       if: github.event_name == 'pull_request'

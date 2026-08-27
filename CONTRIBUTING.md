@@ -16,7 +16,7 @@ swift test
 1. Fork the repository and create a feature branch.
 2. Ensure your change builds: `swift build`
 3. Run tests: `swift test`
-4. If you're adding or modifying SVG parsing, add tests in `Tests/LucideGeneratorTests/`.
+4. If you're adding or modifying SVG parsing, add tests in `Tools/Tests/LucideGeneratorTests/`.
 5. If you're adding new icon-related features, add tests in `Tests/LucideSwiftTests/`.
 6. Update documentation if the public API changes.
 
@@ -31,7 +31,7 @@ swift test
 
 ## Generated Code
 
-**Do not edit** files under `Sources/LucideSwift/Icons/` or `Sources/LucideSwift/Lucide+Generated.swift`. These are auto-generated. Run `swift run LucideGenerator` to regenerate.
+**Do not edit** files under `Sources/LucideSwift/Icons/` or `Sources/LucideSwift/Lucide+Generated.swift`. These are auto-generated. Run `swift run --package-path Tools LucideGenerator` to regenerate.
 
 ## Reporting Issues
 

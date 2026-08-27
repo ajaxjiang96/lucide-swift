@@ -56,9 +56,9 @@ Or via Xcode: File → Add Package Dependencies → enter the repository URL.
    - `LucideIcon(lab: .iconName)` — Lab (experimental) icons
    - `LucideIcon(name: "string")` — string lookup with fallback
    - `LucideIcon(shape: LucideShape)` — from pre-constructed shape
-3. **LucideGenerator** — Command-line tool in `Sources/LucideGenerator/`.
+3. **LucideGenerator** — Command-line tool in `Tools/Sources/LucideGenerator/`.
    Fetches icons from `lucide` and `lucide-lab` GitHub repos, parses SVG paths,
-   generates Swift source files. Run via `swift run LucideGenerator`.
+   generates Swift source files. Run via `swift run --package-path Tools LucideGenerator`.
 
 ### File Layout
 
@@ -69,12 +69,13 @@ Sources/LucideSwift/
 ├── Image+Lucide.swift         # Image(lucide:) extensions
 ├── Lucide+Generated.swift     # Auto-generated enums (DO NOT EDIT)
 └── Icons/                     # ~2,102 files, one per icon
-Sources/LucideGenerator/
-├── main.swift                 # Code generation entry point
-└── SVGPathParser.swift        # SVG path command parser
-Tests/
-├── LucideSwiftTests/
-└── LucideGeneratorTests/
+Tests/LucideSwiftTests/
+Tools/
+├── Sources/LucideGenerator/
+│   ├── main.swift             # Code generation entry point
+│   └── SVGPathParser.swift    # SVG path command parser
+├── Sources/PreviewGenerator/
+└── Tests/LucideGeneratorTests/
 ```
 
 ### SVG Path Commands Supported
@@ -209,9 +210,9 @@ ISC License (same as Lucide Icons)
 
 - NEVER edit `Sources/LucideSwift/Lucide+Generated.swift` or files under
   `Sources/LucideSwift/Icons/` — they are auto-generated. Run
-  `swift run LucideGenerator` to regenerate.
+  `swift run --package-path Tools LucideGenerator` to regenerate.
 - Test with: `swift test` (full suite) or `swift test --filter LucideSwiftTests/TestName`
 - Build with: `swift build` (debug) or `swift build -c release` (release)
 - Use `@testable import LucideSwift` in tests for internal access
-- The package has a patched dependency at `PatchedDependencies/SVGPath` for SVG parsing
+- The tools package has a patched dependency at `Tools/PatchedDependencies/SVGPath` for SVG parsing
 - File headers follow a standard format (see AGENTS.md for details)

@@ -24,20 +24,7 @@ let package = Package(
         .library(
             name: "LucideSwift",
             targets: ["LucideSwift"]
-        ),
-        .executable(
-            name: "LucideGenerator",
-            targets: ["LucideGenerator"]
-        ),
-        .executable(
-            name: "PreviewGenerator",
-            targets: ["PreviewGenerator"]
         )
-    ],
-    dependencies: [
-        // Using local patched copy with fix for relative move (m) command
-        // See PatchedDependencies/SVGPath for details
-        .package(path: "PatchedDependencies/SVGPath")
     ],
     targets: [
         .target(
@@ -47,20 +34,6 @@ let package = Package(
         .testTarget(
             name: "LucideSwiftTests",
             dependencies: ["LucideSwift"]
-        ),
-        .testTarget(
-            name: "LucideGeneratorTests",
-            dependencies: ["LucideGenerator"]
-        ),
-        .executableTarget(
-            name: "LucideGenerator",
-            dependencies: [
-                .product(name: "SVGPath", package: "SVGPath")
-            ]
-        ),
-        .executableTarget(
-            name: "PreviewGenerator",
-            dependencies: ["LucideSwift"]
-        ),
+        )
     ]
 )
