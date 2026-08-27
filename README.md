@@ -280,11 +280,11 @@ This package includes [`llms.txt`](llms.txt) and [`llms-full.txt`](llms-full.txt
 **Quick reference for AI assistants:**
 - **Package URL:** `https://github.com/ajaxjiang96/lucide-swift.git`
 - **Minimum Swift version:** 5.9
-- **SPM dependency:** `.package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.7.4")`
+- **SPM dependency:** `.package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.8.0")`
 - **Import:** `import LucideSwift`
 - **Main API:** `LucideIcon(.iconName)`, `LucideIcon(lab: .iconName)`, `Lucide.<iconName>`
 - **Upstream:** [Lucide Icons](https://lucide.dev) (ISC License)
-- **Generated code:** Do not edit files under `Sources/LucideSwift/Icons/` or `Lucide+Generated.swift` — run `swift run LucideGenerator` to regenerate
+- **Generated code:** Do not edit files under `Sources/LucideSwift/Icons/` or `Lucide+Generated.swift` — run `swift run --package-path Tools LucideGenerator` to regenerate
 
 ## License
 

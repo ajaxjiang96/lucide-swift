@@ -76,6 +76,6 @@ Dual versioning: library version in `.library-version` (semver), upstream icon v
 
 ## Generation workflow
 
-Run `swift run LucideGenerator` to regenerate all icons from upstream Lucide. The CI
+Run `swift run --package-path Tools LucideGenerator` to regenerate all icons from upstream Lucide. The CI
 pipeline (`.github/workflows/sync-and-release.yml`) runs daily and auto-releases when
 upstream Lucide publishes new icons.

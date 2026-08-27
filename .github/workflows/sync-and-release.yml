@@ -155,7 +155,7 @@ jobs:
       if: steps.check_changes.outputs.needs_update == 'true'
       id: generate
       run: |
-        swift run LucideGenerator
+        swift run --package-path Tools LucideGenerator
         # Count only enum case declarations (4-space indent), not switch branches
         ICON_COUNT=$(grep -c "^    case " Sources/LucideSwift/Lucide+Generated.swift || echo "0")
         echo "icon_count=$ICON_COUNT" >> $GITHUB_OUTPUT
@@ -186,7 +186,7 @@ jobs:
 
     - name: Generate Preview Screenshot
       if: steps.check_changes.outputs.needs_update == 'true'
-      run: swift run PreviewGenerator
+      run: swift run --package-path Tools PreviewGenerator
     
     - name: Run tests (record snapshot baselines)
       if: steps.check_changes.outputs.needs_update == 'true'

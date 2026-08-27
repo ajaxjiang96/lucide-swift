@@ -15,7 +15,7 @@ swift test
 swift test --filter LucideSwiftTests/TestName
 
 # Generate/update all icons from upstream Lucide
-swift run LucideGenerator
+swift run --package-path Tools LucideGenerator
 
 # Build release
 swift build -c release
@@ -80,7 +80,7 @@ import XCTest     // For tests only
 ### Generated Code
 - Files in `Sources/LucideSwift/Lucide+Generated.swift` are AUTO-GENERATED
 - Do not edit generated files manually
-- Run `swift run LucideGenerator` to regenerate
+- Run `swift run --package-path Tools LucideGenerator` to regenerate
 
 ### Testing
 - Tests in `Tests/LucideSwiftTests/`
@@ -141,7 +141,7 @@ Sources/
 The `.github/workflows/sync-and-release.yml` runs daily to:
 1. Check upstream Lucide releases
 2. If new version available:
-   - Run `swift run LucideGenerator`
+   - Run `swift run --package-path Tools LucideGenerator`
    - Auto-increment patch version in `.library-version` (e.g., 0.1.0 → 0.1.1)
    - Commit generated files
    - Create git tag and GitHub release
