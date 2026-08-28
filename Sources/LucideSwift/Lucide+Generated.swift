@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.8.0
-//  Lucide Icons Version: 1.34.0
+//  Library Version: 0.8.1
+//  Lucide Icons Version: 1.35.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -749,6 +749,7 @@ public enum LucideIconName: String, CaseIterable {
     case funnel
     case funnelPlus
     case funnelX
+    case galaxy
     case galleryHorizontal
     case galleryHorizontalEnd
     case galleryThumbnails
@@ -1295,6 +1296,7 @@ public enum LucideIconName: String, CaseIterable {
     case rewind
     case ribbon
     case road
+    case robotArm
     case rocket
     case rockingChair
     case rollerCoaster
@@ -1393,6 +1395,7 @@ public enum LucideIconName: String, CaseIterable {
     case shieldUser
     case shieldX
     case ship
+    case shipCargo
     case shipWheel
     case shirt
     case shoppingBag
@@ -1639,6 +1642,7 @@ public enum LucideIconName: String, CaseIterable {
     case toyBrick
     case tractor
     case trafficCone
+    case trailer
     case trainFront
     case trainFrontTunnel
     case trainTrack
@@ -3266,6 +3270,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FunnelPlus.combinedPath
         case .funnelX:
             return LucideIcon_FunnelX.combinedPath
+        case .galaxy:
+            return LucideIcon_Galaxy.combinedPath
         case .galleryHorizontal:
             return LucideIcon_GalleryHorizontal.combinedPath
         case .galleryHorizontalEnd:
@@ -4358,6 +4364,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Ribbon.combinedPath
         case .road:
             return LucideIcon_Road.combinedPath
+        case .robotArm:
+            return LucideIcon_RobotArm.combinedPath
         case .rocket:
             return LucideIcon_Rocket.combinedPath
         case .rockingChair:
@@ -4554,6 +4562,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShieldX.combinedPath
         case .ship:
             return LucideIcon_Ship.combinedPath
+        case .shipCargo:
+            return LucideIcon_ShipCargo.combinedPath
         case .shipWheel:
             return LucideIcon_ShipWheel.combinedPath
         case .shirt:
@@ -5046,6 +5056,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Tractor.combinedPath
         case .trafficCone:
             return LucideIcon_TrafficCone.combinedPath
+        case .trailer:
+            return LucideIcon_Trailer.combinedPath
         case .trainFront:
             return LucideIcon_TrainFront.combinedPath
         case .trainFrontTunnel:
@@ -6828,6 +6840,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FunnelPlus.openPath
         case .funnelX:
             return LucideIcon_FunnelX.openPath
+        case .galaxy:
+            return LucideIcon_Galaxy.openPath
         case .galleryHorizontal:
             return LucideIcon_GalleryHorizontal.openPath
         case .galleryHorizontalEnd:
@@ -7920,6 +7934,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Ribbon.openPath
         case .road:
             return LucideIcon_Road.openPath
+        case .robotArm:
+            return LucideIcon_RobotArm.openPath
         case .rocket:
             return LucideIcon_Rocket.openPath
         case .rockingChair:
@@ -8116,6 +8132,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShieldX.openPath
         case .ship:
             return LucideIcon_Ship.openPath
+        case .shipCargo:
+            return LucideIcon_ShipCargo.openPath
         case .shipWheel:
             return LucideIcon_ShipWheel.openPath
         case .shirt:
@@ -8608,6 +8626,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Tractor.openPath
         case .trafficCone:
             return LucideIcon_TrafficCone.openPath
+        case .trailer:
+            return LucideIcon_Trailer.openPath
         case .trainFront:
             return LucideIcon_TrainFront.openPath
         case .trainFrontTunnel:
@@ -10390,6 +10410,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FunnelPlus.closedPath
         case .funnelX:
             return LucideIcon_FunnelX.closedPath
+        case .galaxy:
+            return LucideIcon_Galaxy.closedPath
         case .galleryHorizontal:
             return LucideIcon_GalleryHorizontal.closedPath
         case .galleryHorizontalEnd:
@@ -11482,6 +11504,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Ribbon.closedPath
         case .road:
             return LucideIcon_Road.closedPath
+        case .robotArm:
+            return LucideIcon_RobotArm.closedPath
         case .rocket:
             return LucideIcon_Rocket.closedPath
         case .rockingChair:
@@ -11678,6 +11702,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShieldX.closedPath
         case .ship:
             return LucideIcon_Ship.closedPath
+        case .shipCargo:
+            return LucideIcon_ShipCargo.closedPath
         case .shipWheel:
             return LucideIcon_ShipWheel.closedPath
         case .shirt:
@@ -12170,6 +12196,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Tractor.closedPath
         case .trafficCone:
             return LucideIcon_TrafficCone.closedPath
+        case .trailer:
+            return LucideIcon_Trailer.closedPath
         case .trainFront:
             return LucideIcon_TrainFront.closedPath
         case .trainFrontTunnel:
@@ -17341,6 +17369,9 @@ public struct Lucide {
     /// Funnel X icon
     public static let funnelX: LucideShape = LucideShape(combined: LucideIcon_FunnelX.combinedPath, open: LucideIcon_FunnelX.openPath, closed: LucideIcon_FunnelX.closedPath)
 
+    /// Galaxy icon
+    public static let galaxy: LucideShape = LucideShape(combined: LucideIcon_Galaxy.combinedPath, open: LucideIcon_Galaxy.openPath, closed: LucideIcon_Galaxy.closedPath)
+
     /// Gallery Horizontal icon
     public static let galleryHorizontal: LucideShape = LucideShape(combined: LucideIcon_GalleryHorizontal.combinedPath, open: LucideIcon_GalleryHorizontal.openPath, closed: LucideIcon_GalleryHorizontal.closedPath)
 
@@ -18979,6 +19010,9 @@ public struct Lucide {
     /// Road icon
     public static let road: LucideShape = LucideShape(combined: LucideIcon_Road.combinedPath, open: LucideIcon_Road.openPath, closed: LucideIcon_Road.closedPath)
 
+    /// Robot Arm icon
+    public static let robotArm: LucideShape = LucideShape(combined: LucideIcon_RobotArm.combinedPath, open: LucideIcon_RobotArm.openPath, closed: LucideIcon_RobotArm.closedPath)
+
     /// Rocket icon
     public static let rocket: LucideShape = LucideShape(combined: LucideIcon_Rocket.combinedPath, open: LucideIcon_Rocket.openPath, closed: LucideIcon_Rocket.closedPath)
 
@@ -19272,6 +19306,9 @@ public struct Lucide {
 
     /// Ship icon
     public static let ship: LucideShape = LucideShape(combined: LucideIcon_Ship.combinedPath, open: LucideIcon_Ship.openPath, closed: LucideIcon_Ship.closedPath)
+
+    /// Ship Cargo icon
+    public static let shipCargo: LucideShape = LucideShape(combined: LucideIcon_ShipCargo.combinedPath, open: LucideIcon_ShipCargo.openPath, closed: LucideIcon_ShipCargo.closedPath)
 
     /// Ship Wheel icon
     public static let shipWheel: LucideShape = LucideShape(combined: LucideIcon_ShipWheel.combinedPath, open: LucideIcon_ShipWheel.openPath, closed: LucideIcon_ShipWheel.closedPath)
@@ -20010,6 +20047,9 @@ public struct Lucide {
 
     /// Traffic Cone icon
     public static let trafficCone: LucideShape = LucideShape(combined: LucideIcon_TrafficCone.combinedPath, open: LucideIcon_TrafficCone.openPath, closed: LucideIcon_TrafficCone.closedPath)
+
+    /// Trailer icon
+    public static let trailer: LucideShape = LucideShape(combined: LucideIcon_Trailer.combinedPath, open: LucideIcon_Trailer.openPath, closed: LucideIcon_Trailer.closedPath)
 
     /// Train Front icon
     public static let trainFront: LucideShape = LucideShape(combined: LucideIcon_TrainFront.combinedPath, open: LucideIcon_TrainFront.openPath, closed: LucideIcon_TrainFront.closedPath)
@@ -21602,10 +21642,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.8.0"
+    public static let libraryVersion = "0.8.1"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.34.0"
+    public static let lucideVersion = "1.35.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
