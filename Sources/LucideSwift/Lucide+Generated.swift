@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.8.1
-//  Lucide Icons Version: 1.35.0
+//  Library Version: 0.8.2
+//  Lucide Icons Version: 1.37.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -524,6 +524,10 @@ public enum LucideIconName: String, CaseIterable {
     case cpu
     case creativeCommons
     case creditCard
+    case creditCardCheck
+    case creditCardMinus
+    case creditCardPlus
+    case creditCardX
     case croissant
     case crop
     case cross
@@ -1021,6 +1025,7 @@ public enum LucideIconName: String, CaseIterable {
     case messageCircleCheck
     case messageCircleCode
     case messageCircleDashed
+    case messageCircleDashedCheck
     case messageCircleHeart
     case messageCircleMore
     case messageCircleOff
@@ -1224,6 +1229,9 @@ public enum LucideIconName: String, CaseIterable {
     case planeTakeoff
     case play
     case playOff
+    case playingCard
+    case playingCards
+    case playingCardsFan
     case plug
     case plug2
     case plugZap
@@ -1297,6 +1305,7 @@ public enum LucideIconName: String, CaseIterable {
     case ribbon
     case road
     case robotArm
+    case robotVacuum
     case rocket
     case rockingChair
     case rollerCoaster
@@ -2820,6 +2829,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CreativeCommons.combinedPath
         case .creditCard:
             return LucideIcon_CreditCard.combinedPath
+        case .creditCardCheck:
+            return LucideIcon_CreditCardCheck.combinedPath
+        case .creditCardMinus:
+            return LucideIcon_CreditCardMinus.combinedPath
+        case .creditCardPlus:
+            return LucideIcon_CreditCardPlus.combinedPath
+        case .creditCardX:
+            return LucideIcon_CreditCardX.combinedPath
         case .croissant:
             return LucideIcon_Croissant.combinedPath
         case .crop:
@@ -3814,6 +3831,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageCircleCode.combinedPath
         case .messageCircleDashed:
             return LucideIcon_MessageCircleDashed.combinedPath
+        case .messageCircleDashedCheck:
+            return LucideIcon_MessageCircleDashedCheck.combinedPath
         case .messageCircleHeart:
             return LucideIcon_MessageCircleHeart.combinedPath
         case .messageCircleMore:
@@ -4220,6 +4239,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Play.combinedPath
         case .playOff:
             return LucideIcon_PlayOff.combinedPath
+        case .playingCard:
+            return LucideIcon_PlayingCard.combinedPath
+        case .playingCards:
+            return LucideIcon_PlayingCards.combinedPath
+        case .playingCardsFan:
+            return LucideIcon_PlayingCardsFan.combinedPath
         case .plug:
             return LucideIcon_Plug.combinedPath
         case .plug2:
@@ -4366,6 +4391,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Road.combinedPath
         case .robotArm:
             return LucideIcon_RobotArm.combinedPath
+        case .robotVacuum:
+            return LucideIcon_RobotVacuum.combinedPath
         case .rocket:
             return LucideIcon_Rocket.combinedPath
         case .rockingChair:
@@ -6390,6 +6417,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CreativeCommons.openPath
         case .creditCard:
             return LucideIcon_CreditCard.openPath
+        case .creditCardCheck:
+            return LucideIcon_CreditCardCheck.openPath
+        case .creditCardMinus:
+            return LucideIcon_CreditCardMinus.openPath
+        case .creditCardPlus:
+            return LucideIcon_CreditCardPlus.openPath
+        case .creditCardX:
+            return LucideIcon_CreditCardX.openPath
         case .croissant:
             return LucideIcon_Croissant.openPath
         case .crop:
@@ -7384,6 +7419,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageCircleCode.openPath
         case .messageCircleDashed:
             return LucideIcon_MessageCircleDashed.openPath
+        case .messageCircleDashedCheck:
+            return LucideIcon_MessageCircleDashedCheck.openPath
         case .messageCircleHeart:
             return LucideIcon_MessageCircleHeart.openPath
         case .messageCircleMore:
@@ -7790,6 +7827,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Play.openPath
         case .playOff:
             return LucideIcon_PlayOff.openPath
+        case .playingCard:
+            return LucideIcon_PlayingCard.openPath
+        case .playingCards:
+            return LucideIcon_PlayingCards.openPath
+        case .playingCardsFan:
+            return LucideIcon_PlayingCardsFan.openPath
         case .plug:
             return LucideIcon_Plug.openPath
         case .plug2:
@@ -7936,6 +7979,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Road.openPath
         case .robotArm:
             return LucideIcon_RobotArm.openPath
+        case .robotVacuum:
+            return LucideIcon_RobotVacuum.openPath
         case .rocket:
             return LucideIcon_Rocket.openPath
         case .rockingChair:
@@ -9960,6 +10005,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CreativeCommons.closedPath
         case .creditCard:
             return LucideIcon_CreditCard.closedPath
+        case .creditCardCheck:
+            return LucideIcon_CreditCardCheck.closedPath
+        case .creditCardMinus:
+            return LucideIcon_CreditCardMinus.closedPath
+        case .creditCardPlus:
+            return LucideIcon_CreditCardPlus.closedPath
+        case .creditCardX:
+            return LucideIcon_CreditCardX.closedPath
         case .croissant:
             return LucideIcon_Croissant.closedPath
         case .crop:
@@ -10954,6 +11007,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageCircleCode.closedPath
         case .messageCircleDashed:
             return LucideIcon_MessageCircleDashed.closedPath
+        case .messageCircleDashedCheck:
+            return LucideIcon_MessageCircleDashedCheck.closedPath
         case .messageCircleHeart:
             return LucideIcon_MessageCircleHeart.closedPath
         case .messageCircleMore:
@@ -11360,6 +11415,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Play.closedPath
         case .playOff:
             return LucideIcon_PlayOff.closedPath
+        case .playingCard:
+            return LucideIcon_PlayingCard.closedPath
+        case .playingCards:
+            return LucideIcon_PlayingCards.closedPath
+        case .playingCardsFan:
+            return LucideIcon_PlayingCardsFan.closedPath
         case .plug:
             return LucideIcon_Plug.closedPath
         case .plug2:
@@ -11506,6 +11567,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Road.closedPath
         case .robotArm:
             return LucideIcon_RobotArm.closedPath
+        case .robotVacuum:
+            return LucideIcon_RobotVacuum.closedPath
         case .rocket:
             return LucideIcon_Rocket.closedPath
         case .rockingChair:
@@ -16694,6 +16757,18 @@ public struct Lucide {
     /// Credit Card icon
     public static let creditCard: LucideShape = LucideShape(combined: LucideIcon_CreditCard.combinedPath, open: LucideIcon_CreditCard.openPath, closed: LucideIcon_CreditCard.closedPath)
 
+    /// Credit Card Check icon
+    public static let creditCardCheck: LucideShape = LucideShape(combined: LucideIcon_CreditCardCheck.combinedPath, open: LucideIcon_CreditCardCheck.openPath, closed: LucideIcon_CreditCardCheck.closedPath)
+
+    /// Credit Card Minus icon
+    public static let creditCardMinus: LucideShape = LucideShape(combined: LucideIcon_CreditCardMinus.combinedPath, open: LucideIcon_CreditCardMinus.openPath, closed: LucideIcon_CreditCardMinus.closedPath)
+
+    /// Credit Card Plus icon
+    public static let creditCardPlus: LucideShape = LucideShape(combined: LucideIcon_CreditCardPlus.combinedPath, open: LucideIcon_CreditCardPlus.openPath, closed: LucideIcon_CreditCardPlus.closedPath)
+
+    /// Credit Card X icon
+    public static let creditCardX: LucideShape = LucideShape(combined: LucideIcon_CreditCardX.combinedPath, open: LucideIcon_CreditCardX.openPath, closed: LucideIcon_CreditCardX.closedPath)
+
     /// Croissant icon
     public static let croissant: LucideShape = LucideShape(combined: LucideIcon_Croissant.combinedPath, open: LucideIcon_Croissant.openPath, closed: LucideIcon_Croissant.closedPath)
 
@@ -18185,6 +18260,9 @@ public struct Lucide {
     /// Message Circle Dashed icon
     public static let messageCircleDashed: LucideShape = LucideShape(combined: LucideIcon_MessageCircleDashed.combinedPath, open: LucideIcon_MessageCircleDashed.openPath, closed: LucideIcon_MessageCircleDashed.closedPath)
 
+    /// Message Circle Dashed Check icon
+    public static let messageCircleDashedCheck: LucideShape = LucideShape(combined: LucideIcon_MessageCircleDashedCheck.combinedPath, open: LucideIcon_MessageCircleDashedCheck.openPath, closed: LucideIcon_MessageCircleDashedCheck.closedPath)
+
     /// Message Circle Heart icon
     public static let messageCircleHeart: LucideShape = LucideShape(combined: LucideIcon_MessageCircleHeart.combinedPath, open: LucideIcon_MessageCircleHeart.openPath, closed: LucideIcon_MessageCircleHeart.closedPath)
 
@@ -18794,6 +18872,15 @@ public struct Lucide {
     /// Play Off icon
     public static let playOff: LucideShape = LucideShape(combined: LucideIcon_PlayOff.combinedPath, open: LucideIcon_PlayOff.openPath, closed: LucideIcon_PlayOff.closedPath)
 
+    /// Playing Card icon
+    public static let playingCard: LucideShape = LucideShape(combined: LucideIcon_PlayingCard.combinedPath, open: LucideIcon_PlayingCard.openPath, closed: LucideIcon_PlayingCard.closedPath)
+
+    /// Playing Cards icon
+    public static let playingCards: LucideShape = LucideShape(combined: LucideIcon_PlayingCards.combinedPath, open: LucideIcon_PlayingCards.openPath, closed: LucideIcon_PlayingCards.closedPath)
+
+    /// Playing Cards Fan icon
+    public static let playingCardsFan: LucideShape = LucideShape(combined: LucideIcon_PlayingCardsFan.combinedPath, open: LucideIcon_PlayingCardsFan.openPath, closed: LucideIcon_PlayingCardsFan.closedPath)
+
     /// Plug icon
     public static let plug: LucideShape = LucideShape(combined: LucideIcon_Plug.combinedPath, open: LucideIcon_Plug.openPath, closed: LucideIcon_Plug.closedPath)
 
@@ -19012,6 +19099,9 @@ public struct Lucide {
 
     /// Robot Arm icon
     public static let robotArm: LucideShape = LucideShape(combined: LucideIcon_RobotArm.combinedPath, open: LucideIcon_RobotArm.openPath, closed: LucideIcon_RobotArm.closedPath)
+
+    /// Robot Vacuum icon
+    public static let robotVacuum: LucideShape = LucideShape(combined: LucideIcon_RobotVacuum.combinedPath, open: LucideIcon_RobotVacuum.openPath, closed: LucideIcon_RobotVacuum.closedPath)
 
     /// Rocket icon
     public static let rocket: LucideShape = LucideShape(combined: LucideIcon_Rocket.combinedPath, open: LucideIcon_Rocket.openPath, closed: LucideIcon_Rocket.closedPath)
@@ -21642,10 +21732,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.8.1"
+    public static let libraryVersion = "0.8.2"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.35.0"
+    public static let lucideVersion = "1.37.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"

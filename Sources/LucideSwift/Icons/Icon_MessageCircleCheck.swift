@@ -25,17 +25,17 @@ path.addCurve(to: CGPoint(x: 20.207698533199164, y: 17.71336671102616), control1
 path.addCurve(to: CGPoint(x: 19.028066467802077, y: 4.886194847067064), control1: CGPoint(x: 22.987403770859977, y: 13.720034694528366), control2: CGPoint(x: 22.489470677490885, y: 8.305572378053354))
 path.addCurve(to: CGPoint(x: 6.18744216183936, y: 3.8633374423539912), control1: CGPoint(x: 15.566662258113269, y: 1.4668173160807747), control2: CGPoint(x: 10.146521547284014, y: 1.0350601889694353))
 path.addCurve(to: CGPoint(x: 2.9919999999999973, y: 16.34199999999999), control1: CGPoint(x: 2.2283627763947056, y: 6.691614695738546), control2: CGPoint(x: 0.8795384717662227, y: 11.95896816187726))
-path.move(to: CGPoint(x: 9.0, y: 12.0))
-path.addLine(to: CGPoint(x: 11.0, y: 14.0))
-path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+path.move(to: CGPoint(x: 16.0, y: 9.0))
+path.addLine(to: CGPoint(x: 10.5, y: 14.5))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
     return path
 }()
 /// Message Circle Check icon open subpaths
 static let openPath: Path = {
     var path = Path()
-    path.move(to: CGPoint(x: 9.0, y: 12.0))
-path.addLine(to: CGPoint(x: 11.0, y: 14.0))
-path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+    path.move(to: CGPoint(x: 16.0, y: 9.0))
+path.addLine(to: CGPoint(x: 10.5, y: 14.5))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
     return path
 }()
 /// Message Circle Check icon closed subpaths

@@ -32,17 +32,17 @@ path.addCurve(to: CGPoint(x: 3.8500000000000023, y: 15.38), control1: CGPoint(x:
 path.addCurve(to: CGPoint(x: 1.9890652163971074, y: 12.0), control1: CGPoint(x: 2.6913767449497277, y: 14.646754229648867), control2: CGPoint(x: 1.9890652163971074, y: 13.371151781124587))
 path.addCurve(to: CGPoint(x: 3.8500000000000005, y: 8.620000000000001), control1: CGPoint(x: 1.9890652163971074, y: 10.628848218875415), control2: CGPoint(x: 2.691376744949726, y: 9.353245770351135))
 path.closeSubpath()
-path.move(to: CGPoint(x: 9.0, y: 12.0))
-path.addLine(to: CGPoint(x: 11.0, y: 14.0))
-path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+path.move(to: CGPoint(x: 16.0, y: 9.0))
+path.addLine(to: CGPoint(x: 10.5, y: 14.5))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
     return path
 }()
 /// Badge Check icon open subpaths
 static let openPath: Path = {
     var path = Path()
-    path.move(to: CGPoint(x: 9.0, y: 12.0))
-path.addLine(to: CGPoint(x: 11.0, y: 14.0))
-path.addLine(to: CGPoint(x: 15.0, y: 10.0))
+    path.move(to: CGPoint(x: 16.0, y: 9.0))
+path.addLine(to: CGPoint(x: 10.5, y: 14.5))
+path.addLine(to: CGPoint(x: 8.0, y: 12.0))
     return path
 }()
 /// Badge Check icon closed subpaths
