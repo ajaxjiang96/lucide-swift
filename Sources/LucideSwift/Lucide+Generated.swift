@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.8.2
-//  Lucide Icons Version: 1.37.0
+//  Library Version: 0.8.3
+//  Lucide Icons Version: 1.38.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -1727,6 +1727,7 @@ public enum LucideIconName: String, CaseIterable {
     case van
     case variable
     case vault
+    case vectorPolygon
     case vectorSquare
     case vegan
     case venetianMask
@@ -5235,6 +5236,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Variable.combinedPath
         case .vault:
             return LucideIcon_Vault.combinedPath
+        case .vectorPolygon:
+            return LucideIcon_VectorPolygon.combinedPath
         case .vectorSquare:
             return LucideIcon_VectorSquare.combinedPath
         case .vegan:
@@ -8823,6 +8826,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Variable.openPath
         case .vault:
             return LucideIcon_Vault.openPath
+        case .vectorPolygon:
+            return LucideIcon_VectorPolygon.openPath
         case .vectorSquare:
             return LucideIcon_VectorSquare.openPath
         case .vegan:
@@ -12411,6 +12416,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Variable.closedPath
         case .vault:
             return LucideIcon_Vault.closedPath
+        case .vectorPolygon:
+            return LucideIcon_VectorPolygon.closedPath
         case .vectorSquare:
             return LucideIcon_VectorSquare.closedPath
         case .vegan:
@@ -20366,6 +20373,9 @@ public struct Lucide {
     /// Vault icon
     public static let vault: LucideShape = LucideShape(combined: LucideIcon_Vault.combinedPath, open: LucideIcon_Vault.openPath, closed: LucideIcon_Vault.closedPath)
 
+    /// Vector Polygon icon
+    public static let vectorPolygon: LucideShape = LucideShape(combined: LucideIcon_VectorPolygon.combinedPath, open: LucideIcon_VectorPolygon.openPath, closed: LucideIcon_VectorPolygon.closedPath)
+
     /// Vector Square icon
     public static let vectorSquare: LucideShape = LucideShape(combined: LucideIcon_VectorSquare.combinedPath, open: LucideIcon_VectorSquare.openPath, closed: LucideIcon_VectorSquare.closedPath)
 
@@ -21732,10 +21742,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.8.2"
+    public static let libraryVersion = "0.8.3"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.37.0"
+    public static let lucideVersion = "1.38.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
