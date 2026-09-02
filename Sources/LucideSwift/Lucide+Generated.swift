@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.8.3
-//  Lucide Icons Version: 1.38.0
+//  Library Version: 0.8.4
+//  Lucide Icons Version: 1.39.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -986,6 +986,7 @@ public enum LucideIconName: String, CaseIterable {
     case mailClock
     case mailMinus
     case mailOpen
+    case mailPen
     case mailPlus
     case mailQuestionMark
     case mailSearch
@@ -1770,6 +1771,7 @@ public enum LucideIconName: String, CaseIterable {
     case weightTilde
     case wheat
     case wheatOff
+    case whistle
     case wholeWord
     case wifi
     case wifiCog
@@ -3754,6 +3756,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailMinus.combinedPath
         case .mailOpen:
             return LucideIcon_MailOpen.combinedPath
+        case .mailPen:
+            return LucideIcon_MailPen.combinedPath
         case .mailPlus:
             return LucideIcon_MailPlus.combinedPath
         case .mailQuestionMark:
@@ -5322,6 +5326,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Wheat.combinedPath
         case .wheatOff:
             return LucideIcon_WheatOff.combinedPath
+        case .whistle:
+            return LucideIcon_Whistle.combinedPath
         case .wholeWord:
             return LucideIcon_WholeWord.combinedPath
         case .wifi:
@@ -7344,6 +7350,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailMinus.openPath
         case .mailOpen:
             return LucideIcon_MailOpen.openPath
+        case .mailPen:
+            return LucideIcon_MailPen.openPath
         case .mailPlus:
             return LucideIcon_MailPlus.openPath
         case .mailQuestionMark:
@@ -8912,6 +8920,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Wheat.openPath
         case .wheatOff:
             return LucideIcon_WheatOff.openPath
+        case .whistle:
+            return LucideIcon_Whistle.openPath
         case .wholeWord:
             return LucideIcon_WholeWord.openPath
         case .wifi:
@@ -10934,6 +10944,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailMinus.closedPath
         case .mailOpen:
             return LucideIcon_MailOpen.closedPath
+        case .mailPen:
+            return LucideIcon_MailPen.closedPath
         case .mailPlus:
             return LucideIcon_MailPlus.closedPath
         case .mailQuestionMark:
@@ -12502,6 +12514,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Wheat.closedPath
         case .wheatOff:
             return LucideIcon_WheatOff.closedPath
+        case .whistle:
+            return LucideIcon_Whistle.closedPath
         case .wholeWord:
             return LucideIcon_WholeWord.closedPath
         case .wifi:
@@ -18150,6 +18164,9 @@ public struct Lucide {
     /// Mail Open icon
     public static let mailOpen: LucideShape = LucideShape(combined: LucideIcon_MailOpen.combinedPath, open: LucideIcon_MailOpen.openPath, closed: LucideIcon_MailOpen.closedPath)
 
+    /// Mail Pen icon
+    public static let mailPen: LucideShape = LucideShape(combined: LucideIcon_MailPen.combinedPath, open: LucideIcon_MailPen.openPath, closed: LucideIcon_MailPen.closedPath)
+
     /// Mail Plus icon
     public static let mailPlus: LucideShape = LucideShape(combined: LucideIcon_MailPlus.combinedPath, open: LucideIcon_MailPlus.openPath, closed: LucideIcon_MailPlus.closedPath)
 
@@ -20502,6 +20519,9 @@ public struct Lucide {
     /// Wheat Off icon
     public static let wheatOff: LucideShape = LucideShape(combined: LucideIcon_WheatOff.combinedPath, open: LucideIcon_WheatOff.openPath, closed: LucideIcon_WheatOff.closedPath)
 
+    /// Whistle icon
+    public static let whistle: LucideShape = LucideShape(combined: LucideIcon_Whistle.combinedPath, open: LucideIcon_Whistle.openPath, closed: LucideIcon_Whistle.closedPath)
+
     /// Whole Word icon
     public static let wholeWord: LucideShape = LucideShape(combined: LucideIcon_WholeWord.combinedPath, open: LucideIcon_WholeWord.openPath, closed: LucideIcon_WholeWord.closedPath)
 
@@ -21742,10 +21762,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.8.3"
+    public static let libraryVersion = "0.8.4"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.38.0"
+    public static let lucideVersion = "1.39.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
