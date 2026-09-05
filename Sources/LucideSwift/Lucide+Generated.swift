@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.8.5
-//  Lucide Icons Version: 1.40.0
+//  Library Version: 0.8.6
+//  Lucide Icons Version: 1.41.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -302,6 +302,7 @@ public enum LucideIconName: String, CaseIterable {
     case camera
     case cameraOff
     case can
+    case canSoda
     case candy
     case candyCane
     case candyOff
@@ -529,6 +530,7 @@ public enum LucideIconName: String, CaseIterable {
     case creditCardCheck
     case creditCardMinus
     case creditCardPlus
+    case creditCardReader
     case creditCardX
     case croissant
     case crop
@@ -581,6 +583,7 @@ public enum LucideIconName: String, CaseIterable {
     case doorClosed
     case doorClosedLocked
     case doorOpen
+    case doorStairwell
     case dot
     case download
     case draftingCompass
@@ -605,6 +608,7 @@ public enum LucideIconName: String, CaseIterable {
     case ellipse
     case ellipsis
     case ellipsisVertical
+    case engine
     case equal
     case equalApproximately
     case equalNot
@@ -768,6 +772,8 @@ public enum LucideIconName: String, CaseIterable {
     case gavel
     case gem
     case georgianLari
+    case germ
+    case germOff
     case ghost
     case gift
     case gitBranch
@@ -1505,6 +1511,7 @@ public enum LucideIconName: String, CaseIterable {
     case squareDivide
     case squareDot
     case squareEqual
+    case squareExclamationPoint
     case squareFunction
     case squareKanban
     case squareLibrary
@@ -1665,7 +1672,6 @@ public enum LucideIconName: String, CaseIterable {
     case tramFront
     case transgender
     case trash
-    case trash2
     case treeDeciduous
     case treePalm
     case treePine
@@ -1746,6 +1752,8 @@ public enum LucideIconName: String, CaseIterable {
     case videoOff
     case videotape
     case view
+    case virus
+    case virusOff
     case voicemail
     case volleyball
     case volume
@@ -2394,6 +2402,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CameraOff.combinedPath
         case .can:
             return LucideIcon_Can.combinedPath
+        case .canSoda:
+            return LucideIcon_CanSoda.combinedPath
         case .candy:
             return LucideIcon_Candy.combinedPath
         case .candyCane:
@@ -2848,6 +2858,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CreditCardMinus.combinedPath
         case .creditCardPlus:
             return LucideIcon_CreditCardPlus.combinedPath
+        case .creditCardReader:
+            return LucideIcon_CreditCardReader.combinedPath
         case .creditCardX:
             return LucideIcon_CreditCardX.combinedPath
         case .croissant:
@@ -2952,6 +2964,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_DoorClosedLocked.combinedPath
         case .doorOpen:
             return LucideIcon_DoorOpen.combinedPath
+        case .doorStairwell:
+            return LucideIcon_DoorStairwell.combinedPath
         case .dot:
             return LucideIcon_Dot.combinedPath
         case .download:
@@ -3000,6 +3014,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Ellipsis.combinedPath
         case .ellipsisVertical:
             return LucideIcon_EllipsisVertical.combinedPath
+        case .engine:
+            return LucideIcon_Engine.combinedPath
         case .equal:
             return LucideIcon_Equal.combinedPath
         case .equalApproximately:
@@ -3326,6 +3342,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Gem.combinedPath
         case .georgianLari:
             return LucideIcon_GeorgianLari.combinedPath
+        case .germ:
+            return LucideIcon_Germ.combinedPath
+        case .germOff:
+            return LucideIcon_GermOff.combinedPath
         case .ghost:
             return LucideIcon_Ghost.combinedPath
         case .gift:
@@ -4800,6 +4820,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareDot.combinedPath
         case .squareEqual:
             return LucideIcon_SquareEqual.combinedPath
+        case .squareExclamationPoint:
+            return LucideIcon_SquareExclamationPoint.combinedPath
         case .squareFunction:
             return LucideIcon_SquareFunction.combinedPath
         case .squareKanban:
@@ -5120,8 +5142,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Transgender.combinedPath
         case .trash:
             return LucideIcon_Trash.combinedPath
-        case .trash2:
-            return LucideIcon_Trash2.combinedPath
         case .treeDeciduous:
             return LucideIcon_TreeDeciduous.combinedPath
         case .treePalm:
@@ -5282,6 +5302,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Videotape.combinedPath
         case .view:
             return LucideIcon_View.combinedPath
+        case .virus:
+            return LucideIcon_Virus.combinedPath
+        case .virusOff:
+            return LucideIcon_VirusOff.combinedPath
         case .voicemail:
             return LucideIcon_Voicemail.combinedPath
         case .volleyball:
@@ -6000,6 +6024,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CameraOff.openPath
         case .can:
             return LucideIcon_Can.openPath
+        case .canSoda:
+            return LucideIcon_CanSoda.openPath
         case .candy:
             return LucideIcon_Candy.openPath
         case .candyCane:
@@ -6454,6 +6480,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CreditCardMinus.openPath
         case .creditCardPlus:
             return LucideIcon_CreditCardPlus.openPath
+        case .creditCardReader:
+            return LucideIcon_CreditCardReader.openPath
         case .creditCardX:
             return LucideIcon_CreditCardX.openPath
         case .croissant:
@@ -6558,6 +6586,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_DoorClosedLocked.openPath
         case .doorOpen:
             return LucideIcon_DoorOpen.openPath
+        case .doorStairwell:
+            return LucideIcon_DoorStairwell.openPath
         case .dot:
             return LucideIcon_Dot.openPath
         case .download:
@@ -6606,6 +6636,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Ellipsis.openPath
         case .ellipsisVertical:
             return LucideIcon_EllipsisVertical.openPath
+        case .engine:
+            return LucideIcon_Engine.openPath
         case .equal:
             return LucideIcon_Equal.openPath
         case .equalApproximately:
@@ -6932,6 +6964,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Gem.openPath
         case .georgianLari:
             return LucideIcon_GeorgianLari.openPath
+        case .germ:
+            return LucideIcon_Germ.openPath
+        case .germOff:
+            return LucideIcon_GermOff.openPath
         case .ghost:
             return LucideIcon_Ghost.openPath
         case .gift:
@@ -8406,6 +8442,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareDot.openPath
         case .squareEqual:
             return LucideIcon_SquareEqual.openPath
+        case .squareExclamationPoint:
+            return LucideIcon_SquareExclamationPoint.openPath
         case .squareFunction:
             return LucideIcon_SquareFunction.openPath
         case .squareKanban:
@@ -8726,8 +8764,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Transgender.openPath
         case .trash:
             return LucideIcon_Trash.openPath
-        case .trash2:
-            return LucideIcon_Trash2.openPath
         case .treeDeciduous:
             return LucideIcon_TreeDeciduous.openPath
         case .treePalm:
@@ -8888,6 +8924,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Videotape.openPath
         case .view:
             return LucideIcon_View.openPath
+        case .virus:
+            return LucideIcon_Virus.openPath
+        case .virusOff:
+            return LucideIcon_VirusOff.openPath
         case .voicemail:
             return LucideIcon_Voicemail.openPath
         case .volleyball:
@@ -9606,6 +9646,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CameraOff.closedPath
         case .can:
             return LucideIcon_Can.closedPath
+        case .canSoda:
+            return LucideIcon_CanSoda.closedPath
         case .candy:
             return LucideIcon_Candy.closedPath
         case .candyCane:
@@ -10060,6 +10102,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CreditCardMinus.closedPath
         case .creditCardPlus:
             return LucideIcon_CreditCardPlus.closedPath
+        case .creditCardReader:
+            return LucideIcon_CreditCardReader.closedPath
         case .creditCardX:
             return LucideIcon_CreditCardX.closedPath
         case .croissant:
@@ -10164,6 +10208,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_DoorClosedLocked.closedPath
         case .doorOpen:
             return LucideIcon_DoorOpen.closedPath
+        case .doorStairwell:
+            return LucideIcon_DoorStairwell.closedPath
         case .dot:
             return LucideIcon_Dot.closedPath
         case .download:
@@ -10212,6 +10258,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Ellipsis.closedPath
         case .ellipsisVertical:
             return LucideIcon_EllipsisVertical.closedPath
+        case .engine:
+            return LucideIcon_Engine.closedPath
         case .equal:
             return LucideIcon_Equal.closedPath
         case .equalApproximately:
@@ -10538,6 +10586,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Gem.closedPath
         case .georgianLari:
             return LucideIcon_GeorgianLari.closedPath
+        case .germ:
+            return LucideIcon_Germ.closedPath
+        case .germOff:
+            return LucideIcon_GermOff.closedPath
         case .ghost:
             return LucideIcon_Ghost.closedPath
         case .gift:
@@ -12012,6 +12064,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareDot.closedPath
         case .squareEqual:
             return LucideIcon_SquareEqual.closedPath
+        case .squareExclamationPoint:
+            return LucideIcon_SquareExclamationPoint.closedPath
         case .squareFunction:
             return LucideIcon_SquareFunction.closedPath
         case .squareKanban:
@@ -12332,8 +12386,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Transgender.closedPath
         case .trash:
             return LucideIcon_Trash.closedPath
-        case .trash2:
-            return LucideIcon_Trash2.closedPath
         case .treeDeciduous:
             return LucideIcon_TreeDeciduous.closedPath
         case .treePalm:
@@ -12494,6 +12546,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Videotape.closedPath
         case .view:
             return LucideIcon_View.closedPath
+        case .virus:
+            return LucideIcon_Virus.closedPath
+        case .virusOff:
+            return LucideIcon_VirusOff.closedPath
         case .voicemail:
             return LucideIcon_Voicemail.closedPath
         case .volleyball:
@@ -16154,6 +16210,9 @@ public struct Lucide {
     /// Can icon
     public static let can: LucideShape = LucideShape(combined: LucideIcon_Can.combinedPath, open: LucideIcon_Can.openPath, closed: LucideIcon_Can.closedPath)
 
+    /// Can Soda icon
+    public static let canSoda: LucideShape = LucideShape(combined: LucideIcon_CanSoda.combinedPath, open: LucideIcon_CanSoda.openPath, closed: LucideIcon_CanSoda.closedPath)
+
     /// Candy icon
     public static let candy: LucideShape = LucideShape(combined: LucideIcon_Candy.combinedPath, open: LucideIcon_Candy.openPath, closed: LucideIcon_Candy.closedPath)
 
@@ -16835,6 +16894,9 @@ public struct Lucide {
     /// Credit Card Plus icon
     public static let creditCardPlus: LucideShape = LucideShape(combined: LucideIcon_CreditCardPlus.combinedPath, open: LucideIcon_CreditCardPlus.openPath, closed: LucideIcon_CreditCardPlus.closedPath)
 
+    /// Credit Card Reader icon
+    public static let creditCardReader: LucideShape = LucideShape(combined: LucideIcon_CreditCardReader.combinedPath, open: LucideIcon_CreditCardReader.openPath, closed: LucideIcon_CreditCardReader.closedPath)
+
     /// Credit Card X icon
     public static let creditCardX: LucideShape = LucideShape(combined: LucideIcon_CreditCardX.combinedPath, open: LucideIcon_CreditCardX.openPath, closed: LucideIcon_CreditCardX.closedPath)
 
@@ -16991,6 +17053,9 @@ public struct Lucide {
     /// Door Open icon
     public static let doorOpen: LucideShape = LucideShape(combined: LucideIcon_DoorOpen.combinedPath, open: LucideIcon_DoorOpen.openPath, closed: LucideIcon_DoorOpen.closedPath)
 
+    /// Door Stairwell icon
+    public static let doorStairwell: LucideShape = LucideShape(combined: LucideIcon_DoorStairwell.combinedPath, open: LucideIcon_DoorStairwell.openPath, closed: LucideIcon_DoorStairwell.closedPath)
+
     /// Dot icon
     public static let dot: LucideShape = LucideShape(combined: LucideIcon_Dot.combinedPath, open: LucideIcon_Dot.openPath, closed: LucideIcon_Dot.closedPath)
 
@@ -17062,6 +17127,9 @@ public struct Lucide {
 
     /// Ellipsis Vertical icon
     public static let ellipsisVertical: LucideShape = LucideShape(combined: LucideIcon_EllipsisVertical.combinedPath, open: LucideIcon_EllipsisVertical.openPath, closed: LucideIcon_EllipsisVertical.closedPath)
+
+    /// Engine icon
+    public static let engine: LucideShape = LucideShape(combined: LucideIcon_Engine.combinedPath, open: LucideIcon_Engine.openPath, closed: LucideIcon_Engine.closedPath)
 
     /// Equal icon
     public static let equal: LucideShape = LucideShape(combined: LucideIcon_Equal.combinedPath, open: LucideIcon_Equal.openPath, closed: LucideIcon_Equal.closedPath)
@@ -17551,6 +17619,12 @@ public struct Lucide {
 
     /// Georgian Lari icon
     public static let georgianLari: LucideShape = LucideShape(combined: LucideIcon_GeorgianLari.combinedPath, open: LucideIcon_GeorgianLari.openPath, closed: LucideIcon_GeorgianLari.closedPath)
+
+    /// Germ icon
+    public static let germ: LucideShape = LucideShape(combined: LucideIcon_Germ.combinedPath, open: LucideIcon_Germ.openPath, closed: LucideIcon_Germ.closedPath)
+
+    /// Germ Off icon
+    public static let germOff: LucideShape = LucideShape(combined: LucideIcon_GermOff.combinedPath, open: LucideIcon_GermOff.openPath, closed: LucideIcon_GermOff.closedPath)
 
     /// Ghost icon
     public static let ghost: LucideShape = LucideShape(combined: LucideIcon_Ghost.combinedPath, open: LucideIcon_Ghost.openPath, closed: LucideIcon_Ghost.closedPath)
@@ -19763,6 +19837,9 @@ public struct Lucide {
     /// Square Equal icon
     public static let squareEqual: LucideShape = LucideShape(combined: LucideIcon_SquareEqual.combinedPath, open: LucideIcon_SquareEqual.openPath, closed: LucideIcon_SquareEqual.closedPath)
 
+    /// Square Exclamation Point icon
+    public static let squareExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_SquareExclamationPoint.combinedPath, open: LucideIcon_SquareExclamationPoint.openPath, closed: LucideIcon_SquareExclamationPoint.closedPath)
+
     /// Square Function icon
     public static let squareFunction: LucideShape = LucideShape(combined: LucideIcon_SquareFunction.combinedPath, open: LucideIcon_SquareFunction.openPath, closed: LucideIcon_SquareFunction.closedPath)
 
@@ -20243,9 +20320,6 @@ public struct Lucide {
     /// Trash icon
     public static let trash: LucideShape = LucideShape(combined: LucideIcon_Trash.combinedPath, open: LucideIcon_Trash.openPath, closed: LucideIcon_Trash.closedPath)
 
-    /// Trash 2 icon
-    public static let trash2: LucideShape = LucideShape(combined: LucideIcon_Trash2.combinedPath, open: LucideIcon_Trash2.openPath, closed: LucideIcon_Trash2.closedPath)
-
     /// Tree Deciduous icon
     public static let treeDeciduous: LucideShape = LucideShape(combined: LucideIcon_TreeDeciduous.combinedPath, open: LucideIcon_TreeDeciduous.openPath, closed: LucideIcon_TreeDeciduous.closedPath)
 
@@ -20485,6 +20559,12 @@ public struct Lucide {
 
     /// View icon
     public static let view: LucideShape = LucideShape(combined: LucideIcon_View.combinedPath, open: LucideIcon_View.openPath, closed: LucideIcon_View.closedPath)
+
+    /// Virus icon
+    public static let virus: LucideShape = LucideShape(combined: LucideIcon_Virus.combinedPath, open: LucideIcon_Virus.openPath, closed: LucideIcon_Virus.closedPath)
+
+    /// Virus Off icon
+    public static let virusOff: LucideShape = LucideShape(combined: LucideIcon_VirusOff.combinedPath, open: LucideIcon_VirusOff.openPath, closed: LucideIcon_VirusOff.closedPath)
 
     /// Voicemail icon
     public static let voicemail: LucideShape = LucideShape(combined: LucideIcon_Voicemail.combinedPath, open: LucideIcon_Voicemail.openPath, closed: LucideIcon_Voicemail.closedPath)
@@ -21822,10 +21902,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.8.5"
+    public static let libraryVersion = "0.8.6"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.40.0"
+    public static let lucideVersion = "1.41.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
