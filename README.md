@@ -15,10 +15,7 @@
   <a href="https://buymeacoffee.com/ajaxjiang"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
 </p>
 
-> [!CAUTION]
-> **Active Development**: This repository is currently under active development. APIs and rendering behavior are subject to change.
-
-A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) with native SwiftUI support. The most comprehensive SwiftUI icon library — 2,112+ icons (1,738 regular + 374 experimental Lab) rendered as true vector Shapes from SVG path data, with zero runtime dependencies.
+A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) with native SwiftUI support. The most comprehensive SwiftUI icon library — 2,182 icons (1,808 regular + 374 experimental Lab) rendered as true vector Shapes from SVG path data, with zero runtime dependencies.
 
 **Package URL:** `https://github.com/ajaxjiang96/lucide-swift.git`
 
@@ -27,7 +24,7 @@ A vector-first, type-safe Swift package for [Lucide Icons](https://lucide.dev) w
 ## Features
 
 - **True Vector Rendering**: SVG paths converted to native SwiftUI `Shape` — scales infinitely to any size without pixelation
-- **Type-safe API**: 1,738+1808 enum cases with full Xcode autocomplete — compile-time verification prevents runtime icon-not-found errors
+- **Type-safe API**: 1,808 enum cases with full Xcode autocomplete — compile-time verification prevents runtime icon-not-found errors
 - **Lucide Lab Support**: Full integration of 374+ experimental icons from the [Lucide Lab](https://github.com/lucide-icons/lucide-lab) repository
 - **Zero Runtime Dependencies**: Pure Swift implementation, no external dependencies at runtime — just Swift and SwiftUI
 - **SwiftUI Native**: Built on SwiftUI's `Shape` protocol with full modifier support (`.stroke()`, `.fill()`, `.frame()`, etc.)
@@ -50,7 +47,7 @@ Add to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.2.0")
+    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.8.6")
 ]
 ```
 
@@ -183,7 +180,7 @@ LucideIcon(.heart, size: 48, absoluteStrokeWidth: true)  // 2px stroke (same!)
 - Access via `Lucide.house`, `Lucide.settings`, etc.
 
 **LucideIconName** - Type-safe enum
-- 1808 enum cases (e.g., `.house`, `.settings`, `.heart`)
+- 1,808 enum cases (e.g., `.house`, `.settings`, `.heart`)
 - `allCases` array for iteration
 - `rawValue` for string access
 
@@ -191,8 +188,8 @@ LucideIcon(.heart, size: 48, absoluteStrokeWidth: true)  // 2px stroke (same!)
 
 LucideSwift uses **dual versioning** to track both the library and the upstream Lucide icons:
 
-- **Library Version** (git tags): Independent semantic versioning for the Swift library itself (e.g., `1.0.0`, `1.1.0`)
-- **Upstream Version** (`.lucide-version`): Version of the Lucide icons bundled with each release (e.g., `1.7.0`, `1.8.0`)
+- **Library Version** (git tags): Independent semantic versioning for the Swift library itself (e.g., `0.8.6`)
+- **Upstream Version** (`.lucide-version`): Version of the Lucide icons bundled with each release (e.g., `1.41.0`)
 
 This allows independent bug fixes and features in the Swift library while still tracking which icon set is included.
 
@@ -203,8 +200,8 @@ Access version information programmatically:
 ```swift
 import LucideSwift
 
-print("Library: \(LucideVersions.libraryVersion)")  // e.g., "1.0.0"
-print("Icons: \(LucideVersions.lucideVersion)")     // e.g., "1.7.0"
+print("Library: \(LucideVersions.libraryVersion)")  // e.g., "0.8.6"
+print("Icons: \(LucideVersions.lucideVersion)")     // e.g., "1.41.0"
 ```
 
 ### Version Compatibility
@@ -224,15 +221,15 @@ Other Lucide packages for Swift use image assets (PDFs/PNGs) which can:
 This package generates pure Swift code from SVG paths:
 - **True vectors**: Native SwiftUI rendering at any resolution
 - **Type safety**: Compile-time verification prevents runtime icon-not-found errors
-- **Better tooling**: Xcode autocomplete shows all 1808 available icons
+- **Better tooling**: Xcode autocomplete shows all 1,808 available icons
 - **Faster at runtime**: Enum lookup is 7× faster than bundle lookup, Shape rendering is 2× faster than PDF rasterization
 
 ## Technical Details
 
-- **Total Icons**: 2182 icons (1808 regular + 374 Lab)
+- **Total Icons**: 2,182 icons (1,808 regular + 374 Lab)
 - **Filled Icons**: Experimental support included
 - **File Structure**: Each icon in its own Swift file under `Sources/LucideSwift/Icons/` for fast incremental compilation
-- **Generated Code**: ~140K lines of Swift path data across 2,102 files
+- **Generated Code**: ~144K lines of Swift path data across 2,182 files
 - **Build Time**: Parallel compilation of individual icon files scales across all cores
 - **Runtime Memory**: `static let` paths cached on first access, negligible overhead during view diffing
 - **Stroke Scaling**: Configurable via `strokeWidth` and `absoluteStrokeWidth` parameters
@@ -258,7 +255,7 @@ Comparison against [lucide-icons-swift](https://github.com/JakubMazur/lucide-ico
 
 Find the right icon at the official Lucide catalog:
 
-### [🔍 Browse all 1808 icons on lucide.dev/icons →](https://lucide.dev/icons)
+### [🔍 Browse all 1,808 icons on lucide.dev/icons →](https://lucide.dev/icons)
 
 The catalog includes visual previews, search, categories, and tags for every icon.
 
@@ -280,7 +277,7 @@ This package includes [`llms.txt`](llms.txt) and [`llms-full.txt`](llms-full.txt
 **Quick reference for AI assistants:**
 - **Package URL:** `https://github.com/ajaxjiang96/lucide-swift.git`
 - **Minimum Swift version:** 5.9
-- **SPM dependency:** `.package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.8.0")`
+- **SPM dependency:** `.package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.8.6")`
 - **Import:** `import LucideSwift`
 - **Main API:** `LucideIcon(.iconName)`, `LucideIcon(lab: .iconName)`, `Lucide.<iconName>`
 - **Upstream:** [Lucide Icons](https://lucide.dev) (ISC License)
