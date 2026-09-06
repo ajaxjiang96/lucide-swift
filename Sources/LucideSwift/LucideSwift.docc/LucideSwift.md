@@ -4,7 +4,7 @@ Beautiful & consistent icons, made for SwiftUI.
 
 ## Overview
 
-LucideSwift is a collection of 2,112+ high-quality, open-source icons for SwiftUI (1,738 regular + 374 Lab). It is a Swift implementation of the [Lucide](https://lucide.dev) icon set, providing type-safe, performant, and flexible icon components.
+LucideSwift is a collection of 2,182 high-quality, open-source icons for SwiftUI (1,808 regular + 374 Lab). It is a Swift implementation of the [Lucide](https://lucide.dev) icon set, providing type-safe, performant, and flexible icon components.
 
 ### Key Features
 

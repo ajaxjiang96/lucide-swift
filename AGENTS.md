@@ -158,4 +158,3 @@ For breaking changes or new features:
 ## Resources
 - Lucide Icons: https://lucide.dev
 - Upstream repo: https://github.com/lucide-icons/lucide
-b.com/lucide-icons/lucide

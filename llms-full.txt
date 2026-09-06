@@ -2,7 +2,7 @@
 
 > Generated for LLM context. See llms.txt for a concise version.
 > Package: https://github.com/ajaxjiang96/lucide-swift.git
-> Version: 0.7.4 | Lucide Icons: 1.21.0
+> Version: 0.8.6 | Lucide Icons: 1.41.0
 
 ## Overview
 
@@ -14,7 +14,7 @@ Key differentiator vs other Lucide Swift packages: this package generates pure S
 Shape code from SVG paths rather than bundling image assets (PDFs/PNGs). This means:
 - True vector rendering at any resolution
 - Compile-time verification of icon names
-- Xcode autocomplete for all 1,738+ regular icons + 374 Lab icons
+- Xcode autocomplete for all 1,808 regular icons + 374 Lab icons (2,182 total)
 - ~7× faster enum lookup vs bundle-based image lookup
 - ~2× faster rendering vs PDF rasterization
 
@@ -22,7 +22,7 @@ Shape code from SVG paths rather than bundling image assets (PDFs/PNGs). This me
 
 ```
 Package URL: https://github.com/ajaxjiang96/lucide-swift.git
-Minimum version: 0.2.0
+Recommended version: 0.8.6
 Swift tools version: 5.9
 ```
 
@@ -31,7 +31,7 @@ Swift tools version: 5.9
 Add to your `Package.swift`:
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.7.4")
+    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.8.6")
 ]
 ```
 
@@ -68,7 +68,7 @@ Sources/LucideSwift/
 ├── Lucide.swift               # LucideShape definition
 ├── Image+Lucide.swift         # Image(lucide:) extensions
 ├── Lucide+Generated.swift     # Auto-generated enums (DO NOT EDIT)
-└── Icons/                     # ~2,102 files, one per icon
+└── Icons/                     # ~2,182 files, one per icon
 Tests/LucideSwiftTests/
 Tools/
 ├── Sources/LucideGenerator/
@@ -165,14 +165,14 @@ Upstream Lucide uses kebab-case. This package converts to lowerCamelCase for Swi
 ### Version Info
 
 ```swift
-LucideVersions.libraryVersion     // e.g., "0.7.4"
-LucideVersions.lucideVersion      // e.g., "1.21.0"
-LucideVersions.lucideLabVersion   // e.g., "abc1234"
+LucideVersions.libraryVersion     // e.g., "0.8.6"
+LucideVersions.lucideVersion      // e.g., "1.41.0"
+LucideVersions.lucideLabVersion   // e.g., "34b6526"
 ```
 
 ## Technical Details
 
-- Generated Code: ~140K lines of Swift path data across ~2,102 files
+- Generated Code: ~144K lines of Swift path data across 2,182 files
 - Build Time: Parallel compilation of individual icon files scales across all cores
 - Runtime Memory: `static let` paths cached on first access; negligible diffing overhead
 - Binary Size: ~42.3 MB (full icon set, linker includes all due to switch-dispatch)
@@ -189,8 +189,8 @@ LucideVersions.lucideLabVersion   // e.g., "abc1234"
 ## Versioning Strategy
 
 Dual versioning:
-- `.library-version` — Semver for the Swift library API (e.g., 0.7.4)
-- `.lucide-version` — Upstream Lucide icons version (e.g., 1.21.0)
+- `.library-version` — Semver for the Swift library API (e.g., 0.8.6)
+- `.lucide-version` — Upstream Lucide icons version (e.g., 1.41.0)
 - `.lucide-lab-version` — Upstream Lucide Lab commit SHA
 - Auto-increments patch on icon sync; major/minor bumped manually for breaking changes
 

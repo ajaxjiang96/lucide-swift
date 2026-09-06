@@ -1,7 +1,7 @@
 # Lucide Swift
 
 > A vector-first, type-safe Swift package for Lucide Icons with native SwiftUI
-> support. 2,112+ icons rendered as native SwiftUI Shapes from SVG path data —
+> support. 2,182 icons (1,808 regular + 374 Lab) rendered as native SwiftUI Shapes from SVG path data —
 > zero runtime dependencies.
 
 ## Links
@@ -18,7 +18,7 @@
 Use LucideSwift when you need:
 - A SwiftUI icon library with native vector rendering (no PNG/PDF assets)
 - Type-safe, compile-time-verified icon names with Xcode autocomplete
-- Lucide icons (1,738+ regular + 374 Lab experimental)
+- Lucide icons (1,808 regular + 374 Lab experimental)
 - Multi-platform SwiftUI support: iOS 14+, macOS 11+, tvOS 14+, watchOS 7+, visionOS 1+
 - A zero-dependency runtime (no third-party packages at runtime)
 
@@ -33,7 +33,7 @@ Use LucideSwift when you need:
 ```swift
 // Package.swift
 dependencies: [
-    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.7.4")
+    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.8.6")
 ]
 
 // Your code
@@ -56,13 +56,13 @@ Label("Settings", lucide: .settings)
 - `LucideSwift` — Main library target: LucideIcon View, LucideShape protocol, generated icon data
 - `LucideGenerator` — Executable that fetches upstream SVG icons and generates Swift code
 - `PreviewGenerator` — Executable that renders preview screenshots
-- `Sources/LucideSwift/Icons/` — One file per icon for fast incremental compilation (~2,102 files)
+- `Sources/LucideSwift/Icons/` — One file per icon for fast incremental compilation (~2,182 files)
 - `Sources/LucideSwift/Lucide+Generated.swift` — Auto-generated enum definitions (DO NOT EDIT)
 
 ## Key types
 
 - `LucideIcon` — SwiftUI View; init via enum, string name, or LucideShape
-- `LucideIconName` — Enum with 1,738+ cases mapping to Lucide regular icons
+- `LucideIconName` — Enum with 1,808 cases mapping to Lucide regular icons
 - `LucideLabIconName` — Enum with 374+ cases mapping to Lucide Lab experimental icons
 - `LucideShape` — SwiftUI Shape protocol conformance for every icon
 - `LucideIconStyle` — `.stroked` (default) or `.filled` (experimental)
