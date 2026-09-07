@@ -354,7 +354,18 @@ private extension Character {
 
 private extension [SVGCommand] {
     var lastPoint: SVGPoint {
+        var afterClose = false
         for command in reversed() {
+            if case .end = command {
+                afterClose = true
+                continue
+            }
+            if afterClose {
+                if case let .moveTo(point) = command {
+                    return point
+                }
+                continue
+            }
             if let point = command.point {
                 return point
             }
