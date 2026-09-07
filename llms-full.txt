@@ -2,7 +2,7 @@
 
 > Generated for LLM context. See llms.txt for a concise version.
 > Package: https://github.com/ajaxjiang96/lucide-swift.git
-> Version: 0.8.6 | Lucide Icons: 1.41.0
+> Version: 0.9.0 | Lucide Icons: 1.41.0
 
 ## Overview
 
@@ -22,7 +22,7 @@ Shape code from SVG paths rather than bundling image assets (PDFs/PNGs). This me
 
 ```
 Package URL: https://github.com/ajaxjiang96/lucide-swift.git
-Recommended version: 0.8.6
+Recommended version: 0.9.0
 Swift tools version: 5.9
 ```
 
@@ -31,7 +31,7 @@ Swift tools version: 5.9
 Add to your `Package.swift`:
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.8.6")
+    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.9.0")
 ]
 ```
 
@@ -165,7 +165,7 @@ Upstream Lucide uses kebab-case. This package converts to lowerCamelCase for Swi
 ### Version Info
 
 ```swift
-LucideVersions.libraryVersion     // e.g., "0.8.6"
+LucideVersions.libraryVersion     // e.g., "0.9.0"
 LucideVersions.lucideVersion      // e.g., "1.41.0"
 LucideVersions.lucideLabVersion   // e.g., "34b6526"
 ```
@@ -189,7 +189,7 @@ LucideVersions.lucideLabVersion   // e.g., "34b6526"
 ## Versioning Strategy
 
 Dual versioning:
-- `.library-version` — Semver for the Swift library API (e.g., 0.8.6)
+- `.library-version` — Semver for the Swift library API (e.g., 0.9.0)
 - `.lucide-version` — Upstream Lucide icons version (e.g., 1.41.0)
 - `.lucide-lab-version` — Upstream Lucide Lab commit SHA
 - Auto-increments patch on icon sync; major/minor bumped manually for breaking changes

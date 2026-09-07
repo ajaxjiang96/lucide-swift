@@ -47,7 +47,7 @@ Add to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.8.6")
+    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.9.0")
 ]
 ```
 
@@ -188,7 +188,7 @@ LucideIcon(.heart, size: 48, absoluteStrokeWidth: true)  // 2px stroke (same!)
 
 LucideSwift uses **dual versioning** to track both the library and the upstream Lucide icons:
 
-- **Library Version** (git tags): Independent semantic versioning for the Swift library itself (e.g., `0.8.6`)
+- **Library Version** (git tags): Independent semantic versioning for the Swift library itself (e.g., `0.9.0`)
 - **Upstream Version** (`.lucide-version`): Version of the Lucide icons bundled with each release (e.g., `1.41.0`)
 
 This allows independent bug fixes and features in the Swift library while still tracking which icon set is included.
@@ -200,7 +200,7 @@ Access version information programmatically:
 ```swift
 import LucideSwift
 
-print("Library: \(LucideVersions.libraryVersion)")  // e.g., "0.8.6"
+print("Library: \(LucideVersions.libraryVersion)")  // e.g., "0.9.0"
 print("Icons: \(LucideVersions.lucideVersion)")     // e.g., "1.41.0"
 ```
 
@@ -277,7 +277,7 @@ This package includes [`llms.txt`](llms.txt) and [`llms-full.txt`](llms-full.txt
 **Quick reference for AI assistants:**
 - **Package URL:** `https://github.com/ajaxjiang96/lucide-swift.git`
 - **Minimum Swift version:** 5.9
-- **SPM dependency:** `.package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.8.6")`
+- **SPM dependency:** `.package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.9.0")`
 - **Import:** `import LucideSwift`
 - **Main API:** `LucideIcon(.iconName)`, `LucideIcon(lab: .iconName)`, `Lucide.<iconName>`
 - **Upstream:** [Lucide Icons](https://lucide.dev) (ISC License)
