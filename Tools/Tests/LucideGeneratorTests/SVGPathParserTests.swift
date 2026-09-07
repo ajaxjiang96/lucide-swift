@@ -4,7 +4,7 @@
 //
 
 import XCTest
-import LucideGenerator
+@testable import LucideGenerator
 
 final class SVGPathParserTests: XCTestCase {
 
@@ -75,5 +75,20 @@ final class SVGPathParserTests: XCTestCase {
 
         // Ellipse non-self-closing + single quotes
         XCTAssertTrue(paths.contains("M7.0 12.0 A5.0 3.0 0 1 0 17.0 12.0 A5.0 3.0 0 1 0 7.0 12.0"))
+    }
+
+    func testCompactArcFlagsAreGenerated() {
+        let icons = [
+            ("calendar-clock", "M21 7.338V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h2.338"),
+            ("calendar-fold", "M21 15V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h10v-5a1 1 0 011-1za2.4 2.4 0 01-.706 1.706l-3.588 3.588A2.4 2.4 0 0115 21"),
+            ("calendar-search", "M21 10.69V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h7.25")
+        ]
+
+        for (name, path) in icons {
+            let source = SwiftCodeGenerator.generateIconFile(
+                icon: Icon(name: name, pathStrings: [path], type: .regular)
+            )
+            XCTAssertTrue(source.contains("CGPoint(x: 5.0, y: 3.0)"), name)
+        }
     }
 }
