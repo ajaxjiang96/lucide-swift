@@ -182,6 +182,14 @@ public struct SVGPath: Hashable, Sendable {
             throw SVGError.unexpectedToken(number, at: index)
         }
 
+        func splitPackedArcFlagIfNeeded() throws {
+            if (token == "a" || token == "A"),
+               (numbers.count % 7 == 3 || numbers.count % 7 == 4),
+               !number.isEmpty {
+                try processNumber()
+            }
+        }
+
         func processCommand() throws {
             repeat {
                 let command: SVGCommand
@@ -211,13 +219,19 @@ public struct SVGPath: Hashable, Sendable {
             let char = unicodeScalars[i]
             switch char {
             case "0" ... "9", "E", "e":
+                // SVG arc flags are single digits and may be packed with the
+                // following flag or coordinate (for example, `a1 1 0 011-1`).
+                // Split a pending flag before consuming the next digit.
+                try splitPackedArcFlagIfNeeded()
                 number.append(Character(char))
             case ".":
+                try splitPackedArcFlagIfNeeded()
                 if number.contains(".") {
                     try processNumber()
                 }
                 number.append(".")
             case "-", "+":
+                try splitPackedArcFlagIfNeeded()
                 if let last = number.last, !"eE".contains(last) {
                     try processNumber()
                 }
@@ -340,7 +354,18 @@ private extension Character {
 
 private extension [SVGCommand] {
     var lastPoint: SVGPoint {
+        var afterClose = false
         for command in reversed() {
+            if case .end = command {
+                afterClose = true
+                continue
+            }
+            if afterClose {
+                if case let .moveTo(point) = command {
+                    return point
+                }
+                continue
+            }
             if let point = command.point {
                 return point
             }

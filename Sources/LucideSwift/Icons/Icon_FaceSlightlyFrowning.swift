@@ -18,6 +18,8 @@ static let combinedPath: Path = {
 path.addLine(to: CGPoint(x: 15.0, y: 9.0))
 path.move(to: CGPoint(x: 9.0, y: 10.0))
 path.addLine(to: CGPoint(x: 9.0, y: 9.0))
+path.move(to: CGPoint(x: 9.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 16.0), control1: CGPoint(x: 10.777777777777779, y: 14.666666666666666), control2: CGPoint(x: 13.222222222222221, y: 14.666666666666668))
 path.move(to: CGPoint(x: 2.0, y: 12.0))
 path.addCurve(to: CGPoint(x: 11.999999999999998, y: 22.0), control1: CGPoint(x: 2.0, y: 17.522847498307932), control2: CGPoint(x: 6.477152501692063, y: 22.0))
 path.addCurve(to: CGPoint(x: 22.0, y: 12.000000000000002), control1: CGPoint(x: 17.522847498307932, y: 22.0), control2: CGPoint(x: 22.0, y: 17.522847498307936))
@@ -32,6 +34,8 @@ static let openPath: Path = {
 path.addLine(to: CGPoint(x: 15.0, y: 9.0))
 path.move(to: CGPoint(x: 9.0, y: 10.0))
 path.addLine(to: CGPoint(x: 9.0, y: 9.0))
+path.move(to: CGPoint(x: 9.0, y: 16.0))
+path.addCurve(to: CGPoint(x: 15.0, y: 16.0), control1: CGPoint(x: 10.777777777777779, y: 14.666666666666666), control2: CGPoint(x: 13.222222222222221, y: 14.666666666666668))
     return path
 }()
 /// Face Slightly Frowning icon closed subpaths
