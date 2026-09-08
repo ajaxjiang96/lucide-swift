@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.0
-//  Lucide Icons Version: 1.41.0
+//  Library Version: 0.9.1
+//  Lucide Icons Version: 1.42.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -395,6 +395,7 @@ public enum LucideIconName: String, CaseIterable {
     case circleChevronRight
     case circleChevronUp
     case circleDashed
+    case circleDashedCheck
     case circleDivide
     case circleDollarSign
     case circleDot
@@ -579,6 +580,7 @@ public enum LucideIconName: String, CaseIterable {
     case dock
     case dog
     case dollarSign
+    case dome
     case donut
     case doorClosed
     case doorClosedLocked
@@ -611,6 +613,7 @@ public enum LucideIconName: String, CaseIterable {
     case engine
     case equal
     case equalApproximately
+    case equalApproximatelyNot
     case equalNot
     case eraser
     case ethernetPort
@@ -768,6 +771,8 @@ public enum LucideIconName: String, CaseIterable {
     case gamepad
     case gamepad2
     case gamepadDirectional
+    case gapHorizontal
+    case gapVertical
     case gauge
     case gavel
     case gem
@@ -1672,6 +1677,7 @@ public enum LucideIconName: String, CaseIterable {
     case tramFront
     case transgender
     case trash
+    case trashOff
     case treeDeciduous
     case treePalm
     case treePine
@@ -1713,6 +1719,7 @@ public enum LucideIconName: String, CaseIterable {
     case user
     case userCheck
     case userCog
+    case userGroup
     case userKey
     case userLock
     case userMinus
@@ -1722,6 +1729,7 @@ public enum LucideIconName: String, CaseIterable {
     case userRoundArrowLeft
     case userRoundCheck
     case userRoundCog
+    case userRoundGroup
     case userRoundKey
     case userRoundMinus
     case userRoundPen
@@ -2588,6 +2596,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleChevronUp.combinedPath
         case .circleDashed:
             return LucideIcon_CircleDashed.combinedPath
+        case .circleDashedCheck:
+            return LucideIcon_CircleDashedCheck.combinedPath
         case .circleDivide:
             return LucideIcon_CircleDivide.combinedPath
         case .circleDollarSign:
@@ -2956,6 +2966,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Dog.combinedPath
         case .dollarSign:
             return LucideIcon_DollarSign.combinedPath
+        case .dome:
+            return LucideIcon_Dome.combinedPath
         case .donut:
             return LucideIcon_Donut.combinedPath
         case .doorClosed:
@@ -3020,6 +3032,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Equal.combinedPath
         case .equalApproximately:
             return LucideIcon_EqualApproximately.combinedPath
+        case .equalApproximatelyNot:
+            return LucideIcon_EqualApproximatelyNot.combinedPath
         case .equalNot:
             return LucideIcon_EqualNot.combinedPath
         case .eraser:
@@ -3334,6 +3348,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Gamepad2.combinedPath
         case .gamepadDirectional:
             return LucideIcon_GamepadDirectional.combinedPath
+        case .gapHorizontal:
+            return LucideIcon_GapHorizontal.combinedPath
+        case .gapVertical:
+            return LucideIcon_GapVertical.combinedPath
         case .gauge:
             return LucideIcon_Gauge.combinedPath
         case .gavel:
@@ -5142,6 +5160,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Transgender.combinedPath
         case .trash:
             return LucideIcon_Trash.combinedPath
+        case .trashOff:
+            return LucideIcon_TrashOff.combinedPath
         case .treeDeciduous:
             return LucideIcon_TreeDeciduous.combinedPath
         case .treePalm:
@@ -5224,6 +5244,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserCheck.combinedPath
         case .userCog:
             return LucideIcon_UserCog.combinedPath
+        case .userGroup:
+            return LucideIcon_UserGroup.combinedPath
         case .userKey:
             return LucideIcon_UserKey.combinedPath
         case .userLock:
@@ -5242,6 +5264,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundCheck.combinedPath
         case .userRoundCog:
             return LucideIcon_UserRoundCog.combinedPath
+        case .userRoundGroup:
+            return LucideIcon_UserRoundGroup.combinedPath
         case .userRoundKey:
             return LucideIcon_UserRoundKey.combinedPath
         case .userRoundMinus:
@@ -6210,6 +6234,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleChevronUp.openPath
         case .circleDashed:
             return LucideIcon_CircleDashed.openPath
+        case .circleDashedCheck:
+            return LucideIcon_CircleDashedCheck.openPath
         case .circleDivide:
             return LucideIcon_CircleDivide.openPath
         case .circleDollarSign:
@@ -6578,6 +6604,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Dog.openPath
         case .dollarSign:
             return LucideIcon_DollarSign.openPath
+        case .dome:
+            return LucideIcon_Dome.openPath
         case .donut:
             return LucideIcon_Donut.openPath
         case .doorClosed:
@@ -6642,6 +6670,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Equal.openPath
         case .equalApproximately:
             return LucideIcon_EqualApproximately.openPath
+        case .equalApproximatelyNot:
+            return LucideIcon_EqualApproximatelyNot.openPath
         case .equalNot:
             return LucideIcon_EqualNot.openPath
         case .eraser:
@@ -6956,6 +6986,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Gamepad2.openPath
         case .gamepadDirectional:
             return LucideIcon_GamepadDirectional.openPath
+        case .gapHorizontal:
+            return LucideIcon_GapHorizontal.openPath
+        case .gapVertical:
+            return LucideIcon_GapVertical.openPath
         case .gauge:
             return LucideIcon_Gauge.openPath
         case .gavel:
@@ -8764,6 +8798,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Transgender.openPath
         case .trash:
             return LucideIcon_Trash.openPath
+        case .trashOff:
+            return LucideIcon_TrashOff.openPath
         case .treeDeciduous:
             return LucideIcon_TreeDeciduous.openPath
         case .treePalm:
@@ -8846,6 +8882,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserCheck.openPath
         case .userCog:
             return LucideIcon_UserCog.openPath
+        case .userGroup:
+            return LucideIcon_UserGroup.openPath
         case .userKey:
             return LucideIcon_UserKey.openPath
         case .userLock:
@@ -8864,6 +8902,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundCheck.openPath
         case .userRoundCog:
             return LucideIcon_UserRoundCog.openPath
+        case .userRoundGroup:
+            return LucideIcon_UserRoundGroup.openPath
         case .userRoundKey:
             return LucideIcon_UserRoundKey.openPath
         case .userRoundMinus:
@@ -9832,6 +9872,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleChevronUp.closedPath
         case .circleDashed:
             return LucideIcon_CircleDashed.closedPath
+        case .circleDashedCheck:
+            return LucideIcon_CircleDashedCheck.closedPath
         case .circleDivide:
             return LucideIcon_CircleDivide.closedPath
         case .circleDollarSign:
@@ -10200,6 +10242,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Dog.closedPath
         case .dollarSign:
             return LucideIcon_DollarSign.closedPath
+        case .dome:
+            return LucideIcon_Dome.closedPath
         case .donut:
             return LucideIcon_Donut.closedPath
         case .doorClosed:
@@ -10264,6 +10308,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Equal.closedPath
         case .equalApproximately:
             return LucideIcon_EqualApproximately.closedPath
+        case .equalApproximatelyNot:
+            return LucideIcon_EqualApproximatelyNot.closedPath
         case .equalNot:
             return LucideIcon_EqualNot.closedPath
         case .eraser:
@@ -10578,6 +10624,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Gamepad2.closedPath
         case .gamepadDirectional:
             return LucideIcon_GamepadDirectional.closedPath
+        case .gapHorizontal:
+            return LucideIcon_GapHorizontal.closedPath
+        case .gapVertical:
+            return LucideIcon_GapVertical.closedPath
         case .gauge:
             return LucideIcon_Gauge.closedPath
         case .gavel:
@@ -12386,6 +12436,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Transgender.closedPath
         case .trash:
             return LucideIcon_Trash.closedPath
+        case .trashOff:
+            return LucideIcon_TrashOff.closedPath
         case .treeDeciduous:
             return LucideIcon_TreeDeciduous.closedPath
         case .treePalm:
@@ -12468,6 +12520,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserCheck.closedPath
         case .userCog:
             return LucideIcon_UserCog.closedPath
+        case .userGroup:
+            return LucideIcon_UserGroup.closedPath
         case .userKey:
             return LucideIcon_UserKey.closedPath
         case .userLock:
@@ -12486,6 +12540,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundCheck.closedPath
         case .userRoundCog:
             return LucideIcon_UserRoundCog.closedPath
+        case .userRoundGroup:
+            return LucideIcon_UserRoundGroup.closedPath
         case .userRoundKey:
             return LucideIcon_UserRoundKey.closedPath
         case .userRoundMinus:
@@ -16489,6 +16545,9 @@ public struct Lucide {
     /// Circle Dashed icon
     public static let circleDashed: LucideShape = LucideShape(combined: LucideIcon_CircleDashed.combinedPath, open: LucideIcon_CircleDashed.openPath, closed: LucideIcon_CircleDashed.closedPath)
 
+    /// Circle Dashed Check icon
+    public static let circleDashedCheck: LucideShape = LucideShape(combined: LucideIcon_CircleDashedCheck.combinedPath, open: LucideIcon_CircleDashedCheck.openPath, closed: LucideIcon_CircleDashedCheck.closedPath)
+
     /// Circle Divide icon
     public static let circleDivide: LucideShape = LucideShape(combined: LucideIcon_CircleDivide.combinedPath, open: LucideIcon_CircleDivide.openPath, closed: LucideIcon_CircleDivide.closedPath)
 
@@ -17041,6 +17100,9 @@ public struct Lucide {
     /// Dollar Sign icon
     public static let dollarSign: LucideShape = LucideShape(combined: LucideIcon_DollarSign.combinedPath, open: LucideIcon_DollarSign.openPath, closed: LucideIcon_DollarSign.closedPath)
 
+    /// Dome icon
+    public static let dome: LucideShape = LucideShape(combined: LucideIcon_Dome.combinedPath, open: LucideIcon_Dome.openPath, closed: LucideIcon_Dome.closedPath)
+
     /// Donut icon
     public static let donut: LucideShape = LucideShape(combined: LucideIcon_Donut.combinedPath, open: LucideIcon_Donut.openPath, closed: LucideIcon_Donut.closedPath)
 
@@ -17136,6 +17198,9 @@ public struct Lucide {
 
     /// Equal Approximately icon
     public static let equalApproximately: LucideShape = LucideShape(combined: LucideIcon_EqualApproximately.combinedPath, open: LucideIcon_EqualApproximately.openPath, closed: LucideIcon_EqualApproximately.closedPath)
+
+    /// Equal Approximately Not icon
+    public static let equalApproximatelyNot: LucideShape = LucideShape(combined: LucideIcon_EqualApproximatelyNot.combinedPath, open: LucideIcon_EqualApproximatelyNot.openPath, closed: LucideIcon_EqualApproximatelyNot.closedPath)
 
     /// Equal Not icon
     public static let equalNot: LucideShape = LucideShape(combined: LucideIcon_EqualNot.combinedPath, open: LucideIcon_EqualNot.openPath, closed: LucideIcon_EqualNot.closedPath)
@@ -17607,6 +17672,12 @@ public struct Lucide {
 
     /// Gamepad Directional icon
     public static let gamepadDirectional: LucideShape = LucideShape(combined: LucideIcon_GamepadDirectional.combinedPath, open: LucideIcon_GamepadDirectional.openPath, closed: LucideIcon_GamepadDirectional.closedPath)
+
+    /// Gap Horizontal icon
+    public static let gapHorizontal: LucideShape = LucideShape(combined: LucideIcon_GapHorizontal.combinedPath, open: LucideIcon_GapHorizontal.openPath, closed: LucideIcon_GapHorizontal.closedPath)
+
+    /// Gap Vertical icon
+    public static let gapVertical: LucideShape = LucideShape(combined: LucideIcon_GapVertical.combinedPath, open: LucideIcon_GapVertical.openPath, closed: LucideIcon_GapVertical.closedPath)
 
     /// Gauge icon
     public static let gauge: LucideShape = LucideShape(combined: LucideIcon_Gauge.combinedPath, open: LucideIcon_Gauge.openPath, closed: LucideIcon_Gauge.closedPath)
@@ -20320,6 +20391,9 @@ public struct Lucide {
     /// Trash icon
     public static let trash: LucideShape = LucideShape(combined: LucideIcon_Trash.combinedPath, open: LucideIcon_Trash.openPath, closed: LucideIcon_Trash.closedPath)
 
+    /// Trash Off icon
+    public static let trashOff: LucideShape = LucideShape(combined: LucideIcon_TrashOff.combinedPath, open: LucideIcon_TrashOff.openPath, closed: LucideIcon_TrashOff.closedPath)
+
     /// Tree Deciduous icon
     public static let treeDeciduous: LucideShape = LucideShape(combined: LucideIcon_TreeDeciduous.combinedPath, open: LucideIcon_TreeDeciduous.openPath, closed: LucideIcon_TreeDeciduous.closedPath)
 
@@ -20443,6 +20517,9 @@ public struct Lucide {
     /// User Cog icon
     public static let userCog: LucideShape = LucideShape(combined: LucideIcon_UserCog.combinedPath, open: LucideIcon_UserCog.openPath, closed: LucideIcon_UserCog.closedPath)
 
+    /// User Group icon
+    public static let userGroup: LucideShape = LucideShape(combined: LucideIcon_UserGroup.combinedPath, open: LucideIcon_UserGroup.openPath, closed: LucideIcon_UserGroup.closedPath)
+
     /// User Key icon
     public static let userKey: LucideShape = LucideShape(combined: LucideIcon_UserKey.combinedPath, open: LucideIcon_UserKey.openPath, closed: LucideIcon_UserKey.closedPath)
 
@@ -20469,6 +20546,9 @@ public struct Lucide {
 
     /// User Round Cog icon
     public static let userRoundCog: LucideShape = LucideShape(combined: LucideIcon_UserRoundCog.combinedPath, open: LucideIcon_UserRoundCog.openPath, closed: LucideIcon_UserRoundCog.closedPath)
+
+    /// User Round Group icon
+    public static let userRoundGroup: LucideShape = LucideShape(combined: LucideIcon_UserRoundGroup.combinedPath, open: LucideIcon_UserRoundGroup.openPath, closed: LucideIcon_UserRoundGroup.closedPath)
 
     /// User Round Key icon
     public static let userRoundKey: LucideShape = LucideShape(combined: LucideIcon_UserRoundKey.combinedPath, open: LucideIcon_UserRoundKey.openPath, closed: LucideIcon_UserRoundKey.closedPath)
@@ -21902,10 +21982,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.0"
+    public static let libraryVersion = "0.9.1"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.41.0"
+    public static let lucideVersion = "1.42.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
