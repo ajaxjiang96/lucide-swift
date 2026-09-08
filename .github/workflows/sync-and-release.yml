@@ -187,7 +187,7 @@ jobs:
         sed -i '' "s|from: \"[0-9.]*\"|from: \"${NEW_VERSION}\"|g" README.md
         sed -i '' "s|from: \"[0-9.]*\"|from: \"${NEW_VERSION}\"|g" llms.txt
         sed -i '' "s|from: \"[0-9.]*\"|from: \"${NEW_VERSION}\"|g" llms-full.txt
-        sed -i '' "s|> Version: [0-9.]* | Lucide Icons: [0-9.]*|> Version: ${NEW_VERSION} | Lucide Icons: ${BADGE_VERSION}|g" llms-full.txt
+        sed -i '' "s#> Version: [0-9.]* | Lucide Icons: [0-9.]*#> Version: ${NEW_VERSION} | Lucide Icons: ${BADGE_VERSION}#g" llms-full.txt
         echo "Docs updated: Library ${NEW_VERSION}, Lucide ${BADGE_VERSION}, ${REGULAR_COUNT} regular + ${LAB_COUNT} lab = ${TOTAL_COUNT} total"
 
     - name: Generate Preview Screenshot
