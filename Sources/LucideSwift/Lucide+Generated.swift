@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.1
-//  Lucide Icons Version: 1.42.0
+//  Library Version: 0.9.2
+//  Lucide Icons Version: 1.43.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -317,6 +317,8 @@ public enum LucideIconName: String, CaseIterable {
     case caravan
     case cardSim
     case carrot
+    case carton
+    case cartonOff
     case caseLower
     case caseSensitive
     case caseUpper
@@ -1643,6 +1645,7 @@ public enum LucideIconName: String, CaseIterable {
     case thermometerSun
     case thumbsDown
     case thumbsUp
+    case ticTacToe
     case ticket
     case ticketCheck
     case ticketMinus
@@ -2440,6 +2443,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CardSim.combinedPath
         case .carrot:
             return LucideIcon_Carrot.combinedPath
+        case .carton:
+            return LucideIcon_Carton.combinedPath
+        case .cartonOff:
+            return LucideIcon_CartonOff.combinedPath
         case .caseLower:
             return LucideIcon_CaseLower.combinedPath
         case .caseSensitive:
@@ -5092,6 +5099,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ThumbsDown.combinedPath
         case .thumbsUp:
             return LucideIcon_ThumbsUp.combinedPath
+        case .ticTacToe:
+            return LucideIcon_TicTacToe.combinedPath
         case .ticket:
             return LucideIcon_Ticket.combinedPath
         case .ticketCheck:
@@ -6078,6 +6087,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CardSim.openPath
         case .carrot:
             return LucideIcon_Carrot.openPath
+        case .carton:
+            return LucideIcon_Carton.openPath
+        case .cartonOff:
+            return LucideIcon_CartonOff.openPath
         case .caseLower:
             return LucideIcon_CaseLower.openPath
         case .caseSensitive:
@@ -8730,6 +8743,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ThumbsDown.openPath
         case .thumbsUp:
             return LucideIcon_ThumbsUp.openPath
+        case .ticTacToe:
+            return LucideIcon_TicTacToe.openPath
         case .ticket:
             return LucideIcon_Ticket.openPath
         case .ticketCheck:
@@ -9716,6 +9731,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CardSim.closedPath
         case .carrot:
             return LucideIcon_Carrot.closedPath
+        case .carton:
+            return LucideIcon_Carton.closedPath
+        case .cartonOff:
+            return LucideIcon_CartonOff.closedPath
         case .caseLower:
             return LucideIcon_CaseLower.closedPath
         case .caseSensitive:
@@ -12368,6 +12387,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ThumbsDown.closedPath
         case .thumbsUp:
             return LucideIcon_ThumbsUp.closedPath
+        case .ticTacToe:
+            return LucideIcon_TicTacToe.closedPath
         case .ticket:
             return LucideIcon_Ticket.closedPath
         case .ticketCheck:
@@ -16310,6 +16331,12 @@ public struct Lucide {
 
     /// Carrot icon
     public static let carrot: LucideShape = LucideShape(combined: LucideIcon_Carrot.combinedPath, open: LucideIcon_Carrot.openPath, closed: LucideIcon_Carrot.closedPath)
+
+    /// Carton icon
+    public static let carton: LucideShape = LucideShape(combined: LucideIcon_Carton.combinedPath, open: LucideIcon_Carton.openPath, closed: LucideIcon_Carton.closedPath)
+
+    /// Carton Off icon
+    public static let cartonOff: LucideShape = LucideShape(combined: LucideIcon_CartonOff.combinedPath, open: LucideIcon_CartonOff.openPath, closed: LucideIcon_CartonOff.closedPath)
 
     /// Case Lower icon
     public static let caseLower: LucideShape = LucideShape(combined: LucideIcon_CaseLower.combinedPath, open: LucideIcon_CaseLower.openPath, closed: LucideIcon_CaseLower.closedPath)
@@ -20289,6 +20316,9 @@ public struct Lucide {
     /// Thumbs Up icon
     public static let thumbsUp: LucideShape = LucideShape(combined: LucideIcon_ThumbsUp.combinedPath, open: LucideIcon_ThumbsUp.openPath, closed: LucideIcon_ThumbsUp.closedPath)
 
+    /// Tic Tac Toe icon
+    public static let ticTacToe: LucideShape = LucideShape(combined: LucideIcon_TicTacToe.combinedPath, open: LucideIcon_TicTacToe.openPath, closed: LucideIcon_TicTacToe.closedPath)
+
     /// Ticket icon
     public static let ticket: LucideShape = LucideShape(combined: LucideIcon_Ticket.combinedPath, open: LucideIcon_Ticket.openPath, closed: LucideIcon_Ticket.closedPath)
 
@@ -21982,10 +22012,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.1"
+    public static let libraryVersion = "0.9.2"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.42.0"
+    public static let lucideVersion = "1.43.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
