@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.2
-//  Lucide Icons Version: 1.43.0
+//  Library Version: 0.9.3
+//  Lucide Icons Version: 1.44.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -715,8 +715,6 @@ public enum LucideIconName: String, CaseIterable {
     case flaskConical
     case flaskConicalOff
     case flaskRound
-    case flipHorizontal2
-    case flipVertical2
     case flower
     case flower2
     case focus
@@ -1664,6 +1662,8 @@ public enum LucideIconName: String, CaseIterable {
     case toilet
     case toolCase
     case toolbox
+    case toothbrush
+    case toothbrushSparkles
     case tornado
     case torus
     case touchpad
@@ -1692,6 +1692,8 @@ public enum LucideIconName: String, CaseIterable {
     case triangleAlert
     case triangleDashed
     case triangleRight
+    case trianglesCenterlineDashedHorizontal
+    case trianglesCenterlineDashedVertical
     case trophy
     case truck
     case truckElectric
@@ -3239,10 +3241,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FlaskConicalOff.combinedPath
         case .flaskRound:
             return LucideIcon_FlaskRound.combinedPath
-        case .flipHorizontal2:
-            return LucideIcon_FlipHorizontal2.combinedPath
-        case .flipVertical2:
-            return LucideIcon_FlipVertical2.combinedPath
         case .flower:
             return LucideIcon_Flower.combinedPath
         case .flower2:
@@ -5137,6 +5135,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ToolCase.combinedPath
         case .toolbox:
             return LucideIcon_Toolbox.combinedPath
+        case .toothbrush:
+            return LucideIcon_Toothbrush.combinedPath
+        case .toothbrushSparkles:
+            return LucideIcon_ToothbrushSparkles.combinedPath
         case .tornado:
             return LucideIcon_Tornado.combinedPath
         case .torus:
@@ -5193,6 +5195,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TriangleDashed.combinedPath
         case .triangleRight:
             return LucideIcon_TriangleRight.combinedPath
+        case .trianglesCenterlineDashedHorizontal:
+            return LucideIcon_TrianglesCenterlineDashedHorizontal.combinedPath
+        case .trianglesCenterlineDashedVertical:
+            return LucideIcon_TrianglesCenterlineDashedVertical.combinedPath
         case .trophy:
             return LucideIcon_Trophy.combinedPath
         case .truck:
@@ -6883,10 +6889,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FlaskConicalOff.openPath
         case .flaskRound:
             return LucideIcon_FlaskRound.openPath
-        case .flipHorizontal2:
-            return LucideIcon_FlipHorizontal2.openPath
-        case .flipVertical2:
-            return LucideIcon_FlipVertical2.openPath
         case .flower:
             return LucideIcon_Flower.openPath
         case .flower2:
@@ -8781,6 +8783,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ToolCase.openPath
         case .toolbox:
             return LucideIcon_Toolbox.openPath
+        case .toothbrush:
+            return LucideIcon_Toothbrush.openPath
+        case .toothbrushSparkles:
+            return LucideIcon_ToothbrushSparkles.openPath
         case .tornado:
             return LucideIcon_Tornado.openPath
         case .torus:
@@ -8837,6 +8843,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TriangleDashed.openPath
         case .triangleRight:
             return LucideIcon_TriangleRight.openPath
+        case .trianglesCenterlineDashedHorizontal:
+            return LucideIcon_TrianglesCenterlineDashedHorizontal.openPath
+        case .trianglesCenterlineDashedVertical:
+            return LucideIcon_TrianglesCenterlineDashedVertical.openPath
         case .trophy:
             return LucideIcon_Trophy.openPath
         case .truck:
@@ -10527,10 +10537,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FlaskConicalOff.closedPath
         case .flaskRound:
             return LucideIcon_FlaskRound.closedPath
-        case .flipHorizontal2:
-            return LucideIcon_FlipHorizontal2.closedPath
-        case .flipVertical2:
-            return LucideIcon_FlipVertical2.closedPath
         case .flower:
             return LucideIcon_Flower.closedPath
         case .flower2:
@@ -12425,6 +12431,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ToolCase.closedPath
         case .toolbox:
             return LucideIcon_Toolbox.closedPath
+        case .toothbrush:
+            return LucideIcon_Toothbrush.closedPath
+        case .toothbrushSparkles:
+            return LucideIcon_ToothbrushSparkles.closedPath
         case .tornado:
             return LucideIcon_Tornado.closedPath
         case .torus:
@@ -12481,6 +12491,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TriangleDashed.closedPath
         case .triangleRight:
             return LucideIcon_TriangleRight.closedPath
+        case .trianglesCenterlineDashedHorizontal:
+            return LucideIcon_TrianglesCenterlineDashedHorizontal.closedPath
+        case .trianglesCenterlineDashedVertical:
+            return LucideIcon_TrianglesCenterlineDashedVertical.closedPath
         case .trophy:
             return LucideIcon_Trophy.closedPath
         case .truck:
@@ -17526,12 +17540,6 @@ public struct Lucide {
     /// Flask Round icon
     public static let flaskRound: LucideShape = LucideShape(combined: LucideIcon_FlaskRound.combinedPath, open: LucideIcon_FlaskRound.openPath, closed: LucideIcon_FlaskRound.closedPath)
 
-    /// Flip Horizontal 2 icon
-    public static let flipHorizontal2: LucideShape = LucideShape(combined: LucideIcon_FlipHorizontal2.combinedPath, open: LucideIcon_FlipHorizontal2.openPath, closed: LucideIcon_FlipHorizontal2.closedPath)
-
-    /// Flip Vertical 2 icon
-    public static let flipVertical2: LucideShape = LucideShape(combined: LucideIcon_FlipVertical2.combinedPath, open: LucideIcon_FlipVertical2.openPath, closed: LucideIcon_FlipVertical2.closedPath)
-
     /// Flower icon
     public static let flower: LucideShape = LucideShape(combined: LucideIcon_Flower.combinedPath, open: LucideIcon_Flower.openPath, closed: LucideIcon_Flower.closedPath)
 
@@ -20373,6 +20381,12 @@ public struct Lucide {
     /// Toolbox icon
     public static let toolbox: LucideShape = LucideShape(combined: LucideIcon_Toolbox.combinedPath, open: LucideIcon_Toolbox.openPath, closed: LucideIcon_Toolbox.closedPath)
 
+    /// Toothbrush icon
+    public static let toothbrush: LucideShape = LucideShape(combined: LucideIcon_Toothbrush.combinedPath, open: LucideIcon_Toothbrush.openPath, closed: LucideIcon_Toothbrush.closedPath)
+
+    /// Toothbrush Sparkles icon
+    public static let toothbrushSparkles: LucideShape = LucideShape(combined: LucideIcon_ToothbrushSparkles.combinedPath, open: LucideIcon_ToothbrushSparkles.openPath, closed: LucideIcon_ToothbrushSparkles.closedPath)
+
     /// Tornado icon
     public static let tornado: LucideShape = LucideShape(combined: LucideIcon_Tornado.combinedPath, open: LucideIcon_Tornado.openPath, closed: LucideIcon_Tornado.closedPath)
 
@@ -20456,6 +20470,12 @@ public struct Lucide {
 
     /// Triangle Right icon
     public static let triangleRight: LucideShape = LucideShape(combined: LucideIcon_TriangleRight.combinedPath, open: LucideIcon_TriangleRight.openPath, closed: LucideIcon_TriangleRight.closedPath)
+
+    /// Triangles Centerline Dashed Horizontal icon
+    public static let trianglesCenterlineDashedHorizontal: LucideShape = LucideShape(combined: LucideIcon_TrianglesCenterlineDashedHorizontal.combinedPath, open: LucideIcon_TrianglesCenterlineDashedHorizontal.openPath, closed: LucideIcon_TrianglesCenterlineDashedHorizontal.closedPath)
+
+    /// Triangles Centerline Dashed Vertical icon
+    public static let trianglesCenterlineDashedVertical: LucideShape = LucideShape(combined: LucideIcon_TrianglesCenterlineDashedVertical.combinedPath, open: LucideIcon_TrianglesCenterlineDashedVertical.openPath, closed: LucideIcon_TrianglesCenterlineDashedVertical.closedPath)
 
     /// Trophy icon
     public static let trophy: LucideShape = LucideShape(combined: LucideIcon_Trophy.combinedPath, open: LucideIcon_Trophy.openPath, closed: LucideIcon_Trophy.closedPath)
@@ -22012,10 +22032,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.2"
+    public static let libraryVersion = "0.9.3"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.43.0"
+    public static let lucideVersion = "1.44.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
