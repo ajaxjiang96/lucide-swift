@@ -33,7 +33,7 @@ Use LucideSwift when you need:
 ```swift
 // Package.swift
 dependencies: [
-    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.9.3")
+    .package(url: "https://github.com/ajaxjiang96/lucide-swift.git", from: "0.9.4")
 ]
 
 // Your code

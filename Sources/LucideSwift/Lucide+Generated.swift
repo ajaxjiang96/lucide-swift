@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.3
-//  Lucide Icons Version: 1.44.0
+//  Library Version: 0.9.4
+//  Lucide Icons Version: 1.45.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -28,7 +28,6 @@ public enum LucideIconName: String, CaseIterable {
     case alarmClockOff
     case alarmClockPlus
     case alarmSmoke
-    case album
     case alignCenterHorizontal
     case alignCenterVertical
     case alignEndHorizontal
@@ -209,6 +208,7 @@ public enum LucideIconName: String, CaseIterable {
     case bookA
     case bookAlert
     case bookAudio
+    case bookBookmark
     case bookCheck
     case bookCopy
     case bookDashed
@@ -218,7 +218,6 @@ public enum LucideIconName: String, CaseIterable {
     case bookImage
     case bookKey
     case bookLock
-    case bookMarked
     case bookMinus
     case bookOpen
     case bookOpenCheck
@@ -269,7 +268,8 @@ public enum LucideIconName: String, CaseIterable {
     case bugOff
     case bugPlay
     case building
-    case building2
+    case buildingComplex
+    case buildingComplexPlus
     case bus
     case busFront
     case cable
@@ -283,6 +283,7 @@ public enum LucideIconName: String, CaseIterable {
     case calendarArrowUp
     case calendarCheck
     case calendarCheck2
+    case calendarChevronsRight
     case calendarClock
     case calendarCog
     case calendarDays
@@ -802,6 +803,7 @@ public enum LucideIconName: String, CaseIterable {
     case glasses
     case globe
     case globeCheck
+    case globeCode
     case globeLock
     case globeOff
     case globeX
@@ -869,11 +871,13 @@ public enum LucideIconName: String, CaseIterable {
     case hospital
     case hotel
     case hourglass
+    case hourglassCog
     case house
     case houseHeart
     case housePlug
     case housePlus
     case houseWifi
+    case houses
     case iceCreamBowl
     case iceCreamCone
     case idCard
@@ -896,6 +900,7 @@ public enum LucideIconName: String, CaseIterable {
     case italic
     case iterationCcw
     case iterationCw
+    case ivBag
     case japaneseYen
     case joystick
     case kanban
@@ -928,6 +933,8 @@ public enum LucideIconName: String, CaseIterable {
     case layersArrowUp
     case layersMinus
     case layersPlus
+    case layoutArrowDown
+    case layoutArrowRight
     case layoutDashboard
     case layoutFreeform
     case layoutGrid
@@ -1066,6 +1073,7 @@ public enum LucideIconName: String, CaseIterable {
     case messageSquareText
     case messageSquareWarning
     case messageSquareX
+    case messagesCircle
     case messagesSquare
     case metronome
     case mic
@@ -1116,6 +1124,8 @@ public enum LucideIconName: String, CaseIterable {
     case mousePointerBan
     case mousePointerClick
     case mouseRight
+    case mouth
+    case mouthOff
     case move
     case move3D
     case moveDiagonal
@@ -1143,6 +1153,7 @@ public enum LucideIconName: String, CaseIterable {
     case nfc
     case nonBinary
     case notebook
+    case notebookDot
     case notebookPen
     case notebookTabs
     case notebookText
@@ -1198,6 +1209,7 @@ public enum LucideIconName: String, CaseIterable {
     case paperclip
     case parasol
     case parentheses
+    case park
     case parkingMeter
     case partyPopper
     case pause
@@ -1242,6 +1254,7 @@ public enum LucideIconName: String, CaseIterable {
     case plane
     case planeLanding
     case planeTakeoff
+    case plantPot
     case play
     case playOff
     case playingCard
@@ -1494,6 +1507,7 @@ public enum LucideIconName: String, CaseIterable {
     case squareArrowUpLeft
     case squareArrowUpRight
     case squareAsterisk
+    case squareBookmark
     case squareBottomDashedScissors
     case squareCenterlineDashedHorizontal
     case squareCenterlineDashedVertical
@@ -1867,8 +1881,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_AlarmClockPlus.combinedPath
         case .alarmSmoke:
             return LucideIcon_AlarmSmoke.combinedPath
-        case .album:
-            return LucideIcon_Album.combinedPath
         case .alignCenterHorizontal:
             return LucideIcon_AlignCenterHorizontal.combinedPath
         case .alignCenterVertical:
@@ -2229,6 +2241,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BookAlert.combinedPath
         case .bookAudio:
             return LucideIcon_BookAudio.combinedPath
+        case .bookBookmark:
+            return LucideIcon_BookBookmark.combinedPath
         case .bookCheck:
             return LucideIcon_BookCheck.combinedPath
         case .bookCopy:
@@ -2247,8 +2261,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BookKey.combinedPath
         case .bookLock:
             return LucideIcon_BookLock.combinedPath
-        case .bookMarked:
-            return LucideIcon_BookMarked.combinedPath
         case .bookMinus:
             return LucideIcon_BookMinus.combinedPath
         case .bookOpen:
@@ -2349,8 +2361,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BugPlay.combinedPath
         case .building:
             return LucideIcon_Building.combinedPath
-        case .building2:
-            return LucideIcon_Building2.combinedPath
+        case .buildingComplex:
+            return LucideIcon_BuildingComplex.combinedPath
+        case .buildingComplexPlus:
+            return LucideIcon_BuildingComplexPlus.combinedPath
         case .bus:
             return LucideIcon_Bus.combinedPath
         case .busFront:
@@ -2377,6 +2391,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CalendarCheck.combinedPath
         case .calendarCheck2:
             return LucideIcon_CalendarCheck2.combinedPath
+        case .calendarChevronsRight:
+            return LucideIcon_CalendarChevronsRight.combinedPath
         case .calendarClock:
             return LucideIcon_CalendarClock.combinedPath
         case .calendarCog:
@@ -3415,6 +3431,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Globe.combinedPath
         case .globeCheck:
             return LucideIcon_GlobeCheck.combinedPath
+        case .globeCode:
+            return LucideIcon_GlobeCode.combinedPath
         case .globeLock:
             return LucideIcon_GlobeLock.combinedPath
         case .globeOff:
@@ -3549,6 +3567,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Hotel.combinedPath
         case .hourglass:
             return LucideIcon_Hourglass.combinedPath
+        case .hourglassCog:
+            return LucideIcon_HourglassCog.combinedPath
         case .house:
             return LucideIcon_House.combinedPath
         case .houseHeart:
@@ -3559,6 +3579,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_HousePlus.combinedPath
         case .houseWifi:
             return LucideIcon_HouseWifi.combinedPath
+        case .houses:
+            return LucideIcon_Houses.combinedPath
         case .iceCreamBowl:
             return LucideIcon_IceCreamBowl.combinedPath
         case .iceCreamCone:
@@ -3603,6 +3625,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_IterationCcw.combinedPath
         case .iterationCw:
             return LucideIcon_IterationCw.combinedPath
+        case .ivBag:
+            return LucideIcon_IvBag.combinedPath
         case .japaneseYen:
             return LucideIcon_JapaneseYen.combinedPath
         case .joystick:
@@ -3667,6 +3691,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LayersMinus.combinedPath
         case .layersPlus:
             return LucideIcon_LayersPlus.combinedPath
+        case .layoutArrowDown:
+            return LucideIcon_LayoutArrowDown.combinedPath
+        case .layoutArrowRight:
+            return LucideIcon_LayoutArrowRight.combinedPath
         case .layoutDashboard:
             return LucideIcon_LayoutDashboard.combinedPath
         case .layoutFreeform:
@@ -3943,6 +3971,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageSquareWarning.combinedPath
         case .messageSquareX:
             return LucideIcon_MessageSquareX.combinedPath
+        case .messagesCircle:
+            return LucideIcon_MessagesCircle.combinedPath
         case .messagesSquare:
             return LucideIcon_MessagesSquare.combinedPath
         case .metronome:
@@ -4043,6 +4073,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MousePointerClick.combinedPath
         case .mouseRight:
             return LucideIcon_MouseRight.combinedPath
+        case .mouth:
+            return LucideIcon_Mouth.combinedPath
+        case .mouthOff:
+            return LucideIcon_MouthOff.combinedPath
         case .move:
             return LucideIcon_Move.combinedPath
         case .move3D:
@@ -4097,6 +4131,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_NonBinary.combinedPath
         case .notebook:
             return LucideIcon_Notebook.combinedPath
+        case .notebookDot:
+            return LucideIcon_NotebookDot.combinedPath
         case .notebookPen:
             return LucideIcon_NotebookPen.combinedPath
         case .notebookTabs:
@@ -4207,6 +4243,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Parasol.combinedPath
         case .parentheses:
             return LucideIcon_Parentheses.combinedPath
+        case .park:
+            return LucideIcon_Park.combinedPath
         case .parkingMeter:
             return LucideIcon_ParkingMeter.combinedPath
         case .partyPopper:
@@ -4295,6 +4333,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PlaneLanding.combinedPath
         case .planeTakeoff:
             return LucideIcon_PlaneTakeoff.combinedPath
+        case .plantPot:
+            return LucideIcon_PlantPot.combinedPath
         case .play:
             return LucideIcon_Play.combinedPath
         case .playOff:
@@ -4799,6 +4839,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareArrowUpRight.combinedPath
         case .squareAsterisk:
             return LucideIcon_SquareAsterisk.combinedPath
+        case .squareBookmark:
+            return LucideIcon_SquareBookmark.combinedPath
         case .squareBottomDashedScissors:
             return LucideIcon_SquareBottomDashedScissors.combinedPath
         case .squareCenterlineDashedHorizontal:
@@ -5515,8 +5557,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_AlarmClockPlus.openPath
         case .alarmSmoke:
             return LucideIcon_AlarmSmoke.openPath
-        case .album:
-            return LucideIcon_Album.openPath
         case .alignCenterHorizontal:
             return LucideIcon_AlignCenterHorizontal.openPath
         case .alignCenterVertical:
@@ -5877,6 +5917,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BookAlert.openPath
         case .bookAudio:
             return LucideIcon_BookAudio.openPath
+        case .bookBookmark:
+            return LucideIcon_BookBookmark.openPath
         case .bookCheck:
             return LucideIcon_BookCheck.openPath
         case .bookCopy:
@@ -5895,8 +5937,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BookKey.openPath
         case .bookLock:
             return LucideIcon_BookLock.openPath
-        case .bookMarked:
-            return LucideIcon_BookMarked.openPath
         case .bookMinus:
             return LucideIcon_BookMinus.openPath
         case .bookOpen:
@@ -5997,8 +6037,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BugPlay.openPath
         case .building:
             return LucideIcon_Building.openPath
-        case .building2:
-            return LucideIcon_Building2.openPath
+        case .buildingComplex:
+            return LucideIcon_BuildingComplex.openPath
+        case .buildingComplexPlus:
+            return LucideIcon_BuildingComplexPlus.openPath
         case .bus:
             return LucideIcon_Bus.openPath
         case .busFront:
@@ -6025,6 +6067,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CalendarCheck.openPath
         case .calendarCheck2:
             return LucideIcon_CalendarCheck2.openPath
+        case .calendarChevronsRight:
+            return LucideIcon_CalendarChevronsRight.openPath
         case .calendarClock:
             return LucideIcon_CalendarClock.openPath
         case .calendarCog:
@@ -7063,6 +7107,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Globe.openPath
         case .globeCheck:
             return LucideIcon_GlobeCheck.openPath
+        case .globeCode:
+            return LucideIcon_GlobeCode.openPath
         case .globeLock:
             return LucideIcon_GlobeLock.openPath
         case .globeOff:
@@ -7197,6 +7243,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Hotel.openPath
         case .hourglass:
             return LucideIcon_Hourglass.openPath
+        case .hourglassCog:
+            return LucideIcon_HourglassCog.openPath
         case .house:
             return LucideIcon_House.openPath
         case .houseHeart:
@@ -7207,6 +7255,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_HousePlus.openPath
         case .houseWifi:
             return LucideIcon_HouseWifi.openPath
+        case .houses:
+            return LucideIcon_Houses.openPath
         case .iceCreamBowl:
             return LucideIcon_IceCreamBowl.openPath
         case .iceCreamCone:
@@ -7251,6 +7301,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_IterationCcw.openPath
         case .iterationCw:
             return LucideIcon_IterationCw.openPath
+        case .ivBag:
+            return LucideIcon_IvBag.openPath
         case .japaneseYen:
             return LucideIcon_JapaneseYen.openPath
         case .joystick:
@@ -7315,6 +7367,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LayersMinus.openPath
         case .layersPlus:
             return LucideIcon_LayersPlus.openPath
+        case .layoutArrowDown:
+            return LucideIcon_LayoutArrowDown.openPath
+        case .layoutArrowRight:
+            return LucideIcon_LayoutArrowRight.openPath
         case .layoutDashboard:
             return LucideIcon_LayoutDashboard.openPath
         case .layoutFreeform:
@@ -7591,6 +7647,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageSquareWarning.openPath
         case .messageSquareX:
             return LucideIcon_MessageSquareX.openPath
+        case .messagesCircle:
+            return LucideIcon_MessagesCircle.openPath
         case .messagesSquare:
             return LucideIcon_MessagesSquare.openPath
         case .metronome:
@@ -7691,6 +7749,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MousePointerClick.openPath
         case .mouseRight:
             return LucideIcon_MouseRight.openPath
+        case .mouth:
+            return LucideIcon_Mouth.openPath
+        case .mouthOff:
+            return LucideIcon_MouthOff.openPath
         case .move:
             return LucideIcon_Move.openPath
         case .move3D:
@@ -7745,6 +7807,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_NonBinary.openPath
         case .notebook:
             return LucideIcon_Notebook.openPath
+        case .notebookDot:
+            return LucideIcon_NotebookDot.openPath
         case .notebookPen:
             return LucideIcon_NotebookPen.openPath
         case .notebookTabs:
@@ -7855,6 +7919,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Parasol.openPath
         case .parentheses:
             return LucideIcon_Parentheses.openPath
+        case .park:
+            return LucideIcon_Park.openPath
         case .parkingMeter:
             return LucideIcon_ParkingMeter.openPath
         case .partyPopper:
@@ -7943,6 +8009,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PlaneLanding.openPath
         case .planeTakeoff:
             return LucideIcon_PlaneTakeoff.openPath
+        case .plantPot:
+            return LucideIcon_PlantPot.openPath
         case .play:
             return LucideIcon_Play.openPath
         case .playOff:
@@ -8447,6 +8515,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareArrowUpRight.openPath
         case .squareAsterisk:
             return LucideIcon_SquareAsterisk.openPath
+        case .squareBookmark:
+            return LucideIcon_SquareBookmark.openPath
         case .squareBottomDashedScissors:
             return LucideIcon_SquareBottomDashedScissors.openPath
         case .squareCenterlineDashedHorizontal:
@@ -9163,8 +9233,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_AlarmClockPlus.closedPath
         case .alarmSmoke:
             return LucideIcon_AlarmSmoke.closedPath
-        case .album:
-            return LucideIcon_Album.closedPath
         case .alignCenterHorizontal:
             return LucideIcon_AlignCenterHorizontal.closedPath
         case .alignCenterVertical:
@@ -9525,6 +9593,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BookAlert.closedPath
         case .bookAudio:
             return LucideIcon_BookAudio.closedPath
+        case .bookBookmark:
+            return LucideIcon_BookBookmark.closedPath
         case .bookCheck:
             return LucideIcon_BookCheck.closedPath
         case .bookCopy:
@@ -9543,8 +9613,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BookKey.closedPath
         case .bookLock:
             return LucideIcon_BookLock.closedPath
-        case .bookMarked:
-            return LucideIcon_BookMarked.closedPath
         case .bookMinus:
             return LucideIcon_BookMinus.closedPath
         case .bookOpen:
@@ -9645,8 +9713,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BugPlay.closedPath
         case .building:
             return LucideIcon_Building.closedPath
-        case .building2:
-            return LucideIcon_Building2.closedPath
+        case .buildingComplex:
+            return LucideIcon_BuildingComplex.closedPath
+        case .buildingComplexPlus:
+            return LucideIcon_BuildingComplexPlus.closedPath
         case .bus:
             return LucideIcon_Bus.closedPath
         case .busFront:
@@ -9673,6 +9743,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CalendarCheck.closedPath
         case .calendarCheck2:
             return LucideIcon_CalendarCheck2.closedPath
+        case .calendarChevronsRight:
+            return LucideIcon_CalendarChevronsRight.closedPath
         case .calendarClock:
             return LucideIcon_CalendarClock.closedPath
         case .calendarCog:
@@ -10711,6 +10783,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Globe.closedPath
         case .globeCheck:
             return LucideIcon_GlobeCheck.closedPath
+        case .globeCode:
+            return LucideIcon_GlobeCode.closedPath
         case .globeLock:
             return LucideIcon_GlobeLock.closedPath
         case .globeOff:
@@ -10845,6 +10919,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Hotel.closedPath
         case .hourglass:
             return LucideIcon_Hourglass.closedPath
+        case .hourglassCog:
+            return LucideIcon_HourglassCog.closedPath
         case .house:
             return LucideIcon_House.closedPath
         case .houseHeart:
@@ -10855,6 +10931,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_HousePlus.closedPath
         case .houseWifi:
             return LucideIcon_HouseWifi.closedPath
+        case .houses:
+            return LucideIcon_Houses.closedPath
         case .iceCreamBowl:
             return LucideIcon_IceCreamBowl.closedPath
         case .iceCreamCone:
@@ -10899,6 +10977,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_IterationCcw.closedPath
         case .iterationCw:
             return LucideIcon_IterationCw.closedPath
+        case .ivBag:
+            return LucideIcon_IvBag.closedPath
         case .japaneseYen:
             return LucideIcon_JapaneseYen.closedPath
         case .joystick:
@@ -10963,6 +11043,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LayersMinus.closedPath
         case .layersPlus:
             return LucideIcon_LayersPlus.closedPath
+        case .layoutArrowDown:
+            return LucideIcon_LayoutArrowDown.closedPath
+        case .layoutArrowRight:
+            return LucideIcon_LayoutArrowRight.closedPath
         case .layoutDashboard:
             return LucideIcon_LayoutDashboard.closedPath
         case .layoutFreeform:
@@ -11239,6 +11323,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageSquareWarning.closedPath
         case .messageSquareX:
             return LucideIcon_MessageSquareX.closedPath
+        case .messagesCircle:
+            return LucideIcon_MessagesCircle.closedPath
         case .messagesSquare:
             return LucideIcon_MessagesSquare.closedPath
         case .metronome:
@@ -11339,6 +11425,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MousePointerClick.closedPath
         case .mouseRight:
             return LucideIcon_MouseRight.closedPath
+        case .mouth:
+            return LucideIcon_Mouth.closedPath
+        case .mouthOff:
+            return LucideIcon_MouthOff.closedPath
         case .move:
             return LucideIcon_Move.closedPath
         case .move3D:
@@ -11393,6 +11483,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_NonBinary.closedPath
         case .notebook:
             return LucideIcon_Notebook.closedPath
+        case .notebookDot:
+            return LucideIcon_NotebookDot.closedPath
         case .notebookPen:
             return LucideIcon_NotebookPen.closedPath
         case .notebookTabs:
@@ -11503,6 +11595,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Parasol.closedPath
         case .parentheses:
             return LucideIcon_Parentheses.closedPath
+        case .park:
+            return LucideIcon_Park.closedPath
         case .parkingMeter:
             return LucideIcon_ParkingMeter.closedPath
         case .partyPopper:
@@ -11591,6 +11685,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PlaneLanding.closedPath
         case .planeTakeoff:
             return LucideIcon_PlaneTakeoff.closedPath
+        case .plantPot:
+            return LucideIcon_PlantPot.closedPath
         case .play:
             return LucideIcon_Play.closedPath
         case .playOff:
@@ -12095,6 +12191,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareArrowUpRight.closedPath
         case .squareAsterisk:
             return LucideIcon_SquareAsterisk.closedPath
+        case .squareBookmark:
+            return LucideIcon_SquareBookmark.closedPath
         case .squareBottomDashedScissors:
             return LucideIcon_SquareBottomDashedScissors.closedPath
         case .squareCenterlineDashedHorizontal:
@@ -15479,9 +15577,6 @@ public struct Lucide {
     /// Alarm Smoke icon
     public static let alarmSmoke: LucideShape = LucideShape(combined: LucideIcon_AlarmSmoke.combinedPath, open: LucideIcon_AlarmSmoke.openPath, closed: LucideIcon_AlarmSmoke.closedPath)
 
-    /// Album icon
-    public static let album: LucideShape = LucideShape(combined: LucideIcon_Album.combinedPath, open: LucideIcon_Album.openPath, closed: LucideIcon_Album.closedPath)
-
     /// Align Center Horizontal icon
     public static let alignCenterHorizontal: LucideShape = LucideShape(combined: LucideIcon_AlignCenterHorizontal.combinedPath, open: LucideIcon_AlignCenterHorizontal.openPath, closed: LucideIcon_AlignCenterHorizontal.closedPath)
 
@@ -16022,6 +16117,9 @@ public struct Lucide {
     /// Book Audio icon
     public static let bookAudio: LucideShape = LucideShape(combined: LucideIcon_BookAudio.combinedPath, open: LucideIcon_BookAudio.openPath, closed: LucideIcon_BookAudio.closedPath)
 
+    /// Book Bookmark icon
+    public static let bookBookmark: LucideShape = LucideShape(combined: LucideIcon_BookBookmark.combinedPath, open: LucideIcon_BookBookmark.openPath, closed: LucideIcon_BookBookmark.closedPath)
+
     /// Book Check icon
     public static let bookCheck: LucideShape = LucideShape(combined: LucideIcon_BookCheck.combinedPath, open: LucideIcon_BookCheck.openPath, closed: LucideIcon_BookCheck.closedPath)
 
@@ -16048,9 +16146,6 @@ public struct Lucide {
 
     /// Book Lock icon
     public static let bookLock: LucideShape = LucideShape(combined: LucideIcon_BookLock.combinedPath, open: LucideIcon_BookLock.openPath, closed: LucideIcon_BookLock.closedPath)
-
-    /// Book Marked icon
-    public static let bookMarked: LucideShape = LucideShape(combined: LucideIcon_BookMarked.combinedPath, open: LucideIcon_BookMarked.openPath, closed: LucideIcon_BookMarked.closedPath)
 
     /// Book Minus icon
     public static let bookMinus: LucideShape = LucideShape(combined: LucideIcon_BookMinus.combinedPath, open: LucideIcon_BookMinus.openPath, closed: LucideIcon_BookMinus.closedPath)
@@ -16202,8 +16297,11 @@ public struct Lucide {
     /// Building icon
     public static let building: LucideShape = LucideShape(combined: LucideIcon_Building.combinedPath, open: LucideIcon_Building.openPath, closed: LucideIcon_Building.closedPath)
 
-    /// Building 2 icon
-    public static let building2: LucideShape = LucideShape(combined: LucideIcon_Building2.combinedPath, open: LucideIcon_Building2.openPath, closed: LucideIcon_Building2.closedPath)
+    /// Building Complex icon
+    public static let buildingComplex: LucideShape = LucideShape(combined: LucideIcon_BuildingComplex.combinedPath, open: LucideIcon_BuildingComplex.openPath, closed: LucideIcon_BuildingComplex.closedPath)
+
+    /// Building Complex Plus icon
+    public static let buildingComplexPlus: LucideShape = LucideShape(combined: LucideIcon_BuildingComplexPlus.combinedPath, open: LucideIcon_BuildingComplexPlus.openPath, closed: LucideIcon_BuildingComplexPlus.closedPath)
 
     /// Bus icon
     public static let bus: LucideShape = LucideShape(combined: LucideIcon_Bus.combinedPath, open: LucideIcon_Bus.openPath, closed: LucideIcon_Bus.closedPath)
@@ -16243,6 +16341,9 @@ public struct Lucide {
 
     /// Calendar Check 2 icon
     public static let calendarCheck2: LucideShape = LucideShape(combined: LucideIcon_CalendarCheck2.combinedPath, open: LucideIcon_CalendarCheck2.openPath, closed: LucideIcon_CalendarCheck2.closedPath)
+
+    /// Calendar Chevrons Right icon
+    public static let calendarChevronsRight: LucideShape = LucideShape(combined: LucideIcon_CalendarChevronsRight.combinedPath, open: LucideIcon_CalendarChevronsRight.openPath, closed: LucideIcon_CalendarChevronsRight.closedPath)
 
     /// Calendar Clock icon
     public static let calendarClock: LucideShape = LucideShape(combined: LucideIcon_CalendarClock.combinedPath, open: LucideIcon_CalendarClock.openPath, closed: LucideIcon_CalendarClock.closedPath)
@@ -17801,6 +17902,9 @@ public struct Lucide {
     /// Globe Check icon
     public static let globeCheck: LucideShape = LucideShape(combined: LucideIcon_GlobeCheck.combinedPath, open: LucideIcon_GlobeCheck.openPath, closed: LucideIcon_GlobeCheck.closedPath)
 
+    /// Globe Code icon
+    public static let globeCode: LucideShape = LucideShape(combined: LucideIcon_GlobeCode.combinedPath, open: LucideIcon_GlobeCode.openPath, closed: LucideIcon_GlobeCode.closedPath)
+
     /// Globe Lock icon
     public static let globeLock: LucideShape = LucideShape(combined: LucideIcon_GlobeLock.combinedPath, open: LucideIcon_GlobeLock.openPath, closed: LucideIcon_GlobeLock.closedPath)
 
@@ -18002,6 +18106,9 @@ public struct Lucide {
     /// Hourglass icon
     public static let hourglass: LucideShape = LucideShape(combined: LucideIcon_Hourglass.combinedPath, open: LucideIcon_Hourglass.openPath, closed: LucideIcon_Hourglass.closedPath)
 
+    /// Hourglass Cog icon
+    public static let hourglassCog: LucideShape = LucideShape(combined: LucideIcon_HourglassCog.combinedPath, open: LucideIcon_HourglassCog.openPath, closed: LucideIcon_HourglassCog.closedPath)
+
     /// House icon
     public static let house: LucideShape = LucideShape(combined: LucideIcon_House.combinedPath, open: LucideIcon_House.openPath, closed: LucideIcon_House.closedPath)
 
@@ -18016,6 +18123,9 @@ public struct Lucide {
 
     /// House Wifi icon
     public static let houseWifi: LucideShape = LucideShape(combined: LucideIcon_HouseWifi.combinedPath, open: LucideIcon_HouseWifi.openPath, closed: LucideIcon_HouseWifi.closedPath)
+
+    /// Houses icon
+    public static let houses: LucideShape = LucideShape(combined: LucideIcon_Houses.combinedPath, open: LucideIcon_Houses.openPath, closed: LucideIcon_Houses.closedPath)
 
     /// Ice Cream Bowl icon
     public static let iceCreamBowl: LucideShape = LucideShape(combined: LucideIcon_IceCreamBowl.combinedPath, open: LucideIcon_IceCreamBowl.openPath, closed: LucideIcon_IceCreamBowl.closedPath)
@@ -18082,6 +18192,9 @@ public struct Lucide {
 
     /// Iteration Cw icon
     public static let iterationCw: LucideShape = LucideShape(combined: LucideIcon_IterationCw.combinedPath, open: LucideIcon_IterationCw.openPath, closed: LucideIcon_IterationCw.closedPath)
+
+    /// Iv Bag icon
+    public static let ivBag: LucideShape = LucideShape(combined: LucideIcon_IvBag.combinedPath, open: LucideIcon_IvBag.openPath, closed: LucideIcon_IvBag.closedPath)
 
     /// Japanese Yen icon
     public static let japaneseYen: LucideShape = LucideShape(combined: LucideIcon_JapaneseYen.combinedPath, open: LucideIcon_JapaneseYen.openPath, closed: LucideIcon_JapaneseYen.closedPath)
@@ -18178,6 +18291,12 @@ public struct Lucide {
 
     /// Layers Plus icon
     public static let layersPlus: LucideShape = LucideShape(combined: LucideIcon_LayersPlus.combinedPath, open: LucideIcon_LayersPlus.openPath, closed: LucideIcon_LayersPlus.closedPath)
+
+    /// Layout Arrow Down icon
+    public static let layoutArrowDown: LucideShape = LucideShape(combined: LucideIcon_LayoutArrowDown.combinedPath, open: LucideIcon_LayoutArrowDown.openPath, closed: LucideIcon_LayoutArrowDown.closedPath)
+
+    /// Layout Arrow Right icon
+    public static let layoutArrowRight: LucideShape = LucideShape(combined: LucideIcon_LayoutArrowRight.combinedPath, open: LucideIcon_LayoutArrowRight.openPath, closed: LucideIcon_LayoutArrowRight.closedPath)
 
     /// Layout Dashboard icon
     public static let layoutDashboard: LucideShape = LucideShape(combined: LucideIcon_LayoutDashboard.combinedPath, open: LucideIcon_LayoutDashboard.openPath, closed: LucideIcon_LayoutDashboard.closedPath)
@@ -18593,6 +18712,9 @@ public struct Lucide {
     /// Message Square X icon
     public static let messageSquareX: LucideShape = LucideShape(combined: LucideIcon_MessageSquareX.combinedPath, open: LucideIcon_MessageSquareX.openPath, closed: LucideIcon_MessageSquareX.closedPath)
 
+    /// Messages Circle icon
+    public static let messagesCircle: LucideShape = LucideShape(combined: LucideIcon_MessagesCircle.combinedPath, open: LucideIcon_MessagesCircle.openPath, closed: LucideIcon_MessagesCircle.closedPath)
+
     /// Messages Square icon
     public static let messagesSquare: LucideShape = LucideShape(combined: LucideIcon_MessagesSquare.combinedPath, open: LucideIcon_MessagesSquare.openPath, closed: LucideIcon_MessagesSquare.closedPath)
 
@@ -18743,6 +18865,12 @@ public struct Lucide {
     /// Mouse Right icon
     public static let mouseRight: LucideShape = LucideShape(combined: LucideIcon_MouseRight.combinedPath, open: LucideIcon_MouseRight.openPath, closed: LucideIcon_MouseRight.closedPath)
 
+    /// Mouth icon
+    public static let mouth: LucideShape = LucideShape(combined: LucideIcon_Mouth.combinedPath, open: LucideIcon_Mouth.openPath, closed: LucideIcon_Mouth.closedPath)
+
+    /// Mouth Off icon
+    public static let mouthOff: LucideShape = LucideShape(combined: LucideIcon_MouthOff.combinedPath, open: LucideIcon_MouthOff.openPath, closed: LucideIcon_MouthOff.closedPath)
+
     /// Move icon
     public static let move: LucideShape = LucideShape(combined: LucideIcon_Move.combinedPath, open: LucideIcon_Move.openPath, closed: LucideIcon_Move.closedPath)
 
@@ -18823,6 +18951,9 @@ public struct Lucide {
 
     /// Notebook icon
     public static let notebook: LucideShape = LucideShape(combined: LucideIcon_Notebook.combinedPath, open: LucideIcon_Notebook.openPath, closed: LucideIcon_Notebook.closedPath)
+
+    /// Notebook Dot icon
+    public static let notebookDot: LucideShape = LucideShape(combined: LucideIcon_NotebookDot.combinedPath, open: LucideIcon_NotebookDot.openPath, closed: LucideIcon_NotebookDot.closedPath)
 
     /// Notebook Pen icon
     public static let notebookPen: LucideShape = LucideShape(combined: LucideIcon_NotebookPen.combinedPath, open: LucideIcon_NotebookPen.openPath, closed: LucideIcon_NotebookPen.closedPath)
@@ -18989,6 +19120,9 @@ public struct Lucide {
     /// Parentheses icon
     public static let parentheses: LucideShape = LucideShape(combined: LucideIcon_Parentheses.combinedPath, open: LucideIcon_Parentheses.openPath, closed: LucideIcon_Parentheses.closedPath)
 
+    /// Park icon
+    public static let park: LucideShape = LucideShape(combined: LucideIcon_Park.combinedPath, open: LucideIcon_Park.openPath, closed: LucideIcon_Park.closedPath)
+
     /// Parking Meter icon
     public static let parkingMeter: LucideShape = LucideShape(combined: LucideIcon_ParkingMeter.combinedPath, open: LucideIcon_ParkingMeter.openPath, closed: LucideIcon_ParkingMeter.closedPath)
 
@@ -19120,6 +19254,9 @@ public struct Lucide {
 
     /// Plane Takeoff icon
     public static let planeTakeoff: LucideShape = LucideShape(combined: LucideIcon_PlaneTakeoff.combinedPath, open: LucideIcon_PlaneTakeoff.openPath, closed: LucideIcon_PlaneTakeoff.closedPath)
+
+    /// Plant Pot icon
+    public static let plantPot: LucideShape = LucideShape(combined: LucideIcon_PlantPot.combinedPath, open: LucideIcon_PlantPot.openPath, closed: LucideIcon_PlantPot.closedPath)
 
     /// Play icon
     public static let play: LucideShape = LucideShape(combined: LucideIcon_Play.combinedPath, open: LucideIcon_Play.openPath, closed: LucideIcon_Play.closedPath)
@@ -19876,6 +20013,9 @@ public struct Lucide {
 
     /// Square Asterisk icon
     public static let squareAsterisk: LucideShape = LucideShape(combined: LucideIcon_SquareAsterisk.combinedPath, open: LucideIcon_SquareAsterisk.openPath, closed: LucideIcon_SquareAsterisk.closedPath)
+
+    /// Square Bookmark icon
+    public static let squareBookmark: LucideShape = LucideShape(combined: LucideIcon_SquareBookmark.combinedPath, open: LucideIcon_SquareBookmark.openPath, closed: LucideIcon_SquareBookmark.closedPath)
 
     /// Square Bottom Dashed Scissors icon
     public static let squareBottomDashedScissors: LucideShape = LucideShape(combined: LucideIcon_SquareBottomDashedScissors.combinedPath, open: LucideIcon_SquareBottomDashedScissors.openPath, closed: LucideIcon_SquareBottomDashedScissors.closedPath)
@@ -22032,10 +22172,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.3"
+    public static let libraryVersion = "0.9.4"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.44.0"
+    public static let lucideVersion = "1.45.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
