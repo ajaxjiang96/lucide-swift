@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.4
-//  Lucide Icons Version: 1.45.0
+//  Library Version: 0.9.5
+//  Lucide Icons Version: 1.46.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -432,6 +432,9 @@ public enum LucideIconName: String, CaseIterable {
     case circuitBoard
     case citrus
     case clapperboard
+    case clefAlto
+    case clefBass
+    case clefTreble
     case clipboard
     case clipboardCheck
     case clipboardClock
@@ -1101,6 +1104,7 @@ public enum LucideIconName: String, CaseIterable {
     case monitorDown
     case monitorOff
     case monitorPause
+    case monitorPc
     case monitorPlay
     case monitorSmartphone
     case monitorSpeaker
@@ -2689,6 +2693,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Citrus.combinedPath
         case .clapperboard:
             return LucideIcon_Clapperboard.combinedPath
+        case .clefAlto:
+            return LucideIcon_ClefAlto.combinedPath
+        case .clefBass:
+            return LucideIcon_ClefBass.combinedPath
+        case .clefTreble:
+            return LucideIcon_ClefTreble.combinedPath
         case .clipboard:
             return LucideIcon_Clipboard.combinedPath
         case .clipboardCheck:
@@ -4027,6 +4037,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MonitorOff.combinedPath
         case .monitorPause:
             return LucideIcon_MonitorPause.combinedPath
+        case .monitorPc:
+            return LucideIcon_MonitorPc.combinedPath
         case .monitorPlay:
             return LucideIcon_MonitorPlay.combinedPath
         case .monitorSmartphone:
@@ -6365,6 +6377,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Citrus.openPath
         case .clapperboard:
             return LucideIcon_Clapperboard.openPath
+        case .clefAlto:
+            return LucideIcon_ClefAlto.openPath
+        case .clefBass:
+            return LucideIcon_ClefBass.openPath
+        case .clefTreble:
+            return LucideIcon_ClefTreble.openPath
         case .clipboard:
             return LucideIcon_Clipboard.openPath
         case .clipboardCheck:
@@ -7703,6 +7721,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MonitorOff.openPath
         case .monitorPause:
             return LucideIcon_MonitorPause.openPath
+        case .monitorPc:
+            return LucideIcon_MonitorPc.openPath
         case .monitorPlay:
             return LucideIcon_MonitorPlay.openPath
         case .monitorSmartphone:
@@ -10041,6 +10061,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Citrus.closedPath
         case .clapperboard:
             return LucideIcon_Clapperboard.closedPath
+        case .clefAlto:
+            return LucideIcon_ClefAlto.closedPath
+        case .clefBass:
+            return LucideIcon_ClefBass.closedPath
+        case .clefTreble:
+            return LucideIcon_ClefTreble.closedPath
         case .clipboard:
             return LucideIcon_Clipboard.closedPath
         case .clipboardCheck:
@@ -11379,6 +11405,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MonitorOff.closedPath
         case .monitorPause:
             return LucideIcon_MonitorPause.closedPath
+        case .monitorPc:
+            return LucideIcon_MonitorPc.closedPath
         case .monitorPlay:
             return LucideIcon_MonitorPlay.closedPath
         case .monitorSmartphone:
@@ -16789,6 +16817,15 @@ public struct Lucide {
     /// Clapperboard icon
     public static let clapperboard: LucideShape = LucideShape(combined: LucideIcon_Clapperboard.combinedPath, open: LucideIcon_Clapperboard.openPath, closed: LucideIcon_Clapperboard.closedPath)
 
+    /// Clef Alto icon
+    public static let clefAlto: LucideShape = LucideShape(combined: LucideIcon_ClefAlto.combinedPath, open: LucideIcon_ClefAlto.openPath, closed: LucideIcon_ClefAlto.closedPath)
+
+    /// Clef Bass icon
+    public static let clefBass: LucideShape = LucideShape(combined: LucideIcon_ClefBass.combinedPath, open: LucideIcon_ClefBass.openPath, closed: LucideIcon_ClefBass.closedPath)
+
+    /// Clef Treble icon
+    public static let clefTreble: LucideShape = LucideShape(combined: LucideIcon_ClefTreble.combinedPath, open: LucideIcon_ClefTreble.openPath, closed: LucideIcon_ClefTreble.closedPath)
+
     /// Clipboard icon
     public static let clipboard: LucideShape = LucideShape(combined: LucideIcon_Clipboard.combinedPath, open: LucideIcon_Clipboard.openPath, closed: LucideIcon_Clipboard.closedPath)
 
@@ -18795,6 +18832,9 @@ public struct Lucide {
 
     /// Monitor Pause icon
     public static let monitorPause: LucideShape = LucideShape(combined: LucideIcon_MonitorPause.combinedPath, open: LucideIcon_MonitorPause.openPath, closed: LucideIcon_MonitorPause.closedPath)
+
+    /// Monitor Pc icon
+    public static let monitorPc: LucideShape = LucideShape(combined: LucideIcon_MonitorPc.combinedPath, open: LucideIcon_MonitorPc.openPath, closed: LucideIcon_MonitorPc.closedPath)
 
     /// Monitor Play icon
     public static let monitorPlay: LucideShape = LucideShape(combined: LucideIcon_MonitorPlay.combinedPath, open: LucideIcon_MonitorPlay.openPath, closed: LucideIcon_MonitorPlay.closedPath)
@@ -22172,10 +22212,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.4"
+    public static let libraryVersion = "0.9.5"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.45.0"
+    public static let lucideVersion = "1.46.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
