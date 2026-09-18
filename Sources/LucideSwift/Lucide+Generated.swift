@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.5
-//  Lucide Icons Version: 1.46.0
+//  Library Version: 0.9.6
+//  Lucide Icons Version: 1.47.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -546,6 +546,7 @@ public enum LucideIconName: String, CaseIterable {
     case crown
     case cuboid
     case cupSoda
+    case cupcake
     case currency
     case cylinder
     case dam
@@ -590,6 +591,7 @@ public enum LucideIconName: String, CaseIterable {
     case donut
     case doorClosed
     case doorClosedLocked
+    case doorClosedPackage
     case doorOpen
     case doorStairwell
     case dot
@@ -641,6 +643,7 @@ public enum LucideIconName: String, CaseIterable {
     case factory
     case fan
     case fastForward
+    case faucet
     case feather
     case fence
     case ferrisWheel
@@ -914,6 +917,7 @@ public enum LucideIconName: String, CaseIterable {
     case keyboard
     case keyboardMusic
     case keyboardOff
+    case lambda
     case lamp
     case lampCeiling
     case lampDesk
@@ -1152,6 +1156,7 @@ public enum LucideIconName: String, CaseIterable {
     case navigation2
     case navigation2Off
     case navigationOff
+    case nepaliRupee
     case network
     case newspaper
     case nfc
@@ -1348,6 +1353,7 @@ public enum LucideIconName: String, CaseIterable {
     case rotateCcwKey
     case rotateCcwSquare
     case rotateCw
+    case rotateCwClock
     case rotateCwFadingClock
     case rotateCwSquare
     case route
@@ -1528,8 +1534,11 @@ public enum LucideIconName: String, CaseIterable {
     case squareDashedBottomCode
     case squareDashedKanban
     case squareDashedMousePointer
+    case squareDashedPlus
     case squareDashedText
     case squareDashedTopSolid
+    case squareDashedX
+    case squareDashedXCorner
     case squareDimensions
     case squareDivide
     case squareDot
@@ -1715,6 +1724,7 @@ public enum LucideIconName: String, CaseIterable {
     case trophy
     case truck
     case truckElectric
+    case tubeLotion
     case turkishLira
     case turntable
     case turtle
@@ -2921,6 +2931,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Cuboid.combinedPath
         case .cupSoda:
             return LucideIcon_CupSoda.combinedPath
+        case .cupcake:
+            return LucideIcon_Cupcake.combinedPath
         case .currency:
             return LucideIcon_Currency.combinedPath
         case .cylinder:
@@ -3009,6 +3021,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_DoorClosed.combinedPath
         case .doorClosedLocked:
             return LucideIcon_DoorClosedLocked.combinedPath
+        case .doorClosedPackage:
+            return LucideIcon_DoorClosedPackage.combinedPath
         case .doorOpen:
             return LucideIcon_DoorOpen.combinedPath
         case .doorStairwell:
@@ -3111,6 +3125,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Fan.combinedPath
         case .fastForward:
             return LucideIcon_FastForward.combinedPath
+        case .faucet:
+            return LucideIcon_Faucet.combinedPath
         case .feather:
             return LucideIcon_Feather.combinedPath
         case .fence:
@@ -3657,6 +3673,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_KeyboardMusic.combinedPath
         case .keyboardOff:
             return LucideIcon_KeyboardOff.combinedPath
+        case .lambda:
+            return LucideIcon_Lambda.combinedPath
         case .lamp:
             return LucideIcon_Lamp.combinedPath
         case .lampCeiling:
@@ -4133,6 +4151,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Navigation2Off.combinedPath
         case .navigationOff:
             return LucideIcon_NavigationOff.combinedPath
+        case .nepaliRupee:
+            return LucideIcon_NepaliRupee.combinedPath
         case .network:
             return LucideIcon_Network.combinedPath
         case .newspaper:
@@ -4525,6 +4545,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_RotateCcwSquare.combinedPath
         case .rotateCw:
             return LucideIcon_RotateCw.combinedPath
+        case .rotateCwClock:
+            return LucideIcon_RotateCwClock.combinedPath
         case .rotateCwFadingClock:
             return LucideIcon_RotateCwFadingClock.combinedPath
         case .rotateCwSquare:
@@ -4885,10 +4907,16 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareDashedKanban.combinedPath
         case .squareDashedMousePointer:
             return LucideIcon_SquareDashedMousePointer.combinedPath
+        case .squareDashedPlus:
+            return LucideIcon_SquareDashedPlus.combinedPath
         case .squareDashedText:
             return LucideIcon_SquareDashedText.combinedPath
         case .squareDashedTopSolid:
             return LucideIcon_SquareDashedTopSolid.combinedPath
+        case .squareDashedX:
+            return LucideIcon_SquareDashedX.combinedPath
+        case .squareDashedXCorner:
+            return LucideIcon_SquareDashedXCorner.combinedPath
         case .squareDimensions:
             return LucideIcon_SquareDimensions.combinedPath
         case .squareDivide:
@@ -5259,6 +5287,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Truck.combinedPath
         case .truckElectric:
             return LucideIcon_TruckElectric.combinedPath
+        case .tubeLotion:
+            return LucideIcon_TubeLotion.combinedPath
         case .turkishLira:
             return LucideIcon_TurkishLira.combinedPath
         case .turntable:
@@ -6605,6 +6635,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Cuboid.openPath
         case .cupSoda:
             return LucideIcon_CupSoda.openPath
+        case .cupcake:
+            return LucideIcon_Cupcake.openPath
         case .currency:
             return LucideIcon_Currency.openPath
         case .cylinder:
@@ -6693,6 +6725,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_DoorClosed.openPath
         case .doorClosedLocked:
             return LucideIcon_DoorClosedLocked.openPath
+        case .doorClosedPackage:
+            return LucideIcon_DoorClosedPackage.openPath
         case .doorOpen:
             return LucideIcon_DoorOpen.openPath
         case .doorStairwell:
@@ -6795,6 +6829,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Fan.openPath
         case .fastForward:
             return LucideIcon_FastForward.openPath
+        case .faucet:
+            return LucideIcon_Faucet.openPath
         case .feather:
             return LucideIcon_Feather.openPath
         case .fence:
@@ -7341,6 +7377,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_KeyboardMusic.openPath
         case .keyboardOff:
             return LucideIcon_KeyboardOff.openPath
+        case .lambda:
+            return LucideIcon_Lambda.openPath
         case .lamp:
             return LucideIcon_Lamp.openPath
         case .lampCeiling:
@@ -7817,6 +7855,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Navigation2Off.openPath
         case .navigationOff:
             return LucideIcon_NavigationOff.openPath
+        case .nepaliRupee:
+            return LucideIcon_NepaliRupee.openPath
         case .network:
             return LucideIcon_Network.openPath
         case .newspaper:
@@ -8209,6 +8249,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_RotateCcwSquare.openPath
         case .rotateCw:
             return LucideIcon_RotateCw.openPath
+        case .rotateCwClock:
+            return LucideIcon_RotateCwClock.openPath
         case .rotateCwFadingClock:
             return LucideIcon_RotateCwFadingClock.openPath
         case .rotateCwSquare:
@@ -8569,10 +8611,16 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareDashedKanban.openPath
         case .squareDashedMousePointer:
             return LucideIcon_SquareDashedMousePointer.openPath
+        case .squareDashedPlus:
+            return LucideIcon_SquareDashedPlus.openPath
         case .squareDashedText:
             return LucideIcon_SquareDashedText.openPath
         case .squareDashedTopSolid:
             return LucideIcon_SquareDashedTopSolid.openPath
+        case .squareDashedX:
+            return LucideIcon_SquareDashedX.openPath
+        case .squareDashedXCorner:
+            return LucideIcon_SquareDashedXCorner.openPath
         case .squareDimensions:
             return LucideIcon_SquareDimensions.openPath
         case .squareDivide:
@@ -8943,6 +8991,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Truck.openPath
         case .truckElectric:
             return LucideIcon_TruckElectric.openPath
+        case .tubeLotion:
+            return LucideIcon_TubeLotion.openPath
         case .turkishLira:
             return LucideIcon_TurkishLira.openPath
         case .turntable:
@@ -10289,6 +10339,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Cuboid.closedPath
         case .cupSoda:
             return LucideIcon_CupSoda.closedPath
+        case .cupcake:
+            return LucideIcon_Cupcake.closedPath
         case .currency:
             return LucideIcon_Currency.closedPath
         case .cylinder:
@@ -10377,6 +10429,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_DoorClosed.closedPath
         case .doorClosedLocked:
             return LucideIcon_DoorClosedLocked.closedPath
+        case .doorClosedPackage:
+            return LucideIcon_DoorClosedPackage.closedPath
         case .doorOpen:
             return LucideIcon_DoorOpen.closedPath
         case .doorStairwell:
@@ -10479,6 +10533,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Fan.closedPath
         case .fastForward:
             return LucideIcon_FastForward.closedPath
+        case .faucet:
+            return LucideIcon_Faucet.closedPath
         case .feather:
             return LucideIcon_Feather.closedPath
         case .fence:
@@ -11025,6 +11081,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_KeyboardMusic.closedPath
         case .keyboardOff:
             return LucideIcon_KeyboardOff.closedPath
+        case .lambda:
+            return LucideIcon_Lambda.closedPath
         case .lamp:
             return LucideIcon_Lamp.closedPath
         case .lampCeiling:
@@ -11501,6 +11559,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Navigation2Off.closedPath
         case .navigationOff:
             return LucideIcon_NavigationOff.closedPath
+        case .nepaliRupee:
+            return LucideIcon_NepaliRupee.closedPath
         case .network:
             return LucideIcon_Network.closedPath
         case .newspaper:
@@ -11893,6 +11953,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_RotateCcwSquare.closedPath
         case .rotateCw:
             return LucideIcon_RotateCw.closedPath
+        case .rotateCwClock:
+            return LucideIcon_RotateCwClock.closedPath
         case .rotateCwFadingClock:
             return LucideIcon_RotateCwFadingClock.closedPath
         case .rotateCwSquare:
@@ -12253,10 +12315,16 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareDashedKanban.closedPath
         case .squareDashedMousePointer:
             return LucideIcon_SquareDashedMousePointer.closedPath
+        case .squareDashedPlus:
+            return LucideIcon_SquareDashedPlus.closedPath
         case .squareDashedText:
             return LucideIcon_SquareDashedText.closedPath
         case .squareDashedTopSolid:
             return LucideIcon_SquareDashedTopSolid.closedPath
+        case .squareDashedX:
+            return LucideIcon_SquareDashedX.closedPath
+        case .squareDashedXCorner:
+            return LucideIcon_SquareDashedXCorner.closedPath
         case .squareDimensions:
             return LucideIcon_SquareDimensions.closedPath
         case .squareDivide:
@@ -12627,6 +12695,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Truck.closedPath
         case .truckElectric:
             return LucideIcon_TruckElectric.closedPath
+        case .tubeLotion:
+            return LucideIcon_TubeLotion.closedPath
         case .turkishLira:
             return LucideIcon_TurkishLira.closedPath
         case .turntable:
@@ -17159,6 +17229,9 @@ public struct Lucide {
     /// Cup Soda icon
     public static let cupSoda: LucideShape = LucideShape(combined: LucideIcon_CupSoda.combinedPath, open: LucideIcon_CupSoda.openPath, closed: LucideIcon_CupSoda.closedPath)
 
+    /// Cupcake icon
+    public static let cupcake: LucideShape = LucideShape(combined: LucideIcon_Cupcake.combinedPath, open: LucideIcon_Cupcake.openPath, closed: LucideIcon_Cupcake.closedPath)
+
     /// Currency icon
     public static let currency: LucideShape = LucideShape(combined: LucideIcon_Currency.combinedPath, open: LucideIcon_Currency.openPath, closed: LucideIcon_Currency.closedPath)
 
@@ -17290,6 +17363,9 @@ public struct Lucide {
 
     /// Door Closed Locked icon
     public static let doorClosedLocked: LucideShape = LucideShape(combined: LucideIcon_DoorClosedLocked.combinedPath, open: LucideIcon_DoorClosedLocked.openPath, closed: LucideIcon_DoorClosedLocked.closedPath)
+
+    /// Door Closed Package icon
+    public static let doorClosedPackage: LucideShape = LucideShape(combined: LucideIcon_DoorClosedPackage.combinedPath, open: LucideIcon_DoorClosedPackage.openPath, closed: LucideIcon_DoorClosedPackage.closedPath)
 
     /// Door Open icon
     public static let doorOpen: LucideShape = LucideShape(combined: LucideIcon_DoorOpen.combinedPath, open: LucideIcon_DoorOpen.openPath, closed: LucideIcon_DoorOpen.closedPath)
@@ -17443,6 +17519,9 @@ public struct Lucide {
 
     /// Fast Forward icon
     public static let fastForward: LucideShape = LucideShape(combined: LucideIcon_FastForward.combinedPath, open: LucideIcon_FastForward.openPath, closed: LucideIcon_FastForward.closedPath)
+
+    /// Faucet icon
+    public static let faucet: LucideShape = LucideShape(combined: LucideIcon_Faucet.combinedPath, open: LucideIcon_Faucet.openPath, closed: LucideIcon_Faucet.closedPath)
 
     /// Feather icon
     public static let feather: LucideShape = LucideShape(combined: LucideIcon_Feather.combinedPath, open: LucideIcon_Feather.openPath, closed: LucideIcon_Feather.closedPath)
@@ -18263,6 +18342,9 @@ public struct Lucide {
     /// Keyboard Off icon
     public static let keyboardOff: LucideShape = LucideShape(combined: LucideIcon_KeyboardOff.combinedPath, open: LucideIcon_KeyboardOff.openPath, closed: LucideIcon_KeyboardOff.closedPath)
 
+    /// Lambda icon
+    public static let lambda: LucideShape = LucideShape(combined: LucideIcon_Lambda.combinedPath, open: LucideIcon_Lambda.openPath, closed: LucideIcon_Lambda.closedPath)
+
     /// Lamp icon
     public static let lamp: LucideShape = LucideShape(combined: LucideIcon_Lamp.combinedPath, open: LucideIcon_Lamp.openPath, closed: LucideIcon_Lamp.closedPath)
 
@@ -18977,6 +19059,9 @@ public struct Lucide {
     /// Navigation Off icon
     public static let navigationOff: LucideShape = LucideShape(combined: LucideIcon_NavigationOff.combinedPath, open: LucideIcon_NavigationOff.openPath, closed: LucideIcon_NavigationOff.closedPath)
 
+    /// Nepali Rupee icon
+    public static let nepaliRupee: LucideShape = LucideShape(combined: LucideIcon_NepaliRupee.combinedPath, open: LucideIcon_NepaliRupee.openPath, closed: LucideIcon_NepaliRupee.closedPath)
+
     /// Network icon
     public static let network: LucideShape = LucideShape(combined: LucideIcon_Network.combinedPath, open: LucideIcon_Network.openPath, closed: LucideIcon_Network.closedPath)
 
@@ -19565,6 +19650,9 @@ public struct Lucide {
     /// Rotate Cw icon
     public static let rotateCw: LucideShape = LucideShape(combined: LucideIcon_RotateCw.combinedPath, open: LucideIcon_RotateCw.openPath, closed: LucideIcon_RotateCw.closedPath)
 
+    /// Rotate Cw Clock icon
+    public static let rotateCwClock: LucideShape = LucideShape(combined: LucideIcon_RotateCwClock.combinedPath, open: LucideIcon_RotateCwClock.openPath, closed: LucideIcon_RotateCwClock.closedPath)
+
     /// Rotate Cw Fading Clock icon
     public static let rotateCwFadingClock: LucideShape = LucideShape(combined: LucideIcon_RotateCwFadingClock.combinedPath, open: LucideIcon_RotateCwFadingClock.openPath, closed: LucideIcon_RotateCwFadingClock.closedPath)
 
@@ -20105,11 +20193,20 @@ public struct Lucide {
     /// Square Dashed Mouse Pointer icon
     public static let squareDashedMousePointer: LucideShape = LucideShape(combined: LucideIcon_SquareDashedMousePointer.combinedPath, open: LucideIcon_SquareDashedMousePointer.openPath, closed: LucideIcon_SquareDashedMousePointer.closedPath)
 
+    /// Square Dashed Plus icon
+    public static let squareDashedPlus: LucideShape = LucideShape(combined: LucideIcon_SquareDashedPlus.combinedPath, open: LucideIcon_SquareDashedPlus.openPath, closed: LucideIcon_SquareDashedPlus.closedPath)
+
     /// Square Dashed Text icon
     public static let squareDashedText: LucideShape = LucideShape(combined: LucideIcon_SquareDashedText.combinedPath, open: LucideIcon_SquareDashedText.openPath, closed: LucideIcon_SquareDashedText.closedPath)
 
     /// Square Dashed Top Solid icon
     public static let squareDashedTopSolid: LucideShape = LucideShape(combined: LucideIcon_SquareDashedTopSolid.combinedPath, open: LucideIcon_SquareDashedTopSolid.openPath, closed: LucideIcon_SquareDashedTopSolid.closedPath)
+
+    /// Square Dashed X icon
+    public static let squareDashedX: LucideShape = LucideShape(combined: LucideIcon_SquareDashedX.combinedPath, open: LucideIcon_SquareDashedX.openPath, closed: LucideIcon_SquareDashedX.closedPath)
+
+    /// Square Dashed X Corner icon
+    public static let squareDashedXCorner: LucideShape = LucideShape(combined: LucideIcon_SquareDashedXCorner.combinedPath, open: LucideIcon_SquareDashedXCorner.openPath, closed: LucideIcon_SquareDashedXCorner.closedPath)
 
     /// Square Dimensions icon
     public static let squareDimensions: LucideShape = LucideShape(combined: LucideIcon_SquareDimensions.combinedPath, open: LucideIcon_SquareDimensions.openPath, closed: LucideIcon_SquareDimensions.closedPath)
@@ -20665,6 +20762,9 @@ public struct Lucide {
 
     /// Truck Electric icon
     public static let truckElectric: LucideShape = LucideShape(combined: LucideIcon_TruckElectric.combinedPath, open: LucideIcon_TruckElectric.openPath, closed: LucideIcon_TruckElectric.closedPath)
+
+    /// Tube Lotion icon
+    public static let tubeLotion: LucideShape = LucideShape(combined: LucideIcon_TubeLotion.combinedPath, open: LucideIcon_TubeLotion.openPath, closed: LucideIcon_TubeLotion.closedPath)
 
     /// Turkish Lira icon
     public static let turkishLira: LucideShape = LucideShape(combined: LucideIcon_TurkishLira.combinedPath, open: LucideIcon_TurkishLira.openPath, closed: LucideIcon_TurkishLira.closedPath)
@@ -22212,10 +22312,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.5"
+    public static let libraryVersion = "0.9.6"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.46.0"
+    public static let lucideVersion = "1.47.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
