@@ -62,6 +62,7 @@ Label("Settings", lucide: .settings)
 ## Key types
 
 - `LucideIcon` — SwiftUI View; init via enum, string name, or LucideShape
+- For iPhone Duo toolbar icon inference, use `Image(lucide:)`; `LucideIcon` is a custom View, not a SwiftUI Image
 - `LucideIconName` — Enum with 1,808 cases mapping to Lucide regular icons
 - `LucideLabIconName` — Enum with 374+ cases mapping to Lucide Lab experimental icons
 - `LucideShape` — SwiftUI Shape protocol conformance for every icon

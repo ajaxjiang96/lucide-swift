@@ -136,8 +136,26 @@ LucideIcon(shape: LucideShape,
 ```swift
 Label("Settings", lucide: .settings)
 Label("Save", lucide: LucideLab.save)
-// In buttons, menus, toolbars — full SwiftUI Label conformance
+// In buttons, menus, and toolbars — full SwiftUI Label conformance
 ```
+
+For iPhone Duo vertical toolbar inference, use `Image(lucide:)` as the label
+icon. `LucideIcon` is a custom SwiftUI `View`, not an `Image`, so SwiftUI does
+not automatically classify it as an icon:
+
+```swift
+ToolbarItem {
+    Button("Next") {
+        // ...
+    } label: {
+        Image(lucide: .aArrowRight)
+    }
+}
+```
+
+On iOS 27.1 and later, a toolbar item containing `LucideIcon` can opt into the
+vertical axis explicitly with `.axisBehavior(.verticalPreferred)`. This
+controls placement only; it does not change the view into an `Image`.
 
 ### Image Creation
 

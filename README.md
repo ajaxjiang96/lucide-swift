@@ -136,6 +136,40 @@ Image(lucide: .house)
     .frame(width: 48, height: 48)
 ```
 
+### iPhone Duo and Vertical Toolbars
+
+SwiftUI identifies toolbar icons from their view structure. `LucideIcon` is a
+custom `View`, so it is not automatically classified as an `Image` for iPhone
+Duo's vertical toolbar layout. Use `Image(lucide:)` when SwiftUI should infer
+that the toolbar item is an icon:
+
+```swift
+ToolbarItem {
+    Button("Next") {
+        // ...
+    } label: {
+        Image(lucide: .aArrowRight)
+    }
+}
+```
+
+If a custom `LucideIcon` view should participate in the vertical bar, opt the
+toolbar item in explicitly on iOS 27.1 and later:
+
+```swift
+ToolbarItem {
+    Button("Next") {
+        // ...
+    } label: {
+        LucideIcon(.aArrowRight)
+    }
+}
+.axisBehavior(.verticalPreferred)
+```
+
+`axisBehavior` controls toolbar placement; it does not make `LucideIcon` an
+`Image`. See Apple's [iPhone Duo toolbar guidance](https://developer.apple.com/videos/play/tech-talks/111462/).
+
 ### Stroke Width
 
 Control the stroke width with the `strokeWidth` parameter (default: 2):
