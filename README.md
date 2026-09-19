@@ -145,10 +145,14 @@ that the toolbar item is an icon:
 
 ```swift
 ToolbarItem {
-    Button("Next") {
+    Button {
         // ...
     } label: {
-        Image(lucide: .aArrowRight)
+        Label {
+            Text("Next")
+        } icon: {
+            Image(lucide: .check)
+        }
     }
 }
 ```
@@ -158,10 +162,14 @@ toolbar item in explicitly on iOS 27.1 and later:
 
 ```swift
 ToolbarItem {
-    Button("Next") {
+    Button {
         // ...
     } label: {
-        LucideIcon(.aArrowRight)
+        Label {
+            Text("Next")
+        } icon: {
+            LucideIcon(.check)
+        }
     }
 }
 .axisBehavior(.verticalPreferred)

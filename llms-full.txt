@@ -145,10 +145,14 @@ not automatically classify it as an icon:
 
 ```swift
 ToolbarItem {
-    Button("Next") {
+    Button {
         // ...
     } label: {
-        Image(lucide: .aArrowRight)
+        Label {
+            Text("Next")
+        } icon: {
+            Image(lucide: .check)
+        }
     }
 }
 ```
