@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.6
-//  Lucide Icons Version: 1.47.0
+//  Library Version: 0.9.7
+//  Lucide Icons Version: 1.48.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -257,6 +257,7 @@ public enum LucideIconName: String, CaseIterable {
     case briefcaseBusiness
     case briefcaseConveyorBelt
     case briefcaseMedical
+    case briefcasePlus
     case bringToFront
     case broccoli
     case broom
@@ -879,6 +880,7 @@ public enum LucideIconName: String, CaseIterable {
     case hourglass
     case hourglassCog
     case house
+    case houseCog
     case houseHeart
     case housePlug
     case housePlus
@@ -961,7 +963,10 @@ public enum LucideIconName: String, CaseIterable {
     case lightbulb
     case lightbulbOff
     case lighthouse
+    case lineDotBottomVertical
+    case lineDotLeftHorizontal
     case lineDotRightHorizontal
+    case lineDotTopVertical
     case lineSquiggle
     case lineStyle
     case link
@@ -1567,6 +1572,7 @@ public enum LucideIconName: String, CaseIterable {
     case squareScissors
     case squareSigma
     case squareSlash
+    case squareSparkles
     case squareSplitHorizontal
     case squareSplitVertical
     case squareSquare
@@ -2353,6 +2359,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BriefcaseConveyorBelt.combinedPath
         case .briefcaseMedical:
             return LucideIcon_BriefcaseMedical.combinedPath
+        case .briefcasePlus:
+            return LucideIcon_BriefcasePlus.combinedPath
         case .bringToFront:
             return LucideIcon_BringToFront.combinedPath
         case .broccoli:
@@ -3597,6 +3605,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_HourglassCog.combinedPath
         case .house:
             return LucideIcon_House.combinedPath
+        case .houseCog:
+            return LucideIcon_HouseCog.combinedPath
         case .houseHeart:
             return LucideIcon_HouseHeart.combinedPath
         case .housePlug:
@@ -3761,8 +3771,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LightbulbOff.combinedPath
         case .lighthouse:
             return LucideIcon_Lighthouse.combinedPath
+        case .lineDotBottomVertical:
+            return LucideIcon_LineDotBottomVertical.combinedPath
+        case .lineDotLeftHorizontal:
+            return LucideIcon_LineDotLeftHorizontal.combinedPath
         case .lineDotRightHorizontal:
             return LucideIcon_LineDotRightHorizontal.combinedPath
+        case .lineDotTopVertical:
+            return LucideIcon_LineDotTopVertical.combinedPath
         case .lineSquiggle:
             return LucideIcon_LineSquiggle.combinedPath
         case .lineStyle:
@@ -4973,6 +4989,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareSigma.combinedPath
         case .squareSlash:
             return LucideIcon_SquareSlash.combinedPath
+        case .squareSparkles:
+            return LucideIcon_SquareSparkles.combinedPath
         case .squareSplitHorizontal:
             return LucideIcon_SquareSplitHorizontal.combinedPath
         case .squareSplitVertical:
@@ -6057,6 +6075,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BriefcaseConveyorBelt.openPath
         case .briefcaseMedical:
             return LucideIcon_BriefcaseMedical.openPath
+        case .briefcasePlus:
+            return LucideIcon_BriefcasePlus.openPath
         case .bringToFront:
             return LucideIcon_BringToFront.openPath
         case .broccoli:
@@ -7301,6 +7321,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_HourglassCog.openPath
         case .house:
             return LucideIcon_House.openPath
+        case .houseCog:
+            return LucideIcon_HouseCog.openPath
         case .houseHeart:
             return LucideIcon_HouseHeart.openPath
         case .housePlug:
@@ -7465,8 +7487,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LightbulbOff.openPath
         case .lighthouse:
             return LucideIcon_Lighthouse.openPath
+        case .lineDotBottomVertical:
+            return LucideIcon_LineDotBottomVertical.openPath
+        case .lineDotLeftHorizontal:
+            return LucideIcon_LineDotLeftHorizontal.openPath
         case .lineDotRightHorizontal:
             return LucideIcon_LineDotRightHorizontal.openPath
+        case .lineDotTopVertical:
+            return LucideIcon_LineDotTopVertical.openPath
         case .lineSquiggle:
             return LucideIcon_LineSquiggle.openPath
         case .lineStyle:
@@ -8677,6 +8705,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareSigma.openPath
         case .squareSlash:
             return LucideIcon_SquareSlash.openPath
+        case .squareSparkles:
+            return LucideIcon_SquareSparkles.openPath
         case .squareSplitHorizontal:
             return LucideIcon_SquareSplitHorizontal.openPath
         case .squareSplitVertical:
@@ -9761,6 +9791,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BriefcaseConveyorBelt.closedPath
         case .briefcaseMedical:
             return LucideIcon_BriefcaseMedical.closedPath
+        case .briefcasePlus:
+            return LucideIcon_BriefcasePlus.closedPath
         case .bringToFront:
             return LucideIcon_BringToFront.closedPath
         case .broccoli:
@@ -11005,6 +11037,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_HourglassCog.closedPath
         case .house:
             return LucideIcon_House.closedPath
+        case .houseCog:
+            return LucideIcon_HouseCog.closedPath
         case .houseHeart:
             return LucideIcon_HouseHeart.closedPath
         case .housePlug:
@@ -11169,8 +11203,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LightbulbOff.closedPath
         case .lighthouse:
             return LucideIcon_Lighthouse.closedPath
+        case .lineDotBottomVertical:
+            return LucideIcon_LineDotBottomVertical.closedPath
+        case .lineDotLeftHorizontal:
+            return LucideIcon_LineDotLeftHorizontal.closedPath
         case .lineDotRightHorizontal:
             return LucideIcon_LineDotRightHorizontal.closedPath
+        case .lineDotTopVertical:
+            return LucideIcon_LineDotTopVertical.closedPath
         case .lineSquiggle:
             return LucideIcon_LineSquiggle.closedPath
         case .lineStyle:
@@ -12381,6 +12421,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareSigma.closedPath
         case .squareSlash:
             return LucideIcon_SquareSlash.closedPath
+        case .squareSparkles:
+            return LucideIcon_SquareSparkles.closedPath
         case .squareSplitHorizontal:
             return LucideIcon_SquareSplitHorizontal.closedPath
         case .squareSplitVertical:
@@ -16362,6 +16404,9 @@ public struct Lucide {
     /// Briefcase Medical icon
     public static let briefcaseMedical: LucideShape = LucideShape(combined: LucideIcon_BriefcaseMedical.combinedPath, open: LucideIcon_BriefcaseMedical.openPath, closed: LucideIcon_BriefcaseMedical.closedPath)
 
+    /// Briefcase Plus icon
+    public static let briefcasePlus: LucideShape = LucideShape(combined: LucideIcon_BriefcasePlus.combinedPath, open: LucideIcon_BriefcasePlus.openPath, closed: LucideIcon_BriefcasePlus.closedPath)
+
     /// Bring To Front icon
     public static let bringToFront: LucideShape = LucideShape(combined: LucideIcon_BringToFront.combinedPath, open: LucideIcon_BringToFront.openPath, closed: LucideIcon_BringToFront.closedPath)
 
@@ -18228,6 +18273,9 @@ public struct Lucide {
     /// House icon
     public static let house: LucideShape = LucideShape(combined: LucideIcon_House.combinedPath, open: LucideIcon_House.openPath, closed: LucideIcon_House.closedPath)
 
+    /// House Cog icon
+    public static let houseCog: LucideShape = LucideShape(combined: LucideIcon_HouseCog.combinedPath, open: LucideIcon_HouseCog.openPath, closed: LucideIcon_HouseCog.closedPath)
+
     /// House Heart icon
     public static let houseHeart: LucideShape = LucideShape(combined: LucideIcon_HouseHeart.combinedPath, open: LucideIcon_HouseHeart.openPath, closed: LucideIcon_HouseHeart.closedPath)
 
@@ -18474,8 +18522,17 @@ public struct Lucide {
     /// Lighthouse icon
     public static let lighthouse: LucideShape = LucideShape(combined: LucideIcon_Lighthouse.combinedPath, open: LucideIcon_Lighthouse.openPath, closed: LucideIcon_Lighthouse.closedPath)
 
+    /// Line Dot Bottom Vertical icon
+    public static let lineDotBottomVertical: LucideShape = LucideShape(combined: LucideIcon_LineDotBottomVertical.combinedPath, open: LucideIcon_LineDotBottomVertical.openPath, closed: LucideIcon_LineDotBottomVertical.closedPath)
+
+    /// Line Dot Left Horizontal icon
+    public static let lineDotLeftHorizontal: LucideShape = LucideShape(combined: LucideIcon_LineDotLeftHorizontal.combinedPath, open: LucideIcon_LineDotLeftHorizontal.openPath, closed: LucideIcon_LineDotLeftHorizontal.closedPath)
+
     /// Line Dot Right Horizontal icon
     public static let lineDotRightHorizontal: LucideShape = LucideShape(combined: LucideIcon_LineDotRightHorizontal.combinedPath, open: LucideIcon_LineDotRightHorizontal.openPath, closed: LucideIcon_LineDotRightHorizontal.closedPath)
+
+    /// Line Dot Top Vertical icon
+    public static let lineDotTopVertical: LucideShape = LucideShape(combined: LucideIcon_LineDotTopVertical.combinedPath, open: LucideIcon_LineDotTopVertical.openPath, closed: LucideIcon_LineDotTopVertical.closedPath)
 
     /// Line Squiggle icon
     public static let lineSquiggle: LucideShape = LucideShape(combined: LucideIcon_LineSquiggle.combinedPath, open: LucideIcon_LineSquiggle.openPath, closed: LucideIcon_LineSquiggle.closedPath)
@@ -20291,6 +20348,9 @@ public struct Lucide {
 
     /// Square Slash icon
     public static let squareSlash: LucideShape = LucideShape(combined: LucideIcon_SquareSlash.combinedPath, open: LucideIcon_SquareSlash.openPath, closed: LucideIcon_SquareSlash.closedPath)
+
+    /// Square Sparkles icon
+    public static let squareSparkles: LucideShape = LucideShape(combined: LucideIcon_SquareSparkles.combinedPath, open: LucideIcon_SquareSparkles.openPath, closed: LucideIcon_SquareSparkles.closedPath)
 
     /// Square Split Horizontal icon
     public static let squareSplitHorizontal: LucideShape = LucideShape(combined: LucideIcon_SquareSplitHorizontal.combinedPath, open: LucideIcon_SquareSplitHorizontal.openPath, closed: LucideIcon_SquareSplitHorizontal.closedPath)
@@ -22312,10 +22372,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.6"
+    public static let libraryVersion = "0.9.7"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.47.0"
+    public static let lucideVersion = "1.48.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
