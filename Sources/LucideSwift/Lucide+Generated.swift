@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.7
-//  Lucide Icons Version: 1.48.0
+//  Library Version: 0.9.8
+//  Lucide Icons Version: 1.49.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -145,6 +145,7 @@ public enum LucideIconName: String, CaseIterable {
     case ban
     case banana
     case bandage
+    case bangladeshiTaka
     case banknote
     case banknoteArrowDown
     case banknoteArrowUp
@@ -956,6 +957,7 @@ public enum LucideIconName: String, CaseIterable {
     case lectern
     case lensConcave
     case lensConvex
+    case letters
     case library
     case libraryBig
     case lifeBuoy
@@ -1289,6 +1291,7 @@ public enum LucideIconName: String, CaseIterable {
     case powerOff
     case presentation
     case printer
+    case printer3D
     case printerCheck
     case printerX
     case projector
@@ -2135,6 +2138,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Banana.combinedPath
         case .bandage:
             return LucideIcon_Bandage.combinedPath
+        case .bangladeshiTaka:
+            return LucideIcon_BangladeshiTaka.combinedPath
         case .banknote:
             return LucideIcon_Banknote.combinedPath
         case .banknoteArrowDown:
@@ -3757,6 +3762,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LensConcave.combinedPath
         case .lensConvex:
             return LucideIcon_LensConvex.combinedPath
+        case .letters:
+            return LucideIcon_Letters.combinedPath
         case .library:
             return LucideIcon_Library.combinedPath
         case .libraryBig:
@@ -4423,6 +4430,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Presentation.combinedPath
         case .printer:
             return LucideIcon_Printer.combinedPath
+        case .printer3D:
+            return LucideIcon_Printer3D.combinedPath
         case .printerCheck:
             return LucideIcon_PrinterCheck.combinedPath
         case .printerX:
@@ -5851,6 +5860,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Banana.openPath
         case .bandage:
             return LucideIcon_Bandage.openPath
+        case .bangladeshiTaka:
+            return LucideIcon_BangladeshiTaka.openPath
         case .banknote:
             return LucideIcon_Banknote.openPath
         case .banknoteArrowDown:
@@ -7473,6 +7484,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LensConcave.openPath
         case .lensConvex:
             return LucideIcon_LensConvex.openPath
+        case .letters:
+            return LucideIcon_Letters.openPath
         case .library:
             return LucideIcon_Library.openPath
         case .libraryBig:
@@ -8139,6 +8152,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Presentation.openPath
         case .printer:
             return LucideIcon_Printer.openPath
+        case .printer3D:
+            return LucideIcon_Printer3D.openPath
         case .printerCheck:
             return LucideIcon_PrinterCheck.openPath
         case .printerX:
@@ -9567,6 +9582,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Banana.closedPath
         case .bandage:
             return LucideIcon_Bandage.closedPath
+        case .bangladeshiTaka:
+            return LucideIcon_BangladeshiTaka.closedPath
         case .banknote:
             return LucideIcon_Banknote.closedPath
         case .banknoteArrowDown:
@@ -11189,6 +11206,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LensConcave.closedPath
         case .lensConvex:
             return LucideIcon_LensConvex.closedPath
+        case .letters:
+            return LucideIcon_Letters.closedPath
         case .library:
             return LucideIcon_Library.closedPath
         case .libraryBig:
@@ -11855,6 +11874,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Presentation.closedPath
         case .printer:
             return LucideIcon_Printer.closedPath
+        case .printer3D:
+            return LucideIcon_Printer3D.closedPath
         case .printerCheck:
             return LucideIcon_PrinterCheck.closedPath
         case .printerX:
@@ -16068,6 +16089,9 @@ public struct Lucide {
     /// Bandage icon
     public static let bandage: LucideShape = LucideShape(combined: LucideIcon_Bandage.combinedPath, open: LucideIcon_Bandage.openPath, closed: LucideIcon_Bandage.closedPath)
 
+    /// Bangladeshi Taka icon
+    public static let bangladeshiTaka: LucideShape = LucideShape(combined: LucideIcon_BangladeshiTaka.combinedPath, open: LucideIcon_BangladeshiTaka.openPath, closed: LucideIcon_BangladeshiTaka.closedPath)
+
     /// Banknote icon
     public static let banknote: LucideShape = LucideShape(combined: LucideIcon_Banknote.combinedPath, open: LucideIcon_Banknote.openPath, closed: LucideIcon_Banknote.closedPath)
 
@@ -18501,6 +18525,9 @@ public struct Lucide {
     /// Lens Convex icon
     public static let lensConvex: LucideShape = LucideShape(combined: LucideIcon_LensConvex.combinedPath, open: LucideIcon_LensConvex.openPath, closed: LucideIcon_LensConvex.closedPath)
 
+    /// Letters icon
+    public static let letters: LucideShape = LucideShape(combined: LucideIcon_Letters.combinedPath, open: LucideIcon_Letters.openPath, closed: LucideIcon_Letters.closedPath)
+
     /// Library icon
     public static let library: LucideShape = LucideShape(combined: LucideIcon_Library.combinedPath, open: LucideIcon_Library.openPath, closed: LucideIcon_Library.closedPath)
 
@@ -19499,6 +19526,9 @@ public struct Lucide {
 
     /// Printer icon
     public static let printer: LucideShape = LucideShape(combined: LucideIcon_Printer.combinedPath, open: LucideIcon_Printer.openPath, closed: LucideIcon_Printer.closedPath)
+
+    /// Printer 3D icon
+    public static let printer3D: LucideShape = LucideShape(combined: LucideIcon_Printer3D.combinedPath, open: LucideIcon_Printer3D.openPath, closed: LucideIcon_Printer3D.closedPath)
 
     /// Printer Check icon
     public static let printerCheck: LucideShape = LucideShape(combined: LucideIcon_PrinterCheck.combinedPath, open: LucideIcon_PrinterCheck.openPath, closed: LucideIcon_PrinterCheck.closedPath)
@@ -22372,10 +22402,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.7"
+    public static let libraryVersion = "0.9.8"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.48.0"
+    public static let lucideVersion = "1.49.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
