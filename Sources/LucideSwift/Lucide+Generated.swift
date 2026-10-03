@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.8
-//  Lucide Icons Version: 1.49.0
+//  Library Version: 0.9.9
+//  Lucide Icons Version: 1.50.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -948,6 +948,7 @@ public enum LucideIconName: String, CaseIterable {
     case layoutDashboard
     case layoutFreeform
     case layoutGrid
+    case layoutGridCircles
     case layoutList
     case layoutPanelLeft
     case layoutPanelTop
@@ -3744,6 +3745,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LayoutFreeform.combinedPath
         case .layoutGrid:
             return LucideIcon_LayoutGrid.combinedPath
+        case .layoutGridCircles:
+            return LucideIcon_LayoutGridCircles.combinedPath
         case .layoutList:
             return LucideIcon_LayoutList.combinedPath
         case .layoutPanelLeft:
@@ -7466,6 +7469,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LayoutFreeform.openPath
         case .layoutGrid:
             return LucideIcon_LayoutGrid.openPath
+        case .layoutGridCircles:
+            return LucideIcon_LayoutGridCircles.openPath
         case .layoutList:
             return LucideIcon_LayoutList.openPath
         case .layoutPanelLeft:
@@ -11188,6 +11193,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LayoutFreeform.closedPath
         case .layoutGrid:
             return LucideIcon_LayoutGrid.closedPath
+        case .layoutGridCircles:
+            return LucideIcon_LayoutGridCircles.closedPath
         case .layoutList:
             return LucideIcon_LayoutList.closedPath
         case .layoutPanelLeft:
@@ -18498,6 +18505,9 @@ public struct Lucide {
     /// Layout Grid icon
     public static let layoutGrid: LucideShape = LucideShape(combined: LucideIcon_LayoutGrid.combinedPath, open: LucideIcon_LayoutGrid.openPath, closed: LucideIcon_LayoutGrid.closedPath)
 
+    /// Layout Grid Circles icon
+    public static let layoutGridCircles: LucideShape = LucideShape(combined: LucideIcon_LayoutGridCircles.combinedPath, open: LucideIcon_LayoutGridCircles.openPath, closed: LucideIcon_LayoutGridCircles.closedPath)
+
     /// Layout List icon
     public static let layoutList: LucideShape = LucideShape(combined: LucideIcon_LayoutList.combinedPath, open: LucideIcon_LayoutList.openPath, closed: LucideIcon_LayoutList.closedPath)
 
@@ -22402,10 +22412,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.8"
+    public static let libraryVersion = "0.9.9"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.49.0"
+    public static let lucideVersion = "1.50.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
