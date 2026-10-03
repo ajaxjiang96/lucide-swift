@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.9
-//  Lucide Icons Version: 1.50.0
+//  Library Version: 0.9.10
+//  Lucide Icons Version: 1.51.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -66,6 +66,7 @@ public enum LucideIconName: String, CaseIterable {
     case archiveRestore
     case archiveX
     case armchair
+    case armenianDram
     case arrowBigDown
     case arrowBigDownDash
     case arrowBigLeft
@@ -592,6 +593,7 @@ public enum LucideIconName: String, CaseIterable {
     case dome
     case donut
     case doorClosed
+    case doorClosedCog
     case doorClosedLocked
     case doorClosedPackage
     case doorOpen
@@ -914,6 +916,7 @@ public enum LucideIconName: String, CaseIterable {
     case joystick
     case kanban
     case kayak
+    case kazakhTenge
     case key
     case keyRound
     case keySquare
@@ -1372,6 +1375,7 @@ public enum LucideIconName: String, CaseIterable {
     case rows3
     case rows4
     case rss
+    case rugbyBall
     case ruler
     case rulerDimensionLine
     case russianRuble
@@ -1667,6 +1671,9 @@ public enum LucideIconName: String, CaseIterable {
     case textAlignCenter
     case textAlignEnd
     case textAlignJustify
+    case textAlignJustifyCenter
+    case textAlignJustifyEnd
+    case textAlignJustifyStart
     case textAlignStart
     case textCursor
     case textCursorInput
@@ -1848,6 +1855,7 @@ public enum LucideIconName: String, CaseIterable {
     case wifiZero
     case wind
     case windArrowDown
+    case windArrowUp
     case wine
     case wineOff
     case workflow
@@ -1981,6 +1989,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ArchiveX.combinedPath
         case .armchair:
             return LucideIcon_Armchair.combinedPath
+        case .armenianDram:
+            return LucideIcon_ArmenianDram.combinedPath
         case .arrowBigDown:
             return LucideIcon_ArrowBigDown.combinedPath
         case .arrowBigDownDash:
@@ -3033,6 +3043,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Donut.combinedPath
         case .doorClosed:
             return LucideIcon_DoorClosed.combinedPath
+        case .doorClosedCog:
+            return LucideIcon_DoorClosedCog.combinedPath
         case .doorClosedLocked:
             return LucideIcon_DoorClosedLocked.combinedPath
         case .doorClosedPackage:
@@ -3677,6 +3689,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Kanban.combinedPath
         case .kayak:
             return LucideIcon_Kayak.combinedPath
+        case .kazakhTenge:
+            return LucideIcon_KazakhTenge.combinedPath
         case .key:
             return LucideIcon_Key.combinedPath
         case .keyRound:
@@ -4593,6 +4607,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Rows4.combinedPath
         case .rss:
             return LucideIcon_Rss.combinedPath
+        case .rugbyBall:
+            return LucideIcon_RugbyBall.combinedPath
         case .ruler:
             return LucideIcon_Ruler.combinedPath
         case .rulerDimensionLine:
@@ -5183,6 +5199,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TextAlignEnd.combinedPath
         case .textAlignJustify:
             return LucideIcon_TextAlignJustify.combinedPath
+        case .textAlignJustifyCenter:
+            return LucideIcon_TextAlignJustifyCenter.combinedPath
+        case .textAlignJustifyEnd:
+            return LucideIcon_TextAlignJustifyEnd.combinedPath
+        case .textAlignJustifyStart:
+            return LucideIcon_TextAlignJustifyStart.combinedPath
         case .textAlignStart:
             return LucideIcon_TextAlignStart.combinedPath
         case .textCursor:
@@ -5545,6 +5567,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Wind.combinedPath
         case .windArrowDown:
             return LucideIcon_WindArrowDown.combinedPath
+        case .windArrowUp:
+            return LucideIcon_WindArrowUp.combinedPath
         case .wine:
             return LucideIcon_Wine.combinedPath
         case .wineOff:
@@ -5705,6 +5729,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ArchiveX.openPath
         case .armchair:
             return LucideIcon_Armchair.openPath
+        case .armenianDram:
+            return LucideIcon_ArmenianDram.openPath
         case .arrowBigDown:
             return LucideIcon_ArrowBigDown.openPath
         case .arrowBigDownDash:
@@ -6757,6 +6783,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Donut.openPath
         case .doorClosed:
             return LucideIcon_DoorClosed.openPath
+        case .doorClosedCog:
+            return LucideIcon_DoorClosedCog.openPath
         case .doorClosedLocked:
             return LucideIcon_DoorClosedLocked.openPath
         case .doorClosedPackage:
@@ -7401,6 +7429,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Kanban.openPath
         case .kayak:
             return LucideIcon_Kayak.openPath
+        case .kazakhTenge:
+            return LucideIcon_KazakhTenge.openPath
         case .key:
             return LucideIcon_Key.openPath
         case .keyRound:
@@ -8317,6 +8347,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Rows4.openPath
         case .rss:
             return LucideIcon_Rss.openPath
+        case .rugbyBall:
+            return LucideIcon_RugbyBall.openPath
         case .ruler:
             return LucideIcon_Ruler.openPath
         case .rulerDimensionLine:
@@ -8907,6 +8939,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TextAlignEnd.openPath
         case .textAlignJustify:
             return LucideIcon_TextAlignJustify.openPath
+        case .textAlignJustifyCenter:
+            return LucideIcon_TextAlignJustifyCenter.openPath
+        case .textAlignJustifyEnd:
+            return LucideIcon_TextAlignJustifyEnd.openPath
+        case .textAlignJustifyStart:
+            return LucideIcon_TextAlignJustifyStart.openPath
         case .textAlignStart:
             return LucideIcon_TextAlignStart.openPath
         case .textCursor:
@@ -9269,6 +9307,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Wind.openPath
         case .windArrowDown:
             return LucideIcon_WindArrowDown.openPath
+        case .windArrowUp:
+            return LucideIcon_WindArrowUp.openPath
         case .wine:
             return LucideIcon_Wine.openPath
         case .wineOff:
@@ -9429,6 +9469,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ArchiveX.closedPath
         case .armchair:
             return LucideIcon_Armchair.closedPath
+        case .armenianDram:
+            return LucideIcon_ArmenianDram.closedPath
         case .arrowBigDown:
             return LucideIcon_ArrowBigDown.closedPath
         case .arrowBigDownDash:
@@ -10481,6 +10523,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Donut.closedPath
         case .doorClosed:
             return LucideIcon_DoorClosed.closedPath
+        case .doorClosedCog:
+            return LucideIcon_DoorClosedCog.closedPath
         case .doorClosedLocked:
             return LucideIcon_DoorClosedLocked.closedPath
         case .doorClosedPackage:
@@ -11125,6 +11169,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Kanban.closedPath
         case .kayak:
             return LucideIcon_Kayak.closedPath
+        case .kazakhTenge:
+            return LucideIcon_KazakhTenge.closedPath
         case .key:
             return LucideIcon_Key.closedPath
         case .keyRound:
@@ -12041,6 +12087,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Rows4.closedPath
         case .rss:
             return LucideIcon_Rss.closedPath
+        case .rugbyBall:
+            return LucideIcon_RugbyBall.closedPath
         case .ruler:
             return LucideIcon_Ruler.closedPath
         case .rulerDimensionLine:
@@ -12631,6 +12679,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TextAlignEnd.closedPath
         case .textAlignJustify:
             return LucideIcon_TextAlignJustify.closedPath
+        case .textAlignJustifyCenter:
+            return LucideIcon_TextAlignJustifyCenter.closedPath
+        case .textAlignJustifyEnd:
+            return LucideIcon_TextAlignJustifyEnd.closedPath
+        case .textAlignJustifyStart:
+            return LucideIcon_TextAlignJustifyStart.closedPath
         case .textAlignStart:
             return LucideIcon_TextAlignStart.closedPath
         case .textCursor:
@@ -12993,6 +13047,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Wind.closedPath
         case .windArrowDown:
             return LucideIcon_WindArrowDown.closedPath
+        case .windArrowUp:
+            return LucideIcon_WindArrowUp.closedPath
         case .wine:
             return LucideIcon_Wine.closedPath
         case .wineOff:
@@ -15859,6 +15915,9 @@ public struct Lucide {
     /// Armchair icon
     public static let armchair: LucideShape = LucideShape(combined: LucideIcon_Armchair.combinedPath, open: LucideIcon_Armchair.openPath, closed: LucideIcon_Armchair.closedPath)
 
+    /// Armenian Dram icon
+    public static let armenianDram: LucideShape = LucideShape(combined: LucideIcon_ArmenianDram.combinedPath, open: LucideIcon_ArmenianDram.openPath, closed: LucideIcon_ArmenianDram.closedPath)
+
     /// Arrow Big Down icon
     public static let arrowBigDown: LucideShape = LucideShape(combined: LucideIcon_ArrowBigDown.combinedPath, open: LucideIcon_ArrowBigDown.openPath, closed: LucideIcon_ArrowBigDown.closedPath)
 
@@ -17437,6 +17496,9 @@ public struct Lucide {
     /// Door Closed icon
     public static let doorClosed: LucideShape = LucideShape(combined: LucideIcon_DoorClosed.combinedPath, open: LucideIcon_DoorClosed.openPath, closed: LucideIcon_DoorClosed.closedPath)
 
+    /// Door Closed Cog icon
+    public static let doorClosedCog: LucideShape = LucideShape(combined: LucideIcon_DoorClosedCog.combinedPath, open: LucideIcon_DoorClosedCog.openPath, closed: LucideIcon_DoorClosedCog.closedPath)
+
     /// Door Closed Locked icon
     public static let doorClosedLocked: LucideShape = LucideShape(combined: LucideIcon_DoorClosedLocked.combinedPath, open: LucideIcon_DoorClosedLocked.openPath, closed: LucideIcon_DoorClosedLocked.closedPath)
 
@@ -18402,6 +18464,9 @@ public struct Lucide {
 
     /// Kayak icon
     public static let kayak: LucideShape = LucideShape(combined: LucideIcon_Kayak.combinedPath, open: LucideIcon_Kayak.openPath, closed: LucideIcon_Kayak.closedPath)
+
+    /// Kazakh Tenge icon
+    public static let kazakhTenge: LucideShape = LucideShape(combined: LucideIcon_KazakhTenge.combinedPath, open: LucideIcon_KazakhTenge.openPath, closed: LucideIcon_KazakhTenge.closedPath)
 
     /// Key icon
     public static let key: LucideShape = LucideShape(combined: LucideIcon_Key.combinedPath, open: LucideIcon_Key.openPath, closed: LucideIcon_Key.closedPath)
@@ -19777,6 +19842,9 @@ public struct Lucide {
     /// Rss icon
     public static let rss: LucideShape = LucideShape(combined: LucideIcon_Rss.combinedPath, open: LucideIcon_Rss.openPath, closed: LucideIcon_Rss.closedPath)
 
+    /// Rugby Ball icon
+    public static let rugbyBall: LucideShape = LucideShape(combined: LucideIcon_RugbyBall.combinedPath, open: LucideIcon_RugbyBall.openPath, closed: LucideIcon_RugbyBall.closedPath)
+
     /// Ruler icon
     public static let ruler: LucideShape = LucideShape(combined: LucideIcon_Ruler.combinedPath, open: LucideIcon_Ruler.openPath, closed: LucideIcon_Ruler.closedPath)
 
@@ -20662,6 +20730,15 @@ public struct Lucide {
     /// Text Align Justify icon
     public static let textAlignJustify: LucideShape = LucideShape(combined: LucideIcon_TextAlignJustify.combinedPath, open: LucideIcon_TextAlignJustify.openPath, closed: LucideIcon_TextAlignJustify.closedPath)
 
+    /// Text Align Justify Center icon
+    public static let textAlignJustifyCenter: LucideShape = LucideShape(combined: LucideIcon_TextAlignJustifyCenter.combinedPath, open: LucideIcon_TextAlignJustifyCenter.openPath, closed: LucideIcon_TextAlignJustifyCenter.closedPath)
+
+    /// Text Align Justify End icon
+    public static let textAlignJustifyEnd: LucideShape = LucideShape(combined: LucideIcon_TextAlignJustifyEnd.combinedPath, open: LucideIcon_TextAlignJustifyEnd.openPath, closed: LucideIcon_TextAlignJustifyEnd.closedPath)
+
+    /// Text Align Justify Start icon
+    public static let textAlignJustifyStart: LucideShape = LucideShape(combined: LucideIcon_TextAlignJustifyStart.combinedPath, open: LucideIcon_TextAlignJustifyStart.openPath, closed: LucideIcon_TextAlignJustifyStart.closedPath)
+
     /// Text Align Start icon
     public static let textAlignStart: LucideShape = LucideShape(combined: LucideIcon_TextAlignStart.combinedPath, open: LucideIcon_TextAlignStart.openPath, closed: LucideIcon_TextAlignStart.closedPath)
 
@@ -21204,6 +21281,9 @@ public struct Lucide {
 
     /// Wind Arrow Down icon
     public static let windArrowDown: LucideShape = LucideShape(combined: LucideIcon_WindArrowDown.combinedPath, open: LucideIcon_WindArrowDown.openPath, closed: LucideIcon_WindArrowDown.closedPath)
+
+    /// Wind Arrow Up icon
+    public static let windArrowUp: LucideShape = LucideShape(combined: LucideIcon_WindArrowUp.combinedPath, open: LucideIcon_WindArrowUp.openPath, closed: LucideIcon_WindArrowUp.closedPath)
 
     /// Wine icon
     public static let wine: LucideShape = LucideShape(combined: LucideIcon_Wine.combinedPath, open: LucideIcon_Wine.openPath, closed: LucideIcon_Wine.closedPath)
@@ -22412,10 +22492,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.9"
+    public static let libraryVersion = "0.9.10"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.50.0"
+    public static let lucideVersion = "1.51.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
