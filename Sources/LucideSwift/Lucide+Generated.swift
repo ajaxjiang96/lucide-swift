@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.11
-//  Lucide Icons Version: 1.52.0
+//  Library Version: 0.9.12
+//  Lucide Icons Version: 1.53.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -830,6 +830,7 @@ public enum LucideIconName: String, CaseIterable {
     case grip
     case gripHorizontal
     case gripVertical
+    case groceries
     case group
     case guitar
     case ham
@@ -876,6 +877,7 @@ public enum LucideIconName: String, CaseIterable {
     case helicopter
     case hexagon
     case highlighter
+    case hikingStick
     case hop
     case hopOff
     case hospital
@@ -1409,6 +1411,7 @@ public enum LucideIconName: String, CaseIterable {
     case scissors
     case scissorsLineDashed
     case scooter
+    case scratchBlocks
     case screenShare
     case screenShareOff
     case scroll
@@ -3517,6 +3520,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_GripHorizontal.combinedPath
         case .gripVertical:
             return LucideIcon_GripVertical.combinedPath
+        case .groceries:
+            return LucideIcon_Groceries.combinedPath
         case .group:
             return LucideIcon_Group.combinedPath
         case .guitar:
@@ -3609,6 +3614,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Hexagon.combinedPath
         case .highlighter:
             return LucideIcon_Highlighter.combinedPath
+        case .hikingStick:
+            return LucideIcon_HikingStick.combinedPath
         case .hop:
             return LucideIcon_Hop.combinedPath
         case .hopOff:
@@ -4675,6 +4682,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ScissorsLineDashed.combinedPath
         case .scooter:
             return LucideIcon_Scooter.combinedPath
+        case .scratchBlocks:
+            return LucideIcon_ScratchBlocks.combinedPath
         case .screenShare:
             return LucideIcon_ScreenShare.combinedPath
         case .screenShareOff:
@@ -7257,6 +7266,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_GripHorizontal.openPath
         case .gripVertical:
             return LucideIcon_GripVertical.openPath
+        case .groceries:
+            return LucideIcon_Groceries.openPath
         case .group:
             return LucideIcon_Group.openPath
         case .guitar:
@@ -7349,6 +7360,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Hexagon.openPath
         case .highlighter:
             return LucideIcon_Highlighter.openPath
+        case .hikingStick:
+            return LucideIcon_HikingStick.openPath
         case .hop:
             return LucideIcon_Hop.openPath
         case .hopOff:
@@ -8415,6 +8428,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ScissorsLineDashed.openPath
         case .scooter:
             return LucideIcon_Scooter.openPath
+        case .scratchBlocks:
+            return LucideIcon_ScratchBlocks.openPath
         case .screenShare:
             return LucideIcon_ScreenShare.openPath
         case .screenShareOff:
@@ -10997,6 +11012,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_GripHorizontal.closedPath
         case .gripVertical:
             return LucideIcon_GripVertical.closedPath
+        case .groceries:
+            return LucideIcon_Groceries.closedPath
         case .group:
             return LucideIcon_Group.closedPath
         case .guitar:
@@ -11089,6 +11106,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Hexagon.closedPath
         case .highlighter:
             return LucideIcon_Highlighter.closedPath
+        case .hikingStick:
+            return LucideIcon_HikingStick.closedPath
         case .hop:
             return LucideIcon_Hop.closedPath
         case .hopOff:
@@ -12155,6 +12174,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ScissorsLineDashed.closedPath
         case .scooter:
             return LucideIcon_Scooter.closedPath
+        case .scratchBlocks:
+            return LucideIcon_ScratchBlocks.closedPath
         case .screenShare:
             return LucideIcon_ScreenShare.closedPath
         case .screenShareOff:
@@ -18207,6 +18228,9 @@ public struct Lucide {
     /// Grip Vertical icon
     public static let gripVertical: LucideShape = LucideShape(combined: LucideIcon_GripVertical.combinedPath, open: LucideIcon_GripVertical.openPath, closed: LucideIcon_GripVertical.closedPath)
 
+    /// Groceries icon
+    public static let groceries: LucideShape = LucideShape(combined: LucideIcon_Groceries.combinedPath, open: LucideIcon_Groceries.openPath, closed: LucideIcon_Groceries.closedPath)
+
     /// Group icon
     public static let group: LucideShape = LucideShape(combined: LucideIcon_Group.combinedPath, open: LucideIcon_Group.openPath, closed: LucideIcon_Group.closedPath)
 
@@ -18344,6 +18368,9 @@ public struct Lucide {
 
     /// Highlighter icon
     public static let highlighter: LucideShape = LucideShape(combined: LucideIcon_Highlighter.combinedPath, open: LucideIcon_Highlighter.openPath, closed: LucideIcon_Highlighter.closedPath)
+
+    /// Hiking Stick icon
+    public static let hikingStick: LucideShape = LucideShape(combined: LucideIcon_HikingStick.combinedPath, open: LucideIcon_HikingStick.openPath, closed: LucideIcon_HikingStick.closedPath)
 
     /// Hop icon
     public static let hop: LucideShape = LucideShape(combined: LucideIcon_Hop.combinedPath, open: LucideIcon_Hop.openPath, closed: LucideIcon_Hop.closedPath)
@@ -19943,6 +19970,9 @@ public struct Lucide {
 
     /// Scooter icon
     public static let scooter: LucideShape = LucideShape(combined: LucideIcon_Scooter.combinedPath, open: LucideIcon_Scooter.openPath, closed: LucideIcon_Scooter.closedPath)
+
+    /// Scratch Blocks icon
+    public static let scratchBlocks: LucideShape = LucideShape(combined: LucideIcon_ScratchBlocks.combinedPath, open: LucideIcon_ScratchBlocks.openPath, closed: LucideIcon_ScratchBlocks.closedPath)
 
     /// Screen Share icon
     public static let screenShare: LucideShape = LucideShape(combined: LucideIcon_ScreenShare.combinedPath, open: LucideIcon_ScreenShare.openPath, closed: LucideIcon_ScreenShare.closedPath)
@@ -22492,10 +22522,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.11"
+    public static let libraryVersion = "0.9.12"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.52.0"
+    public static let lucideVersion = "1.53.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
