@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.12
-//  Lucide Icons Version: 1.53.0
+//  Library Version: 0.9.13
+//  Lucide Icons Version: 1.54.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -961,6 +961,7 @@ public enum LucideIconName: String, CaseIterable {
     case leaf
     case leafyGreen
     case lectern
+    case lens
     case lensConcave
     case lensConvex
     case letters
@@ -3782,6 +3783,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LeafyGreen.combinedPath
         case .lectern:
             return LucideIcon_Lectern.combinedPath
+        case .lens:
+            return LucideIcon_Lens.combinedPath
         case .lensConcave:
             return LucideIcon_LensConcave.combinedPath
         case .lensConvex:
@@ -7528,6 +7531,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LeafyGreen.openPath
         case .lectern:
             return LucideIcon_Lectern.openPath
+        case .lens:
+            return LucideIcon_Lens.openPath
         case .lensConcave:
             return LucideIcon_LensConcave.openPath
         case .lensConvex:
@@ -11274,6 +11279,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LeafyGreen.closedPath
         case .lectern:
             return LucideIcon_Lectern.closedPath
+        case .lens:
+            return LucideIcon_Lens.closedPath
         case .lensConcave:
             return LucideIcon_LensConcave.closedPath
         case .lensConvex:
@@ -18621,6 +18628,9 @@ public struct Lucide {
     /// Lectern icon
     public static let lectern: LucideShape = LucideShape(combined: LucideIcon_Lectern.combinedPath, open: LucideIcon_Lectern.openPath, closed: LucideIcon_Lectern.closedPath)
 
+    /// Lens icon
+    public static let lens: LucideShape = LucideShape(combined: LucideIcon_Lens.combinedPath, open: LucideIcon_Lens.openPath, closed: LucideIcon_Lens.closedPath)
+
     /// Lens Concave icon
     public static let lensConcave: LucideShape = LucideShape(combined: LucideIcon_LensConcave.combinedPath, open: LucideIcon_LensConcave.openPath, closed: LucideIcon_LensConcave.closedPath)
 
@@ -22522,10 +22532,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.12"
+    public static let libraryVersion = "0.9.13"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.53.0"
+    public static let lucideVersion = "1.54.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
