@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.13
-//  Lucide Icons Version: 1.54.0
+//  Library Version: 0.9.14
+//  Lucide Icons Version: 1.55.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -845,6 +845,7 @@ public enum LucideIconName: String, CaseIterable {
     case handMetal
     case handPlatter
     case handbag
+    case handleBottomRight
     case handshake
     case hardDrive
     case hardDriveDownload
@@ -1026,6 +1027,7 @@ public enum LucideIconName: String, CaseIterable {
     case mailBadge
     case mailCheck
     case mailClock
+    case mailDot
     case mailMinus
     case mailOpen
     case mailPen
@@ -1256,6 +1258,7 @@ public enum LucideIconName: String, CaseIterable {
     case phoneCall
     case phoneForwarded
     case phoneIncoming
+    case phoneLog
     case phoneMissed
     case phoneOff
     case phoneOutgoing
@@ -1415,6 +1418,7 @@ public enum LucideIconName: String, CaseIterable {
     case scratchBlocks
     case screenShare
     case screenShareOff
+    case screw
     case scroll
     case scrollText
     case search
@@ -1450,6 +1454,7 @@ public enum LucideIconName: String, CaseIterable {
     case shieldCogCorner
     case shieldEllipsis
     case shieldHalf
+    case shieldHouse
     case shieldKeyhole
     case shieldLock
     case shieldMinus
@@ -1789,6 +1794,7 @@ public enum LucideIconName: String, CaseIterable {
     case userRoundPen
     case userRoundPlus
     case userRoundSearch
+    case userRoundStar
     case userRoundX
     case userSearch
     case userShield
@@ -1852,6 +1858,7 @@ public enum LucideIconName: String, CaseIterable {
     case wifi
     case wifiCog
     case wifiHigh
+    case wifiLock
     case wifiLow
     case wifiOff
     case wifiPen
@@ -3551,6 +3558,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_HandPlatter.combinedPath
         case .handbag:
             return LucideIcon_Handbag.combinedPath
+        case .handleBottomRight:
+            return LucideIcon_HandleBottomRight.combinedPath
         case .handshake:
             return LucideIcon_Handshake.combinedPath
         case .hardDrive:
@@ -3913,6 +3922,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailCheck.combinedPath
         case .mailClock:
             return LucideIcon_MailClock.combinedPath
+        case .mailDot:
+            return LucideIcon_MailDot.combinedPath
         case .mailMinus:
             return LucideIcon_MailMinus.combinedPath
         case .mailOpen:
@@ -4373,6 +4384,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PhoneForwarded.combinedPath
         case .phoneIncoming:
             return LucideIcon_PhoneIncoming.combinedPath
+        case .phoneLog:
+            return LucideIcon_PhoneLog.combinedPath
         case .phoneMissed:
             return LucideIcon_PhoneMissed.combinedPath
         case .phoneOff:
@@ -4691,6 +4704,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ScreenShare.combinedPath
         case .screenShareOff:
             return LucideIcon_ScreenShareOff.combinedPath
+        case .screw:
+            return LucideIcon_Screw.combinedPath
         case .scroll:
             return LucideIcon_Scroll.combinedPath
         case .scrollText:
@@ -4761,6 +4776,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShieldEllipsis.combinedPath
         case .shieldHalf:
             return LucideIcon_ShieldHalf.combinedPath
+        case .shieldHouse:
+            return LucideIcon_ShieldHouse.combinedPath
         case .shieldKeyhole:
             return LucideIcon_ShieldKeyhole.combinedPath
         case .shieldLock:
@@ -5439,6 +5456,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundPlus.combinedPath
         case .userRoundSearch:
             return LucideIcon_UserRoundSearch.combinedPath
+        case .userRoundStar:
+            return LucideIcon_UserRoundStar.combinedPath
         case .userRoundX:
             return LucideIcon_UserRoundX.combinedPath
         case .userSearch:
@@ -5565,6 +5584,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_WifiCog.combinedPath
         case .wifiHigh:
             return LucideIcon_WifiHigh.combinedPath
+        case .wifiLock:
+            return LucideIcon_WifiLock.combinedPath
         case .wifiLow:
             return LucideIcon_WifiLow.combinedPath
         case .wifiOff:
@@ -7299,6 +7320,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_HandPlatter.openPath
         case .handbag:
             return LucideIcon_Handbag.openPath
+        case .handleBottomRight:
+            return LucideIcon_HandleBottomRight.openPath
         case .handshake:
             return LucideIcon_Handshake.openPath
         case .hardDrive:
@@ -7661,6 +7684,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailCheck.openPath
         case .mailClock:
             return LucideIcon_MailClock.openPath
+        case .mailDot:
+            return LucideIcon_MailDot.openPath
         case .mailMinus:
             return LucideIcon_MailMinus.openPath
         case .mailOpen:
@@ -8121,6 +8146,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PhoneForwarded.openPath
         case .phoneIncoming:
             return LucideIcon_PhoneIncoming.openPath
+        case .phoneLog:
+            return LucideIcon_PhoneLog.openPath
         case .phoneMissed:
             return LucideIcon_PhoneMissed.openPath
         case .phoneOff:
@@ -8439,6 +8466,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ScreenShare.openPath
         case .screenShareOff:
             return LucideIcon_ScreenShareOff.openPath
+        case .screw:
+            return LucideIcon_Screw.openPath
         case .scroll:
             return LucideIcon_Scroll.openPath
         case .scrollText:
@@ -8509,6 +8538,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShieldEllipsis.openPath
         case .shieldHalf:
             return LucideIcon_ShieldHalf.openPath
+        case .shieldHouse:
+            return LucideIcon_ShieldHouse.openPath
         case .shieldKeyhole:
             return LucideIcon_ShieldKeyhole.openPath
         case .shieldLock:
@@ -9187,6 +9218,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundPlus.openPath
         case .userRoundSearch:
             return LucideIcon_UserRoundSearch.openPath
+        case .userRoundStar:
+            return LucideIcon_UserRoundStar.openPath
         case .userRoundX:
             return LucideIcon_UserRoundX.openPath
         case .userSearch:
@@ -9313,6 +9346,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_WifiCog.openPath
         case .wifiHigh:
             return LucideIcon_WifiHigh.openPath
+        case .wifiLock:
+            return LucideIcon_WifiLock.openPath
         case .wifiLow:
             return LucideIcon_WifiLow.openPath
         case .wifiOff:
@@ -11047,6 +11082,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_HandPlatter.closedPath
         case .handbag:
             return LucideIcon_Handbag.closedPath
+        case .handleBottomRight:
+            return LucideIcon_HandleBottomRight.closedPath
         case .handshake:
             return LucideIcon_Handshake.closedPath
         case .hardDrive:
@@ -11409,6 +11446,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailCheck.closedPath
         case .mailClock:
             return LucideIcon_MailClock.closedPath
+        case .mailDot:
+            return LucideIcon_MailDot.closedPath
         case .mailMinus:
             return LucideIcon_MailMinus.closedPath
         case .mailOpen:
@@ -11869,6 +11908,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PhoneForwarded.closedPath
         case .phoneIncoming:
             return LucideIcon_PhoneIncoming.closedPath
+        case .phoneLog:
+            return LucideIcon_PhoneLog.closedPath
         case .phoneMissed:
             return LucideIcon_PhoneMissed.closedPath
         case .phoneOff:
@@ -12187,6 +12228,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ScreenShare.closedPath
         case .screenShareOff:
             return LucideIcon_ScreenShareOff.closedPath
+        case .screw:
+            return LucideIcon_Screw.closedPath
         case .scroll:
             return LucideIcon_Scroll.closedPath
         case .scrollText:
@@ -12257,6 +12300,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShieldEllipsis.closedPath
         case .shieldHalf:
             return LucideIcon_ShieldHalf.closedPath
+        case .shieldHouse:
+            return LucideIcon_ShieldHouse.closedPath
         case .shieldKeyhole:
             return LucideIcon_ShieldKeyhole.closedPath
         case .shieldLock:
@@ -12935,6 +12980,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundPlus.closedPath
         case .userRoundSearch:
             return LucideIcon_UserRoundSearch.closedPath
+        case .userRoundStar:
+            return LucideIcon_UserRoundStar.closedPath
         case .userRoundX:
             return LucideIcon_UserRoundX.closedPath
         case .userSearch:
@@ -13061,6 +13108,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_WifiCog.closedPath
         case .wifiHigh:
             return LucideIcon_WifiHigh.closedPath
+        case .wifiLock:
+            return LucideIcon_WifiLock.closedPath
         case .wifiLow:
             return LucideIcon_WifiLow.closedPath
         case .wifiOff:
@@ -18280,6 +18329,9 @@ public struct Lucide {
     /// Handbag icon
     public static let handbag: LucideShape = LucideShape(combined: LucideIcon_Handbag.combinedPath, open: LucideIcon_Handbag.openPath, closed: LucideIcon_Handbag.closedPath)
 
+    /// Handle Bottom Right icon
+    public static let handleBottomRight: LucideShape = LucideShape(combined: LucideIcon_HandleBottomRight.combinedPath, open: LucideIcon_HandleBottomRight.openPath, closed: LucideIcon_HandleBottomRight.closedPath)
+
     /// Handshake icon
     public static let handshake: LucideShape = LucideShape(combined: LucideIcon_Handshake.combinedPath, open: LucideIcon_Handshake.openPath, closed: LucideIcon_Handshake.closedPath)
 
@@ -18822,6 +18874,9 @@ public struct Lucide {
 
     /// Mail Clock icon
     public static let mailClock: LucideShape = LucideShape(combined: LucideIcon_MailClock.combinedPath, open: LucideIcon_MailClock.openPath, closed: LucideIcon_MailClock.closedPath)
+
+    /// Mail Dot icon
+    public static let mailDot: LucideShape = LucideShape(combined: LucideIcon_MailDot.combinedPath, open: LucideIcon_MailDot.openPath, closed: LucideIcon_MailDot.closedPath)
 
     /// Mail Minus icon
     public static let mailMinus: LucideShape = LucideShape(combined: LucideIcon_MailMinus.combinedPath, open: LucideIcon_MailMinus.openPath, closed: LucideIcon_MailMinus.closedPath)
@@ -19513,6 +19568,9 @@ public struct Lucide {
     /// Phone Incoming icon
     public static let phoneIncoming: LucideShape = LucideShape(combined: LucideIcon_PhoneIncoming.combinedPath, open: LucideIcon_PhoneIncoming.openPath, closed: LucideIcon_PhoneIncoming.closedPath)
 
+    /// Phone Log icon
+    public static let phoneLog: LucideShape = LucideShape(combined: LucideIcon_PhoneLog.combinedPath, open: LucideIcon_PhoneLog.openPath, closed: LucideIcon_PhoneLog.closedPath)
+
     /// Phone Missed icon
     public static let phoneMissed: LucideShape = LucideShape(combined: LucideIcon_PhoneMissed.combinedPath, open: LucideIcon_PhoneMissed.openPath, closed: LucideIcon_PhoneMissed.closedPath)
 
@@ -19990,6 +20048,9 @@ public struct Lucide {
     /// Screen Share Off icon
     public static let screenShareOff: LucideShape = LucideShape(combined: LucideIcon_ScreenShareOff.combinedPath, open: LucideIcon_ScreenShareOff.openPath, closed: LucideIcon_ScreenShareOff.closedPath)
 
+    /// Screw icon
+    public static let screw: LucideShape = LucideShape(combined: LucideIcon_Screw.combinedPath, open: LucideIcon_Screw.openPath, closed: LucideIcon_Screw.closedPath)
+
     /// Scroll icon
     public static let scroll: LucideShape = LucideShape(combined: LucideIcon_Scroll.combinedPath, open: LucideIcon_Scroll.openPath, closed: LucideIcon_Scroll.closedPath)
 
@@ -20094,6 +20155,9 @@ public struct Lucide {
 
     /// Shield Half icon
     public static let shieldHalf: LucideShape = LucideShape(combined: LucideIcon_ShieldHalf.combinedPath, open: LucideIcon_ShieldHalf.openPath, closed: LucideIcon_ShieldHalf.closedPath)
+
+    /// Shield House icon
+    public static let shieldHouse: LucideShape = LucideShape(combined: LucideIcon_ShieldHouse.combinedPath, open: LucideIcon_ShieldHouse.openPath, closed: LucideIcon_ShieldHouse.closedPath)
 
     /// Shield Keyhole icon
     public static let shieldKeyhole: LucideShape = LucideShape(combined: LucideIcon_ShieldKeyhole.combinedPath, open: LucideIcon_ShieldKeyhole.openPath, closed: LucideIcon_ShieldKeyhole.closedPath)
@@ -21112,6 +21176,9 @@ public struct Lucide {
     /// User Round Search icon
     public static let userRoundSearch: LucideShape = LucideShape(combined: LucideIcon_UserRoundSearch.combinedPath, open: LucideIcon_UserRoundSearch.openPath, closed: LucideIcon_UserRoundSearch.closedPath)
 
+    /// User Round Star icon
+    public static let userRoundStar: LucideShape = LucideShape(combined: LucideIcon_UserRoundStar.combinedPath, open: LucideIcon_UserRoundStar.openPath, closed: LucideIcon_UserRoundStar.closedPath)
+
     /// User Round X icon
     public static let userRoundX: LucideShape = LucideShape(combined: LucideIcon_UserRoundX.combinedPath, open: LucideIcon_UserRoundX.openPath, closed: LucideIcon_UserRoundX.closedPath)
 
@@ -21300,6 +21367,9 @@ public struct Lucide {
 
     /// Wifi High icon
     public static let wifiHigh: LucideShape = LucideShape(combined: LucideIcon_WifiHigh.combinedPath, open: LucideIcon_WifiHigh.openPath, closed: LucideIcon_WifiHigh.closedPath)
+
+    /// Wifi Lock icon
+    public static let wifiLock: LucideShape = LucideShape(combined: LucideIcon_WifiLock.combinedPath, open: LucideIcon_WifiLock.openPath, closed: LucideIcon_WifiLock.closedPath)
 
     /// Wifi Low icon
     public static let wifiLow: LucideShape = LucideShape(combined: LucideIcon_WifiLow.combinedPath, open: LucideIcon_WifiLow.openPath, closed: LucideIcon_WifiLow.closedPath)
@@ -22532,10 +22602,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.13"
+    public static let libraryVersion = "0.9.14"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.54.0"
+    public static let lucideVersion = "1.55.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
