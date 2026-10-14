@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.14
-//  Lucide Icons Version: 1.55.0
+//  Library Version: 0.9.15
+//  Lucide Icons Version: 1.56.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -1077,6 +1077,7 @@ public enum LucideIconName: String, CaseIterable {
     case messageCirclePlus
     case messageCircleQuestionMark
     case messageCircleReply
+    case messageCircleText
     case messageCircleWarning
     case messageCircleX
     case messageSquare
@@ -1436,6 +1437,7 @@ public enum LucideIconName: String, CaseIterable {
     case server
     case serverCog
     case serverCrash
+    case serverNas
     case serverOff
     case serverPlus
     case settings
@@ -4022,6 +4024,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageCircleQuestionMark.combinedPath
         case .messageCircleReply:
             return LucideIcon_MessageCircleReply.combinedPath
+        case .messageCircleText:
+            return LucideIcon_MessageCircleText.combinedPath
         case .messageCircleWarning:
             return LucideIcon_MessageCircleWarning.combinedPath
         case .messageCircleX:
@@ -4740,6 +4744,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ServerCog.combinedPath
         case .serverCrash:
             return LucideIcon_ServerCrash.combinedPath
+        case .serverNas:
+            return LucideIcon_ServerNas.combinedPath
         case .serverOff:
             return LucideIcon_ServerOff.combinedPath
         case .serverPlus:
@@ -7784,6 +7790,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageCircleQuestionMark.openPath
         case .messageCircleReply:
             return LucideIcon_MessageCircleReply.openPath
+        case .messageCircleText:
+            return LucideIcon_MessageCircleText.openPath
         case .messageCircleWarning:
             return LucideIcon_MessageCircleWarning.openPath
         case .messageCircleX:
@@ -8502,6 +8510,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ServerCog.openPath
         case .serverCrash:
             return LucideIcon_ServerCrash.openPath
+        case .serverNas:
+            return LucideIcon_ServerNas.openPath
         case .serverOff:
             return LucideIcon_ServerOff.openPath
         case .serverPlus:
@@ -11546,6 +11556,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageCircleQuestionMark.closedPath
         case .messageCircleReply:
             return LucideIcon_MessageCircleReply.closedPath
+        case .messageCircleText:
+            return LucideIcon_MessageCircleText.closedPath
         case .messageCircleWarning:
             return LucideIcon_MessageCircleWarning.closedPath
         case .messageCircleX:
@@ -12264,6 +12276,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ServerCog.closedPath
         case .serverCrash:
             return LucideIcon_ServerCrash.closedPath
+        case .serverNas:
+            return LucideIcon_ServerNas.closedPath
         case .serverOff:
             return LucideIcon_ServerOff.closedPath
         case .serverPlus:
@@ -19025,6 +19039,9 @@ public struct Lucide {
     /// Message Circle Reply icon
     public static let messageCircleReply: LucideShape = LucideShape(combined: LucideIcon_MessageCircleReply.combinedPath, open: LucideIcon_MessageCircleReply.openPath, closed: LucideIcon_MessageCircleReply.closedPath)
 
+    /// Message Circle Text icon
+    public static let messageCircleText: LucideShape = LucideShape(combined: LucideIcon_MessageCircleText.combinedPath, open: LucideIcon_MessageCircleText.openPath, closed: LucideIcon_MessageCircleText.closedPath)
+
     /// Message Circle Warning icon
     public static let messageCircleWarning: LucideShape = LucideShape(combined: LucideIcon_MessageCircleWarning.combinedPath, open: LucideIcon_MessageCircleWarning.openPath, closed: LucideIcon_MessageCircleWarning.closedPath)
 
@@ -20101,6 +20118,9 @@ public struct Lucide {
 
     /// Server Crash icon
     public static let serverCrash: LucideShape = LucideShape(combined: LucideIcon_ServerCrash.combinedPath, open: LucideIcon_ServerCrash.openPath, closed: LucideIcon_ServerCrash.closedPath)
+
+    /// Server Nas icon
+    public static let serverNas: LucideShape = LucideShape(combined: LucideIcon_ServerNas.combinedPath, open: LucideIcon_ServerNas.openPath, closed: LucideIcon_ServerNas.closedPath)
 
     /// Server Off icon
     public static let serverOff: LucideShape = LucideShape(combined: LucideIcon_ServerOff.combinedPath, open: LucideIcon_ServerOff.openPath, closed: LucideIcon_ServerOff.closedPath)
@@ -22602,10 +22622,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.14"
+    public static let libraryVersion = "0.9.15"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.55.0"
+    public static let lucideVersion = "1.56.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
