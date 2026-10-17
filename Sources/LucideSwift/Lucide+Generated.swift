@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.16
-//  Lucide Icons Version: 1.57.0
+//  Library Version: 0.9.17
+//  Lucide Icons Version: 1.58.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -334,6 +334,7 @@ public enum LucideIconName: String, CaseIterable {
     case cat
     case cctv
     case cctvOff
+    case certificate
     case chartArea
     case chartBar
     case chartBarBig
@@ -622,6 +623,8 @@ public enum LucideIconName: String, CaseIterable {
     case egg
     case eggFried
     case eggOff
+    case eighthNote
+    case eighthNotes
     case eject
     case ellipse
     case ellipsis
@@ -841,6 +844,7 @@ public enum LucideIconName: String, CaseIterable {
     case group
     case guitar
     case guitarElectric
+    case halfNote
     case ham
     case hamburger
     case hammer
@@ -1173,10 +1177,6 @@ public enum LucideIconName: String, CaseIterable {
     case moveUpLeft
     case moveUpRight
     case moveVertical
-    case music
-    case music2
-    case music3
-    case music4
     case navigation
     case navigation2
     case navigation2Off
@@ -1501,6 +1501,7 @@ public enum LucideIconName: String, CaseIterable {
     case signpost
     case signpostBig
     case siren
+    case sixteenthNotes
     case skipBack
     case skipForward
     case skull
@@ -2549,6 +2550,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Cctv.combinedPath
         case .cctvOff:
             return LucideIcon_CctvOff.combinedPath
+        case .certificate:
+            return LucideIcon_Certificate.combinedPath
         case .chartArea:
             return LucideIcon_ChartArea.combinedPath
         case .chartBar:
@@ -3125,6 +3128,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_EggFried.combinedPath
         case .eggOff:
             return LucideIcon_EggOff.combinedPath
+        case .eighthNote:
+            return LucideIcon_EighthNote.combinedPath
+        case .eighthNotes:
+            return LucideIcon_EighthNotes.combinedPath
         case .eject:
             return LucideIcon_Eject.combinedPath
         case .ellipse:
@@ -3563,6 +3570,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Guitar.combinedPath
         case .guitarElectric:
             return LucideIcon_GuitarElectric.combinedPath
+        case .halfNote:
+            return LucideIcon_HalfNote.combinedPath
         case .ham:
             return LucideIcon_Ham.combinedPath
         case .hamburger:
@@ -4227,14 +4236,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MoveUpRight.combinedPath
         case .moveVertical:
             return LucideIcon_MoveVertical.combinedPath
-        case .music:
-            return LucideIcon_Music.combinedPath
-        case .music2:
-            return LucideIcon_Music2.combinedPath
-        case .music3:
-            return LucideIcon_Music3.combinedPath
-        case .music4:
-            return LucideIcon_Music4.combinedPath
         case .navigation:
             return LucideIcon_Navigation.combinedPath
         case .navigation2:
@@ -4883,6 +4884,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SignpostBig.combinedPath
         case .siren:
             return LucideIcon_Siren.combinedPath
+        case .sixteenthNotes:
+            return LucideIcon_SixteenthNotes.combinedPath
         case .skipBack:
             return LucideIcon_SkipBack.combinedPath
         case .skipForward:
@@ -6337,6 +6340,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Cctv.openPath
         case .cctvOff:
             return LucideIcon_CctvOff.openPath
+        case .certificate:
+            return LucideIcon_Certificate.openPath
         case .chartArea:
             return LucideIcon_ChartArea.openPath
         case .chartBar:
@@ -6913,6 +6918,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_EggFried.openPath
         case .eggOff:
             return LucideIcon_EggOff.openPath
+        case .eighthNote:
+            return LucideIcon_EighthNote.openPath
+        case .eighthNotes:
+            return LucideIcon_EighthNotes.openPath
         case .eject:
             return LucideIcon_Eject.openPath
         case .ellipse:
@@ -7351,6 +7360,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Guitar.openPath
         case .guitarElectric:
             return LucideIcon_GuitarElectric.openPath
+        case .halfNote:
+            return LucideIcon_HalfNote.openPath
         case .ham:
             return LucideIcon_Ham.openPath
         case .hamburger:
@@ -8015,14 +8026,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MoveUpRight.openPath
         case .moveVertical:
             return LucideIcon_MoveVertical.openPath
-        case .music:
-            return LucideIcon_Music.openPath
-        case .music2:
-            return LucideIcon_Music2.openPath
-        case .music3:
-            return LucideIcon_Music3.openPath
-        case .music4:
-            return LucideIcon_Music4.openPath
         case .navigation:
             return LucideIcon_Navigation.openPath
         case .navigation2:
@@ -8671,6 +8674,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SignpostBig.openPath
         case .siren:
             return LucideIcon_Siren.openPath
+        case .sixteenthNotes:
+            return LucideIcon_SixteenthNotes.openPath
         case .skipBack:
             return LucideIcon_SkipBack.openPath
         case .skipForward:
@@ -10125,6 +10130,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Cctv.closedPath
         case .cctvOff:
             return LucideIcon_CctvOff.closedPath
+        case .certificate:
+            return LucideIcon_Certificate.closedPath
         case .chartArea:
             return LucideIcon_ChartArea.closedPath
         case .chartBar:
@@ -10701,6 +10708,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_EggFried.closedPath
         case .eggOff:
             return LucideIcon_EggOff.closedPath
+        case .eighthNote:
+            return LucideIcon_EighthNote.closedPath
+        case .eighthNotes:
+            return LucideIcon_EighthNotes.closedPath
         case .eject:
             return LucideIcon_Eject.closedPath
         case .ellipse:
@@ -11139,6 +11150,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Guitar.closedPath
         case .guitarElectric:
             return LucideIcon_GuitarElectric.closedPath
+        case .halfNote:
+            return LucideIcon_HalfNote.closedPath
         case .ham:
             return LucideIcon_Ham.closedPath
         case .hamburger:
@@ -11803,14 +11816,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MoveUpRight.closedPath
         case .moveVertical:
             return LucideIcon_MoveVertical.closedPath
-        case .music:
-            return LucideIcon_Music.closedPath
-        case .music2:
-            return LucideIcon_Music2.closedPath
-        case .music3:
-            return LucideIcon_Music3.closedPath
-        case .music4:
-            return LucideIcon_Music4.closedPath
         case .navigation:
             return LucideIcon_Navigation.closedPath
         case .navigation2:
@@ -12459,6 +12464,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SignpostBig.closedPath
         case .siren:
             return LucideIcon_Siren.closedPath
+        case .sixteenthNotes:
+            return LucideIcon_SixteenthNotes.closedPath
         case .skipBack:
             return LucideIcon_SkipBack.closedPath
         case .skipForward:
@@ -16887,6 +16894,9 @@ public struct Lucide {
     /// Cctv Off icon
     public static let cctvOff: LucideShape = LucideShape(combined: LucideIcon_CctvOff.combinedPath, open: LucideIcon_CctvOff.openPath, closed: LucideIcon_CctvOff.closedPath)
 
+    /// Certificate icon
+    public static let certificate: LucideShape = LucideShape(combined: LucideIcon_Certificate.combinedPath, open: LucideIcon_Certificate.openPath, closed: LucideIcon_Certificate.closedPath)
+
     /// Chart Area icon
     public static let chartArea: LucideShape = LucideShape(combined: LucideIcon_ChartArea.combinedPath, open: LucideIcon_ChartArea.openPath, closed: LucideIcon_ChartArea.closedPath)
 
@@ -17751,6 +17761,12 @@ public struct Lucide {
     /// Egg Off icon
     public static let eggOff: LucideShape = LucideShape(combined: LucideIcon_EggOff.combinedPath, open: LucideIcon_EggOff.openPath, closed: LucideIcon_EggOff.closedPath)
 
+    /// Eighth Note icon
+    public static let eighthNote: LucideShape = LucideShape(combined: LucideIcon_EighthNote.combinedPath, open: LucideIcon_EighthNote.openPath, closed: LucideIcon_EighthNote.closedPath)
+
+    /// Eighth Notes icon
+    public static let eighthNotes: LucideShape = LucideShape(combined: LucideIcon_EighthNotes.combinedPath, open: LucideIcon_EighthNotes.openPath, closed: LucideIcon_EighthNotes.closedPath)
+
     /// Eject icon
     public static let eject: LucideShape = LucideShape(combined: LucideIcon_Eject.combinedPath, open: LucideIcon_Eject.openPath, closed: LucideIcon_Eject.closedPath)
 
@@ -18407,6 +18423,9 @@ public struct Lucide {
 
     /// Guitar Electric icon
     public static let guitarElectric: LucideShape = LucideShape(combined: LucideIcon_GuitarElectric.combinedPath, open: LucideIcon_GuitarElectric.openPath, closed: LucideIcon_GuitarElectric.closedPath)
+
+    /// Half Note icon
+    public static let halfNote: LucideShape = LucideShape(combined: LucideIcon_HalfNote.combinedPath, open: LucideIcon_HalfNote.openPath, closed: LucideIcon_HalfNote.closedPath)
 
     /// Ham icon
     public static let ham: LucideShape = LucideShape(combined: LucideIcon_Ham.combinedPath, open: LucideIcon_Ham.openPath, closed: LucideIcon_Ham.closedPath)
@@ -19404,18 +19423,6 @@ public struct Lucide {
     /// Move Vertical icon
     public static let moveVertical: LucideShape = LucideShape(combined: LucideIcon_MoveVertical.combinedPath, open: LucideIcon_MoveVertical.openPath, closed: LucideIcon_MoveVertical.closedPath)
 
-    /// Music icon
-    public static let music: LucideShape = LucideShape(combined: LucideIcon_Music.combinedPath, open: LucideIcon_Music.openPath, closed: LucideIcon_Music.closedPath)
-
-    /// Music 2 icon
-    public static let music2: LucideShape = LucideShape(combined: LucideIcon_Music2.combinedPath, open: LucideIcon_Music2.openPath, closed: LucideIcon_Music2.closedPath)
-
-    /// Music 3 icon
-    public static let music3: LucideShape = LucideShape(combined: LucideIcon_Music3.combinedPath, open: LucideIcon_Music3.openPath, closed: LucideIcon_Music3.closedPath)
-
-    /// Music 4 icon
-    public static let music4: LucideShape = LucideShape(combined: LucideIcon_Music4.combinedPath, open: LucideIcon_Music4.openPath, closed: LucideIcon_Music4.closedPath)
-
     /// Navigation icon
     public static let navigation: LucideShape = LucideShape(combined: LucideIcon_Navigation.combinedPath, open: LucideIcon_Navigation.openPath, closed: LucideIcon_Navigation.closedPath)
 
@@ -20387,6 +20394,9 @@ public struct Lucide {
 
     /// Siren icon
     public static let siren: LucideShape = LucideShape(combined: LucideIcon_Siren.combinedPath, open: LucideIcon_Siren.openPath, closed: LucideIcon_Siren.closedPath)
+
+    /// Sixteenth Notes icon
+    public static let sixteenthNotes: LucideShape = LucideShape(combined: LucideIcon_SixteenthNotes.combinedPath, open: LucideIcon_SixteenthNotes.openPath, closed: LucideIcon_SixteenthNotes.closedPath)
 
     /// Skip Back icon
     public static let skipBack: LucideShape = LucideShape(combined: LucideIcon_SkipBack.combinedPath, open: LucideIcon_SkipBack.openPath, closed: LucideIcon_SkipBack.closedPath)
@@ -22732,10 +22742,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.16"
+    public static let libraryVersion = "0.9.17"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.57.0"
+    public static let lucideVersion = "1.58.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"

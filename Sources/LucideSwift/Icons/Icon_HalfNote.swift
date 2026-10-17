@@ -1,17 +1,17 @@
 //
-//  Icon_Music3.swift
+//  Icon_HalfNote.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: music-3
+//  Icon: half-note
 //
 
 import SwiftUI
 
-/// Music 3 icon
-internal enum LucideIcon_Music3 {
+/// Half Note icon
+internal enum LucideIcon_HalfNote {
     
-/// Music 3 icon path (combined)
+/// Half Note icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 16.0, y: 18.0))
@@ -23,14 +23,14 @@ path.addCurve(to: CGPoint(x: 12.0, y: 14.0), control1: CGPoint(x: 16.0, y: 15.79
 path.addCurve(to: CGPoint(x: 8.0, y: 18.0), control1: CGPoint(x: 9.790861000676827, y: 14.0), control2: CGPoint(x: 8.0, y: 15.790861000676825))
     return path
 }()
-/// Music 3 icon open subpaths
+/// Half Note icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 16.0, y: 18.0))
 path.addLine(to: CGPoint(x: 16.0, y: 2.0))
     return path
 }()
-/// Music 3 icon closed subpaths
+/// Half Note icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 8.0, y: 18.0))
