@@ -136,6 +136,24 @@ Image(lucide: .house)
     .frame(width: 48, height: 48)
 ```
 
+#### Combining Icons
+
+Use SwiftUI overlays to combine icons, as in Lucide's
+[Scan + User example](https://lucide.dev/guide/react/advanced/combining-icons).
+Both layers remain vector views. Centering a 24-point User inside a 48-point
+Scan matches the example's 12-unit icon at `(6, 6)` in a 24-unit view box:
+
+```swift
+LucideIcon(.scan, size: 48, absoluteStrokeWidth: true)
+    .overlay(LucideIcon(.user, size: 24, absoluteStrokeWidth: true))
+    .accessibilityElement(children: .ignore)
+    .accessibilityLabel("Scan person")
+```
+
+Native SwiftUI shapes work too. For a notification badge, use
+`.overlay(Circle().fill(Color.red).frame(width: 6, height: 6), alignment: .topTrailing)`.
+Give the combined icon one accessibility label that describes its meaning.
+
 ### iPhone Duo and Vertical Toolbars
 
 SwiftUI identifies toolbar icons from their view structure. `LucideIcon` is a
