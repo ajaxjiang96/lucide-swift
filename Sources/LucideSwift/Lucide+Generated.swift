@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.18
-//  Lucide Icons Version: 1.59.0
+//  Library Version: 0.9.19
+//  Lucide Icons Version: 1.60.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -118,11 +118,13 @@ public enum LucideIconName: String, CaseIterable {
     case audioLinesOff
     case audioLinesX
     case audioWaveform
+    case avocado
     case award
     case axe
     case axis3D
     case baby
     case backpack
+    case bacon
     case badge
     case badgeAlert
     case badgeCent
@@ -252,6 +254,7 @@ public enum LucideIconName: String, CaseIterable {
     case brain
     case brainCircuit
     case brainCog
+    case brainOff
     case brickWall
     case brickWallFire
     case brickWallShield
@@ -830,6 +833,7 @@ public enum LucideIconName: String, CaseIterable {
     case gpu
     case graduationCap
     case grape
+    case graphHub
     case graphStar
     case grid2X2
     case grid2X2Check
@@ -977,6 +981,7 @@ public enum LucideIconName: String, CaseIterable {
     case lens
     case lensConcave
     case lensConvex
+    case letterSpacing
     case letters
     case library
     case libraryBig
@@ -989,6 +994,7 @@ public enum LucideIconName: String, CaseIterable {
     case lineDotLeftHorizontal
     case lineDotRightHorizontal
     case lineDotTopVertical
+    case lineHeight
     case lineSquiggle
     case lineStyle
     case link
@@ -1512,6 +1518,7 @@ public enum LucideIconName: String, CaseIterable {
     case smartphone
     case smartphoneCharging
     case smartphoneNfc
+    case smartphoneUserRound
     case snail
     case snowflake
     case soapDispenserDroplet
@@ -1725,6 +1732,7 @@ public enum LucideIconName: String, CaseIterable {
     case toggleLeft
     case toggleRight
     case toilet
+    case tombstone
     case toolCase
     case toolbox
     case toothbrush
@@ -2118,6 +2126,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_AudioLinesX.combinedPath
         case .audioWaveform:
             return LucideIcon_AudioWaveform.combinedPath
+        case .avocado:
+            return LucideIcon_Avocado.combinedPath
         case .award:
             return LucideIcon_Award.combinedPath
         case .axe:
@@ -2128,6 +2138,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Baby.combinedPath
         case .backpack:
             return LucideIcon_Backpack.combinedPath
+        case .bacon:
+            return LucideIcon_Bacon.combinedPath
         case .badge:
             return LucideIcon_Badge.combinedPath
         case .badgeAlert:
@@ -2386,6 +2398,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BrainCircuit.combinedPath
         case .brainCog:
             return LucideIcon_BrainCog.combinedPath
+        case .brainOff:
+            return LucideIcon_BrainOff.combinedPath
         case .brickWall:
             return LucideIcon_BrickWall.combinedPath
         case .brickWallFire:
@@ -3542,6 +3556,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_GraduationCap.combinedPath
         case .grape:
             return LucideIcon_Grape.combinedPath
+        case .graphHub:
+            return LucideIcon_GraphHub.combinedPath
         case .graphStar:
             return LucideIcon_GraphStar.combinedPath
         case .grid2X2:
@@ -3836,6 +3852,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LensConcave.combinedPath
         case .lensConvex:
             return LucideIcon_LensConvex.combinedPath
+        case .letterSpacing:
+            return LucideIcon_LetterSpacing.combinedPath
         case .letters:
             return LucideIcon_Letters.combinedPath
         case .library:
@@ -3860,6 +3878,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LineDotRightHorizontal.combinedPath
         case .lineDotTopVertical:
             return LucideIcon_LineDotTopVertical.combinedPath
+        case .lineHeight:
+            return LucideIcon_LineHeight.combinedPath
         case .lineSquiggle:
             return LucideIcon_LineSquiggle.combinedPath
         case .lineStyle:
@@ -4906,6 +4926,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SmartphoneCharging.combinedPath
         case .smartphoneNfc:
             return LucideIcon_SmartphoneNfc.combinedPath
+        case .smartphoneUserRound:
+            return LucideIcon_SmartphoneUserRound.combinedPath
         case .snail:
             return LucideIcon_Snail.combinedPath
         case .snowflake:
@@ -5332,6 +5354,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ToggleRight.combinedPath
         case .toilet:
             return LucideIcon_Toilet.combinedPath
+        case .tombstone:
+            return LucideIcon_Tombstone.combinedPath
         case .toolCase:
             return LucideIcon_ToolCase.combinedPath
         case .toolbox:
@@ -5908,6 +5932,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_AudioLinesX.openPath
         case .audioWaveform:
             return LucideIcon_AudioWaveform.openPath
+        case .avocado:
+            return LucideIcon_Avocado.openPath
         case .award:
             return LucideIcon_Award.openPath
         case .axe:
@@ -5918,6 +5944,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Baby.openPath
         case .backpack:
             return LucideIcon_Backpack.openPath
+        case .bacon:
+            return LucideIcon_Bacon.openPath
         case .badge:
             return LucideIcon_Badge.openPath
         case .badgeAlert:
@@ -6176,6 +6204,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BrainCircuit.openPath
         case .brainCog:
             return LucideIcon_BrainCog.openPath
+        case .brainOff:
+            return LucideIcon_BrainOff.openPath
         case .brickWall:
             return LucideIcon_BrickWall.openPath
         case .brickWallFire:
@@ -7332,6 +7362,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_GraduationCap.openPath
         case .grape:
             return LucideIcon_Grape.openPath
+        case .graphHub:
+            return LucideIcon_GraphHub.openPath
         case .graphStar:
             return LucideIcon_GraphStar.openPath
         case .grid2X2:
@@ -7626,6 +7658,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LensConcave.openPath
         case .lensConvex:
             return LucideIcon_LensConvex.openPath
+        case .letterSpacing:
+            return LucideIcon_LetterSpacing.openPath
         case .letters:
             return LucideIcon_Letters.openPath
         case .library:
@@ -7650,6 +7684,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LineDotRightHorizontal.openPath
         case .lineDotTopVertical:
             return LucideIcon_LineDotTopVertical.openPath
+        case .lineHeight:
+            return LucideIcon_LineHeight.openPath
         case .lineSquiggle:
             return LucideIcon_LineSquiggle.openPath
         case .lineStyle:
@@ -8696,6 +8732,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SmartphoneCharging.openPath
         case .smartphoneNfc:
             return LucideIcon_SmartphoneNfc.openPath
+        case .smartphoneUserRound:
+            return LucideIcon_SmartphoneUserRound.openPath
         case .snail:
             return LucideIcon_Snail.openPath
         case .snowflake:
@@ -9122,6 +9160,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ToggleRight.openPath
         case .toilet:
             return LucideIcon_Toilet.openPath
+        case .tombstone:
+            return LucideIcon_Tombstone.openPath
         case .toolCase:
             return LucideIcon_ToolCase.openPath
         case .toolbox:
@@ -9698,6 +9738,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_AudioLinesX.closedPath
         case .audioWaveform:
             return LucideIcon_AudioWaveform.closedPath
+        case .avocado:
+            return LucideIcon_Avocado.closedPath
         case .award:
             return LucideIcon_Award.closedPath
         case .axe:
@@ -9708,6 +9750,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Baby.closedPath
         case .backpack:
             return LucideIcon_Backpack.closedPath
+        case .bacon:
+            return LucideIcon_Bacon.closedPath
         case .badge:
             return LucideIcon_Badge.closedPath
         case .badgeAlert:
@@ -9966,6 +10010,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BrainCircuit.closedPath
         case .brainCog:
             return LucideIcon_BrainCog.closedPath
+        case .brainOff:
+            return LucideIcon_BrainOff.closedPath
         case .brickWall:
             return LucideIcon_BrickWall.closedPath
         case .brickWallFire:
@@ -11122,6 +11168,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_GraduationCap.closedPath
         case .grape:
             return LucideIcon_Grape.closedPath
+        case .graphHub:
+            return LucideIcon_GraphHub.closedPath
         case .graphStar:
             return LucideIcon_GraphStar.closedPath
         case .grid2X2:
@@ -11416,6 +11464,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LensConcave.closedPath
         case .lensConvex:
             return LucideIcon_LensConvex.closedPath
+        case .letterSpacing:
+            return LucideIcon_LetterSpacing.closedPath
         case .letters:
             return LucideIcon_Letters.closedPath
         case .library:
@@ -11440,6 +11490,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LineDotRightHorizontal.closedPath
         case .lineDotTopVertical:
             return LucideIcon_LineDotTopVertical.closedPath
+        case .lineHeight:
+            return LucideIcon_LineHeight.closedPath
         case .lineSquiggle:
             return LucideIcon_LineSquiggle.closedPath
         case .lineStyle:
@@ -12486,6 +12538,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SmartphoneCharging.closedPath
         case .smartphoneNfc:
             return LucideIcon_SmartphoneNfc.closedPath
+        case .smartphoneUserRound:
+            return LucideIcon_SmartphoneUserRound.closedPath
         case .snail:
             return LucideIcon_Snail.closedPath
         case .snowflake:
@@ -12912,6 +12966,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ToggleRight.closedPath
         case .toilet:
             return LucideIcon_Toilet.closedPath
+        case .tombstone:
+            return LucideIcon_Tombstone.closedPath
         case .toolCase:
             return LucideIcon_ToolCase.closedPath
         case .toolbox:
@@ -16246,6 +16302,9 @@ public struct Lucide {
     /// Audio Waveform icon
     public static let audioWaveform: LucideShape = LucideShape(combined: LucideIcon_AudioWaveform.combinedPath, open: LucideIcon_AudioWaveform.openPath, closed: LucideIcon_AudioWaveform.closedPath)
 
+    /// Avocado icon
+    public static let avocado: LucideShape = LucideShape(combined: LucideIcon_Avocado.combinedPath, open: LucideIcon_Avocado.openPath, closed: LucideIcon_Avocado.closedPath)
+
     /// Award icon
     public static let award: LucideShape = LucideShape(combined: LucideIcon_Award.combinedPath, open: LucideIcon_Award.openPath, closed: LucideIcon_Award.closedPath)
 
@@ -16260,6 +16319,9 @@ public struct Lucide {
 
     /// Backpack icon
     public static let backpack: LucideShape = LucideShape(combined: LucideIcon_Backpack.combinedPath, open: LucideIcon_Backpack.openPath, closed: LucideIcon_Backpack.closedPath)
+
+    /// Bacon icon
+    public static let bacon: LucideShape = LucideShape(combined: LucideIcon_Bacon.combinedPath, open: LucideIcon_Bacon.openPath, closed: LucideIcon_Bacon.closedPath)
 
     /// Badge icon
     public static let badge: LucideShape = LucideShape(combined: LucideIcon_Badge.combinedPath, open: LucideIcon_Badge.openPath, closed: LucideIcon_Badge.closedPath)
@@ -16647,6 +16709,9 @@ public struct Lucide {
 
     /// Brain Cog icon
     public static let brainCog: LucideShape = LucideShape(combined: LucideIcon_BrainCog.combinedPath, open: LucideIcon_BrainCog.openPath, closed: LucideIcon_BrainCog.closedPath)
+
+    /// Brain Off icon
+    public static let brainOff: LucideShape = LucideShape(combined: LucideIcon_BrainOff.combinedPath, open: LucideIcon_BrainOff.openPath, closed: LucideIcon_BrainOff.closedPath)
 
     /// Brick Wall icon
     public static let brickWall: LucideShape = LucideShape(combined: LucideIcon_BrickWall.combinedPath, open: LucideIcon_BrickWall.openPath, closed: LucideIcon_BrickWall.closedPath)
@@ -18382,6 +18447,9 @@ public struct Lucide {
     /// Grape icon
     public static let grape: LucideShape = LucideShape(combined: LucideIcon_Grape.combinedPath, open: LucideIcon_Grape.openPath, closed: LucideIcon_Grape.closedPath)
 
+    /// Graph Hub icon
+    public static let graphHub: LucideShape = LucideShape(combined: LucideIcon_GraphHub.combinedPath, open: LucideIcon_GraphHub.openPath, closed: LucideIcon_GraphHub.closedPath)
+
     /// Graph Star icon
     public static let graphStar: LucideShape = LucideShape(combined: LucideIcon_GraphStar.combinedPath, open: LucideIcon_GraphStar.openPath, closed: LucideIcon_GraphStar.closedPath)
 
@@ -18823,6 +18891,9 @@ public struct Lucide {
     /// Lens Convex icon
     public static let lensConvex: LucideShape = LucideShape(combined: LucideIcon_LensConvex.combinedPath, open: LucideIcon_LensConvex.openPath, closed: LucideIcon_LensConvex.closedPath)
 
+    /// Letter Spacing icon
+    public static let letterSpacing: LucideShape = LucideShape(combined: LucideIcon_LetterSpacing.combinedPath, open: LucideIcon_LetterSpacing.openPath, closed: LucideIcon_LetterSpacing.closedPath)
+
     /// Letters icon
     public static let letters: LucideShape = LucideShape(combined: LucideIcon_Letters.combinedPath, open: LucideIcon_Letters.openPath, closed: LucideIcon_Letters.closedPath)
 
@@ -18858,6 +18929,9 @@ public struct Lucide {
 
     /// Line Dot Top Vertical icon
     public static let lineDotTopVertical: LucideShape = LucideShape(combined: LucideIcon_LineDotTopVertical.combinedPath, open: LucideIcon_LineDotTopVertical.openPath, closed: LucideIcon_LineDotTopVertical.closedPath)
+
+    /// Line Height icon
+    public static let lineHeight: LucideShape = LucideShape(combined: LucideIcon_LineHeight.combinedPath, open: LucideIcon_LineHeight.openPath, closed: LucideIcon_LineHeight.closedPath)
 
     /// Line Squiggle icon
     public static let lineSquiggle: LucideShape = LucideShape(combined: LucideIcon_LineSquiggle.combinedPath, open: LucideIcon_LineSquiggle.openPath, closed: LucideIcon_LineSquiggle.closedPath)
@@ -20428,6 +20502,9 @@ public struct Lucide {
     /// Smartphone Nfc icon
     public static let smartphoneNfc: LucideShape = LucideShape(combined: LucideIcon_SmartphoneNfc.combinedPath, open: LucideIcon_SmartphoneNfc.openPath, closed: LucideIcon_SmartphoneNfc.closedPath)
 
+    /// Smartphone User Round icon
+    public static let smartphoneUserRound: LucideShape = LucideShape(combined: LucideIcon_SmartphoneUserRound.combinedPath, open: LucideIcon_SmartphoneUserRound.openPath, closed: LucideIcon_SmartphoneUserRound.closedPath)
+
     /// Snail icon
     public static let snail: LucideShape = LucideShape(combined: LucideIcon_Snail.combinedPath, open: LucideIcon_Snail.openPath, closed: LucideIcon_Snail.closedPath)
 
@@ -21066,6 +21143,9 @@ public struct Lucide {
 
     /// Toilet icon
     public static let toilet: LucideShape = LucideShape(combined: LucideIcon_Toilet.combinedPath, open: LucideIcon_Toilet.openPath, closed: LucideIcon_Toilet.closedPath)
+
+    /// Tombstone icon
+    public static let tombstone: LucideShape = LucideShape(combined: LucideIcon_Tombstone.combinedPath, open: LucideIcon_Tombstone.openPath, closed: LucideIcon_Tombstone.closedPath)
 
     /// Tool Case icon
     public static let toolCase: LucideShape = LucideShape(combined: LucideIcon_ToolCase.combinedPath, open: LucideIcon_ToolCase.openPath, closed: LucideIcon_ToolCase.closedPath)
@@ -22742,10 +22822,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.18"
+    public static let libraryVersion = "0.9.19"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.59.0"
+    public static let lucideVersion = "1.60.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
