@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.19
-//  Lucide Icons Version: 1.60.0
+//  Library Version: 0.9.20
+//  Lucide Icons Version: 1.61.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -406,6 +406,10 @@ public enum LucideIconName: String, CaseIterable {
     case circleChevronLeft
     case circleChevronRight
     case circleChevronUp
+    case circleChevronsDown
+    case circleChevronsLeft
+    case circleChevronsRight
+    case circleChevronsUp
     case circleDashed
     case circleDashedCheck
     case circleDivide
@@ -2702,6 +2706,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleChevronRight.combinedPath
         case .circleChevronUp:
             return LucideIcon_CircleChevronUp.combinedPath
+        case .circleChevronsDown:
+            return LucideIcon_CircleChevronsDown.combinedPath
+        case .circleChevronsLeft:
+            return LucideIcon_CircleChevronsLeft.combinedPath
+        case .circleChevronsRight:
+            return LucideIcon_CircleChevronsRight.combinedPath
+        case .circleChevronsUp:
+            return LucideIcon_CircleChevronsUp.combinedPath
         case .circleDashed:
             return LucideIcon_CircleDashed.combinedPath
         case .circleDashedCheck:
@@ -6508,6 +6520,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleChevronRight.openPath
         case .circleChevronUp:
             return LucideIcon_CircleChevronUp.openPath
+        case .circleChevronsDown:
+            return LucideIcon_CircleChevronsDown.openPath
+        case .circleChevronsLeft:
+            return LucideIcon_CircleChevronsLeft.openPath
+        case .circleChevronsRight:
+            return LucideIcon_CircleChevronsRight.openPath
+        case .circleChevronsUp:
+            return LucideIcon_CircleChevronsUp.openPath
         case .circleDashed:
             return LucideIcon_CircleDashed.openPath
         case .circleDashedCheck:
@@ -10314,6 +10334,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleChevronRight.closedPath
         case .circleChevronUp:
             return LucideIcon_CircleChevronUp.closedPath
+        case .circleChevronsDown:
+            return LucideIcon_CircleChevronsDown.closedPath
+        case .circleChevronsLeft:
+            return LucideIcon_CircleChevronsLeft.closedPath
+        case .circleChevronsRight:
+            return LucideIcon_CircleChevronsRight.closedPath
+        case .circleChevronsUp:
+            return LucideIcon_CircleChevronsUp.closedPath
         case .circleDashed:
             return LucideIcon_CircleDashed.closedPath
         case .circleDashedCheck:
@@ -17166,6 +17194,18 @@ public struct Lucide {
     /// Circle Chevron Up icon
     public static let circleChevronUp: LucideShape = LucideShape(combined: LucideIcon_CircleChevronUp.combinedPath, open: LucideIcon_CircleChevronUp.openPath, closed: LucideIcon_CircleChevronUp.closedPath)
 
+    /// Circle Chevrons Down icon
+    public static let circleChevronsDown: LucideShape = LucideShape(combined: LucideIcon_CircleChevronsDown.combinedPath, open: LucideIcon_CircleChevronsDown.openPath, closed: LucideIcon_CircleChevronsDown.closedPath)
+
+    /// Circle Chevrons Left icon
+    public static let circleChevronsLeft: LucideShape = LucideShape(combined: LucideIcon_CircleChevronsLeft.combinedPath, open: LucideIcon_CircleChevronsLeft.openPath, closed: LucideIcon_CircleChevronsLeft.closedPath)
+
+    /// Circle Chevrons Right icon
+    public static let circleChevronsRight: LucideShape = LucideShape(combined: LucideIcon_CircleChevronsRight.combinedPath, open: LucideIcon_CircleChevronsRight.openPath, closed: LucideIcon_CircleChevronsRight.closedPath)
+
+    /// Circle Chevrons Up icon
+    public static let circleChevronsUp: LucideShape = LucideShape(combined: LucideIcon_CircleChevronsUp.combinedPath, open: LucideIcon_CircleChevronsUp.openPath, closed: LucideIcon_CircleChevronsUp.closedPath)
+
     /// Circle Dashed icon
     public static let circleDashed: LucideShape = LucideShape(combined: LucideIcon_CircleDashed.combinedPath, open: LucideIcon_CircleDashed.openPath, closed: LucideIcon_CircleDashed.closedPath)
 
@@ -22822,10 +22862,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.19"
+    public static let libraryVersion = "0.9.20"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.60.0"
+    public static let lucideVersion = "1.61.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
