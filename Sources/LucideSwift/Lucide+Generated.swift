@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.20
-//  Lucide Icons Version: 1.61.0
+//  Library Version: 0.9.21
+//  Lucide Icons Version: 1.62.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -122,6 +122,7 @@ public enum LucideIconName: String, CaseIterable {
     case award
     case axe
     case axis3D
+    case azerbaijaniManat
     case baby
     case backpack
     case bacon
@@ -144,6 +145,7 @@ public enum LucideIconName: String, CaseIterable {
     case badgeTurkishLira
     case badgeX
     case baggageClaim
+    case ballWave
     case balloon
     case ban
     case banana
@@ -636,6 +638,7 @@ public enum LucideIconName: String, CaseIterable {
     case ellipse
     case ellipsis
     case ellipsisVertical
+    case emiratiDirham
     case engine
     case equal
     case equalApproximately
@@ -899,9 +902,11 @@ public enum LucideIconName: String, CaseIterable {
     case hexagon
     case highlighter
     case hikingStick
+    case hockeyStick
     case hop
     case hopOff
     case hospital
+    case hotAirBalloon
     case hotel
     case hourglass
     case hourglassCog
@@ -2138,6 +2143,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Axe.combinedPath
         case .axis3D:
             return LucideIcon_Axis3D.combinedPath
+        case .azerbaijaniManat:
+            return LucideIcon_AzerbaijaniManat.combinedPath
         case .baby:
             return LucideIcon_Baby.combinedPath
         case .backpack:
@@ -2182,6 +2189,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BadgeX.combinedPath
         case .baggageClaim:
             return LucideIcon_BaggageClaim.combinedPath
+        case .ballWave:
+            return LucideIcon_BallWave.combinedPath
         case .balloon:
             return LucideIcon_Balloon.combinedPath
         case .ban:
@@ -3166,6 +3175,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Ellipsis.combinedPath
         case .ellipsisVertical:
             return LucideIcon_EllipsisVertical.combinedPath
+        case .emiratiDirham:
+            return LucideIcon_EmiratiDirham.combinedPath
         case .engine:
             return LucideIcon_Engine.combinedPath
         case .equal:
@@ -3692,12 +3703,16 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Highlighter.combinedPath
         case .hikingStick:
             return LucideIcon_HikingStick.combinedPath
+        case .hockeyStick:
+            return LucideIcon_HockeyStick.combinedPath
         case .hop:
             return LucideIcon_Hop.combinedPath
         case .hopOff:
             return LucideIcon_HopOff.combinedPath
         case .hospital:
             return LucideIcon_Hospital.combinedPath
+        case .hotAirBalloon:
+            return LucideIcon_HotAirBalloon.combinedPath
         case .hotel:
             return LucideIcon_Hotel.combinedPath
         case .hourglass:
@@ -5952,6 +5967,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Axe.openPath
         case .axis3D:
             return LucideIcon_Axis3D.openPath
+        case .azerbaijaniManat:
+            return LucideIcon_AzerbaijaniManat.openPath
         case .baby:
             return LucideIcon_Baby.openPath
         case .backpack:
@@ -5996,6 +6013,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BadgeX.openPath
         case .baggageClaim:
             return LucideIcon_BaggageClaim.openPath
+        case .ballWave:
+            return LucideIcon_BallWave.openPath
         case .balloon:
             return LucideIcon_Balloon.openPath
         case .ban:
@@ -6980,6 +6999,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Ellipsis.openPath
         case .ellipsisVertical:
             return LucideIcon_EllipsisVertical.openPath
+        case .emiratiDirham:
+            return LucideIcon_EmiratiDirham.openPath
         case .engine:
             return LucideIcon_Engine.openPath
         case .equal:
@@ -7506,12 +7527,16 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Highlighter.openPath
         case .hikingStick:
             return LucideIcon_HikingStick.openPath
+        case .hockeyStick:
+            return LucideIcon_HockeyStick.openPath
         case .hop:
             return LucideIcon_Hop.openPath
         case .hopOff:
             return LucideIcon_HopOff.openPath
         case .hospital:
             return LucideIcon_Hospital.openPath
+        case .hotAirBalloon:
+            return LucideIcon_HotAirBalloon.openPath
         case .hotel:
             return LucideIcon_Hotel.openPath
         case .hourglass:
@@ -9766,6 +9791,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Axe.closedPath
         case .axis3D:
             return LucideIcon_Axis3D.closedPath
+        case .azerbaijaniManat:
+            return LucideIcon_AzerbaijaniManat.closedPath
         case .baby:
             return LucideIcon_Baby.closedPath
         case .backpack:
@@ -9810,6 +9837,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BadgeX.closedPath
         case .baggageClaim:
             return LucideIcon_BaggageClaim.closedPath
+        case .ballWave:
+            return LucideIcon_BallWave.closedPath
         case .balloon:
             return LucideIcon_Balloon.closedPath
         case .ban:
@@ -10794,6 +10823,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Ellipsis.closedPath
         case .ellipsisVertical:
             return LucideIcon_EllipsisVertical.closedPath
+        case .emiratiDirham:
+            return LucideIcon_EmiratiDirham.closedPath
         case .engine:
             return LucideIcon_Engine.closedPath
         case .equal:
@@ -11320,12 +11351,16 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Highlighter.closedPath
         case .hikingStick:
             return LucideIcon_HikingStick.closedPath
+        case .hockeyStick:
+            return LucideIcon_HockeyStick.closedPath
         case .hop:
             return LucideIcon_Hop.closedPath
         case .hopOff:
             return LucideIcon_HopOff.closedPath
         case .hospital:
             return LucideIcon_Hospital.closedPath
+        case .hotAirBalloon:
+            return LucideIcon_HotAirBalloon.closedPath
         case .hotel:
             return LucideIcon_Hotel.closedPath
         case .hourglass:
@@ -16342,6 +16377,9 @@ public struct Lucide {
     /// Axis 3D icon
     public static let axis3D: LucideShape = LucideShape(combined: LucideIcon_Axis3D.combinedPath, open: LucideIcon_Axis3D.openPath, closed: LucideIcon_Axis3D.closedPath)
 
+    /// Azerbaijani Manat icon
+    public static let azerbaijaniManat: LucideShape = LucideShape(combined: LucideIcon_AzerbaijaniManat.combinedPath, open: LucideIcon_AzerbaijaniManat.openPath, closed: LucideIcon_AzerbaijaniManat.closedPath)
+
     /// Baby icon
     public static let baby: LucideShape = LucideShape(combined: LucideIcon_Baby.combinedPath, open: LucideIcon_Baby.openPath, closed: LucideIcon_Baby.closedPath)
 
@@ -16407,6 +16445,9 @@ public struct Lucide {
 
     /// Baggage Claim icon
     public static let baggageClaim: LucideShape = LucideShape(combined: LucideIcon_BaggageClaim.combinedPath, open: LucideIcon_BaggageClaim.openPath, closed: LucideIcon_BaggageClaim.closedPath)
+
+    /// Ball Wave icon
+    public static let ballWave: LucideShape = LucideShape(combined: LucideIcon_BallWave.combinedPath, open: LucideIcon_BallWave.openPath, closed: LucideIcon_BallWave.closedPath)
 
     /// Balloon icon
     public static let balloon: LucideShape = LucideShape(combined: LucideIcon_Balloon.combinedPath, open: LucideIcon_Balloon.openPath, closed: LucideIcon_Balloon.closedPath)
@@ -17884,6 +17925,9 @@ public struct Lucide {
     /// Ellipsis Vertical icon
     public static let ellipsisVertical: LucideShape = LucideShape(combined: LucideIcon_EllipsisVertical.combinedPath, open: LucideIcon_EllipsisVertical.openPath, closed: LucideIcon_EllipsisVertical.closedPath)
 
+    /// Emirati Dirham icon
+    public static let emiratiDirham: LucideShape = LucideShape(combined: LucideIcon_EmiratiDirham.combinedPath, open: LucideIcon_EmiratiDirham.openPath, closed: LucideIcon_EmiratiDirham.closedPath)
+
     /// Engine icon
     public static let engine: LucideShape = LucideShape(combined: LucideIcon_Engine.combinedPath, open: LucideIcon_Engine.openPath, closed: LucideIcon_Engine.closedPath)
 
@@ -18673,6 +18717,9 @@ public struct Lucide {
     /// Hiking Stick icon
     public static let hikingStick: LucideShape = LucideShape(combined: LucideIcon_HikingStick.combinedPath, open: LucideIcon_HikingStick.openPath, closed: LucideIcon_HikingStick.closedPath)
 
+    /// Hockey Stick icon
+    public static let hockeyStick: LucideShape = LucideShape(combined: LucideIcon_HockeyStick.combinedPath, open: LucideIcon_HockeyStick.openPath, closed: LucideIcon_HockeyStick.closedPath)
+
     /// Hop icon
     public static let hop: LucideShape = LucideShape(combined: LucideIcon_Hop.combinedPath, open: LucideIcon_Hop.openPath, closed: LucideIcon_Hop.closedPath)
 
@@ -18681,6 +18728,9 @@ public struct Lucide {
 
     /// Hospital icon
     public static let hospital: LucideShape = LucideShape(combined: LucideIcon_Hospital.combinedPath, open: LucideIcon_Hospital.openPath, closed: LucideIcon_Hospital.closedPath)
+
+    /// Hot Air Balloon icon
+    public static let hotAirBalloon: LucideShape = LucideShape(combined: LucideIcon_HotAirBalloon.combinedPath, open: LucideIcon_HotAirBalloon.openPath, closed: LucideIcon_HotAirBalloon.closedPath)
 
     /// Hotel icon
     public static let hotel: LucideShape = LucideShape(combined: LucideIcon_Hotel.combinedPath, open: LucideIcon_Hotel.openPath, closed: LucideIcon_Hotel.closedPath)
@@ -22862,10 +22912,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.20"
+    public static let libraryVersion = "0.9.21"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.61.0"
+    public static let lucideVersion = "1.62.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
