@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.21
-//  Lucide Icons Version: 1.62.0
+//  Library Version: 0.9.22
+//  Lucide Icons Version: 1.63.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -63,7 +63,8 @@ public enum LucideIconName: String, CaseIterable {
     case appWindowMac
     case apple
     case archive
-    case archiveRestore
+    case archiveArrowDown
+    case archiveArrowUp
     case archiveX
     case armchair
     case armenianDram
@@ -251,6 +252,7 @@ public enum LucideIconName: String, CaseIterable {
     case bowArrow
     case box
     case boxes
+    case boxesLinked
     case braces
     case brackets
     case brain
@@ -289,6 +291,8 @@ public enum LucideIconName: String, CaseIterable {
     case calendar
     case calendar1
     case calendarArrowDown
+    case calendarArrowLeft
+    case calendarArrowRight
     case calendarArrowUp
     case calendarCheck
     case calendarCheck2
@@ -361,6 +365,8 @@ public enum LucideIconName: String, CaseIterable {
     case chartNoAxesCombined
     case chartNoAxesGantt
     case chartPie
+    case chartQuadrant
+    case chartRadar
     case chartScatter
     case chartSpline
     case check
@@ -572,6 +578,7 @@ public enum LucideIconName: String, CaseIterable {
     case databaseArrowUp
     case databaseBackup
     case databaseCheck
+    case databaseCog
     case databaseMinus
     case databasePlus
     case databaseSearch
@@ -626,6 +633,8 @@ public enum LucideIconName: String, CaseIterable {
     case dumbbell
     case ear
     case earOff
+    case earbuds
+    case earbudsOff
     case earth
     case earthLock
     case eclipse
@@ -964,6 +973,7 @@ public enum LucideIconName: String, CaseIterable {
     case laptop
     case laptopMinimal
     case laptopMinimalCheck
+    case laser
     case lasso
     case lassoSelect
     case layerArrowDown
@@ -1516,6 +1526,7 @@ public enum LucideIconName: String, CaseIterable {
     case signpost
     case signpostBig
     case siren
+    case sirenOff
     case sixteenthNotes
     case skipBack
     case skipForward
@@ -1578,6 +1589,10 @@ public enum LucideIconName: String, CaseIterable {
     case squareChevronLeft
     case squareChevronRight
     case squareChevronUp
+    case squareChevronsDown
+    case squareChevronsLeft
+    case squareChevronsRight
+    case squareChevronsUp
     case squareCode
     case squareDashed
     case squareDashedBottom
@@ -1823,6 +1838,7 @@ public enum LucideIconName: String, CaseIterable {
     case userRoundPen
     case userRoundPlus
     case userRoundSearch
+    case userRoundShield
     case userRoundStar
     case userRoundX
     case userSearch
@@ -2025,8 +2041,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Apple.combinedPath
         case .archive:
             return LucideIcon_Archive.combinedPath
-        case .archiveRestore:
-            return LucideIcon_ArchiveRestore.combinedPath
+        case .archiveArrowDown:
+            return LucideIcon_ArchiveArrowDown.combinedPath
+        case .archiveArrowUp:
+            return LucideIcon_ArchiveArrowUp.combinedPath
         case .archiveX:
             return LucideIcon_ArchiveX.combinedPath
         case .armchair:
@@ -2401,6 +2419,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Box.combinedPath
         case .boxes:
             return LucideIcon_Boxes.combinedPath
+        case .boxesLinked:
+            return LucideIcon_BoxesLinked.combinedPath
         case .braces:
             return LucideIcon_Braces.combinedPath
         case .brackets:
@@ -2477,6 +2497,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Calendar1.combinedPath
         case .calendarArrowDown:
             return LucideIcon_CalendarArrowDown.combinedPath
+        case .calendarArrowLeft:
+            return LucideIcon_CalendarArrowLeft.combinedPath
+        case .calendarArrowRight:
+            return LucideIcon_CalendarArrowRight.combinedPath
         case .calendarArrowUp:
             return LucideIcon_CalendarArrowUp.combinedPath
         case .calendarCheck:
@@ -2621,6 +2645,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ChartNoAxesGantt.combinedPath
         case .chartPie:
             return LucideIcon_ChartPie.combinedPath
+        case .chartQuadrant:
+            return LucideIcon_ChartQuadrant.combinedPath
+        case .chartRadar:
+            return LucideIcon_ChartRadar.combinedPath
         case .chartScatter:
             return LucideIcon_ChartScatter.combinedPath
         case .chartSpline:
@@ -3043,6 +3071,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_DatabaseBackup.combinedPath
         case .databaseCheck:
             return LucideIcon_DatabaseCheck.combinedPath
+        case .databaseCog:
+            return LucideIcon_DatabaseCog.combinedPath
         case .databaseMinus:
             return LucideIcon_DatabaseMinus.combinedPath
         case .databasePlus:
@@ -3151,6 +3181,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Ear.combinedPath
         case .earOff:
             return LucideIcon_EarOff.combinedPath
+        case .earbuds:
+            return LucideIcon_Earbuds.combinedPath
+        case .earbudsOff:
+            return LucideIcon_EarbudsOff.combinedPath
         case .earth:
             return LucideIcon_Earth.combinedPath
         case .earthLock:
@@ -3827,6 +3861,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LaptopMinimal.combinedPath
         case .laptopMinimalCheck:
             return LucideIcon_LaptopMinimalCheck.combinedPath
+        case .laser:
+            return LucideIcon_Laser.combinedPath
         case .lasso:
             return LucideIcon_Lasso.combinedPath
         case .lassoSelect:
@@ -4931,6 +4967,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SignpostBig.combinedPath
         case .siren:
             return LucideIcon_Siren.combinedPath
+        case .sirenOff:
+            return LucideIcon_SirenOff.combinedPath
         case .sixteenthNotes:
             return LucideIcon_SixteenthNotes.combinedPath
         case .skipBack:
@@ -5055,6 +5093,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareChevronRight.combinedPath
         case .squareChevronUp:
             return LucideIcon_SquareChevronUp.combinedPath
+        case .squareChevronsDown:
+            return LucideIcon_SquareChevronsDown.combinedPath
+        case .squareChevronsLeft:
+            return LucideIcon_SquareChevronsLeft.combinedPath
+        case .squareChevronsRight:
+            return LucideIcon_SquareChevronsRight.combinedPath
+        case .squareChevronsUp:
+            return LucideIcon_SquareChevronsUp.combinedPath
         case .squareCode:
             return LucideIcon_SquareCode.combinedPath
         case .squareDashed:
@@ -5545,6 +5591,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundPlus.combinedPath
         case .userRoundSearch:
             return LucideIcon_UserRoundSearch.combinedPath
+        case .userRoundShield:
+            return LucideIcon_UserRoundShield.combinedPath
         case .userRoundStar:
             return LucideIcon_UserRoundStar.combinedPath
         case .userRoundX:
@@ -5849,8 +5897,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Apple.openPath
         case .archive:
             return LucideIcon_Archive.openPath
-        case .archiveRestore:
-            return LucideIcon_ArchiveRestore.openPath
+        case .archiveArrowDown:
+            return LucideIcon_ArchiveArrowDown.openPath
+        case .archiveArrowUp:
+            return LucideIcon_ArchiveArrowUp.openPath
         case .archiveX:
             return LucideIcon_ArchiveX.openPath
         case .armchair:
@@ -6225,6 +6275,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Box.openPath
         case .boxes:
             return LucideIcon_Boxes.openPath
+        case .boxesLinked:
+            return LucideIcon_BoxesLinked.openPath
         case .braces:
             return LucideIcon_Braces.openPath
         case .brackets:
@@ -6301,6 +6353,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Calendar1.openPath
         case .calendarArrowDown:
             return LucideIcon_CalendarArrowDown.openPath
+        case .calendarArrowLeft:
+            return LucideIcon_CalendarArrowLeft.openPath
+        case .calendarArrowRight:
+            return LucideIcon_CalendarArrowRight.openPath
         case .calendarArrowUp:
             return LucideIcon_CalendarArrowUp.openPath
         case .calendarCheck:
@@ -6445,6 +6501,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ChartNoAxesGantt.openPath
         case .chartPie:
             return LucideIcon_ChartPie.openPath
+        case .chartQuadrant:
+            return LucideIcon_ChartQuadrant.openPath
+        case .chartRadar:
+            return LucideIcon_ChartRadar.openPath
         case .chartScatter:
             return LucideIcon_ChartScatter.openPath
         case .chartSpline:
@@ -6867,6 +6927,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_DatabaseBackup.openPath
         case .databaseCheck:
             return LucideIcon_DatabaseCheck.openPath
+        case .databaseCog:
+            return LucideIcon_DatabaseCog.openPath
         case .databaseMinus:
             return LucideIcon_DatabaseMinus.openPath
         case .databasePlus:
@@ -6975,6 +7037,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Ear.openPath
         case .earOff:
             return LucideIcon_EarOff.openPath
+        case .earbuds:
+            return LucideIcon_Earbuds.openPath
+        case .earbudsOff:
+            return LucideIcon_EarbudsOff.openPath
         case .earth:
             return LucideIcon_Earth.openPath
         case .earthLock:
@@ -7651,6 +7717,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LaptopMinimal.openPath
         case .laptopMinimalCheck:
             return LucideIcon_LaptopMinimalCheck.openPath
+        case .laser:
+            return LucideIcon_Laser.openPath
         case .lasso:
             return LucideIcon_Lasso.openPath
         case .lassoSelect:
@@ -8755,6 +8823,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SignpostBig.openPath
         case .siren:
             return LucideIcon_Siren.openPath
+        case .sirenOff:
+            return LucideIcon_SirenOff.openPath
         case .sixteenthNotes:
             return LucideIcon_SixteenthNotes.openPath
         case .skipBack:
@@ -8879,6 +8949,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareChevronRight.openPath
         case .squareChevronUp:
             return LucideIcon_SquareChevronUp.openPath
+        case .squareChevronsDown:
+            return LucideIcon_SquareChevronsDown.openPath
+        case .squareChevronsLeft:
+            return LucideIcon_SquareChevronsLeft.openPath
+        case .squareChevronsRight:
+            return LucideIcon_SquareChevronsRight.openPath
+        case .squareChevronsUp:
+            return LucideIcon_SquareChevronsUp.openPath
         case .squareCode:
             return LucideIcon_SquareCode.openPath
         case .squareDashed:
@@ -9369,6 +9447,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundPlus.openPath
         case .userRoundSearch:
             return LucideIcon_UserRoundSearch.openPath
+        case .userRoundShield:
+            return LucideIcon_UserRoundShield.openPath
         case .userRoundStar:
             return LucideIcon_UserRoundStar.openPath
         case .userRoundX:
@@ -9673,8 +9753,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Apple.closedPath
         case .archive:
             return LucideIcon_Archive.closedPath
-        case .archiveRestore:
-            return LucideIcon_ArchiveRestore.closedPath
+        case .archiveArrowDown:
+            return LucideIcon_ArchiveArrowDown.closedPath
+        case .archiveArrowUp:
+            return LucideIcon_ArchiveArrowUp.closedPath
         case .archiveX:
             return LucideIcon_ArchiveX.closedPath
         case .armchair:
@@ -10049,6 +10131,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Box.closedPath
         case .boxes:
             return LucideIcon_Boxes.closedPath
+        case .boxesLinked:
+            return LucideIcon_BoxesLinked.closedPath
         case .braces:
             return LucideIcon_Braces.closedPath
         case .brackets:
@@ -10125,6 +10209,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Calendar1.closedPath
         case .calendarArrowDown:
             return LucideIcon_CalendarArrowDown.closedPath
+        case .calendarArrowLeft:
+            return LucideIcon_CalendarArrowLeft.closedPath
+        case .calendarArrowRight:
+            return LucideIcon_CalendarArrowRight.closedPath
         case .calendarArrowUp:
             return LucideIcon_CalendarArrowUp.closedPath
         case .calendarCheck:
@@ -10269,6 +10357,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ChartNoAxesGantt.closedPath
         case .chartPie:
             return LucideIcon_ChartPie.closedPath
+        case .chartQuadrant:
+            return LucideIcon_ChartQuadrant.closedPath
+        case .chartRadar:
+            return LucideIcon_ChartRadar.closedPath
         case .chartScatter:
             return LucideIcon_ChartScatter.closedPath
         case .chartSpline:
@@ -10691,6 +10783,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_DatabaseBackup.closedPath
         case .databaseCheck:
             return LucideIcon_DatabaseCheck.closedPath
+        case .databaseCog:
+            return LucideIcon_DatabaseCog.closedPath
         case .databaseMinus:
             return LucideIcon_DatabaseMinus.closedPath
         case .databasePlus:
@@ -10799,6 +10893,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Ear.closedPath
         case .earOff:
             return LucideIcon_EarOff.closedPath
+        case .earbuds:
+            return LucideIcon_Earbuds.closedPath
+        case .earbudsOff:
+            return LucideIcon_EarbudsOff.closedPath
         case .earth:
             return LucideIcon_Earth.closedPath
         case .earthLock:
@@ -11475,6 +11573,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LaptopMinimal.closedPath
         case .laptopMinimalCheck:
             return LucideIcon_LaptopMinimalCheck.closedPath
+        case .laser:
+            return LucideIcon_Laser.closedPath
         case .lasso:
             return LucideIcon_Lasso.closedPath
         case .lassoSelect:
@@ -12579,6 +12679,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SignpostBig.closedPath
         case .siren:
             return LucideIcon_Siren.closedPath
+        case .sirenOff:
+            return LucideIcon_SirenOff.closedPath
         case .sixteenthNotes:
             return LucideIcon_SixteenthNotes.closedPath
         case .skipBack:
@@ -12703,6 +12805,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareChevronRight.closedPath
         case .squareChevronUp:
             return LucideIcon_SquareChevronUp.closedPath
+        case .squareChevronsDown:
+            return LucideIcon_SquareChevronsDown.closedPath
+        case .squareChevronsLeft:
+            return LucideIcon_SquareChevronsLeft.closedPath
+        case .squareChevronsRight:
+            return LucideIcon_SquareChevronsRight.closedPath
+        case .squareChevronsUp:
+            return LucideIcon_SquareChevronsUp.closedPath
         case .squareCode:
             return LucideIcon_SquareCode.closedPath
         case .squareDashed:
@@ -13193,6 +13303,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundPlus.closedPath
         case .userRoundSearch:
             return LucideIcon_UserRoundSearch.closedPath
+        case .userRoundShield:
+            return LucideIcon_UserRoundShield.closedPath
         case .userRoundStar:
             return LucideIcon_UserRoundStar.closedPath
         case .userRoundX:
@@ -16200,8 +16312,11 @@ public struct Lucide {
     /// Archive icon
     public static let archive: LucideShape = LucideShape(combined: LucideIcon_Archive.combinedPath, open: LucideIcon_Archive.openPath, closed: LucideIcon_Archive.closedPath)
 
-    /// Archive Restore icon
-    public static let archiveRestore: LucideShape = LucideShape(combined: LucideIcon_ArchiveRestore.combinedPath, open: LucideIcon_ArchiveRestore.openPath, closed: LucideIcon_ArchiveRestore.closedPath)
+    /// Archive Arrow Down icon
+    public static let archiveArrowDown: LucideShape = LucideShape(combined: LucideIcon_ArchiveArrowDown.combinedPath, open: LucideIcon_ArchiveArrowDown.openPath, closed: LucideIcon_ArchiveArrowDown.closedPath)
+
+    /// Archive Arrow Up icon
+    public static let archiveArrowUp: LucideShape = LucideShape(combined: LucideIcon_ArchiveArrowUp.combinedPath, open: LucideIcon_ArchiveArrowUp.openPath, closed: LucideIcon_ArchiveArrowUp.closedPath)
 
     /// Archive X icon
     public static let archiveX: LucideShape = LucideShape(combined: LucideIcon_ArchiveX.combinedPath, open: LucideIcon_ArchiveX.openPath, closed: LucideIcon_ArchiveX.closedPath)
@@ -16764,6 +16879,9 @@ public struct Lucide {
     /// Boxes icon
     public static let boxes: LucideShape = LucideShape(combined: LucideIcon_Boxes.combinedPath, open: LucideIcon_Boxes.openPath, closed: LucideIcon_Boxes.closedPath)
 
+    /// Boxes Linked icon
+    public static let boxesLinked: LucideShape = LucideShape(combined: LucideIcon_BoxesLinked.combinedPath, open: LucideIcon_BoxesLinked.openPath, closed: LucideIcon_BoxesLinked.closedPath)
+
     /// Braces icon
     public static let braces: LucideShape = LucideShape(combined: LucideIcon_Braces.combinedPath, open: LucideIcon_Braces.openPath, closed: LucideIcon_Braces.closedPath)
 
@@ -16877,6 +16995,12 @@ public struct Lucide {
 
     /// Calendar Arrow Down icon
     public static let calendarArrowDown: LucideShape = LucideShape(combined: LucideIcon_CalendarArrowDown.combinedPath, open: LucideIcon_CalendarArrowDown.openPath, closed: LucideIcon_CalendarArrowDown.closedPath)
+
+    /// Calendar Arrow Left icon
+    public static let calendarArrowLeft: LucideShape = LucideShape(combined: LucideIcon_CalendarArrowLeft.combinedPath, open: LucideIcon_CalendarArrowLeft.openPath, closed: LucideIcon_CalendarArrowLeft.closedPath)
+
+    /// Calendar Arrow Right icon
+    public static let calendarArrowRight: LucideShape = LucideShape(combined: LucideIcon_CalendarArrowRight.combinedPath, open: LucideIcon_CalendarArrowRight.openPath, closed: LucideIcon_CalendarArrowRight.closedPath)
 
     /// Calendar Arrow Up icon
     public static let calendarArrowUp: LucideShape = LucideShape(combined: LucideIcon_CalendarArrowUp.combinedPath, open: LucideIcon_CalendarArrowUp.openPath, closed: LucideIcon_CalendarArrowUp.closedPath)
@@ -17093,6 +17217,12 @@ public struct Lucide {
 
     /// Chart Pie icon
     public static let chartPie: LucideShape = LucideShape(combined: LucideIcon_ChartPie.combinedPath, open: LucideIcon_ChartPie.openPath, closed: LucideIcon_ChartPie.closedPath)
+
+    /// Chart Quadrant icon
+    public static let chartQuadrant: LucideShape = LucideShape(combined: LucideIcon_ChartQuadrant.combinedPath, open: LucideIcon_ChartQuadrant.openPath, closed: LucideIcon_ChartQuadrant.closedPath)
+
+    /// Chart Radar icon
+    public static let chartRadar: LucideShape = LucideShape(combined: LucideIcon_ChartRadar.combinedPath, open: LucideIcon_ChartRadar.openPath, closed: LucideIcon_ChartRadar.closedPath)
 
     /// Chart Scatter icon
     public static let chartScatter: LucideShape = LucideShape(combined: LucideIcon_ChartScatter.combinedPath, open: LucideIcon_ChartScatter.openPath, closed: LucideIcon_ChartScatter.closedPath)
@@ -17727,6 +17857,9 @@ public struct Lucide {
     /// Database Check icon
     public static let databaseCheck: LucideShape = LucideShape(combined: LucideIcon_DatabaseCheck.combinedPath, open: LucideIcon_DatabaseCheck.openPath, closed: LucideIcon_DatabaseCheck.closedPath)
 
+    /// Database Cog icon
+    public static let databaseCog: LucideShape = LucideShape(combined: LucideIcon_DatabaseCog.combinedPath, open: LucideIcon_DatabaseCog.openPath, closed: LucideIcon_DatabaseCog.closedPath)
+
     /// Database Minus icon
     public static let databaseMinus: LucideShape = LucideShape(combined: LucideIcon_DatabaseMinus.combinedPath, open: LucideIcon_DatabaseMinus.openPath, closed: LucideIcon_DatabaseMinus.closedPath)
 
@@ -17888,6 +18021,12 @@ public struct Lucide {
 
     /// Ear Off icon
     public static let earOff: LucideShape = LucideShape(combined: LucideIcon_EarOff.combinedPath, open: LucideIcon_EarOff.openPath, closed: LucideIcon_EarOff.closedPath)
+
+    /// Earbuds icon
+    public static let earbuds: LucideShape = LucideShape(combined: LucideIcon_Earbuds.combinedPath, open: LucideIcon_Earbuds.openPath, closed: LucideIcon_Earbuds.closedPath)
+
+    /// Earbuds Off icon
+    public static let earbudsOff: LucideShape = LucideShape(combined: LucideIcon_EarbudsOff.combinedPath, open: LucideIcon_EarbudsOff.openPath, closed: LucideIcon_EarbudsOff.closedPath)
 
     /// Earth icon
     public static let earth: LucideShape = LucideShape(combined: LucideIcon_Earth.combinedPath, open: LucideIcon_Earth.openPath, closed: LucideIcon_Earth.closedPath)
@@ -18902,6 +19041,9 @@ public struct Lucide {
 
     /// Laptop Minimal Check icon
     public static let laptopMinimalCheck: LucideShape = LucideShape(combined: LucideIcon_LaptopMinimalCheck.combinedPath, open: LucideIcon_LaptopMinimalCheck.openPath, closed: LucideIcon_LaptopMinimalCheck.closedPath)
+
+    /// Laser icon
+    public static let laser: LucideShape = LucideShape(combined: LucideIcon_Laser.combinedPath, open: LucideIcon_Laser.openPath, closed: LucideIcon_Laser.closedPath)
 
     /// Lasso icon
     public static let lasso: LucideShape = LucideShape(combined: LucideIcon_Lasso.combinedPath, open: LucideIcon_Lasso.openPath, closed: LucideIcon_Lasso.closedPath)
@@ -20559,6 +20701,9 @@ public struct Lucide {
     /// Siren icon
     public static let siren: LucideShape = LucideShape(combined: LucideIcon_Siren.combinedPath, open: LucideIcon_Siren.openPath, closed: LucideIcon_Siren.closedPath)
 
+    /// Siren Off icon
+    public static let sirenOff: LucideShape = LucideShape(combined: LucideIcon_SirenOff.combinedPath, open: LucideIcon_SirenOff.openPath, closed: LucideIcon_SirenOff.closedPath)
+
     /// Sixteenth Notes icon
     public static let sixteenthNotes: LucideShape = LucideShape(combined: LucideIcon_SixteenthNotes.combinedPath, open: LucideIcon_SixteenthNotes.openPath, closed: LucideIcon_SixteenthNotes.closedPath)
 
@@ -20744,6 +20889,18 @@ public struct Lucide {
 
     /// Square Chevron Up icon
     public static let squareChevronUp: LucideShape = LucideShape(combined: LucideIcon_SquareChevronUp.combinedPath, open: LucideIcon_SquareChevronUp.openPath, closed: LucideIcon_SquareChevronUp.closedPath)
+
+    /// Square Chevrons Down icon
+    public static let squareChevronsDown: LucideShape = LucideShape(combined: LucideIcon_SquareChevronsDown.combinedPath, open: LucideIcon_SquareChevronsDown.openPath, closed: LucideIcon_SquareChevronsDown.closedPath)
+
+    /// Square Chevrons Left icon
+    public static let squareChevronsLeft: LucideShape = LucideShape(combined: LucideIcon_SquareChevronsLeft.combinedPath, open: LucideIcon_SquareChevronsLeft.openPath, closed: LucideIcon_SquareChevronsLeft.closedPath)
+
+    /// Square Chevrons Right icon
+    public static let squareChevronsRight: LucideShape = LucideShape(combined: LucideIcon_SquareChevronsRight.combinedPath, open: LucideIcon_SquareChevronsRight.openPath, closed: LucideIcon_SquareChevronsRight.closedPath)
+
+    /// Square Chevrons Up icon
+    public static let squareChevronsUp: LucideShape = LucideShape(combined: LucideIcon_SquareChevronsUp.combinedPath, open: LucideIcon_SquareChevronsUp.openPath, closed: LucideIcon_SquareChevronsUp.closedPath)
 
     /// Square Code icon
     public static let squareCode: LucideShape = LucideShape(combined: LucideIcon_SquareCode.combinedPath, open: LucideIcon_SquareCode.openPath, closed: LucideIcon_SquareCode.closedPath)
@@ -21479,6 +21636,9 @@ public struct Lucide {
 
     /// User Round Search icon
     public static let userRoundSearch: LucideShape = LucideShape(combined: LucideIcon_UserRoundSearch.combinedPath, open: LucideIcon_UserRoundSearch.openPath, closed: LucideIcon_UserRoundSearch.closedPath)
+
+    /// User Round Shield icon
+    public static let userRoundShield: LucideShape = LucideShape(combined: LucideIcon_UserRoundShield.combinedPath, open: LucideIcon_UserRoundShield.openPath, closed: LucideIcon_UserRoundShield.closedPath)
 
     /// User Round Star icon
     public static let userRoundStar: LucideShape = LucideShape(combined: LucideIcon_UserRoundStar.combinedPath, open: LucideIcon_UserRoundStar.openPath, closed: LucideIcon_UserRoundStar.closedPath)
@@ -22912,10 +23072,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.21"
+    public static let libraryVersion = "0.9.22"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.62.0"
+    public static let lucideVersion = "1.63.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
