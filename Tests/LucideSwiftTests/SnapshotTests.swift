@@ -107,15 +107,24 @@ final class SnapshotTests: XCTestCase {
         return data as Data
     }
 
+    /// Keep existing baselines unless Swift names would share a case-insensitive path.
+    private static func snapshotFileStem(_ name: String, among names: [String]) -> String {
+        guard names.contains(where: { $0 != name && $0.lowercased() == name.lowercased() }) else {
+            return name
+        }
+        return name.map { $0.isUppercase ? "-" + $0.lowercased() : String($0) }.joined()
+    }
+
     // MARK: - Snapshot comparison
 
     private func assertSnapshot(_ iconName: LucideIconName, file: StaticString = #filePath, line: UInt = #line) throws {
         let name = iconName.rawValue
-        let baselineURL = Self.snapshotDir.appendingPathComponent("\(name).png")
+        let fileStem = Self.snapshotFileStem(name, among: LucideIconName.allCases.map(\.rawValue))
+        let baselineURL = Self.snapshotDir.appendingPathComponent("\(fileStem).png")
         // Write diff images to a temp directory so they're never accidentally committed
         let diffDir = FileManager.default.temporaryDirectory
             .appendingPathComponent("lucide-snapshot-diffs", isDirectory: true)
-        let diffURL = diffDir.appendingPathComponent("\(name).diff.png")
+        let diffURL = diffDir.appendingPathComponent("\(fileStem).diff.png")
         try FileManager.default.createDirectory(at: diffDir, withIntermediateDirectories: true)
         let record = ProcessInfo.processInfo.environment["SNAPSHOT_RECORD"] == "1"
 
@@ -242,6 +251,17 @@ final class SnapshotTests: XCTestCase {
     }
 
     // MARK: - Tests
+
+    func testCaseInsensitiveSnapshotFileNames() {
+        let names = ["letterS", "letters", "arrowRight"]
+        let stems = names.map { Self.snapshotFileStem($0, among: names) }
+        XCTAssertEqual(stems, ["letter-s", "letters", "arrowRight"])
+        XCTAssertEqual(Set(stems.map { $0.lowercased() }).count, names.count)
+
+        let allNames = LucideIconName.allCases.map(\.rawValue)
+        let allStems = allNames.map { Self.snapshotFileStem($0, among: allNames).lowercased() }
+        XCTAssertEqual(Set(allStems).count, allNames.count)
+    }
 
     func testSnapshotAllRegularIcons() throws {
         let iconNames = LucideIconName.allCases

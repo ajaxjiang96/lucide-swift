@@ -110,9 +110,9 @@ struct Icon {
         return reservedKeywords.contains(baseName) ? baseName + "Icon" : baseName
     }
 
-    /// PascalCase file name, prefixed to avoid collisions with existing source files.
-    /// e.g. "house" → "Icon_House.swift", "arrow-right" → "Icon_ArrowRight.swift"
-    /// Lab: "house" → "Icon_Lab_House.swift"
+    /// PascalCase suffix used by the Swift namespace, independent of the disk filename.
+    /// e.g. "house" → "Icon_House", "arrow-right" → "Icon_ArrowRight"
+    /// Lab: "house" → "Icon_Lab_House"
     var fileName: String {
         let pascal = name.components(separatedBy: "-")
             .map { $0.capitalized }
@@ -121,7 +121,14 @@ struct Icon {
         return "Icon_\(scope)\(pascal)"
     }
 
-    /// Namespace enum type name, e.g. "LucideHouseIcon" or "LucideLabHouseIcon"
+    /// Preserve upstream word boundaries so letter-s and letters remain distinct
+    /// on case-insensitive filesystems, while Swift namespace casing stays unchanged.
+    var sourceFileName: String {
+        let scope = type == .lab ? "Lab_" : ""
+        return "Icon_\(scope)\(name)"
+    }
+
+    /// Namespace enum type name, e.g. "LucideIcon_House" or "LucideLabIcon_Lab_House"
     var iconNamespaceEnum: String {
         let prefix = type == .lab ? "LucideLab" : "Lucide"
         return prefix + fileName
@@ -553,7 +560,7 @@ struct SwiftCodeGenerator {
         // Use caseless enum as a namespace for static stored properties
         return """
         //
-        //  \(icon.fileName).swift
+        //  \(icon.sourceFileName).swift
         //  LucideSwift
         //
         //  Auto-generated — DO NOT EDIT
@@ -572,9 +579,9 @@ struct SwiftCodeGenerator {
 
     /// Writes one Swift file per icon under `Sources/LucideSwift/Icons/`.
     /// Cleans the output directory first to remove stale files from previous generations.
-    static func writeIconFiles(icons: [Icon]) throws {
+    static func writeIconFiles(icons: [Icon], outputDirectory: URL = URL(fileURLWithPath: Config.iconsOutputDir)) throws {
         let fileManager = FileManager.default
-        let baseDir = URL(fileURLWithPath: Config.iconsOutputDir)
+        let baseDir = outputDirectory
         let labDir = baseDir.appendingPathComponent("Lab")
 
         // Clean directories
@@ -586,7 +593,7 @@ struct SwiftCodeGenerator {
         for icon in icons {
             let code = generateIconFile(icon: icon)
             let dir = icon.type == .lab ? labDir : baseDir
-            let fileURL = dir.appendingPathComponent("\(icon.fileName).swift")
+            let fileURL = dir.appendingPathComponent("\(icon.sourceFileName).swift")
             try code.write(to: fileURL, atomically: true, encoding: .utf8)
         }
     }
