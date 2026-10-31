@@ -1,5 +1,5 @@
 //
-//  Icon_Weight.swift
+//  Icon_weight.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

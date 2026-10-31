@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Peace.swift
+//  Icon_Lab_peace.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

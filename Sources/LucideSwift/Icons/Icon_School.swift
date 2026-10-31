@@ -1,5 +1,5 @@
 //
-//  Icon_School.swift
+//  Icon_school.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

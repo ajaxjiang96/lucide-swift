@@ -1,5 +1,5 @@
 //
-//  Icon_Sailboat.swift
+//  Icon_sailboat.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Notebook.swift
+//  Icon_notebook.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

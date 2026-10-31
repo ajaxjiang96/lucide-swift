@@ -1,5 +1,5 @@
 //
-//  Icon_Cupcake.swift
+//  Icon_cupcake.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

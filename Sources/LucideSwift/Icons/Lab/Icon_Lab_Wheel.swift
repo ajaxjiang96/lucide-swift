@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Wheel.swift
+//  Icon_Lab_wheel.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

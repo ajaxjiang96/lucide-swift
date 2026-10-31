@@ -1,5 +1,5 @@
 //
-//  Icon_Diameter.swift
+//  Icon_diameter.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

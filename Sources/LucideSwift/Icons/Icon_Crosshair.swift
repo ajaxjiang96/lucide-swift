@@ -1,5 +1,5 @@
 //
-//  Icon_Crosshair.swift
+//  Icon_crosshair.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

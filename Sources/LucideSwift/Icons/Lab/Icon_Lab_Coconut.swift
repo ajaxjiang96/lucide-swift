@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Coconut.swift
+//  Icon_Lab_coconut.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

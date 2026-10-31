@@ -1,5 +1,5 @@
 //
-//  Icon_Bed.swift
+//  Icon_bed.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

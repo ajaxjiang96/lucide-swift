@@ -1,5 +1,5 @@
 //
-//  Icon_Badge.swift
+//  Icon_badge.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

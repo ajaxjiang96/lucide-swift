@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Sushi.swift
+//  Icon_Lab_sushi.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Calculator.swift
+//  Icon_calculator.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

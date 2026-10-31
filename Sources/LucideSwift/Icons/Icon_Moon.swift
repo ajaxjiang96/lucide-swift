@@ -1,5 +1,5 @@
 //
-//  Icon_Moon.swift
+//  Icon_moon.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

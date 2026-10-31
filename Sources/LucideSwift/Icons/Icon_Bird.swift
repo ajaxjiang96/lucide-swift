@@ -1,5 +1,5 @@
 //
-//  Icon_Bird.swift
+//  Icon_bird.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

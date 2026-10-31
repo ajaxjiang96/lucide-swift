@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Bucket.swift
+//  Icon_Lab_bucket.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

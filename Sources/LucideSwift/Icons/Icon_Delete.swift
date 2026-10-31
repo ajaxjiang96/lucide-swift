@@ -1,5 +1,5 @@
 //
-//  Icon_Delete.swift
+//  Icon_delete.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Milestone.swift
+//  Icon_milestone.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

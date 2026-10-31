@@ -1,5 +1,5 @@
 //
-//  Icon_Ban.swift
+//  Icon_ban.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

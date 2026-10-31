@@ -1,5 +1,5 @@
 //
-//  Icon_Sparkles.swift
+//  Icon_sparkles.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

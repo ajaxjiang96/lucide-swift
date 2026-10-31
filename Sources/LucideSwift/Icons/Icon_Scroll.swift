@@ -1,5 +1,5 @@
 //
-//  Icon_Scroll.swift
+//  Icon_scroll.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

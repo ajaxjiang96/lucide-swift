@@ -1,5 +1,5 @@
 //
-//  Icon_Wifi.swift
+//  Icon_wifi.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

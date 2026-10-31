@@ -1,5 +1,5 @@
 //
-//  Icon_Church.swift
+//  Icon_church.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

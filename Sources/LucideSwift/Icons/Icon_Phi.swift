@@ -1,5 +1,5 @@
 //
-//  Icon_Phi.swift
+//  Icon_phi.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

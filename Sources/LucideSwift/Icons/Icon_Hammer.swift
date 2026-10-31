@@ -1,5 +1,5 @@
 //
-//  Icon_Hammer.swift
+//  Icon_hammer.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

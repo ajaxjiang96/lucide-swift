@@ -1,5 +1,5 @@
 //
-//  Icon_Languages.swift
+//  Icon_languages.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

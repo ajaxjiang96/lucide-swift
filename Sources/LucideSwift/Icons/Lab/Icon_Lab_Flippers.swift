@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Flippers.swift
+//  Icon_Lab_flippers.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

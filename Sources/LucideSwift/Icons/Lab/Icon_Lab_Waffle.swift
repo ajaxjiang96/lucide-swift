@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Waffle.swift
+//  Icon_Lab_waffle.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

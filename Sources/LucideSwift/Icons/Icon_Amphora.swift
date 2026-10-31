@@ -1,5 +1,5 @@
 //
-//  Icon_Amphora.swift
+//  Icon_amphora.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

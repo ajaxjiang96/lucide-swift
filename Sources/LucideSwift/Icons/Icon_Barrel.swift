@@ -1,5 +1,5 @@
 //
-//  Icon_Barrel.swift
+//  Icon_barrel.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

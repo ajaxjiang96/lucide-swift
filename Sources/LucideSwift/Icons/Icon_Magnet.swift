@@ -1,5 +1,5 @@
 //
-//  Icon_Magnet.swift
+//  Icon_magnet.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

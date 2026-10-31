@@ -1,5 +1,5 @@
 //
-//  Icon_Shell.swift
+//  Icon_shell.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

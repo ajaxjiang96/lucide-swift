@@ -1,5 +1,5 @@
 //
-//  Icon_Axe.swift
+//  Icon_axe.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

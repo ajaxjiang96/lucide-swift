@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Hairdryer.swift
+//  Icon_Lab_hairdryer.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

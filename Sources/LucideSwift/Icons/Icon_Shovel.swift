@@ -1,5 +1,5 @@
 //
-//  Icon_Shovel.swift
+//  Icon_shovel.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

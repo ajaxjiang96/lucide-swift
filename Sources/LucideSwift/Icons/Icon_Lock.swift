@@ -1,5 +1,5 @@
 //
-//  Icon_Lock.swift
+//  Icon_lock.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

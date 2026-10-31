@@ -1,5 +1,5 @@
 //
-//  Icon_Rocket.swift
+//  Icon_rocket.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

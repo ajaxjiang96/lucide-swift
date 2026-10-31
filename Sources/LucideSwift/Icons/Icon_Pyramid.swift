@@ -1,5 +1,5 @@
 //
-//  Icon_Pyramid.swift
+//  Icon_pyramid.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

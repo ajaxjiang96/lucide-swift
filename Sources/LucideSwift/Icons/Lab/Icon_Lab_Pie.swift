@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Pie.swift
+//  Icon_Lab_pie.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

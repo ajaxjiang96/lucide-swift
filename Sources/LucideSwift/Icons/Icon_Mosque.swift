@@ -1,5 +1,5 @@
 //
-//  Icon_Mosque.swift
+//  Icon_mosque.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Broccoli.swift
+//  Icon_broccoli.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

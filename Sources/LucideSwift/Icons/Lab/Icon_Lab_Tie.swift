@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Tie.swift
+//  Icon_Lab_tie.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

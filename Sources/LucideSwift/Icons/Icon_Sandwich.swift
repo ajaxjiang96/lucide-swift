@@ -1,5 +1,5 @@
 //
-//  Icon_Sandwich.swift
+//  Icon_sandwich.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

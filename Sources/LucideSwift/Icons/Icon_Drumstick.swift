@@ -1,5 +1,5 @@
 //
-//  Icon_Drumstick.swift
+//  Icon_drumstick.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

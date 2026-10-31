@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Surfboard.swift
+//  Icon_Lab_surfboard.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

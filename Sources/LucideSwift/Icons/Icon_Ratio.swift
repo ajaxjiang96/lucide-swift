@@ -1,5 +1,5 @@
 //
-//  Icon_Ratio.swift
+//  Icon_ratio.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

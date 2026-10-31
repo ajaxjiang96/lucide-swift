@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.22
-//  Lucide Icons Version: 1.63.0
+//  Library Version: 0.9.23
+//  Lucide Icons Version: 1.65.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -207,7 +207,6 @@ public enum LucideIconName: String, CaseIterable {
     case bluetoothConnected
     case bluetoothOff
     case bluetoothSearching
-    case bold
     case bolt
     case bomb
     case bone
@@ -431,10 +430,35 @@ public enum LucideIconName: String, CaseIterable {
     case circleFadingPlay
     case circleFadingPlus
     case circleGauge
+    case circleLetterA
+    case circleLetterB
+    case circleLetterC
+    case circleLetterD
+    case circleLetterE
+    case circleLetterF
+    case circleLetterG
+    case circleLetterH
+    case circleLetterI
+    case circleLetterJ
+    case circleLetterK
+    case circleLetterL
+    case circleLetterM
+    case circleLetterN
+    case circleLetterO
+    case circleLetterP
+    case circleLetterPOff
+    case circleLetterQ
+    case circleLetterR
+    case circleLetterS
+    case circleLetterT
+    case circleLetterU
+    case circleLetterV
+    case circleLetterW
+    case circleLetterX
+    case circleLetterY
+    case circleLetterZ
     case circleMinus
     case circleOff
-    case circleParking
-    case circleParkingOff
     case circlePause
     case circlePercent
     case circlePile
@@ -544,7 +568,6 @@ public enum LucideIconName: String, CaseIterable {
     case copySlash
     case copyX
     case copyleft
-    case copyright
     case cornerDownLeft
     case cornerDownRight
     case cornerLeftDown
@@ -888,7 +911,6 @@ public enum LucideIconName: String, CaseIterable {
     case haze
     case hd
     case hdmiPort
-    case heading
     case heading1
     case heading2
     case heading3
@@ -1000,7 +1022,33 @@ public enum LucideIconName: String, CaseIterable {
     case lens
     case lensConcave
     case lensConvex
+    case letterA
+    case letterB
+    case letterC
+    case letterD
+    case letterE
+    case letterF
+    case letterG
+    case letterH
+    case letterI
+    case letterJ
+    case letterK
+    case letterL
+    case letterM
+    case letterN
+    case letterO
+    case letterP
+    case letterQ
+    case letterR
+    case letterS
     case letterSpacing
+    case letterT
+    case letterU
+    case letterV
+    case letterW
+    case letterX
+    case letterY
+    case letterZ
     case letters
     case library
     case libraryBig
@@ -1218,6 +1266,7 @@ public enum LucideIconName: String, CaseIterable {
     case notebookText
     case notepadText
     case notepadTextDashed
+    case numbers
     case nut
     case nutOff
     case octagon
@@ -1611,14 +1660,39 @@ public enum LucideIconName: String, CaseIterable {
     case squareExclamationPoint
     case squareFunction
     case squareKanban
+    case squareKanbanPlus
+    case squareLetterA
+    case squareLetterB
+    case squareLetterC
+    case squareLetterD
+    case squareLetterE
+    case squareLetterF
+    case squareLetterG
+    case squareLetterH
+    case squareLetterI
+    case squareLetterJ
+    case squareLetterK
+    case squareLetterL
+    case squareLetterM
+    case squareLetterN
+    case squareLetterO
+    case squareLetterP
+    case squareLetterPOff
+    case squareLetterQ
+    case squareLetterR
+    case squareLetterS
+    case squareLetterT
+    case squareLetterU
+    case squareLetterV
+    case squareLetterW
+    case squareLetterX
+    case squareLetterY
+    case squareLetterZ
     case squareLibrary
-    case squareM
     case squareMenu
     case squareMinus
     case squareMousePointer
     case squareOff
-    case squareParking
-    case squareParkingOff
     case squarePause
     case squarePen
     case squarePercent
@@ -2329,8 +2403,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BluetoothOff.combinedPath
         case .bluetoothSearching:
             return LucideIcon_BluetoothSearching.combinedPath
-        case .bold:
-            return LucideIcon_Bold.combinedPath
         case .bolt:
             return LucideIcon_Bolt.combinedPath
         case .bomb:
@@ -2777,14 +2849,64 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleFadingPlus.combinedPath
         case .circleGauge:
             return LucideIcon_CircleGauge.combinedPath
+        case .circleLetterA:
+            return LucideIcon_CircleLetterA.combinedPath
+        case .circleLetterB:
+            return LucideIcon_CircleLetterB.combinedPath
+        case .circleLetterC:
+            return LucideIcon_CircleLetterC.combinedPath
+        case .circleLetterD:
+            return LucideIcon_CircleLetterD.combinedPath
+        case .circleLetterE:
+            return LucideIcon_CircleLetterE.combinedPath
+        case .circleLetterF:
+            return LucideIcon_CircleLetterF.combinedPath
+        case .circleLetterG:
+            return LucideIcon_CircleLetterG.combinedPath
+        case .circleLetterH:
+            return LucideIcon_CircleLetterH.combinedPath
+        case .circleLetterI:
+            return LucideIcon_CircleLetterI.combinedPath
+        case .circleLetterJ:
+            return LucideIcon_CircleLetterJ.combinedPath
+        case .circleLetterK:
+            return LucideIcon_CircleLetterK.combinedPath
+        case .circleLetterL:
+            return LucideIcon_CircleLetterL.combinedPath
+        case .circleLetterM:
+            return LucideIcon_CircleLetterM.combinedPath
+        case .circleLetterN:
+            return LucideIcon_CircleLetterN.combinedPath
+        case .circleLetterO:
+            return LucideIcon_CircleLetterO.combinedPath
+        case .circleLetterP:
+            return LucideIcon_CircleLetterP.combinedPath
+        case .circleLetterPOff:
+            return LucideIcon_CircleLetterPOff.combinedPath
+        case .circleLetterQ:
+            return LucideIcon_CircleLetterQ.combinedPath
+        case .circleLetterR:
+            return LucideIcon_CircleLetterR.combinedPath
+        case .circleLetterS:
+            return LucideIcon_CircleLetterS.combinedPath
+        case .circleLetterT:
+            return LucideIcon_CircleLetterT.combinedPath
+        case .circleLetterU:
+            return LucideIcon_CircleLetterU.combinedPath
+        case .circleLetterV:
+            return LucideIcon_CircleLetterV.combinedPath
+        case .circleLetterW:
+            return LucideIcon_CircleLetterW.combinedPath
+        case .circleLetterX:
+            return LucideIcon_CircleLetterX.combinedPath
+        case .circleLetterY:
+            return LucideIcon_CircleLetterY.combinedPath
+        case .circleLetterZ:
+            return LucideIcon_CircleLetterZ.combinedPath
         case .circleMinus:
             return LucideIcon_CircleMinus.combinedPath
         case .circleOff:
             return LucideIcon_CircleOff.combinedPath
-        case .circleParking:
-            return LucideIcon_CircleParking.combinedPath
-        case .circleParkingOff:
-            return LucideIcon_CircleParkingOff.combinedPath
         case .circlePause:
             return LucideIcon_CirclePause.combinedPath
         case .circlePercent:
@@ -3003,8 +3125,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CopyX.combinedPath
         case .copyleft:
             return LucideIcon_Copyleft.combinedPath
-        case .copyright:
-            return LucideIcon_Copyright.combinedPath
         case .cornerDownLeft:
             return LucideIcon_CornerDownLeft.combinedPath
         case .cornerDownRight:
@@ -3691,8 +3811,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Hd.combinedPath
         case .hdmiPort:
             return LucideIcon_HdmiPort.combinedPath
-        case .heading:
-            return LucideIcon_Heading.combinedPath
         case .heading1:
             return LucideIcon_Heading1.combinedPath
         case .heading2:
@@ -3915,8 +4033,60 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LensConcave.combinedPath
         case .lensConvex:
             return LucideIcon_LensConvex.combinedPath
+        case .letterA:
+            return LucideIcon_LetterA.combinedPath
+        case .letterB:
+            return LucideIcon_LetterB.combinedPath
+        case .letterC:
+            return LucideIcon_LetterC.combinedPath
+        case .letterD:
+            return LucideIcon_LetterD.combinedPath
+        case .letterE:
+            return LucideIcon_LetterE.combinedPath
+        case .letterF:
+            return LucideIcon_LetterF.combinedPath
+        case .letterG:
+            return LucideIcon_LetterG.combinedPath
+        case .letterH:
+            return LucideIcon_LetterH.combinedPath
+        case .letterI:
+            return LucideIcon_LetterI.combinedPath
+        case .letterJ:
+            return LucideIcon_LetterJ.combinedPath
+        case .letterK:
+            return LucideIcon_LetterK.combinedPath
+        case .letterL:
+            return LucideIcon_LetterL.combinedPath
+        case .letterM:
+            return LucideIcon_LetterM.combinedPath
+        case .letterN:
+            return LucideIcon_LetterN.combinedPath
+        case .letterO:
+            return LucideIcon_LetterO.combinedPath
+        case .letterP:
+            return LucideIcon_LetterP.combinedPath
+        case .letterQ:
+            return LucideIcon_LetterQ.combinedPath
+        case .letterR:
+            return LucideIcon_LetterR.combinedPath
+        case .letterS:
+            return LucideIcon_LetterS.combinedPath
         case .letterSpacing:
             return LucideIcon_LetterSpacing.combinedPath
+        case .letterT:
+            return LucideIcon_LetterT.combinedPath
+        case .letterU:
+            return LucideIcon_LetterU.combinedPath
+        case .letterV:
+            return LucideIcon_LetterV.combinedPath
+        case .letterW:
+            return LucideIcon_LetterW.combinedPath
+        case .letterX:
+            return LucideIcon_LetterX.combinedPath
+        case .letterY:
+            return LucideIcon_LetterY.combinedPath
+        case .letterZ:
+            return LucideIcon_LetterZ.combinedPath
         case .letters:
             return LucideIcon_Letters.combinedPath
         case .library:
@@ -4351,6 +4521,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_NotepadText.combinedPath
         case .notepadTextDashed:
             return LucideIcon_NotepadTextDashed.combinedPath
+        case .numbers:
+            return LucideIcon_Numbers.combinedPath
         case .nut:
             return LucideIcon_Nut.combinedPath
         case .nutOff:
@@ -5137,10 +5309,64 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareFunction.combinedPath
         case .squareKanban:
             return LucideIcon_SquareKanban.combinedPath
+        case .squareKanbanPlus:
+            return LucideIcon_SquareKanbanPlus.combinedPath
+        case .squareLetterA:
+            return LucideIcon_SquareLetterA.combinedPath
+        case .squareLetterB:
+            return LucideIcon_SquareLetterB.combinedPath
+        case .squareLetterC:
+            return LucideIcon_SquareLetterC.combinedPath
+        case .squareLetterD:
+            return LucideIcon_SquareLetterD.combinedPath
+        case .squareLetterE:
+            return LucideIcon_SquareLetterE.combinedPath
+        case .squareLetterF:
+            return LucideIcon_SquareLetterF.combinedPath
+        case .squareLetterG:
+            return LucideIcon_SquareLetterG.combinedPath
+        case .squareLetterH:
+            return LucideIcon_SquareLetterH.combinedPath
+        case .squareLetterI:
+            return LucideIcon_SquareLetterI.combinedPath
+        case .squareLetterJ:
+            return LucideIcon_SquareLetterJ.combinedPath
+        case .squareLetterK:
+            return LucideIcon_SquareLetterK.combinedPath
+        case .squareLetterL:
+            return LucideIcon_SquareLetterL.combinedPath
+        case .squareLetterM:
+            return LucideIcon_SquareLetterM.combinedPath
+        case .squareLetterN:
+            return LucideIcon_SquareLetterN.combinedPath
+        case .squareLetterO:
+            return LucideIcon_SquareLetterO.combinedPath
+        case .squareLetterP:
+            return LucideIcon_SquareLetterP.combinedPath
+        case .squareLetterPOff:
+            return LucideIcon_SquareLetterPOff.combinedPath
+        case .squareLetterQ:
+            return LucideIcon_SquareLetterQ.combinedPath
+        case .squareLetterR:
+            return LucideIcon_SquareLetterR.combinedPath
+        case .squareLetterS:
+            return LucideIcon_SquareLetterS.combinedPath
+        case .squareLetterT:
+            return LucideIcon_SquareLetterT.combinedPath
+        case .squareLetterU:
+            return LucideIcon_SquareLetterU.combinedPath
+        case .squareLetterV:
+            return LucideIcon_SquareLetterV.combinedPath
+        case .squareLetterW:
+            return LucideIcon_SquareLetterW.combinedPath
+        case .squareLetterX:
+            return LucideIcon_SquareLetterX.combinedPath
+        case .squareLetterY:
+            return LucideIcon_SquareLetterY.combinedPath
+        case .squareLetterZ:
+            return LucideIcon_SquareLetterZ.combinedPath
         case .squareLibrary:
             return LucideIcon_SquareLibrary.combinedPath
-        case .squareM:
-            return LucideIcon_SquareM.combinedPath
         case .squareMenu:
             return LucideIcon_SquareMenu.combinedPath
         case .squareMinus:
@@ -5149,10 +5375,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareMousePointer.combinedPath
         case .squareOff:
             return LucideIcon_SquareOff.combinedPath
-        case .squareParking:
-            return LucideIcon_SquareParking.combinedPath
-        case .squareParkingOff:
-            return LucideIcon_SquareParkingOff.combinedPath
         case .squarePause:
             return LucideIcon_SquarePause.combinedPath
         case .squarePen:
@@ -6185,8 +6407,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BluetoothOff.openPath
         case .bluetoothSearching:
             return LucideIcon_BluetoothSearching.openPath
-        case .bold:
-            return LucideIcon_Bold.openPath
         case .bolt:
             return LucideIcon_Bolt.openPath
         case .bomb:
@@ -6633,14 +6853,64 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleFadingPlus.openPath
         case .circleGauge:
             return LucideIcon_CircleGauge.openPath
+        case .circleLetterA:
+            return LucideIcon_CircleLetterA.openPath
+        case .circleLetterB:
+            return LucideIcon_CircleLetterB.openPath
+        case .circleLetterC:
+            return LucideIcon_CircleLetterC.openPath
+        case .circleLetterD:
+            return LucideIcon_CircleLetterD.openPath
+        case .circleLetterE:
+            return LucideIcon_CircleLetterE.openPath
+        case .circleLetterF:
+            return LucideIcon_CircleLetterF.openPath
+        case .circleLetterG:
+            return LucideIcon_CircleLetterG.openPath
+        case .circleLetterH:
+            return LucideIcon_CircleLetterH.openPath
+        case .circleLetterI:
+            return LucideIcon_CircleLetterI.openPath
+        case .circleLetterJ:
+            return LucideIcon_CircleLetterJ.openPath
+        case .circleLetterK:
+            return LucideIcon_CircleLetterK.openPath
+        case .circleLetterL:
+            return LucideIcon_CircleLetterL.openPath
+        case .circleLetterM:
+            return LucideIcon_CircleLetterM.openPath
+        case .circleLetterN:
+            return LucideIcon_CircleLetterN.openPath
+        case .circleLetterO:
+            return LucideIcon_CircleLetterO.openPath
+        case .circleLetterP:
+            return LucideIcon_CircleLetterP.openPath
+        case .circleLetterPOff:
+            return LucideIcon_CircleLetterPOff.openPath
+        case .circleLetterQ:
+            return LucideIcon_CircleLetterQ.openPath
+        case .circleLetterR:
+            return LucideIcon_CircleLetterR.openPath
+        case .circleLetterS:
+            return LucideIcon_CircleLetterS.openPath
+        case .circleLetterT:
+            return LucideIcon_CircleLetterT.openPath
+        case .circleLetterU:
+            return LucideIcon_CircleLetterU.openPath
+        case .circleLetterV:
+            return LucideIcon_CircleLetterV.openPath
+        case .circleLetterW:
+            return LucideIcon_CircleLetterW.openPath
+        case .circleLetterX:
+            return LucideIcon_CircleLetterX.openPath
+        case .circleLetterY:
+            return LucideIcon_CircleLetterY.openPath
+        case .circleLetterZ:
+            return LucideIcon_CircleLetterZ.openPath
         case .circleMinus:
             return LucideIcon_CircleMinus.openPath
         case .circleOff:
             return LucideIcon_CircleOff.openPath
-        case .circleParking:
-            return LucideIcon_CircleParking.openPath
-        case .circleParkingOff:
-            return LucideIcon_CircleParkingOff.openPath
         case .circlePause:
             return LucideIcon_CirclePause.openPath
         case .circlePercent:
@@ -6859,8 +7129,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CopyX.openPath
         case .copyleft:
             return LucideIcon_Copyleft.openPath
-        case .copyright:
-            return LucideIcon_Copyright.openPath
         case .cornerDownLeft:
             return LucideIcon_CornerDownLeft.openPath
         case .cornerDownRight:
@@ -7547,8 +7815,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Hd.openPath
         case .hdmiPort:
             return LucideIcon_HdmiPort.openPath
-        case .heading:
-            return LucideIcon_Heading.openPath
         case .heading1:
             return LucideIcon_Heading1.openPath
         case .heading2:
@@ -7771,8 +8037,60 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LensConcave.openPath
         case .lensConvex:
             return LucideIcon_LensConvex.openPath
+        case .letterA:
+            return LucideIcon_LetterA.openPath
+        case .letterB:
+            return LucideIcon_LetterB.openPath
+        case .letterC:
+            return LucideIcon_LetterC.openPath
+        case .letterD:
+            return LucideIcon_LetterD.openPath
+        case .letterE:
+            return LucideIcon_LetterE.openPath
+        case .letterF:
+            return LucideIcon_LetterF.openPath
+        case .letterG:
+            return LucideIcon_LetterG.openPath
+        case .letterH:
+            return LucideIcon_LetterH.openPath
+        case .letterI:
+            return LucideIcon_LetterI.openPath
+        case .letterJ:
+            return LucideIcon_LetterJ.openPath
+        case .letterK:
+            return LucideIcon_LetterK.openPath
+        case .letterL:
+            return LucideIcon_LetterL.openPath
+        case .letterM:
+            return LucideIcon_LetterM.openPath
+        case .letterN:
+            return LucideIcon_LetterN.openPath
+        case .letterO:
+            return LucideIcon_LetterO.openPath
+        case .letterP:
+            return LucideIcon_LetterP.openPath
+        case .letterQ:
+            return LucideIcon_LetterQ.openPath
+        case .letterR:
+            return LucideIcon_LetterR.openPath
+        case .letterS:
+            return LucideIcon_LetterS.openPath
         case .letterSpacing:
             return LucideIcon_LetterSpacing.openPath
+        case .letterT:
+            return LucideIcon_LetterT.openPath
+        case .letterU:
+            return LucideIcon_LetterU.openPath
+        case .letterV:
+            return LucideIcon_LetterV.openPath
+        case .letterW:
+            return LucideIcon_LetterW.openPath
+        case .letterX:
+            return LucideIcon_LetterX.openPath
+        case .letterY:
+            return LucideIcon_LetterY.openPath
+        case .letterZ:
+            return LucideIcon_LetterZ.openPath
         case .letters:
             return LucideIcon_Letters.openPath
         case .library:
@@ -8207,6 +8525,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_NotepadText.openPath
         case .notepadTextDashed:
             return LucideIcon_NotepadTextDashed.openPath
+        case .numbers:
+            return LucideIcon_Numbers.openPath
         case .nut:
             return LucideIcon_Nut.openPath
         case .nutOff:
@@ -8993,10 +9313,64 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareFunction.openPath
         case .squareKanban:
             return LucideIcon_SquareKanban.openPath
+        case .squareKanbanPlus:
+            return LucideIcon_SquareKanbanPlus.openPath
+        case .squareLetterA:
+            return LucideIcon_SquareLetterA.openPath
+        case .squareLetterB:
+            return LucideIcon_SquareLetterB.openPath
+        case .squareLetterC:
+            return LucideIcon_SquareLetterC.openPath
+        case .squareLetterD:
+            return LucideIcon_SquareLetterD.openPath
+        case .squareLetterE:
+            return LucideIcon_SquareLetterE.openPath
+        case .squareLetterF:
+            return LucideIcon_SquareLetterF.openPath
+        case .squareLetterG:
+            return LucideIcon_SquareLetterG.openPath
+        case .squareLetterH:
+            return LucideIcon_SquareLetterH.openPath
+        case .squareLetterI:
+            return LucideIcon_SquareLetterI.openPath
+        case .squareLetterJ:
+            return LucideIcon_SquareLetterJ.openPath
+        case .squareLetterK:
+            return LucideIcon_SquareLetterK.openPath
+        case .squareLetterL:
+            return LucideIcon_SquareLetterL.openPath
+        case .squareLetterM:
+            return LucideIcon_SquareLetterM.openPath
+        case .squareLetterN:
+            return LucideIcon_SquareLetterN.openPath
+        case .squareLetterO:
+            return LucideIcon_SquareLetterO.openPath
+        case .squareLetterP:
+            return LucideIcon_SquareLetterP.openPath
+        case .squareLetterPOff:
+            return LucideIcon_SquareLetterPOff.openPath
+        case .squareLetterQ:
+            return LucideIcon_SquareLetterQ.openPath
+        case .squareLetterR:
+            return LucideIcon_SquareLetterR.openPath
+        case .squareLetterS:
+            return LucideIcon_SquareLetterS.openPath
+        case .squareLetterT:
+            return LucideIcon_SquareLetterT.openPath
+        case .squareLetterU:
+            return LucideIcon_SquareLetterU.openPath
+        case .squareLetterV:
+            return LucideIcon_SquareLetterV.openPath
+        case .squareLetterW:
+            return LucideIcon_SquareLetterW.openPath
+        case .squareLetterX:
+            return LucideIcon_SquareLetterX.openPath
+        case .squareLetterY:
+            return LucideIcon_SquareLetterY.openPath
+        case .squareLetterZ:
+            return LucideIcon_SquareLetterZ.openPath
         case .squareLibrary:
             return LucideIcon_SquareLibrary.openPath
-        case .squareM:
-            return LucideIcon_SquareM.openPath
         case .squareMenu:
             return LucideIcon_SquareMenu.openPath
         case .squareMinus:
@@ -9005,10 +9379,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareMousePointer.openPath
         case .squareOff:
             return LucideIcon_SquareOff.openPath
-        case .squareParking:
-            return LucideIcon_SquareParking.openPath
-        case .squareParkingOff:
-            return LucideIcon_SquareParkingOff.openPath
         case .squarePause:
             return LucideIcon_SquarePause.openPath
         case .squarePen:
@@ -10041,8 +10411,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BluetoothOff.closedPath
         case .bluetoothSearching:
             return LucideIcon_BluetoothSearching.closedPath
-        case .bold:
-            return LucideIcon_Bold.closedPath
         case .bolt:
             return LucideIcon_Bolt.closedPath
         case .bomb:
@@ -10489,14 +10857,64 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleFadingPlus.closedPath
         case .circleGauge:
             return LucideIcon_CircleGauge.closedPath
+        case .circleLetterA:
+            return LucideIcon_CircleLetterA.closedPath
+        case .circleLetterB:
+            return LucideIcon_CircleLetterB.closedPath
+        case .circleLetterC:
+            return LucideIcon_CircleLetterC.closedPath
+        case .circleLetterD:
+            return LucideIcon_CircleLetterD.closedPath
+        case .circleLetterE:
+            return LucideIcon_CircleLetterE.closedPath
+        case .circleLetterF:
+            return LucideIcon_CircleLetterF.closedPath
+        case .circleLetterG:
+            return LucideIcon_CircleLetterG.closedPath
+        case .circleLetterH:
+            return LucideIcon_CircleLetterH.closedPath
+        case .circleLetterI:
+            return LucideIcon_CircleLetterI.closedPath
+        case .circleLetterJ:
+            return LucideIcon_CircleLetterJ.closedPath
+        case .circleLetterK:
+            return LucideIcon_CircleLetterK.closedPath
+        case .circleLetterL:
+            return LucideIcon_CircleLetterL.closedPath
+        case .circleLetterM:
+            return LucideIcon_CircleLetterM.closedPath
+        case .circleLetterN:
+            return LucideIcon_CircleLetterN.closedPath
+        case .circleLetterO:
+            return LucideIcon_CircleLetterO.closedPath
+        case .circleLetterP:
+            return LucideIcon_CircleLetterP.closedPath
+        case .circleLetterPOff:
+            return LucideIcon_CircleLetterPOff.closedPath
+        case .circleLetterQ:
+            return LucideIcon_CircleLetterQ.closedPath
+        case .circleLetterR:
+            return LucideIcon_CircleLetterR.closedPath
+        case .circleLetterS:
+            return LucideIcon_CircleLetterS.closedPath
+        case .circleLetterT:
+            return LucideIcon_CircleLetterT.closedPath
+        case .circleLetterU:
+            return LucideIcon_CircleLetterU.closedPath
+        case .circleLetterV:
+            return LucideIcon_CircleLetterV.closedPath
+        case .circleLetterW:
+            return LucideIcon_CircleLetterW.closedPath
+        case .circleLetterX:
+            return LucideIcon_CircleLetterX.closedPath
+        case .circleLetterY:
+            return LucideIcon_CircleLetterY.closedPath
+        case .circleLetterZ:
+            return LucideIcon_CircleLetterZ.closedPath
         case .circleMinus:
             return LucideIcon_CircleMinus.closedPath
         case .circleOff:
             return LucideIcon_CircleOff.closedPath
-        case .circleParking:
-            return LucideIcon_CircleParking.closedPath
-        case .circleParkingOff:
-            return LucideIcon_CircleParkingOff.closedPath
         case .circlePause:
             return LucideIcon_CirclePause.closedPath
         case .circlePercent:
@@ -10715,8 +11133,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CopyX.closedPath
         case .copyleft:
             return LucideIcon_Copyleft.closedPath
-        case .copyright:
-            return LucideIcon_Copyright.closedPath
         case .cornerDownLeft:
             return LucideIcon_CornerDownLeft.closedPath
         case .cornerDownRight:
@@ -11403,8 +11819,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Hd.closedPath
         case .hdmiPort:
             return LucideIcon_HdmiPort.closedPath
-        case .heading:
-            return LucideIcon_Heading.closedPath
         case .heading1:
             return LucideIcon_Heading1.closedPath
         case .heading2:
@@ -11627,8 +12041,60 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LensConcave.closedPath
         case .lensConvex:
             return LucideIcon_LensConvex.closedPath
+        case .letterA:
+            return LucideIcon_LetterA.closedPath
+        case .letterB:
+            return LucideIcon_LetterB.closedPath
+        case .letterC:
+            return LucideIcon_LetterC.closedPath
+        case .letterD:
+            return LucideIcon_LetterD.closedPath
+        case .letterE:
+            return LucideIcon_LetterE.closedPath
+        case .letterF:
+            return LucideIcon_LetterF.closedPath
+        case .letterG:
+            return LucideIcon_LetterG.closedPath
+        case .letterH:
+            return LucideIcon_LetterH.closedPath
+        case .letterI:
+            return LucideIcon_LetterI.closedPath
+        case .letterJ:
+            return LucideIcon_LetterJ.closedPath
+        case .letterK:
+            return LucideIcon_LetterK.closedPath
+        case .letterL:
+            return LucideIcon_LetterL.closedPath
+        case .letterM:
+            return LucideIcon_LetterM.closedPath
+        case .letterN:
+            return LucideIcon_LetterN.closedPath
+        case .letterO:
+            return LucideIcon_LetterO.closedPath
+        case .letterP:
+            return LucideIcon_LetterP.closedPath
+        case .letterQ:
+            return LucideIcon_LetterQ.closedPath
+        case .letterR:
+            return LucideIcon_LetterR.closedPath
+        case .letterS:
+            return LucideIcon_LetterS.closedPath
         case .letterSpacing:
             return LucideIcon_LetterSpacing.closedPath
+        case .letterT:
+            return LucideIcon_LetterT.closedPath
+        case .letterU:
+            return LucideIcon_LetterU.closedPath
+        case .letterV:
+            return LucideIcon_LetterV.closedPath
+        case .letterW:
+            return LucideIcon_LetterW.closedPath
+        case .letterX:
+            return LucideIcon_LetterX.closedPath
+        case .letterY:
+            return LucideIcon_LetterY.closedPath
+        case .letterZ:
+            return LucideIcon_LetterZ.closedPath
         case .letters:
             return LucideIcon_Letters.closedPath
         case .library:
@@ -12063,6 +12529,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_NotepadText.closedPath
         case .notepadTextDashed:
             return LucideIcon_NotepadTextDashed.closedPath
+        case .numbers:
+            return LucideIcon_Numbers.closedPath
         case .nut:
             return LucideIcon_Nut.closedPath
         case .nutOff:
@@ -12849,10 +13317,64 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareFunction.closedPath
         case .squareKanban:
             return LucideIcon_SquareKanban.closedPath
+        case .squareKanbanPlus:
+            return LucideIcon_SquareKanbanPlus.closedPath
+        case .squareLetterA:
+            return LucideIcon_SquareLetterA.closedPath
+        case .squareLetterB:
+            return LucideIcon_SquareLetterB.closedPath
+        case .squareLetterC:
+            return LucideIcon_SquareLetterC.closedPath
+        case .squareLetterD:
+            return LucideIcon_SquareLetterD.closedPath
+        case .squareLetterE:
+            return LucideIcon_SquareLetterE.closedPath
+        case .squareLetterF:
+            return LucideIcon_SquareLetterF.closedPath
+        case .squareLetterG:
+            return LucideIcon_SquareLetterG.closedPath
+        case .squareLetterH:
+            return LucideIcon_SquareLetterH.closedPath
+        case .squareLetterI:
+            return LucideIcon_SquareLetterI.closedPath
+        case .squareLetterJ:
+            return LucideIcon_SquareLetterJ.closedPath
+        case .squareLetterK:
+            return LucideIcon_SquareLetterK.closedPath
+        case .squareLetterL:
+            return LucideIcon_SquareLetterL.closedPath
+        case .squareLetterM:
+            return LucideIcon_SquareLetterM.closedPath
+        case .squareLetterN:
+            return LucideIcon_SquareLetterN.closedPath
+        case .squareLetterO:
+            return LucideIcon_SquareLetterO.closedPath
+        case .squareLetterP:
+            return LucideIcon_SquareLetterP.closedPath
+        case .squareLetterPOff:
+            return LucideIcon_SquareLetterPOff.closedPath
+        case .squareLetterQ:
+            return LucideIcon_SquareLetterQ.closedPath
+        case .squareLetterR:
+            return LucideIcon_SquareLetterR.closedPath
+        case .squareLetterS:
+            return LucideIcon_SquareLetterS.closedPath
+        case .squareLetterT:
+            return LucideIcon_SquareLetterT.closedPath
+        case .squareLetterU:
+            return LucideIcon_SquareLetterU.closedPath
+        case .squareLetterV:
+            return LucideIcon_SquareLetterV.closedPath
+        case .squareLetterW:
+            return LucideIcon_SquareLetterW.closedPath
+        case .squareLetterX:
+            return LucideIcon_SquareLetterX.closedPath
+        case .squareLetterY:
+            return LucideIcon_SquareLetterY.closedPath
+        case .squareLetterZ:
+            return LucideIcon_SquareLetterZ.closedPath
         case .squareLibrary:
             return LucideIcon_SquareLibrary.closedPath
-        case .squareM:
-            return LucideIcon_SquareM.closedPath
         case .squareMenu:
             return LucideIcon_SquareMenu.closedPath
         case .squareMinus:
@@ -12861,10 +13383,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareMousePointer.closedPath
         case .squareOff:
             return LucideIcon_SquareOff.closedPath
-        case .squareParking:
-            return LucideIcon_SquareParking.closedPath
-        case .squareParkingOff:
-            return LucideIcon_SquareParkingOff.closedPath
         case .squarePause:
             return LucideIcon_SquarePause.closedPath
         case .squarePen:
@@ -16744,9 +17262,6 @@ public struct Lucide {
     /// Bluetooth Searching icon
     public static let bluetoothSearching: LucideShape = LucideShape(combined: LucideIcon_BluetoothSearching.combinedPath, open: LucideIcon_BluetoothSearching.openPath, closed: LucideIcon_BluetoothSearching.closedPath)
 
-    /// Bold icon
-    public static let bold: LucideShape = LucideShape(combined: LucideIcon_Bold.combinedPath, open: LucideIcon_Bold.openPath, closed: LucideIcon_Bold.closedPath)
-
     /// Bolt icon
     public static let bolt: LucideShape = LucideShape(combined: LucideIcon_Bolt.combinedPath, open: LucideIcon_Bolt.openPath, closed: LucideIcon_Bolt.closedPath)
 
@@ -17416,17 +17931,92 @@ public struct Lucide {
     /// Circle Gauge icon
     public static let circleGauge: LucideShape = LucideShape(combined: LucideIcon_CircleGauge.combinedPath, open: LucideIcon_CircleGauge.openPath, closed: LucideIcon_CircleGauge.closedPath)
 
+    /// Circle Letter A icon
+    public static let circleLetterA: LucideShape = LucideShape(combined: LucideIcon_CircleLetterA.combinedPath, open: LucideIcon_CircleLetterA.openPath, closed: LucideIcon_CircleLetterA.closedPath)
+
+    /// Circle Letter B icon
+    public static let circleLetterB: LucideShape = LucideShape(combined: LucideIcon_CircleLetterB.combinedPath, open: LucideIcon_CircleLetterB.openPath, closed: LucideIcon_CircleLetterB.closedPath)
+
+    /// Circle Letter C icon
+    public static let circleLetterC: LucideShape = LucideShape(combined: LucideIcon_CircleLetterC.combinedPath, open: LucideIcon_CircleLetterC.openPath, closed: LucideIcon_CircleLetterC.closedPath)
+
+    /// Circle Letter D icon
+    public static let circleLetterD: LucideShape = LucideShape(combined: LucideIcon_CircleLetterD.combinedPath, open: LucideIcon_CircleLetterD.openPath, closed: LucideIcon_CircleLetterD.closedPath)
+
+    /// Circle Letter E icon
+    public static let circleLetterE: LucideShape = LucideShape(combined: LucideIcon_CircleLetterE.combinedPath, open: LucideIcon_CircleLetterE.openPath, closed: LucideIcon_CircleLetterE.closedPath)
+
+    /// Circle Letter F icon
+    public static let circleLetterF: LucideShape = LucideShape(combined: LucideIcon_CircleLetterF.combinedPath, open: LucideIcon_CircleLetterF.openPath, closed: LucideIcon_CircleLetterF.closedPath)
+
+    /// Circle Letter G icon
+    public static let circleLetterG: LucideShape = LucideShape(combined: LucideIcon_CircleLetterG.combinedPath, open: LucideIcon_CircleLetterG.openPath, closed: LucideIcon_CircleLetterG.closedPath)
+
+    /// Circle Letter H icon
+    public static let circleLetterH: LucideShape = LucideShape(combined: LucideIcon_CircleLetterH.combinedPath, open: LucideIcon_CircleLetterH.openPath, closed: LucideIcon_CircleLetterH.closedPath)
+
+    /// Circle Letter I icon
+    public static let circleLetterI: LucideShape = LucideShape(combined: LucideIcon_CircleLetterI.combinedPath, open: LucideIcon_CircleLetterI.openPath, closed: LucideIcon_CircleLetterI.closedPath)
+
+    /// Circle Letter J icon
+    public static let circleLetterJ: LucideShape = LucideShape(combined: LucideIcon_CircleLetterJ.combinedPath, open: LucideIcon_CircleLetterJ.openPath, closed: LucideIcon_CircleLetterJ.closedPath)
+
+    /// Circle Letter K icon
+    public static let circleLetterK: LucideShape = LucideShape(combined: LucideIcon_CircleLetterK.combinedPath, open: LucideIcon_CircleLetterK.openPath, closed: LucideIcon_CircleLetterK.closedPath)
+
+    /// Circle Letter L icon
+    public static let circleLetterL: LucideShape = LucideShape(combined: LucideIcon_CircleLetterL.combinedPath, open: LucideIcon_CircleLetterL.openPath, closed: LucideIcon_CircleLetterL.closedPath)
+
+    /// Circle Letter M icon
+    public static let circleLetterM: LucideShape = LucideShape(combined: LucideIcon_CircleLetterM.combinedPath, open: LucideIcon_CircleLetterM.openPath, closed: LucideIcon_CircleLetterM.closedPath)
+
+    /// Circle Letter N icon
+    public static let circleLetterN: LucideShape = LucideShape(combined: LucideIcon_CircleLetterN.combinedPath, open: LucideIcon_CircleLetterN.openPath, closed: LucideIcon_CircleLetterN.closedPath)
+
+    /// Circle Letter O icon
+    public static let circleLetterO: LucideShape = LucideShape(combined: LucideIcon_CircleLetterO.combinedPath, open: LucideIcon_CircleLetterO.openPath, closed: LucideIcon_CircleLetterO.closedPath)
+
+    /// Circle Letter P icon
+    public static let circleLetterP: LucideShape = LucideShape(combined: LucideIcon_CircleLetterP.combinedPath, open: LucideIcon_CircleLetterP.openPath, closed: LucideIcon_CircleLetterP.closedPath)
+
+    /// Circle Letter P Off icon
+    public static let circleLetterPOff: LucideShape = LucideShape(combined: LucideIcon_CircleLetterPOff.combinedPath, open: LucideIcon_CircleLetterPOff.openPath, closed: LucideIcon_CircleLetterPOff.closedPath)
+
+    /// Circle Letter Q icon
+    public static let circleLetterQ: LucideShape = LucideShape(combined: LucideIcon_CircleLetterQ.combinedPath, open: LucideIcon_CircleLetterQ.openPath, closed: LucideIcon_CircleLetterQ.closedPath)
+
+    /// Circle Letter R icon
+    public static let circleLetterR: LucideShape = LucideShape(combined: LucideIcon_CircleLetterR.combinedPath, open: LucideIcon_CircleLetterR.openPath, closed: LucideIcon_CircleLetterR.closedPath)
+
+    /// Circle Letter S icon
+    public static let circleLetterS: LucideShape = LucideShape(combined: LucideIcon_CircleLetterS.combinedPath, open: LucideIcon_CircleLetterS.openPath, closed: LucideIcon_CircleLetterS.closedPath)
+
+    /// Circle Letter T icon
+    public static let circleLetterT: LucideShape = LucideShape(combined: LucideIcon_CircleLetterT.combinedPath, open: LucideIcon_CircleLetterT.openPath, closed: LucideIcon_CircleLetterT.closedPath)
+
+    /// Circle Letter U icon
+    public static let circleLetterU: LucideShape = LucideShape(combined: LucideIcon_CircleLetterU.combinedPath, open: LucideIcon_CircleLetterU.openPath, closed: LucideIcon_CircleLetterU.closedPath)
+
+    /// Circle Letter V icon
+    public static let circleLetterV: LucideShape = LucideShape(combined: LucideIcon_CircleLetterV.combinedPath, open: LucideIcon_CircleLetterV.openPath, closed: LucideIcon_CircleLetterV.closedPath)
+
+    /// Circle Letter W icon
+    public static let circleLetterW: LucideShape = LucideShape(combined: LucideIcon_CircleLetterW.combinedPath, open: LucideIcon_CircleLetterW.openPath, closed: LucideIcon_CircleLetterW.closedPath)
+
+    /// Circle Letter X icon
+    public static let circleLetterX: LucideShape = LucideShape(combined: LucideIcon_CircleLetterX.combinedPath, open: LucideIcon_CircleLetterX.openPath, closed: LucideIcon_CircleLetterX.closedPath)
+
+    /// Circle Letter Y icon
+    public static let circleLetterY: LucideShape = LucideShape(combined: LucideIcon_CircleLetterY.combinedPath, open: LucideIcon_CircleLetterY.openPath, closed: LucideIcon_CircleLetterY.closedPath)
+
+    /// Circle Letter Z icon
+    public static let circleLetterZ: LucideShape = LucideShape(combined: LucideIcon_CircleLetterZ.combinedPath, open: LucideIcon_CircleLetterZ.openPath, closed: LucideIcon_CircleLetterZ.closedPath)
+
     /// Circle Minus icon
     public static let circleMinus: LucideShape = LucideShape(combined: LucideIcon_CircleMinus.combinedPath, open: LucideIcon_CircleMinus.openPath, closed: LucideIcon_CircleMinus.closedPath)
 
     /// Circle Off icon
     public static let circleOff: LucideShape = LucideShape(combined: LucideIcon_CircleOff.combinedPath, open: LucideIcon_CircleOff.openPath, closed: LucideIcon_CircleOff.closedPath)
-
-    /// Circle Parking icon
-    public static let circleParking: LucideShape = LucideShape(combined: LucideIcon_CircleParking.combinedPath, open: LucideIcon_CircleParking.openPath, closed: LucideIcon_CircleParking.closedPath)
-
-    /// Circle Parking Off icon
-    public static let circleParkingOff: LucideShape = LucideShape(combined: LucideIcon_CircleParkingOff.combinedPath, open: LucideIcon_CircleParkingOff.openPath, closed: LucideIcon_CircleParkingOff.closedPath)
 
     /// Circle Pause icon
     public static let circlePause: LucideShape = LucideShape(combined: LucideIcon_CirclePause.combinedPath, open: LucideIcon_CirclePause.openPath, closed: LucideIcon_CirclePause.closedPath)
@@ -17754,9 +18344,6 @@ public struct Lucide {
 
     /// Copyleft icon
     public static let copyleft: LucideShape = LucideShape(combined: LucideIcon_Copyleft.combinedPath, open: LucideIcon_Copyleft.openPath, closed: LucideIcon_Copyleft.closedPath)
-
-    /// Copyright icon
-    public static let copyright: LucideShape = LucideShape(combined: LucideIcon_Copyright.combinedPath, open: LucideIcon_Copyright.openPath, closed: LucideIcon_Copyright.closedPath)
 
     /// Corner Down Left icon
     public static let cornerDownLeft: LucideShape = LucideShape(combined: LucideIcon_CornerDownLeft.combinedPath, open: LucideIcon_CornerDownLeft.openPath, closed: LucideIcon_CornerDownLeft.closedPath)
@@ -18787,9 +19374,6 @@ public struct Lucide {
     /// Hdmi Port icon
     public static let hdmiPort: LucideShape = LucideShape(combined: LucideIcon_HdmiPort.combinedPath, open: LucideIcon_HdmiPort.openPath, closed: LucideIcon_HdmiPort.closedPath)
 
-    /// Heading icon
-    public static let heading: LucideShape = LucideShape(combined: LucideIcon_Heading.combinedPath, open: LucideIcon_Heading.openPath, closed: LucideIcon_Heading.closedPath)
-
     /// Heading 1 icon
     public static let heading1: LucideShape = LucideShape(combined: LucideIcon_Heading1.combinedPath, open: LucideIcon_Heading1.openPath, closed: LucideIcon_Heading1.closedPath)
 
@@ -19123,8 +19707,86 @@ public struct Lucide {
     /// Lens Convex icon
     public static let lensConvex: LucideShape = LucideShape(combined: LucideIcon_LensConvex.combinedPath, open: LucideIcon_LensConvex.openPath, closed: LucideIcon_LensConvex.closedPath)
 
+    /// Letter A icon
+    public static let letterA: LucideShape = LucideShape(combined: LucideIcon_LetterA.combinedPath, open: LucideIcon_LetterA.openPath, closed: LucideIcon_LetterA.closedPath)
+
+    /// Letter B icon
+    public static let letterB: LucideShape = LucideShape(combined: LucideIcon_LetterB.combinedPath, open: LucideIcon_LetterB.openPath, closed: LucideIcon_LetterB.closedPath)
+
+    /// Letter C icon
+    public static let letterC: LucideShape = LucideShape(combined: LucideIcon_LetterC.combinedPath, open: LucideIcon_LetterC.openPath, closed: LucideIcon_LetterC.closedPath)
+
+    /// Letter D icon
+    public static let letterD: LucideShape = LucideShape(combined: LucideIcon_LetterD.combinedPath, open: LucideIcon_LetterD.openPath, closed: LucideIcon_LetterD.closedPath)
+
+    /// Letter E icon
+    public static let letterE: LucideShape = LucideShape(combined: LucideIcon_LetterE.combinedPath, open: LucideIcon_LetterE.openPath, closed: LucideIcon_LetterE.closedPath)
+
+    /// Letter F icon
+    public static let letterF: LucideShape = LucideShape(combined: LucideIcon_LetterF.combinedPath, open: LucideIcon_LetterF.openPath, closed: LucideIcon_LetterF.closedPath)
+
+    /// Letter G icon
+    public static let letterG: LucideShape = LucideShape(combined: LucideIcon_LetterG.combinedPath, open: LucideIcon_LetterG.openPath, closed: LucideIcon_LetterG.closedPath)
+
+    /// Letter H icon
+    public static let letterH: LucideShape = LucideShape(combined: LucideIcon_LetterH.combinedPath, open: LucideIcon_LetterH.openPath, closed: LucideIcon_LetterH.closedPath)
+
+    /// Letter I icon
+    public static let letterI: LucideShape = LucideShape(combined: LucideIcon_LetterI.combinedPath, open: LucideIcon_LetterI.openPath, closed: LucideIcon_LetterI.closedPath)
+
+    /// Letter J icon
+    public static let letterJ: LucideShape = LucideShape(combined: LucideIcon_LetterJ.combinedPath, open: LucideIcon_LetterJ.openPath, closed: LucideIcon_LetterJ.closedPath)
+
+    /// Letter K icon
+    public static let letterK: LucideShape = LucideShape(combined: LucideIcon_LetterK.combinedPath, open: LucideIcon_LetterK.openPath, closed: LucideIcon_LetterK.closedPath)
+
+    /// Letter L icon
+    public static let letterL: LucideShape = LucideShape(combined: LucideIcon_LetterL.combinedPath, open: LucideIcon_LetterL.openPath, closed: LucideIcon_LetterL.closedPath)
+
+    /// Letter M icon
+    public static let letterM: LucideShape = LucideShape(combined: LucideIcon_LetterM.combinedPath, open: LucideIcon_LetterM.openPath, closed: LucideIcon_LetterM.closedPath)
+
+    /// Letter N icon
+    public static let letterN: LucideShape = LucideShape(combined: LucideIcon_LetterN.combinedPath, open: LucideIcon_LetterN.openPath, closed: LucideIcon_LetterN.closedPath)
+
+    /// Letter O icon
+    public static let letterO: LucideShape = LucideShape(combined: LucideIcon_LetterO.combinedPath, open: LucideIcon_LetterO.openPath, closed: LucideIcon_LetterO.closedPath)
+
+    /// Letter P icon
+    public static let letterP: LucideShape = LucideShape(combined: LucideIcon_LetterP.combinedPath, open: LucideIcon_LetterP.openPath, closed: LucideIcon_LetterP.closedPath)
+
+    /// Letter Q icon
+    public static let letterQ: LucideShape = LucideShape(combined: LucideIcon_LetterQ.combinedPath, open: LucideIcon_LetterQ.openPath, closed: LucideIcon_LetterQ.closedPath)
+
+    /// Letter R icon
+    public static let letterR: LucideShape = LucideShape(combined: LucideIcon_LetterR.combinedPath, open: LucideIcon_LetterR.openPath, closed: LucideIcon_LetterR.closedPath)
+
+    /// Letter S icon
+    public static let letterS: LucideShape = LucideShape(combined: LucideIcon_LetterS.combinedPath, open: LucideIcon_LetterS.openPath, closed: LucideIcon_LetterS.closedPath)
+
     /// Letter Spacing icon
     public static let letterSpacing: LucideShape = LucideShape(combined: LucideIcon_LetterSpacing.combinedPath, open: LucideIcon_LetterSpacing.openPath, closed: LucideIcon_LetterSpacing.closedPath)
+
+    /// Letter T icon
+    public static let letterT: LucideShape = LucideShape(combined: LucideIcon_LetterT.combinedPath, open: LucideIcon_LetterT.openPath, closed: LucideIcon_LetterT.closedPath)
+
+    /// Letter U icon
+    public static let letterU: LucideShape = LucideShape(combined: LucideIcon_LetterU.combinedPath, open: LucideIcon_LetterU.openPath, closed: LucideIcon_LetterU.closedPath)
+
+    /// Letter V icon
+    public static let letterV: LucideShape = LucideShape(combined: LucideIcon_LetterV.combinedPath, open: LucideIcon_LetterV.openPath, closed: LucideIcon_LetterV.closedPath)
+
+    /// Letter W icon
+    public static let letterW: LucideShape = LucideShape(combined: LucideIcon_LetterW.combinedPath, open: LucideIcon_LetterW.openPath, closed: LucideIcon_LetterW.closedPath)
+
+    /// Letter X icon
+    public static let letterX: LucideShape = LucideShape(combined: LucideIcon_LetterX.combinedPath, open: LucideIcon_LetterX.openPath, closed: LucideIcon_LetterX.closedPath)
+
+    /// Letter Y icon
+    public static let letterY: LucideShape = LucideShape(combined: LucideIcon_LetterY.combinedPath, open: LucideIcon_LetterY.openPath, closed: LucideIcon_LetterY.closedPath)
+
+    /// Letter Z icon
+    public static let letterZ: LucideShape = LucideShape(combined: LucideIcon_LetterZ.combinedPath, open: LucideIcon_LetterZ.openPath, closed: LucideIcon_LetterZ.closedPath)
 
     /// Letters icon
     public static let letters: LucideShape = LucideShape(combined: LucideIcon_Letters.combinedPath, open: LucideIcon_Letters.openPath, closed: LucideIcon_Letters.closedPath)
@@ -19776,6 +20438,9 @@ public struct Lucide {
 
     /// Notepad Text Dashed icon
     public static let notepadTextDashed: LucideShape = LucideShape(combined: LucideIcon_NotepadTextDashed.combinedPath, open: LucideIcon_NotepadTextDashed.openPath, closed: LucideIcon_NotepadTextDashed.closedPath)
+
+    /// Numbers icon
+    public static let numbers: LucideShape = LucideShape(combined: LucideIcon_Numbers.combinedPath, open: LucideIcon_Numbers.openPath, closed: LucideIcon_Numbers.closedPath)
 
     /// Nut icon
     public static let nut: LucideShape = LucideShape(combined: LucideIcon_Nut.combinedPath, open: LucideIcon_Nut.openPath, closed: LucideIcon_Nut.closedPath)
@@ -20956,11 +21621,92 @@ public struct Lucide {
     /// Square Kanban icon
     public static let squareKanban: LucideShape = LucideShape(combined: LucideIcon_SquareKanban.combinedPath, open: LucideIcon_SquareKanban.openPath, closed: LucideIcon_SquareKanban.closedPath)
 
+    /// Square Kanban Plus icon
+    public static let squareKanbanPlus: LucideShape = LucideShape(combined: LucideIcon_SquareKanbanPlus.combinedPath, open: LucideIcon_SquareKanbanPlus.openPath, closed: LucideIcon_SquareKanbanPlus.closedPath)
+
+    /// Square Letter A icon
+    public static let squareLetterA: LucideShape = LucideShape(combined: LucideIcon_SquareLetterA.combinedPath, open: LucideIcon_SquareLetterA.openPath, closed: LucideIcon_SquareLetterA.closedPath)
+
+    /// Square Letter B icon
+    public static let squareLetterB: LucideShape = LucideShape(combined: LucideIcon_SquareLetterB.combinedPath, open: LucideIcon_SquareLetterB.openPath, closed: LucideIcon_SquareLetterB.closedPath)
+
+    /// Square Letter C icon
+    public static let squareLetterC: LucideShape = LucideShape(combined: LucideIcon_SquareLetterC.combinedPath, open: LucideIcon_SquareLetterC.openPath, closed: LucideIcon_SquareLetterC.closedPath)
+
+    /// Square Letter D icon
+    public static let squareLetterD: LucideShape = LucideShape(combined: LucideIcon_SquareLetterD.combinedPath, open: LucideIcon_SquareLetterD.openPath, closed: LucideIcon_SquareLetterD.closedPath)
+
+    /// Square Letter E icon
+    public static let squareLetterE: LucideShape = LucideShape(combined: LucideIcon_SquareLetterE.combinedPath, open: LucideIcon_SquareLetterE.openPath, closed: LucideIcon_SquareLetterE.closedPath)
+
+    /// Square Letter F icon
+    public static let squareLetterF: LucideShape = LucideShape(combined: LucideIcon_SquareLetterF.combinedPath, open: LucideIcon_SquareLetterF.openPath, closed: LucideIcon_SquareLetterF.closedPath)
+
+    /// Square Letter G icon
+    public static let squareLetterG: LucideShape = LucideShape(combined: LucideIcon_SquareLetterG.combinedPath, open: LucideIcon_SquareLetterG.openPath, closed: LucideIcon_SquareLetterG.closedPath)
+
+    /// Square Letter H icon
+    public static let squareLetterH: LucideShape = LucideShape(combined: LucideIcon_SquareLetterH.combinedPath, open: LucideIcon_SquareLetterH.openPath, closed: LucideIcon_SquareLetterH.closedPath)
+
+    /// Square Letter I icon
+    public static let squareLetterI: LucideShape = LucideShape(combined: LucideIcon_SquareLetterI.combinedPath, open: LucideIcon_SquareLetterI.openPath, closed: LucideIcon_SquareLetterI.closedPath)
+
+    /// Square Letter J icon
+    public static let squareLetterJ: LucideShape = LucideShape(combined: LucideIcon_SquareLetterJ.combinedPath, open: LucideIcon_SquareLetterJ.openPath, closed: LucideIcon_SquareLetterJ.closedPath)
+
+    /// Square Letter K icon
+    public static let squareLetterK: LucideShape = LucideShape(combined: LucideIcon_SquareLetterK.combinedPath, open: LucideIcon_SquareLetterK.openPath, closed: LucideIcon_SquareLetterK.closedPath)
+
+    /// Square Letter L icon
+    public static let squareLetterL: LucideShape = LucideShape(combined: LucideIcon_SquareLetterL.combinedPath, open: LucideIcon_SquareLetterL.openPath, closed: LucideIcon_SquareLetterL.closedPath)
+
+    /// Square Letter M icon
+    public static let squareLetterM: LucideShape = LucideShape(combined: LucideIcon_SquareLetterM.combinedPath, open: LucideIcon_SquareLetterM.openPath, closed: LucideIcon_SquareLetterM.closedPath)
+
+    /// Square Letter N icon
+    public static let squareLetterN: LucideShape = LucideShape(combined: LucideIcon_SquareLetterN.combinedPath, open: LucideIcon_SquareLetterN.openPath, closed: LucideIcon_SquareLetterN.closedPath)
+
+    /// Square Letter O icon
+    public static let squareLetterO: LucideShape = LucideShape(combined: LucideIcon_SquareLetterO.combinedPath, open: LucideIcon_SquareLetterO.openPath, closed: LucideIcon_SquareLetterO.closedPath)
+
+    /// Square Letter P icon
+    public static let squareLetterP: LucideShape = LucideShape(combined: LucideIcon_SquareLetterP.combinedPath, open: LucideIcon_SquareLetterP.openPath, closed: LucideIcon_SquareLetterP.closedPath)
+
+    /// Square Letter P Off icon
+    public static let squareLetterPOff: LucideShape = LucideShape(combined: LucideIcon_SquareLetterPOff.combinedPath, open: LucideIcon_SquareLetterPOff.openPath, closed: LucideIcon_SquareLetterPOff.closedPath)
+
+    /// Square Letter Q icon
+    public static let squareLetterQ: LucideShape = LucideShape(combined: LucideIcon_SquareLetterQ.combinedPath, open: LucideIcon_SquareLetterQ.openPath, closed: LucideIcon_SquareLetterQ.closedPath)
+
+    /// Square Letter R icon
+    public static let squareLetterR: LucideShape = LucideShape(combined: LucideIcon_SquareLetterR.combinedPath, open: LucideIcon_SquareLetterR.openPath, closed: LucideIcon_SquareLetterR.closedPath)
+
+    /// Square Letter S icon
+    public static let squareLetterS: LucideShape = LucideShape(combined: LucideIcon_SquareLetterS.combinedPath, open: LucideIcon_SquareLetterS.openPath, closed: LucideIcon_SquareLetterS.closedPath)
+
+    /// Square Letter T icon
+    public static let squareLetterT: LucideShape = LucideShape(combined: LucideIcon_SquareLetterT.combinedPath, open: LucideIcon_SquareLetterT.openPath, closed: LucideIcon_SquareLetterT.closedPath)
+
+    /// Square Letter U icon
+    public static let squareLetterU: LucideShape = LucideShape(combined: LucideIcon_SquareLetterU.combinedPath, open: LucideIcon_SquareLetterU.openPath, closed: LucideIcon_SquareLetterU.closedPath)
+
+    /// Square Letter V icon
+    public static let squareLetterV: LucideShape = LucideShape(combined: LucideIcon_SquareLetterV.combinedPath, open: LucideIcon_SquareLetterV.openPath, closed: LucideIcon_SquareLetterV.closedPath)
+
+    /// Square Letter W icon
+    public static let squareLetterW: LucideShape = LucideShape(combined: LucideIcon_SquareLetterW.combinedPath, open: LucideIcon_SquareLetterW.openPath, closed: LucideIcon_SquareLetterW.closedPath)
+
+    /// Square Letter X icon
+    public static let squareLetterX: LucideShape = LucideShape(combined: LucideIcon_SquareLetterX.combinedPath, open: LucideIcon_SquareLetterX.openPath, closed: LucideIcon_SquareLetterX.closedPath)
+
+    /// Square Letter Y icon
+    public static let squareLetterY: LucideShape = LucideShape(combined: LucideIcon_SquareLetterY.combinedPath, open: LucideIcon_SquareLetterY.openPath, closed: LucideIcon_SquareLetterY.closedPath)
+
+    /// Square Letter Z icon
+    public static let squareLetterZ: LucideShape = LucideShape(combined: LucideIcon_SquareLetterZ.combinedPath, open: LucideIcon_SquareLetterZ.openPath, closed: LucideIcon_SquareLetterZ.closedPath)
+
     /// Square Library icon
     public static let squareLibrary: LucideShape = LucideShape(combined: LucideIcon_SquareLibrary.combinedPath, open: LucideIcon_SquareLibrary.openPath, closed: LucideIcon_SquareLibrary.closedPath)
-
-    /// Square M icon
-    public static let squareM: LucideShape = LucideShape(combined: LucideIcon_SquareM.combinedPath, open: LucideIcon_SquareM.openPath, closed: LucideIcon_SquareM.closedPath)
 
     /// Square Menu icon
     public static let squareMenu: LucideShape = LucideShape(combined: LucideIcon_SquareMenu.combinedPath, open: LucideIcon_SquareMenu.openPath, closed: LucideIcon_SquareMenu.closedPath)
@@ -20973,12 +21719,6 @@ public struct Lucide {
 
     /// Square Off icon
     public static let squareOff: LucideShape = LucideShape(combined: LucideIcon_SquareOff.combinedPath, open: LucideIcon_SquareOff.openPath, closed: LucideIcon_SquareOff.closedPath)
-
-    /// Square Parking icon
-    public static let squareParking: LucideShape = LucideShape(combined: LucideIcon_SquareParking.combinedPath, open: LucideIcon_SquareParking.openPath, closed: LucideIcon_SquareParking.closedPath)
-
-    /// Square Parking Off icon
-    public static let squareParkingOff: LucideShape = LucideShape(combined: LucideIcon_SquareParkingOff.combinedPath, open: LucideIcon_SquareParkingOff.openPath, closed: LucideIcon_SquareParkingOff.closedPath)
 
     /// Square Pause icon
     public static let squarePause: LucideShape = LucideShape(combined: LucideIcon_SquarePause.combinedPath, open: LucideIcon_SquarePause.openPath, closed: LucideIcon_SquarePause.closedPath)
@@ -23072,10 +23812,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.22"
+    public static let libraryVersion = "0.9.23"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.63.0"
+    public static let lucideVersion = "1.65.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"

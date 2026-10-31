@@ -1,5 +1,5 @@
 //
-//  Icon_Torus.swift
+//  Icon_torus.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

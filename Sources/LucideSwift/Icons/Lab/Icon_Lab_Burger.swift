@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Burger.swift
+//  Icon_Lab_burger.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

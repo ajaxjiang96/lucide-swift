@@ -1,5 +1,5 @@
 //
-//  Icon_Paperclip.swift
+//  Icon_paperclip.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

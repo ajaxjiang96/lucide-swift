@@ -1,5 +1,5 @@
 //
-//  Icon_Ear.swift
+//  Icon_ear.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

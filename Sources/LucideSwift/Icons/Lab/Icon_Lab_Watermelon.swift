@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Watermelon.swift
+//  Icon_Lab_watermelon.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

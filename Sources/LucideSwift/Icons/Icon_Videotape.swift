@@ -1,5 +1,5 @@
 //
-//  Icon_Videotape.swift
+//  Icon_videotape.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

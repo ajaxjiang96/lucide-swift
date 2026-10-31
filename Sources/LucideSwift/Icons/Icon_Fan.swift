@@ -1,5 +1,5 @@
 //
-//  Icon_Fan.swift
+//  Icon_fan.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

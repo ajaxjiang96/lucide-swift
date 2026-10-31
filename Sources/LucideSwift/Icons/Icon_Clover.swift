@@ -1,5 +1,5 @@
 //
-//  Icon_Clover.swift
+//  Icon_clover.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

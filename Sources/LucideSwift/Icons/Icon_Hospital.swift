@@ -1,5 +1,5 @@
 //
-//  Icon_Hospital.swift
+//  Icon_hospital.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

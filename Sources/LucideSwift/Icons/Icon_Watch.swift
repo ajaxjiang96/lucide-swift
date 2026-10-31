@@ -1,5 +1,5 @@
 //
-//  Icon_Watch.swift
+//  Icon_watch.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

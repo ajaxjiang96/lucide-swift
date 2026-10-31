@@ -1,5 +1,5 @@
 //
-//  Icon_Sofa.swift
+//  Icon_sofa.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

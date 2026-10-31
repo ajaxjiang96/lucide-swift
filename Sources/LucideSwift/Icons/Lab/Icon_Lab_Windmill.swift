@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Windmill.swift
+//  Icon_Lab_windmill.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

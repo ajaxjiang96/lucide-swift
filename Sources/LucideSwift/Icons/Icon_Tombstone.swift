@@ -1,5 +1,5 @@
 //
-//  Icon_Tombstone.swift
+//  Icon_tombstone.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

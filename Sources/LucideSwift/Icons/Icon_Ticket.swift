@@ -1,5 +1,5 @@
 //
-//  Icon_Ticket.swift
+//  Icon_ticket.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

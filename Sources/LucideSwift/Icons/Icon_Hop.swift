@@ -1,5 +1,5 @@
 //
-//  Icon_Hop.swift
+//  Icon_hop.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

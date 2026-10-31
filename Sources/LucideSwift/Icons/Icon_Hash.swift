@@ -1,5 +1,5 @@
 //
-//  Icon_Hash.swift
+//  Icon_hash.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

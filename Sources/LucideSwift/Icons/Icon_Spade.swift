@@ -1,5 +1,5 @@
 //
-//  Icon_Spade.swift
+//  Icon_spade.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

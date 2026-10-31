@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Tab.swift
+//  Icon_Lab_tab.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Guitar.swift
+//  Icon_guitar.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Touchpad.swift
+//  Icon_touchpad.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

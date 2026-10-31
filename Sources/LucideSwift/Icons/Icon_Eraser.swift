@@ -1,5 +1,5 @@
 //
-//  Icon_Eraser.swift
+//  Icon_eraser.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

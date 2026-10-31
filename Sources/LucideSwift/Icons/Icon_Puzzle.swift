@@ -1,5 +1,5 @@
 //
-//  Icon_Puzzle.swift
+//  Icon_puzzle.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

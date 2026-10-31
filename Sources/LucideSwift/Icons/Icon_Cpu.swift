@@ -1,5 +1,5 @@
 //
-//  Icon_Cpu.swift
+//  Icon_cpu.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Panda.swift
+//  Icon_panda.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

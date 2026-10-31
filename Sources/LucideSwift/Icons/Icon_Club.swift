@@ -1,5 +1,5 @@
 //
-//  Icon_Club.swift
+//  Icon_club.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

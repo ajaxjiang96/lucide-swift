@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Whale.swift
+//  Icon_Lab_whale.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

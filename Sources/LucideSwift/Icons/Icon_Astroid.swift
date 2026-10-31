@@ -1,5 +1,5 @@
 //
-//  Icon_Astroid.swift
+//  Icon_astroid.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

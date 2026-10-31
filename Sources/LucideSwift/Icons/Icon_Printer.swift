@@ -1,5 +1,5 @@
 //
-//  Icon_Printer.swift
+//  Icon_printer.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

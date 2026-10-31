@@ -1,5 +1,5 @@
 //
-//  Icon_Venus.swift
+//  Icon_venus.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

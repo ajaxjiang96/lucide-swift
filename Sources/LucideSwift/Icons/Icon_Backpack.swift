@@ -1,5 +1,5 @@
 //
-//  Icon_Backpack.swift
+//  Icon_backpack.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

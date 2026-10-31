@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Onion.swift
+//  Icon_Lab_onion.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

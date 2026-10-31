@@ -1,5 +1,5 @@
 //
-//  Icon_Motorbike.swift
+//  Icon_motorbike.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

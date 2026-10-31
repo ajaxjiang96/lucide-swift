@@ -1,5 +1,5 @@
 //
-//  Icon_Ellipse.swift
+//  Icon_ellipse.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

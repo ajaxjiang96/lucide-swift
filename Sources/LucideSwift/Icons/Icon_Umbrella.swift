@@ -1,5 +1,5 @@
 //
-//  Icon_Umbrella.swift
+//  Icon_umbrella.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

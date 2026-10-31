@@ -1,5 +1,5 @@
 //
-//  Icon_Network.swift
+//  Icon_network.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

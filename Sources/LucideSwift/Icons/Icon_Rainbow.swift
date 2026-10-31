@@ -1,5 +1,5 @@
 //
-//  Icon_Rainbow.swift
+//  Icon_rainbow.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

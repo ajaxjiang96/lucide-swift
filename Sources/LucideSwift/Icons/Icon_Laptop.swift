@@ -1,5 +1,5 @@
 //
-//  Icon_Laptop.swift
+//  Icon_laptop.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

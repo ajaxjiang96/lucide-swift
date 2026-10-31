@@ -1,5 +1,5 @@
 //
-//  Icon_Spline.swift
+//  Icon_spline.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

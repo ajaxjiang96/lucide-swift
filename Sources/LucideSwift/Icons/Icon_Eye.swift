@@ -1,5 +1,5 @@
 //
-//  Icon_Eye.swift
+//  Icon_eye.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

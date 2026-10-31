@@ -1,5 +1,5 @@
 //
-//  Icon_Theater.swift
+//  Icon_theater.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

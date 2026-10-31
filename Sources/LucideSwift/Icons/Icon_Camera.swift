@@ -1,5 +1,5 @@
 //
-//  Icon_Camera.swift
+//  Icon_camera.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

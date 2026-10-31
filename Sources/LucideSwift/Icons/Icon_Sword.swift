@@ -1,5 +1,5 @@
 //
-//  Icon_Sword.swift
+//  Icon_sword.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

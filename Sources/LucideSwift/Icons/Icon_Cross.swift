@@ -1,5 +1,5 @@
 //
-//  Icon_Cross.swift
+//  Icon_cross.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

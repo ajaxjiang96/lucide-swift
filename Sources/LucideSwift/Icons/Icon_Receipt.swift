@@ -1,5 +1,5 @@
 //
-//  Icon_Receipt.swift
+//  Icon_receipt.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

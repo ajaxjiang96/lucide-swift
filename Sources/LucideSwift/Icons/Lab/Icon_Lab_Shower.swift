@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Shower.swift
+//  Icon_Lab_shower.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

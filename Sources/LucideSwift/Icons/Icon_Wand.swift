@@ -1,5 +1,5 @@
 //
-//  Icon_Wand.swift
+//  Icon_wand.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

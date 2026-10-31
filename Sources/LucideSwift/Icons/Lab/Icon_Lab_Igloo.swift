@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Igloo.swift
+//  Icon_Lab_igloo.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

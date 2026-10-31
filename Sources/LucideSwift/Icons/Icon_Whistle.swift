@@ -1,5 +1,5 @@
 //
-//  Icon_Whistle.swift
+//  Icon_whistle.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

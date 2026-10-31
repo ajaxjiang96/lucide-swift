@@ -1,5 +1,5 @@
 //
-//  Icon_Satellite.swift
+//  Icon_satellite.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

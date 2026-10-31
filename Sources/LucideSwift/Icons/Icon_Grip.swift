@@ -1,5 +1,5 @@
 //
-//  Icon_Grip.swift
+//  Icon_grip.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

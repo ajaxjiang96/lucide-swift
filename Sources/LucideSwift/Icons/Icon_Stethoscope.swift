@@ -1,5 +1,5 @@
 //
-//  Icon_Stethoscope.swift
+//  Icon_stethoscope.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

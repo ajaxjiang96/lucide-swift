@@ -1,5 +1,5 @@
 //
-//  Icon_Cookie.swift
+//  Icon_cookie.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

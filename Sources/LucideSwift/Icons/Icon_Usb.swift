@@ -1,5 +1,5 @@
 //
-//  Icon_Usb.swift
+//  Icon_usb.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

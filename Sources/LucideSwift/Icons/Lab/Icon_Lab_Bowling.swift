@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Bowling.swift
+//  Icon_Lab_bowling.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

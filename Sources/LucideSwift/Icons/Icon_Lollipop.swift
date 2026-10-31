@@ -1,5 +1,5 @@
 //
-//  Icon_Lollipop.swift
+//  Icon_lollipop.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

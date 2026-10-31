@@ -1,5 +1,5 @@
 //
-//  Icon_Lasso.swift
+//  Icon_lasso.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Mic.swift
+//  Icon_mic.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

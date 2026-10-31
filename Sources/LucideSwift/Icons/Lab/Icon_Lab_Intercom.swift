@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Intercom.swift
+//  Icon_Lab_intercom.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

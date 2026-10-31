@@ -1,5 +1,5 @@
 //
-//  Icon_Reply.swift
+//  Icon_reply.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

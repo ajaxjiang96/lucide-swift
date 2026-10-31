@@ -1,5 +1,5 @@
 //
-//  Icon_Origami.swift
+//  Icon_origami.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

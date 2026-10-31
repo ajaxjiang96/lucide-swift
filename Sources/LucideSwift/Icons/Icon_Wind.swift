@@ -1,5 +1,5 @@
 //
-//  Icon_Wind.swift
+//  Icon_wind.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

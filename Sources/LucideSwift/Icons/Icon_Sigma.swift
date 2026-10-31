@@ -1,5 +1,5 @@
 //
-//  Icon_Sigma.swift
+//  Icon_sigma.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

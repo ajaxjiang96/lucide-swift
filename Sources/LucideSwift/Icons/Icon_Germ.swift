@@ -1,5 +1,5 @@
 //
-//  Icon_Germ.swift
+//  Icon_germ.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

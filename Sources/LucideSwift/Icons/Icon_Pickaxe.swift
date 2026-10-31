@@ -1,5 +1,5 @@
 //
-//  Icon_Pickaxe.swift
+//  Icon_pickaxe.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

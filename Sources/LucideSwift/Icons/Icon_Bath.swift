@@ -1,5 +1,5 @@
 //
-//  Icon_Bath.swift
+//  Icon_bath.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

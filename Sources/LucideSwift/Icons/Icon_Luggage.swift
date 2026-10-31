@@ -1,5 +1,5 @@
 //
-//  Icon_Luggage.swift
+//  Icon_luggage.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

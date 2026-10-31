@@ -1,5 +1,5 @@
 //
-//  Icon_Dna.swift
+//  Icon_dna.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

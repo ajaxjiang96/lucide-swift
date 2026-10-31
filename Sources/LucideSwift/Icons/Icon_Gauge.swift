@@ -1,5 +1,5 @@
 //
-//  Icon_Gauge.swift
+//  Icon_gauge.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

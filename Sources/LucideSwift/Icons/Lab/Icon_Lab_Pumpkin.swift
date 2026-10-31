@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Pumpkin.swift
+//  Icon_Lab_pumpkin.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

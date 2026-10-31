@@ -1,5 +1,5 @@
 //
-//  Icon_Sticker.swift
+//  Icon_sticker.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

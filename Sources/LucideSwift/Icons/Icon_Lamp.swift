@@ -1,5 +1,5 @@
 //
-//  Icon_Lamp.swift
+//  Icon_lamp.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

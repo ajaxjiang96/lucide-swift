@@ -1,5 +1,5 @@
 //
-//  Icon_Microwave.swift
+//  Icon_microwave.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

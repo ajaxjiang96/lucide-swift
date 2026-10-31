@@ -1,5 +1,5 @@
 //
-//  Icon_Shrimp.swift
+//  Icon_shrimp.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

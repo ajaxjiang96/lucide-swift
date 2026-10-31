@@ -1,5 +1,5 @@
 //
-//  Icon_Trophy.swift
+//  Icon_trophy.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

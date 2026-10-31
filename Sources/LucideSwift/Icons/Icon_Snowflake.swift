@@ -1,5 +1,5 @@
 //
-//  Icon_Snowflake.swift
+//  Icon_snowflake.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

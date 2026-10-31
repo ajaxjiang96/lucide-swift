@@ -1,5 +1,5 @@
 //
-//  Icon_Eclipse.swift
+//  Icon_eclipse.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

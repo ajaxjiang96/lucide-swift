@@ -1,5 +1,5 @@
 //
-//  Icon_Helicopter.swift
+//  Icon_helicopter.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

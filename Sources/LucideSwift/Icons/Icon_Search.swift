@@ -1,5 +1,5 @@
 //
-//  Icon_Search.swift
+//  Icon_search.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

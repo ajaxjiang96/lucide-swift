@@ -1,5 +1,5 @@
 //
-//  Icon_Thermometer.swift
+//  Icon_thermometer.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

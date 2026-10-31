@@ -1,5 +1,5 @@
 //
-//  Icon_Rewind.swift
+//  Icon_rewind.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

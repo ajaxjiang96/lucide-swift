@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Penguin.swift
+//  Icon_Lab_penguin.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

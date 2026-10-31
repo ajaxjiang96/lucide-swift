@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Volleyball.swift
+//  Icon_Lab_volleyball.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

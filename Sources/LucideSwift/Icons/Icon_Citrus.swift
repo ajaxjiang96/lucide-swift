@@ -1,5 +1,5 @@
 //
-//  Icon_Citrus.swift
+//  Icon_citrus.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

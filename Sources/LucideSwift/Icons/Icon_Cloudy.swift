@@ -1,5 +1,5 @@
 //
-//  Icon_Cloudy.swift
+//  Icon_cloudy.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

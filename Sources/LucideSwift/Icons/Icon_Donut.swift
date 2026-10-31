@@ -1,5 +1,5 @@
 //
-//  Icon_Donut.swift
+//  Icon_donut.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

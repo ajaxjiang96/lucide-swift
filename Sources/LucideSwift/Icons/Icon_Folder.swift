@@ -1,5 +1,5 @@
 //
-//  Icon_Folder.swift
+//  Icon_folder.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

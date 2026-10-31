@@ -1,5 +1,5 @@
 //
-//  Icon_Wallpaper.swift
+//  Icon_wallpaper.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

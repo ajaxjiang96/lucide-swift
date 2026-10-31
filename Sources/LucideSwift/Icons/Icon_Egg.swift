@@ -1,5 +1,5 @@
 //
-//  Icon_Egg.swift
+//  Icon_egg.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

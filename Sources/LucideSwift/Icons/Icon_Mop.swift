@@ -1,5 +1,5 @@
 //
-//  Icon_Mop.swift
+//  Icon_mop.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

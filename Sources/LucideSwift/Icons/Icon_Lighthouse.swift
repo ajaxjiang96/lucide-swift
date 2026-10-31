@@ -1,5 +1,5 @@
 //
-//  Icon_Lighthouse.swift
+//  Icon_lighthouse.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

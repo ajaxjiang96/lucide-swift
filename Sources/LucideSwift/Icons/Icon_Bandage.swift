@@ -1,5 +1,5 @@
 //
-//  Icon_Bandage.swift
+//  Icon_bandage.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

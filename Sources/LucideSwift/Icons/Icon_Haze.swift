@@ -1,5 +1,5 @@
 //
-//  Icon_Haze.swift
+//  Icon_haze.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

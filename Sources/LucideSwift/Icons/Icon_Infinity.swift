@@ -1,5 +1,5 @@
 //
-//  Icon_Infinity.swift
+//  Icon_infinity.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

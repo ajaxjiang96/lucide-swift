@@ -1,5 +1,5 @@
 //
-//  Icon_Timer.swift
+//  Icon_timer.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

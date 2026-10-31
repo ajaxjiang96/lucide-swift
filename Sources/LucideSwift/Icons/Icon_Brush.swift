@@ -1,5 +1,5 @@
 //
-//  Icon_Brush.swift
+//  Icon_brush.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

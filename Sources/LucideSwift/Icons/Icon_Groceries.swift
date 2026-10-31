@@ -1,5 +1,5 @@
 //
-//  Icon_Groceries.swift
+//  Icon_groceries.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

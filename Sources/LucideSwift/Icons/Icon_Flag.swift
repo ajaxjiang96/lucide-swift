@@ -1,5 +1,5 @@
 //
-//  Icon_Flag.swift
+//  Icon_flag.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

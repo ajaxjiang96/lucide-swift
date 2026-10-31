@@ -1,5 +1,5 @@
 //
-//  Icon_Computer.swift
+//  Icon_computer.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

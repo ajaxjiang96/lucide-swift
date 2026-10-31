@@ -1,5 +1,5 @@
 //
-//  Icon_Kayak.swift
+//  Icon_kayak.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

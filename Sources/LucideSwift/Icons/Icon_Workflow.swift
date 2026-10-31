@@ -1,5 +1,5 @@
 //
-//  Icon_Workflow.swift
+//  Icon_workflow.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

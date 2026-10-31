@@ -1,5 +1,5 @@
 //
-//  Icon_Medal.swift
+//  Icon_medal.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

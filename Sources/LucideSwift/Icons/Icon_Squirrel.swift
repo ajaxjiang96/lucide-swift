@@ -1,5 +1,5 @@
 //
-//  Icon_Squirrel.swift
+//  Icon_squirrel.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

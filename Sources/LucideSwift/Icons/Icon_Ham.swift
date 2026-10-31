@@ -1,5 +1,5 @@
 //
-//  Icon_Ham.swift
+//  Icon_ham.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

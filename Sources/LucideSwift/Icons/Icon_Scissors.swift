@@ -1,5 +1,5 @@
 //
-//  Icon_Scissors.swift
+//  Icon_scissors.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

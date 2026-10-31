@@ -1,5 +1,5 @@
 //
-//  Icon_Worm.swift
+//  Icon_worm.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

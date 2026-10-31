@@ -1,5 +1,5 @@
 //
-//  Icon_Contact.swift
+//  Icon_contact.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

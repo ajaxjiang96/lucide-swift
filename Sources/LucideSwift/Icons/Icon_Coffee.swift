@@ -1,5 +1,5 @@
 //
-//  Icon_Coffee.swift
+//  Icon_coffee.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

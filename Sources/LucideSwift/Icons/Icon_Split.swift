@@ -1,5 +1,5 @@
 //
-//  Icon_Split.swift
+//  Icon_split.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

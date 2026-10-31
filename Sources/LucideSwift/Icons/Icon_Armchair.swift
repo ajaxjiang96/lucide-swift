@@ -1,5 +1,5 @@
 //
-//  Icon_Armchair.swift
+//  Icon_armchair.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

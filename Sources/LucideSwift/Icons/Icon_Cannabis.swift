@@ -1,5 +1,5 @@
 //
-//  Icon_Cannabis.swift
+//  Icon_cannabis.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

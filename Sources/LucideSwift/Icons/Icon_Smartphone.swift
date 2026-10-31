@@ -1,5 +1,5 @@
 //
-//  Icon_Smartphone.swift
+//  Icon_smartphone.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

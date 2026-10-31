@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Kiwi.swift
+//  Icon_Lab_kiwi.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

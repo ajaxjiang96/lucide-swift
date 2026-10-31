@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Stroller.swift
+//  Icon_Lab_stroller.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

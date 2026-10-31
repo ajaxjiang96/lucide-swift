@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Pancakes.swift
+//  Icon_Lab_pancakes.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

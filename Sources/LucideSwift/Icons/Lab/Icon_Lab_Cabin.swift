@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Cabin.swift
+//  Icon_Lab_cabin.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

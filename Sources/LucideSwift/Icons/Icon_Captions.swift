@@ -1,5 +1,5 @@
 //
-//  Icon_Captions.swift
+//  Icon_captions.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

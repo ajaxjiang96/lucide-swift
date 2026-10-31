@@ -1,5 +1,5 @@
 //
-//  Icon_Maximize.swift
+//  Icon_maximize.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

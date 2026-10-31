@@ -1,5 +1,5 @@
 //
-//  Icon_Minimize.swift
+//  Icon_minimize.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

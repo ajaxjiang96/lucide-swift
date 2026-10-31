@@ -1,5 +1,5 @@
 //
-//  Icon_Forward.swift
+//  Icon_forward.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

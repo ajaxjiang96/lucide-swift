@@ -1,5 +1,5 @@
 //
-//  Icon_Crop.swift
+//  Icon_crop.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

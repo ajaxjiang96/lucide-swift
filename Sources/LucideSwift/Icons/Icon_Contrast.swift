@@ -1,5 +1,5 @@
 //
-//  Icon_Contrast.swift
+//  Icon_contrast.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

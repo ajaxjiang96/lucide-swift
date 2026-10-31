@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Cauldron.swift
+//  Icon_Lab_cauldron.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

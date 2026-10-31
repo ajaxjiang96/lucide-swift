@@ -1,5 +1,5 @@
 //
-//  Icon_Certificate.swift
+//  Icon_certificate.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

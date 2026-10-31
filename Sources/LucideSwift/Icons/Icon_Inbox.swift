@@ -1,5 +1,5 @@
 //
-//  Icon_Inbox.swift
+//  Icon_inbox.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Flame.swift
+//  Icon_flame.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

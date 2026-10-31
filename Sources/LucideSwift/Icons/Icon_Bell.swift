@@ -1,5 +1,5 @@
 //
-//  Icon_Bell.swift
+//  Icon_bell.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

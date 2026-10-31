@@ -1,5 +1,5 @@
 //
-//  Icon_Bike.swift
+//  Icon_bike.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

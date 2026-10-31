@@ -1,5 +1,5 @@
 //
-//  Icon_Leaf.swift
+//  Icon_leaf.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

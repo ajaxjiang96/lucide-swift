@@ -1,5 +1,5 @@
 //
-//  Icon_Rss.swift
+//  Icon_rss.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

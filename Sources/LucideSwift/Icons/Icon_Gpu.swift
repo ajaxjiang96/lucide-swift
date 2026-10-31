@@ -1,5 +1,5 @@
 //
-//  Icon_Gpu.swift
+//  Icon_gpu.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

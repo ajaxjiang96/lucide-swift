@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Baseball.swift
+//  Icon_Lab_baseball.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

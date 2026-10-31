@@ -1,5 +1,5 @@
 //
-//  Icon_Goal.swift
+//  Icon_goal.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

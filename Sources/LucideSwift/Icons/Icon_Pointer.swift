@@ -1,5 +1,5 @@
 //
-//  Icon_Pointer.swift
+//  Icon_pointer.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

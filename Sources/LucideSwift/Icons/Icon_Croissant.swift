@@ -1,5 +1,5 @@
 //
-//  Icon_Croissant.swift
+//  Icon_croissant.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Barbecue.swift
+//  Icon_Lab_barbecue.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

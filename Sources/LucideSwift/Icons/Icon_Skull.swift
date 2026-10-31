@@ -1,5 +1,5 @@
 //
-//  Icon_Skull.swift
+//  Icon_skull.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

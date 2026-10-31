@@ -1,5 +1,5 @@
 //
-//  Icon_Radar.swift
+//  Icon_radar.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Headphones.swift
+//  Icon_headphones.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

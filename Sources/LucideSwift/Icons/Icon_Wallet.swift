@@ -1,5 +1,5 @@
 //
-//  Icon_Wallet.swift
+//  Icon_wallet.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

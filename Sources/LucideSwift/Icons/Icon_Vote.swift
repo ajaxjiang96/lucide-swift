@@ -1,5 +1,5 @@
 //
-//  Icon_Vote.swift
+//  Icon_vote.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

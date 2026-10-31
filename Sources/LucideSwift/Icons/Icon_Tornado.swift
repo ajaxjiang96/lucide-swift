@@ -1,5 +1,5 @@
 //
-//  Icon_Tornado.swift
+//  Icon_tornado.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

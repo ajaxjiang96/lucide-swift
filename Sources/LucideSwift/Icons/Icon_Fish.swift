@@ -1,5 +1,5 @@
 //
-//  Icon_Fish.swift
+//  Icon_fish.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

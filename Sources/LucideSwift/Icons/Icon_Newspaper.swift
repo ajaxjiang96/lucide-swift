@@ -1,5 +1,5 @@
 //
-//  Icon_Newspaper.swift
+//  Icon_newspaper.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

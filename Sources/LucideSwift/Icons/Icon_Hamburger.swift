@@ -1,5 +1,5 @@
 //
-//  Icon_Hamburger.swift
+//  Icon_hamburger.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

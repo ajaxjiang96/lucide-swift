@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Butterfly.swift
+//  Icon_Lab_butterfly.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

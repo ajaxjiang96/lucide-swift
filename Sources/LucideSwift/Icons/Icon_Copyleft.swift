@@ -1,5 +1,5 @@
 //
-//  Icon_Copyleft.swift
+//  Icon_copyleft.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

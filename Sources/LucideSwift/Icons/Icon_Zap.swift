@@ -1,5 +1,5 @@
 //
-//  Icon_Zap.swift
+//  Icon_zap.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

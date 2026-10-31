@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Razor.swift
+//  Icon_Lab_razor.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

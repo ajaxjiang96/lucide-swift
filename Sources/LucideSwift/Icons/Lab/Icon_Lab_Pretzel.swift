@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Pretzel.swift
+//  Icon_Lab_pretzel.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

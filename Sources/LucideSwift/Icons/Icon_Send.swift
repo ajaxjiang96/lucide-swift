@@ -1,5 +1,5 @@
 //
-//  Icon_Send.swift
+//  Icon_send.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

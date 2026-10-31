@@ -1,5 +1,5 @@
 //
-//  Icon_Toothbrush.swift
+//  Icon_toothbrush.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

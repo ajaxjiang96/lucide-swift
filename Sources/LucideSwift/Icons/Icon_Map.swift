@@ -1,5 +1,5 @@
 //
-//  Icon_Map.swift
+//  Icon_map.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

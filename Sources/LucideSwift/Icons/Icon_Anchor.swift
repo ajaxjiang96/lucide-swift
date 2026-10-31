@@ -1,5 +1,5 @@
 //
-//  Icon_Anchor.swift
+//  Icon_anchor.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

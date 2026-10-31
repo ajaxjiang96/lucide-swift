@@ -1,5 +1,5 @@
 //
-//  Icon_Snail.swift
+//  Icon_snail.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

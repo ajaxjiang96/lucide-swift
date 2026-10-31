@@ -1,5 +1,5 @@
 //
-//  Icon_Fence.swift
+//  Icon_fence.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

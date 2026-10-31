@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Hockey.swift
+//  Icon_Lab_hockey.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Cherry.swift
+//  Icon_cherry.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

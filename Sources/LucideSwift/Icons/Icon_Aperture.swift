@@ -1,5 +1,5 @@
 //
-//  Icon_Aperture.swift
+//  Icon_aperture.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

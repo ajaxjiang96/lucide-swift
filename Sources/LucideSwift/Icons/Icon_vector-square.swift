@@ -1,0 +1,86 @@
+//
+//  Icon_vector-square.swift
+//  LucideSwift
+//
+//  Auto-generated — DO NOT EDIT
+//  Icon: vector-square
+//
+
+import SwiftUI
+
+/// Vector Square icon
+internal enum LucideIcon_VectorSquare {
+    
+/// Vector Square icon path (combined)
+static let combinedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 17.055, y: 4.533))
+path.addCurve(to: CGPoint(x: 6.945000000000002, y: 4.533000000000001), control1: CGPoint(x: 13.723228508473962, y: 3.8151418704026767), control2: CGPoint(x: 10.276771491526041, y: 3.8151418704026767))
+path.move(to: CGPoint(x: 19.467, y: 17.055))
+path.addCurve(to: CGPoint(x: 19.467, y: 6.945000000000004), control1: CGPoint(x: 20.184858129597323, y: 13.723228508473962), control2: CGPoint(x: 20.184858129597323, y: 10.276771491526043))
+path.move(to: CGPoint(x: 4.533, y: 6.945))
+path.addCurve(to: CGPoint(x: 4.533000000000001, y: 17.054999999999996), control1: CGPoint(x: 3.8151418704026767, y: 10.276771491526038), control2: CGPoint(x: 3.8151418704026767, y: 13.723228508473957))
+path.move(to: CGPoint(x: 6.945, y: 19.467))
+path.addCurve(to: CGPoint(x: 17.055, y: 19.467), control1: CGPoint(x: 10.276771491526041, y: 20.184858129597323), control2: CGPoint(x: 13.723228508473962, y: 20.184858129597323))
+path.move(to: CGPoint(x: 17.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 17.0, y: 20.104569499661586), control2: CGPoint(x: 17.895430500338414, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 20.104569499661586, y: 21.0), control2: CGPoint(x: 21.0, y: 20.104569499661586))
+path.addCurve(to: CGPoint(x: 19.0, y: 17.0), control1: CGPoint(x: 21.0, y: 17.895430500338414), control2: CGPoint(x: 20.104569499661586, y: 17.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 19.0), control1: CGPoint(x: 17.895430500338414, y: 17.0), control2: CGPoint(x: 17.0, y: 17.895430500338414))
+path.move(to: CGPoint(x: 17.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 7.0), control1: CGPoint(x: 17.0, y: 6.1045694996615865), control2: CGPoint(x: 17.895430500338414, y: 7.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.000000000000001), control1: CGPoint(x: 20.104569499661586, y: 7.0), control2: CGPoint(x: 21.0, y: 6.104569499661587))
+path.addCurve(to: CGPoint(x: 19.0, y: 3.0), control1: CGPoint(x: 21.0, y: 3.895430500338413), control2: CGPoint(x: 20.104569499661586, y: 3.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 5.0), control1: CGPoint(x: 17.895430500338414, y: 3.0), control2: CGPoint(x: 17.0, y: 3.8954305003384126))
+path.move(to: CGPoint(x: 3.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 21.0), control1: CGPoint(x: 3.0, y: 20.104569499661586), control2: CGPoint(x: 3.8954305003384126, y: 21.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 19.0), control1: CGPoint(x: 6.1045694996615865, y: 21.0), control2: CGPoint(x: 7.0, y: 20.104569499661586))
+path.addCurve(to: CGPoint(x: 5.0, y: 17.0), control1: CGPoint(x: 7.0, y: 17.895430500338414), control2: CGPoint(x: 6.104569499661587, y: 17.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 17.0), control2: CGPoint(x: 3.0, y: 17.895430500338414))
+path.move(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 7.0), control1: CGPoint(x: 3.0, y: 6.1045694996615865), control2: CGPoint(x: 3.8954305003384126, y: 7.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 5.000000000000001), control1: CGPoint(x: 6.1045694996615865, y: 7.0), control2: CGPoint(x: 7.0, y: 6.104569499661587))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 7.0, y: 3.895430500338413), control2: CGPoint(x: 6.104569499661587, y: 3.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 5.0), control1: CGPoint(x: 3.8954305003384135, y: 3.0), control2: CGPoint(x: 3.0, y: 3.8954305003384126))
+    return path
+}()
+/// Vector Square icon open subpaths
+static let openPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 17.055, y: 4.533))
+path.addCurve(to: CGPoint(x: 6.945000000000002, y: 4.533000000000001), control1: CGPoint(x: 13.723228508473962, y: 3.8151418704026767), control2: CGPoint(x: 10.276771491526041, y: 3.8151418704026767))
+path.move(to: CGPoint(x: 19.467, y: 17.055))
+path.addCurve(to: CGPoint(x: 19.467, y: 6.945000000000004), control1: CGPoint(x: 20.184858129597323, y: 13.723228508473962), control2: CGPoint(x: 20.184858129597323, y: 10.276771491526043))
+path.move(to: CGPoint(x: 4.533, y: 6.945))
+path.addCurve(to: CGPoint(x: 4.533000000000001, y: 17.054999999999996), control1: CGPoint(x: 3.8151418704026767, y: 10.276771491526038), control2: CGPoint(x: 3.8151418704026767, y: 13.723228508473957))
+path.move(to: CGPoint(x: 6.945, y: 19.467))
+path.addCurve(to: CGPoint(x: 17.055, y: 19.467), control1: CGPoint(x: 10.276771491526041, y: 20.184858129597323), control2: CGPoint(x: 13.723228508473962, y: 20.184858129597323))
+    return path
+}()
+/// Vector Square icon closed subpaths
+static let closedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 17.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 21.0), control1: CGPoint(x: 17.0, y: 20.104569499661586), control2: CGPoint(x: 17.895430500338414, y: 21.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 19.0), control1: CGPoint(x: 20.104569499661586, y: 21.0), control2: CGPoint(x: 21.0, y: 20.104569499661586))
+path.addCurve(to: CGPoint(x: 19.0, y: 17.0), control1: CGPoint(x: 21.0, y: 17.895430500338414), control2: CGPoint(x: 20.104569499661586, y: 17.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 19.0), control1: CGPoint(x: 17.895430500338414, y: 17.0), control2: CGPoint(x: 17.0, y: 17.895430500338414))
+path.move(to: CGPoint(x: 17.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 19.0, y: 7.0), control1: CGPoint(x: 17.0, y: 6.1045694996615865), control2: CGPoint(x: 17.895430500338414, y: 7.0))
+path.addCurve(to: CGPoint(x: 21.0, y: 5.000000000000001), control1: CGPoint(x: 20.104569499661586, y: 7.0), control2: CGPoint(x: 21.0, y: 6.104569499661587))
+path.addCurve(to: CGPoint(x: 19.0, y: 3.0), control1: CGPoint(x: 21.0, y: 3.895430500338413), control2: CGPoint(x: 20.104569499661586, y: 3.0))
+path.addCurve(to: CGPoint(x: 17.0, y: 5.0), control1: CGPoint(x: 17.895430500338414, y: 3.0), control2: CGPoint(x: 17.0, y: 3.8954305003384126))
+path.move(to: CGPoint(x: 3.0, y: 19.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 21.0), control1: CGPoint(x: 3.0, y: 20.104569499661586), control2: CGPoint(x: 3.8954305003384126, y: 21.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 19.0), control1: CGPoint(x: 6.1045694996615865, y: 21.0), control2: CGPoint(x: 7.0, y: 20.104569499661586))
+path.addCurve(to: CGPoint(x: 5.0, y: 17.0), control1: CGPoint(x: 7.0, y: 17.895430500338414), control2: CGPoint(x: 6.104569499661587, y: 17.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 19.0), control1: CGPoint(x: 3.8954305003384135, y: 17.0), control2: CGPoint(x: 3.0, y: 17.895430500338414))
+path.move(to: CGPoint(x: 3.0, y: 5.0))
+path.addCurve(to: CGPoint(x: 5.0, y: 7.0), control1: CGPoint(x: 3.0, y: 6.1045694996615865), control2: CGPoint(x: 3.8954305003384126, y: 7.0))
+path.addCurve(to: CGPoint(x: 7.0, y: 5.000000000000001), control1: CGPoint(x: 6.1045694996615865, y: 7.0), control2: CGPoint(x: 7.0, y: 6.104569499661587))
+path.addCurve(to: CGPoint(x: 5.0, y: 3.0), control1: CGPoint(x: 7.0, y: 3.895430500338413), control2: CGPoint(x: 6.104569499661587, y: 3.0))
+path.addCurve(to: CGPoint(x: 3.0, y: 5.0), control1: CGPoint(x: 3.8954305003384135, y: 3.0), control2: CGPoint(x: 3.0, y: 3.8954305003384126))
+    return path
+}()
+
+}

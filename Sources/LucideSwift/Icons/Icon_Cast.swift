@@ -1,5 +1,5 @@
 //
-//  Icon_Cast.swift
+//  Icon_cast.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

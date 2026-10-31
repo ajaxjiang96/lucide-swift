@@ -1,5 +1,5 @@
 //
-//  Icon_Sprout.swift
+//  Icon_sprout.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

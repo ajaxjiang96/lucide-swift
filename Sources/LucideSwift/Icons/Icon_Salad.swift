@@ -1,5 +1,5 @@
 //
-//  Icon_Salad.swift
+//  Icon_salad.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

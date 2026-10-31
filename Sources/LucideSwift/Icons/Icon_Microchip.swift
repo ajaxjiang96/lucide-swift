@@ -1,5 +1,5 @@
 //
-//  Icon_Microchip.swift
+//  Icon_microchip.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

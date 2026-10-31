@@ -1,5 +1,5 @@
 //
-//  Icon_Scooter.swift
+//  Icon_scooter.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

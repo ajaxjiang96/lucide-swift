@@ -1,5 +1,5 @@
 //
-//  Icon_Banknote.swift
+//  Icon_banknote.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

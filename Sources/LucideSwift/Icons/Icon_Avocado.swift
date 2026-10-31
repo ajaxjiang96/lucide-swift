@@ -1,5 +1,5 @@
 //
-//  Icon_Avocado.swift
+//  Icon_avocado.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

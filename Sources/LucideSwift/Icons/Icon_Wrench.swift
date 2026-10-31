@@ -1,5 +1,5 @@
 //
-//  Icon_Wrench.swift
+//  Icon_wrench.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

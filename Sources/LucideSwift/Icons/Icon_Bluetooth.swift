@@ -1,5 +1,5 @@
 //
-//  Icon_Bluetooth.swift
+//  Icon_bluetooth.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

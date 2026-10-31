@@ -1,5 +1,5 @@
 //
-//  Icon_Undo.swift
+//  Icon_undo.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

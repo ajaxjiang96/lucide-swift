@@ -1,5 +1,5 @@
 //
-//  Icon_Signature.swift
+//  Icon_signature.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

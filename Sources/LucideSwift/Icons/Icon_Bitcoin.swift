@@ -1,5 +1,5 @@
 //
-//  Icon_Bitcoin.swift
+//  Icon_bitcoin.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

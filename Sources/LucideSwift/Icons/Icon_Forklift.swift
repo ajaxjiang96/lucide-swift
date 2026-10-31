@@ -1,5 +1,5 @@
 //
-//  Icon_Forklift.swift
+//  Icon_forklift.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

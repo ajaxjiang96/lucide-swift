@@ -1,5 +1,5 @@
 //
-//  Icon_Heart.swift
+//  Icon_heart.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

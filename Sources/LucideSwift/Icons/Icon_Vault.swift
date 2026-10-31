@@ -1,5 +1,5 @@
 //
-//  Icon_Vault.swift
+//  Icon_vault.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

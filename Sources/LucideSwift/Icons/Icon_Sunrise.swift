@@ -1,5 +1,5 @@
 //
-//  Icon_Sunrise.swift
+//  Icon_sunrise.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

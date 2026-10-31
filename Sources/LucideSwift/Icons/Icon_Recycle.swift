@@ -1,5 +1,5 @@
 //
-//  Icon_Recycle.swift
+//  Icon_recycle.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

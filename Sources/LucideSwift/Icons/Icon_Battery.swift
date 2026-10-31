@@ -1,5 +1,5 @@
 //
-//  Icon_Battery.swift
+//  Icon_battery.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

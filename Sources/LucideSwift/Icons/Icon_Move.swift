@@ -1,5 +1,5 @@
 //
-//  Icon_Move.swift
+//  Icon_move.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

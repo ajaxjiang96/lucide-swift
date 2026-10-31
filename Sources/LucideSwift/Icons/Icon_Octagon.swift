@@ -1,5 +1,5 @@
 //
-//  Icon_Octagon.swift
+//  Icon_octagon.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Shirt.swift
+//  Icon_shirt.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

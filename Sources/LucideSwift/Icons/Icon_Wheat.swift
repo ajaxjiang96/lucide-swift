@@ -1,5 +1,5 @@
 //
-//  Icon_Wheat.swift
+//  Icon_wheat.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

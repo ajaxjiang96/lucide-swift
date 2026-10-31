@@ -1,5 +1,5 @@
 //
-//  Icon_Briefcase.swift
+//  Icon_briefcase.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

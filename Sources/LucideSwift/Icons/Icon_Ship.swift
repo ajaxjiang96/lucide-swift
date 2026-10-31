@@ -1,5 +1,5 @@
 //
-//  Icon_Ship.swift
+//  Icon_ship.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

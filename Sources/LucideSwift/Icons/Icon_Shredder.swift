@@ -1,5 +1,5 @@
 //
-//  Icon_Shredder.swift
+//  Icon_shredder.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Percent.swift
+//  Icon_percent.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

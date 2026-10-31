@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Mustache.swift
+//  Icon_Lab_mustache.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

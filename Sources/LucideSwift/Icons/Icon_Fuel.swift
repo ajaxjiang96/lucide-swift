@@ -1,5 +1,5 @@
 //
-//  Icon_Fuel.swift
+//  Icon_fuel.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

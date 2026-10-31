@@ -1,5 +1,5 @@
 //
-//  Icon_Radiation.swift
+//  Icon_radiation.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

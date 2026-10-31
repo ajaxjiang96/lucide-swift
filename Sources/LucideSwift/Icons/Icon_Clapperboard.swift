@@ -1,5 +1,5 @@
 //
-//  Icon_Clapperboard.swift
+//  Icon_clapperboard.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

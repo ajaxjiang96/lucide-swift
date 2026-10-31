@@ -1,5 +1,5 @@
 //
-//  Icon_Handshake.swift
+//  Icon_handshake.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

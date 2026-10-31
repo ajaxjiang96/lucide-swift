@@ -1,5 +1,5 @@
 //
-//  Icon_Gavel.swift
+//  Icon_gavel.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

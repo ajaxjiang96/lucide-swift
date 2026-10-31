@@ -1,5 +1,5 @@
 //
-//  Icon_Signpost.swift
+//  Icon_signpost.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

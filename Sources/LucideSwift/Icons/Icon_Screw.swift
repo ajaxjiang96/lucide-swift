@@ -1,5 +1,5 @@
 //
-//  Icon_Screw.swift
+//  Icon_screw.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

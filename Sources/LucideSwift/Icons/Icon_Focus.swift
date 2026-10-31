@@ -1,5 +1,5 @@
 //
-//  Icon_Focus.swift
+//  Icon_focus.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Mails.swift
+//  Icon_mails.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Joystick.swift
+//  Icon_joystick.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

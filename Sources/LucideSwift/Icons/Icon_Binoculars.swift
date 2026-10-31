@@ -1,5 +1,5 @@
 //
-//  Icon_Binoculars.swift
+//  Icon_binoculars.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

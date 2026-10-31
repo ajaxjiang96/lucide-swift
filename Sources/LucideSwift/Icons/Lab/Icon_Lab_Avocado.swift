@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Avocado.swift
+//  Icon_Lab_avocado.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

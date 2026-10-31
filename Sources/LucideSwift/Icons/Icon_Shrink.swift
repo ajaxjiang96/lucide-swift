@@ -1,5 +1,5 @@
 //
-//  Icon_Shrink.swift
+//  Icon_shrink.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Projector.swift
+//  Icon_projector.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

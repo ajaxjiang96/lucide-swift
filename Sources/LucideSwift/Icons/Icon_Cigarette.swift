@@ -1,5 +1,5 @@
 //
-//  Icon_Cigarette.swift
+//  Icon_cigarette.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

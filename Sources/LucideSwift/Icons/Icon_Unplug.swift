@@ -1,5 +1,5 @@
 //
-//  Icon_Unplug.swift
+//  Icon_unplug.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

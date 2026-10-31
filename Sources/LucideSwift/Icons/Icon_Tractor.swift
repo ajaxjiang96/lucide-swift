@@ -1,5 +1,5 @@
 //
-//  Icon_Tractor.swift
+//  Icon_tractor.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

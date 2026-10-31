@@ -1,5 +1,5 @@
 //
-//  Icon_Pilcrow.swift
+//  Icon_pilcrow.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

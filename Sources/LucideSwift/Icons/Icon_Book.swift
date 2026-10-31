@@ -1,5 +1,5 @@
 //
-//  Icon_Book.swift
+//  Icon_book.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

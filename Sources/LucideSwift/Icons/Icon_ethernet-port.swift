@@ -1,0 +1,80 @@
+//
+//  Icon_ethernet-port.swift
+//  LucideSwift
+//
+//  Auto-generated — DO NOT EDIT
+//  Icon: ethernet-port
+//
+
+import SwiftUI
+
+/// Ethernet Port icon
+internal enum LucideIcon_EthernetPort {
+    
+/// Ethernet Port icon path (combined)
+static let combinedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addLine(to: CGPoint(x: 10.0, y: 9.0))
+path.move(to: CGPoint(x: 14.0, y: 8.0))
+path.addLine(to: CGPoint(x: 14.0, y: 9.0))
+path.move(to: CGPoint(x: 18.0, y: 8.0))
+path.addLine(to: CGPoint(x: 18.0, y: 9.0))
+path.move(to: CGPoint(x: 19.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 17.235, y: 18.059), control1: CGPoint(x: 18.261232528186785, y: 16.99992612103601), control2: CGPoint(x: 17.582590093532115, y: 17.407111581828815))
+path.addLine(to: CGPoint(x: 16.765, y: 18.941000000000003))
+path.addCurve(to: CGPoint(x: 15.0, y: 20.0), control1: CGPoint(x: 16.41740990646789, y: 19.592888418171185), control2: CGPoint(x: 15.738767471813215, y: 20.00007387896399))
+path.addLine(to: CGPoint(x: 9.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 7.235000000000001, y: 18.941), control1: CGPoint(x: 8.261232528186785, y: 20.00007387896399), control2: CGPoint(x: 7.582590093532114, y: 19.592888418171185))
+path.addLine(to: CGPoint(x: 6.765000000000001, y: 18.058999999999997))
+path.addCurve(to: CGPoint(x: 4.999999999999999, y: 17.0), control1: CGPoint(x: 6.417409906467886, y: 17.407111581828815), control2: CGPoint(x: 5.738767471813214, y: 16.99992612103601))
+path.addLine(to: CGPoint(x: 4.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 15.0), control1: CGPoint(x: 2.8954305003384135, y: 17.0), control2: CGPoint(x: 2.0, y: 16.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 4.0), control1: CGPoint(x: 2.0, y: 4.895430500338413), control2: CGPoint(x: 2.8954305003384135, y: 4.0))
+path.addLine(to: CGPoint(x: 20.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 21.104569499661586, y: 4.0), control2: CGPoint(x: 22.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 17.0), control1: CGPoint(x: 22.0, y: 16.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 17.0))
+path.closeSubpath()
+path.move(to: CGPoint(x: 6.0, y: 8.0))
+path.addLine(to: CGPoint(x: 6.0, y: 9.0))
+    return path
+}()
+/// Ethernet Port icon open subpaths
+static let openPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 10.0, y: 8.0))
+path.addLine(to: CGPoint(x: 10.0, y: 9.0))
+path.move(to: CGPoint(x: 14.0, y: 8.0))
+path.addLine(to: CGPoint(x: 14.0, y: 9.0))
+path.move(to: CGPoint(x: 18.0, y: 8.0))
+path.addLine(to: CGPoint(x: 18.0, y: 9.0))
+path.move(to: CGPoint(x: 6.0, y: 8.0))
+path.addLine(to: CGPoint(x: 6.0, y: 9.0))
+    return path
+}()
+/// Ethernet Port icon closed subpaths
+static let closedPath: Path = {
+    var path = Path()
+    path.move(to: CGPoint(x: 19.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 17.235, y: 18.059), control1: CGPoint(x: 18.261232528186785, y: 16.99992612103601), control2: CGPoint(x: 17.582590093532115, y: 17.407111581828815))
+path.addLine(to: CGPoint(x: 16.765, y: 18.941000000000003))
+path.addCurve(to: CGPoint(x: 15.0, y: 20.0), control1: CGPoint(x: 16.41740990646789, y: 19.592888418171185), control2: CGPoint(x: 15.738767471813215, y: 20.00007387896399))
+path.addLine(to: CGPoint(x: 9.0, y: 20.0))
+path.addCurve(to: CGPoint(x: 7.235000000000001, y: 18.941), control1: CGPoint(x: 8.261232528186785, y: 20.00007387896399), control2: CGPoint(x: 7.582590093532114, y: 19.592888418171185))
+path.addLine(to: CGPoint(x: 6.765000000000001, y: 18.058999999999997))
+path.addCurve(to: CGPoint(x: 4.999999999999999, y: 17.0), control1: CGPoint(x: 6.417409906467886, y: 17.407111581828815), control2: CGPoint(x: 5.738767471813214, y: 16.99992612103601))
+path.addLine(to: CGPoint(x: 4.0, y: 17.0))
+path.addCurve(to: CGPoint(x: 2.0, y: 15.0), control1: CGPoint(x: 2.8954305003384135, y: 17.0), control2: CGPoint(x: 2.0, y: 16.104569499661586))
+path.addLine(to: CGPoint(x: 2.0, y: 6.0))
+path.addCurve(to: CGPoint(x: 4.0, y: 4.0), control1: CGPoint(x: 2.0, y: 4.895430500338413), control2: CGPoint(x: 2.8954305003384135, y: 4.0))
+path.addLine(to: CGPoint(x: 20.0, y: 4.0))
+path.addCurve(to: CGPoint(x: 22.0, y: 6.0), control1: CGPoint(x: 21.104569499661586, y: 4.0), control2: CGPoint(x: 22.0, y: 4.8954305003384135))
+path.addLine(to: CGPoint(x: 22.0, y: 15.0))
+path.addCurve(to: CGPoint(x: 20.0, y: 17.0), control1: CGPoint(x: 22.0, y: 16.104569499661586), control2: CGPoint(x: 21.104569499661586, y: 17.0))
+path.closeSubpath()
+    return path
+}()
+
+}

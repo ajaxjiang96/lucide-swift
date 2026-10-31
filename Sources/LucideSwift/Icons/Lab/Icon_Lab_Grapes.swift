@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Grapes.swift
+//  Icon_Lab_grapes.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

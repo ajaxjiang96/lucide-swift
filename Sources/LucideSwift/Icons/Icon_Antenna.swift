@@ -1,5 +1,5 @@
 //
-//  Icon_Antenna.swift
+//  Icon_antenna.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

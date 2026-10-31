@@ -1,5 +1,5 @@
 //
-//  Icon_Volume.swift
+//  Icon_volume.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

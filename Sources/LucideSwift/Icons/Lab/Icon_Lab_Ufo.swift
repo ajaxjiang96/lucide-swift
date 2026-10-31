@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Ufo.swift
+//  Icon_Lab_ufo.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

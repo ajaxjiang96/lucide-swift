@@ -1,5 +1,5 @@
 //
-//  Icon_Barcode.swift
+//  Icon_barcode.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

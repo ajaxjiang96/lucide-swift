@@ -1,5 +1,5 @@
 //
-//  Icon_Omega.swift
+//  Icon_omega.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

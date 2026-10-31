@@ -1,5 +1,5 @@
 //
-//  Icon_Currency.swift
+//  Icon_currency.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

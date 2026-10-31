@@ -1,5 +1,5 @@
 //
-//  Icon_Regex.swift
+//  Icon_regex.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

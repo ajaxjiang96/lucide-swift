@@ -1,5 +1,5 @@
 //
-//  Icon_Parentheses.swift
+//  Icon_parentheses.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

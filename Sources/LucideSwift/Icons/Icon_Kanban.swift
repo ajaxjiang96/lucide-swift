@@ -1,5 +1,5 @@
 //
-//  Icon_Kanban.swift
+//  Icon_kanban.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

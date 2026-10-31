@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Dishwasher.swift
+//  Icon_Lab_dishwasher.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

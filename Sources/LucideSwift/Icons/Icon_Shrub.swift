@@ -1,5 +1,5 @@
 //
-//  Icon_Shrub.swift
+//  Icon_shrub.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

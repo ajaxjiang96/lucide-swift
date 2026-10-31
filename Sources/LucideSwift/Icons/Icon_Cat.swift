@@ -1,5 +1,5 @@
 //
-//  Icon_Cat.swift
+//  Icon_cat.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

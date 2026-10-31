@@ -1,5 +1,5 @@
 //
-//  Icon_Glasses.swift
+//  Icon_glasses.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

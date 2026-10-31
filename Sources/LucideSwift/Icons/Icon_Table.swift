@@ -1,5 +1,5 @@
 //
-//  Icon_Table.swift
+//  Icon_table.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

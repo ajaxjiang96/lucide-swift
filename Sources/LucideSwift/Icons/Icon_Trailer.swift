@@ -1,5 +1,5 @@
 //
-//  Icon_Trailer.swift
+//  Icon_trailer.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

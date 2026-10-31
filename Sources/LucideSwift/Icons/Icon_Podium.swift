@@ -1,5 +1,5 @@
 //
-//  Icon_Podium.swift
+//  Icon_podium.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

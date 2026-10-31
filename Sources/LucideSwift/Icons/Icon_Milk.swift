@@ -1,5 +1,5 @@
 //
-//  Icon_Milk.swift
+//  Icon_milk.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

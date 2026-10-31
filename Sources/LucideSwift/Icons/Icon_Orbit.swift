@@ -1,5 +1,5 @@
 //
-//  Icon_Orbit.swift
+//  Icon_orbit.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

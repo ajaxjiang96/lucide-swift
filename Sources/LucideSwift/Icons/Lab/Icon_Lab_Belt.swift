@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Belt.swift
+//  Icon_Lab_belt.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

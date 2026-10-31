@@ -1,5 +1,5 @@
 //
-//  Icon_Lens.swift
+//  Icon_lens.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

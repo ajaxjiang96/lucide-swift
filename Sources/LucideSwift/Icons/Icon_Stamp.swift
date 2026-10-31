@@ -1,5 +1,5 @@
 //
-//  Icon_Stamp.swift
+//  Icon_stamp.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

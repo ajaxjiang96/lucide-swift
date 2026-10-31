@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Toast.swift
+//  Icon_Lab_toast.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Menu.swift
+//  Icon_menu.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Ungroup.swift
+//  Icon_ungroup.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

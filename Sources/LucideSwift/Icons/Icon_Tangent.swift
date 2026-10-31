@@ -1,5 +1,5 @@
 //
-//  Icon_Tangent.swift
+//  Icon_tangent.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

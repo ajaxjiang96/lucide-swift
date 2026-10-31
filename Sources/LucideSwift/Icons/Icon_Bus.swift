@@ -1,5 +1,5 @@
 //
-//  Icon_Bus.swift
+//  Icon_bus.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

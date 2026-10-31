@@ -1,5 +1,5 @@
 //
-//  Icon_Underline.swift
+//  Icon_underline.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

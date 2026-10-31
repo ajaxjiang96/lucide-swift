@@ -1,5 +1,5 @@
 //
-//  Icon_Plane.swift
+//  Icon_plane.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

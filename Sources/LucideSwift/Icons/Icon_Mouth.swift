@@ -1,5 +1,5 @@
 //
-//  Icon_Mouth.swift
+//  Icon_mouth.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

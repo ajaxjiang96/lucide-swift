@@ -1,5 +1,5 @@
 //
-//  Icon_Webcam.swift
+//  Icon_webcam.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

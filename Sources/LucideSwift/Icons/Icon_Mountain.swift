@@ -1,5 +1,5 @@
 //
-//  Icon_Mountain.swift
+//  Icon_mountain.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

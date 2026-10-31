@@ -1,5 +1,5 @@
 //
-//  Icon_Vegan.swift
+//  Icon_vegan.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

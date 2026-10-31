@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Diaper.swift
+//  Icon_Lab_diaper.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

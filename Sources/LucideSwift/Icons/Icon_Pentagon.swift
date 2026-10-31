@@ -1,5 +1,5 @@
 //
-//  Icon_Pentagon.swift
+//  Icon_pentagon.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

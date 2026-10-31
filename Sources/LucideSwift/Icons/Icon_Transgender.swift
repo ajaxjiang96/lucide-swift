@@ -1,5 +1,5 @@
 //
-//  Icon_Transgender.swift
+//  Icon_transgender.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

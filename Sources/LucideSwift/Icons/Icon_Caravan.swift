@@ -1,5 +1,5 @@
 //
-//  Icon_Caravan.swift
+//  Icon_caravan.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

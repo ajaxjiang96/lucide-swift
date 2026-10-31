@@ -1,5 +1,5 @@
 //
-//  Icon_Megaphone.swift
+//  Icon_megaphone.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

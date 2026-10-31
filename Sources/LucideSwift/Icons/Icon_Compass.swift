@@ -1,5 +1,5 @@
 //
-//  Icon_Compass.swift
+//  Icon_compass.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

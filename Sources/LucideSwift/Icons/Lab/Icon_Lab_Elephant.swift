@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Elephant.swift
+//  Icon_Lab_elephant.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

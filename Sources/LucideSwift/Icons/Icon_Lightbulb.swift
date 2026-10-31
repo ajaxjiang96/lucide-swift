@@ -1,5 +1,5 @@
 //
-//  Icon_Lightbulb.swift
+//  Icon_lightbulb.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Stairs.swift
+//  Icon_Lab_stairs.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

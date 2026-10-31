@@ -1,5 +1,5 @@
 //
-//  Icon_Strikethrough.swift
+//  Icon_strikethrough.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

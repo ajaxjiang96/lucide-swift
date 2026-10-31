@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Garlic.swift
+//  Icon_Lab_garlic.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

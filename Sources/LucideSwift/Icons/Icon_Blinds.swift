@@ -1,5 +1,5 @@
 //
-//  Icon_Blinds.swift
+//  Icon_blinds.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Pause.swift
+//  Icon_pause.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

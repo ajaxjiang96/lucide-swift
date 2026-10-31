@@ -1,5 +1,5 @@
 //
-//  Icon_Crown.swift
+//  Icon_crown.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

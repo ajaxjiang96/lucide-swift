@@ -1,5 +1,5 @@
 //
-//  Icon_Bomb.swift
+//  Icon_bomb.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

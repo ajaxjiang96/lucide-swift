@@ -1,5 +1,5 @@
 //
-//  Icon_Flashlight.swift
+//  Icon_flashlight.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

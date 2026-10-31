@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Chameleon.swift
+//  Icon_Lab_chameleon.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

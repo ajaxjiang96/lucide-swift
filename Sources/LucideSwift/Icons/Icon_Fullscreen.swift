@@ -1,5 +1,5 @@
 //
-//  Icon_Fullscreen.swift
+//  Icon_fullscreen.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

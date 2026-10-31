@@ -1,5 +1,5 @@
 //
-//  Icon_Pin.swift
+//  Icon_pin.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

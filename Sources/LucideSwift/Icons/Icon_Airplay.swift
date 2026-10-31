@@ -1,5 +1,5 @@
 //
-//  Icon_Airplay.swift
+//  Icon_airplay.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

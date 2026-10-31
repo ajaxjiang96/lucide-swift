@@ -1,5 +1,5 @@
 //
-//  Icon_Accessibility.swift
+//  Icon_accessibility.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

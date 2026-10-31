@@ -1,5 +1,5 @@
 //
-//  Icon_Drum.swift
+//  Icon_drum.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

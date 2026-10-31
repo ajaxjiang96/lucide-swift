@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Iron.swift
+//  Icon_Lab_iron.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

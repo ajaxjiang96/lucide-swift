@@ -1,5 +1,5 @@
 //
-//  Icon_Wine.swift
+//  Icon_wine.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

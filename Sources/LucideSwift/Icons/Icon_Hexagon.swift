@@ -1,5 +1,5 @@
 //
-//  Icon_Hexagon.swift
+//  Icon_hexagon.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

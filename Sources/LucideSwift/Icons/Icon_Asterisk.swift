@@ -1,5 +1,5 @@
 //
-//  Icon_Asterisk.swift
+//  Icon_asterisk.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

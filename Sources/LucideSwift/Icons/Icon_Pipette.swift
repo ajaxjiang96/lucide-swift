@@ -1,5 +1,5 @@
 //
-//  Icon_Pipette.swift
+//  Icon_pipette.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Feather.swift
+//  Icon_feather.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

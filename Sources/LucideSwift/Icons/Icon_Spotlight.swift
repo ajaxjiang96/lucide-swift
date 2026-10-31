@@ -1,5 +1,5 @@
 //
-//  Icon_Spotlight.swift
+//  Icon_spotlight.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

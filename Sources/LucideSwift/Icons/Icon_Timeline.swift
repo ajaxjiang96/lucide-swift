@@ -1,5 +1,5 @@
 //
-//  Icon_Timeline.swift
+//  Icon_timeline.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

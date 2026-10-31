@@ -1,5 +1,5 @@
 //
-//  Icon_Parasol.swift
+//  Icon_parasol.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

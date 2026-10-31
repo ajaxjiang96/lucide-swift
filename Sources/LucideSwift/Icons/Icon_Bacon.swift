@@ -1,5 +1,5 @@
 //
-//  Icon_Bacon.swift
+//  Icon_bacon.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

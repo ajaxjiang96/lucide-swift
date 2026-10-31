@@ -1,5 +1,5 @@
 //
-//  Icon_Diff.swift
+//  Icon_diff.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

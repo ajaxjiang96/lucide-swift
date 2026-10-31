@@ -1,5 +1,5 @@
 //
-//  Icon_Galaxy.swift
+//  Icon_galaxy.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

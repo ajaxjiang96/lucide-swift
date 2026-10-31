@@ -1,5 +1,5 @@
 //
-//  Icon_Turntable.swift
+//  Icon_turntable.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

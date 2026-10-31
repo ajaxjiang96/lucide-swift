@@ -1,5 +1,5 @@
 //
-//  Icon_Nfc.swift
+//  Icon_nfc.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

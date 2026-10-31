@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Pillow.swift
+//  Icon_Lab_pillow.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

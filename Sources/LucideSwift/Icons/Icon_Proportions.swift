@@ -1,5 +1,5 @@
 //
-//  Icon_Proportions.swift
+//  Icon_proportions.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

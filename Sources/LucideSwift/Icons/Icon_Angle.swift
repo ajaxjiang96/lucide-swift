@@ -1,5 +1,5 @@
 //
-//  Icon_Angle.swift
+//  Icon_angle.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

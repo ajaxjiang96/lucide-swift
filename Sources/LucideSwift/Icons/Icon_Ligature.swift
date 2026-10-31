@@ -1,5 +1,5 @@
 //
-//  Icon_Ligature.swift
+//  Icon_ligature.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

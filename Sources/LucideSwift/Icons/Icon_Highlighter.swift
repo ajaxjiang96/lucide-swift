@@ -1,5 +1,5 @@
 //
-//  Icon_Highlighter.swift
+//  Icon_highlighter.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

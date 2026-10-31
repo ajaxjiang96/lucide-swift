@@ -1,5 +1,5 @@
 //
-//  Icon_Droplets.swift
+//  Icon_droplets.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

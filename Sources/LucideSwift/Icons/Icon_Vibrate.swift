@@ -1,5 +1,5 @@
 //
-//  Icon_Vibrate.swift
+//  Icon_vibrate.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

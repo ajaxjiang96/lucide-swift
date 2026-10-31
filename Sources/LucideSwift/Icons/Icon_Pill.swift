@@ -1,5 +1,5 @@
 //
-//  Icon_Pill.swift
+//  Icon_pill.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Syringe.swift
+//  Icon_syringe.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

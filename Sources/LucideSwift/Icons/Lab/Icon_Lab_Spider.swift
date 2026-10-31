@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Spider.swift
+//  Icon_Lab_spider.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

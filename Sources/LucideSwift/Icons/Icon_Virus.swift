@@ -1,5 +1,5 @@
 //
-//  Icon_Virus.swift
+//  Icon_virus.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

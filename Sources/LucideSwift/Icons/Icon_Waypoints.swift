@@ -1,5 +1,5 @@
 //
-//  Icon_Waypoints.swift
+//  Icon_waypoints.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

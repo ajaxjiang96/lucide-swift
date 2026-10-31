@@ -1,5 +1,5 @@
 //
-//  Icon_Footprints.swift
+//  Icon_footprints.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Dog.swift
+//  Icon_dog.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

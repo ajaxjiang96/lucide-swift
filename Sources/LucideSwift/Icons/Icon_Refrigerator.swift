@@ -1,5 +1,5 @@
 //
-//  Icon_Refrigerator.swift
+//  Icon_refrigerator.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

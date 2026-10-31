@@ -1,5 +1,5 @@
 //
-//  Icon_Bookmark.swift
+//  Icon_bookmark.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

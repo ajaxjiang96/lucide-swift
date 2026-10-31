@@ -1,5 +1,5 @@
 //
-//  Icon_Telescope.swift
+//  Icon_telescope.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

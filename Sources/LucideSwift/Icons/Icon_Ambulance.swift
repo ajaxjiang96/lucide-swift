@@ -1,5 +1,5 @@
 //
-//  Icon_Ambulance.swift
+//  Icon_ambulance.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

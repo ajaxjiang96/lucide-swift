@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Candlestick.swift
+//  Icon_Lab_candlestick.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

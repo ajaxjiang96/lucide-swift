@@ -1,5 +1,5 @@
 //
-//  Icon_Heater.swift
+//  Icon_heater.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

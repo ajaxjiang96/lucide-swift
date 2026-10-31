@@ -1,5 +1,5 @@
 //
-//  Icon_Truck.swift
+//  Icon_truck.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

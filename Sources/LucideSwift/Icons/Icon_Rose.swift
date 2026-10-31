@@ -1,5 +1,5 @@
 //
-//  Icon_Rose.swift
+//  Icon_rose.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

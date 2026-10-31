@@ -1,5 +1,5 @@
 //
-//  Icon_Atom.swift
+//  Icon_atom.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

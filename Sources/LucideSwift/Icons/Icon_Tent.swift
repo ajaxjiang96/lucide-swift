@@ -1,5 +1,5 @@
 //
-//  Icon_Tent.swift
+//  Icon_tent.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

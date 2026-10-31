@@ -1,5 +1,5 @@
 //
-//  Icon_Warehouse.swift
+//  Icon_warehouse.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

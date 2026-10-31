@@ -1,5 +1,5 @@
 //
-//  Icon_Carrot.swift
+//  Icon_carrot.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

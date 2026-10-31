@@ -1,5 +1,5 @@
 //
-//  Icon_Scale.swift
+//  Icon_scale.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

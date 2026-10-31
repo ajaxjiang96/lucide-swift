@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Gearbox.swift
+//  Icon_Lab_gearbox.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

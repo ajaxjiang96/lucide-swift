@@ -1,5 +1,5 @@
 //
-//  Icon_Dumbbell.swift
+//  Icon_dumbbell.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

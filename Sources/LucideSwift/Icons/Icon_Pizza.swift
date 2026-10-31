@@ -1,5 +1,5 @@
 //
-//  Icon_Pizza.swift
+//  Icon_pizza.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

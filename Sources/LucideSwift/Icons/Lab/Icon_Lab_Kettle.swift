@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Kettle.swift
+//  Icon_Lab_kettle.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

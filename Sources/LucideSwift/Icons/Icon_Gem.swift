@@ -1,5 +1,5 @@
 //
-//  Icon_Gem.swift
+//  Icon_gem.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

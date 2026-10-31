@@ -1,5 +1,5 @@
 //
-//  Icon_Clipboard.swift
+//  Icon_clipboard.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

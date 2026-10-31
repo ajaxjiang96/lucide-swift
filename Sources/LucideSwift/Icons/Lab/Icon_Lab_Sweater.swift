@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Sweater.swift
+//  Icon_Lab_sweater.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

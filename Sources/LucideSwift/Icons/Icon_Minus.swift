@@ -1,5 +1,5 @@
 //
-//  Icon_Minus.swift
+//  Icon_minus.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

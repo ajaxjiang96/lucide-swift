@@ -1,5 +1,5 @@
 //
-//  Icon_Calendar.swift
+//  Icon_calendar.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

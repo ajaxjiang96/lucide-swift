@@ -1,5 +1,5 @@
 //
-//  Icon_Quote.swift
+//  Icon_quote.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

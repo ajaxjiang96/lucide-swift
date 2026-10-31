@@ -1,5 +1,5 @@
 //
-//  Icon_Redo.swift
+//  Icon_redo.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

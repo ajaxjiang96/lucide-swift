@@ -1,5 +1,5 @@
 //
-//  Icon_Beef.swift
+//  Icon_beef.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

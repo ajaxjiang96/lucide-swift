@@ -1,5 +1,5 @@
 //
-//  Icon_Biohazard.swift
+//  Icon_biohazard.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

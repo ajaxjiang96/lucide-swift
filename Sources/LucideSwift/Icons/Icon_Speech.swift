@@ -1,5 +1,5 @@
 //
-//  Icon_Speech.swift
+//  Icon_speech.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Drill.swift
+//  Icon_drill.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

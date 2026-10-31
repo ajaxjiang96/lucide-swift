@@ -1,5 +1,5 @@
 //
-//  Icon_Earth.swift
+//  Icon_earth.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

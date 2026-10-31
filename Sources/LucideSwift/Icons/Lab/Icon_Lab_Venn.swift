@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Venn.swift
+//  Icon_Lab_venn.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

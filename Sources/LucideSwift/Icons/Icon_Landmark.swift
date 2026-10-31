@@ -1,5 +1,5 @@
 //
-//  Icon_Landmark.swift
+//  Icon_landmark.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

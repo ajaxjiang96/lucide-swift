@@ -1,5 +1,5 @@
 //
-//  Icon_Ruler.swift
+//  Icon_ruler.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

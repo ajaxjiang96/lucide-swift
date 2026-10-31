@@ -1,5 +1,5 @@
 //
-//  Icon_Euro.swift
+//  Icon_euro.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

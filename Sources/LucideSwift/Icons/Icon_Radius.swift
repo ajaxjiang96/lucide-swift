@@ -1,5 +1,5 @@
 //
-//  Icon_Radius.swift
+//  Icon_radius.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

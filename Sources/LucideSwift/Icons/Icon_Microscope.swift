@@ -1,5 +1,5 @@
 //
-//  Icon_Microscope.swift
+//  Icon_microscope.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Mouse.swift
+//  Icon_mouse.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

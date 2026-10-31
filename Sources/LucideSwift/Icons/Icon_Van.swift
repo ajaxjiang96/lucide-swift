@@ -1,5 +1,5 @@
 //
-//  Icon_Van.swift
+//  Icon_van.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

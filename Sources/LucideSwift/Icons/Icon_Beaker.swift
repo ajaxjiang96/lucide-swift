@@ -1,5 +1,5 @@
 //
-//  Icon_Beaker.swift
+//  Icon_beaker.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

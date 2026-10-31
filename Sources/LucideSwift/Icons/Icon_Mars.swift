@@ -1,5 +1,5 @@
 //
-//  Icon_Mars.swift
+//  Icon_mars.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

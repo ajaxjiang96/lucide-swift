@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Tire.swift
+//  Icon_Lab_tire.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

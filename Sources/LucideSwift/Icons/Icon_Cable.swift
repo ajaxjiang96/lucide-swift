@@ -1,5 +1,5 @@
 //
-//  Icon_Cable.swift
+//  Icon_cable.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

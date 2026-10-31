@@ -1,5 +1,5 @@
 //
-//  Icon_Beer.swift
+//  Icon_beer.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Globe.swift
+//  Icon_globe.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

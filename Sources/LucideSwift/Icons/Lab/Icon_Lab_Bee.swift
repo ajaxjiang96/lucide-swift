@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Bee.swift
+//  Icon_Lab_bee.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

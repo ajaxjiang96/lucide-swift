@@ -1,5 +1,5 @@
 //
-//  Icon_Gamepad.swift
+//  Icon_gamepad.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Piano.swift
+//  Icon_piano.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

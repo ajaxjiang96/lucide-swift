@@ -1,5 +1,5 @@
 //
-//  Icon_Toolbox.swift
+//  Icon_toolbox.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

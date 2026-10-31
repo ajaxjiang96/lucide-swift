@@ -1,5 +1,5 @@
 //
-//  Icon_Rat.swift
+//  Icon_rat.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Funnel.swift
+//  Icon_funnel.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

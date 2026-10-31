@@ -1,5 +1,5 @@
 //
-//  Icon_Locate.swift
+//  Icon_locate.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

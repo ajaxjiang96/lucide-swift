@@ -1,5 +1,5 @@
 //
-//  Icon_Handbag.swift
+//  Icon_handbag.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

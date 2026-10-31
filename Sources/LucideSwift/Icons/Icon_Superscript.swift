@@ -1,5 +1,5 @@
 //
-//  Icon_Superscript.swift
+//  Icon_superscript.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

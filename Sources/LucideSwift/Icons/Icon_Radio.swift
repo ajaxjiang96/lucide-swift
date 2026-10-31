@@ -1,5 +1,5 @@
 //
-//  Icon_Radio.swift
+//  Icon_radio.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Bolt.swift
+//  Icon_bolt.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

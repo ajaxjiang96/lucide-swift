@@ -1,5 +1,5 @@
 //
-//  Icon_Bubbles.swift
+//  Icon_bubbles.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

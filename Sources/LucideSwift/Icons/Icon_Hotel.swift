@@ -1,5 +1,5 @@
 //
-//  Icon_Hotel.swift
+//  Icon_hotel.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

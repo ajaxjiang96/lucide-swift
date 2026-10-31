@@ -1,5 +1,5 @@
 //
-//  Icon_Spool.swift
+//  Icon_spool.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

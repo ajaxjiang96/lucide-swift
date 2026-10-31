@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Broom.swift
+//  Icon_Lab_broom.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

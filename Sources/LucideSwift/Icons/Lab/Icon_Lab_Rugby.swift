@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Rugby.swift
+//  Icon_Lab_rugby.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

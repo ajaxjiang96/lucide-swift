@@ -1,5 +1,5 @@
 //
-//  Icon_Hand.swift
+//  Icon_hand.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

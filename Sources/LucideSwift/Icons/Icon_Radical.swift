@@ -1,5 +1,5 @@
 //
-//  Icon_Radical.swift
+//  Icon_radical.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

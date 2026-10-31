@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Goblet.swift
+//  Icon_Lab_goblet.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

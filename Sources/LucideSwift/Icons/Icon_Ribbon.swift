@@ -1,5 +1,5 @@
 //
-//  Icon_Ribbon.swift
+//  Icon_ribbon.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

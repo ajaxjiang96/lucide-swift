@@ -1,5 +1,5 @@
 //
-//  Icon_Popsicle.swift
+//  Icon_popsicle.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

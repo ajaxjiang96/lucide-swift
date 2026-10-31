@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Whisks.swift
+//  Icon_Lab_whisks.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

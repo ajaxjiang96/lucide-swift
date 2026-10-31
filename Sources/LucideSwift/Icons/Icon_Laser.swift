@@ -1,5 +1,5 @@
 //
-//  Icon_Laser.swift
+//  Icon_laser.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

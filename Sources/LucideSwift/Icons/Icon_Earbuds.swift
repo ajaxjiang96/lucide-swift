@@ -1,5 +1,5 @@
 //
-//  Icon_Earbuds.swift
+//  Icon_earbuds.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

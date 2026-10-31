@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Faucet.swift
+//  Icon_Lab_faucet.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

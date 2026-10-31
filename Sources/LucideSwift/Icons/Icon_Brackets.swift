@@ -1,5 +1,5 @@
 //
-//  Icon_Brackets.swift
+//  Icon_brackets.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Metronome.swift
+//  Icon_metronome.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

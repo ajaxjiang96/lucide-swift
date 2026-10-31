@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Kebab.swift
+//  Icon_Lab_kebab.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

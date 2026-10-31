@@ -1,5 +1,5 @@
 //
-//  Icon_Hourglass.swift
+//  Icon_hourglass.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

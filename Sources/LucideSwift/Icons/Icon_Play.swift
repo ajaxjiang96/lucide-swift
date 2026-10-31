@@ -1,5 +1,5 @@
 //
-//  Icon_Play.swift
+//  Icon_play.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

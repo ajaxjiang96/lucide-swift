@@ -1,5 +1,5 @@
 //
-//  Icon_Cylinder.swift
+//  Icon_cylinder.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

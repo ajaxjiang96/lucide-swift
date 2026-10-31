@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Hedgehog.swift
+//  Icon_Lab_hedgehog.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

@@ -1,5 +1,5 @@
 //
-//  Icon_Brain.swift
+//  Icon_brain.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

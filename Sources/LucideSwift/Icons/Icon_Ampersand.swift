@@ -1,5 +1,5 @@
 //
-//  Icon_Ampersand.swift
+//  Icon_ampersand.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

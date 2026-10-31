@@ -1,5 +1,5 @@
 //
-//  Icon_Toilet.swift
+//  Icon_toilet.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

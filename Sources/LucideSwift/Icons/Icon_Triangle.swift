@@ -1,5 +1,5 @@
 //
-//  Icon_Triangle.swift
+//  Icon_triangle.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

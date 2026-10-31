@@ -1,5 +1,5 @@
 //
-//  Icon_Tablet.swift
+//  Icon_tablet.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT

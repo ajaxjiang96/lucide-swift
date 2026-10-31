@@ -1,5 +1,5 @@
 //
-//  Icon_Lab_Peach.swift
+//  Icon_Lab_peach.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
