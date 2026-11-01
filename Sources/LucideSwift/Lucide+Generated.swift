@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.23
-//  Lucide Icons Version: 1.65.0
+//  Library Version: 0.9.24
+//  Lucide Icons Version: 1.66.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -349,6 +349,7 @@ public enum LucideIconName: String, CaseIterable {
     case chartBarDecreasing
     case chartBarIncreasing
     case chartBarStacked
+    case chartBellCurve
     case chartCandlestick
     case chartColumn
     case chartColumnBig
@@ -717,6 +718,7 @@ public enum LucideIconName: String, CaseIterable {
     case fileCode
     case fileCodeCorner
     case fileCog
+    case fileDatabase
     case fileDiff
     case fileDigit
     case fileDown
@@ -1140,6 +1142,13 @@ public enum LucideIconName: String, CaseIterable {
     case mapPinXInside
     case mapPinned
     case mapPlus
+    case margin
+    case marginBottom
+    case marginHorizontal
+    case marginLeft
+    case marginRight
+    case marginTop
+    case marginVertical
     case mars
     case marsStroke
     case martini
@@ -1203,6 +1212,7 @@ public enum LucideIconName: String, CaseIterable {
     case mirrorRectangular
     case mirrorRound
     case monitor
+    case monitorActivity
     case monitorCheck
     case monitorCloud
     case monitorCog
@@ -1693,6 +1703,13 @@ public enum LucideIconName: String, CaseIterable {
     case squareMinus
     case squareMousePointer
     case squareOff
+    case squarePadding
+    case squarePaddingBottom
+    case squarePaddingHorizontal
+    case squarePaddingLeft
+    case squarePaddingRight
+    case squarePaddingTop
+    case squarePaddingVertical
     case squarePause
     case squarePen
     case squarePercent
@@ -2687,6 +2704,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ChartBarIncreasing.combinedPath
         case .chartBarStacked:
             return LucideIcon_ChartBarStacked.combinedPath
+        case .chartBellCurve:
+            return LucideIcon_ChartBellCurve.combinedPath
         case .chartCandlestick:
             return LucideIcon_ChartCandlestick.combinedPath
         case .chartColumn:
@@ -3423,6 +3442,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FileCodeCorner.combinedPath
         case .fileCog:
             return LucideIcon_FileCog.combinedPath
+        case .fileDatabase:
+            return LucideIcon_FileDatabase.combinedPath
         case .fileDiff:
             return LucideIcon_FileDiff.combinedPath
         case .fileDigit:
@@ -4269,6 +4290,20 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MapPinned.combinedPath
         case .mapPlus:
             return LucideIcon_MapPlus.combinedPath
+        case .margin:
+            return LucideIcon_Margin.combinedPath
+        case .marginBottom:
+            return LucideIcon_MarginBottom.combinedPath
+        case .marginHorizontal:
+            return LucideIcon_MarginHorizontal.combinedPath
+        case .marginLeft:
+            return LucideIcon_MarginLeft.combinedPath
+        case .marginRight:
+            return LucideIcon_MarginRight.combinedPath
+        case .marginTop:
+            return LucideIcon_MarginTop.combinedPath
+        case .marginVertical:
+            return LucideIcon_MarginVertical.combinedPath
         case .mars:
             return LucideIcon_Mars.combinedPath
         case .marsStroke:
@@ -4395,6 +4430,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MirrorRound.combinedPath
         case .monitor:
             return LucideIcon_Monitor.combinedPath
+        case .monitorActivity:
+            return LucideIcon_MonitorActivity.combinedPath
         case .monitorCheck:
             return LucideIcon_MonitorCheck.combinedPath
         case .monitorCloud:
@@ -5375,6 +5412,20 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareMousePointer.combinedPath
         case .squareOff:
             return LucideIcon_SquareOff.combinedPath
+        case .squarePadding:
+            return LucideIcon_SquarePadding.combinedPath
+        case .squarePaddingBottom:
+            return LucideIcon_SquarePaddingBottom.combinedPath
+        case .squarePaddingHorizontal:
+            return LucideIcon_SquarePaddingHorizontal.combinedPath
+        case .squarePaddingLeft:
+            return LucideIcon_SquarePaddingLeft.combinedPath
+        case .squarePaddingRight:
+            return LucideIcon_SquarePaddingRight.combinedPath
+        case .squarePaddingTop:
+            return LucideIcon_SquarePaddingTop.combinedPath
+        case .squarePaddingVertical:
+            return LucideIcon_SquarePaddingVertical.combinedPath
         case .squarePause:
             return LucideIcon_SquarePause.combinedPath
         case .squarePen:
@@ -6691,6 +6742,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ChartBarIncreasing.openPath
         case .chartBarStacked:
             return LucideIcon_ChartBarStacked.openPath
+        case .chartBellCurve:
+            return LucideIcon_ChartBellCurve.openPath
         case .chartCandlestick:
             return LucideIcon_ChartCandlestick.openPath
         case .chartColumn:
@@ -7427,6 +7480,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FileCodeCorner.openPath
         case .fileCog:
             return LucideIcon_FileCog.openPath
+        case .fileDatabase:
+            return LucideIcon_FileDatabase.openPath
         case .fileDiff:
             return LucideIcon_FileDiff.openPath
         case .fileDigit:
@@ -8273,6 +8328,20 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MapPinned.openPath
         case .mapPlus:
             return LucideIcon_MapPlus.openPath
+        case .margin:
+            return LucideIcon_Margin.openPath
+        case .marginBottom:
+            return LucideIcon_MarginBottom.openPath
+        case .marginHorizontal:
+            return LucideIcon_MarginHorizontal.openPath
+        case .marginLeft:
+            return LucideIcon_MarginLeft.openPath
+        case .marginRight:
+            return LucideIcon_MarginRight.openPath
+        case .marginTop:
+            return LucideIcon_MarginTop.openPath
+        case .marginVertical:
+            return LucideIcon_MarginVertical.openPath
         case .mars:
             return LucideIcon_Mars.openPath
         case .marsStroke:
@@ -8399,6 +8468,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MirrorRound.openPath
         case .monitor:
             return LucideIcon_Monitor.openPath
+        case .monitorActivity:
+            return LucideIcon_MonitorActivity.openPath
         case .monitorCheck:
             return LucideIcon_MonitorCheck.openPath
         case .monitorCloud:
@@ -9379,6 +9450,20 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareMousePointer.openPath
         case .squareOff:
             return LucideIcon_SquareOff.openPath
+        case .squarePadding:
+            return LucideIcon_SquarePadding.openPath
+        case .squarePaddingBottom:
+            return LucideIcon_SquarePaddingBottom.openPath
+        case .squarePaddingHorizontal:
+            return LucideIcon_SquarePaddingHorizontal.openPath
+        case .squarePaddingLeft:
+            return LucideIcon_SquarePaddingLeft.openPath
+        case .squarePaddingRight:
+            return LucideIcon_SquarePaddingRight.openPath
+        case .squarePaddingTop:
+            return LucideIcon_SquarePaddingTop.openPath
+        case .squarePaddingVertical:
+            return LucideIcon_SquarePaddingVertical.openPath
         case .squarePause:
             return LucideIcon_SquarePause.openPath
         case .squarePen:
@@ -10695,6 +10780,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ChartBarIncreasing.closedPath
         case .chartBarStacked:
             return LucideIcon_ChartBarStacked.closedPath
+        case .chartBellCurve:
+            return LucideIcon_ChartBellCurve.closedPath
         case .chartCandlestick:
             return LucideIcon_ChartCandlestick.closedPath
         case .chartColumn:
@@ -11431,6 +11518,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FileCodeCorner.closedPath
         case .fileCog:
             return LucideIcon_FileCog.closedPath
+        case .fileDatabase:
+            return LucideIcon_FileDatabase.closedPath
         case .fileDiff:
             return LucideIcon_FileDiff.closedPath
         case .fileDigit:
@@ -12277,6 +12366,20 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MapPinned.closedPath
         case .mapPlus:
             return LucideIcon_MapPlus.closedPath
+        case .margin:
+            return LucideIcon_Margin.closedPath
+        case .marginBottom:
+            return LucideIcon_MarginBottom.closedPath
+        case .marginHorizontal:
+            return LucideIcon_MarginHorizontal.closedPath
+        case .marginLeft:
+            return LucideIcon_MarginLeft.closedPath
+        case .marginRight:
+            return LucideIcon_MarginRight.closedPath
+        case .marginTop:
+            return LucideIcon_MarginTop.closedPath
+        case .marginVertical:
+            return LucideIcon_MarginVertical.closedPath
         case .mars:
             return LucideIcon_Mars.closedPath
         case .marsStroke:
@@ -12403,6 +12506,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MirrorRound.closedPath
         case .monitor:
             return LucideIcon_Monitor.closedPath
+        case .monitorActivity:
+            return LucideIcon_MonitorActivity.closedPath
         case .monitorCheck:
             return LucideIcon_MonitorCheck.closedPath
         case .monitorCloud:
@@ -13383,6 +13488,20 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareMousePointer.closedPath
         case .squareOff:
             return LucideIcon_SquareOff.closedPath
+        case .squarePadding:
+            return LucideIcon_SquarePadding.closedPath
+        case .squarePaddingBottom:
+            return LucideIcon_SquarePaddingBottom.closedPath
+        case .squarePaddingHorizontal:
+            return LucideIcon_SquarePaddingHorizontal.closedPath
+        case .squarePaddingLeft:
+            return LucideIcon_SquarePaddingLeft.closedPath
+        case .squarePaddingRight:
+            return LucideIcon_SquarePaddingRight.closedPath
+        case .squarePaddingTop:
+            return LucideIcon_SquarePaddingTop.closedPath
+        case .squarePaddingVertical:
+            return LucideIcon_SquarePaddingVertical.closedPath
         case .squarePause:
             return LucideIcon_SquarePause.closedPath
         case .squarePen:
@@ -17688,6 +17807,9 @@ public struct Lucide {
     /// Chart Bar Stacked icon
     public static let chartBarStacked: LucideShape = LucideShape(combined: LucideIcon_ChartBarStacked.combinedPath, open: LucideIcon_ChartBarStacked.openPath, closed: LucideIcon_ChartBarStacked.closedPath)
 
+    /// Chart Bell Curve icon
+    public static let chartBellCurve: LucideShape = LucideShape(combined: LucideIcon_ChartBellCurve.combinedPath, open: LucideIcon_ChartBellCurve.openPath, closed: LucideIcon_ChartBellCurve.closedPath)
+
     /// Chart Candlestick icon
     public static let chartCandlestick: LucideShape = LucideShape(combined: LucideIcon_ChartCandlestick.combinedPath, open: LucideIcon_ChartCandlestick.openPath, closed: LucideIcon_ChartCandlestick.closedPath)
 
@@ -18791,6 +18913,9 @@ public struct Lucide {
 
     /// File Cog icon
     public static let fileCog: LucideShape = LucideShape(combined: LucideIcon_FileCog.combinedPath, open: LucideIcon_FileCog.openPath, closed: LucideIcon_FileCog.closedPath)
+
+    /// File Database icon
+    public static let fileDatabase: LucideShape = LucideShape(combined: LucideIcon_FileDatabase.combinedPath, open: LucideIcon_FileDatabase.openPath, closed: LucideIcon_FileDatabase.closedPath)
 
     /// File Diff icon
     public static let fileDiff: LucideShape = LucideShape(combined: LucideIcon_FileDiff.combinedPath, open: LucideIcon_FileDiff.openPath, closed: LucideIcon_FileDiff.closedPath)
@@ -20061,6 +20186,27 @@ public struct Lucide {
     /// Map Plus icon
     public static let mapPlus: LucideShape = LucideShape(combined: LucideIcon_MapPlus.combinedPath, open: LucideIcon_MapPlus.openPath, closed: LucideIcon_MapPlus.closedPath)
 
+    /// Margin icon
+    public static let margin: LucideShape = LucideShape(combined: LucideIcon_Margin.combinedPath, open: LucideIcon_Margin.openPath, closed: LucideIcon_Margin.closedPath)
+
+    /// Margin Bottom icon
+    public static let marginBottom: LucideShape = LucideShape(combined: LucideIcon_MarginBottom.combinedPath, open: LucideIcon_MarginBottom.openPath, closed: LucideIcon_MarginBottom.closedPath)
+
+    /// Margin Horizontal icon
+    public static let marginHorizontal: LucideShape = LucideShape(combined: LucideIcon_MarginHorizontal.combinedPath, open: LucideIcon_MarginHorizontal.openPath, closed: LucideIcon_MarginHorizontal.closedPath)
+
+    /// Margin Left icon
+    public static let marginLeft: LucideShape = LucideShape(combined: LucideIcon_MarginLeft.combinedPath, open: LucideIcon_MarginLeft.openPath, closed: LucideIcon_MarginLeft.closedPath)
+
+    /// Margin Right icon
+    public static let marginRight: LucideShape = LucideShape(combined: LucideIcon_MarginRight.combinedPath, open: LucideIcon_MarginRight.openPath, closed: LucideIcon_MarginRight.closedPath)
+
+    /// Margin Top icon
+    public static let marginTop: LucideShape = LucideShape(combined: LucideIcon_MarginTop.combinedPath, open: LucideIcon_MarginTop.openPath, closed: LucideIcon_MarginTop.closedPath)
+
+    /// Margin Vertical icon
+    public static let marginVertical: LucideShape = LucideShape(combined: LucideIcon_MarginVertical.combinedPath, open: LucideIcon_MarginVertical.openPath, closed: LucideIcon_MarginVertical.closedPath)
+
     /// Mars icon
     public static let mars: LucideShape = LucideShape(combined: LucideIcon_Mars.combinedPath, open: LucideIcon_Mars.openPath, closed: LucideIcon_Mars.closedPath)
 
@@ -20249,6 +20395,9 @@ public struct Lucide {
 
     /// Monitor icon
     public static let monitor: LucideShape = LucideShape(combined: LucideIcon_Monitor.combinedPath, open: LucideIcon_Monitor.openPath, closed: LucideIcon_Monitor.closedPath)
+
+    /// Monitor Activity icon
+    public static let monitorActivity: LucideShape = LucideShape(combined: LucideIcon_MonitorActivity.combinedPath, open: LucideIcon_MonitorActivity.openPath, closed: LucideIcon_MonitorActivity.closedPath)
 
     /// Monitor Check icon
     public static let monitorCheck: LucideShape = LucideShape(combined: LucideIcon_MonitorCheck.combinedPath, open: LucideIcon_MonitorCheck.openPath, closed: LucideIcon_MonitorCheck.closedPath)
@@ -21719,6 +21868,27 @@ public struct Lucide {
 
     /// Square Off icon
     public static let squareOff: LucideShape = LucideShape(combined: LucideIcon_SquareOff.combinedPath, open: LucideIcon_SquareOff.openPath, closed: LucideIcon_SquareOff.closedPath)
+
+    /// Square Padding icon
+    public static let squarePadding: LucideShape = LucideShape(combined: LucideIcon_SquarePadding.combinedPath, open: LucideIcon_SquarePadding.openPath, closed: LucideIcon_SquarePadding.closedPath)
+
+    /// Square Padding Bottom icon
+    public static let squarePaddingBottom: LucideShape = LucideShape(combined: LucideIcon_SquarePaddingBottom.combinedPath, open: LucideIcon_SquarePaddingBottom.openPath, closed: LucideIcon_SquarePaddingBottom.closedPath)
+
+    /// Square Padding Horizontal icon
+    public static let squarePaddingHorizontal: LucideShape = LucideShape(combined: LucideIcon_SquarePaddingHorizontal.combinedPath, open: LucideIcon_SquarePaddingHorizontal.openPath, closed: LucideIcon_SquarePaddingHorizontal.closedPath)
+
+    /// Square Padding Left icon
+    public static let squarePaddingLeft: LucideShape = LucideShape(combined: LucideIcon_SquarePaddingLeft.combinedPath, open: LucideIcon_SquarePaddingLeft.openPath, closed: LucideIcon_SquarePaddingLeft.closedPath)
+
+    /// Square Padding Right icon
+    public static let squarePaddingRight: LucideShape = LucideShape(combined: LucideIcon_SquarePaddingRight.combinedPath, open: LucideIcon_SquarePaddingRight.openPath, closed: LucideIcon_SquarePaddingRight.closedPath)
+
+    /// Square Padding Top icon
+    public static let squarePaddingTop: LucideShape = LucideShape(combined: LucideIcon_SquarePaddingTop.combinedPath, open: LucideIcon_SquarePaddingTop.openPath, closed: LucideIcon_SquarePaddingTop.closedPath)
+
+    /// Square Padding Vertical icon
+    public static let squarePaddingVertical: LucideShape = LucideShape(combined: LucideIcon_SquarePaddingVertical.combinedPath, open: LucideIcon_SquarePaddingVertical.openPath, closed: LucideIcon_SquarePaddingVertical.closedPath)
 
     /// Square Pause icon
     public static let squarePause: LucideShape = LucideShape(combined: LucideIcon_SquarePause.combinedPath, open: LucideIcon_SquarePause.openPath, closed: LucideIcon_SquarePause.closedPath)
@@ -23812,10 +23982,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.23"
+    public static let libraryVersion = "0.9.24"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.65.0"
+    public static let lucideVersion = "1.66.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
