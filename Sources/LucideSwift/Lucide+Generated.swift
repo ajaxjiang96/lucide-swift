@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.24
-//  Lucide Icons Version: 1.66.0
+//  Library Version: 0.9.25
+//  Lucide Icons Version: 1.67.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -612,6 +612,8 @@ public enum LucideIconName: String, CaseIterable {
     case decimalsArrowRight
     case delete
     case dessert
+    case diagramFlowHorizontal
+    case diagramFlowVertical
     case diameter
     case diamond
     case diamondMinus
@@ -865,10 +867,12 @@ public enum LucideIconName: String, CaseIterable {
     case glassWater
     case glasses
     case globe
+    case globeBan
     case globeCheck
     case globeCode
     case globeLock
     case globeOff
+    case globePlus
     case globeX
     case goal
     case gpu
@@ -3230,6 +3234,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Delete.combinedPath
         case .dessert:
             return LucideIcon_Dessert.combinedPath
+        case .diagramFlowHorizontal:
+            return LucideIcon_DiagramFlowHorizontal.combinedPath
+        case .diagramFlowVertical:
+            return LucideIcon_DiagramFlowVertical.combinedPath
         case .diameter:
             return LucideIcon_Diameter.combinedPath
         case .diamond:
@@ -3736,6 +3744,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Glasses.combinedPath
         case .globe:
             return LucideIcon_Globe.combinedPath
+        case .globeBan:
+            return LucideIcon_GlobeBan.combinedPath
         case .globeCheck:
             return LucideIcon_GlobeCheck.combinedPath
         case .globeCode:
@@ -3744,6 +3754,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_GlobeLock.combinedPath
         case .globeOff:
             return LucideIcon_GlobeOff.combinedPath
+        case .globePlus:
+            return LucideIcon_GlobePlus.combinedPath
         case .globeX:
             return LucideIcon_GlobeX.combinedPath
         case .goal:
@@ -7268,6 +7280,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Delete.openPath
         case .dessert:
             return LucideIcon_Dessert.openPath
+        case .diagramFlowHorizontal:
+            return LucideIcon_DiagramFlowHorizontal.openPath
+        case .diagramFlowVertical:
+            return LucideIcon_DiagramFlowVertical.openPath
         case .diameter:
             return LucideIcon_Diameter.openPath
         case .diamond:
@@ -7774,6 +7790,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Glasses.openPath
         case .globe:
             return LucideIcon_Globe.openPath
+        case .globeBan:
+            return LucideIcon_GlobeBan.openPath
         case .globeCheck:
             return LucideIcon_GlobeCheck.openPath
         case .globeCode:
@@ -7782,6 +7800,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_GlobeLock.openPath
         case .globeOff:
             return LucideIcon_GlobeOff.openPath
+        case .globePlus:
+            return LucideIcon_GlobePlus.openPath
         case .globeX:
             return LucideIcon_GlobeX.openPath
         case .goal:
@@ -11306,6 +11326,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Delete.closedPath
         case .dessert:
             return LucideIcon_Dessert.closedPath
+        case .diagramFlowHorizontal:
+            return LucideIcon_DiagramFlowHorizontal.closedPath
+        case .diagramFlowVertical:
+            return LucideIcon_DiagramFlowVertical.closedPath
         case .diameter:
             return LucideIcon_Diameter.closedPath
         case .diamond:
@@ -11812,6 +11836,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Glasses.closedPath
         case .globe:
             return LucideIcon_Globe.closedPath
+        case .globeBan:
+            return LucideIcon_GlobeBan.closedPath
         case .globeCheck:
             return LucideIcon_GlobeCheck.closedPath
         case .globeCode:
@@ -11820,6 +11846,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_GlobeLock.closedPath
         case .globeOff:
             return LucideIcon_GlobeOff.closedPath
+        case .globePlus:
+            return LucideIcon_GlobePlus.closedPath
         case .globeX:
             return LucideIcon_GlobeX.closedPath
         case .goal:
@@ -18596,6 +18624,12 @@ public struct Lucide {
     /// Dessert icon
     public static let dessert: LucideShape = LucideShape(combined: LucideIcon_Dessert.combinedPath, open: LucideIcon_Dessert.openPath, closed: LucideIcon_Dessert.closedPath)
 
+    /// Diagram Flow Horizontal icon
+    public static let diagramFlowHorizontal: LucideShape = LucideShape(combined: LucideIcon_DiagramFlowHorizontal.combinedPath, open: LucideIcon_DiagramFlowHorizontal.openPath, closed: LucideIcon_DiagramFlowHorizontal.closedPath)
+
+    /// Diagram Flow Vertical icon
+    public static let diagramFlowVertical: LucideShape = LucideShape(combined: LucideIcon_DiagramFlowVertical.combinedPath, open: LucideIcon_DiagramFlowVertical.openPath, closed: LucideIcon_DiagramFlowVertical.closedPath)
+
     /// Diameter icon
     public static let diameter: LucideShape = LucideShape(combined: LucideIcon_Diameter.combinedPath, open: LucideIcon_Diameter.openPath, closed: LucideIcon_Diameter.closedPath)
 
@@ -19355,6 +19389,9 @@ public struct Lucide {
     /// Globe icon
     public static let globe: LucideShape = LucideShape(combined: LucideIcon_Globe.combinedPath, open: LucideIcon_Globe.openPath, closed: LucideIcon_Globe.closedPath)
 
+    /// Globe Ban icon
+    public static let globeBan: LucideShape = LucideShape(combined: LucideIcon_GlobeBan.combinedPath, open: LucideIcon_GlobeBan.openPath, closed: LucideIcon_GlobeBan.closedPath)
+
     /// Globe Check icon
     public static let globeCheck: LucideShape = LucideShape(combined: LucideIcon_GlobeCheck.combinedPath, open: LucideIcon_GlobeCheck.openPath, closed: LucideIcon_GlobeCheck.closedPath)
 
@@ -19366,6 +19403,9 @@ public struct Lucide {
 
     /// Globe Off icon
     public static let globeOff: LucideShape = LucideShape(combined: LucideIcon_GlobeOff.combinedPath, open: LucideIcon_GlobeOff.openPath, closed: LucideIcon_GlobeOff.closedPath)
+
+    /// Globe Plus icon
+    public static let globePlus: LucideShape = LucideShape(combined: LucideIcon_GlobePlus.combinedPath, open: LucideIcon_GlobePlus.openPath, closed: LucideIcon_GlobePlus.closedPath)
 
     /// Globe X icon
     public static let globeX: LucideShape = LucideShape(combined: LucideIcon_GlobeX.combinedPath, open: LucideIcon_GlobeX.openPath, closed: LucideIcon_GlobeX.closedPath)
@@ -23982,10 +24022,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.24"
+    public static let libraryVersion = "0.9.25"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.66.0"
+    public static let lucideVersion = "1.67.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
