@@ -1,17 +1,17 @@
 //
-//  Icon_message-square-warning.swift
+//  Icon_message-square-exclamation-point.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: message-square-warning
+//  Icon: message-square-exclamation-point
 //
 
 import SwiftUI
 
-/// Message Square Warning icon
-internal enum LucideIcon_MessageSquareWarning {
+/// Message Square Exclamation Point icon
+internal enum LucideIcon_MessageSquareExclamationPoint {
     
-/// Message Square Warning icon path (combined)
+/// Message Square Exclamation Point icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 22.0, y: 17.0))
@@ -32,7 +32,7 @@ path.move(to: CGPoint(x: 12.0, y: 7.0))
 path.addLine(to: CGPoint(x: 12.0, y: 11.0))
     return path
 }()
-/// Message Square Warning icon open subpaths
+/// Message Square Exclamation Point icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 15.0))
@@ -41,7 +41,7 @@ path.move(to: CGPoint(x: 12.0, y: 7.0))
 path.addLine(to: CGPoint(x: 12.0, y: 11.0))
     return path
 }()
-/// Message Square Warning icon closed subpaths
+/// Message Square Exclamation Point icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 22.0, y: 17.0))

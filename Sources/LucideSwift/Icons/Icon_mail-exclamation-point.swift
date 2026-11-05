@@ -1,17 +1,17 @@
 //
-//  Icon_mail-warning.swift
+//  Icon_mail-exclamation-point.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: mail-warning
+//  Icon: mail-exclamation-point
 //
 
 import SwiftUI
 
-/// Mail Warning icon
-internal enum LucideIcon_MailWarning {
+/// Mail Exclamation Point icon
+internal enum LucideIcon_MailExclamationPoint {
     
-/// Mail Warning icon path (combined)
+/// Mail Exclamation Point icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 22.0, y: 10.5))
@@ -32,7 +32,7 @@ path.move(to: CGPoint(x: 20.0, y: 22.0))
 path.addLine(to: CGPoint(x: 20.0, y: 22.01))
     return path
 }()
-/// Mail Warning icon open subpaths
+/// Mail Exclamation Point icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 22.0, y: 10.5))
@@ -53,7 +53,7 @@ path.move(to: CGPoint(x: 20.0, y: 22.0))
 path.addLine(to: CGPoint(x: 20.0, y: 22.01))
     return path
 }()
-/// Mail Warning icon closed subpaths
+/// Mail Exclamation Point icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
             return path

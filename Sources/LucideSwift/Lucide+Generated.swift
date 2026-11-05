@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.25
-//  Lucide Icons Version: 1.67.0
+//  Library Version: 0.9.26
+//  Lucide Icons Version: 1.68.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -128,11 +128,11 @@ public enum LucideIconName: String, CaseIterable {
     case backpack
     case bacon
     case badge
-    case badgeAlert
     case badgeCent
     case badgeCheck
     case badgeDollarSign
     case badgeEuro
+    case badgeExclamationPoint
     case badgeIndianRupee
     case badgeInfo
     case badgeJapaneseYen
@@ -163,11 +163,11 @@ public enum LucideIconName: String, CaseIterable {
     case bath
     case battery
     case batteryCharging
+    case batteryExclamationPoint
     case batteryFull
     case batteryLow
     case batteryMedium
     case batteryPlus
-    case batteryWarning
     case beaker
     case bean
     case beanOff
@@ -213,13 +213,13 @@ public enum LucideIconName: String, CaseIterable {
     case boneFracture
     case book
     case bookA
-    case bookAlert
     case bookAudio
     case bookBookmark
     case bookCheck
     case bookCopy
     case bookDashed
     case bookDown
+    case bookExclamationPoint
     case bookHeadphones
     case bookHeart
     case bookImage
@@ -399,7 +399,6 @@ public enum LucideIconName: String, CaseIterable {
     case cigarette
     case cigaretteOff
     case circle
-    case circleAlert
     case circleArrowDown
     case circleArrowLeft
     case circleArrowOutDownLeft
@@ -427,6 +426,7 @@ public enum LucideIconName: String, CaseIterable {
     case circleEllipsis
     case circleEqual
     case circleEuro
+    case circleExclamationPoint
     case circleFadingArrowUp
     case circleFadingPlay
     case circleFadingPlus
@@ -507,22 +507,22 @@ public enum LucideIconName: String, CaseIterable {
     case clock7
     case clock8
     case clock9
-    case clockAlert
     case clockArrowDown
     case clockArrowLeft
     case clockArrowRight
     case clockArrowUp
     case clockCheck
+    case clockExclamationPoint
     case clockFading
     case clockPlus
     case closedCaption
     case cloud
-    case cloudAlert
     case cloudBackup
     case cloudCheck
     case cloudCog
     case cloudDownload
     case cloudDrizzle
+    case cloudExclamationPoint
     case cloudFog
     case cloudHail
     case cloudLightning
@@ -1119,16 +1119,17 @@ public enum LucideIconName: String, CaseIterable {
     case mailCheck
     case mailClock
     case mailDot
+    case mailExclamationPoint
     case mailMinus
     case mailOpen
     case mailPen
     case mailPlus
     case mailQuestionMark
     case mailSearch
-    case mailWarning
     case mailX
     case mailbox
     case mails
+    case mango
     case map
     case mapMinus
     case mapPin
@@ -1169,6 +1170,7 @@ public enum LucideIconName: String, CaseIterable {
     case messageCircleCode
     case messageCircleDashed
     case messageCircleDashedCheck
+    case messageCircleExclamationPoint
     case messageCircleHeart
     case messageCircleMore
     case messageCircleOff
@@ -1176,7 +1178,6 @@ public enum LucideIconName: String, CaseIterable {
     case messageCircleQuestionMark
     case messageCircleReply
     case messageCircleText
-    case messageCircleWarning
     case messageCircleX
     case messageSquare
     case messageSquareCheck
@@ -1184,6 +1185,7 @@ public enum LucideIconName: String, CaseIterable {
     case messageSquareDashed
     case messageSquareDiff
     case messageSquareDot
+    case messageSquareExclamationPoint
     case messageSquareHeart
     case messageSquareLock
     case messageSquareMore
@@ -1193,7 +1195,6 @@ public enum LucideIconName: String, CaseIterable {
     case messageSquareReply
     case messageSquareShare
     case messageSquareText
-    case messageSquareWarning
     case messageSquareX
     case messagesCircle
     case messagesSquare
@@ -1284,7 +1285,7 @@ public enum LucideIconName: String, CaseIterable {
     case nut
     case nutOff
     case octagon
-    case octagonAlert
+    case octagonExclamationPoint
     case octagonMinus
     case octagonPause
     case octagonX
@@ -1520,9 +1521,9 @@ public enum LucideIconName: String, CaseIterable {
     case scroll
     case scrollText
     case search
-    case searchAlert
     case searchCheck
     case searchCode
+    case searchExclamationPoint
     case searchSlash
     case searchX
     case section
@@ -1546,12 +1547,12 @@ public enum LucideIconName: String, CaseIterable {
     case shell
     case shelvingUnit
     case shield
-    case shieldAlert
     case shieldBan
     case shieldCheck
     case shieldCog
     case shieldCogCorner
     case shieldEllipsis
+    case shieldExclamationPoint
     case shieldHalf
     case shieldHouse
     case shieldKeyhole
@@ -1881,8 +1882,8 @@ public enum LucideIconName: String, CaseIterable {
     case trendingUp
     case trendingUpDown
     case triangle
-    case triangleAlert
     case triangleDashed
+    case triangleExclamationPoint
     case triangleRight
     case trianglesCenterlineDashedHorizontal
     case trianglesCenterlineDashedVertical
@@ -2266,8 +2267,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Bacon.combinedPath
         case .badge:
             return LucideIcon_Badge.combinedPath
-        case .badgeAlert:
-            return LucideIcon_BadgeAlert.combinedPath
         case .badgeCent:
             return LucideIcon_BadgeCent.combinedPath
         case .badgeCheck:
@@ -2276,6 +2275,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BadgeDollarSign.combinedPath
         case .badgeEuro:
             return LucideIcon_BadgeEuro.combinedPath
+        case .badgeExclamationPoint:
+            return LucideIcon_BadgeExclamationPoint.combinedPath
         case .badgeIndianRupee:
             return LucideIcon_BadgeIndianRupee.combinedPath
         case .badgeInfo:
@@ -2336,6 +2337,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Battery.combinedPath
         case .batteryCharging:
             return LucideIcon_BatteryCharging.combinedPath
+        case .batteryExclamationPoint:
+            return LucideIcon_BatteryExclamationPoint.combinedPath
         case .batteryFull:
             return LucideIcon_BatteryFull.combinedPath
         case .batteryLow:
@@ -2344,8 +2347,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BatteryMedium.combinedPath
         case .batteryPlus:
             return LucideIcon_BatteryPlus.combinedPath
-        case .batteryWarning:
-            return LucideIcon_BatteryWarning.combinedPath
         case .beaker:
             return LucideIcon_Beaker.combinedPath
         case .bean:
@@ -2436,8 +2437,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Book.combinedPath
         case .bookA:
             return LucideIcon_BookA.combinedPath
-        case .bookAlert:
-            return LucideIcon_BookAlert.combinedPath
         case .bookAudio:
             return LucideIcon_BookAudio.combinedPath
         case .bookBookmark:
@@ -2450,6 +2449,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BookDashed.combinedPath
         case .bookDown:
             return LucideIcon_BookDown.combinedPath
+        case .bookExclamationPoint:
+            return LucideIcon_BookExclamationPoint.combinedPath
         case .bookHeadphones:
             return LucideIcon_BookHeadphones.combinedPath
         case .bookHeart:
@@ -2808,8 +2809,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CigaretteOff.combinedPath
         case .circle:
             return LucideIcon_Circle.combinedPath
-        case .circleAlert:
-            return LucideIcon_CircleAlert.combinedPath
         case .circleArrowDown:
             return LucideIcon_CircleArrowDown.combinedPath
         case .circleArrowLeft:
@@ -2864,6 +2863,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleEqual.combinedPath
         case .circleEuro:
             return LucideIcon_CircleEuro.combinedPath
+        case .circleExclamationPoint:
+            return LucideIcon_CircleExclamationPoint.combinedPath
         case .circleFadingArrowUp:
             return LucideIcon_CircleFadingArrowUp.combinedPath
         case .circleFadingPlay:
@@ -3024,8 +3025,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Clock8.combinedPath
         case .clock9:
             return LucideIcon_Clock9.combinedPath
-        case .clockAlert:
-            return LucideIcon_ClockAlert.combinedPath
         case .clockArrowDown:
             return LucideIcon_ClockArrowDown.combinedPath
         case .clockArrowLeft:
@@ -3036,6 +3035,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ClockArrowUp.combinedPath
         case .clockCheck:
             return LucideIcon_ClockCheck.combinedPath
+        case .clockExclamationPoint:
+            return LucideIcon_ClockExclamationPoint.combinedPath
         case .clockFading:
             return LucideIcon_ClockFading.combinedPath
         case .clockPlus:
@@ -3044,8 +3045,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ClosedCaption.combinedPath
         case .cloud:
             return LucideIcon_Cloud.combinedPath
-        case .cloudAlert:
-            return LucideIcon_CloudAlert.combinedPath
         case .cloudBackup:
             return LucideIcon_CloudBackup.combinedPath
         case .cloudCheck:
@@ -3056,6 +3055,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CloudDownload.combinedPath
         case .cloudDrizzle:
             return LucideIcon_CloudDrizzle.combinedPath
+        case .cloudExclamationPoint:
+            return LucideIcon_CloudExclamationPoint.combinedPath
         case .cloudFog:
             return LucideIcon_CloudFog.combinedPath
         case .cloudHail:
@@ -4248,6 +4249,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailClock.combinedPath
         case .mailDot:
             return LucideIcon_MailDot.combinedPath
+        case .mailExclamationPoint:
+            return LucideIcon_MailExclamationPoint.combinedPath
         case .mailMinus:
             return LucideIcon_MailMinus.combinedPath
         case .mailOpen:
@@ -4260,14 +4263,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailQuestionMark.combinedPath
         case .mailSearch:
             return LucideIcon_MailSearch.combinedPath
-        case .mailWarning:
-            return LucideIcon_MailWarning.combinedPath
         case .mailX:
             return LucideIcon_MailX.combinedPath
         case .mailbox:
             return LucideIcon_Mailbox.combinedPath
         case .mails:
             return LucideIcon_Mails.combinedPath
+        case .mango:
+            return LucideIcon_Mango.combinedPath
         case .map:
             return LucideIcon_Map.combinedPath
         case .mapMinus:
@@ -4348,6 +4351,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageCircleDashed.combinedPath
         case .messageCircleDashedCheck:
             return LucideIcon_MessageCircleDashedCheck.combinedPath
+        case .messageCircleExclamationPoint:
+            return LucideIcon_MessageCircleExclamationPoint.combinedPath
         case .messageCircleHeart:
             return LucideIcon_MessageCircleHeart.combinedPath
         case .messageCircleMore:
@@ -4362,8 +4367,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageCircleReply.combinedPath
         case .messageCircleText:
             return LucideIcon_MessageCircleText.combinedPath
-        case .messageCircleWarning:
-            return LucideIcon_MessageCircleWarning.combinedPath
         case .messageCircleX:
             return LucideIcon_MessageCircleX.combinedPath
         case .messageSquare:
@@ -4378,6 +4381,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageSquareDiff.combinedPath
         case .messageSquareDot:
             return LucideIcon_MessageSquareDot.combinedPath
+        case .messageSquareExclamationPoint:
+            return LucideIcon_MessageSquareExclamationPoint.combinedPath
         case .messageSquareHeart:
             return LucideIcon_MessageSquareHeart.combinedPath
         case .messageSquareLock:
@@ -4396,8 +4401,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageSquareShare.combinedPath
         case .messageSquareText:
             return LucideIcon_MessageSquareText.combinedPath
-        case .messageSquareWarning:
-            return LucideIcon_MessageSquareWarning.combinedPath
         case .messageSquareX:
             return LucideIcon_MessageSquareX.combinedPath
         case .messagesCircle:
@@ -4578,8 +4581,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_NutOff.combinedPath
         case .octagon:
             return LucideIcon_Octagon.combinedPath
-        case .octagonAlert:
-            return LucideIcon_OctagonAlert.combinedPath
+        case .octagonExclamationPoint:
+            return LucideIcon_OctagonExclamationPoint.combinedPath
         case .octagonMinus:
             return LucideIcon_OctagonMinus.combinedPath
         case .octagonPause:
@@ -5050,12 +5053,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ScrollText.combinedPath
         case .search:
             return LucideIcon_Search.combinedPath
-        case .searchAlert:
-            return LucideIcon_SearchAlert.combinedPath
         case .searchCheck:
             return LucideIcon_SearchCheck.combinedPath
         case .searchCode:
             return LucideIcon_SearchCode.combinedPath
+        case .searchExclamationPoint:
+            return LucideIcon_SearchExclamationPoint.combinedPath
         case .searchSlash:
             return LucideIcon_SearchSlash.combinedPath
         case .searchX:
@@ -5102,8 +5105,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShelvingUnit.combinedPath
         case .shield:
             return LucideIcon_Shield.combinedPath
-        case .shieldAlert:
-            return LucideIcon_ShieldAlert.combinedPath
         case .shieldBan:
             return LucideIcon_ShieldBan.combinedPath
         case .shieldCheck:
@@ -5114,6 +5115,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShieldCogCorner.combinedPath
         case .shieldEllipsis:
             return LucideIcon_ShieldEllipsis.combinedPath
+        case .shieldExclamationPoint:
+            return LucideIcon_ShieldExclamationPoint.combinedPath
         case .shieldHalf:
             return LucideIcon_ShieldHalf.combinedPath
         case .shieldHouse:
@@ -5772,10 +5775,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TrendingUpDown.combinedPath
         case .triangle:
             return LucideIcon_Triangle.combinedPath
-        case .triangleAlert:
-            return LucideIcon_TriangleAlert.combinedPath
         case .triangleDashed:
             return LucideIcon_TriangleDashed.combinedPath
+        case .triangleExclamationPoint:
+            return LucideIcon_TriangleExclamationPoint.combinedPath
         case .triangleRight:
             return LucideIcon_TriangleRight.combinedPath
         case .trianglesCenterlineDashedHorizontal:
@@ -6312,8 +6315,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Bacon.openPath
         case .badge:
             return LucideIcon_Badge.openPath
-        case .badgeAlert:
-            return LucideIcon_BadgeAlert.openPath
         case .badgeCent:
             return LucideIcon_BadgeCent.openPath
         case .badgeCheck:
@@ -6322,6 +6323,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BadgeDollarSign.openPath
         case .badgeEuro:
             return LucideIcon_BadgeEuro.openPath
+        case .badgeExclamationPoint:
+            return LucideIcon_BadgeExclamationPoint.openPath
         case .badgeIndianRupee:
             return LucideIcon_BadgeIndianRupee.openPath
         case .badgeInfo:
@@ -6382,6 +6385,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Battery.openPath
         case .batteryCharging:
             return LucideIcon_BatteryCharging.openPath
+        case .batteryExclamationPoint:
+            return LucideIcon_BatteryExclamationPoint.openPath
         case .batteryFull:
             return LucideIcon_BatteryFull.openPath
         case .batteryLow:
@@ -6390,8 +6395,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BatteryMedium.openPath
         case .batteryPlus:
             return LucideIcon_BatteryPlus.openPath
-        case .batteryWarning:
-            return LucideIcon_BatteryWarning.openPath
         case .beaker:
             return LucideIcon_Beaker.openPath
         case .bean:
@@ -6482,8 +6485,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Book.openPath
         case .bookA:
             return LucideIcon_BookA.openPath
-        case .bookAlert:
-            return LucideIcon_BookAlert.openPath
         case .bookAudio:
             return LucideIcon_BookAudio.openPath
         case .bookBookmark:
@@ -6496,6 +6497,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BookDashed.openPath
         case .bookDown:
             return LucideIcon_BookDown.openPath
+        case .bookExclamationPoint:
+            return LucideIcon_BookExclamationPoint.openPath
         case .bookHeadphones:
             return LucideIcon_BookHeadphones.openPath
         case .bookHeart:
@@ -6854,8 +6857,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CigaretteOff.openPath
         case .circle:
             return LucideIcon_Circle.openPath
-        case .circleAlert:
-            return LucideIcon_CircleAlert.openPath
         case .circleArrowDown:
             return LucideIcon_CircleArrowDown.openPath
         case .circleArrowLeft:
@@ -6910,6 +6911,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleEqual.openPath
         case .circleEuro:
             return LucideIcon_CircleEuro.openPath
+        case .circleExclamationPoint:
+            return LucideIcon_CircleExclamationPoint.openPath
         case .circleFadingArrowUp:
             return LucideIcon_CircleFadingArrowUp.openPath
         case .circleFadingPlay:
@@ -7070,8 +7073,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Clock8.openPath
         case .clock9:
             return LucideIcon_Clock9.openPath
-        case .clockAlert:
-            return LucideIcon_ClockAlert.openPath
         case .clockArrowDown:
             return LucideIcon_ClockArrowDown.openPath
         case .clockArrowLeft:
@@ -7082,6 +7083,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ClockArrowUp.openPath
         case .clockCheck:
             return LucideIcon_ClockCheck.openPath
+        case .clockExclamationPoint:
+            return LucideIcon_ClockExclamationPoint.openPath
         case .clockFading:
             return LucideIcon_ClockFading.openPath
         case .clockPlus:
@@ -7090,8 +7093,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ClosedCaption.openPath
         case .cloud:
             return LucideIcon_Cloud.openPath
-        case .cloudAlert:
-            return LucideIcon_CloudAlert.openPath
         case .cloudBackup:
             return LucideIcon_CloudBackup.openPath
         case .cloudCheck:
@@ -7102,6 +7103,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CloudDownload.openPath
         case .cloudDrizzle:
             return LucideIcon_CloudDrizzle.openPath
+        case .cloudExclamationPoint:
+            return LucideIcon_CloudExclamationPoint.openPath
         case .cloudFog:
             return LucideIcon_CloudFog.openPath
         case .cloudHail:
@@ -8294,6 +8297,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailClock.openPath
         case .mailDot:
             return LucideIcon_MailDot.openPath
+        case .mailExclamationPoint:
+            return LucideIcon_MailExclamationPoint.openPath
         case .mailMinus:
             return LucideIcon_MailMinus.openPath
         case .mailOpen:
@@ -8306,14 +8311,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailQuestionMark.openPath
         case .mailSearch:
             return LucideIcon_MailSearch.openPath
-        case .mailWarning:
-            return LucideIcon_MailWarning.openPath
         case .mailX:
             return LucideIcon_MailX.openPath
         case .mailbox:
             return LucideIcon_Mailbox.openPath
         case .mails:
             return LucideIcon_Mails.openPath
+        case .mango:
+            return LucideIcon_Mango.openPath
         case .map:
             return LucideIcon_Map.openPath
         case .mapMinus:
@@ -8394,6 +8399,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageCircleDashed.openPath
         case .messageCircleDashedCheck:
             return LucideIcon_MessageCircleDashedCheck.openPath
+        case .messageCircleExclamationPoint:
+            return LucideIcon_MessageCircleExclamationPoint.openPath
         case .messageCircleHeart:
             return LucideIcon_MessageCircleHeart.openPath
         case .messageCircleMore:
@@ -8408,8 +8415,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageCircleReply.openPath
         case .messageCircleText:
             return LucideIcon_MessageCircleText.openPath
-        case .messageCircleWarning:
-            return LucideIcon_MessageCircleWarning.openPath
         case .messageCircleX:
             return LucideIcon_MessageCircleX.openPath
         case .messageSquare:
@@ -8424,6 +8429,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageSquareDiff.openPath
         case .messageSquareDot:
             return LucideIcon_MessageSquareDot.openPath
+        case .messageSquareExclamationPoint:
+            return LucideIcon_MessageSquareExclamationPoint.openPath
         case .messageSquareHeart:
             return LucideIcon_MessageSquareHeart.openPath
         case .messageSquareLock:
@@ -8442,8 +8449,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageSquareShare.openPath
         case .messageSquareText:
             return LucideIcon_MessageSquareText.openPath
-        case .messageSquareWarning:
-            return LucideIcon_MessageSquareWarning.openPath
         case .messageSquareX:
             return LucideIcon_MessageSquareX.openPath
         case .messagesCircle:
@@ -8624,8 +8629,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_NutOff.openPath
         case .octagon:
             return LucideIcon_Octagon.openPath
-        case .octagonAlert:
-            return LucideIcon_OctagonAlert.openPath
+        case .octagonExclamationPoint:
+            return LucideIcon_OctagonExclamationPoint.openPath
         case .octagonMinus:
             return LucideIcon_OctagonMinus.openPath
         case .octagonPause:
@@ -9096,12 +9101,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ScrollText.openPath
         case .search:
             return LucideIcon_Search.openPath
-        case .searchAlert:
-            return LucideIcon_SearchAlert.openPath
         case .searchCheck:
             return LucideIcon_SearchCheck.openPath
         case .searchCode:
             return LucideIcon_SearchCode.openPath
+        case .searchExclamationPoint:
+            return LucideIcon_SearchExclamationPoint.openPath
         case .searchSlash:
             return LucideIcon_SearchSlash.openPath
         case .searchX:
@@ -9148,8 +9153,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShelvingUnit.openPath
         case .shield:
             return LucideIcon_Shield.openPath
-        case .shieldAlert:
-            return LucideIcon_ShieldAlert.openPath
         case .shieldBan:
             return LucideIcon_ShieldBan.openPath
         case .shieldCheck:
@@ -9160,6 +9163,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShieldCogCorner.openPath
         case .shieldEllipsis:
             return LucideIcon_ShieldEllipsis.openPath
+        case .shieldExclamationPoint:
+            return LucideIcon_ShieldExclamationPoint.openPath
         case .shieldHalf:
             return LucideIcon_ShieldHalf.openPath
         case .shieldHouse:
@@ -9818,10 +9823,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TrendingUpDown.openPath
         case .triangle:
             return LucideIcon_Triangle.openPath
-        case .triangleAlert:
-            return LucideIcon_TriangleAlert.openPath
         case .triangleDashed:
             return LucideIcon_TriangleDashed.openPath
+        case .triangleExclamationPoint:
+            return LucideIcon_TriangleExclamationPoint.openPath
         case .triangleRight:
             return LucideIcon_TriangleRight.openPath
         case .trianglesCenterlineDashedHorizontal:
@@ -10358,8 +10363,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Bacon.closedPath
         case .badge:
             return LucideIcon_Badge.closedPath
-        case .badgeAlert:
-            return LucideIcon_BadgeAlert.closedPath
         case .badgeCent:
             return LucideIcon_BadgeCent.closedPath
         case .badgeCheck:
@@ -10368,6 +10371,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BadgeDollarSign.closedPath
         case .badgeEuro:
             return LucideIcon_BadgeEuro.closedPath
+        case .badgeExclamationPoint:
+            return LucideIcon_BadgeExclamationPoint.closedPath
         case .badgeIndianRupee:
             return LucideIcon_BadgeIndianRupee.closedPath
         case .badgeInfo:
@@ -10428,6 +10433,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Battery.closedPath
         case .batteryCharging:
             return LucideIcon_BatteryCharging.closedPath
+        case .batteryExclamationPoint:
+            return LucideIcon_BatteryExclamationPoint.closedPath
         case .batteryFull:
             return LucideIcon_BatteryFull.closedPath
         case .batteryLow:
@@ -10436,8 +10443,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BatteryMedium.closedPath
         case .batteryPlus:
             return LucideIcon_BatteryPlus.closedPath
-        case .batteryWarning:
-            return LucideIcon_BatteryWarning.closedPath
         case .beaker:
             return LucideIcon_Beaker.closedPath
         case .bean:
@@ -10528,8 +10533,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Book.closedPath
         case .bookA:
             return LucideIcon_BookA.closedPath
-        case .bookAlert:
-            return LucideIcon_BookAlert.closedPath
         case .bookAudio:
             return LucideIcon_BookAudio.closedPath
         case .bookBookmark:
@@ -10542,6 +10545,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BookDashed.closedPath
         case .bookDown:
             return LucideIcon_BookDown.closedPath
+        case .bookExclamationPoint:
+            return LucideIcon_BookExclamationPoint.closedPath
         case .bookHeadphones:
             return LucideIcon_BookHeadphones.closedPath
         case .bookHeart:
@@ -10900,8 +10905,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CigaretteOff.closedPath
         case .circle:
             return LucideIcon_Circle.closedPath
-        case .circleAlert:
-            return LucideIcon_CircleAlert.closedPath
         case .circleArrowDown:
             return LucideIcon_CircleArrowDown.closedPath
         case .circleArrowLeft:
@@ -10956,6 +10959,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleEqual.closedPath
         case .circleEuro:
             return LucideIcon_CircleEuro.closedPath
+        case .circleExclamationPoint:
+            return LucideIcon_CircleExclamationPoint.closedPath
         case .circleFadingArrowUp:
             return LucideIcon_CircleFadingArrowUp.closedPath
         case .circleFadingPlay:
@@ -11116,8 +11121,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Clock8.closedPath
         case .clock9:
             return LucideIcon_Clock9.closedPath
-        case .clockAlert:
-            return LucideIcon_ClockAlert.closedPath
         case .clockArrowDown:
             return LucideIcon_ClockArrowDown.closedPath
         case .clockArrowLeft:
@@ -11128,6 +11131,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ClockArrowUp.closedPath
         case .clockCheck:
             return LucideIcon_ClockCheck.closedPath
+        case .clockExclamationPoint:
+            return LucideIcon_ClockExclamationPoint.closedPath
         case .clockFading:
             return LucideIcon_ClockFading.closedPath
         case .clockPlus:
@@ -11136,8 +11141,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ClosedCaption.closedPath
         case .cloud:
             return LucideIcon_Cloud.closedPath
-        case .cloudAlert:
-            return LucideIcon_CloudAlert.closedPath
         case .cloudBackup:
             return LucideIcon_CloudBackup.closedPath
         case .cloudCheck:
@@ -11148,6 +11151,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CloudDownload.closedPath
         case .cloudDrizzle:
             return LucideIcon_CloudDrizzle.closedPath
+        case .cloudExclamationPoint:
+            return LucideIcon_CloudExclamationPoint.closedPath
         case .cloudFog:
             return LucideIcon_CloudFog.closedPath
         case .cloudHail:
@@ -12340,6 +12345,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailClock.closedPath
         case .mailDot:
             return LucideIcon_MailDot.closedPath
+        case .mailExclamationPoint:
+            return LucideIcon_MailExclamationPoint.closedPath
         case .mailMinus:
             return LucideIcon_MailMinus.closedPath
         case .mailOpen:
@@ -12352,14 +12359,14 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MailQuestionMark.closedPath
         case .mailSearch:
             return LucideIcon_MailSearch.closedPath
-        case .mailWarning:
-            return LucideIcon_MailWarning.closedPath
         case .mailX:
             return LucideIcon_MailX.closedPath
         case .mailbox:
             return LucideIcon_Mailbox.closedPath
         case .mails:
             return LucideIcon_Mails.closedPath
+        case .mango:
+            return LucideIcon_Mango.closedPath
         case .map:
             return LucideIcon_Map.closedPath
         case .mapMinus:
@@ -12440,6 +12447,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageCircleDashed.closedPath
         case .messageCircleDashedCheck:
             return LucideIcon_MessageCircleDashedCheck.closedPath
+        case .messageCircleExclamationPoint:
+            return LucideIcon_MessageCircleExclamationPoint.closedPath
         case .messageCircleHeart:
             return LucideIcon_MessageCircleHeart.closedPath
         case .messageCircleMore:
@@ -12454,8 +12463,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageCircleReply.closedPath
         case .messageCircleText:
             return LucideIcon_MessageCircleText.closedPath
-        case .messageCircleWarning:
-            return LucideIcon_MessageCircleWarning.closedPath
         case .messageCircleX:
             return LucideIcon_MessageCircleX.closedPath
         case .messageSquare:
@@ -12470,6 +12477,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageSquareDiff.closedPath
         case .messageSquareDot:
             return LucideIcon_MessageSquareDot.closedPath
+        case .messageSquareExclamationPoint:
+            return LucideIcon_MessageSquareExclamationPoint.closedPath
         case .messageSquareHeart:
             return LucideIcon_MessageSquareHeart.closedPath
         case .messageSquareLock:
@@ -12488,8 +12497,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_MessageSquareShare.closedPath
         case .messageSquareText:
             return LucideIcon_MessageSquareText.closedPath
-        case .messageSquareWarning:
-            return LucideIcon_MessageSquareWarning.closedPath
         case .messageSquareX:
             return LucideIcon_MessageSquareX.closedPath
         case .messagesCircle:
@@ -12670,8 +12677,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_NutOff.closedPath
         case .octagon:
             return LucideIcon_Octagon.closedPath
-        case .octagonAlert:
-            return LucideIcon_OctagonAlert.closedPath
+        case .octagonExclamationPoint:
+            return LucideIcon_OctagonExclamationPoint.closedPath
         case .octagonMinus:
             return LucideIcon_OctagonMinus.closedPath
         case .octagonPause:
@@ -13142,12 +13149,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ScrollText.closedPath
         case .search:
             return LucideIcon_Search.closedPath
-        case .searchAlert:
-            return LucideIcon_SearchAlert.closedPath
         case .searchCheck:
             return LucideIcon_SearchCheck.closedPath
         case .searchCode:
             return LucideIcon_SearchCode.closedPath
+        case .searchExclamationPoint:
+            return LucideIcon_SearchExclamationPoint.closedPath
         case .searchSlash:
             return LucideIcon_SearchSlash.closedPath
         case .searchX:
@@ -13194,8 +13201,6 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShelvingUnit.closedPath
         case .shield:
             return LucideIcon_Shield.closedPath
-        case .shieldAlert:
-            return LucideIcon_ShieldAlert.closedPath
         case .shieldBan:
             return LucideIcon_ShieldBan.closedPath
         case .shieldCheck:
@@ -13206,6 +13211,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ShieldCogCorner.closedPath
         case .shieldEllipsis:
             return LucideIcon_ShieldEllipsis.closedPath
+        case .shieldExclamationPoint:
+            return LucideIcon_ShieldExclamationPoint.closedPath
         case .shieldHalf:
             return LucideIcon_ShieldHalf.closedPath
         case .shieldHouse:
@@ -13864,10 +13871,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TrendingUpDown.closedPath
         case .triangle:
             return LucideIcon_Triangle.closedPath
-        case .triangleAlert:
-            return LucideIcon_TriangleAlert.closedPath
         case .triangleDashed:
             return LucideIcon_TriangleDashed.closedPath
+        case .triangleExclamationPoint:
+            return LucideIcon_TriangleExclamationPoint.closedPath
         case .triangleRight:
             return LucideIcon_TriangleRight.closedPath
         case .trianglesCenterlineDashedHorizontal:
@@ -17172,9 +17179,6 @@ public struct Lucide {
     /// Badge icon
     public static let badge: LucideShape = LucideShape(combined: LucideIcon_Badge.combinedPath, open: LucideIcon_Badge.openPath, closed: LucideIcon_Badge.closedPath)
 
-    /// Badge Alert icon
-    public static let badgeAlert: LucideShape = LucideShape(combined: LucideIcon_BadgeAlert.combinedPath, open: LucideIcon_BadgeAlert.openPath, closed: LucideIcon_BadgeAlert.closedPath)
-
     /// Badge Cent icon
     public static let badgeCent: LucideShape = LucideShape(combined: LucideIcon_BadgeCent.combinedPath, open: LucideIcon_BadgeCent.openPath, closed: LucideIcon_BadgeCent.closedPath)
 
@@ -17186,6 +17190,9 @@ public struct Lucide {
 
     /// Badge Euro icon
     public static let badgeEuro: LucideShape = LucideShape(combined: LucideIcon_BadgeEuro.combinedPath, open: LucideIcon_BadgeEuro.openPath, closed: LucideIcon_BadgeEuro.closedPath)
+
+    /// Badge Exclamation Point icon
+    public static let badgeExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_BadgeExclamationPoint.combinedPath, open: LucideIcon_BadgeExclamationPoint.openPath, closed: LucideIcon_BadgeExclamationPoint.closedPath)
 
     /// Badge Indian Rupee icon
     public static let badgeIndianRupee: LucideShape = LucideShape(combined: LucideIcon_BadgeIndianRupee.combinedPath, open: LucideIcon_BadgeIndianRupee.openPath, closed: LucideIcon_BadgeIndianRupee.closedPath)
@@ -17277,6 +17284,9 @@ public struct Lucide {
     /// Battery Charging icon
     public static let batteryCharging: LucideShape = LucideShape(combined: LucideIcon_BatteryCharging.combinedPath, open: LucideIcon_BatteryCharging.openPath, closed: LucideIcon_BatteryCharging.closedPath)
 
+    /// Battery Exclamation Point icon
+    public static let batteryExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_BatteryExclamationPoint.combinedPath, open: LucideIcon_BatteryExclamationPoint.openPath, closed: LucideIcon_BatteryExclamationPoint.closedPath)
+
     /// Battery Full icon
     public static let batteryFull: LucideShape = LucideShape(combined: LucideIcon_BatteryFull.combinedPath, open: LucideIcon_BatteryFull.openPath, closed: LucideIcon_BatteryFull.closedPath)
 
@@ -17288,9 +17298,6 @@ public struct Lucide {
 
     /// Battery Plus icon
     public static let batteryPlus: LucideShape = LucideShape(combined: LucideIcon_BatteryPlus.combinedPath, open: LucideIcon_BatteryPlus.openPath, closed: LucideIcon_BatteryPlus.closedPath)
-
-    /// Battery Warning icon
-    public static let batteryWarning: LucideShape = LucideShape(combined: LucideIcon_BatteryWarning.combinedPath, open: LucideIcon_BatteryWarning.openPath, closed: LucideIcon_BatteryWarning.closedPath)
 
     /// Beaker icon
     public static let beaker: LucideShape = LucideShape(combined: LucideIcon_Beaker.combinedPath, open: LucideIcon_Beaker.openPath, closed: LucideIcon_Beaker.closedPath)
@@ -17427,9 +17434,6 @@ public struct Lucide {
     /// Book A icon
     public static let bookA: LucideShape = LucideShape(combined: LucideIcon_BookA.combinedPath, open: LucideIcon_BookA.openPath, closed: LucideIcon_BookA.closedPath)
 
-    /// Book Alert icon
-    public static let bookAlert: LucideShape = LucideShape(combined: LucideIcon_BookAlert.combinedPath, open: LucideIcon_BookAlert.openPath, closed: LucideIcon_BookAlert.closedPath)
-
     /// Book Audio icon
     public static let bookAudio: LucideShape = LucideShape(combined: LucideIcon_BookAudio.combinedPath, open: LucideIcon_BookAudio.openPath, closed: LucideIcon_BookAudio.closedPath)
 
@@ -17447,6 +17451,9 @@ public struct Lucide {
 
     /// Book Down icon
     public static let bookDown: LucideShape = LucideShape(combined: LucideIcon_BookDown.combinedPath, open: LucideIcon_BookDown.openPath, closed: LucideIcon_BookDown.closedPath)
+
+    /// Book Exclamation Point icon
+    public static let bookExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_BookExclamationPoint.combinedPath, open: LucideIcon_BookExclamationPoint.openPath, closed: LucideIcon_BookExclamationPoint.closedPath)
 
     /// Book Headphones icon
     public static let bookHeadphones: LucideShape = LucideShape(combined: LucideIcon_BookHeadphones.combinedPath, open: LucideIcon_BookHeadphones.openPath, closed: LucideIcon_BookHeadphones.closedPath)
@@ -17985,9 +17992,6 @@ public struct Lucide {
     /// Circle icon
     public static let circle: LucideShape = LucideShape(combined: LucideIcon_Circle.combinedPath, open: LucideIcon_Circle.openPath, closed: LucideIcon_Circle.closedPath)
 
-    /// Circle Alert icon
-    public static let circleAlert: LucideShape = LucideShape(combined: LucideIcon_CircleAlert.combinedPath, open: LucideIcon_CircleAlert.openPath, closed: LucideIcon_CircleAlert.closedPath)
-
     /// Circle Arrow Down icon
     public static let circleArrowDown: LucideShape = LucideShape(combined: LucideIcon_CircleArrowDown.combinedPath, open: LucideIcon_CircleArrowDown.openPath, closed: LucideIcon_CircleArrowDown.closedPath)
 
@@ -18068,6 +18072,9 @@ public struct Lucide {
 
     /// Circle Euro icon
     public static let circleEuro: LucideShape = LucideShape(combined: LucideIcon_CircleEuro.combinedPath, open: LucideIcon_CircleEuro.openPath, closed: LucideIcon_CircleEuro.closedPath)
+
+    /// Circle Exclamation Point icon
+    public static let circleExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_CircleExclamationPoint.combinedPath, open: LucideIcon_CircleExclamationPoint.openPath, closed: LucideIcon_CircleExclamationPoint.closedPath)
 
     /// Circle Fading Arrow Up icon
     public static let circleFadingArrowUp: LucideShape = LucideShape(combined: LucideIcon_CircleFadingArrowUp.combinedPath, open: LucideIcon_CircleFadingArrowUp.openPath, closed: LucideIcon_CircleFadingArrowUp.closedPath)
@@ -18309,9 +18316,6 @@ public struct Lucide {
     /// Clock 9 icon
     public static let clock9: LucideShape = LucideShape(combined: LucideIcon_Clock9.combinedPath, open: LucideIcon_Clock9.openPath, closed: LucideIcon_Clock9.closedPath)
 
-    /// Clock Alert icon
-    public static let clockAlert: LucideShape = LucideShape(combined: LucideIcon_ClockAlert.combinedPath, open: LucideIcon_ClockAlert.openPath, closed: LucideIcon_ClockAlert.closedPath)
-
     /// Clock Arrow Down icon
     public static let clockArrowDown: LucideShape = LucideShape(combined: LucideIcon_ClockArrowDown.combinedPath, open: LucideIcon_ClockArrowDown.openPath, closed: LucideIcon_ClockArrowDown.closedPath)
 
@@ -18327,6 +18331,9 @@ public struct Lucide {
     /// Clock Check icon
     public static let clockCheck: LucideShape = LucideShape(combined: LucideIcon_ClockCheck.combinedPath, open: LucideIcon_ClockCheck.openPath, closed: LucideIcon_ClockCheck.closedPath)
 
+    /// Clock Exclamation Point icon
+    public static let clockExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_ClockExclamationPoint.combinedPath, open: LucideIcon_ClockExclamationPoint.openPath, closed: LucideIcon_ClockExclamationPoint.closedPath)
+
     /// Clock Fading icon
     public static let clockFading: LucideShape = LucideShape(combined: LucideIcon_ClockFading.combinedPath, open: LucideIcon_ClockFading.openPath, closed: LucideIcon_ClockFading.closedPath)
 
@@ -18338,9 +18345,6 @@ public struct Lucide {
 
     /// Cloud icon
     public static let cloud: LucideShape = LucideShape(combined: LucideIcon_Cloud.combinedPath, open: LucideIcon_Cloud.openPath, closed: LucideIcon_Cloud.closedPath)
-
-    /// Cloud Alert icon
-    public static let cloudAlert: LucideShape = LucideShape(combined: LucideIcon_CloudAlert.combinedPath, open: LucideIcon_CloudAlert.openPath, closed: LucideIcon_CloudAlert.closedPath)
 
     /// Cloud Backup icon
     public static let cloudBackup: LucideShape = LucideShape(combined: LucideIcon_CloudBackup.combinedPath, open: LucideIcon_CloudBackup.openPath, closed: LucideIcon_CloudBackup.closedPath)
@@ -18356,6 +18360,9 @@ public struct Lucide {
 
     /// Cloud Drizzle icon
     public static let cloudDrizzle: LucideShape = LucideShape(combined: LucideIcon_CloudDrizzle.combinedPath, open: LucideIcon_CloudDrizzle.openPath, closed: LucideIcon_CloudDrizzle.closedPath)
+
+    /// Cloud Exclamation Point icon
+    public static let cloudExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_CloudExclamationPoint.combinedPath, open: LucideIcon_CloudExclamationPoint.openPath, closed: LucideIcon_CloudExclamationPoint.closedPath)
 
     /// Cloud Fog icon
     public static let cloudFog: LucideShape = LucideShape(combined: LucideIcon_CloudFog.combinedPath, open: LucideIcon_CloudFog.openPath, closed: LucideIcon_CloudFog.closedPath)
@@ -20145,6 +20152,9 @@ public struct Lucide {
     /// Mail Dot icon
     public static let mailDot: LucideShape = LucideShape(combined: LucideIcon_MailDot.combinedPath, open: LucideIcon_MailDot.openPath, closed: LucideIcon_MailDot.closedPath)
 
+    /// Mail Exclamation Point icon
+    public static let mailExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_MailExclamationPoint.combinedPath, open: LucideIcon_MailExclamationPoint.openPath, closed: LucideIcon_MailExclamationPoint.closedPath)
+
     /// Mail Minus icon
     public static let mailMinus: LucideShape = LucideShape(combined: LucideIcon_MailMinus.combinedPath, open: LucideIcon_MailMinus.openPath, closed: LucideIcon_MailMinus.closedPath)
 
@@ -20163,9 +20173,6 @@ public struct Lucide {
     /// Mail Search icon
     public static let mailSearch: LucideShape = LucideShape(combined: LucideIcon_MailSearch.combinedPath, open: LucideIcon_MailSearch.openPath, closed: LucideIcon_MailSearch.closedPath)
 
-    /// Mail Warning icon
-    public static let mailWarning: LucideShape = LucideShape(combined: LucideIcon_MailWarning.combinedPath, open: LucideIcon_MailWarning.openPath, closed: LucideIcon_MailWarning.closedPath)
-
     /// Mail X icon
     public static let mailX: LucideShape = LucideShape(combined: LucideIcon_MailX.combinedPath, open: LucideIcon_MailX.openPath, closed: LucideIcon_MailX.closedPath)
 
@@ -20174,6 +20181,9 @@ public struct Lucide {
 
     /// Mails icon
     public static let mails: LucideShape = LucideShape(combined: LucideIcon_Mails.combinedPath, open: LucideIcon_Mails.openPath, closed: LucideIcon_Mails.closedPath)
+
+    /// Mango icon
+    public static let mango: LucideShape = LucideShape(combined: LucideIcon_Mango.combinedPath, open: LucideIcon_Mango.openPath, closed: LucideIcon_Mango.closedPath)
 
     /// Map icon
     public static let map: LucideShape = LucideShape(combined: LucideIcon_Map.combinedPath, open: LucideIcon_Map.openPath, closed: LucideIcon_Map.closedPath)
@@ -20295,6 +20305,9 @@ public struct Lucide {
     /// Message Circle Dashed Check icon
     public static let messageCircleDashedCheck: LucideShape = LucideShape(combined: LucideIcon_MessageCircleDashedCheck.combinedPath, open: LucideIcon_MessageCircleDashedCheck.openPath, closed: LucideIcon_MessageCircleDashedCheck.closedPath)
 
+    /// Message Circle Exclamation Point icon
+    public static let messageCircleExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_MessageCircleExclamationPoint.combinedPath, open: LucideIcon_MessageCircleExclamationPoint.openPath, closed: LucideIcon_MessageCircleExclamationPoint.closedPath)
+
     /// Message Circle Heart icon
     public static let messageCircleHeart: LucideShape = LucideShape(combined: LucideIcon_MessageCircleHeart.combinedPath, open: LucideIcon_MessageCircleHeart.openPath, closed: LucideIcon_MessageCircleHeart.closedPath)
 
@@ -20316,9 +20329,6 @@ public struct Lucide {
     /// Message Circle Text icon
     public static let messageCircleText: LucideShape = LucideShape(combined: LucideIcon_MessageCircleText.combinedPath, open: LucideIcon_MessageCircleText.openPath, closed: LucideIcon_MessageCircleText.closedPath)
 
-    /// Message Circle Warning icon
-    public static let messageCircleWarning: LucideShape = LucideShape(combined: LucideIcon_MessageCircleWarning.combinedPath, open: LucideIcon_MessageCircleWarning.openPath, closed: LucideIcon_MessageCircleWarning.closedPath)
-
     /// Message Circle X icon
     public static let messageCircleX: LucideShape = LucideShape(combined: LucideIcon_MessageCircleX.combinedPath, open: LucideIcon_MessageCircleX.openPath, closed: LucideIcon_MessageCircleX.closedPath)
 
@@ -20339,6 +20349,9 @@ public struct Lucide {
 
     /// Message Square Dot icon
     public static let messageSquareDot: LucideShape = LucideShape(combined: LucideIcon_MessageSquareDot.combinedPath, open: LucideIcon_MessageSquareDot.openPath, closed: LucideIcon_MessageSquareDot.closedPath)
+
+    /// Message Square Exclamation Point icon
+    public static let messageSquareExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_MessageSquareExclamationPoint.combinedPath, open: LucideIcon_MessageSquareExclamationPoint.openPath, closed: LucideIcon_MessageSquareExclamationPoint.closedPath)
 
     /// Message Square Heart icon
     public static let messageSquareHeart: LucideShape = LucideShape(combined: LucideIcon_MessageSquareHeart.combinedPath, open: LucideIcon_MessageSquareHeart.openPath, closed: LucideIcon_MessageSquareHeart.closedPath)
@@ -20366,9 +20379,6 @@ public struct Lucide {
 
     /// Message Square Text icon
     public static let messageSquareText: LucideShape = LucideShape(combined: LucideIcon_MessageSquareText.combinedPath, open: LucideIcon_MessageSquareText.openPath, closed: LucideIcon_MessageSquareText.closedPath)
-
-    /// Message Square Warning icon
-    public static let messageSquareWarning: LucideShape = LucideShape(combined: LucideIcon_MessageSquareWarning.combinedPath, open: LucideIcon_MessageSquareWarning.openPath, closed: LucideIcon_MessageSquareWarning.closedPath)
 
     /// Message Square X icon
     public static let messageSquareX: LucideShape = LucideShape(combined: LucideIcon_MessageSquareX.combinedPath, open: LucideIcon_MessageSquareX.openPath, closed: LucideIcon_MessageSquareX.closedPath)
@@ -20640,8 +20650,8 @@ public struct Lucide {
     /// Octagon icon
     public static let octagon: LucideShape = LucideShape(combined: LucideIcon_Octagon.combinedPath, open: LucideIcon_Octagon.openPath, closed: LucideIcon_Octagon.closedPath)
 
-    /// Octagon Alert icon
-    public static let octagonAlert: LucideShape = LucideShape(combined: LucideIcon_OctagonAlert.combinedPath, open: LucideIcon_OctagonAlert.openPath, closed: LucideIcon_OctagonAlert.closedPath)
+    /// Octagon Exclamation Point icon
+    public static let octagonExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_OctagonExclamationPoint.combinedPath, open: LucideIcon_OctagonExclamationPoint.openPath, closed: LucideIcon_OctagonExclamationPoint.closedPath)
 
     /// Octagon Minus icon
     public static let octagonMinus: LucideShape = LucideShape(combined: LucideIcon_OctagonMinus.combinedPath, open: LucideIcon_OctagonMinus.openPath, closed: LucideIcon_OctagonMinus.closedPath)
@@ -21348,14 +21358,14 @@ public struct Lucide {
     /// Search icon
     public static let search: LucideShape = LucideShape(combined: LucideIcon_Search.combinedPath, open: LucideIcon_Search.openPath, closed: LucideIcon_Search.closedPath)
 
-    /// Search Alert icon
-    public static let searchAlert: LucideShape = LucideShape(combined: LucideIcon_SearchAlert.combinedPath, open: LucideIcon_SearchAlert.openPath, closed: LucideIcon_SearchAlert.closedPath)
-
     /// Search Check icon
     public static let searchCheck: LucideShape = LucideShape(combined: LucideIcon_SearchCheck.combinedPath, open: LucideIcon_SearchCheck.openPath, closed: LucideIcon_SearchCheck.closedPath)
 
     /// Search Code icon
     public static let searchCode: LucideShape = LucideShape(combined: LucideIcon_SearchCode.combinedPath, open: LucideIcon_SearchCode.openPath, closed: LucideIcon_SearchCode.closedPath)
+
+    /// Search Exclamation Point icon
+    public static let searchExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_SearchExclamationPoint.combinedPath, open: LucideIcon_SearchExclamationPoint.openPath, closed: LucideIcon_SearchExclamationPoint.closedPath)
 
     /// Search Slash icon
     public static let searchSlash: LucideShape = LucideShape(combined: LucideIcon_SearchSlash.combinedPath, open: LucideIcon_SearchSlash.openPath, closed: LucideIcon_SearchSlash.closedPath)
@@ -21426,9 +21436,6 @@ public struct Lucide {
     /// Shield icon
     public static let shield: LucideShape = LucideShape(combined: LucideIcon_Shield.combinedPath, open: LucideIcon_Shield.openPath, closed: LucideIcon_Shield.closedPath)
 
-    /// Shield Alert icon
-    public static let shieldAlert: LucideShape = LucideShape(combined: LucideIcon_ShieldAlert.combinedPath, open: LucideIcon_ShieldAlert.openPath, closed: LucideIcon_ShieldAlert.closedPath)
-
     /// Shield Ban icon
     public static let shieldBan: LucideShape = LucideShape(combined: LucideIcon_ShieldBan.combinedPath, open: LucideIcon_ShieldBan.openPath, closed: LucideIcon_ShieldBan.closedPath)
 
@@ -21443,6 +21450,9 @@ public struct Lucide {
 
     /// Shield Ellipsis icon
     public static let shieldEllipsis: LucideShape = LucideShape(combined: LucideIcon_ShieldEllipsis.combinedPath, open: LucideIcon_ShieldEllipsis.openPath, closed: LucideIcon_ShieldEllipsis.closedPath)
+
+    /// Shield Exclamation Point icon
+    public static let shieldExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_ShieldExclamationPoint.combinedPath, open: LucideIcon_ShieldExclamationPoint.openPath, closed: LucideIcon_ShieldExclamationPoint.closedPath)
 
     /// Shield Half icon
     public static let shieldHalf: LucideShape = LucideShape(combined: LucideIcon_ShieldHalf.combinedPath, open: LucideIcon_ShieldHalf.openPath, closed: LucideIcon_ShieldHalf.closedPath)
@@ -22431,11 +22441,11 @@ public struct Lucide {
     /// Triangle icon
     public static let triangle: LucideShape = LucideShape(combined: LucideIcon_Triangle.combinedPath, open: LucideIcon_Triangle.openPath, closed: LucideIcon_Triangle.closedPath)
 
-    /// Triangle Alert icon
-    public static let triangleAlert: LucideShape = LucideShape(combined: LucideIcon_TriangleAlert.combinedPath, open: LucideIcon_TriangleAlert.openPath, closed: LucideIcon_TriangleAlert.closedPath)
-
     /// Triangle Dashed icon
     public static let triangleDashed: LucideShape = LucideShape(combined: LucideIcon_TriangleDashed.combinedPath, open: LucideIcon_TriangleDashed.openPath, closed: LucideIcon_TriangleDashed.closedPath)
+
+    /// Triangle Exclamation Point icon
+    public static let triangleExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_TriangleExclamationPoint.combinedPath, open: LucideIcon_TriangleExclamationPoint.openPath, closed: LucideIcon_TriangleExclamationPoint.closedPath)
 
     /// Triangle Right icon
     public static let triangleRight: LucideShape = LucideShape(combined: LucideIcon_TriangleRight.combinedPath, open: LucideIcon_TriangleRight.openPath, closed: LucideIcon_TriangleRight.closedPath)
@@ -24022,10 +24032,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.25"
+    public static let libraryVersion = "0.9.26"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.67.0"
+    public static let lucideVersion = "1.68.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"

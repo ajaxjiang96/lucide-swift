@@ -1,17 +1,17 @@
 //
-//  Icon_octagon-alert.swift
+//  Icon_octagon-exclamation-point.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: octagon-alert
+//  Icon: octagon-exclamation-point
 //
 
 import SwiftUI
 
-/// Octagon Alert icon
-internal enum LucideIcon_OctagonAlert {
+/// Octagon Exclamation Point icon
+internal enum LucideIcon_OctagonExclamationPoint {
     
-/// Octagon Alert icon path (combined)
+/// Octagon Exclamation Point icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 16.0))
@@ -37,7 +37,7 @@ path.addCurve(to: CGPoint(x: 8.688, y: 2.0), control1: CGPoint(x: 7.648985462714
 path.closeSubpath()
     return path
 }()
-/// Octagon Alert icon open subpaths
+/// Octagon Exclamation Point icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 16.0))
@@ -46,7 +46,7 @@ path.move(to: CGPoint(x: 12.0, y: 8.0))
 path.addLine(to: CGPoint(x: 12.0, y: 12.0))
     return path
 }()
-/// Octagon Alert icon closed subpaths
+/// Octagon Exclamation Point icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.312, y: 2.0))

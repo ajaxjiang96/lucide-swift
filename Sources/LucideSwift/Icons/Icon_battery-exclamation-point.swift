@@ -1,17 +1,17 @@
 //
-//  Icon_battery-warning.swift
+//  Icon_battery-exclamation-point.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: battery-warning
+//  Icon: battery-exclamation-point
 //
 
 import SwiftUI
 
-/// Battery Warning icon
-internal enum LucideIcon_BatteryWarning {
+/// Battery Exclamation Point icon
+internal enum LucideIcon_BatteryExclamationPoint {
     
-/// Battery Warning icon path (combined)
+/// Battery Exclamation Point icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 17.0))
@@ -34,7 +34,7 @@ path.addCurve(to: CGPoint(x: 4.0, y: 6.0), control1: CGPoint(x: 2.0, y: 6.895430
 path.addLine(to: CGPoint(x: 6.0, y: 6.0))
     return path
 }()
-/// Battery Warning icon open subpaths
+/// Battery Exclamation Point icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 17.0))
@@ -57,7 +57,7 @@ path.addCurve(to: CGPoint(x: 4.0, y: 6.0), control1: CGPoint(x: 2.0, y: 6.895430
 path.addLine(to: CGPoint(x: 6.0, y: 6.0))
     return path
 }()
-/// Battery Warning icon closed subpaths
+/// Battery Exclamation Point icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
             return path

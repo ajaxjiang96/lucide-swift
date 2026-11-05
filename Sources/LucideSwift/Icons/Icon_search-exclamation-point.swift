@@ -1,17 +1,17 @@
 //
-//  Icon_search-alert.swift
+//  Icon_search-exclamation-point.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: search-alert
+//  Icon: search-exclamation-point
 //
 
 import SwiftUI
 
-/// Search Alert icon
-internal enum LucideIcon_SearchAlert {
+/// Search Exclamation Point icon
+internal enum LucideIcon_SearchExclamationPoint {
     
-/// Search Alert icon path (combined)
+/// Search Exclamation Point icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 21.0, y: 21.0))
@@ -27,7 +27,7 @@ path.addCurve(to: CGPoint(x: 11.0, y: 3.0), control1: CGPoint(x: 19.0, y: 6.5817
 path.addCurve(to: CGPoint(x: 3.0, y: 10.999999999999998), control1: CGPoint(x: 6.581722001353653, y: 3.0), control2: CGPoint(x: 3.000000000000001, y: 6.5817220013536515))
     return path
 }()
-/// Search Alert icon open subpaths
+/// Search Exclamation Point icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 21.0, y: 21.0))
@@ -38,7 +38,7 @@ path.move(to: CGPoint(x: 11.0, y: 15.0))
 path.addLine(to: CGPoint(x: 11.01, y: 15.0))
     return path
 }()
-/// Search Alert icon closed subpaths
+/// Search Exclamation Point icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 3.0, y: 11.0))

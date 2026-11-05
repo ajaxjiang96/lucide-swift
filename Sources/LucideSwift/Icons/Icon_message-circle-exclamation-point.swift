@@ -1,17 +1,17 @@
 //
-//  Icon_message-circle-warning.swift
+//  Icon_message-circle-exclamation-point.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: message-circle-warning
+//  Icon: message-circle-exclamation-point
 //
 
 import SwiftUI
 
-/// Message Circle Warning icon
-internal enum LucideIcon_MessageCircleWarning {
+/// Message Circle Exclamation Point icon
+internal enum LucideIcon_MessageCircleExclamationPoint {
     
-/// Message Circle Warning icon path (combined)
+/// Message Circle Exclamation Point icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 2.992, y: 16.342))
@@ -31,7 +31,7 @@ path.move(to: CGPoint(x: 12.0, y: 16.0))
 path.addLine(to: CGPoint(x: 12.01, y: 16.0))
     return path
 }()
-/// Message Circle Warning icon open subpaths
+/// Message Circle Exclamation Point icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 8.0))
@@ -40,7 +40,7 @@ path.move(to: CGPoint(x: 12.0, y: 16.0))
 path.addLine(to: CGPoint(x: 12.01, y: 16.0))
     return path
 }()
-/// Message Circle Warning icon closed subpaths
+/// Message Circle Exclamation Point icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 2.992, y: 16.342))

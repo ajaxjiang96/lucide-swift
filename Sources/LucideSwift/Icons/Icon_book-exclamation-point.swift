@@ -1,17 +1,17 @@
 //
-//  Icon_book-alert.swift
+//  Icon_book-exclamation-point.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: book-alert
+//  Icon: book-exclamation-point
 //
 
 import SwiftUI
 
-/// Book Alert icon
-internal enum LucideIcon_BookAlert {
+/// Book Exclamation Point icon
+internal enum LucideIcon_BookExclamationPoint {
     
-/// Book Alert icon path (combined)
+/// Book Exclamation Point icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 13.0))
@@ -31,7 +31,7 @@ path.addCurve(to: CGPoint(x: 6.499999999999999, y: 17.0), control1: CGPoint(x: 4
 path.addLine(to: CGPoint(x: 20.0, y: 17.0))
     return path
 }()
-/// Book Alert icon open subpaths
+/// Book Exclamation Point icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 13.0))
@@ -51,7 +51,7 @@ path.addCurve(to: CGPoint(x: 6.499999999999999, y: 17.0), control1: CGPoint(x: 4
 path.addLine(to: CGPoint(x: 20.0, y: 17.0))
     return path
 }()
-/// Book Alert icon closed subpaths
+/// Book Exclamation Point icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
             return path

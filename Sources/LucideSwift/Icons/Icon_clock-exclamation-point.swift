@@ -1,17 +1,17 @@
 //
-//  Icon_clock-alert.swift
+//  Icon_clock-exclamation-point.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: clock-alert
+//  Icon: clock-exclamation-point
 //
 
 import SwiftUI
 
-/// Clock Alert icon
-internal enum LucideIcon_ClockAlert {
+/// Clock Exclamation Point icon
+internal enum LucideIcon_ClockExclamationPoint {
     
-/// Clock Alert icon path (combined)
+/// Clock Exclamation Point icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 6.0))
@@ -28,7 +28,7 @@ path.addCurve(to: CGPoint(x: 5.022677823219799, y: 19.160803043668658), control1
 path.addCurve(to: CGPoint(x: 16.000000000000004, y: 21.159999999999997), control1: CGPoint(x: 7.935339316639897, y: 21.996401026681212), control2: CGPoint(x: 12.274665241460372, y: 22.786681847606822))
     return path
 }()
-/// Clock Alert icon open subpaths
+/// Clock Exclamation Point icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 6.0))
@@ -45,7 +45,7 @@ path.addCurve(to: CGPoint(x: 5.022677823219799, y: 19.160803043668658), control1
 path.addCurve(to: CGPoint(x: 16.000000000000004, y: 21.159999999999997), control1: CGPoint(x: 7.935339316639897, y: 21.996401026681212), control2: CGPoint(x: 12.274665241460372, y: 22.786681847606822))
     return path
 }()
-/// Clock Alert icon closed subpaths
+/// Clock Exclamation Point icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
             return path

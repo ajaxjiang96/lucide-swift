@@ -1,17 +1,17 @@
 //
-//  Icon_cloud-alert.swift
+//  Icon_cloud-exclamation-point.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: cloud-alert
+//  Icon: cloud-exclamation-point
 //
 
 import SwiftUI
 
-/// Cloud Alert icon
-internal enum LucideIcon_CloudAlert {
+/// Cloud Exclamation Point icon
+internal enum LucideIcon_CloudExclamationPoint {
     
-/// Cloud Alert icon path (combined)
+/// Cloud Exclamation Point icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 12.0))
@@ -28,7 +28,7 @@ path.addCurve(to: CGPoint(x: 17.5, y: 17.0), control1: CGPoint(x: 22.0, y: 14.98
 path.addLine(to: CGPoint(x: 15.858, y: 17.0))
     return path
 }()
-/// Cloud Alert icon open subpaths
+/// Cloud Exclamation Point icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 12.0, y: 12.0))
@@ -45,7 +45,7 @@ path.addCurve(to: CGPoint(x: 17.5, y: 17.0), control1: CGPoint(x: 22.0, y: 14.98
 path.addLine(to: CGPoint(x: 15.858, y: 17.0))
     return path
 }()
-/// Cloud Alert icon closed subpaths
+/// Cloud Exclamation Point icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
             return path
