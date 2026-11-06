@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.26
-//  Lucide Icons Version: 1.68.0
+//  Library Version: 0.9.27
+//  Lucide Icons Version: 1.69.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -428,6 +428,7 @@ public enum LucideIconName: String, CaseIterable {
     case circleEuro
     case circleExclamationPoint
     case circleFadingArrowUp
+    case circleFadingCheck
     case circleFadingPlay
     case circleFadingPlus
     case circleGauge
@@ -1290,6 +1291,7 @@ public enum LucideIconName: String, CaseIterable {
     case octagonPause
     case octagonX
     case omega
+    case opacity
     case option
     case orbit
     case origami
@@ -1298,7 +1300,9 @@ public enum LucideIconName: String, CaseIterable {
     case packageCheck
     case packageMinus
     case packageOpen
+    case packagePen
     case packagePlus
+    case packageQuestionMark
     case packageSearch
     case packageX
     case paintBucket
@@ -2867,6 +2871,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleExclamationPoint.combinedPath
         case .circleFadingArrowUp:
             return LucideIcon_CircleFadingArrowUp.combinedPath
+        case .circleFadingCheck:
+            return LucideIcon_CircleFadingCheck.combinedPath
         case .circleFadingPlay:
             return LucideIcon_CircleFadingPlay.combinedPath
         case .circleFadingPlus:
@@ -4591,6 +4597,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_OctagonX.combinedPath
         case .omega:
             return LucideIcon_Omega.combinedPath
+        case .opacity:
+            return LucideIcon_Opacity.combinedPath
         case .option:
             return LucideIcon_Option.combinedPath
         case .orbit:
@@ -4607,8 +4615,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PackageMinus.combinedPath
         case .packageOpen:
             return LucideIcon_PackageOpen.combinedPath
+        case .packagePen:
+            return LucideIcon_PackagePen.combinedPath
         case .packagePlus:
             return LucideIcon_PackagePlus.combinedPath
+        case .packageQuestionMark:
+            return LucideIcon_PackageQuestionMark.combinedPath
         case .packageSearch:
             return LucideIcon_PackageSearch.combinedPath
         case .packageX:
@@ -6915,6 +6927,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleExclamationPoint.openPath
         case .circleFadingArrowUp:
             return LucideIcon_CircleFadingArrowUp.openPath
+        case .circleFadingCheck:
+            return LucideIcon_CircleFadingCheck.openPath
         case .circleFadingPlay:
             return LucideIcon_CircleFadingPlay.openPath
         case .circleFadingPlus:
@@ -8639,6 +8653,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_OctagonX.openPath
         case .omega:
             return LucideIcon_Omega.openPath
+        case .opacity:
+            return LucideIcon_Opacity.openPath
         case .option:
             return LucideIcon_Option.openPath
         case .orbit:
@@ -8655,8 +8671,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PackageMinus.openPath
         case .packageOpen:
             return LucideIcon_PackageOpen.openPath
+        case .packagePen:
+            return LucideIcon_PackagePen.openPath
         case .packagePlus:
             return LucideIcon_PackagePlus.openPath
+        case .packageQuestionMark:
+            return LucideIcon_PackageQuestionMark.openPath
         case .packageSearch:
             return LucideIcon_PackageSearch.openPath
         case .packageX:
@@ -10963,6 +10983,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleExclamationPoint.closedPath
         case .circleFadingArrowUp:
             return LucideIcon_CircleFadingArrowUp.closedPath
+        case .circleFadingCheck:
+            return LucideIcon_CircleFadingCheck.closedPath
         case .circleFadingPlay:
             return LucideIcon_CircleFadingPlay.closedPath
         case .circleFadingPlus:
@@ -12687,6 +12709,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_OctagonX.closedPath
         case .omega:
             return LucideIcon_Omega.closedPath
+        case .opacity:
+            return LucideIcon_Opacity.closedPath
         case .option:
             return LucideIcon_Option.closedPath
         case .orbit:
@@ -12703,8 +12727,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PackageMinus.closedPath
         case .packageOpen:
             return LucideIcon_PackageOpen.closedPath
+        case .packagePen:
+            return LucideIcon_PackagePen.closedPath
         case .packagePlus:
             return LucideIcon_PackagePlus.closedPath
+        case .packageQuestionMark:
+            return LucideIcon_PackageQuestionMark.closedPath
         case .packageSearch:
             return LucideIcon_PackageSearch.closedPath
         case .packageX:
@@ -18079,6 +18107,9 @@ public struct Lucide {
     /// Circle Fading Arrow Up icon
     public static let circleFadingArrowUp: LucideShape = LucideShape(combined: LucideIcon_CircleFadingArrowUp.combinedPath, open: LucideIcon_CircleFadingArrowUp.openPath, closed: LucideIcon_CircleFadingArrowUp.closedPath)
 
+    /// Circle Fading Check icon
+    public static let circleFadingCheck: LucideShape = LucideShape(combined: LucideIcon_CircleFadingCheck.combinedPath, open: LucideIcon_CircleFadingCheck.openPath, closed: LucideIcon_CircleFadingCheck.closedPath)
+
     /// Circle Fading Play icon
     public static let circleFadingPlay: LucideShape = LucideShape(combined: LucideIcon_CircleFadingPlay.combinedPath, open: LucideIcon_CircleFadingPlay.openPath, closed: LucideIcon_CircleFadingPlay.closedPath)
 
@@ -20665,6 +20696,9 @@ public struct Lucide {
     /// Omega icon
     public static let omega: LucideShape = LucideShape(combined: LucideIcon_Omega.combinedPath, open: LucideIcon_Omega.openPath, closed: LucideIcon_Omega.closedPath)
 
+    /// Opacity icon
+    public static let opacity: LucideShape = LucideShape(combined: LucideIcon_Opacity.combinedPath, open: LucideIcon_Opacity.openPath, closed: LucideIcon_Opacity.closedPath)
+
     /// Option icon
     public static let option: LucideShape = LucideShape(combined: LucideIcon_Option.combinedPath, open: LucideIcon_Option.openPath, closed: LucideIcon_Option.closedPath)
 
@@ -20689,8 +20723,14 @@ public struct Lucide {
     /// Package Open icon
     public static let packageOpen: LucideShape = LucideShape(combined: LucideIcon_PackageOpen.combinedPath, open: LucideIcon_PackageOpen.openPath, closed: LucideIcon_PackageOpen.closedPath)
 
+    /// Package Pen icon
+    public static let packagePen: LucideShape = LucideShape(combined: LucideIcon_PackagePen.combinedPath, open: LucideIcon_PackagePen.openPath, closed: LucideIcon_PackagePen.closedPath)
+
     /// Package Plus icon
     public static let packagePlus: LucideShape = LucideShape(combined: LucideIcon_PackagePlus.combinedPath, open: LucideIcon_PackagePlus.openPath, closed: LucideIcon_PackagePlus.closedPath)
+
+    /// Package Question Mark icon
+    public static let packageQuestionMark: LucideShape = LucideShape(combined: LucideIcon_PackageQuestionMark.combinedPath, open: LucideIcon_PackageQuestionMark.openPath, closed: LucideIcon_PackageQuestionMark.closedPath)
 
     /// Package Search icon
     public static let packageSearch: LucideShape = LucideShape(combined: LucideIcon_PackageSearch.combinedPath, open: LucideIcon_PackageSearch.openPath, closed: LucideIcon_PackageSearch.closedPath)
@@ -24032,10 +24072,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.26"
+    public static let libraryVersion = "0.9.27"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.68.0"
+    public static let lucideVersion = "1.69.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
