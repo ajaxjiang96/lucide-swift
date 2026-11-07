@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.27
-//  Lucide Icons Version: 1.69.0
+//  Library Version: 0.9.28
+//  Lucide Icons Version: 1.70.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -887,6 +887,7 @@ public enum LucideIconName: String, CaseIterable {
     case grid2X2X
     case grid3X2
     case grid3X3
+    case grid3X3Off
     case grip
     case gripHorizontal
     case gripVertical
@@ -1237,6 +1238,7 @@ public enum LucideIconName: String, CaseIterable {
     case moonStar
     case mop
     case mopSparkles
+    case moped
     case mosque
     case motorbike
     case mountain
@@ -1668,6 +1670,7 @@ public enum LucideIconName: String, CaseIterable {
     case squareDashedKanban
     case squareDashedMousePointer
     case squareDashedPlus
+    case squareDashedSearch
     case squareDashedText
     case squareDashedTopSolid
     case squareDashedX
@@ -1922,6 +1925,7 @@ public enum LucideIconName: String, CaseIterable {
     case user
     case userCheck
     case userCog
+    case userExclamationPoint
     case userGroup
     case userKey
     case userLock
@@ -1932,6 +1936,7 @@ public enum LucideIconName: String, CaseIterable {
     case userRoundArrowLeft
     case userRoundCheck
     case userRoundCog
+    case userRoundExclamationPoint
     case userRoundGroup
     case userRoundKey
     case userRoundMinus
@@ -3789,6 +3794,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Grid3X2.combinedPath
         case .grid3X3:
             return LucideIcon_Grid3X3.combinedPath
+        case .grid3X3Off:
+            return LucideIcon_Grid3X3Off.combinedPath
         case .grip:
             return LucideIcon_Grip.combinedPath
         case .gripHorizontal:
@@ -4489,6 +4496,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Mop.combinedPath
         case .mopSparkles:
             return LucideIcon_MopSparkles.combinedPath
+        case .moped:
+            return LucideIcon_Moped.combinedPath
         case .mosque:
             return LucideIcon_Mosque.combinedPath
         case .motorbike:
@@ -5351,6 +5360,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareDashedMousePointer.combinedPath
         case .squareDashedPlus:
             return LucideIcon_SquareDashedPlus.combinedPath
+        case .squareDashedSearch:
+            return LucideIcon_SquareDashedSearch.combinedPath
         case .squareDashedText:
             return LucideIcon_SquareDashedText.combinedPath
         case .squareDashedTopSolid:
@@ -5859,6 +5870,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserCheck.combinedPath
         case .userCog:
             return LucideIcon_UserCog.combinedPath
+        case .userExclamationPoint:
+            return LucideIcon_UserExclamationPoint.combinedPath
         case .userGroup:
             return LucideIcon_UserGroup.combinedPath
         case .userKey:
@@ -5879,6 +5892,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundCheck.combinedPath
         case .userRoundCog:
             return LucideIcon_UserRoundCog.combinedPath
+        case .userRoundExclamationPoint:
+            return LucideIcon_UserRoundExclamationPoint.combinedPath
         case .userRoundGroup:
             return LucideIcon_UserRoundGroup.combinedPath
         case .userRoundKey:
@@ -7845,6 +7860,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Grid3X2.openPath
         case .grid3X3:
             return LucideIcon_Grid3X3.openPath
+        case .grid3X3Off:
+            return LucideIcon_Grid3X3Off.openPath
         case .grip:
             return LucideIcon_Grip.openPath
         case .gripHorizontal:
@@ -8545,6 +8562,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Mop.openPath
         case .mopSparkles:
             return LucideIcon_MopSparkles.openPath
+        case .moped:
+            return LucideIcon_Moped.openPath
         case .mosque:
             return LucideIcon_Mosque.openPath
         case .motorbike:
@@ -9407,6 +9426,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareDashedMousePointer.openPath
         case .squareDashedPlus:
             return LucideIcon_SquareDashedPlus.openPath
+        case .squareDashedSearch:
+            return LucideIcon_SquareDashedSearch.openPath
         case .squareDashedText:
             return LucideIcon_SquareDashedText.openPath
         case .squareDashedTopSolid:
@@ -9915,6 +9936,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserCheck.openPath
         case .userCog:
             return LucideIcon_UserCog.openPath
+        case .userExclamationPoint:
+            return LucideIcon_UserExclamationPoint.openPath
         case .userGroup:
             return LucideIcon_UserGroup.openPath
         case .userKey:
@@ -9935,6 +9958,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundCheck.openPath
         case .userRoundCog:
             return LucideIcon_UserRoundCog.openPath
+        case .userRoundExclamationPoint:
+            return LucideIcon_UserRoundExclamationPoint.openPath
         case .userRoundGroup:
             return LucideIcon_UserRoundGroup.openPath
         case .userRoundKey:
@@ -11901,6 +11926,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Grid3X2.closedPath
         case .grid3X3:
             return LucideIcon_Grid3X3.closedPath
+        case .grid3X3Off:
+            return LucideIcon_Grid3X3Off.closedPath
         case .grip:
             return LucideIcon_Grip.closedPath
         case .gripHorizontal:
@@ -12601,6 +12628,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Mop.closedPath
         case .mopSparkles:
             return LucideIcon_MopSparkles.closedPath
+        case .moped:
+            return LucideIcon_Moped.closedPath
         case .mosque:
             return LucideIcon_Mosque.closedPath
         case .motorbike:
@@ -13463,6 +13492,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareDashedMousePointer.closedPath
         case .squareDashedPlus:
             return LucideIcon_SquareDashedPlus.closedPath
+        case .squareDashedSearch:
+            return LucideIcon_SquareDashedSearch.closedPath
         case .squareDashedText:
             return LucideIcon_SquareDashedText.closedPath
         case .squareDashedTopSolid:
@@ -13971,6 +14002,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserCheck.closedPath
         case .userCog:
             return LucideIcon_UserCog.closedPath
+        case .userExclamationPoint:
+            return LucideIcon_UserExclamationPoint.closedPath
         case .userGroup:
             return LucideIcon_UserGroup.closedPath
         case .userKey:
@@ -13991,6 +14024,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundCheck.closedPath
         case .userRoundCog:
             return LucideIcon_UserRoundCog.closedPath
+        case .userRoundExclamationPoint:
+            return LucideIcon_UserRoundExclamationPoint.closedPath
         case .userRoundGroup:
             return LucideIcon_UserRoundGroup.closedPath
         case .userRoundKey:
@@ -19484,6 +19519,9 @@ public struct Lucide {
     /// Grid 3X3 icon
     public static let grid3X3: LucideShape = LucideShape(combined: LucideIcon_Grid3X3.combinedPath, open: LucideIcon_Grid3X3.openPath, closed: LucideIcon_Grid3X3.closedPath)
 
+    /// Grid 3X3 Off icon
+    public static let grid3X3Off: LucideShape = LucideShape(combined: LucideIcon_Grid3X3Off.combinedPath, open: LucideIcon_Grid3X3Off.openPath, closed: LucideIcon_Grid3X3Off.closedPath)
+
     /// Grip icon
     public static let grip: LucideShape = LucideShape(combined: LucideIcon_Grip.combinedPath, open: LucideIcon_Grip.openPath, closed: LucideIcon_Grip.closedPath)
 
@@ -20533,6 +20571,9 @@ public struct Lucide {
 
     /// Mop Sparkles icon
     public static let mopSparkles: LucideShape = LucideShape(combined: LucideIcon_MopSparkles.combinedPath, open: LucideIcon_MopSparkles.openPath, closed: LucideIcon_MopSparkles.closedPath)
+
+    /// Moped icon
+    public static let moped: LucideShape = LucideShape(combined: LucideIcon_Moped.combinedPath, open: LucideIcon_Moped.openPath, closed: LucideIcon_Moped.closedPath)
 
     /// Mosque icon
     public static let mosque: LucideShape = LucideShape(combined: LucideIcon_Mosque.combinedPath, open: LucideIcon_Mosque.openPath, closed: LucideIcon_Mosque.closedPath)
@@ -21827,6 +21868,9 @@ public struct Lucide {
     /// Square Dashed Plus icon
     public static let squareDashedPlus: LucideShape = LucideShape(combined: LucideIcon_SquareDashedPlus.combinedPath, open: LucideIcon_SquareDashedPlus.openPath, closed: LucideIcon_SquareDashedPlus.closedPath)
 
+    /// Square Dashed Search icon
+    public static let squareDashedSearch: LucideShape = LucideShape(combined: LucideIcon_SquareDashedSearch.combinedPath, open: LucideIcon_SquareDashedSearch.openPath, closed: LucideIcon_SquareDashedSearch.closedPath)
+
     /// Square Dashed Text icon
     public static let squareDashedText: LucideShape = LucideShape(combined: LucideIcon_SquareDashedText.combinedPath, open: LucideIcon_SquareDashedText.openPath, closed: LucideIcon_SquareDashedText.closedPath)
 
@@ -22589,6 +22633,9 @@ public struct Lucide {
     /// User Cog icon
     public static let userCog: LucideShape = LucideShape(combined: LucideIcon_UserCog.combinedPath, open: LucideIcon_UserCog.openPath, closed: LucideIcon_UserCog.closedPath)
 
+    /// User Exclamation Point icon
+    public static let userExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_UserExclamationPoint.combinedPath, open: LucideIcon_UserExclamationPoint.openPath, closed: LucideIcon_UserExclamationPoint.closedPath)
+
     /// User Group icon
     public static let userGroup: LucideShape = LucideShape(combined: LucideIcon_UserGroup.combinedPath, open: LucideIcon_UserGroup.openPath, closed: LucideIcon_UserGroup.closedPath)
 
@@ -22618,6 +22665,9 @@ public struct Lucide {
 
     /// User Round Cog icon
     public static let userRoundCog: LucideShape = LucideShape(combined: LucideIcon_UserRoundCog.combinedPath, open: LucideIcon_UserRoundCog.openPath, closed: LucideIcon_UserRoundCog.closedPath)
+
+    /// User Round Exclamation Point icon
+    public static let userRoundExclamationPoint: LucideShape = LucideShape(combined: LucideIcon_UserRoundExclamationPoint.combinedPath, open: LucideIcon_UserRoundExclamationPoint.openPath, closed: LucideIcon_UserRoundExclamationPoint.closedPath)
 
     /// User Round Group icon
     public static let userRoundGroup: LucideShape = LucideShape(combined: LucideIcon_UserRoundGroup.combinedPath, open: LucideIcon_UserRoundGroup.openPath, closed: LucideIcon_UserRoundGroup.closedPath)
@@ -24072,10 +24122,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.27"
+    public static let libraryVersion = "0.9.28"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.69.0"
+    public static let lucideVersion = "1.70.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
