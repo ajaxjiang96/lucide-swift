@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.28
-//  Lucide Icons Version: 1.70.0
+//  Library Version: 0.9.29
+//  Lucide Icons Version: 1.71.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -372,6 +372,7 @@ public enum LucideIconName: String, CaseIterable {
     case check
     case checkCheck
     case checkLine
+    case cheese
     case chefHat
     case cherry
     case chessBishop
@@ -400,13 +401,13 @@ public enum LucideIconName: String, CaseIterable {
     case cigaretteOff
     case circle
     case circleArrowDown
+    case circleArrowDownLeftExit
+    case circleArrowDownRightExit
     case circleArrowLeft
-    case circleArrowOutDownLeft
-    case circleArrowOutDownRight
-    case circleArrowOutUpLeft
-    case circleArrowOutUpRight
     case circleArrowRight
     case circleArrowUp
+    case circleArrowUpLeftExit
+    case circleArrowUpRightExit
     case circleCheck
     case circleCheckBig
     case circleChevronDown
@@ -1634,19 +1635,29 @@ public enum LucideIconName: String, CaseIterable {
     case square
     case squareActivity
     case squareArrowDown
+    case squareArrowDownEnter
+    case squareArrowDownExit
     case squareArrowDownLeft
+    case squareArrowDownLeftEnter
+    case squareArrowDownLeftExit
     case squareArrowDownRight
+    case squareArrowDownRightEnter
+    case squareArrowDownRightExit
     case squareArrowLeft
-    case squareArrowOutDownLeft
-    case squareArrowOutDownRight
-    case squareArrowOutUpLeft
-    case squareArrowOutUpRight
+    case squareArrowLeftEnter
+    case squareArrowLeftExit
     case squareArrowRight
     case squareArrowRightEnter
     case squareArrowRightExit
     case squareArrowUp
+    case squareArrowUpEnter
+    case squareArrowUpExit
     case squareArrowUpLeft
+    case squareArrowUpLeftEnter
+    case squareArrowUpLeftExit
     case squareArrowUpRight
+    case squareArrowUpRightEnter
+    case squareArrowUpRightExit
     case squareAsterisk
     case squareBookmark
     case squareBottomDashedScissors
@@ -1778,6 +1789,12 @@ public enum LucideIconName: String, CaseIterable {
     case stretchHorizontal
     case stretchVertical
     case strikethrough
+    case strokeLineCapButt
+    case strokeLineCapRound
+    case strokeLineCapSquare
+    case strokeLineJoinBevel
+    case strokeLineJoinMiter
+    case strokeLineJoinRound
     case subscriptIcon
     case summary
     case sun
@@ -2764,6 +2781,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CheckCheck.combinedPath
         case .checkLine:
             return LucideIcon_CheckLine.combinedPath
+        case .cheese:
+            return LucideIcon_Cheese.combinedPath
         case .chefHat:
             return LucideIcon_ChefHat.combinedPath
         case .cherry:
@@ -2820,20 +2839,20 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Circle.combinedPath
         case .circleArrowDown:
             return LucideIcon_CircleArrowDown.combinedPath
+        case .circleArrowDownLeftExit:
+            return LucideIcon_CircleArrowDownLeftExit.combinedPath
+        case .circleArrowDownRightExit:
+            return LucideIcon_CircleArrowDownRightExit.combinedPath
         case .circleArrowLeft:
             return LucideIcon_CircleArrowLeft.combinedPath
-        case .circleArrowOutDownLeft:
-            return LucideIcon_CircleArrowOutDownLeft.combinedPath
-        case .circleArrowOutDownRight:
-            return LucideIcon_CircleArrowOutDownRight.combinedPath
-        case .circleArrowOutUpLeft:
-            return LucideIcon_CircleArrowOutUpLeft.combinedPath
-        case .circleArrowOutUpRight:
-            return LucideIcon_CircleArrowOutUpRight.combinedPath
         case .circleArrowRight:
             return LucideIcon_CircleArrowRight.combinedPath
         case .circleArrowUp:
             return LucideIcon_CircleArrowUp.combinedPath
+        case .circleArrowUpLeftExit:
+            return LucideIcon_CircleArrowUpLeftExit.combinedPath
+        case .circleArrowUpRightExit:
+            return LucideIcon_CircleArrowUpRightExit.combinedPath
         case .circleCheck:
             return LucideIcon_CircleCheck.combinedPath
         case .circleCheckBig:
@@ -5288,20 +5307,28 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareActivity.combinedPath
         case .squareArrowDown:
             return LucideIcon_SquareArrowDown.combinedPath
+        case .squareArrowDownEnter:
+            return LucideIcon_SquareArrowDownEnter.combinedPath
+        case .squareArrowDownExit:
+            return LucideIcon_SquareArrowDownExit.combinedPath
         case .squareArrowDownLeft:
             return LucideIcon_SquareArrowDownLeft.combinedPath
+        case .squareArrowDownLeftEnter:
+            return LucideIcon_SquareArrowDownLeftEnter.combinedPath
+        case .squareArrowDownLeftExit:
+            return LucideIcon_SquareArrowDownLeftExit.combinedPath
         case .squareArrowDownRight:
             return LucideIcon_SquareArrowDownRight.combinedPath
+        case .squareArrowDownRightEnter:
+            return LucideIcon_SquareArrowDownRightEnter.combinedPath
+        case .squareArrowDownRightExit:
+            return LucideIcon_SquareArrowDownRightExit.combinedPath
         case .squareArrowLeft:
             return LucideIcon_SquareArrowLeft.combinedPath
-        case .squareArrowOutDownLeft:
-            return LucideIcon_SquareArrowOutDownLeft.combinedPath
-        case .squareArrowOutDownRight:
-            return LucideIcon_SquareArrowOutDownRight.combinedPath
-        case .squareArrowOutUpLeft:
-            return LucideIcon_SquareArrowOutUpLeft.combinedPath
-        case .squareArrowOutUpRight:
-            return LucideIcon_SquareArrowOutUpRight.combinedPath
+        case .squareArrowLeftEnter:
+            return LucideIcon_SquareArrowLeftEnter.combinedPath
+        case .squareArrowLeftExit:
+            return LucideIcon_SquareArrowLeftExit.combinedPath
         case .squareArrowRight:
             return LucideIcon_SquareArrowRight.combinedPath
         case .squareArrowRightEnter:
@@ -5310,10 +5337,22 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareArrowRightExit.combinedPath
         case .squareArrowUp:
             return LucideIcon_SquareArrowUp.combinedPath
+        case .squareArrowUpEnter:
+            return LucideIcon_SquareArrowUpEnter.combinedPath
+        case .squareArrowUpExit:
+            return LucideIcon_SquareArrowUpExit.combinedPath
         case .squareArrowUpLeft:
             return LucideIcon_SquareArrowUpLeft.combinedPath
+        case .squareArrowUpLeftEnter:
+            return LucideIcon_SquareArrowUpLeftEnter.combinedPath
+        case .squareArrowUpLeftExit:
+            return LucideIcon_SquareArrowUpLeftExit.combinedPath
         case .squareArrowUpRight:
             return LucideIcon_SquareArrowUpRight.combinedPath
+        case .squareArrowUpRightEnter:
+            return LucideIcon_SquareArrowUpRightEnter.combinedPath
+        case .squareArrowUpRightExit:
+            return LucideIcon_SquareArrowUpRightExit.combinedPath
         case .squareAsterisk:
             return LucideIcon_SquareAsterisk.combinedPath
         case .squareBookmark:
@@ -5576,6 +5615,18 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_StretchVertical.combinedPath
         case .strikethrough:
             return LucideIcon_Strikethrough.combinedPath
+        case .strokeLineCapButt:
+            return LucideIcon_StrokeLineCapButt.combinedPath
+        case .strokeLineCapRound:
+            return LucideIcon_StrokeLineCapRound.combinedPath
+        case .strokeLineCapSquare:
+            return LucideIcon_StrokeLineCapSquare.combinedPath
+        case .strokeLineJoinBevel:
+            return LucideIcon_StrokeLineJoinBevel.combinedPath
+        case .strokeLineJoinMiter:
+            return LucideIcon_StrokeLineJoinMiter.combinedPath
+        case .strokeLineJoinRound:
+            return LucideIcon_StrokeLineJoinRound.combinedPath
         case .subscriptIcon:
             return LucideIcon_Subscript.combinedPath
         case .summary:
@@ -6830,6 +6881,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CheckCheck.openPath
         case .checkLine:
             return LucideIcon_CheckLine.openPath
+        case .cheese:
+            return LucideIcon_Cheese.openPath
         case .chefHat:
             return LucideIcon_ChefHat.openPath
         case .cherry:
@@ -6886,20 +6939,20 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Circle.openPath
         case .circleArrowDown:
             return LucideIcon_CircleArrowDown.openPath
+        case .circleArrowDownLeftExit:
+            return LucideIcon_CircleArrowDownLeftExit.openPath
+        case .circleArrowDownRightExit:
+            return LucideIcon_CircleArrowDownRightExit.openPath
         case .circleArrowLeft:
             return LucideIcon_CircleArrowLeft.openPath
-        case .circleArrowOutDownLeft:
-            return LucideIcon_CircleArrowOutDownLeft.openPath
-        case .circleArrowOutDownRight:
-            return LucideIcon_CircleArrowOutDownRight.openPath
-        case .circleArrowOutUpLeft:
-            return LucideIcon_CircleArrowOutUpLeft.openPath
-        case .circleArrowOutUpRight:
-            return LucideIcon_CircleArrowOutUpRight.openPath
         case .circleArrowRight:
             return LucideIcon_CircleArrowRight.openPath
         case .circleArrowUp:
             return LucideIcon_CircleArrowUp.openPath
+        case .circleArrowUpLeftExit:
+            return LucideIcon_CircleArrowUpLeftExit.openPath
+        case .circleArrowUpRightExit:
+            return LucideIcon_CircleArrowUpRightExit.openPath
         case .circleCheck:
             return LucideIcon_CircleCheck.openPath
         case .circleCheckBig:
@@ -9354,20 +9407,28 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareActivity.openPath
         case .squareArrowDown:
             return LucideIcon_SquareArrowDown.openPath
+        case .squareArrowDownEnter:
+            return LucideIcon_SquareArrowDownEnter.openPath
+        case .squareArrowDownExit:
+            return LucideIcon_SquareArrowDownExit.openPath
         case .squareArrowDownLeft:
             return LucideIcon_SquareArrowDownLeft.openPath
+        case .squareArrowDownLeftEnter:
+            return LucideIcon_SquareArrowDownLeftEnter.openPath
+        case .squareArrowDownLeftExit:
+            return LucideIcon_SquareArrowDownLeftExit.openPath
         case .squareArrowDownRight:
             return LucideIcon_SquareArrowDownRight.openPath
+        case .squareArrowDownRightEnter:
+            return LucideIcon_SquareArrowDownRightEnter.openPath
+        case .squareArrowDownRightExit:
+            return LucideIcon_SquareArrowDownRightExit.openPath
         case .squareArrowLeft:
             return LucideIcon_SquareArrowLeft.openPath
-        case .squareArrowOutDownLeft:
-            return LucideIcon_SquareArrowOutDownLeft.openPath
-        case .squareArrowOutDownRight:
-            return LucideIcon_SquareArrowOutDownRight.openPath
-        case .squareArrowOutUpLeft:
-            return LucideIcon_SquareArrowOutUpLeft.openPath
-        case .squareArrowOutUpRight:
-            return LucideIcon_SquareArrowOutUpRight.openPath
+        case .squareArrowLeftEnter:
+            return LucideIcon_SquareArrowLeftEnter.openPath
+        case .squareArrowLeftExit:
+            return LucideIcon_SquareArrowLeftExit.openPath
         case .squareArrowRight:
             return LucideIcon_SquareArrowRight.openPath
         case .squareArrowRightEnter:
@@ -9376,10 +9437,22 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareArrowRightExit.openPath
         case .squareArrowUp:
             return LucideIcon_SquareArrowUp.openPath
+        case .squareArrowUpEnter:
+            return LucideIcon_SquareArrowUpEnter.openPath
+        case .squareArrowUpExit:
+            return LucideIcon_SquareArrowUpExit.openPath
         case .squareArrowUpLeft:
             return LucideIcon_SquareArrowUpLeft.openPath
+        case .squareArrowUpLeftEnter:
+            return LucideIcon_SquareArrowUpLeftEnter.openPath
+        case .squareArrowUpLeftExit:
+            return LucideIcon_SquareArrowUpLeftExit.openPath
         case .squareArrowUpRight:
             return LucideIcon_SquareArrowUpRight.openPath
+        case .squareArrowUpRightEnter:
+            return LucideIcon_SquareArrowUpRightEnter.openPath
+        case .squareArrowUpRightExit:
+            return LucideIcon_SquareArrowUpRightExit.openPath
         case .squareAsterisk:
             return LucideIcon_SquareAsterisk.openPath
         case .squareBookmark:
@@ -9642,6 +9715,18 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_StretchVertical.openPath
         case .strikethrough:
             return LucideIcon_Strikethrough.openPath
+        case .strokeLineCapButt:
+            return LucideIcon_StrokeLineCapButt.openPath
+        case .strokeLineCapRound:
+            return LucideIcon_StrokeLineCapRound.openPath
+        case .strokeLineCapSquare:
+            return LucideIcon_StrokeLineCapSquare.openPath
+        case .strokeLineJoinBevel:
+            return LucideIcon_StrokeLineJoinBevel.openPath
+        case .strokeLineJoinMiter:
+            return LucideIcon_StrokeLineJoinMiter.openPath
+        case .strokeLineJoinRound:
+            return LucideIcon_StrokeLineJoinRound.openPath
         case .subscriptIcon:
             return LucideIcon_Subscript.openPath
         case .summary:
@@ -10896,6 +10981,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CheckCheck.closedPath
         case .checkLine:
             return LucideIcon_CheckLine.closedPath
+        case .cheese:
+            return LucideIcon_Cheese.closedPath
         case .chefHat:
             return LucideIcon_ChefHat.closedPath
         case .cherry:
@@ -10952,20 +11039,20 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Circle.closedPath
         case .circleArrowDown:
             return LucideIcon_CircleArrowDown.closedPath
+        case .circleArrowDownLeftExit:
+            return LucideIcon_CircleArrowDownLeftExit.closedPath
+        case .circleArrowDownRightExit:
+            return LucideIcon_CircleArrowDownRightExit.closedPath
         case .circleArrowLeft:
             return LucideIcon_CircleArrowLeft.closedPath
-        case .circleArrowOutDownLeft:
-            return LucideIcon_CircleArrowOutDownLeft.closedPath
-        case .circleArrowOutDownRight:
-            return LucideIcon_CircleArrowOutDownRight.closedPath
-        case .circleArrowOutUpLeft:
-            return LucideIcon_CircleArrowOutUpLeft.closedPath
-        case .circleArrowOutUpRight:
-            return LucideIcon_CircleArrowOutUpRight.closedPath
         case .circleArrowRight:
             return LucideIcon_CircleArrowRight.closedPath
         case .circleArrowUp:
             return LucideIcon_CircleArrowUp.closedPath
+        case .circleArrowUpLeftExit:
+            return LucideIcon_CircleArrowUpLeftExit.closedPath
+        case .circleArrowUpRightExit:
+            return LucideIcon_CircleArrowUpRightExit.closedPath
         case .circleCheck:
             return LucideIcon_CircleCheck.closedPath
         case .circleCheckBig:
@@ -13420,20 +13507,28 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareActivity.closedPath
         case .squareArrowDown:
             return LucideIcon_SquareArrowDown.closedPath
+        case .squareArrowDownEnter:
+            return LucideIcon_SquareArrowDownEnter.closedPath
+        case .squareArrowDownExit:
+            return LucideIcon_SquareArrowDownExit.closedPath
         case .squareArrowDownLeft:
             return LucideIcon_SquareArrowDownLeft.closedPath
+        case .squareArrowDownLeftEnter:
+            return LucideIcon_SquareArrowDownLeftEnter.closedPath
+        case .squareArrowDownLeftExit:
+            return LucideIcon_SquareArrowDownLeftExit.closedPath
         case .squareArrowDownRight:
             return LucideIcon_SquareArrowDownRight.closedPath
+        case .squareArrowDownRightEnter:
+            return LucideIcon_SquareArrowDownRightEnter.closedPath
+        case .squareArrowDownRightExit:
+            return LucideIcon_SquareArrowDownRightExit.closedPath
         case .squareArrowLeft:
             return LucideIcon_SquareArrowLeft.closedPath
-        case .squareArrowOutDownLeft:
-            return LucideIcon_SquareArrowOutDownLeft.closedPath
-        case .squareArrowOutDownRight:
-            return LucideIcon_SquareArrowOutDownRight.closedPath
-        case .squareArrowOutUpLeft:
-            return LucideIcon_SquareArrowOutUpLeft.closedPath
-        case .squareArrowOutUpRight:
-            return LucideIcon_SquareArrowOutUpRight.closedPath
+        case .squareArrowLeftEnter:
+            return LucideIcon_SquareArrowLeftEnter.closedPath
+        case .squareArrowLeftExit:
+            return LucideIcon_SquareArrowLeftExit.closedPath
         case .squareArrowRight:
             return LucideIcon_SquareArrowRight.closedPath
         case .squareArrowRightEnter:
@@ -13442,10 +13537,22 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquareArrowRightExit.closedPath
         case .squareArrowUp:
             return LucideIcon_SquareArrowUp.closedPath
+        case .squareArrowUpEnter:
+            return LucideIcon_SquareArrowUpEnter.closedPath
+        case .squareArrowUpExit:
+            return LucideIcon_SquareArrowUpExit.closedPath
         case .squareArrowUpLeft:
             return LucideIcon_SquareArrowUpLeft.closedPath
+        case .squareArrowUpLeftEnter:
+            return LucideIcon_SquareArrowUpLeftEnter.closedPath
+        case .squareArrowUpLeftExit:
+            return LucideIcon_SquareArrowUpLeftExit.closedPath
         case .squareArrowUpRight:
             return LucideIcon_SquareArrowUpRight.closedPath
+        case .squareArrowUpRightEnter:
+            return LucideIcon_SquareArrowUpRightEnter.closedPath
+        case .squareArrowUpRightExit:
+            return LucideIcon_SquareArrowUpRightExit.closedPath
         case .squareAsterisk:
             return LucideIcon_SquareAsterisk.closedPath
         case .squareBookmark:
@@ -13708,6 +13815,18 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_StretchVertical.closedPath
         case .strikethrough:
             return LucideIcon_Strikethrough.closedPath
+        case .strokeLineCapButt:
+            return LucideIcon_StrokeLineCapButt.closedPath
+        case .strokeLineCapRound:
+            return LucideIcon_StrokeLineCapRound.closedPath
+        case .strokeLineCapSquare:
+            return LucideIcon_StrokeLineCapSquare.closedPath
+        case .strokeLineJoinBevel:
+            return LucideIcon_StrokeLineJoinBevel.closedPath
+        case .strokeLineJoinMiter:
+            return LucideIcon_StrokeLineJoinMiter.closedPath
+        case .strokeLineJoinRound:
+            return LucideIcon_StrokeLineJoinRound.closedPath
         case .subscriptIcon:
             return LucideIcon_Subscript.closedPath
         case .summary:
@@ -17974,6 +18093,9 @@ public struct Lucide {
     /// Check Line icon
     public static let checkLine: LucideShape = LucideShape(combined: LucideIcon_CheckLine.combinedPath, open: LucideIcon_CheckLine.openPath, closed: LucideIcon_CheckLine.closedPath)
 
+    /// Cheese icon
+    public static let cheese: LucideShape = LucideShape(combined: LucideIcon_Cheese.combinedPath, open: LucideIcon_Cheese.openPath, closed: LucideIcon_Cheese.closedPath)
+
     /// Chef Hat icon
     public static let chefHat: LucideShape = LucideShape(combined: LucideIcon_ChefHat.combinedPath, open: LucideIcon_ChefHat.openPath, closed: LucideIcon_ChefHat.closedPath)
 
@@ -18058,26 +18180,26 @@ public struct Lucide {
     /// Circle Arrow Down icon
     public static let circleArrowDown: LucideShape = LucideShape(combined: LucideIcon_CircleArrowDown.combinedPath, open: LucideIcon_CircleArrowDown.openPath, closed: LucideIcon_CircleArrowDown.closedPath)
 
+    /// Circle Arrow Down Left Exit icon
+    public static let circleArrowDownLeftExit: LucideShape = LucideShape(combined: LucideIcon_CircleArrowDownLeftExit.combinedPath, open: LucideIcon_CircleArrowDownLeftExit.openPath, closed: LucideIcon_CircleArrowDownLeftExit.closedPath)
+
+    /// Circle Arrow Down Right Exit icon
+    public static let circleArrowDownRightExit: LucideShape = LucideShape(combined: LucideIcon_CircleArrowDownRightExit.combinedPath, open: LucideIcon_CircleArrowDownRightExit.openPath, closed: LucideIcon_CircleArrowDownRightExit.closedPath)
+
     /// Circle Arrow Left icon
     public static let circleArrowLeft: LucideShape = LucideShape(combined: LucideIcon_CircleArrowLeft.combinedPath, open: LucideIcon_CircleArrowLeft.openPath, closed: LucideIcon_CircleArrowLeft.closedPath)
-
-    /// Circle Arrow Out Down Left icon
-    public static let circleArrowOutDownLeft: LucideShape = LucideShape(combined: LucideIcon_CircleArrowOutDownLeft.combinedPath, open: LucideIcon_CircleArrowOutDownLeft.openPath, closed: LucideIcon_CircleArrowOutDownLeft.closedPath)
-
-    /// Circle Arrow Out Down Right icon
-    public static let circleArrowOutDownRight: LucideShape = LucideShape(combined: LucideIcon_CircleArrowOutDownRight.combinedPath, open: LucideIcon_CircleArrowOutDownRight.openPath, closed: LucideIcon_CircleArrowOutDownRight.closedPath)
-
-    /// Circle Arrow Out Up Left icon
-    public static let circleArrowOutUpLeft: LucideShape = LucideShape(combined: LucideIcon_CircleArrowOutUpLeft.combinedPath, open: LucideIcon_CircleArrowOutUpLeft.openPath, closed: LucideIcon_CircleArrowOutUpLeft.closedPath)
-
-    /// Circle Arrow Out Up Right icon
-    public static let circleArrowOutUpRight: LucideShape = LucideShape(combined: LucideIcon_CircleArrowOutUpRight.combinedPath, open: LucideIcon_CircleArrowOutUpRight.openPath, closed: LucideIcon_CircleArrowOutUpRight.closedPath)
 
     /// Circle Arrow Right icon
     public static let circleArrowRight: LucideShape = LucideShape(combined: LucideIcon_CircleArrowRight.combinedPath, open: LucideIcon_CircleArrowRight.openPath, closed: LucideIcon_CircleArrowRight.closedPath)
 
     /// Circle Arrow Up icon
     public static let circleArrowUp: LucideShape = LucideShape(combined: LucideIcon_CircleArrowUp.combinedPath, open: LucideIcon_CircleArrowUp.openPath, closed: LucideIcon_CircleArrowUp.closedPath)
+
+    /// Circle Arrow Up Left Exit icon
+    public static let circleArrowUpLeftExit: LucideShape = LucideShape(combined: LucideIcon_CircleArrowUpLeftExit.combinedPath, open: LucideIcon_CircleArrowUpLeftExit.openPath, closed: LucideIcon_CircleArrowUpLeftExit.closedPath)
+
+    /// Circle Arrow Up Right Exit icon
+    public static let circleArrowUpRightExit: LucideShape = LucideShape(combined: LucideIcon_CircleArrowUpRightExit.combinedPath, open: LucideIcon_CircleArrowUpRightExit.openPath, closed: LucideIcon_CircleArrowUpRightExit.closedPath)
 
     /// Circle Check icon
     public static let circleCheck: LucideShape = LucideShape(combined: LucideIcon_CircleCheck.combinedPath, open: LucideIcon_CircleCheck.openPath, closed: LucideIcon_CircleCheck.closedPath)
@@ -21760,26 +21882,38 @@ public struct Lucide {
     /// Square Arrow Down icon
     public static let squareArrowDown: LucideShape = LucideShape(combined: LucideIcon_SquareArrowDown.combinedPath, open: LucideIcon_SquareArrowDown.openPath, closed: LucideIcon_SquareArrowDown.closedPath)
 
+    /// Square Arrow Down Enter icon
+    public static let squareArrowDownEnter: LucideShape = LucideShape(combined: LucideIcon_SquareArrowDownEnter.combinedPath, open: LucideIcon_SquareArrowDownEnter.openPath, closed: LucideIcon_SquareArrowDownEnter.closedPath)
+
+    /// Square Arrow Down Exit icon
+    public static let squareArrowDownExit: LucideShape = LucideShape(combined: LucideIcon_SquareArrowDownExit.combinedPath, open: LucideIcon_SquareArrowDownExit.openPath, closed: LucideIcon_SquareArrowDownExit.closedPath)
+
     /// Square Arrow Down Left icon
     public static let squareArrowDownLeft: LucideShape = LucideShape(combined: LucideIcon_SquareArrowDownLeft.combinedPath, open: LucideIcon_SquareArrowDownLeft.openPath, closed: LucideIcon_SquareArrowDownLeft.closedPath)
+
+    /// Square Arrow Down Left Enter icon
+    public static let squareArrowDownLeftEnter: LucideShape = LucideShape(combined: LucideIcon_SquareArrowDownLeftEnter.combinedPath, open: LucideIcon_SquareArrowDownLeftEnter.openPath, closed: LucideIcon_SquareArrowDownLeftEnter.closedPath)
+
+    /// Square Arrow Down Left Exit icon
+    public static let squareArrowDownLeftExit: LucideShape = LucideShape(combined: LucideIcon_SquareArrowDownLeftExit.combinedPath, open: LucideIcon_SquareArrowDownLeftExit.openPath, closed: LucideIcon_SquareArrowDownLeftExit.closedPath)
 
     /// Square Arrow Down Right icon
     public static let squareArrowDownRight: LucideShape = LucideShape(combined: LucideIcon_SquareArrowDownRight.combinedPath, open: LucideIcon_SquareArrowDownRight.openPath, closed: LucideIcon_SquareArrowDownRight.closedPath)
 
+    /// Square Arrow Down Right Enter icon
+    public static let squareArrowDownRightEnter: LucideShape = LucideShape(combined: LucideIcon_SquareArrowDownRightEnter.combinedPath, open: LucideIcon_SquareArrowDownRightEnter.openPath, closed: LucideIcon_SquareArrowDownRightEnter.closedPath)
+
+    /// Square Arrow Down Right Exit icon
+    public static let squareArrowDownRightExit: LucideShape = LucideShape(combined: LucideIcon_SquareArrowDownRightExit.combinedPath, open: LucideIcon_SquareArrowDownRightExit.openPath, closed: LucideIcon_SquareArrowDownRightExit.closedPath)
+
     /// Square Arrow Left icon
     public static let squareArrowLeft: LucideShape = LucideShape(combined: LucideIcon_SquareArrowLeft.combinedPath, open: LucideIcon_SquareArrowLeft.openPath, closed: LucideIcon_SquareArrowLeft.closedPath)
 
-    /// Square Arrow Out Down Left icon
-    public static let squareArrowOutDownLeft: LucideShape = LucideShape(combined: LucideIcon_SquareArrowOutDownLeft.combinedPath, open: LucideIcon_SquareArrowOutDownLeft.openPath, closed: LucideIcon_SquareArrowOutDownLeft.closedPath)
+    /// Square Arrow Left Enter icon
+    public static let squareArrowLeftEnter: LucideShape = LucideShape(combined: LucideIcon_SquareArrowLeftEnter.combinedPath, open: LucideIcon_SquareArrowLeftEnter.openPath, closed: LucideIcon_SquareArrowLeftEnter.closedPath)
 
-    /// Square Arrow Out Down Right icon
-    public static let squareArrowOutDownRight: LucideShape = LucideShape(combined: LucideIcon_SquareArrowOutDownRight.combinedPath, open: LucideIcon_SquareArrowOutDownRight.openPath, closed: LucideIcon_SquareArrowOutDownRight.closedPath)
-
-    /// Square Arrow Out Up Left icon
-    public static let squareArrowOutUpLeft: LucideShape = LucideShape(combined: LucideIcon_SquareArrowOutUpLeft.combinedPath, open: LucideIcon_SquareArrowOutUpLeft.openPath, closed: LucideIcon_SquareArrowOutUpLeft.closedPath)
-
-    /// Square Arrow Out Up Right icon
-    public static let squareArrowOutUpRight: LucideShape = LucideShape(combined: LucideIcon_SquareArrowOutUpRight.combinedPath, open: LucideIcon_SquareArrowOutUpRight.openPath, closed: LucideIcon_SquareArrowOutUpRight.closedPath)
+    /// Square Arrow Left Exit icon
+    public static let squareArrowLeftExit: LucideShape = LucideShape(combined: LucideIcon_SquareArrowLeftExit.combinedPath, open: LucideIcon_SquareArrowLeftExit.openPath, closed: LucideIcon_SquareArrowLeftExit.closedPath)
 
     /// Square Arrow Right icon
     public static let squareArrowRight: LucideShape = LucideShape(combined: LucideIcon_SquareArrowRight.combinedPath, open: LucideIcon_SquareArrowRight.openPath, closed: LucideIcon_SquareArrowRight.closedPath)
@@ -21793,11 +21927,29 @@ public struct Lucide {
     /// Square Arrow Up icon
     public static let squareArrowUp: LucideShape = LucideShape(combined: LucideIcon_SquareArrowUp.combinedPath, open: LucideIcon_SquareArrowUp.openPath, closed: LucideIcon_SquareArrowUp.closedPath)
 
+    /// Square Arrow Up Enter icon
+    public static let squareArrowUpEnter: LucideShape = LucideShape(combined: LucideIcon_SquareArrowUpEnter.combinedPath, open: LucideIcon_SquareArrowUpEnter.openPath, closed: LucideIcon_SquareArrowUpEnter.closedPath)
+
+    /// Square Arrow Up Exit icon
+    public static let squareArrowUpExit: LucideShape = LucideShape(combined: LucideIcon_SquareArrowUpExit.combinedPath, open: LucideIcon_SquareArrowUpExit.openPath, closed: LucideIcon_SquareArrowUpExit.closedPath)
+
     /// Square Arrow Up Left icon
     public static let squareArrowUpLeft: LucideShape = LucideShape(combined: LucideIcon_SquareArrowUpLeft.combinedPath, open: LucideIcon_SquareArrowUpLeft.openPath, closed: LucideIcon_SquareArrowUpLeft.closedPath)
 
+    /// Square Arrow Up Left Enter icon
+    public static let squareArrowUpLeftEnter: LucideShape = LucideShape(combined: LucideIcon_SquareArrowUpLeftEnter.combinedPath, open: LucideIcon_SquareArrowUpLeftEnter.openPath, closed: LucideIcon_SquareArrowUpLeftEnter.closedPath)
+
+    /// Square Arrow Up Left Exit icon
+    public static let squareArrowUpLeftExit: LucideShape = LucideShape(combined: LucideIcon_SquareArrowUpLeftExit.combinedPath, open: LucideIcon_SquareArrowUpLeftExit.openPath, closed: LucideIcon_SquareArrowUpLeftExit.closedPath)
+
     /// Square Arrow Up Right icon
     public static let squareArrowUpRight: LucideShape = LucideShape(combined: LucideIcon_SquareArrowUpRight.combinedPath, open: LucideIcon_SquareArrowUpRight.openPath, closed: LucideIcon_SquareArrowUpRight.closedPath)
+
+    /// Square Arrow Up Right Enter icon
+    public static let squareArrowUpRightEnter: LucideShape = LucideShape(combined: LucideIcon_SquareArrowUpRightEnter.combinedPath, open: LucideIcon_SquareArrowUpRightEnter.openPath, closed: LucideIcon_SquareArrowUpRightEnter.closedPath)
+
+    /// Square Arrow Up Right Exit icon
+    public static let squareArrowUpRightExit: LucideShape = LucideShape(combined: LucideIcon_SquareArrowUpRightExit.combinedPath, open: LucideIcon_SquareArrowUpRightExit.openPath, closed: LucideIcon_SquareArrowUpRightExit.closedPath)
 
     /// Square Asterisk icon
     public static let squareAsterisk: LucideShape = LucideShape(combined: LucideIcon_SquareAsterisk.combinedPath, open: LucideIcon_SquareAsterisk.openPath, closed: LucideIcon_SquareAsterisk.closedPath)
@@ -22191,6 +22343,24 @@ public struct Lucide {
 
     /// Strikethrough icon
     public static let strikethrough: LucideShape = LucideShape(combined: LucideIcon_Strikethrough.combinedPath, open: LucideIcon_Strikethrough.openPath, closed: LucideIcon_Strikethrough.closedPath)
+
+    /// Stroke Line Cap Butt icon
+    public static let strokeLineCapButt: LucideShape = LucideShape(combined: LucideIcon_StrokeLineCapButt.combinedPath, open: LucideIcon_StrokeLineCapButt.openPath, closed: LucideIcon_StrokeLineCapButt.closedPath)
+
+    /// Stroke Line Cap Round icon
+    public static let strokeLineCapRound: LucideShape = LucideShape(combined: LucideIcon_StrokeLineCapRound.combinedPath, open: LucideIcon_StrokeLineCapRound.openPath, closed: LucideIcon_StrokeLineCapRound.closedPath)
+
+    /// Stroke Line Cap Square icon
+    public static let strokeLineCapSquare: LucideShape = LucideShape(combined: LucideIcon_StrokeLineCapSquare.combinedPath, open: LucideIcon_StrokeLineCapSquare.openPath, closed: LucideIcon_StrokeLineCapSquare.closedPath)
+
+    /// Stroke Line Join Bevel icon
+    public static let strokeLineJoinBevel: LucideShape = LucideShape(combined: LucideIcon_StrokeLineJoinBevel.combinedPath, open: LucideIcon_StrokeLineJoinBevel.openPath, closed: LucideIcon_StrokeLineJoinBevel.closedPath)
+
+    /// Stroke Line Join Miter icon
+    public static let strokeLineJoinMiter: LucideShape = LucideShape(combined: LucideIcon_StrokeLineJoinMiter.combinedPath, open: LucideIcon_StrokeLineJoinMiter.openPath, closed: LucideIcon_StrokeLineJoinMiter.closedPath)
+
+    /// Stroke Line Join Round icon
+    public static let strokeLineJoinRound: LucideShape = LucideShape(combined: LucideIcon_StrokeLineJoinRound.combinedPath, open: LucideIcon_StrokeLineJoinRound.openPath, closed: LucideIcon_StrokeLineJoinRound.closedPath)
 
     /// Subscript icon
     public static let subscriptIcon: LucideShape = LucideShape(combined: LucideIcon_Subscript.combinedPath, open: LucideIcon_Subscript.openPath, closed: LucideIcon_Subscript.closedPath)
@@ -24122,10 +24292,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.28"
+    public static let libraryVersion = "0.9.29"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.70.0"
+    public static let lucideVersion = "1.71.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"

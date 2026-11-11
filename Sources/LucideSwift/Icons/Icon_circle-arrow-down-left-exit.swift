@@ -1,17 +1,17 @@
 //
-//  Icon_circle-arrow-out-down-left.swift
+//  Icon_circle-arrow-down-left-exit.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: circle-arrow-out-down-left
+//  Icon: circle-arrow-down-left-exit
 //
 
 import SwiftUI
 
-/// Circle Arrow Out Down Left icon
-internal enum LucideIcon_CircleArrowOutDownLeft {
+/// Circle Arrow Down Left Exit icon
+internal enum LucideIcon_CircleArrowDownLeftExit {
     
-/// Circle Arrow Out Down Left icon path (combined)
+/// Circle Arrow Down Left Exit icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 2.0, y: 12.0))
@@ -25,7 +25,7 @@ path.addLine(to: CGPoint(x: 2.0, y: 22.0))
 path.addLine(to: CGPoint(x: 2.0, y: 16.0))
     return path
 }()
-/// Circle Arrow Out Down Left icon open subpaths
+/// Circle Arrow Down Left Exit icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 2.0, y: 12.0))
@@ -39,7 +39,7 @@ path.addLine(to: CGPoint(x: 2.0, y: 22.0))
 path.addLine(to: CGPoint(x: 2.0, y: 16.0))
     return path
 }()
-/// Circle Arrow Out Down Left icon closed subpaths
+/// Circle Arrow Down Left Exit icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
             return path
