@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.29
-//  Lucide Icons Version: 1.71.0
+//  Library Version: 0.9.30
+//  Lucide Icons Version: 1.72.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -112,6 +112,7 @@ public enum LucideIconName: String, CaseIterable {
     case arrowUpZA
     case arrowsUpFromLine
     case asterisk
+    case asterism
     case astroid
     case atSign
     case atom
@@ -685,6 +686,7 @@ public enum LucideIconName: String, CaseIterable {
     case ethernetPort
     case euro
     case evCharger
+    case exclamationMark
     case expand
     case externalLink
     case eye
@@ -1242,6 +1244,7 @@ public enum LucideIconName: String, CaseIterable {
     case moped
     case mosque
     case motorbike
+    case moundShovel
     case mountain
     case mountainSnow
     case mouse
@@ -1415,6 +1418,7 @@ public enum LucideIconName: String, CaseIterable {
     case puzzle
     case pyramid
     case qrCode
+    case questionMark
     case quote
     case rabbit
     case radar
@@ -1481,6 +1485,7 @@ public enum LucideIconName: String, CaseIterable {
     case rotateCwFadingClock
     case rotateCwSquare
     case route
+    case routeArrowRight
     case routeOff
     case router
     case rows2
@@ -1850,6 +1855,7 @@ public enum LucideIconName: String, CaseIterable {
     case textCursor
     case textCursorInput
     case textInitial
+    case textPen
     case textQuote
     case textSearch
     case textWrap
@@ -2261,6 +2267,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ArrowsUpFromLine.combinedPath
         case .asterisk:
             return LucideIcon_Asterisk.combinedPath
+        case .asterism:
+            return LucideIcon_Asterism.combinedPath
         case .astroid:
             return LucideIcon_Astroid.combinedPath
         case .atSign:
@@ -3407,6 +3415,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Euro.combinedPath
         case .evCharger:
             return LucideIcon_EvCharger.combinedPath
+        case .exclamationMark:
+            return LucideIcon_ExclamationMark.combinedPath
         case .expand:
             return LucideIcon_Expand.combinedPath
         case .externalLink:
@@ -4521,6 +4531,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Mosque.combinedPath
         case .motorbike:
             return LucideIcon_Motorbike.combinedPath
+        case .moundShovel:
+            return LucideIcon_MoundShovel.combinedPath
         case .mountain:
             return LucideIcon_Mountain.combinedPath
         case .mountainSnow:
@@ -4867,6 +4879,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Pyramid.combinedPath
         case .qrCode:
             return LucideIcon_QrCode.combinedPath
+        case .questionMark:
+            return LucideIcon_QuestionMark.combinedPath
         case .quote:
             return LucideIcon_Quote.combinedPath
         case .rabbit:
@@ -4999,6 +5013,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_RotateCwSquare.combinedPath
         case .route:
             return LucideIcon_Route.combinedPath
+        case .routeArrowRight:
+            return LucideIcon_RouteArrowRight.combinedPath
         case .routeOff:
             return LucideIcon_RouteOff.combinedPath
         case .router:
@@ -5737,6 +5753,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TextCursorInput.combinedPath
         case .textInitial:
             return LucideIcon_TextInitial.combinedPath
+        case .textPen:
+            return LucideIcon_TextPen.combinedPath
         case .textQuote:
             return LucideIcon_TextQuote.combinedPath
         case .textSearch:
@@ -6361,6 +6379,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ArrowsUpFromLine.openPath
         case .asterisk:
             return LucideIcon_Asterisk.openPath
+        case .asterism:
+            return LucideIcon_Asterism.openPath
         case .astroid:
             return LucideIcon_Astroid.openPath
         case .atSign:
@@ -7507,6 +7527,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Euro.openPath
         case .evCharger:
             return LucideIcon_EvCharger.openPath
+        case .exclamationMark:
+            return LucideIcon_ExclamationMark.openPath
         case .expand:
             return LucideIcon_Expand.openPath
         case .externalLink:
@@ -8621,6 +8643,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Mosque.openPath
         case .motorbike:
             return LucideIcon_Motorbike.openPath
+        case .moundShovel:
+            return LucideIcon_MoundShovel.openPath
         case .mountain:
             return LucideIcon_Mountain.openPath
         case .mountainSnow:
@@ -8967,6 +8991,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Pyramid.openPath
         case .qrCode:
             return LucideIcon_QrCode.openPath
+        case .questionMark:
+            return LucideIcon_QuestionMark.openPath
         case .quote:
             return LucideIcon_Quote.openPath
         case .rabbit:
@@ -9099,6 +9125,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_RotateCwSquare.openPath
         case .route:
             return LucideIcon_Route.openPath
+        case .routeArrowRight:
+            return LucideIcon_RouteArrowRight.openPath
         case .routeOff:
             return LucideIcon_RouteOff.openPath
         case .router:
@@ -9837,6 +9865,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TextCursorInput.openPath
         case .textInitial:
             return LucideIcon_TextInitial.openPath
+        case .textPen:
+            return LucideIcon_TextPen.openPath
         case .textQuote:
             return LucideIcon_TextQuote.openPath
         case .textSearch:
@@ -10461,6 +10491,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ArrowsUpFromLine.closedPath
         case .asterisk:
             return LucideIcon_Asterisk.closedPath
+        case .asterism:
+            return LucideIcon_Asterism.closedPath
         case .astroid:
             return LucideIcon_Astroid.closedPath
         case .atSign:
@@ -11607,6 +11639,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Euro.closedPath
         case .evCharger:
             return LucideIcon_EvCharger.closedPath
+        case .exclamationMark:
+            return LucideIcon_ExclamationMark.closedPath
         case .expand:
             return LucideIcon_Expand.closedPath
         case .externalLink:
@@ -12721,6 +12755,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Mosque.closedPath
         case .motorbike:
             return LucideIcon_Motorbike.closedPath
+        case .moundShovel:
+            return LucideIcon_MoundShovel.closedPath
         case .mountain:
             return LucideIcon_Mountain.closedPath
         case .mountainSnow:
@@ -13067,6 +13103,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Pyramid.closedPath
         case .qrCode:
             return LucideIcon_QrCode.closedPath
+        case .questionMark:
+            return LucideIcon_QuestionMark.closedPath
         case .quote:
             return LucideIcon_Quote.closedPath
         case .rabbit:
@@ -13199,6 +13237,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_RotateCwSquare.closedPath
         case .route:
             return LucideIcon_Route.closedPath
+        case .routeArrowRight:
+            return LucideIcon_RouteArrowRight.closedPath
         case .routeOff:
             return LucideIcon_RouteOff.closedPath
         case .router:
@@ -13937,6 +13977,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TextCursorInput.closedPath
         case .textInitial:
             return LucideIcon_TextInitial.closedPath
+        case .textPen:
+            return LucideIcon_TextPen.closedPath
         case .textQuote:
             return LucideIcon_TextQuote.closedPath
         case .textSearch:
@@ -17313,6 +17355,9 @@ public struct Lucide {
     /// Asterisk icon
     public static let asterisk: LucideShape = LucideShape(combined: LucideIcon_Asterisk.combinedPath, open: LucideIcon_Asterisk.openPath, closed: LucideIcon_Asterisk.closedPath)
 
+    /// Asterism icon
+    public static let asterism: LucideShape = LucideShape(combined: LucideIcon_Asterism.combinedPath, open: LucideIcon_Asterism.openPath, closed: LucideIcon_Asterism.closedPath)
+
     /// Astroid icon
     public static let astroid: LucideShape = LucideShape(combined: LucideIcon_Astroid.combinedPath, open: LucideIcon_Astroid.openPath, closed: LucideIcon_Astroid.closedPath)
 
@@ -19032,6 +19077,9 @@ public struct Lucide {
     /// Ev Charger icon
     public static let evCharger: LucideShape = LucideShape(combined: LucideIcon_EvCharger.combinedPath, open: LucideIcon_EvCharger.openPath, closed: LucideIcon_EvCharger.closedPath)
 
+    /// Exclamation Mark icon
+    public static let exclamationMark: LucideShape = LucideShape(combined: LucideIcon_ExclamationMark.combinedPath, open: LucideIcon_ExclamationMark.openPath, closed: LucideIcon_ExclamationMark.closedPath)
+
     /// Expand icon
     public static let expand: LucideShape = LucideShape(combined: LucideIcon_Expand.combinedPath, open: LucideIcon_Expand.openPath, closed: LucideIcon_Expand.closedPath)
 
@@ -20703,6 +20751,9 @@ public struct Lucide {
     /// Motorbike icon
     public static let motorbike: LucideShape = LucideShape(combined: LucideIcon_Motorbike.combinedPath, open: LucideIcon_Motorbike.openPath, closed: LucideIcon_Motorbike.closedPath)
 
+    /// Mound Shovel icon
+    public static let moundShovel: LucideShape = LucideShape(combined: LucideIcon_MoundShovel.combinedPath, open: LucideIcon_MoundShovel.openPath, closed: LucideIcon_MoundShovel.closedPath)
+
     /// Mountain icon
     public static let mountain: LucideShape = LucideShape(combined: LucideIcon_Mountain.combinedPath, open: LucideIcon_Mountain.openPath, closed: LucideIcon_Mountain.closedPath)
 
@@ -21222,6 +21273,9 @@ public struct Lucide {
     /// Qr Code icon
     public static let qrCode: LucideShape = LucideShape(combined: LucideIcon_QrCode.combinedPath, open: LucideIcon_QrCode.openPath, closed: LucideIcon_QrCode.closedPath)
 
+    /// Question Mark icon
+    public static let questionMark: LucideShape = LucideShape(combined: LucideIcon_QuestionMark.combinedPath, open: LucideIcon_QuestionMark.openPath, closed: LucideIcon_QuestionMark.closedPath)
+
     /// Quote icon
     public static let quote: LucideShape = LucideShape(combined: LucideIcon_Quote.combinedPath, open: LucideIcon_Quote.openPath, closed: LucideIcon_Quote.closedPath)
 
@@ -21419,6 +21473,9 @@ public struct Lucide {
 
     /// Route icon
     public static let route: LucideShape = LucideShape(combined: LucideIcon_Route.combinedPath, open: LucideIcon_Route.openPath, closed: LucideIcon_Route.closedPath)
+
+    /// Route Arrow Right icon
+    public static let routeArrowRight: LucideShape = LucideShape(combined: LucideIcon_RouteArrowRight.combinedPath, open: LucideIcon_RouteArrowRight.openPath, closed: LucideIcon_RouteArrowRight.closedPath)
 
     /// Route Off icon
     public static let routeOff: LucideShape = LucideShape(combined: LucideIcon_RouteOff.combinedPath, open: LucideIcon_RouteOff.openPath, closed: LucideIcon_RouteOff.closedPath)
@@ -22526,6 +22583,9 @@ public struct Lucide {
 
     /// Text Initial icon
     public static let textInitial: LucideShape = LucideShape(combined: LucideIcon_TextInitial.combinedPath, open: LucideIcon_TextInitial.openPath, closed: LucideIcon_TextInitial.closedPath)
+
+    /// Text Pen icon
+    public static let textPen: LucideShape = LucideShape(combined: LucideIcon_TextPen.combinedPath, open: LucideIcon_TextPen.openPath, closed: LucideIcon_TextPen.closedPath)
 
     /// Text Quote icon
     public static let textQuote: LucideShape = LucideShape(combined: LucideIcon_TextQuote.combinedPath, open: LucideIcon_TextQuote.openPath, closed: LucideIcon_TextQuote.closedPath)
@@ -24292,10 +24352,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.29"
+    public static let libraryVersion = "0.9.30"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.71.0"
+    public static let lucideVersion = "1.72.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
