@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.30
-//  Lucide Icons Version: 1.72.0
+//  Library Version: 0.9.31
+//  Lucide Icons Version: 1.73.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -323,6 +323,7 @@ public enum LucideIconName: String, CaseIterable {
     case candyOff
     case cannabis
     case cannabisOff
+    case cap
     case captions
     case captionsOff
     case car
@@ -883,6 +884,7 @@ public enum LucideIconName: String, CaseIterable {
     case graduationCap
     case grape
     case graphHub
+    case graphRing
     case graphStar
     case grid2X2
     case grid2X2Check
@@ -1023,6 +1025,7 @@ public enum LucideIconName: String, CaseIterable {
     case layoutFreeform
     case layoutGrid
     case layoutGridCircles
+    case layoutGridPlus
     case layoutList
     case layoutPanelLeft
     case layoutPanelTop
@@ -2689,6 +2692,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Cannabis.combinedPath
         case .cannabisOff:
             return LucideIcon_CannabisOff.combinedPath
+        case .cap:
+            return LucideIcon_Cap.combinedPath
         case .captions:
             return LucideIcon_Captions.combinedPath
         case .captionsOff:
@@ -3809,6 +3814,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Grape.combinedPath
         case .graphHub:
             return LucideIcon_GraphHub.combinedPath
+        case .graphRing:
+            return LucideIcon_GraphRing.combinedPath
         case .graphStar:
             return LucideIcon_GraphStar.combinedPath
         case .grid2X2:
@@ -4089,6 +4096,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LayoutGrid.combinedPath
         case .layoutGridCircles:
             return LucideIcon_LayoutGridCircles.combinedPath
+        case .layoutGridPlus:
+            return LucideIcon_LayoutGridPlus.combinedPath
         case .layoutList:
             return LucideIcon_LayoutList.combinedPath
         case .layoutPanelLeft:
@@ -6801,6 +6810,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Cannabis.openPath
         case .cannabisOff:
             return LucideIcon_CannabisOff.openPath
+        case .cap:
+            return LucideIcon_Cap.openPath
         case .captions:
             return LucideIcon_Captions.openPath
         case .captionsOff:
@@ -7921,6 +7932,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Grape.openPath
         case .graphHub:
             return LucideIcon_GraphHub.openPath
+        case .graphRing:
+            return LucideIcon_GraphRing.openPath
         case .graphStar:
             return LucideIcon_GraphStar.openPath
         case .grid2X2:
@@ -8201,6 +8214,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LayoutGrid.openPath
         case .layoutGridCircles:
             return LucideIcon_LayoutGridCircles.openPath
+        case .layoutGridPlus:
+            return LucideIcon_LayoutGridPlus.openPath
         case .layoutList:
             return LucideIcon_LayoutList.openPath
         case .layoutPanelLeft:
@@ -10913,6 +10928,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Cannabis.closedPath
         case .cannabisOff:
             return LucideIcon_CannabisOff.closedPath
+        case .cap:
+            return LucideIcon_Cap.closedPath
         case .captions:
             return LucideIcon_Captions.closedPath
         case .captionsOff:
@@ -12033,6 +12050,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Grape.closedPath
         case .graphHub:
             return LucideIcon_GraphHub.closedPath
+        case .graphRing:
+            return LucideIcon_GraphRing.closedPath
         case .graphStar:
             return LucideIcon_GraphStar.closedPath
         case .grid2X2:
@@ -12313,6 +12332,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_LayoutGrid.closedPath
         case .layoutGridCircles:
             return LucideIcon_LayoutGridCircles.closedPath
+        case .layoutGridPlus:
+            return LucideIcon_LayoutGridPlus.closedPath
         case .layoutList:
             return LucideIcon_LayoutList.closedPath
         case .layoutPanelLeft:
@@ -17988,6 +18009,9 @@ public struct Lucide {
     /// Cannabis Off icon
     public static let cannabisOff: LucideShape = LucideShape(combined: LucideIcon_CannabisOff.combinedPath, open: LucideIcon_CannabisOff.openPath, closed: LucideIcon_CannabisOff.closedPath)
 
+    /// Cap icon
+    public static let cap: LucideShape = LucideShape(combined: LucideIcon_Cap.combinedPath, open: LucideIcon_Cap.openPath, closed: LucideIcon_Cap.closedPath)
+
     /// Captions icon
     public static let captions: LucideShape = LucideShape(combined: LucideIcon_Captions.combinedPath, open: LucideIcon_Captions.openPath, closed: LucideIcon_Captions.closedPath)
 
@@ -19668,6 +19692,9 @@ public struct Lucide {
     /// Graph Hub icon
     public static let graphHub: LucideShape = LucideShape(combined: LucideIcon_GraphHub.combinedPath, open: LucideIcon_GraphHub.openPath, closed: LucideIcon_GraphHub.closedPath)
 
+    /// Graph Ring icon
+    public static let graphRing: LucideShape = LucideShape(combined: LucideIcon_GraphRing.combinedPath, open: LucideIcon_GraphRing.openPath, closed: LucideIcon_GraphRing.closedPath)
+
     /// Graph Star icon
     public static let graphStar: LucideShape = LucideShape(combined: LucideIcon_GraphStar.combinedPath, open: LucideIcon_GraphStar.openPath, closed: LucideIcon_GraphStar.closedPath)
 
@@ -20087,6 +20114,9 @@ public struct Lucide {
 
     /// Layout Grid Circles icon
     public static let layoutGridCircles: LucideShape = LucideShape(combined: LucideIcon_LayoutGridCircles.combinedPath, open: LucideIcon_LayoutGridCircles.openPath, closed: LucideIcon_LayoutGridCircles.closedPath)
+
+    /// Layout Grid Plus icon
+    public static let layoutGridPlus: LucideShape = LucideShape(combined: LucideIcon_LayoutGridPlus.combinedPath, open: LucideIcon_LayoutGridPlus.openPath, closed: LucideIcon_LayoutGridPlus.closedPath)
 
     /// Layout List icon
     public static let layoutList: LucideShape = LucideShape(combined: LucideIcon_LayoutList.combinedPath, open: LucideIcon_LayoutList.openPath, closed: LucideIcon_LayoutList.closedPath)
@@ -24352,10 +24382,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.30"
+    public static let libraryVersion = "0.9.31"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.72.0"
+    public static let lucideVersion = "1.73.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
