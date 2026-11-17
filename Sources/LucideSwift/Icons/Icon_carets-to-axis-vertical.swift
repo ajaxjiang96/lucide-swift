@@ -1,27 +1,21 @@
 //
-//  Icon_triangles-centerline-dashed-vertical.swift
+//  Icon_carets-to-axis-vertical.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: triangles-centerline-dashed-vertical
+//  Icon: carets-to-axis-vertical
 //
 
 import SwiftUI
 
-/// Triangles Centerline Dashed Vertical icon
-internal enum LucideIcon_TrianglesCenterlineDashedVertical {
+/// Carets To Axis Vertical icon
+internal enum LucideIcon_CaretsToAxisVertical {
     
-/// Triangles Centerline Dashed Vertical icon path (combined)
+/// Carets To Axis Vertical icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
-    path.move(to: CGPoint(x: 12.0, y: 14.0))
-path.addLine(to: CGPoint(x: 12.0, y: 16.0))
-path.move(to: CGPoint(x: 12.0, y: 20.0))
+    path.move(to: CGPoint(x: 12.0, y: 2.0))
 path.addLine(to: CGPoint(x: 12.0, y: 22.0))
-path.move(to: CGPoint(x: 12.0, y: 2.0))
-path.addLine(to: CGPoint(x: 12.0, y: 4.0))
-path.move(to: CGPoint(x: 12.0, y: 8.0))
-path.addLine(to: CGPoint(x: 12.0, y: 10.0))
 path.move(to: CGPoint(x: 20.288, y: 16.703))
 path.addCurve(to: CGPoint(x: 21.37985314126282, y: 16.92586782054332), control1: CGPoint(x: 20.572997669067796, y: 16.99198386446483), control2: CGPoint(x: 21.00439876774446, y: 17.080040965743912))
 path.addCurve(to: CGPoint(x: 21.999999999999996, y: 16.0), control1: CGPoint(x: 21.755307514781183, y: 16.771694675342733), control2: CGPoint(x: 22.000333174450645, y: 16.405875885326896))
@@ -44,20 +38,14 @@ path.addCurve(to: CGPoint(x: 7.703, y: 12.712), control1: CGPoint(x: 8.000508578
 path.closeSubpath()
     return path
 }()
-/// Triangles Centerline Dashed Vertical icon open subpaths
+/// Carets To Axis Vertical icon open subpaths
 static let openPath: Path = {
     var path = Path()
-    path.move(to: CGPoint(x: 12.0, y: 14.0))
-path.addLine(to: CGPoint(x: 12.0, y: 16.0))
-path.move(to: CGPoint(x: 12.0, y: 20.0))
+    path.move(to: CGPoint(x: 12.0, y: 2.0))
 path.addLine(to: CGPoint(x: 12.0, y: 22.0))
-path.move(to: CGPoint(x: 12.0, y: 2.0))
-path.addLine(to: CGPoint(x: 12.0, y: 4.0))
-path.move(to: CGPoint(x: 12.0, y: 8.0))
-path.addLine(to: CGPoint(x: 12.0, y: 10.0))
     return path
 }()
-/// Triangles Centerline Dashed Vertical icon closed subpaths
+/// Carets To Axis Vertical icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 20.288, y: 16.703))

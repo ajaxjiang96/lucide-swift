@@ -1,17 +1,17 @@
 //
-//  Icon_triangles-centerline-dashed-horizontal.swift
+//  Icon_carets-to-axis-dashed-horizontal.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: triangles-centerline-dashed-horizontal
+//  Icon: carets-to-axis-dashed-horizontal
 //
 
 import SwiftUI
 
-/// Triangles Centerline Dashed Horizontal icon
-internal enum LucideIcon_TrianglesCenterlineDashedHorizontal {
+/// Carets To Axis Dashed Horizontal icon
+internal enum LucideIcon_CaretsToAxisDashedHorizontal {
     
-/// Triangles Centerline Dashed Horizontal icon path (combined)
+/// Carets To Axis Dashed Horizontal icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 12.0))
@@ -44,7 +44,7 @@ path.addCurve(to: CGPoint(x: 11.288, y: 7.703), control1: CGPoint(x: 11.73258547
 path.closeSubpath()
     return path
 }()
-/// Triangles Centerline Dashed Horizontal icon open subpaths
+/// Carets To Axis Dashed Horizontal icon open subpaths
 static let openPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 10.0, y: 12.0))
@@ -57,7 +57,7 @@ path.move(to: CGPoint(x: 4.0, y: 12.0))
 path.addLine(to: CGPoint(x: 2.0, y: 12.0))
     return path
 }()
-/// Triangles Centerline Dashed Horizontal icon closed subpaths
+/// Carets To Axis Dashed Horizontal icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 7.298, y: 20.288))
