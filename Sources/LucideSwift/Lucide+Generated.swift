@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.32
-//  Lucide Icons Version: 1.74.0
+//  Library Version: 0.9.33
+//  Lucide Icons Version: 1.75.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -1017,6 +1017,7 @@ public enum LucideIconName: String, CaseIterable {
     case iterationCcw
     case iterationCw
     case ivBag
+    case jacket
     case japaneseYen
     case joystick
     case kanban
@@ -1349,6 +1350,7 @@ public enum LucideIconName: String, CaseIterable {
     case packageSearch
     case packageX
     case paintBucket
+    case paintGun
     case paintRoller
     case paintbrush
     case paintbrushVertical
@@ -4114,6 +4116,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_IterationCw.combinedPath
         case .ivBag:
             return LucideIcon_IvBag.combinedPath
+        case .jacket:
+            return LucideIcon_Jacket.combinedPath
         case .japaneseYen:
             return LucideIcon_JapaneseYen.combinedPath
         case .joystick:
@@ -4778,6 +4782,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PackageX.combinedPath
         case .paintBucket:
             return LucideIcon_PaintBucket.combinedPath
+        case .paintGun:
+            return LucideIcon_PaintGun.combinedPath
         case .paintRoller:
             return LucideIcon_PaintRoller.combinedPath
         case .paintbrush:
@@ -8300,6 +8306,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_IterationCw.openPath
         case .ivBag:
             return LucideIcon_IvBag.openPath
+        case .jacket:
+            return LucideIcon_Jacket.openPath
         case .japaneseYen:
             return LucideIcon_JapaneseYen.openPath
         case .joystick:
@@ -8964,6 +8972,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PackageX.openPath
         case .paintBucket:
             return LucideIcon_PaintBucket.openPath
+        case .paintGun:
+            return LucideIcon_PaintGun.openPath
         case .paintRoller:
             return LucideIcon_PaintRoller.openPath
         case .paintbrush:
@@ -12486,6 +12496,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_IterationCw.closedPath
         case .ivBag:
             return LucideIcon_IvBag.closedPath
+        case .jacket:
+            return LucideIcon_Jacket.closedPath
         case .japaneseYen:
             return LucideIcon_JapaneseYen.closedPath
         case .joystick:
@@ -13150,6 +13162,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_PackageX.closedPath
         case .paintBucket:
             return LucideIcon_PaintBucket.closedPath
+        case .paintGun:
+            return LucideIcon_PaintGun.closedPath
         case .paintRoller:
             return LucideIcon_PaintRoller.closedPath
         case .paintbrush:
@@ -20329,6 +20343,9 @@ public struct Lucide {
     /// Iv Bag icon
     public static let ivBag: LucideShape = LucideShape(combined: LucideIcon_IvBag.combinedPath, open: LucideIcon_IvBag.openPath, closed: LucideIcon_IvBag.closedPath)
 
+    /// Jacket icon
+    public static let jacket: LucideShape = LucideShape(combined: LucideIcon_Jacket.combinedPath, open: LucideIcon_Jacket.openPath, closed: LucideIcon_Jacket.closedPath)
+
     /// Japanese Yen icon
     public static let japaneseYen: LucideShape = LucideShape(combined: LucideIcon_JapaneseYen.combinedPath, open: LucideIcon_JapaneseYen.openPath, closed: LucideIcon_JapaneseYen.closedPath)
 
@@ -21324,6 +21341,9 @@ public struct Lucide {
 
     /// Paint Bucket icon
     public static let paintBucket: LucideShape = LucideShape(combined: LucideIcon_PaintBucket.combinedPath, open: LucideIcon_PaintBucket.openPath, closed: LucideIcon_PaintBucket.closedPath)
+
+    /// Paint Gun icon
+    public static let paintGun: LucideShape = LucideShape(combined: LucideIcon_PaintGun.combinedPath, open: LucideIcon_PaintGun.openPath, closed: LucideIcon_PaintGun.closedPath)
 
     /// Paint Roller icon
     public static let paintRoller: LucideShape = LucideShape(combined: LucideIcon_PaintRoller.combinedPath, open: LucideIcon_PaintRoller.openPath, closed: LucideIcon_PaintRoller.closedPath)
@@ -24722,10 +24742,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.32"
+    public static let libraryVersion = "0.9.33"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.74.0"
+    public static let lucideVersion = "1.75.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
