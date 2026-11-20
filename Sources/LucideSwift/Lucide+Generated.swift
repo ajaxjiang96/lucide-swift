@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.33
-//  Lucide Icons Version: 1.75.0
+//  Library Version: 0.9.34
+//  Lucide Icons Version: 1.76.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -649,6 +649,7 @@ public enum LucideIconName: String, CaseIterable {
     case dessert
     case diagramFlowHorizontal
     case diagramFlowVertical
+    case diagramSankey
     case diameter
     case diamond
     case diamondMinus
@@ -3380,6 +3381,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_DiagramFlowHorizontal.combinedPath
         case .diagramFlowVertical:
             return LucideIcon_DiagramFlowVertical.combinedPath
+        case .diagramSankey:
+            return LucideIcon_DiagramSankey.combinedPath
         case .diameter:
             return LucideIcon_Diameter.combinedPath
         case .diamond:
@@ -7570,6 +7573,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_DiagramFlowHorizontal.openPath
         case .diagramFlowVertical:
             return LucideIcon_DiagramFlowVertical.openPath
+        case .diagramSankey:
+            return LucideIcon_DiagramSankey.openPath
         case .diameter:
             return LucideIcon_Diameter.openPath
         case .diamond:
@@ -11760,6 +11765,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_DiagramFlowHorizontal.closedPath
         case .diagramFlowVertical:
             return LucideIcon_DiagramFlowVertical.closedPath
+        case .diagramSankey:
+            return LucideIcon_DiagramSankey.closedPath
         case .diameter:
             return LucideIcon_Diameter.closedPath
         case .diamond:
@@ -19239,6 +19246,9 @@ public struct Lucide {
     /// Diagram Flow Vertical icon
     public static let diagramFlowVertical: LucideShape = LucideShape(combined: LucideIcon_DiagramFlowVertical.combinedPath, open: LucideIcon_DiagramFlowVertical.openPath, closed: LucideIcon_DiagramFlowVertical.closedPath)
 
+    /// Diagram Sankey icon
+    public static let diagramSankey: LucideShape = LucideShape(combined: LucideIcon_DiagramSankey.combinedPath, open: LucideIcon_DiagramSankey.openPath, closed: LucideIcon_DiagramSankey.closedPath)
+
     /// Diameter icon
     public static let diameter: LucideShape = LucideShape(combined: LucideIcon_Diameter.combinedPath, open: LucideIcon_Diameter.openPath, closed: LucideIcon_Diameter.closedPath)
 
@@ -24742,10 +24752,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.33"
+    public static let libraryVersion = "0.9.34"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.75.0"
+    public static let lucideVersion = "1.76.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
