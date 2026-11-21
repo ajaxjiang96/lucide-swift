@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.34
-//  Lucide Icons Version: 1.76.0
+//  Library Version: 0.9.35
+//  Lucide Icons Version: 1.77.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -263,6 +263,7 @@ public enum LucideIconName: String, CaseIterable {
     case bottleWine
     case bowArrow
     case box
+    case boxDashed
     case boxes
     case boxesLinked
     case braces
@@ -426,6 +427,7 @@ public enum LucideIconName: String, CaseIterable {
     case chevronsToAxisVertical
     case chevronsUp
     case chevronsUpDown
+    case chocolateBar
     case church
     case cigarette
     case cigaretteOff
@@ -838,11 +840,13 @@ public enum LucideIconName: String, CaseIterable {
     case folderKey
     case folderLock
     case folderMinus
+    case folderNetwork
     case folderOpen
     case folderOpenDot
     case folderOutput
     case folderPen
     case folderPlus
+    case folderPlusCorner
     case folderRoot
     case folderSearch
     case folderSearch2
@@ -1486,6 +1490,7 @@ public enum LucideIconName: String, CaseIterable {
     case rectangleEllipsis
     case rectangleGoggles
     case rectangleHorizontal
+    case rectangleLandscapePlay
     case rectangleVertical
     case recycle
     case redo
@@ -1997,6 +2002,7 @@ public enum LucideIconName: String, CaseIterable {
     case userRound
     case userRoundArrowLeft
     case userRoundCheck
+    case userRoundClock
     case userRoundCog
     case userRoundExclamationPoint
     case userRoundGroup
@@ -2609,6 +2615,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BowArrow.combinedPath
         case .box:
             return LucideIcon_Box.combinedPath
+        case .boxDashed:
+            return LucideIcon_BoxDashed.combinedPath
         case .boxes:
             return LucideIcon_Boxes.combinedPath
         case .boxesLinked:
@@ -2935,6 +2943,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ChevronsUp.combinedPath
         case .chevronsUpDown:
             return LucideIcon_ChevronsUpDown.combinedPath
+        case .chocolateBar:
+            return LucideIcon_ChocolateBar.combinedPath
         case .church:
             return LucideIcon_Church.combinedPath
         case .cigarette:
@@ -3759,6 +3769,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FolderLock.combinedPath
         case .folderMinus:
             return LucideIcon_FolderMinus.combinedPath
+        case .folderNetwork:
+            return LucideIcon_FolderNetwork.combinedPath
         case .folderOpen:
             return LucideIcon_FolderOpen.combinedPath
         case .folderOpenDot:
@@ -3769,6 +3781,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FolderPen.combinedPath
         case .folderPlus:
             return LucideIcon_FolderPlus.combinedPath
+        case .folderPlusCorner:
+            return LucideIcon_FolderPlusCorner.combinedPath
         case .folderRoot:
             return LucideIcon_FolderRoot.combinedPath
         case .folderSearch:
@@ -5055,6 +5069,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_RectangleGoggles.combinedPath
         case .rectangleHorizontal:
             return LucideIcon_RectangleHorizontal.combinedPath
+        case .rectangleLandscapePlay:
+            return LucideIcon_RectangleLandscapePlay.combinedPath
         case .rectangleVertical:
             return LucideIcon_RectangleVertical.combinedPath
         case .recycle:
@@ -6077,6 +6093,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundArrowLeft.combinedPath
         case .userRoundCheck:
             return LucideIcon_UserRoundCheck.combinedPath
+        case .userRoundClock:
+            return LucideIcon_UserRoundClock.combinedPath
         case .userRoundCog:
             return LucideIcon_UserRoundCog.combinedPath
         case .userRoundExclamationPoint:
@@ -6801,6 +6819,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BowArrow.openPath
         case .box:
             return LucideIcon_Box.openPath
+        case .boxDashed:
+            return LucideIcon_BoxDashed.openPath
         case .boxes:
             return LucideIcon_Boxes.openPath
         case .boxesLinked:
@@ -7127,6 +7147,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ChevronsUp.openPath
         case .chevronsUpDown:
             return LucideIcon_ChevronsUpDown.openPath
+        case .chocolateBar:
+            return LucideIcon_ChocolateBar.openPath
         case .church:
             return LucideIcon_Church.openPath
         case .cigarette:
@@ -7951,6 +7973,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FolderLock.openPath
         case .folderMinus:
             return LucideIcon_FolderMinus.openPath
+        case .folderNetwork:
+            return LucideIcon_FolderNetwork.openPath
         case .folderOpen:
             return LucideIcon_FolderOpen.openPath
         case .folderOpenDot:
@@ -7961,6 +7985,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FolderPen.openPath
         case .folderPlus:
             return LucideIcon_FolderPlus.openPath
+        case .folderPlusCorner:
+            return LucideIcon_FolderPlusCorner.openPath
         case .folderRoot:
             return LucideIcon_FolderRoot.openPath
         case .folderSearch:
@@ -9247,6 +9273,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_RectangleGoggles.openPath
         case .rectangleHorizontal:
             return LucideIcon_RectangleHorizontal.openPath
+        case .rectangleLandscapePlay:
+            return LucideIcon_RectangleLandscapePlay.openPath
         case .rectangleVertical:
             return LucideIcon_RectangleVertical.openPath
         case .recycle:
@@ -10269,6 +10297,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundArrowLeft.openPath
         case .userRoundCheck:
             return LucideIcon_UserRoundCheck.openPath
+        case .userRoundClock:
+            return LucideIcon_UserRoundClock.openPath
         case .userRoundCog:
             return LucideIcon_UserRoundCog.openPath
         case .userRoundExclamationPoint:
@@ -10993,6 +11023,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BowArrow.closedPath
         case .box:
             return LucideIcon_Box.closedPath
+        case .boxDashed:
+            return LucideIcon_BoxDashed.closedPath
         case .boxes:
             return LucideIcon_Boxes.closedPath
         case .boxesLinked:
@@ -11319,6 +11351,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ChevronsUp.closedPath
         case .chevronsUpDown:
             return LucideIcon_ChevronsUpDown.closedPath
+        case .chocolateBar:
+            return LucideIcon_ChocolateBar.closedPath
         case .church:
             return LucideIcon_Church.closedPath
         case .cigarette:
@@ -12143,6 +12177,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FolderLock.closedPath
         case .folderMinus:
             return LucideIcon_FolderMinus.closedPath
+        case .folderNetwork:
+            return LucideIcon_FolderNetwork.closedPath
         case .folderOpen:
             return LucideIcon_FolderOpen.closedPath
         case .folderOpenDot:
@@ -12153,6 +12189,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FolderPen.closedPath
         case .folderPlus:
             return LucideIcon_FolderPlus.closedPath
+        case .folderPlusCorner:
+            return LucideIcon_FolderPlusCorner.closedPath
         case .folderRoot:
             return LucideIcon_FolderRoot.closedPath
         case .folderSearch:
@@ -13439,6 +13477,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_RectangleGoggles.closedPath
         case .rectangleHorizontal:
             return LucideIcon_RectangleHorizontal.closedPath
+        case .rectangleLandscapePlay:
+            return LucideIcon_RectangleLandscapePlay.closedPath
         case .rectangleVertical:
             return LucideIcon_RectangleVertical.closedPath
         case .recycle:
@@ -14461,6 +14501,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_UserRoundArrowLeft.closedPath
         case .userRoundCheck:
             return LucideIcon_UserRoundCheck.closedPath
+        case .userRoundClock:
+            return LucideIcon_UserRoundClock.closedPath
         case .userRoundCog:
             return LucideIcon_UserRoundCog.closedPath
         case .userRoundExclamationPoint:
@@ -18088,6 +18130,9 @@ public struct Lucide {
     /// Box icon
     public static let box: LucideShape = LucideShape(combined: LucideIcon_Box.combinedPath, open: LucideIcon_Box.openPath, closed: LucideIcon_Box.closedPath)
 
+    /// Box Dashed icon
+    public static let boxDashed: LucideShape = LucideShape(combined: LucideIcon_BoxDashed.combinedPath, open: LucideIcon_BoxDashed.openPath, closed: LucideIcon_BoxDashed.closedPath)
+
     /// Boxes icon
     public static let boxes: LucideShape = LucideShape(combined: LucideIcon_Boxes.combinedPath, open: LucideIcon_Boxes.openPath, closed: LucideIcon_Boxes.closedPath)
 
@@ -18576,6 +18621,9 @@ public struct Lucide {
 
     /// Chevrons Up Down icon
     public static let chevronsUpDown: LucideShape = LucideShape(combined: LucideIcon_ChevronsUpDown.combinedPath, open: LucideIcon_ChevronsUpDown.openPath, closed: LucideIcon_ChevronsUpDown.closedPath)
+
+    /// Chocolate Bar icon
+    public static let chocolateBar: LucideShape = LucideShape(combined: LucideIcon_ChocolateBar.combinedPath, open: LucideIcon_ChocolateBar.openPath, closed: LucideIcon_ChocolateBar.closedPath)
 
     /// Church icon
     public static let church: LucideShape = LucideShape(combined: LucideIcon_Church.combinedPath, open: LucideIcon_Church.openPath, closed: LucideIcon_Church.closedPath)
@@ -19813,6 +19861,9 @@ public struct Lucide {
     /// Folder Minus icon
     public static let folderMinus: LucideShape = LucideShape(combined: LucideIcon_FolderMinus.combinedPath, open: LucideIcon_FolderMinus.openPath, closed: LucideIcon_FolderMinus.closedPath)
 
+    /// Folder Network icon
+    public static let folderNetwork: LucideShape = LucideShape(combined: LucideIcon_FolderNetwork.combinedPath, open: LucideIcon_FolderNetwork.openPath, closed: LucideIcon_FolderNetwork.closedPath)
+
     /// Folder Open icon
     public static let folderOpen: LucideShape = LucideShape(combined: LucideIcon_FolderOpen.combinedPath, open: LucideIcon_FolderOpen.openPath, closed: LucideIcon_FolderOpen.closedPath)
 
@@ -19827,6 +19878,9 @@ public struct Lucide {
 
     /// Folder Plus icon
     public static let folderPlus: LucideShape = LucideShape(combined: LucideIcon_FolderPlus.combinedPath, open: LucideIcon_FolderPlus.openPath, closed: LucideIcon_FolderPlus.closedPath)
+
+    /// Folder Plus Corner icon
+    public static let folderPlusCorner: LucideShape = LucideShape(combined: LucideIcon_FolderPlusCorner.combinedPath, open: LucideIcon_FolderPlusCorner.openPath, closed: LucideIcon_FolderPlusCorner.closedPath)
 
     /// Folder Root icon
     public static let folderRoot: LucideShape = LucideShape(combined: LucideIcon_FolderRoot.combinedPath, open: LucideIcon_FolderRoot.openPath, closed: LucideIcon_FolderRoot.closedPath)
@@ -21757,6 +21811,9 @@ public struct Lucide {
     /// Rectangle Horizontal icon
     public static let rectangleHorizontal: LucideShape = LucideShape(combined: LucideIcon_RectangleHorizontal.combinedPath, open: LucideIcon_RectangleHorizontal.openPath, closed: LucideIcon_RectangleHorizontal.closedPath)
 
+    /// Rectangle Landscape Play icon
+    public static let rectangleLandscapePlay: LucideShape = LucideShape(combined: LucideIcon_RectangleLandscapePlay.combinedPath, open: LucideIcon_RectangleLandscapePlay.openPath, closed: LucideIcon_RectangleLandscapePlay.closedPath)
+
     /// Rectangle Vertical icon
     public static let rectangleVertical: LucideShape = LucideShape(combined: LucideIcon_RectangleVertical.combinedPath, open: LucideIcon_RectangleVertical.openPath, closed: LucideIcon_RectangleVertical.closedPath)
 
@@ -23290,6 +23347,9 @@ public struct Lucide {
     /// User Round Check icon
     public static let userRoundCheck: LucideShape = LucideShape(combined: LucideIcon_UserRoundCheck.combinedPath, open: LucideIcon_UserRoundCheck.openPath, closed: LucideIcon_UserRoundCheck.closedPath)
 
+    /// User Round Clock icon
+    public static let userRoundClock: LucideShape = LucideShape(combined: LucideIcon_UserRoundClock.combinedPath, open: LucideIcon_UserRoundClock.openPath, closed: LucideIcon_UserRoundClock.closedPath)
+
     /// User Round Cog icon
     public static let userRoundCog: LucideShape = LucideShape(combined: LucideIcon_UserRoundCog.combinedPath, open: LucideIcon_UserRoundCog.openPath, closed: LucideIcon_UserRoundCog.closedPath)
 
@@ -24752,10 +24812,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.34"
+    public static let libraryVersion = "0.9.35"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.76.0"
+    public static let lucideVersion = "1.77.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
