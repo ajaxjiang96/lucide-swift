@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.35
-//  Lucide Icons Version: 1.77.0
+//  Library Version: 0.9.36
+//  Lucide Icons Version: 1.79.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -61,6 +61,7 @@ public enum LucideIconName: String, CaseIterable {
     case aperture
     case appWindow
     case appWindowMac
+    case appWindowPlus
     case apple
     case archive
     case archiveArrowDown
@@ -508,6 +509,7 @@ public enum LucideIconName: String, CaseIterable {
     case circleSlash
     case circleSlash2
     case circleSmall
+    case circleSpeedLines
     case circleStar
     case circleStop
     case circleUser
@@ -919,6 +921,7 @@ public enum LucideIconName: String, CaseIterable {
     case graduationCap
     case grape
     case graphHub
+    case graphPath
     case graphRing
     case graphStar
     case grid2X2
@@ -983,6 +986,7 @@ public enum LucideIconName: String, CaseIterable {
     case highlighter
     case hikingStick
     case hockeyStick
+    case hole
     case hop
     case hopOff
     case hospital
@@ -1346,6 +1350,7 @@ public enum LucideIconName: String, CaseIterable {
     case origami
     case packageIcon
     case package2
+    case packageArrowBendUpLeft
     case packageCheck
     case packageMinus
     case packageOpen
@@ -1792,6 +1797,7 @@ public enum LucideIconName: String, CaseIterable {
     case squarePilcrow
     case squarePlay
     case squarePlus
+    case squarePlusCorner
     case squarePower
     case squareRadical
     case squareRoundCorner
@@ -2211,6 +2217,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_AppWindow.combinedPath
         case .appWindowMac:
             return LucideIcon_AppWindowMac.combinedPath
+        case .appWindowPlus:
+            return LucideIcon_AppWindowPlus.combinedPath
         case .apple:
             return LucideIcon_Apple.combinedPath
         case .archive:
@@ -3105,6 +3113,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleSlash2.combinedPath
         case .circleSmall:
             return LucideIcon_CircleSmall.combinedPath
+        case .circleSpeedLines:
+            return LucideIcon_CircleSpeedLines.combinedPath
         case .circleStar:
             return LucideIcon_CircleStar.combinedPath
         case .circleStop:
@@ -3927,6 +3937,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Grape.combinedPath
         case .graphHub:
             return LucideIcon_GraphHub.combinedPath
+        case .graphPath:
+            return LucideIcon_GraphPath.combinedPath
         case .graphRing:
             return LucideIcon_GraphRing.combinedPath
         case .graphStar:
@@ -4055,6 +4067,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_HikingStick.combinedPath
         case .hockeyStick:
             return LucideIcon_HockeyStick.combinedPath
+        case .hole:
+            return LucideIcon_Hole.combinedPath
         case .hop:
             return LucideIcon_Hop.combinedPath
         case .hopOff:
@@ -4781,6 +4795,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Package.combinedPath
         case .package2:
             return LucideIcon_Package2.combinedPath
+        case .packageArrowBendUpLeft:
+            return LucideIcon_PackageArrowBendUpLeft.combinedPath
         case .packageCheck:
             return LucideIcon_PackageCheck.combinedPath
         case .packageMinus:
@@ -5673,6 +5689,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquarePlay.combinedPath
         case .squarePlus:
             return LucideIcon_SquarePlus.combinedPath
+        case .squarePlusCorner:
+            return LucideIcon_SquarePlusCorner.combinedPath
         case .squarePower:
             return LucideIcon_SquarePower.combinedPath
         case .squareRadical:
@@ -6415,6 +6433,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_AppWindow.openPath
         case .appWindowMac:
             return LucideIcon_AppWindowMac.openPath
+        case .appWindowPlus:
+            return LucideIcon_AppWindowPlus.openPath
         case .apple:
             return LucideIcon_Apple.openPath
         case .archive:
@@ -7309,6 +7329,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleSlash2.openPath
         case .circleSmall:
             return LucideIcon_CircleSmall.openPath
+        case .circleSpeedLines:
+            return LucideIcon_CircleSpeedLines.openPath
         case .circleStar:
             return LucideIcon_CircleStar.openPath
         case .circleStop:
@@ -8131,6 +8153,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Grape.openPath
         case .graphHub:
             return LucideIcon_GraphHub.openPath
+        case .graphPath:
+            return LucideIcon_GraphPath.openPath
         case .graphRing:
             return LucideIcon_GraphRing.openPath
         case .graphStar:
@@ -8259,6 +8283,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_HikingStick.openPath
         case .hockeyStick:
             return LucideIcon_HockeyStick.openPath
+        case .hole:
+            return LucideIcon_Hole.openPath
         case .hop:
             return LucideIcon_Hop.openPath
         case .hopOff:
@@ -8985,6 +9011,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Package.openPath
         case .package2:
             return LucideIcon_Package2.openPath
+        case .packageArrowBendUpLeft:
+            return LucideIcon_PackageArrowBendUpLeft.openPath
         case .packageCheck:
             return LucideIcon_PackageCheck.openPath
         case .packageMinus:
@@ -9877,6 +9905,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquarePlay.openPath
         case .squarePlus:
             return LucideIcon_SquarePlus.openPath
+        case .squarePlusCorner:
+            return LucideIcon_SquarePlusCorner.openPath
         case .squarePower:
             return LucideIcon_SquarePower.openPath
         case .squareRadical:
@@ -10619,6 +10649,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_AppWindow.closedPath
         case .appWindowMac:
             return LucideIcon_AppWindowMac.closedPath
+        case .appWindowPlus:
+            return LucideIcon_AppWindowPlus.closedPath
         case .apple:
             return LucideIcon_Apple.closedPath
         case .archive:
@@ -11513,6 +11545,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_CircleSlash2.closedPath
         case .circleSmall:
             return LucideIcon_CircleSmall.closedPath
+        case .circleSpeedLines:
+            return LucideIcon_CircleSpeedLines.closedPath
         case .circleStar:
             return LucideIcon_CircleStar.closedPath
         case .circleStop:
@@ -12335,6 +12369,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Grape.closedPath
         case .graphHub:
             return LucideIcon_GraphHub.closedPath
+        case .graphPath:
+            return LucideIcon_GraphPath.closedPath
         case .graphRing:
             return LucideIcon_GraphRing.closedPath
         case .graphStar:
@@ -12463,6 +12499,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_HikingStick.closedPath
         case .hockeyStick:
             return LucideIcon_HockeyStick.closedPath
+        case .hole:
+            return LucideIcon_Hole.closedPath
         case .hop:
             return LucideIcon_Hop.closedPath
         case .hopOff:
@@ -13189,6 +13227,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Package.closedPath
         case .package2:
             return LucideIcon_Package2.closedPath
+        case .packageArrowBendUpLeft:
+            return LucideIcon_PackageArrowBendUpLeft.closedPath
         case .packageCheck:
             return LucideIcon_PackageCheck.closedPath
         case .packageMinus:
@@ -14081,6 +14121,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_SquarePlay.closedPath
         case .squarePlus:
             return LucideIcon_SquarePlus.closedPath
+        case .squarePlusCorner:
+            return LucideIcon_SquarePlusCorner.closedPath
         case .squarePower:
             return LucideIcon_SquarePower.closedPath
         case .squareRadical:
@@ -17524,6 +17566,9 @@ public struct Lucide {
     /// App Window Mac icon
     public static let appWindowMac: LucideShape = LucideShape(combined: LucideIcon_AppWindowMac.combinedPath, open: LucideIcon_AppWindowMac.openPath, closed: LucideIcon_AppWindowMac.closedPath)
 
+    /// App Window Plus icon
+    public static let appWindowPlus: LucideShape = LucideShape(combined: LucideIcon_AppWindowPlus.combinedPath, open: LucideIcon_AppWindowPlus.openPath, closed: LucideIcon_AppWindowPlus.closedPath)
+
     /// Apple icon
     public static let apple: LucideShape = LucideShape(combined: LucideIcon_Apple.combinedPath, open: LucideIcon_Apple.openPath, closed: LucideIcon_Apple.closedPath)
 
@@ -18865,6 +18910,9 @@ public struct Lucide {
     /// Circle Small icon
     public static let circleSmall: LucideShape = LucideShape(combined: LucideIcon_CircleSmall.combinedPath, open: LucideIcon_CircleSmall.openPath, closed: LucideIcon_CircleSmall.closedPath)
 
+    /// Circle Speed Lines icon
+    public static let circleSpeedLines: LucideShape = LucideShape(combined: LucideIcon_CircleSpeedLines.combinedPath, open: LucideIcon_CircleSpeedLines.openPath, closed: LucideIcon_CircleSpeedLines.closedPath)
+
     /// Circle Star icon
     public static let circleStar: LucideShape = LucideShape(combined: LucideIcon_CircleStar.combinedPath, open: LucideIcon_CircleStar.openPath, closed: LucideIcon_CircleStar.closedPath)
 
@@ -20098,6 +20146,9 @@ public struct Lucide {
     /// Graph Hub icon
     public static let graphHub: LucideShape = LucideShape(combined: LucideIcon_GraphHub.combinedPath, open: LucideIcon_GraphHub.openPath, closed: LucideIcon_GraphHub.closedPath)
 
+    /// Graph Path icon
+    public static let graphPath: LucideShape = LucideShape(combined: LucideIcon_GraphPath.combinedPath, open: LucideIcon_GraphPath.openPath, closed: LucideIcon_GraphPath.closedPath)
+
     /// Graph Ring icon
     public static let graphRing: LucideShape = LucideShape(combined: LucideIcon_GraphRing.combinedPath, open: LucideIcon_GraphRing.openPath, closed: LucideIcon_GraphRing.closedPath)
 
@@ -20289,6 +20340,9 @@ public struct Lucide {
 
     /// Hockey Stick icon
     public static let hockeyStick: LucideShape = LucideShape(combined: LucideIcon_HockeyStick.combinedPath, open: LucideIcon_HockeyStick.openPath, closed: LucideIcon_HockeyStick.closedPath)
+
+    /// Hole icon
+    public static let hole: LucideShape = LucideShape(combined: LucideIcon_Hole.combinedPath, open: LucideIcon_Hole.openPath, closed: LucideIcon_Hole.closedPath)
 
     /// Hop icon
     public static let hop: LucideShape = LucideShape(combined: LucideIcon_Hop.combinedPath, open: LucideIcon_Hop.openPath, closed: LucideIcon_Hop.closedPath)
@@ -21378,6 +21432,9 @@ public struct Lucide {
 
     /// Package 2 icon
     public static let package2: LucideShape = LucideShape(combined: LucideIcon_Package2.combinedPath, open: LucideIcon_Package2.openPath, closed: LucideIcon_Package2.closedPath)
+
+    /// Package Arrow Bend Up Left icon
+    public static let packageArrowBendUpLeft: LucideShape = LucideShape(combined: LucideIcon_PackageArrowBendUpLeft.combinedPath, open: LucideIcon_PackageArrowBendUpLeft.openPath, closed: LucideIcon_PackageArrowBendUpLeft.closedPath)
 
     /// Package Check icon
     public static let packageCheck: LucideShape = LucideShape(combined: LucideIcon_PackageCheck.combinedPath, open: LucideIcon_PackageCheck.openPath, closed: LucideIcon_PackageCheck.closedPath)
@@ -22716,6 +22773,9 @@ public struct Lucide {
 
     /// Square Plus icon
     public static let squarePlus: LucideShape = LucideShape(combined: LucideIcon_SquarePlus.combinedPath, open: LucideIcon_SquarePlus.openPath, closed: LucideIcon_SquarePlus.closedPath)
+
+    /// Square Plus Corner icon
+    public static let squarePlusCorner: LucideShape = LucideShape(combined: LucideIcon_SquarePlusCorner.combinedPath, open: LucideIcon_SquarePlusCorner.openPath, closed: LucideIcon_SquarePlusCorner.closedPath)
 
     /// Square Power icon
     public static let squarePower: LucideShape = LucideShape(combined: LucideIcon_SquarePower.combinedPath, open: LucideIcon_SquarePower.openPath, closed: LucideIcon_SquarePower.closedPath)
@@ -24812,10 +24872,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.35"
+    public static let libraryVersion = "0.9.36"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.77.0"
+    public static let lucideVersion = "1.79.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
