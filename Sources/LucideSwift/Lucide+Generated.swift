@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.36
-//  Lucide Icons Version: 1.79.0
+//  Library Version: 0.9.37
+//  Lucide Icons Version: 1.80.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -61,6 +61,9 @@ public enum LucideIconName: String, CaseIterable {
     case aperture
     case appWindow
     case appWindowMac
+    case appWindowMacMinus
+    case appWindowMacPlus
+    case appWindowMinus
     case appWindowPlus
     case apple
     case archive
@@ -584,6 +587,8 @@ public enum LucideIconName: String, CaseIterable {
     case cog
     case coins
     case columns2
+    case columns2PlusLeft
+    case columns2PlusRight
     case columns3
     case columns3Cog
     case columns4
@@ -793,6 +798,7 @@ public enum LucideIconName: String, CaseIterable {
     case fileSymlink
     case fileTerminal
     case fileText
+    case fileTextSparkles
     case fileType
     case fileTypeCorner
     case fileUp
@@ -1013,6 +1019,7 @@ public enum LucideIconName: String, CaseIterable {
     case imageOff
     case imagePlay
     case imagePlus
+    case imageSparkles
     case imageUp
     case imageUpscale
     case images
@@ -1148,6 +1155,7 @@ public enum LucideIconName: String, CaseIterable {
     case listTree
     case listVideo
     case listX
+    case listXCorner
     case loader
     case loaderCircle
     case loaderPinwheel
@@ -1437,6 +1445,7 @@ public enum LucideIconName: String, CaseIterable {
     case pizza
     case plane
     case planeLanding
+    case planeOff
     case planeTakeoff
     case plantPot
     case play
@@ -1495,6 +1504,7 @@ public enum LucideIconName: String, CaseIterable {
     case rectangleEllipsis
     case rectangleGoggles
     case rectangleHorizontal
+    case rectangleHorizontalPlus
     case rectangleLandscapePlay
     case rectangleVertical
     case recycle
@@ -1539,6 +1549,8 @@ public enum LucideIconName: String, CaseIterable {
     case routeOff
     case router
     case rows2
+    case rows2PlusBottom
+    case rows2PlusTop
     case rows3
     case rows4
     case rss
@@ -1580,6 +1592,7 @@ public enum LucideIconName: String, CaseIterable {
     case screenShare
     case screenShareOff
     case screw
+    case screwdriver
     case scroll
     case scrollText
     case search
@@ -1953,10 +1966,12 @@ public enum LucideIconName: String, CaseIterable {
     case trailer
     case trainFront
     case trainFrontTunnel
+    case trainHighSpeed
     case trainTrack
     case tramFront
     case transgender
     case trash
+    case trashLeaf
     case trashOff
     case treeDeciduous
     case treePalm
@@ -2217,6 +2232,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_AppWindow.combinedPath
         case .appWindowMac:
             return LucideIcon_AppWindowMac.combinedPath
+        case .appWindowMacMinus:
+            return LucideIcon_AppWindowMacMinus.combinedPath
+        case .appWindowMacPlus:
+            return LucideIcon_AppWindowMacPlus.combinedPath
+        case .appWindowMinus:
+            return LucideIcon_AppWindowMinus.combinedPath
         case .appWindowPlus:
             return LucideIcon_AppWindowPlus.combinedPath
         case .apple:
@@ -3263,6 +3284,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Coins.combinedPath
         case .columns2:
             return LucideIcon_Columns2.combinedPath
+        case .columns2PlusLeft:
+            return LucideIcon_Columns2PlusLeft.combinedPath
+        case .columns2PlusRight:
+            return LucideIcon_Columns2PlusRight.combinedPath
         case .columns3:
             return LucideIcon_Columns3.combinedPath
         case .columns3Cog:
@@ -3681,6 +3706,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FileTerminal.combinedPath
         case .fileText:
             return LucideIcon_FileText.combinedPath
+        case .fileTextSparkles:
+            return LucideIcon_FileTextSparkles.combinedPath
         case .fileType:
             return LucideIcon_FileType.combinedPath
         case .fileTypeCorner:
@@ -4121,6 +4148,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ImagePlay.combinedPath
         case .imagePlus:
             return LucideIcon_ImagePlus.combinedPath
+        case .imageSparkles:
+            return LucideIcon_ImageSparkles.combinedPath
         case .imageUp:
             return LucideIcon_ImageUp.combinedPath
         case .imageUpscale:
@@ -4391,6 +4420,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ListVideo.combinedPath
         case .listX:
             return LucideIcon_ListX.combinedPath
+        case .listXCorner:
+            return LucideIcon_ListXCorner.combinedPath
         case .loader:
             return LucideIcon_Loader.combinedPath
         case .loaderCircle:
@@ -4969,6 +5000,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Plane.combinedPath
         case .planeLanding:
             return LucideIcon_PlaneLanding.combinedPath
+        case .planeOff:
+            return LucideIcon_PlaneOff.combinedPath
         case .planeTakeoff:
             return LucideIcon_PlaneTakeoff.combinedPath
         case .plantPot:
@@ -5085,6 +5118,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_RectangleGoggles.combinedPath
         case .rectangleHorizontal:
             return LucideIcon_RectangleHorizontal.combinedPath
+        case .rectangleHorizontalPlus:
+            return LucideIcon_RectangleHorizontalPlus.combinedPath
         case .rectangleLandscapePlay:
             return LucideIcon_RectangleLandscapePlay.combinedPath
         case .rectangleVertical:
@@ -5173,6 +5208,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Router.combinedPath
         case .rows2:
             return LucideIcon_Rows2.combinedPath
+        case .rows2PlusBottom:
+            return LucideIcon_Rows2PlusBottom.combinedPath
+        case .rows2PlusTop:
+            return LucideIcon_Rows2PlusTop.combinedPath
         case .rows3:
             return LucideIcon_Rows3.combinedPath
         case .rows4:
@@ -5255,6 +5294,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ScreenShareOff.combinedPath
         case .screw:
             return LucideIcon_Screw.combinedPath
+        case .screwdriver:
+            return LucideIcon_Screwdriver.combinedPath
         case .scroll:
             return LucideIcon_Scroll.combinedPath
         case .scrollText:
@@ -6001,6 +6042,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TrainFront.combinedPath
         case .trainFrontTunnel:
             return LucideIcon_TrainFrontTunnel.combinedPath
+        case .trainHighSpeed:
+            return LucideIcon_TrainHighSpeed.combinedPath
         case .trainTrack:
             return LucideIcon_TrainTrack.combinedPath
         case .tramFront:
@@ -6009,6 +6052,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Transgender.combinedPath
         case .trash:
             return LucideIcon_Trash.combinedPath
+        case .trashLeaf:
+            return LucideIcon_TrashLeaf.combinedPath
         case .trashOff:
             return LucideIcon_TrashOff.combinedPath
         case .treeDeciduous:
@@ -6433,6 +6478,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_AppWindow.openPath
         case .appWindowMac:
             return LucideIcon_AppWindowMac.openPath
+        case .appWindowMacMinus:
+            return LucideIcon_AppWindowMacMinus.openPath
+        case .appWindowMacPlus:
+            return LucideIcon_AppWindowMacPlus.openPath
+        case .appWindowMinus:
+            return LucideIcon_AppWindowMinus.openPath
         case .appWindowPlus:
             return LucideIcon_AppWindowPlus.openPath
         case .apple:
@@ -7479,6 +7530,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Coins.openPath
         case .columns2:
             return LucideIcon_Columns2.openPath
+        case .columns2PlusLeft:
+            return LucideIcon_Columns2PlusLeft.openPath
+        case .columns2PlusRight:
+            return LucideIcon_Columns2PlusRight.openPath
         case .columns3:
             return LucideIcon_Columns3.openPath
         case .columns3Cog:
@@ -7897,6 +7952,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FileTerminal.openPath
         case .fileText:
             return LucideIcon_FileText.openPath
+        case .fileTextSparkles:
+            return LucideIcon_FileTextSparkles.openPath
         case .fileType:
             return LucideIcon_FileType.openPath
         case .fileTypeCorner:
@@ -8337,6 +8394,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ImagePlay.openPath
         case .imagePlus:
             return LucideIcon_ImagePlus.openPath
+        case .imageSparkles:
+            return LucideIcon_ImageSparkles.openPath
         case .imageUp:
             return LucideIcon_ImageUp.openPath
         case .imageUpscale:
@@ -8607,6 +8666,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ListVideo.openPath
         case .listX:
             return LucideIcon_ListX.openPath
+        case .listXCorner:
+            return LucideIcon_ListXCorner.openPath
         case .loader:
             return LucideIcon_Loader.openPath
         case .loaderCircle:
@@ -9185,6 +9246,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Plane.openPath
         case .planeLanding:
             return LucideIcon_PlaneLanding.openPath
+        case .planeOff:
+            return LucideIcon_PlaneOff.openPath
         case .planeTakeoff:
             return LucideIcon_PlaneTakeoff.openPath
         case .plantPot:
@@ -9301,6 +9364,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_RectangleGoggles.openPath
         case .rectangleHorizontal:
             return LucideIcon_RectangleHorizontal.openPath
+        case .rectangleHorizontalPlus:
+            return LucideIcon_RectangleHorizontalPlus.openPath
         case .rectangleLandscapePlay:
             return LucideIcon_RectangleLandscapePlay.openPath
         case .rectangleVertical:
@@ -9389,6 +9454,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Router.openPath
         case .rows2:
             return LucideIcon_Rows2.openPath
+        case .rows2PlusBottom:
+            return LucideIcon_Rows2PlusBottom.openPath
+        case .rows2PlusTop:
+            return LucideIcon_Rows2PlusTop.openPath
         case .rows3:
             return LucideIcon_Rows3.openPath
         case .rows4:
@@ -9471,6 +9540,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ScreenShareOff.openPath
         case .screw:
             return LucideIcon_Screw.openPath
+        case .screwdriver:
+            return LucideIcon_Screwdriver.openPath
         case .scroll:
             return LucideIcon_Scroll.openPath
         case .scrollText:
@@ -10217,6 +10288,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TrainFront.openPath
         case .trainFrontTunnel:
             return LucideIcon_TrainFrontTunnel.openPath
+        case .trainHighSpeed:
+            return LucideIcon_TrainHighSpeed.openPath
         case .trainTrack:
             return LucideIcon_TrainTrack.openPath
         case .tramFront:
@@ -10225,6 +10298,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Transgender.openPath
         case .trash:
             return LucideIcon_Trash.openPath
+        case .trashLeaf:
+            return LucideIcon_TrashLeaf.openPath
         case .trashOff:
             return LucideIcon_TrashOff.openPath
         case .treeDeciduous:
@@ -10649,6 +10724,12 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_AppWindow.closedPath
         case .appWindowMac:
             return LucideIcon_AppWindowMac.closedPath
+        case .appWindowMacMinus:
+            return LucideIcon_AppWindowMacMinus.closedPath
+        case .appWindowMacPlus:
+            return LucideIcon_AppWindowMacPlus.closedPath
+        case .appWindowMinus:
+            return LucideIcon_AppWindowMinus.closedPath
         case .appWindowPlus:
             return LucideIcon_AppWindowPlus.closedPath
         case .apple:
@@ -11695,6 +11776,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Coins.closedPath
         case .columns2:
             return LucideIcon_Columns2.closedPath
+        case .columns2PlusLeft:
+            return LucideIcon_Columns2PlusLeft.closedPath
+        case .columns2PlusRight:
+            return LucideIcon_Columns2PlusRight.closedPath
         case .columns3:
             return LucideIcon_Columns3.closedPath
         case .columns3Cog:
@@ -12113,6 +12198,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_FileTerminal.closedPath
         case .fileText:
             return LucideIcon_FileText.closedPath
+        case .fileTextSparkles:
+            return LucideIcon_FileTextSparkles.closedPath
         case .fileType:
             return LucideIcon_FileType.closedPath
         case .fileTypeCorner:
@@ -12553,6 +12640,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ImagePlay.closedPath
         case .imagePlus:
             return LucideIcon_ImagePlus.closedPath
+        case .imageSparkles:
+            return LucideIcon_ImageSparkles.closedPath
         case .imageUp:
             return LucideIcon_ImageUp.closedPath
         case .imageUpscale:
@@ -12823,6 +12912,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ListVideo.closedPath
         case .listX:
             return LucideIcon_ListX.closedPath
+        case .listXCorner:
+            return LucideIcon_ListXCorner.closedPath
         case .loader:
             return LucideIcon_Loader.closedPath
         case .loaderCircle:
@@ -13401,6 +13492,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Plane.closedPath
         case .planeLanding:
             return LucideIcon_PlaneLanding.closedPath
+        case .planeOff:
+            return LucideIcon_PlaneOff.closedPath
         case .planeTakeoff:
             return LucideIcon_PlaneTakeoff.closedPath
         case .plantPot:
@@ -13517,6 +13610,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_RectangleGoggles.closedPath
         case .rectangleHorizontal:
             return LucideIcon_RectangleHorizontal.closedPath
+        case .rectangleHorizontalPlus:
+            return LucideIcon_RectangleHorizontalPlus.closedPath
         case .rectangleLandscapePlay:
             return LucideIcon_RectangleLandscapePlay.closedPath
         case .rectangleVertical:
@@ -13605,6 +13700,10 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Router.closedPath
         case .rows2:
             return LucideIcon_Rows2.closedPath
+        case .rows2PlusBottom:
+            return LucideIcon_Rows2PlusBottom.closedPath
+        case .rows2PlusTop:
+            return LucideIcon_Rows2PlusTop.closedPath
         case .rows3:
             return LucideIcon_Rows3.closedPath
         case .rows4:
@@ -13687,6 +13786,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_ScreenShareOff.closedPath
         case .screw:
             return LucideIcon_Screw.closedPath
+        case .screwdriver:
+            return LucideIcon_Screwdriver.closedPath
         case .scroll:
             return LucideIcon_Scroll.closedPath
         case .scrollText:
@@ -14433,6 +14534,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_TrainFront.closedPath
         case .trainFrontTunnel:
             return LucideIcon_TrainFrontTunnel.closedPath
+        case .trainHighSpeed:
+            return LucideIcon_TrainHighSpeed.closedPath
         case .trainTrack:
             return LucideIcon_TrainTrack.closedPath
         case .tramFront:
@@ -14441,6 +14544,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_Transgender.closedPath
         case .trash:
             return LucideIcon_Trash.closedPath
+        case .trashLeaf:
+            return LucideIcon_TrashLeaf.closedPath
         case .trashOff:
             return LucideIcon_TrashOff.closedPath
         case .treeDeciduous:
@@ -17566,6 +17671,15 @@ public struct Lucide {
     /// App Window Mac icon
     public static let appWindowMac: LucideShape = LucideShape(combined: LucideIcon_AppWindowMac.combinedPath, open: LucideIcon_AppWindowMac.openPath, closed: LucideIcon_AppWindowMac.closedPath)
 
+    /// App Window Mac Minus icon
+    public static let appWindowMacMinus: LucideShape = LucideShape(combined: LucideIcon_AppWindowMacMinus.combinedPath, open: LucideIcon_AppWindowMacMinus.openPath, closed: LucideIcon_AppWindowMacMinus.closedPath)
+
+    /// App Window Mac Plus icon
+    public static let appWindowMacPlus: LucideShape = LucideShape(combined: LucideIcon_AppWindowMacPlus.combinedPath, open: LucideIcon_AppWindowMacPlus.openPath, closed: LucideIcon_AppWindowMacPlus.closedPath)
+
+    /// App Window Minus icon
+    public static let appWindowMinus: LucideShape = LucideShape(combined: LucideIcon_AppWindowMinus.combinedPath, open: LucideIcon_AppWindowMinus.openPath, closed: LucideIcon_AppWindowMinus.closedPath)
+
     /// App Window Plus icon
     public static let appWindowPlus: LucideShape = LucideShape(combined: LucideIcon_AppWindowPlus.combinedPath, open: LucideIcon_AppWindowPlus.openPath, closed: LucideIcon_AppWindowPlus.closedPath)
 
@@ -19135,6 +19249,12 @@ public struct Lucide {
     /// Columns 2 icon
     public static let columns2: LucideShape = LucideShape(combined: LucideIcon_Columns2.combinedPath, open: LucideIcon_Columns2.openPath, closed: LucideIcon_Columns2.closedPath)
 
+    /// Columns 2 Plus Left icon
+    public static let columns2PlusLeft: LucideShape = LucideShape(combined: LucideIcon_Columns2PlusLeft.combinedPath, open: LucideIcon_Columns2PlusLeft.openPath, closed: LucideIcon_Columns2PlusLeft.closedPath)
+
+    /// Columns 2 Plus Right icon
+    public static let columns2PlusRight: LucideShape = LucideShape(combined: LucideIcon_Columns2PlusRight.combinedPath, open: LucideIcon_Columns2PlusRight.openPath, closed: LucideIcon_Columns2PlusRight.closedPath)
+
     /// Columns 3 icon
     public static let columns3: LucideShape = LucideShape(combined: LucideIcon_Columns3.combinedPath, open: LucideIcon_Columns3.openPath, closed: LucideIcon_Columns3.closedPath)
 
@@ -19761,6 +19881,9 @@ public struct Lucide {
 
     /// File Text icon
     public static let fileText: LucideShape = LucideShape(combined: LucideIcon_FileText.combinedPath, open: LucideIcon_FileText.openPath, closed: LucideIcon_FileText.closedPath)
+
+    /// File Text Sparkles icon
+    public static let fileTextSparkles: LucideShape = LucideShape(combined: LucideIcon_FileTextSparkles.combinedPath, open: LucideIcon_FileTextSparkles.openPath, closed: LucideIcon_FileTextSparkles.closedPath)
 
     /// File Type icon
     public static let fileType: LucideShape = LucideShape(combined: LucideIcon_FileType.combinedPath, open: LucideIcon_FileType.openPath, closed: LucideIcon_FileType.closedPath)
@@ -20422,6 +20545,9 @@ public struct Lucide {
     /// Image Plus icon
     public static let imagePlus: LucideShape = LucideShape(combined: LucideIcon_ImagePlus.combinedPath, open: LucideIcon_ImagePlus.openPath, closed: LucideIcon_ImagePlus.closedPath)
 
+    /// Image Sparkles icon
+    public static let imageSparkles: LucideShape = LucideShape(combined: LucideIcon_ImageSparkles.combinedPath, open: LucideIcon_ImageSparkles.openPath, closed: LucideIcon_ImageSparkles.closedPath)
+
     /// Image Up icon
     public static let imageUp: LucideShape = LucideShape(combined: LucideIcon_ImageUp.combinedPath, open: LucideIcon_ImageUp.openPath, closed: LucideIcon_ImageUp.closedPath)
 
@@ -20826,6 +20952,9 @@ public struct Lucide {
 
     /// List X icon
     public static let listX: LucideShape = LucideShape(combined: LucideIcon_ListX.combinedPath, open: LucideIcon_ListX.openPath, closed: LucideIcon_ListX.closedPath)
+
+    /// List X Corner icon
+    public static let listXCorner: LucideShape = LucideShape(combined: LucideIcon_ListXCorner.combinedPath, open: LucideIcon_ListXCorner.openPath, closed: LucideIcon_ListXCorner.closedPath)
 
     /// Loader icon
     public static let loader: LucideShape = LucideShape(combined: LucideIcon_Loader.combinedPath, open: LucideIcon_Loader.openPath, closed: LucideIcon_Loader.closedPath)
@@ -21694,6 +21823,9 @@ public struct Lucide {
     /// Plane Landing icon
     public static let planeLanding: LucideShape = LucideShape(combined: LucideIcon_PlaneLanding.combinedPath, open: LucideIcon_PlaneLanding.openPath, closed: LucideIcon_PlaneLanding.closedPath)
 
+    /// Plane Off icon
+    public static let planeOff: LucideShape = LucideShape(combined: LucideIcon_PlaneOff.combinedPath, open: LucideIcon_PlaneOff.openPath, closed: LucideIcon_PlaneOff.closedPath)
+
     /// Plane Takeoff icon
     public static let planeTakeoff: LucideShape = LucideShape(combined: LucideIcon_PlaneTakeoff.combinedPath, open: LucideIcon_PlaneTakeoff.openPath, closed: LucideIcon_PlaneTakeoff.closedPath)
 
@@ -21868,6 +22000,9 @@ public struct Lucide {
     /// Rectangle Horizontal icon
     public static let rectangleHorizontal: LucideShape = LucideShape(combined: LucideIcon_RectangleHorizontal.combinedPath, open: LucideIcon_RectangleHorizontal.openPath, closed: LucideIcon_RectangleHorizontal.closedPath)
 
+    /// Rectangle Horizontal Plus icon
+    public static let rectangleHorizontalPlus: LucideShape = LucideShape(combined: LucideIcon_RectangleHorizontalPlus.combinedPath, open: LucideIcon_RectangleHorizontalPlus.openPath, closed: LucideIcon_RectangleHorizontalPlus.closedPath)
+
     /// Rectangle Landscape Play icon
     public static let rectangleLandscapePlay: LucideShape = LucideShape(combined: LucideIcon_RectangleLandscapePlay.combinedPath, open: LucideIcon_RectangleLandscapePlay.openPath, closed: LucideIcon_RectangleLandscapePlay.closedPath)
 
@@ -22000,6 +22135,12 @@ public struct Lucide {
     /// Rows 2 icon
     public static let rows2: LucideShape = LucideShape(combined: LucideIcon_Rows2.combinedPath, open: LucideIcon_Rows2.openPath, closed: LucideIcon_Rows2.closedPath)
 
+    /// Rows 2 Plus Bottom icon
+    public static let rows2PlusBottom: LucideShape = LucideShape(combined: LucideIcon_Rows2PlusBottom.combinedPath, open: LucideIcon_Rows2PlusBottom.openPath, closed: LucideIcon_Rows2PlusBottom.closedPath)
+
+    /// Rows 2 Plus Top icon
+    public static let rows2PlusTop: LucideShape = LucideShape(combined: LucideIcon_Rows2PlusTop.combinedPath, open: LucideIcon_Rows2PlusTop.openPath, closed: LucideIcon_Rows2PlusTop.closedPath)
+
     /// Rows 3 icon
     public static let rows3: LucideShape = LucideShape(combined: LucideIcon_Rows3.combinedPath, open: LucideIcon_Rows3.openPath, closed: LucideIcon_Rows3.closedPath)
 
@@ -22122,6 +22263,9 @@ public struct Lucide {
 
     /// Screw icon
     public static let screw: LucideShape = LucideShape(combined: LucideIcon_Screw.combinedPath, open: LucideIcon_Screw.openPath, closed: LucideIcon_Screw.closedPath)
+
+    /// Screwdriver icon
+    public static let screwdriver: LucideShape = LucideShape(combined: LucideIcon_Screwdriver.combinedPath, open: LucideIcon_Screwdriver.openPath, closed: LucideIcon_Screwdriver.closedPath)
 
     /// Scroll icon
     public static let scroll: LucideShape = LucideShape(combined: LucideIcon_Scroll.combinedPath, open: LucideIcon_Scroll.openPath, closed: LucideIcon_Scroll.closedPath)
@@ -23242,6 +23386,9 @@ public struct Lucide {
     /// Train Front Tunnel icon
     public static let trainFrontTunnel: LucideShape = LucideShape(combined: LucideIcon_TrainFrontTunnel.combinedPath, open: LucideIcon_TrainFrontTunnel.openPath, closed: LucideIcon_TrainFrontTunnel.closedPath)
 
+    /// Train High Speed icon
+    public static let trainHighSpeed: LucideShape = LucideShape(combined: LucideIcon_TrainHighSpeed.combinedPath, open: LucideIcon_TrainHighSpeed.openPath, closed: LucideIcon_TrainHighSpeed.closedPath)
+
     /// Train Track icon
     public static let trainTrack: LucideShape = LucideShape(combined: LucideIcon_TrainTrack.combinedPath, open: LucideIcon_TrainTrack.openPath, closed: LucideIcon_TrainTrack.closedPath)
 
@@ -23253,6 +23400,9 @@ public struct Lucide {
 
     /// Trash icon
     public static let trash: LucideShape = LucideShape(combined: LucideIcon_Trash.combinedPath, open: LucideIcon_Trash.openPath, closed: LucideIcon_Trash.closedPath)
+
+    /// Trash Leaf icon
+    public static let trashLeaf: LucideShape = LucideShape(combined: LucideIcon_TrashLeaf.combinedPath, open: LucideIcon_TrashLeaf.openPath, closed: LucideIcon_TrashLeaf.closedPath)
 
     /// Trash Off icon
     public static let trashOff: LucideShape = LucideShape(combined: LucideIcon_TrashOff.combinedPath, open: LucideIcon_TrashOff.openPath, closed: LucideIcon_TrashOff.closedPath)
@@ -24872,10 +25022,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.36"
+    public static let libraryVersion = "0.9.37"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.79.0"
+    public static let lucideVersion = "1.80.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
