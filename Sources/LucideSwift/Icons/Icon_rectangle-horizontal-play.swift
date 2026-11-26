@@ -1,17 +1,17 @@
 //
-//  Icon_rectangle-landscape-play.swift
+//  Icon_rectangle-horizontal-play.swift
 //  LucideSwift
 //
 //  Auto-generated — DO NOT EDIT
-//  Icon: rectangle-landscape-play
+//  Icon: rectangle-horizontal-play
 //
 
 import SwiftUI
 
-/// Rectangle Landscape Play icon
-internal enum LucideIcon_RectangleLandscapePlay {
+/// Rectangle Horizontal Play icon
+internal enum LucideIcon_RectangleHorizontalPlay {
     
-/// Rectangle Landscape Play icon path (combined)
+/// Rectangle Horizontal Play icon path (combined)
 static let combinedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.033, y: 11.44))
@@ -36,12 +36,12 @@ path.addCurve(to: CGPoint(x: 4.0, y: 5.0), control1: CGPoint(x: 2.0, y: 5.895430
 path.closeSubpath()
     return path
 }()
-/// Rectangle Landscape Play icon open subpaths
+/// Rectangle Horizontal Play icon open subpaths
 static let openPath: Path = {
     var path = Path()
             return path
 }()
-/// Rectangle Landscape Play icon closed subpaths
+/// Rectangle Horizontal Play icon closed subpaths
 static let closedPath: Path = {
     var path = Path()
     path.move(to: CGPoint(x: 15.033, y: 11.44))
