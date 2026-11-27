@@ -3,8 +3,8 @@
 //  LucideSwift
 //
 //  Auto-generated from Lucide Icons using SVGPath
-//  Library Version: 0.9.38
-//  Lucide Icons Version: 1.81.0
+//  Library Version: 0.9.39
+//  Lucide Icons Version: 1.82.0
 //  Lucide Lab Version: 34b6526d0a67bbe67b8a54b9b101018b1377ef28
 //  DO NOT EDIT MANUALLY
 //
@@ -272,6 +272,7 @@ public enum LucideIconName: String, CaseIterable {
     case boxes
     case boxesLinked
     case braces
+    case bracesSigma
     case brackets
     case brain
     case brainCircuit
@@ -2658,6 +2659,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BoxesLinked.combinedPath
         case .braces:
             return LucideIcon_Braces.combinedPath
+        case .bracesSigma:
+            return LucideIcon_BracesSigma.combinedPath
         case .brackets:
             return LucideIcon_Brackets.combinedPath
         case .brain:
@@ -6912,6 +6915,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BoxesLinked.openPath
         case .braces:
             return LucideIcon_Braces.openPath
+        case .bracesSigma:
+            return LucideIcon_BracesSigma.openPath
         case .brackets:
             return LucideIcon_Brackets.openPath
         case .brain:
@@ -11166,6 +11171,8 @@ public enum LucideIconName: String, CaseIterable {
             return LucideIcon_BoxesLinked.closedPath
         case .braces:
             return LucideIcon_Braces.closedPath
+        case .bracesSigma:
+            return LucideIcon_BracesSigma.closedPath
         case .brackets:
             return LucideIcon_Brackets.closedPath
         case .brain:
@@ -18332,6 +18339,9 @@ public struct Lucide {
     /// Braces icon
     public static let braces: LucideShape = LucideShape(combined: LucideIcon_Braces.combinedPath, open: LucideIcon_Braces.openPath, closed: LucideIcon_Braces.closedPath)
 
+    /// Braces Sigma icon
+    public static let bracesSigma: LucideShape = LucideShape(combined: LucideIcon_BracesSigma.combinedPath, open: LucideIcon_BracesSigma.openPath, closed: LucideIcon_BracesSigma.closedPath)
+
     /// Brackets icon
     public static let brackets: LucideShape = LucideShape(combined: LucideIcon_Brackets.combinedPath, open: LucideIcon_Brackets.openPath, closed: LucideIcon_Brackets.closedPath)
 
@@ -25062,10 +25072,10 @@ public struct LucideLab {
 /// Version information for LucideSwift
 public struct LucideVersions {
     /// The version of the LucideSwift library (from git tags)
-    public static let libraryVersion = "0.9.38"
+    public static let libraryVersion = "0.9.39"
     
     /// The version of upstream Lucide Icons bundled with this release
-    public static let lucideVersion = "1.81.0"
+    public static let lucideVersion = "1.82.0"
     
     /// The version of upstream Lucide Lab icons bundled with this release
     public static let lucideLabVersion = "34b6526d0a67bbe67b8a54b9b101018b1377ef28"
